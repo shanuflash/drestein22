@@ -1,17 +1,42 @@
+*{
+  box-sizing: border-box;
+}
 .App {
   text-align: center;
+  color: white;
+
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
+/* style={{display:'flex',justifyContent:'space-between',alignItems:'top',padding:'30px',Maxwidth:'100vw',height:'100%',background:'red',flexWrap:'wrap',height:'100vh'} */
+.departmemts{
+  display: flex;
+  justify-content: space-evenly;
+  align-items:flex-start;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  max-width: 100vw;
+  height: 100vh;
+  /* padding: 40px; */
+}
+.parallel_layer_gal{
+  position:absolute;
+  color: black;
+  top:50%;
+  right: 50%;
+  transform: translate(-50%,-50%);
+  font-size: 6rem;
 
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
 }
+
 
 .App-header {
   background-color: #282c34;
@@ -35,4 +60,14 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/* header*/
+@media only screen and (max-width: 600px) {
+  .header{
+    z-index: -1;
+    background-size:contain;
+  background-position: center top;
+  }
+
 }
