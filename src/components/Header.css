@@ -35,7 +35,7 @@
     opacity: 0.6;
   
   } */
-.nav_items>span {
+.nav_items > span {
   margin-right: 30px;
   padding: 5px;
   font-size: 1rem;
@@ -180,7 +180,7 @@ li {
   padding-left: 60px;
 }
 
-.timer>span {
+.timer > span {
   font-size: 40px;
   font-weight: 200;
 }
@@ -226,14 +226,14 @@ li {
   margin: 5px;
 }
 
-.register_now>span {
+.register_now > span {
   cursor: pointer;
   display: inline-block;
   position: relative;
   transition: 0.5s;
 }
 
-.register_now>span:after {
+.register_now > span:after {
   content: "\00bb";
   position: absolute;
   opacity: 0;
@@ -305,7 +305,7 @@ li {
     margin-top: -70px;
   }
 
-  .timer>span {
+  .timer > span {
     font-size: 10vw;
   }
 

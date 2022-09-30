@@ -1,6 +1,6 @@
 import React from "react";
 import "./Header.css";
-import dresteinlogo from "../logo_bgremove.png";
+import dresteinlogo from "../drestein.png";
 function Header({ seclogo }) {
   return (
     <div className="container2">

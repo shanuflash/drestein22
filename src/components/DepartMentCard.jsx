@@ -14,9 +14,7 @@ function DepartMentCard() {
             Technology
           </h2>
           <div class="lorem">
-            <h3>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            </h3>
+            <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
           </div>
           <a href="#">Events</a>
         </div>

@@ -1,15 +1,11 @@
 import "./App.css";
-import earth from "./earth-1.png";
+import earth from "./earth.png";
 import seclogo from "./sec_logo.png";
 import Header from "./components/Header";
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 import HeaderText from "./components/HeaderText";
 import { useState } from "react";
-import robort from "./man-320276.png";
-// import robort from './4_Victory_01.png';
-import DepartMentCard from "./components/DepartMentCard";
 import Container from "./components/DepContainer";
-import { Gallery } from "react-grid-gallery";
 import MasonryImageList from "./components/gallery";
 
 function App() {
@@ -112,7 +108,7 @@ function App() {
         </ParallaxLayer>
 
         <ParallaxLayer offset={3.3} speed={0.5}>
-          <h1 style={{ fontSize: "7rem", zIndex: "-1" }}>About</h1>
+          <h1 style={{ fontSize: "7rem", zIndex: "-4" }}>About</h1>
         </ParallaxLayer>
       </Parallax>
     </div>
