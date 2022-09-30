@@ -1,15 +1,19 @@
 * {
   box-sizing: border-box;
 }
+
 .App {
   text-align: center;
   color: white;
 }
 
+
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
+
 /* style={{display:'flex',justifyContent:'space-between',alignItems:'top',padding:'30px',Maxwidth:'100vw',height:'100%',background:'red',flexWrap:'wrap',height:'100vh'} */
 .departmemts {
   display: flex;
@@ -21,14 +25,16 @@
   min-height: 100vbh;
   /* padding: 40px; */
 }
+
 .parallel_layer_gal {
   position: absolute;
-  color: black;
-  top: 55%;
+  color: rgb(0, 0, 0);
+  top: 57%;
   right: 50%;
   transform: translate(-50%, -50%);
   font-size: 6rem;
 }
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -54,6 +60,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }

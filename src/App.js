@@ -51,7 +51,7 @@ function App() {
             zIndex: "-3",
           }}
         >
-          <h1 style={{ fontSize: "7rem" }}>departments</h1>
+          <h1 style={{ fontSize: "7rem" }}>Departments</h1>
           <p></p>
           <div className="departmemts">
             {/* <DepartMentCard/>
@@ -61,10 +61,14 @@ function App() {
             <Container />
             <Container />
             <Container />
+            <Container />
+            <Container />
+            <Container />
+            <Container />
           </div>
         </ParallaxLayer>
 
-        <ParallaxLayer
+        {/* <ParallaxLayer
           offset={1}
           speed={-10}
           factor={1}
@@ -73,16 +77,16 @@ function App() {
             backgroundImage: `url(${robort})`,
             backgroundPosition: "center",
           }}
-        />
+        /> */}
 
         <ParallaxLayer offset={2} speed={2}>
-          <h1 style={{ fontSize: "10rem" }}>Gallery</h1>
+          <h1 style={{ fontSize: "7rem" }}>Gallery</h1>
           <MasonryImageList />
         </ParallaxLayer>
 
         <ParallaxLayer
           offset={2}
-          speed={-10}
+          speed={-12}
           factor={3}
           horizontal
           style={{
@@ -107,8 +111,8 @@ function App() {
           </ParallaxLayer>
         </ParallaxLayer>
 
-        <ParallaxLayer offset={3} speed={0.5}>
-          <h1>About</h1>
+        <ParallaxLayer offset={3.3} speed={0.5}>
+          <h1 style={{ fontSize: "7rem", zIndex: "-1" }}>About</h1>
         </ParallaxLayer>
       </Parallax>
     </div>

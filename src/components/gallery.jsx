@@ -5,7 +5,7 @@ import { ImageListItem } from "@mui/material";
 
 export default function MasonryImageList() {
   return (
-    <Box sx={{ width: "100vw", height: "100%", overflowY: "scroll" }}>
+    <Box sx={{ width: "100vw", overflowY: "scroll" }}>
       <ImageList variant="masonry" cols={3} gap={8}>
         {itemData.map((item) => (
           <ImageListItem key={item.img}>
@@ -67,8 +67,8 @@ const itemData = [
     img: "https://images.unsplash.com/photo-1597262975002-c5c3b14bbd62",
     title: "Candle",
   },
-  {
-    img: "https://images.unsplash.com/photo-1519710164239-da123dc03ef4",
-    title: "Coffee table",
-  },
+  // {
+  //   img: "https://images.unsplash.com/photo-1519710164239-da123dc03ef4",
+  //   title: "Coffee table",
+  // },
 ];

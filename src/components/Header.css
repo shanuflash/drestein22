@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,600;1,100;1,200;1,300&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300&display=swap");
+
 .container2 {
   margin-top: 0;
   /* display: flex;
@@ -15,6 +16,7 @@
   padding: 10px 10px;
   flex-wrap: wrap;
 }
+
 /* .container img{
       width: 40%;
       border-radius: 10%;
@@ -33,16 +35,18 @@
     opacity: 0.6;
   
   } */
-.nav_items > span {
+.nav_items>span {
   margin-right: 30px;
   padding: 5px;
   font-size: 1rem;
 
   color: white;
 }
+
 .Active {
   border-bottom: 2px solid white;
 }
+
 .nav_items {
   position: relative;
 }
@@ -55,14 +59,16 @@
   color: black;
   max-width: 1000px;
 }
+
 li {
   list-style-type: none;
   margin-right: 2rem;
   font-weight: bolder;
 }
+
 .logo_head {
   display: flex;
-  
+
   width: 250px;
 }
 
@@ -72,6 +78,7 @@ li {
   margin-right: 13px;
   animation: rotation 2s infinite linear;
 }
+
 .event-logo {
   display: flex;
   flex-direction: column;
@@ -80,11 +87,13 @@ li {
   width: 100%;
   margin-top: -10px;
 }
+
 .flex-hcenter {
   justify-content: center;
   margin: 0;
   padding: 0;
 }
+
 .txt-297 {
   font-size: 32px;
   font-family: Montserrat, sans-serif;
@@ -95,6 +104,7 @@ li {
   width: 191px;
   height: 43px;
 }
+
 .txt-384 {
   font-size: 16px;
   font-family: Montserrat, sans-serif;
@@ -111,17 +121,20 @@ li {
   max-width: 400px;
   /* height: 300px; */
 }
+
 .sec_logo {
   border-radius: 5px;
   width: 100%;
   background-color: #dadada;
 }
+
 /* animations  */
 
 @keyframes rotation {
   from {
     transform: rotate(0);
   }
+
   to {
     transform: rotate(359deg);
   }
@@ -137,6 +150,7 @@ li {
   top: 100px;
   z-index: 100;
 }
+
 .header_main_text {
   font-size: 5vw;
 
@@ -149,6 +163,7 @@ li {
 
   max-width: 700px;
 }
+
 .drestein {
   margin-top: 10px;
 
@@ -158,55 +173,67 @@ li {
 .nation {
   margin-top: -60px;
 }
+
 .timer {
   font-size: 96px;
   font-weight: 200;
   padding-left: 60px;
 }
-.timer > span {
+
+.timer>span {
   font-size: 40px;
   font-weight: 200;
 }
+
 .let_1 {
   color: #279fda;
 }
+
 .let_2 {
   color: #5bba47;
 }
+
 .let_3 {
   color: #ff565d;
 }
+
 .let_4 {
   color: #ca3e96;
 }
+
 /* register button-------------- */
 
 .register_now {
   /* position: absolute; */
-  border: 2px solid white;
+  border: 2px solid rgb(0, 0, 0);
 
   /* bottom: 100px; */
-  background: #000000;
+  background: #ffffff;
   font-family: "Poppins", sans-serif;
   text-transform: uppercase;
   text-align: center;
   font-size: 4rem;
-  color: #ffffff;
+  color: #000000;
 
   /* box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset; */
-  padding: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 40px;
+  padding-right: 40px;
   border-radius: 30px;
   cursor: pointer;
   transition: all 0.5s;
   margin: 5px;
 }
-.register_now > span {
+
+.register_now>span {
   cursor: pointer;
   display: inline-block;
   position: relative;
   transition: 0.5s;
 }
-.register_now > span:after {
+
+.register_now>span:after {
   content: "\00bb";
   position: absolute;
   opacity: 0;
@@ -223,6 +250,7 @@ li {
   opacity: 1;
   right: 0;
 }
+
 .main_header {
   display: flex;
   justify-content: space-around;
@@ -232,22 +260,26 @@ li {
   width: 100%;
   height: 100%;
 }
+
 .header_btn {
   position: absolute;
   bottom: 30px;
 }
+
 /* media queries */
 
 @media only screen and (max-width: 800px) {
   .sec_logo {
     width: 80%;
   }
+
   .header_bg {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     top: 80px;
   }
+
   .header_main_text {
     font-size: 60px;
     text-align: left;
@@ -260,28 +292,34 @@ li {
 
     overflow-wrap: break-word;
   }
+
   .register_now {
     box-shadow: none;
     border: 1px solid white;
     font-size: 4vw;
     bottom: 0;
   }
+
   .timer {
     font-size: 10vm;
     margin-top: -70px;
   }
-  .timer > span {
+
+  .timer>span {
     font-size: 10vw;
   }
+
   /* nav ------------- */
   .nav_items {
     display: none;
   }
+
   .container2 {
     flex-direction: column;
     justify-content: space-between;
     height: 150px;
   }
+
   .main_header {
     flex-direction: column;
     align-items: center;

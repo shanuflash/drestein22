@@ -1,6 +1,6 @@
 import React from "react";
 import "../components/DepartMentCard.css";
-import lap from "../laptop.png";
+import lap from "../pc.png";
 function DepartMentCard() {
   return (
     <div class="container">
@@ -15,8 +15,7 @@ function DepartMentCard() {
           </h2>
           <div class="lorem">
             <h3>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </h3>
           </div>
           <a href="#">Events</a>
