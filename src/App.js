@@ -6,7 +6,7 @@ import { useState } from "react";
 import Nav from "./components/NavBar";
 import Main from "./components/Main";
 import { useCallback } from "react";
-import Particles from "react-tsparticles";
+import Particles from "react-particles";
 import { loadFull } from "tsparticles";
 import { motion, useViewportScroll, useTransform } from "framer-motion";
 import { Particalobj } from "./Particalobj";
@@ -24,17 +24,17 @@ function App() {
   const particlesLoaded = useCallback(async (container) => {}, []);
   return (
     <div className="App">
-      {/* <Particles
+      <Particles
         className="particles"
         style={{
           position: "absolute",
-          zIndex: -1000,
+          zIndex: -10000,
         }}
         id="tsparticles"
         init={particlesInit}
         loaded={particlesLoaded}
         options={Particalobj}
-      /> */}
+      />
       <Nav />
       <Main />
       <motion.div className="img" style={{ y: yValue }}></motion.div>

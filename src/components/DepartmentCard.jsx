@@ -1,7 +1,7 @@
 import React from "react";
-import styled from "styled-components";
+// import styled from "styled-components";
 import "../App.css";
-import lap from "../assets/laptop.png";
+// import lap from "../assets/laptop.png";
 
 function DepartmentCard({ img, title, des, color }) {
   const a = title.split(" ");

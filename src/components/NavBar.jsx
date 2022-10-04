@@ -1,7 +1,7 @@
-import React from 'react'
-import styled, { keyframes } from 'styled-components'
-import saveethalogo from '../assets/saveethaLogo.svg'
-import dresteinLogo from '../assets/dresteinLogo.svg'
+import React from "react";
+import styled, { keyframes } from "styled-components";
+import saveethalogo from "../assets/saveethaLogo.svg";
+import dresteinLogo from "../assets/dresteinLogo.svg";
 
 const Navbar = styled.nav`
     display: flex;
@@ -17,7 +17,7 @@ const Navbar = styled.nav`
 
 
  } 
-`
+`;
 const SLogo = styled.img`
      width: 35%;
      height: auto;
@@ -31,7 +31,7 @@ const SLogo = styled.img`
          
  }
 
-`
+`;
 
 const rotate = keyframes`
     from {
@@ -40,11 +40,11 @@ const rotate = keyframes`
     to {
       transform: rotate(360deg);
     }
-  `
+  `;
 
 const DLogo = styled.img`
  width: 15%;
- animation: ${rotate} 2s infinite linear;
+ animation: ${rotate} 4s infinite linear;
  transform-origin:center;
 @media screen and (max-width: 600px){
 
@@ -53,7 +53,7 @@ const DLogo = styled.img`
 
 
 
-` 
+`;
 const LogoHead = styled.div`
       display: flex;
       align-items: center;
@@ -66,7 +66,7 @@ const LogoHead = styled.div`
 
 }
 
-`
+`;
 
 const EventLogo = styled.div`
      display: flex;
@@ -81,7 +81,7 @@ const EventLogo = styled.div`
 
   }
 
-`
+`;
 const DresteinLetter = styled.p`
   font-size: 2.5vw;
   font-family: Montserrat, sans-serif;
@@ -96,7 +96,7 @@ const DresteinLetter = styled.p`
     font-size: 7vw;
 
 }
-`
+`;
 const Year = styled.p`
   font-size: 1vw;
   font-family: Montserrat, sans-serif;
@@ -111,34 +111,28 @@ const Year = styled.p`
 
 
 }
-`
+`;
 
 function Nav() {
-
   return (
     <div>
-
-
-     <Navbar>
-       <SLogo src={saveethalogo}/>
+      <Navbar>
+        <SLogo src={saveethalogo} />
         <LogoHead>
+          <DLogo src={dresteinLogo} alt="DresteinLogo" />
 
-        <DLogo src={dresteinLogo} alt="DresteinLogo" />
-
-
-        < EventLogo>
-          <DresteinLetter color='red'>DRESTEIN</DresteinLetter>
-          <Year>2 0 2 2</Year>
-        </ EventLogo >
-      </LogoHead>
-     </Navbar>
-     {/* <div>
+          <EventLogo>
+            <DresteinLetter color="red">DRESTEIN</DresteinLetter>
+            <Year>2 0 2 2</Year>
+          </EventLogo>
+        </LogoHead>
+      </Navbar>
+      {/* <div>
 
     <Main/>
      </div> */}
     </div>
-  )
+  );
 }
 
-
-export default Nav
+export default Nav;
