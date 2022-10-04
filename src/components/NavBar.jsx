@@ -4,18 +4,15 @@ import saveethalogo from "../assets/saveethaLogo.svg";
 import dresteinLogo from "../assets/dresteinLogo.svg";
 
 const Navbar = styled.nav`
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 1rem;
-
-    width: 100%;
-
- @media screen and (max-width:600px) {
-         flex-direction: column;
-         gap: 20px;
-
-
+  padding-top: 10px; // abcd
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 1rem  
+  width: 100%;
+  @media screen and (max-width:600px) {
+    flex-direction: column;
+    gap: 20px;
  } 
 `;
 const SLogo = styled.img`
@@ -23,14 +20,9 @@ const SLogo = styled.img`
      height: auto;
      background-color: #DADADA;
      border-radius: 10px;
-
      @media screen and (max-width:600px) {
-         width: 90%;
-
-
-         
+         width: 90%;     
  }
-
 `;
 
 const rotate = keyframes`
@@ -47,12 +39,7 @@ const DLogo = styled.img`
  animation: ${rotate} 4s infinite linear;
  transform-origin:center;
 @media screen and (max-width: 600px){
-
 }
-
-
-
-
 `;
 const LogoHead = styled.div`
       display: flex;
@@ -62,10 +49,7 @@ const LogoHead = styled.div`
       justify-content: center;
       @media screen and (max-width: 600px){
       width: 100%;
-
-
 }
-
 `;
 
 const EventLogo = styled.div`
@@ -90,11 +74,9 @@ const DresteinLetter = styled.p`
   color: rgb(255, 255, 255);
   align-self: center;
   text-align: center;
-
   height: auto;
   @media screen and (max-width: 600px){
     font-size: 7vw;
-
 }
 `;
 const Year = styled.p`
@@ -108,8 +90,6 @@ const Year = styled.p`
   margin-left: 1.5em;
   @media screen and (max-width: 600px){
     font-size: 3vw;
-
-
 }
 `;
 
@@ -120,17 +100,12 @@ function Nav() {
         <SLogo src={saveethalogo} />
         <LogoHead>
           <DLogo src={dresteinLogo} alt="DresteinLogo" />
-
           <EventLogo>
             <DresteinLetter color="red">DRESTEIN</DresteinLetter>
             <Year>2 0 2 2</Year>
           </EventLogo>
         </LogoHead>
       </Navbar>
-      {/* <div>
-
-    <Main/>
-     </div> */}
     </div>
   );
 }
