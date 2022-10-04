@@ -8816,6 +8816,19 @@ tsparticles-plugin-polygon-mask@^2.3.3:
   dependencies:
     tsparticles-engine "^2.3.3"
 
+tsparticles-preset-stars@^2.3.3:
+  version "2.3.3"
+  resolved "https://registry.yarnpkg.com/tsparticles-preset-stars/-/tsparticles-preset-stars-2.3.3.tgz#84a65aae11554ecc8a331ad0d1ac1a88131c8fe2"
+  integrity sha512-CtNpi39jA4aAT+6Ka8YAnxFrPJ/IOcCL8WVsxA34ZPtCVECflOuWN5D3aqHg2kFnwwdFY+430uim2YJYvMAEhg==
+  dependencies:
+    tsparticles-engine "^2.3.3"
+    tsparticles-move-base "^2.3.3"
+    tsparticles-shape-circle "^2.3.3"
+    tsparticles-updater-color "^2.3.3"
+    tsparticles-updater-opacity "^2.3.3"
+    tsparticles-updater-out-modes "^2.3.3"
+    tsparticles-updater-size "^2.3.3"
+
 tsparticles-shape-circle@^2.3.3:
   version "2.3.3"
   resolved "https://registry.yarnpkg.com/tsparticles-shape-circle/-/tsparticles-shape-circle-2.3.3.tgz#85971653b7be9d18c3d34bf52ef1dba13b12c5a4"
