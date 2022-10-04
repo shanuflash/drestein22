@@ -1,116 +1,46 @@
 import "./App.css";
 import earth from "./earth.png";
-import seclogo from "./sec_logo.png";
-import Header from "./components/Header";
-import { Parallax, ParallaxLayer } from "@react-spring/parallax";
-import HeaderText from "./components/HeaderText";
+import styled from "styled-components";
+import Departments from "./components/Departments";
 import { useState } from "react";
-import Container from "./components/DepContainer";
-import MasonryImageList from "./components/gallery";
+import Nav from "./components/NavBar";
+import Main from "./components/Main";
+import { useCallback } from "react";
+import Particles from "react-tsparticles";
+import { loadFull } from "tsparticles";
+import { motion, useViewportScroll, useTransform } from "framer-motion";
+import { Particalobj } from "./Particalobj";
+
+const DepartmentDiv = styled.div`
+z-index: -10;
+`;
 
 function App() {
-  const [screenSize, setScreenSize] = useState(window.innerWidth);
-  window.addEventListener("resize", () => {
-    setScreenSize(window.innerWidth);
-  });
-  console.log(screenSize);
+  const { scrollY } = useViewportScroll();
+  const yValue = useTransform(scrollY, [0, 2000], [0, -500]);
+  const particlesInit = useCallback(async (engine) => {
+    await loadFull(engine);
+  }, []);
+  const particlesLoaded = useCallback(async (container) => {}, []);
   return (
     <div className="App">
-      <Parallax pages={4} style={{ backgroundColor: "black" }}>
-        <ParallaxLayer
-          offset={0}
-          speed={screenSize < 800 ? 2.5 : 1}
-          factor={2.5}
-          style={{
-            backgroundImage: `url(${earth})`,
-            backgroundSize: "fill",
-            backgroundPosition: "center",
-            zIndex: "-1",
-          }}
-          className="header"
-        >
-          <Header seclogo={seclogo} />
-        </ParallaxLayer>
-
-        <ParallaxLayer factor={1} offset={0} speed={screenSize < 800 ? 1.5 : 3}>
-          <HeaderText />
-        </ParallaxLayer>
-
-        <ParallaxLayer
-          offset={1}
-          speed={0.5}
-          factor={10}
-          style={{
-            // backgroundImage:`url(${robort})`,
-            // backgroundSize:'contain',
-            // backgroundPosition:'right',
-            zIndex: "-3",
-          }}
-        >
-          <h1 style={{ fontSize: "7rem" }}>Departments</h1>
-          <p></p>
-          <div className="departmemts">
-            {/* <DepartMentCard/>
-            <DepartMentCard/>
-            <DepartMentCard/> */}
-            <Container />
-            <Container />
-            <Container />
-            <Container />
-            <Container />
-            <Container />
-            <Container />
-            <Container />
-          </div>
-        </ParallaxLayer>
-
-        {/* <ParallaxLayer
-          offset={1}
-          speed={-10}
-          factor={1}
-          horizontal
-          style={{
-            backgroundImage: `url(${robort})`,
-            backgroundPosition: "center",
-          }}
-        /> */}
-
-        <ParallaxLayer offset={2} speed={2}>
-          <h1 style={{ fontSize: "7rem" }}>Gallery</h1>
-          <MasonryImageList />
-        </ParallaxLayer>
-
-        <ParallaxLayer
-          offset={2}
-          speed={-12}
-          factor={3}
-          horizontal
-          style={{
-            backgroundColor: "white",
-            borderRadius: "50%",
-          }}
-        >
-          <ParallaxLayer
-            offset={2}
-            speed={-4}
-            factor={3}
-            horizontal
-            style={{
-              zIndex: "100",
-            }}
-          >
-            <h1 className="parallel_layer_gal">
-              Win exciting prizes! 🎉 <br></br> For a total worth of 10 lakhs
-              <br></br>Sample text Sample text Sample text Sample text Sample
-              text.{" "}
-            </h1>
-          </ParallaxLayer>
-        </ParallaxLayer>
-
-        <ParallaxLayer offset={3.3} speed={0.5}>
-          <h1 style={{ fontSize: "7rem", zIndex: "-4" }}>About</h1>
-        </ParallaxLayer>
-      </Parallax>
+      {/* <Particles
+        className="particles"
+        style={{
+          position: "absolute",
+          zIndex: -1000,
+        }}
+        id="tsparticles"
+        init={particlesInit}
+        loaded={particlesLoaded}
+        options={Particalobj}
+      /> */}
+      <Nav />
+      <Main />
+      <motion.div className="img" style={{ y: yValue }}></motion.div>
+      <DepartmentDiv>
+        <Departments />
+      </DepartmentDiv>
     </div>
   );
 }

@@ -1,74 +1,228 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,600;1,100;1,200;1,300&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300&display=swap");
+@import url(https://fonts.googleapis.com/css?family=Exo+2:200i);
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
 * {
+
+  padding: 0;
+  margin: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
-.App {
-  text-align: center;
+body {
+  background-color: black;
   color: white;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-/* style={{display:'flex',justifyContent:'space-between',alignItems:'top',padding:'30px',Maxwidth:'100vw',height:'100%',background:'red',flexWrap:'wrap',height:'100vh'} */
-.departmemts {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: flex-start;
-  margin: 0 auto;
-  flex-wrap: wrap;
-  max-width: 100vw;
-  min-height: 100vbh;
-  /* padding: 40px; */
-}
-
-.parallel_layer_gal {
+.img {
+  background: url('../src/assets/earth.png');
+  width: 100vw;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center 50%;
+  background-size: contain;
   position: absolute;
-  color: rgb(0, 0, 0);
-  top: 57%;
-  right: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 6rem;
+  top: 50vh;
+  /* z-index: -1; */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-/* header*/
-@media only screen and (max-width: 600px) {
-  .header {
+@media screen and (max-width:600px) {
+  .img {
     z-index: -1;
-    background-size: contain;
-    background-position: center top;
+  }
+}
+
+/* register now btn */
+.span_btn {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.span_btn::after {
+  content: "\00bb";
+  position: absolute;
+  color: black;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 40px;
+}
+
+.button:hover span::after {
+  opacity: 1;
+  right: 0;
+}
+
+/* departments card */
+
+.container .card {
+  position: relative;
+  width: 320px;
+  height: 450px;
+  background: #ffffff;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.container .card:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #1985ff;
+  clip-path: circle(150px at 80% 20%);
+  transition: 0.5s ease-in-out;
+}
+
+.container .card:hover:before {
+  clip-path: circle(300px at 80% -20%);
+}
+
+.container .card:after {
+  content: "Tech";
+  position: absolute;
+  top: 30%;
+  left: -20%;
+  font-size: 12em;
+  font-weight: 800;
+  font-style: italic;
+  color: rgba(25, 133, 255, 0.15);
+}
+
+.container .card .imgBx {
+  will-change: transform, top;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10000;
+  width: 100%;
+  height: 220px;
+  transition: 0.7s;
+}
+
+.container .card:hover .imgBx {
+  top: 0%;
+  transform: translateY(0%);
+}
+
+.container .card .imgBx img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 270px;
+}
+
+.container .card .contentBx {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  transition: 1s;
+  z-index: 10;
+}
+
+.container .card:hover .contentBx {
+  height: 210px;
+}
+
+.container .card .contentBx h2 {
+  position: relative;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #000;
+  margin: 0;
+}
+
+.container .card .contentBx .lorem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 20px;
+  transition: 0.5s;
+  opacity: 0;
+  visibility: hidden;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.container .card:hover .contentBx .lorem {
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0.2s;
+}
+
+.container .card .contentBx .lorem h3 {
+  color: #000;
+  font-weight: 300;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-right: 10px;
+}
+
+.container .card .contentBx a {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #1985ff;
+  border-radius: 4px;
+  margin-top: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  color: #000;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: 0.5s;
+  margin-top: 0;
+}
+
+.container .card:hover .contentBx a {
+  opacity: 1;
+  transform: translateY(0px);
+  transition-delay: 0.3s;
+}
+
+/* text shine ---- */
+
+.shine {
+  background: rgb(98, 98, 98) gradient(linear, left top, right top, from(#222), to(#222), color-stop(0.5, #fff)) 0 0 no-repeat;
+  background-image: -webkit-linear-gradient(-40deg, transparent 0%, transparent 40%, #fff 50%, transparent 60%, transparent 100%);
+  background-size: 200px;
+  color: rgba(255, 255, 255, 0.3);
+  background-clip: text;
+  animation-name: shine;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  text-shadow: 0 0px 0px rgba(255, 255, 255, 0.5);
+
+}
+
+@keyframes shine {
+
+  0%,
+  10% {
+    background-position: -1000px;
+  }
+
+  20% {
+    background-position: top left;
+  }
+
+  90% {
+    background-position: top right;
+  }
+
+  100% {
+    background-position: 1000px;
   }
 }
