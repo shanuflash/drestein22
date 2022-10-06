@@ -158,20 +158,7 @@ body {
   padding: 10px;
 }
 
-.container .card .contentBx a {
-  display: inline-block;
-  padding: 10px 20px;
-  background: #1985ff;
-  border-radius: 4px;
-  text-decoration: none;
-  font-weight: 600;
-  color: white;
-  opacity: 1;
-  transform: translateY(50px);
-  transition: 0.5s;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 
-}
 
 .container .card:hover .contentBx a {
   opacity: 1;
@@ -222,4 +209,17 @@ body {
   width: 12px !important;
   background-color: black !important;
   border-radius: 0 !important;
+}
+
+
+.s {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+}
+.b{
+  padding: 1rem 2rem;
+  background-color: #fff;
+  color: #000;
 }

@@ -7,9 +7,10 @@ import { loadFull } from "tsparticles";
 import { motion, useViewportScroll, useTransform } from "framer-motion";
 import { Particle } from "./Particle.config";
 import { useScroll } from "framer-motion";
-
+import { useEffect } from "react";
 import Nav from "./components/NavBar";
 import Main from "./components/Main";
+import GAllery from "./components/GAllery";
 import Departments from "./components/Departments";
 
 const DepartmentDiv = styled.div`position: sticky;`;
@@ -23,6 +24,25 @@ function App() {
     await loadFull(engine);
   }, []);
   const particlesLoaded = useCallback(async (container) => {}, []);
+
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      let text = document.querySelector("img");
+      let value = window.scrollY;
+      console.log(value);
+      text.style.transform = "translateY(" + value * 2 + "px)";
+      console.log(value);
+    });
+    return () => {
+      window.removeEventListener("scroll", () => {
+        let value = window.scrollY;
+        console.log(value);
+        //  text.style.transform = "translateY("+value * 2 + "px)";
+        console.log(value);
+      });
+    };
+  }, []);
+
   return (
     <div className="App">
       <motion.div
@@ -38,13 +58,11 @@ function App() {
       /> */}
       <Nav />
       <Main />
-      <motion.div
-        className="img"
-        style={{ y: yValue, zIndex: -1 }}
-      ></motion.div>
+      <div className="img"></div>
       <DepartmentDiv>
         <Departments />
       </DepartmentDiv>
+      <GAllery />
     </div>
   );
 }

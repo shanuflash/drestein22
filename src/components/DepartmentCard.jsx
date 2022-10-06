@@ -45,6 +45,19 @@ function DepartMentCard({ img, title, des, color }) {
     color: rgba(25, 133, 255, 0.15);
     }
 `;
+const Event = styled.a`
+      display: inline-block;
+  padding: 10px 20px;
+  background: ${color};
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 600;
+  color: white;
+  opacity: 1;
+  transform: translateY(50px);
+  transition: 0.5s;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+`;
   return (
     <div className="container">
       <Card className="card">
@@ -75,7 +88,7 @@ function DepartMentCard({ img, title, des, color }) {
             <h3>register now</h3>
           </div>
           <div>
-            <a href="#">Events</a>
+            <Event href="#">Events</Event>
           </div>
         </div>
       </Card>

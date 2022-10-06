@@ -2,6 +2,25 @@ import React from "react";
 import styled from "styled-components";
 import DepartMentCard from "./DepartmentCard";
 
+const Deptbutton = styled.div`
+  margin:1rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+   width:100%;
+   height:auto;
+  `;
+
+const Showmore = styled.button`
+    padding:1rem 2rem;
+  background-color: #fff;
+  color: #000;
+  outline:none;
+  border:none;
+  border-radius:20px;
+  font-size:2rem;
+  `;
+
 const DeptHeader = styled.h1`
     font-size: 10vw;
     display: flex;
@@ -93,6 +112,9 @@ function Departments() {
           return <DepartMentCard {...data} />;
         })}
       </DepartmentContainer>
+      <Deptbutton>
+        <Showmore>Show More</Showmore>
+      </Deptbutton>
     </>
   );
 }
