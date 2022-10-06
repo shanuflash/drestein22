@@ -188,7 +188,7 @@ function Main() {
             </Span>
             ign
             <br />
-            compete<Span let_3>TE</Span> w<Span let_4>IN</Span>
+            compe<Span let_3>TE</Span> w<Span let_4>IN</Span>
           </DresteinText>
           <NationText className="nation ">
             13<sup>th</sup> NATIONAL LEVEL INTER COLLEGIATE TECHNICAL AND
