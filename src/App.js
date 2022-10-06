@@ -41,11 +41,14 @@ function App() {
       />
       <Nav />
       <Main />
-      <div className="img"></div>
+      <motion.div
+        className="img"
+        style={{ y: yValue, zIndex: -1 }}
+      ></motion.div>
       <DepartmentDiv>
         <Departments />
       </DepartmentDiv>
-      <GAllery />
+      <Gallery />
     </div>
   );
 }

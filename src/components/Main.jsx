@@ -175,50 +175,50 @@ const RegisterNow = styled.button`
 // jbljbbkl
 
 function Main() {
-  const [date, setdate] = useState({
-    days: "12",
-    hr: "35",
-    min: "45",
-    sec: "",
-  });
+  // const [date, setdate] = useState({
+  //   days: "12",
+  //   hr: "35",
+  //   min: "45",
+  //   sec: "",
+  // });
 
-  const today = new Date();
-  const eventDay = new Date("November 10, 2022");
-  const msPerDay = 24 * 60 * 60 * 1000;
-  const timeLeft = eventDay.getTime() - today.getTime();
-  const e_daysLeft = timeLeft / msPerDay;
-  const daysLeft = Math.floor(e_daysLeft);
+  // const today = new Date();
+  // const eventDay = new Date("November 10, 2022");
+  // const msPerDay = 24 * 60 * 60 * 1000;
+  // const timeLeft = eventDay.getTime() - today.getTime();
+  // const e_daysLeft = timeLeft / msPerDay;
+  // const daysLeft = Math.floor(e_daysLeft);
 
-  const e_hrsLeft = (e_daysLeft - daysLeft) * 24;
-  const hrsLeft = Math.floor(e_hrsLeft);
+  // const e_hrsLeft = (e_daysLeft - daysLeft) * 24;
+  // const hrsLeft = Math.floor(e_hrsLeft);
 
-  const e_minLeft = (e_hrsLeft - hrsLeft) * 60;
-  const minsLeft = Math.floor(e_minLeft);
+  // const e_minLeft = (e_hrsLeft - hrsLeft) * 60;
+  // const minsLeft = Math.floor(e_minLeft);
 
-  const secLeft = Math.floor((e_minLeft - minsLeft) * 60);
+  // const secLeft = Math.floor((e_minLeft - minsLeft) * 60);
 
-  setInterval(() => {
-    const today = new Date();
-    const eventDay = new Date("November 10, 2022");
-    const msPerDay = 24 * 60 * 60 * 1000;
-    const timeLeft = eventDay.getTime() - today.getTime();
-    const e_daysLeft = timeLeft / msPerDay;
-    const daysLeft = Math.floor(e_daysLeft);
+  // setInterval(() => {
+  //   const today = new Date();
+  //   const eventDay = new Date("November 10, 2022");
+  //   const msPerDay = 24 * 60 * 60 * 1000;
+  //   const timeLeft = eventDay.getTime() - today.getTime();
+  //   const e_daysLeft = timeLeft / msPerDay;
+  //   const daysLeft = Math.floor(e_daysLeft);
 
-    const e_hrsLeft = (e_daysLeft - daysLeft) * 24;
-    const hrsLeft = Math.floor(e_hrsLeft);
+  //   const e_hrsLeft = (e_daysLeft - daysLeft) * 24;
+  //   const hrsLeft = Math.floor(e_hrsLeft);
 
-    const e_minLeft = (e_hrsLeft - hrsLeft) * 60;
-    const minsLeft = Math.floor(e_minLeft);
+  //   const e_minLeft = (e_hrsLeft - hrsLeft) * 60;
+  //   const minsLeft = Math.floor(e_minLeft);
 
-    const secLeft = Math.floor((e_minLeft - minsLeft) * 60);
-    setdate({
-      days: daysLeft,
-      hr: hrsLeft,
-      min: minsLeft,
-      sec: secLeft,
-    });
-  }, 1000);
+  //   const secLeft = Math.floor((e_minLeft - minsLeft) * 60);
+  //   setdate({
+  //     days: daysLeft,
+  //     hr: hrsLeft,
+  //     min: minsLeft,
+  //     sec: secLeft,
+  //   });
+  // }, 1000);
 
   return (
     <MainHeader className="main_header">
@@ -242,12 +242,12 @@ function Main() {
           </NationText>
         </HeaderMainText>
         <Timer className="timer">
-          <Span bold>{date.days}</Span>
-          <Span timer>days</Span> <Span bold>{date.hr}</Span>
+          <Span bold>24</Span>
+          <Span timer>days</Span> <Span bold>15</Span>
           <Span timer>hrs</Span>
-          <br /> <Span bold>{date.min}</Span>
+          <br /> <Span bold>56</Span>
           <Span timer>mins</Span>
-          <Span bold>{date.sec}</Span>
+          <Span bold>5</Span>
           <Span timer>sec</Span>
         </Timer>
       </HeaderBg>
