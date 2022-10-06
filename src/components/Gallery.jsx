@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 // import styled
 
-const GAllery = () => {
+const Gallery = () => {
   return <GalleryHead>gallery</GalleryHead>;
 };
 const GalleryHead = styled.h1`
@@ -10,8 +10,6 @@ const GalleryHead = styled.h1`
     display: flex;
     justify-content: center;
     align-items: center;
-
-
 `;
 
-export default GAllery;
+export default Gallery;

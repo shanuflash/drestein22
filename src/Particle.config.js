@@ -2,7 +2,7 @@ export const Particle = {
   fpsLimit: 10,
   particles: {
     number: {
-      value: 60,
+      value: 125,
       density: {
         enable: true,
         value_area: 800,
@@ -37,7 +37,7 @@ export const Particle = {
       },
     },
     size: {
-      value: 3,
+      value: 2.5,
       random: true,
       anim: {
         enable: true,
