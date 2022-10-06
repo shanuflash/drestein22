@@ -1,8 +1,6 @@
 import React from "react";
-import styled from "styled-components";
-import { css } from "styled-components";
+import styled, { css } from "styled-components";
 import "../App.css";
-import { useState } from "react";
 import Timer from "./Timer";
 
 const MainHeader = styled.div`
@@ -13,9 +11,7 @@ const MainHeader = styled.div`
   width: 100vw;
   min-height: 100vh;
   color: white;
-  margin-top: 2.5rem;
-
-  
+  margin-top: 2.5rem;  
   @media screen and (max-width: 600px) {
     /* background:rgba(0, 0, 0, 0.3); */
     /* z-index: -100; */
@@ -114,8 +110,9 @@ const Span = styled.span`
     css`
       font-weight: 200;
     `}
-`;
+/* . */
 
+`;
 const NationText = styled.div`
   text-align: center;
   margin: 10px;

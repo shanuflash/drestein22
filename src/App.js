@@ -11,7 +11,6 @@ import Nav from "./components/NavBar";
 import Main from "./components/Main";
 import Gallery from "./components/Gallery";
 import Departments from "./components/Departments";
-import Timer from "./components/Timer";
 
 const DepartmentDiv = styled.div`position: sticky;`;
 

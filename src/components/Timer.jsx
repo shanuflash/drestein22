@@ -1,7 +1,7 @@
 import React from "react";
 import "../App.css";
 import { CountDownDaily } from "@nilevia/count-down-timer-react";
-
+    
 const Timer = () => {
   return (
     <div className="time">
