@@ -1,18 +1,17 @@
 import "./App.css";
 import styled from "styled-components";
-import { useState } from "react";
 import { useCallback } from "react";
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
 import { motion, useViewportScroll, useTransform } from "framer-motion";
 import { Particle } from "./Particle.config";
 import { useScroll } from "framer-motion";
-import { useEffect } from "react";
 
 import Nav from "./components/NavBar";
 import Main from "./components/Main";
 import Gallery from "./components/Gallery";
 import Departments from "./components/Departments";
+import Timer from "./components/Timer";
 
 const DepartmentDiv = styled.div`position: sticky;`;
 

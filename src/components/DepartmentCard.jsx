@@ -1,11 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import "../App.css";
-import lap from "../assets/laptop.png";
-
-const DeptImage = styled.img`
-  border-radius: 20px;
-`;
 
 function DepartMentCard({ img, title, des, color }) {
   const a = title.split(" ");
@@ -45,7 +40,7 @@ function DepartMentCard({ img, title, des, color }) {
     color: rgba(25, 133, 255, 0.15);
     }
 `;
-const Event = styled.a`
+  const Event = styled.a`
       display: inline-block;
   padding: 10px 20px;
   background: ${color};
@@ -76,6 +71,7 @@ const Event = styled.a`
               objectFit: "cover",
             }}
             src={img}
+            alt="dept-img"
           />
         </div>
         <div className="contentBx">
