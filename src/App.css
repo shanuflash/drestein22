@@ -107,6 +107,7 @@ body {
   position: absolute;
   bottom: 0;
   width: 100%;
+  margin: 0, 20%;
   height: 100px;
   text-align: center;
   transition: 1s;
@@ -115,18 +116,6 @@ body {
 
 .container .card:hover .contentBx {
   height: 175px;
-}
-
-.container .card .contentBx h2 {
-  position: relative;
-  font-weight: 600;
-  font-family: poppins;
-  padding: 0px 20px;
-  font-size: 20px;
-  max-height: 100px;
-  letter-spacing: 1px;
-  color: #000;
-  margin: 0;
 }
 
 .container .card .contentBx .lorem {
@@ -215,16 +204,7 @@ body {
 
 
 .s {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 2rem;
-}
-
-.b {
-  padding: 1rem 2rem;
-  background-color: #fff;
-  color: #000;
+  background-color: #37c0ff #67ff45 #ff3b41 #ff6d41 #ff58c2
 }
 
 .time {

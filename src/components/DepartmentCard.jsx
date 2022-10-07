@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import "../App.css";
 
-function DepartMentCard({ img, title, des, color }) {
+function DepartMentCard({ img, title, des, color, bgtext }) {
   const a = title.split(" ");
   console.log(a);
   const Card = styled.div`
@@ -13,31 +13,31 @@ function DepartMentCard({ img, title, des, color }) {
     border-radius: 20px;
     overflow: hidden;
     z-index: 100;
-    &::before{
+    &::before {
       content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: ${color};
-    clip-path: circle(150px at 80% 20%);
-    transition: 0.7s ease all;
-    }
-    &:hover {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: ${color};
+      clip-path: circle(150px at 80% 20%);
+      transition: 0.7s ease all;
+    } &:hover {
       &::before{
         clip-path: circle(300px at 80% -20%);
       }
     }
     &::after{
-    content: "saveetha";
+    content: "${bgtext}";
+    opacity: 0.3;
     position: absolute;
-    top: 55%;
-    left: 20%;
-    font-size: 3em;
+    top: 40%;
+    left: -20%;
+    font-size: 12em;
     font-weight: 800;
     font-style: italic;
-    color: rgba(25, 133, 255, 0.15);
+    color: ${color};
     }
 `;
   const Event = styled.a`
@@ -53,6 +53,25 @@ function DepartMentCard({ img, title, des, color }) {
   transition: 0.5s;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 `;
+
+  const Title = styled.div`
+  /* display: inline-block;
+  margin-left: 20%;
+  margin-right: 20%; */
+  position: relative;
+  /* background-color: #fff; */
+  /* border-radius: 10px; */
+  /* padding: 2rem 2rem; */
+  font-weight: 600;
+  font-family: poppins;
+  padding: 10px 20px;
+  font-size: 20px;
+  max-height: 200px;
+  letter-spacing: 1px;
+  color: #000;
+  margin: 0;
+`;
+
   return (
     <div className="container">
       <Card className="card">
@@ -60,7 +79,6 @@ function DepartMentCard({ img, title, des, color }) {
           class="imgBx"
           style={{
             width: "100%",
-
             maxHeight: "150px",
             margin: "20px 0",
           }}
@@ -75,14 +93,14 @@ function DepartMentCard({ img, title, des, color }) {
           />
         </div>
         <div className="contentBx">
-          <h2>
+          <Title>
             {a[0]}
             <br />
             {a[1]}
-          </h2>
-          <div className="lorem">
+          </Title>
+          {/* <div className="lorem">
             <h3>register now</h3>
-          </div>
+          </div> */}
           <div>
             <Event href="#">Events</Event>
           </div>
