@@ -1,7 +1,10 @@
 import React from "react";
-import styled, { css } from "styled-components";
+import styled from "styled-components";
+import { css } from "styled-components";
 import "../App.css";
-import Timer from "./Timer";
+import { useState } from "react";
+import { animate, motion, Variant } from "framer-motion";
+import FlipCountdown from "@rumess/react-flip-countdown";
 
 const MainHeader = styled.div`
   display: flex;
@@ -10,12 +13,16 @@ const MainHeader = styled.div`
   align-items: center;
   width: 100vw;
   min-height: 100vh;
+  position: relative;
   color: white;
-  margin-top: 2.5rem;  
+
+  /* margin-top: 0rem; */
+
+  
   @media screen and (max-width: 600px) {
     /* background:rgba(0, 0, 0, 0.3); */
     /* z-index: -100; */
-    margin-top: -10px;
+    /* margin-top: -10px; */
   }
 `;
 const HeaderBg = styled.div`
@@ -24,7 +31,7 @@ const HeaderBg = styled.div`
   justify-content: center;
 
   min-height: 10px;
-  margin: 3em;
+  margin-top: 1rem;
   width: 100%;
 
   @media screen and (max-width: 600px) {
@@ -42,6 +49,7 @@ const HeaderMainText = styled.div`
   align-items: center;
   width: 50%;
 
+
   @media screen and (max-width: 600px) {
     border: none;
     width: 100%;
@@ -50,7 +58,7 @@ const HeaderMainText = styled.div`
   }
 `;
 const DresteinText = styled.p`
-  line-height: 1em;
+  line-height: 1.2em;
   font-size: 5vw;
   text-align: center;
   width: 80%;
@@ -110,9 +118,10 @@ const Span = styled.span`
     css`
       font-weight: 200;
     `}
-/* . */
+  /* ..sss */
 
 `;
+
 const NationText = styled.div`
   text-align: center;
   margin: 10px;
@@ -128,7 +137,7 @@ const NationText = styled.div`
     padding: 5px;
   }
 `;
-const Timerdiv = styled.div`
+const Timer = styled.div`
   font-size: 5.5rem;
   text-align: center;
   width: 40%;
@@ -138,8 +147,17 @@ const Timerdiv = styled.div`
   }
 `;
 const HeaderBtn = styled.div`
+/* display: flex;
+justify-content:center;
+align-items: center; */
+background-color: red;
+display: flex;
+justify-content: center;
+
+width: 100%;
     @media screen and (min-width:600px) {
-        margin-top: 100px;
+          
+
     }
 `;
 const HoverSpan = styled.span``;
@@ -147,7 +165,7 @@ const HoverSpan = styled.span``;
 const RegisterNow = styled.button`
   color: black;
   font-size: 4vw;
-
+  background-color: white;
   border: none;
   
   text-transform: uppercase;
@@ -155,30 +173,69 @@ const RegisterNow = styled.button`
   padding: 1rem;
   transition: all 0.5s;
   font-family: "Poppins", sans-serif;
-  text-align: center;
+
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
     rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
   cursor: pointer;
   transition: all 0.5s;
-  margin: 5px;
+  margin-top: 2em;
 
   @media screen and (max-width: 600px) {
     font-size: 7vw;
-    width: 100%;
-  }
-  /* @media screen  and (max-width: 400px){
+    width: 80%;
 
-     bottom: 3em;
-} */
+
+
+  }
+
 `;
-// jbljbbkl
 
 function Main() {
+  const device = window.innerWidth;
+
+  const rn = {
+    offscreen: { x: -1000 },
+    onscreen: {
+      x: 0,
+      rotate: 360,
+      transition: {
+        type: "spring",
+        bounce: 0.4,
+        duration: 2.5,
+      },
+    },
+  };
+  const text = {
+    offscreen: { y: 100, opacity: 0 },
+    onscreen: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        type: "spring",
+        bounce: 0.4,
+        duration: 2,
+      },
+    },
+  };
+
   return (
-    <MainHeader className="main_header">
-      <HeaderBg className="header_bg  ">
-        <HeaderMainText className="header_main_text ">
-          <DresteinText className="drestein">
+    <MainHeader id="Main" className="main_header">
+      <HeaderBg
+        as={motion.div}
+        initial="offscreen"
+        whileInView="onscreen"
+        viewport={{ once: false, amount: 0.5 }}
+        transition={{
+          staggerChildren: 0.5,
+        }}
+        className="header_bg  "
+      >
+        <HeaderMainText
+          as={motion.div}
+          variants={text}
+          className="header_main_text "
+        >
+          <DresteinText as={motion.div} variants={text} className="drestein">
             <Span let_1 className="shine">
               DR
             </Span>
@@ -190,20 +247,39 @@ function Main() {
             <br />
             compe<Span let_3>TE</Span> w<Span let_4>IN</Span>
           </DresteinText>
-          <NationText className="nation ">
+
+          <NationText as={motion.div} variants={text} className="nation ">
             13<sup>th</sup> NATIONAL LEVEL INTER COLLEGIATE TECHNICAL AND
             MANAGEMENT FEST
           </NationText>
         </HeaderMainText>
-        <Timerdiv className="timer">
-          <Timer />
-        </Timerdiv>
+        <Timer className="timer">
+          <div style={{}}>
+            <FlipCountdown
+              dayTitle="Days"
+              hourTitle="Hours"
+              minuteTitle="Minutes"
+              secondTitle="Seconds"
+              hideYear
+              hideMonth
+              size={device < 800 ? "small" : "medium"}
+              theme="dark"
+              endAtZero
+              endAt={"2022-11-09 01:26:58"} // Date/Time
+            />
+          </div>
+        </Timer>
       </HeaderBg>
-      <HeaderBtn className="header_btn">
-        <RegisterNow className="button">
-          <HoverSpan className="span_btn">register now</HoverSpan>
-        </RegisterNow>
-      </HeaderBtn>
+      {/* <HeaderBtn as={motion.div}    
+        initial={"offscreen"}
+        animate={"onscreen"}
+           variants={rn}   className="header_btn" > */}
+
+      <RegisterNow className="button">
+        <HoverSpan className="span_btn">register now</HoverSpan>
+      </RegisterNow>
+
+      {/* </HeaderBtn> */}
     </MainHeader>
   );
 }

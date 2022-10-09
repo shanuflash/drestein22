@@ -2,17 +2,23 @@ import React from "react";
 import styled, { keyframes } from "styled-components";
 import saveethalogo from "../assets/saveethaLogo.svg";
 import dresteinLogo from "../assets/dresteinLogo.svg";
-
+import Mobilenav from "./Mobilenav";
+import "../styles/HambBurger.css";
 const Navbar = styled.nav`
-  padding-top: 10px; // abcd
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin-top: 1rem  
-  width: 100%;
-  @media screen and (max-width:600px) {
-    flex-direction: column;
-    gap: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem 0 0 1rem;
+    
+
+    width: 100%;
+
+ @media screen and (max-width:600px) {
+         flex-direction: column;
+         gap: 20px;
+         padding-left: 0;
+
+
  } 
 `;
 const SLogo = styled.img`
@@ -20,9 +26,14 @@ const SLogo = styled.img`
      height: auto;
      background-color: #DADADA;
      border-radius: 10px;
+
      @media screen and (max-width:600px) {
-         width: 90%;     
+         width: 90%;
+
+
+         
  }
+
 `;
 
 const rotate = keyframes`
@@ -35,21 +46,36 @@ const rotate = keyframes`
   `;
 
 const DLogo = styled.img`
- width: 15%;
+  width: 20%;
+  margin-right: 10px;
  animation: ${rotate} 4s infinite linear;
  transform-origin:center;
 @media screen and (max-width: 600px){
+  width: 16%;
 }
+
+
+
+
 `;
 const LogoHead = styled.div`
       display: flex;
+      flex-direction: row;
       align-items: center;
-      width: 35%;
-
+    
+     
+      /* background-color: green; */
       justify-content: center;
+
+
+
       @media screen and (max-width: 600px){
       width: 100%;
+
+
+
 }
+
 `;
 
 const EventLogo = styled.div`
@@ -58,8 +84,8 @@ const EventLogo = styled.div`
 
   justify-content: center;
   align-items: center;
-  width: 50%;
-  /* background-color: red; */
+  min-width: 100px;
+  /* background-color: blue; */
 
   @media screen and (max-width: 600px) {
 
@@ -74,9 +100,11 @@ const DresteinLetter = styled.p`
   color: rgb(255, 255, 255);
   align-self: center;
   text-align: center;
+
   height: auto;
   @media screen and (max-width: 600px){
     font-size: 7vw;
+
 }
 `;
 const Year = styled.p`
@@ -90,23 +118,66 @@ const Year = styled.p`
   margin-left: 1.5em;
   @media screen and (max-width: 600px){
     font-size: 3vw;
+
+
 }
+`;
+
+const NavHead = styled.ul`
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 50%;
+
+
+  @media screen and (max-width: 600px) {
+  display: none;
+  
+}
+`;
+const NavItem = styled.li`
+cursor: pointer;
+text-decoration: none;
+
+`;
+const MobileNavHeader = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+
+
+
+
 `;
 
 function Nav() {
   return (
-    <div>
+    <nav>
       <Navbar>
         <SLogo src={saveethalogo} />
-        <LogoHead>
-          <DLogo src={dresteinLogo} alt="DresteinLogo" />
-          <EventLogo>
-            <DresteinLetter color="red">DRESTEIN</DresteinLetter>
-            <Year>2 0 2 2</Year>
-          </EventLogo>
-        </LogoHead>
+
+        <NavHead>
+          <NavItem>Home</NavItem>
+          <NavItem>Departments</NavItem>
+          <NavItem>Gallery</NavItem>
+          <NavItem>About</NavItem>
+        </NavHead>
+        <MobileNavHeader>
+          <Mobilenav />
+
+          <LogoHead>
+            <DLogo src={dresteinLogo} alt="DresteinLogo" />
+
+            <EventLogo>
+              <DresteinLetter color="red">DRESTEIN</DresteinLetter>
+              <Year>2 0 2 2</Year>
+            </EventLogo>
+          </LogoHead>
+        </MobileNavHeader>
       </Navbar>
-    </div>
+    </nav>
   );
 }
 

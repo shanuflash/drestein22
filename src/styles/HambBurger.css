@@ -1,0 +1,13 @@
+.onlyshow{
+  display: none;
+}
+@media screen and (max-width:600px) {
+  .onlyshow{
+    display: inline;
+    position: sticky;
+    top: 0;
+    
+  
+    
+  }
+}

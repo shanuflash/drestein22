@@ -1,0 +1,95 @@
+/* departments card */
+
+.container {
+  overflow: hidden;
+  color: #000;
+}
+
+.container .card .imgBx {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10000;
+  width: 100%;
+  height: 220px;
+  transition: 0.5s;
+  will-change: transform;
+}
+
+.container .card:hover .imgBx {
+  /* top: 0%; */
+  transform: translateY(-90%);
+}
+
+.container .card .imgBx img {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 270px;
+  max-height: 150px;
+  object-fit: contain;
+}
+
+.container .card .contentBx {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  margin: 0, 20%;
+  height: 100px;
+  text-align: center;
+  transition: 1s;
+  z-index: 10;
+}
+
+.container .card:hover .contentBx {
+  height: 175px;
+}
+
+.container .card .contentBx .lorem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.container .card:hover .contentBx .lorem {
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0.5s;
+}
+
+.container .card .contentBx .lorem h3 {
+  color: #000;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  letter-spacing: 2px;
+  margin-right: 10px;
+  margin-top: 10px;
+  font-weight: 500;
+  border: 1px solid #1985ff;
+  color: #1985ff;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  border-radius: 20px 0px 20px 0px;
+  padding: 10px;
+}
+
+
+
+.container .card:hover .contentBx a {
+  opacity: 1;
+  transform: translateY(13px);
+  transition-delay: 0.5s;
+}
+
+.DeptHead {
+  font-size: 8vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: poppins, sans-serif;
+}

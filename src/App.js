@@ -1,35 +1,77 @@
+import React, { useRef, useEffect, useState } from "react";
+// import { gsap } from "gsap";
+
 import "./App.css";
-import styled from "styled-components";
-import { useCallback } from "react";
+// import '../src/styles/Gallery.scss'
+// import Gallery from './component/Gallery';
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
-import { motion, useViewportScroll, useTransform } from "framer-motion";
-import { Particle } from "./Particle.config";
-import { useScroll } from "framer-motion";
+import ImageGallery from "./component/Gallery";
+import Nav from "../src/component/Nav";
+import Main from "../src/component/Main";
+import { useCallback } from "react";
+import { Particle } from "./configsFiles/partical.config";
+import "./styles/astroid.css";
+import styled from "styled-components";
+import Departments from "./component/Departments";
+import About from "./component/About";
+import { motion, useScroll, useTransform } from "framer-motion";
+import Guest from "./component/Guest";
+import Footer from "./component/Footer";
 
-import Nav from "./components/NavBar";
-import Main from "./components/Main";
-import Gallery from "./components/Gallery";
-import Departments from "./components/Departments";
+const DepartmentDiv = styled.div`
+position: sticky;
+`;
 
-const DepartmentDiv = styled.div`position: sticky;`;
-
-function App() {
-  const { scrollY } = useViewportScroll();
-  const yValue = useTransform(scrollY, [0, 1000], [0, -300]);
+const App = () => {
+  const parallex = useRef(null);
+  const scroll = useRef(null);
+  const [background, setBackground] = useState("#262626");
+  const headerRef = useRef(null);
+  const { scrollY } = useScroll();
+  const MValue = useTransform(scrollY, [0, 1000], [0, -200]);
+  const DValue = useTransform(scrollY, [0, 1000], [0, -500]);
   const { scrollYProgress } = useScroll();
-
+  const DeviceSize = window.innerWidth;
   const particlesInit = useCallback(async (engine) => {
     await loadFull(engine);
   }, []);
   const particlesLoaded = useCallback(async (container) => {}, []);
 
+  const parallexFun = () => {
+    window.requestAnimationFrame(() => {
+      var pos = window.pageYOffset * parallex.current.dataset.rate;
+      if (parallex.current.dataset.direction === "vertical") {
+        parallex.current.style.transform =
+          "translate3d(0px ," + pos + "px" + ",0px)";
+      } else {
+        var posX = window.pageYOffset * parallex.current.dataset.ratex;
+        var posY = window.pageYOffset * parallex.current.dataset.ratey;
+        parallex.current.style.transform =
+          "translate3d(" + posX + "px," + posY + "px,0px)";
+      }
+    });
+  };
+
   return (
-    <div className="App">
+    <div ref={scroll}>
       <motion.div
         className="scrollprogress"
         style={{ scaleX: scrollYProgress }}
       />
+
+      <div className="meteors">
+        <div className="meteor"></div>
+        <div className="meteor"></div>
+        <div className="meteor"></div>
+        <div className="meteor"></div>
+        <div className="meteor"></div>
+        <div className="meteor"></div>
+        <div className="meteor"></div>
+        <div className="meteor"></div>
+        <div className="meteor"></div>
+        <div className="meteor"></div>
+      </div>
       <Particles
         className="particles"
         id="tsparticles"
@@ -41,14 +83,27 @@ function App() {
       <Main />
       <motion.div
         className="img"
-        style={{ y: yValue, zIndex: -1 }}
+        style={{ y: DeviceSize < 800 ? MValue : DValue, zIndex: -1 }}
       ></motion.div>
-      <DepartmentDiv>
+
+      <DepartmentDiv id="Departments">
         <Departments />
       </DepartmentDiv>
-      <Gallery />
+      <div>
+        <ImageGallery />
+      </div>
+
+      <div>
+        <About />
+      </div>
+      <div>
+        <Guest />
+      </div>
+      <div>
+        <Footer />
+      </div>
     </div>
   );
-}
+};
 
 export default App;

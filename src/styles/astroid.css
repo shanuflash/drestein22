@@ -1,0 +1,345 @@
+* {
+    box-sizing: border-box;
+
+  }
+  body{
+    overflow-x: hidden;
+  }
+  .meteor {
+    border: 2px solid transparent;
+    border-bottom: 60px solid #fff;
+    position: absolute;
+    transform-origin: top right;
+    animation: shower 0.5s;
+    opacity: 0;
+  }
+  .meteor:after {
+    content: '';
+    position: absolute;
+    top: 58px;
+    left: 50%;
+    height: 4px;
+    width: 4px;
+    border-radius: 100%;
+    background: #fff;
+    transform: translateX(-50%);
+    box-shadow: 0 0 15px 0 #fff;
+  }
+  
+  .star:nth-child(0) {
+    height: 1px;
+    width: 1px;
+    opacity: 0.148141641618454;
+    left: 53vw;
+    top: 52vh;
+  }
+  .star:nth-child(1) {
+    height: 2px;
+    width: 2px;
+    opacity: 0.166774771926132;
+    left: 46vw;
+    top: 44vh;
+  }
+  .star:nth-child(2) {
+    height: 1px;
+    width: 1px;
+    opacity: 0.563487869877466;
+    left: 46vw;
+    top: 23vh;
+  }
+  .star:nth-child(3) {
+    height: 3px;
+    width: 3px;
+    opacity: 0.277400164626338;
+    left: 97vw;
+    top: 55vh;
+  }
+  .star:nth-child(4) {
+    height: 3px;
+    width: 3px;
+    opacity: 0.821650684521281;
+    left: 81vw;
+    top: 61vh;
+  }
+  .star:nth-child(5) {
+    height: 2px;
+    width: 2px;
+    opacity: 0.822584019417093;
+    left: 95vw;
+    top: 76vh;
+  }
+  .star:nth-child(6) {
+    height: 1px;
+    width: 1px;
+    opacity: 0.593158569603291;
+    left: 73vw;
+    top: 59vh;
+  }
+  .star:nth-child(7) {
+    height: 4px;
+    width: 4px;
+    opacity: 0.590871095697147;
+    left: 36vw;
+    top: 80vh;
+  }
+  .star:nth-child(8) {
+    height: 1px;
+    width: 1px;
+    opacity: 0.912128077783102;
+    left: 39vw;
+    top: 41vh;
+  }
+  .star:nth-child(9) {
+    height: 2px;
+    width: 2px;
+    opacity: 0.903461262351867;
+    left: 77vw;
+    top: 48vh;
+  }
+  .star:nth-child(10) {
+    height: 1px;
+    width: 1px;
+    opacity: 0.836417221915254;
+    left: 90vw;
+    top: 0vh;
+  }
+  .star:nth-child(11) {
+    height: 2px;
+    width: 2px;
+    opacity: 0.394413338025075;
+    left: 99vw;
+    top: 47vh;
+  }
+  .star:nth-child(12) {
+    height: 3px;
+    width: 3px;
+    opacity: 0.633076708146739;
+    left: 46vw;
+    top: 50vh;
+  }
+  .star:nth-child(13) {
+    height: 1px;
+    width: 1px;
+    opacity: 0.552140281123193;
+    left: 31vw;
+    top: 74vh;
+  }
+  .star:nth-child(14) {
+    height: 4px;
+    width: 4px;
+    opacity: 0.669579125974869;
+    left: 66vw;
+    top: 4vh;
+  }
+  .star:nth-child(15) {
+    height: 3px;
+    width: 3px;
+    opacity: 0.952082637163212;
+    left: 71vw;
+    top: 25vh;
+  }
+  .star:nth-child(16) {
+    height: 1px;
+    width: 1px;
+    opacity: 0.885708985492508;
+    left: 88vw;
+    top: 47vh;
+  }
+  .star:nth-child(17) {
+    height: 2px;
+    width: 2px;
+    opacity: 0.647454116303852;
+    left: 61vw;
+    top: 98vh;
+  }
+  .star:nth-child(18) {
+    height: 1px;
+    width: 1px;
+    opacity: 0.348942151358224;
+    left: 17vw;
+    top: 60vh;
+  }
+  .star:nth-child(19) {
+    height: 2px;
+    width: 2px;
+    opacity: 0.71665433811804;
+    left: 27vw;
+    top: 63vh;
+  }
+  .star:nth-child(20) {
+    height: 3px;
+    width: 3px;
+    opacity: 0.24130647927412;
+    left: 21vw;
+    top: 50vh;
+  }
+  .meteor:nth-child(0) {
+    left: 39vw;
+    top: 96vh;
+    animation-delay: 10s;
+  }
+  .meteor:nth-child(1) {
+    left: 67vw;
+    top: 27vh;
+    animation-delay: 9s;
+  }
+  .meteor:nth-child(2) {
+    left: 81vw;
+    top: 0vh;
+    animation-delay: 10s;
+  }
+  .meteor:nth-child(3) {
+    left: 63vw;
+    top: 54vh;
+    animation-delay: 10s;
+  }
+  .meteor:nth-child(4) {
+    left: 0vw;
+    top: 16vh;
+    animation-delay: 12s;
+  }
+  .meteor:nth-child(5) {
+    left: 10vw;
+    top: 6vh;
+    animation-delay: 5s;
+  }
+  .meteor:nth-child(6) {
+    left: 98vw;
+    top: 70vh;
+    animation-delay: 15s;
+  }
+  .meteor:nth-child(7) {
+    left: 56vw;
+    top: 84vh;
+    animation-delay: 14s;
+  }
+  .meteor:nth-child(8) {
+    left: 15vw;
+    top: 98vh;
+    animation-delay: 13s;
+  }
+  .meteor:nth-child(9) {
+    left: 79vw;
+    top: 63vh;
+    animation-delay: 5s;
+  }
+  .meteor:nth-child(10) {
+    left: 52vw;
+    top: 33vh;
+    animation-delay: 12s;
+  }
+  /* body {
+    overflow: hidden;
+    background: radial-gradient(ellipse farthest-corner at 10vw 95vw, #111 0%, #222 50%, #111 95%);
+  } */
+  /* body:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 30vw;
+    height: 10vh;
+    left: 0;
+    background: #000;
+    z-index: 1;
+    border-radius: 50% 50% 0 0;
+  } */
+  /* body:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 80vw;
+    height: 15vh;
+    background: #000;
+    z-index: 1;
+    border-radius: 50% 50% 0 0;
+  } */
+  @-moz-keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @-webkit-keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @-o-keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @-moz-keyframes shower {
+    0% {
+      transform: rotate(30deg) scaleY(0);
+      opacity: 0;
+    }
+    65% {
+      transform: rotate(30deg) scaleY(1);
+      opacity: 1;
+    }
+    100% {
+      transform: rotate(30deg) scaleY(1) translateY(500%);
+      opacity: 0;
+    }
+  }
+  @-webkit-keyframes shower {
+    0% {
+      transform: rotate(30deg) scaleY(0);
+      opacity: 0;
+    }
+    65% {
+      transform: rotate(30deg) scaleY(1);
+      opacity: 1;
+    }
+    100% {
+      transform: rotate(30deg) scaleY(1) translateY(500%);
+      opacity: 0;
+    }
+  }
+  @-o-keyframes shower {
+    0% {
+      transform: rotate(30deg) scaleY(0);
+      opacity: 0;
+    }
+    65% {
+      transform: rotate(30deg) scaleY(1);
+      opacity: 1;
+    }
+    100% {
+      transform: rotate(30deg) scaleY(1) translateY(500%);
+      opacity: 0;
+    }
+  }
+  @keyframes shower {
+    0% {
+      transform: rotate(30deg) scaleY(0);
+      opacity: 0;
+    }
+    65% {
+      transform: rotate(30deg) scaleY(1);
+      opacity: 1;
+    }
+    100% {
+      transform: rotate(30deg) scaleY(1) translateY(500%);
+      opacity: 0;
+    }
+  }
+  

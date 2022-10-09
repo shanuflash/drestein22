@@ -1,43 +1,24 @@
 import React from "react";
 import styled from "styled-components";
-import DepartMentCard from "./DepartmentCard";
+import DepartMentCard from "./DepartMentCard";
+// import { departobj } from "../configsFiles/Departments.config";
 import { useState, useMemo } from "react";
 
-const DeptbuttonContainer = styled.div`
+import "../styles/Departments.css";
+
+import { motion, useScroll, useTransform } from "framer-motion";
+
+const DepartmentButtonContainer = styled.div`
   margin: 2rem 0;
   display: flex;
   justify-content: center;
   align-items: center;
    width:100%;
    height:auto;
-  `;
-
-const Deptbutton = styled.button`
-    padding:1rem 2rem;
-  background-color: #fff;
-  color: #000;
-  outline:none;
-  border:none;
-  border-radius:20px;
-  font-size:2rem;
-  `;
-
-const DeptHeader = styled.h1`
-    font-size: 10vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-
 `;
-const DepartmentContainer = styled.div`
-  /* display: flex;
-gap: 30px;
-width: 100vw;
-justify-content: space-evenly;
-align-items: center;
-flex-wrap: wrap; */
 
+const DepartmentContainer = styled.div`
+  
   width: 100vw;
   margin: 0 auto;
   display: grid;
@@ -54,6 +35,19 @@ flex-wrap: wrap; */
     grid-template-columns: repeat(4, 1fr);
   }
 `;
+const text = {
+  offscreen: { x: -200, opacity: 0 },
+  onscreen: {
+    x: 0,
+    opacity: 1,
+    transition: {
+      type: "spring",
+      bounce: 0.4,
+      duration: 1,
+    },
+  },
+};
+
 const departobj = [
   {
     title: `Information Technology`,
@@ -153,7 +147,7 @@ function Departments() {
   // console.log(depts.length);
   const [Count, setCount] = useState(8);
   const showMore = () => {
-    if (Count <= depts.length) {
+    if (Count < depts.length) {
       setCount(Count + 5);
     } else {
       setCount(Count - 5);
@@ -163,19 +157,32 @@ function Departments() {
     return depts
       .slice(0, Count)
       .map((data, index) => (
-        <DepartMentCard key={depts.name + index} {...data} />
+        <DepartMentCard key={depts.title + index} {...data} />
       ));
   }, [depts, Count]);
   return (
     <>
-      <DeptHeader>departments</DeptHeader>
+      <motion.h1
+        initial={{ y: 100, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{ duration: 1 }}
+        viewport={{ once: false, amount: 1 }}
+        className="DeptHead"
+      >
+        Departments
+      </motion.h1>
       <DepartmentContainer>
         {ToShow.length ? ToShow : "Loading..."}
+        {/* {departobj.map((data) => {
+          return <DepartMentCard key={data.title} {...data} />;
+        })} */}
       </DepartmentContainer>
-      <DeptbuttonContainer>
-        <button onClick={showMore}>show more</button>
-        {/* <Deptbutton onClick={showMore}>Show More</Deptbutton> */}
-      </DeptbuttonContainer>
+
+      <DepartmentButtonContainer>
+        <button className="showmore" onClick={showMore}>
+          show more
+        </button>
+      </DepartmentButtonContainer>
     </>
   );
 }

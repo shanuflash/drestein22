@@ -1,0 +1,10 @@
+.showmore {
+    padding: 1rem 2rem;
+    background-color: #fff;
+    color: #000;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    font-size: 2rem;
+    /* color: #26d000; */
+}
