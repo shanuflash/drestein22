@@ -2,7 +2,8 @@ import React from "react";
 import styled from "styled-components";
 import { css } from "styled-components";
 import "../App.css";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+
 import { animate, motion, Variant } from "framer-motion";
 import FlipCountdown from "@rumess/react-flip-countdown";
 
@@ -218,6 +219,25 @@ function Main() {
     },
   };
 
+  const [windowDimenion, detectHW] = useState({
+    winWidth: window.innerWidth,
+    winHeight: window.innerHeight,
+  });
+
+  const detectSize = () => {
+    detectHW({
+      winWidth: window.innerWidth,
+      winHeight: window.innerHeight,
+    });
+  };
+
+  useEffect(() => {
+    window.addEventListener("resize", detectSize);
+
+    return () => {
+      window.removeEventListener("resize", detectSize);
+    };
+  }, [windowDimenion]);
   return (
     <MainHeader id="Main" className="main_header">
       <HeaderBg
@@ -258,7 +278,7 @@ function Main() {
               secondTitle="Seconds"
               hideYear
               hideMonth
-              size={device < 800 ? "small" : "medium"}
+              size={windowDimenion.winWidth < 800 ? "small" : "medium"}
               theme="dark"
               endAtZero
               endAt={"2022-11-09 01:26:58"} // Date/Time

@@ -21,7 +21,7 @@ font-size: 7vw;
   align-items: center;
   color: white;
   font-family: poppins, sans-serif;
-  padding-left: 40px;
+  /* padding-left: 40px; */
 
 
 `;
