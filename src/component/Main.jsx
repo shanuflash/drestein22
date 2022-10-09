@@ -138,7 +138,7 @@ const NationText = styled.div`
   }
 `;
 const Timer = styled.div`
-  font-size: 5.5rem;
+  font-size: 5rem;
   text-align: center;
   width: 40%;
   @media screen and (max-width: 600px) {
@@ -230,12 +230,8 @@ function Main() {
         }}
         className="header_bg  "
       >
-        <HeaderMainText
-          as={motion.div}
-          variants={text}
-          className="header_main_text "
-        >
-          <DresteinText as={motion.div} variants={text} className="drestein">
+        <HeaderMainText className="header_main_text ">
+          <DresteinText className="drestein">
             <Span let_1 className="shine">
               DR
             </Span>
@@ -248,7 +244,7 @@ function Main() {
             compe<Span let_3>TE</Span> w<Span let_4>IN</Span>
           </DresteinText>
 
-          <NationText as={motion.div} variants={text} className="nation ">
+          <NationText className="nation ">
             13<sup>th</sup> NATIONAL LEVEL INTER COLLEGIATE TECHNICAL AND
             MANAGEMENT FEST
           </NationText>
