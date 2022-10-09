@@ -59,19 +59,6 @@ const App = () => {
         className="scrollprogress"
         style={{ scaleX: scrollYProgress }}
       />
-
-      <div className="meteors">
-        <div className="meteor"></div>
-        <div className="meteor"></div>
-        <div className="meteor"></div>
-        <div className="meteor"></div>
-        <div className="meteor"></div>
-        <div className="meteor"></div>
-        <div className="meteor"></div>
-        <div className="meteor"></div>
-        <div className="meteor"></div>
-        <div className="meteor"></div>
-      </div>
       <Particles
         className="particles"
         id="tsparticles"
