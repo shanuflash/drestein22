@@ -15,7 +15,7 @@ export const departobj = [
   },
   {
     title: "Civil Engineering ",
-    img: "https://images.unsplash.com/photo-1581092446327-9b52bd1570c2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDJ8fGNpdmlsJTIwZW5naW5lZXJpbmd8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60",
+    img: "https://plus.unsplash.com/premium_photo-1661913004501-220bca6b31ad?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
     des: "qkndklwnfkl",
     color: "#ff3b41",
     bgtext: "Civil",

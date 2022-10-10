@@ -1,10 +1,9 @@
 import React from "react";
-import styled from "styled-components";
-import { css } from "styled-components";
+import styled, { css } from "styled-components";
 import "../App.css";
 import { useState, useEffect } from "react";
 
-import { animate, motion, Variant } from "framer-motion";
+import { motion } from "framer-motion";
 import FlipCountdown from "@rumess/react-flip-countdown";
 
 const MainHeader = styled.div`
@@ -150,20 +149,6 @@ const Timer = styled.div`
     width: 100%;
   }
 `;
-const HeaderBtn = styled.div`
-/* display: flex;
-justify-content:center;
-align-items: center; */
-background-color: red;
-display: flex;
-justify-content: center;
-
-width: 100%;
-    @media screen and (min-width:600px) {
-          
-
-    }
-`;
 const HoverSpan = styled.span``;
 
 const RegisterNow = styled.button`
@@ -195,33 +180,6 @@ const RegisterNow = styled.button`
 `;
 
 function Main() {
-  const device = window.innerWidth;
-
-  const rn = {
-    offscreen: { x: -1000 },
-    onscreen: {
-      x: 0,
-      rotate: 360,
-      transition: {
-        type: "spring",
-        bounce: 0.4,
-        duration: 2.5,
-      },
-    },
-  };
-  const text = {
-    offscreen: { y: 100, opacity: 0 },
-    onscreen: {
-      y: 0,
-      opacity: 1,
-      transition: {
-        type: "spring",
-        bounce: 0.4,
-        duration: 2,
-      },
-    },
-  };
-
   const [windowDimenion, detectHW] = useState({
     winWidth: window.innerWidth,
     winHeight: window.innerHeight,
