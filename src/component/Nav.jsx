@@ -176,15 +176,13 @@ function Nav() {
       style={{ position: "sticky", top: "0" }}
     >
       <SLogo src={saveethalogo} />
-
-      <NavHead style={{ position: "fixed" }}>
+      <NavHead>
         <NavItem>Home</NavItem>
         <NavItem>Departments</NavItem>
         <NavItem>Gallery</NavItem>
         <NavItem>About</NavItem>
       </NavHead>
 
-      {/* <Navcontainer > */}
       <MobileNavHeader>
         <Mobilenav />
 

@@ -4,12 +4,14 @@ import { motion, varients } from "framer-motion";
 
 const GuestHead = styled.div`
 padding-bottom: 100px;
-
-background-color: #26d000;
+position: relative;
+background: url("https://raw.githubusercontent.com/judygab/web-dev-projects/main/personal-portfolio/src/assets/img/footer-bg.png");
+background-size: cover;
+/* background-color: #760093; */
         border-radius: 0 0 20px 20px;
     width: 100%;
     height: 100%;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -17,6 +19,7 @@ background-color: #26d000;
 
 `;
 const GuestTitle = styled.div`
+margin-top:12rem;
 font-size: 8vw;
     font-weight: bold;
   display: flex; 
@@ -70,6 +73,29 @@ flex-direction: column;
     grid-template-columns: repeat(4, 1fr);
   }
   `;
+
+const Test = styled.div`
+display: flex;
+align-items: center;
+justify-content: center;
+color: black;
+font-size: 5rem;
+text-align: center;
+background-color: white;
+width:80%;
+  font-family: poppins, sans-serif;
+    font-weight: bold;
+
+height: 300px;
+border-radius: 30px;
+position: absolute;
+top: 0%;
+left: 50%;
+transform: translate(-50%, -50%);
+box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+/* box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px; */
+`;
+
 function Guest() {
   const Guests = [
     {
@@ -114,6 +140,7 @@ function Guest() {
   };
   return (
     <GuestHead>
+      <Test>Win exciting prizes!</Test>
       <GuestTitle
         as={motion.div}
         initial="offscreen"

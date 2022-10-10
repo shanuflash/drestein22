@@ -6,7 +6,7 @@ function About() {
   const AboutHead = styled.div`
         height: auto;
         width: 100vw;
-         background-color: #008aca;
+background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
         margin-top: 100px;
         display: flex;
         justify-content: center;

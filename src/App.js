@@ -59,13 +59,13 @@ const App = () => {
         className="scrollprogress"
         style={{ scaleX: scrollYProgress }}
       />
-      <Particles
+      {/* <Particles
         className="particles"
         id="tsparticles"
         init={particlesInit}
         loaded={particlesLoaded}
         options={Particle}
-      />
+      /> */}
       <Nav />
       <Main />
       <motion.div
