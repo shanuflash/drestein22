@@ -142,7 +142,7 @@ const NationText = styled.div`
   }
 `;
 const Timer = styled.div`
-  font-size: 1rem;
+  font-size: 5rem;
   text-align: center;
   width: 45%;
   @media screen and (max-width: 600px) {
@@ -273,16 +273,22 @@ function Main() {
           </NationText>
         </HeaderMainText>
         <Timer className="timer">
-            <FlipCountdown
-              className="countdown"
-              hideYear
-              hideMonth
-              size={windowDimenion.winWidth < 800 ? "small" : "medium"}
-              theme="dark"
-              endAt={"2022-11-09 01:26:58"}
-            />
+          <FlipCountdown
+            // dayTitle="Days"
+            // hourTitle="Hours"
+            // minuteTitle="Minutes"
+            // secondTitle="Seconds"
+            className="countdown"
+            hideYear
+            hideMonth
+            size={windowDimenion.winWidth < 800 ? "small" : "medium"}
+            theme="dark"
+            endAtZero
+            endAt={"2022-11-09 01:26:58"}
+          />
         </Timer>
       </HeaderBg>
+
       <RegisterNow className="button">
         <HoverSpan className="span_btn">register now</HoverSpan>
       </RegisterNow>
