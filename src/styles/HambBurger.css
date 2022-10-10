@@ -1,13 +1,24 @@
-.onlyshow{
+.onlyshow {
   display: none;
 }
+
 @media screen and (max-width:600px) {
-  .onlyshow{
+  .onlyshow {
     display: inline;
     position: sticky;
     top: 0;
-    
-  
-    
+
+
+
   }
+}
+
+.navbar {
+  background-color: transparent;
+  z-index: 1000000;
+}
+
+.navbar.colorChange {
+  background-color: #000;
+  z-index: 1000000;
 }

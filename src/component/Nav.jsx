@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import styled, { keyframes } from "styled-components";
 import saveethalogo from "../assets/saveethaLogo.svg";
 import dresteinLogo from "../assets/dresteinLogo.svg";
@@ -10,8 +10,9 @@ const Navbar = styled.nav`
     align-items: center;
     padding: 1rem 0 0 1rem;
     
-
+  /* height:200px; */
     width: 100%;
+      /* overflow: auto; */
 
  @media screen and (max-width:600px) {
          flex-direction: column;
@@ -145,39 +146,60 @@ const MobileNavHeader = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-  
+    position: sticky;
+    top: 0;
+    align-self: flex-start;
 
 
 
 
 `;
+const Navcontainer = styled.div`
+  /* width:100%;
+  position: relative; */
+`;
 
 function Nav() {
+  const [colorChange, setColorchange] = useState(false);
+  const changeNavbarColor = () => {
+    if (window.scrollY >= 30) {
+      setColorchange(true);
+    } else {
+      setColorchange(false);
+    }
+  };
+  window.addEventListener("scroll", changeNavbarColor);
   return (
-    <nav>
-      <Navbar>
-        <SLogo src={saveethalogo} />
+    // <nav style={{ position: "sticky", top: "0" }}>
+    <Navbar
+      className={colorChange ? "navbar colorChange" : "navbar"}
+      style={{ position: "sticky", top: "0" }}
+    >
+      <SLogo src={saveethalogo} />
 
-        <NavHead>
-          <NavItem>Home</NavItem>
-          <NavItem>Departments</NavItem>
-          <NavItem>Gallery</NavItem>
-          <NavItem>About</NavItem>
-        </NavHead>
-        <MobileNavHeader>
-          <Mobilenav />
+      <NavHead style={{ position: "fixed" }}>
+        <NavItem>Home</NavItem>
+        <NavItem>Departments</NavItem>
+        <NavItem>Gallery</NavItem>
+        <NavItem>About</NavItem>
+      </NavHead>
 
-          <LogoHead>
-            <DLogo src={dresteinLogo} alt="DresteinLogo" />
+      {/* <Navcontainer > */}
+      <MobileNavHeader>
+        <Mobilenav />
 
-            <EventLogo>
-              <DresteinLetter color="red">DRESTEIN</DresteinLetter>
-              <Year>2 0 2 2</Year>
-            </EventLogo>
-          </LogoHead>
-        </MobileNavHeader>
-      </Navbar>
-    </nav>
+        <LogoHead>
+          <DLogo src={dresteinLogo} alt="DresteinLogo" />
+
+          <EventLogo>
+            <DresteinLetter color="red">DRESTEIN</DresteinLetter>
+            <Year>2 0 2 2</Year>
+          </EventLogo>
+        </LogoHead>
+      </MobileNavHeader>
+      {/* </Navcontainer> */}
+    </Navbar>
+    // </nav>
   );
 }
 
