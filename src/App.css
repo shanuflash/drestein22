@@ -3,15 +3,13 @@
   padding: 0;
   margin: 0;
   scroll-behavior: smooth;
-  font-family: "poppins", sans-serif;
-
 
 }
 
 body {
   background-color: black;
   color: white;
-
+  font-family: "poppins", sans-serif;
 }
 
 
@@ -74,6 +72,7 @@ section {
   position: absolute;
   color: black;
   opacity: 0;
+
   top: 0;
   right: -20px;
   transition: 0.5s;
@@ -86,4 +85,9 @@ section {
 .button:hover span::after {
   opacity: 1;
   right: 0;
+}
+
+.countdown {
+  width: 45%;
+  font-family: unset;
 }
