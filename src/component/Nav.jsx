@@ -49,15 +49,11 @@ const rotate = keyframes`
 const DLogo = styled.img`
   width: 20%;
   margin-right: 10px;
- animation: ${rotate} 4s infinite linear;
+ animation: ${rotate} 7s infinite linear;
  transform-origin:center;
 @media screen and (max-width: 600px){
   width: 16%;
 }
-
-
-
-
 `;
 const LogoHead = styled.div`
       display: flex;
@@ -137,7 +133,7 @@ const NavHead = styled.ul`
   
 }
 `;
-const NavItem = styled.li`
+const NavItem = styled.a`
     text-transform: uppercase;
 font-size:1rem;
 cursor: pointer;
@@ -179,10 +175,10 @@ function Nav() {
     >
       <SLogo src={saveethalogo} />
       <NavHead>
-        <NavItem>Home</NavItem>
-        <NavItem>Departments</NavItem>
-        <NavItem>Gallery</NavItem>
-        <NavItem>About</NavItem>
+        <NavItem href="#">Home</NavItem>
+        <NavItem href="#Departments">Departments</NavItem>
+        <NavItem href="#Gallery">Gallery</NavItem>
+        <NavItem href="#About">About</NavItem>
       </NavHead>
 
       <MobileNavHeader>

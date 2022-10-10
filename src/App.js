@@ -76,17 +76,17 @@ const App = () => {
       <DepartmentDiv id="Departments">
         <Departments />
       </DepartmentDiv>
-      <div>
+      <div id="Gallery">
         <ImageGallery />
       </div>
 
-      <div>
+      <div id="About">
         <About />
       </div>
-      <div>
+      <div id="Guest">
         <Guest />
       </div>
-      <div>
+      <div id="Footer">
         <Footer />
       </div>
     </div>

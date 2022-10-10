@@ -19,13 +19,14 @@
 }
 
 .navbar.colorChange {
+  color: #000;
   background-color: #000;
   padding-bottom: 1rem;
   border-radius: 0 0 10px 10px;
   z-index: 1000000;
 }
 
-test {
-  background-color: #8f46a1;
-  /* box-shadow: ; */
+a:active {
+  background-color: #000;
+  color: white;
 }

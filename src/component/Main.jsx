@@ -274,10 +274,10 @@ function Main() {
         </HeaderMainText>
         <Timer className="timer">
           <FlipCountdown
-            // dayTitle="Days"
-            // hourTitle="Hours"
-            // minuteTitle="Minutes"
-            // secondTitle="Seconds"
+            dayTitle="Days"
+            hourTitle="Hours"
+            minuteTitle="Minutes"
+            secondTitle="Seconds"
             className="countdown"
             hideYear
             hideMonth
