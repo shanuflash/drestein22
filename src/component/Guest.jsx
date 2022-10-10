@@ -79,7 +79,7 @@ display: flex;
 align-items: center;
 justify-content: center;
 color: black;
-font-size: 5rem;
+font-size: 5vw;
 text-align: center;
 background-color: white;
 width:80%;
@@ -140,7 +140,7 @@ function Guest() {
   };
   return (
     <GuestHead>
-      <Test>Win exciting prizes!</Test>
+      <Test>Registeration fee: ₹ 100</Test>
       <GuestTitle
         as={motion.div}
         initial="offscreen"

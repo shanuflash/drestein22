@@ -87,7 +87,8 @@ import styled from "styled-components";
 
 export default function App() {
   const Head = styled.div`
-    font-size: 5vw;
+    font-size: 7vw;
+    font-weight: bold;
     margin: 4rem;
     text-align: center;
 
@@ -139,7 +140,7 @@ export default function App() {
         whileInView="onscreen"
         variants={text}
       >
-        Last Year Drestein Memories
+        Gallery 2021
       </Head>
       <div>
         <Swiper

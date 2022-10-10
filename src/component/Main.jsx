@@ -144,7 +144,7 @@ const NationText = styled.div`
 const Timer = styled.div`
   font-size: 5rem;
   text-align: center;
-  width: 40%;
+  width: 45%;
   @media screen and (max-width: 600px) {
     font-size: 15vw;
     width: 100%;
