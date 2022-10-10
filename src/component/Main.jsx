@@ -2,12 +2,11 @@ import React from "react";
 import styled, { css } from "styled-components";
 import "../App.css";
 import { useState, useEffect } from "react";
-
 import { motion } from "framer-motion";
 import FlipCountdown from "@rumess/react-flip-countdown";
 
 const MainHeader = styled.div`
-margin-top:5rem;
+  margin-top:5rem;
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
@@ -17,22 +16,14 @@ margin-top:5rem;
   position: relative;
   color: white;
 
-  /* margin-top: 0rem; */
-
-  
   @media screen and (max-width: 600px) {
-margin-top:2rem;
-
-    /* background:rgba(0, 0, 0, 0.3); */
-    /* z-index: -100; */
-    /* margin-top: -10px; */
+    margin-top:2rem;
   }
 `;
 const HeaderBg = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-
   min-height: 10px;
   margin-top: 1rem;
   width: 100%;
@@ -52,11 +43,9 @@ const HeaderMainText = styled.div`
   align-items: center;
   width: 50%;
 
-
   @media screen and (max-width: 600px) {
     border: none;
     width: 100%;
-
     text-align: left;
   }
 `;
@@ -122,7 +111,6 @@ const Span = styled.span`
       font-weight: 200;
     `}
   /* ..sss */
-
 `;
 
 const NationText = styled.div`
@@ -141,7 +129,7 @@ const NationText = styled.div`
   }
 `;
 const Timer = styled.div`
-  font-size: 5rem;
+  font-size: 3vw;
   text-align: center;
   width: 45%;
   @media screen and (max-width: 600px) {
@@ -156,7 +144,6 @@ const RegisterNow = styled.button`
   font-size: 4vw;
   background-color: white;
   border: none;
-  
   text-transform: uppercase;
   border-radius: 1rem;
   padding: 1rem;
@@ -164,7 +151,7 @@ const RegisterNow = styled.button`
   font-family: "Poppins", sans-serif;
 
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
-    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
   cursor: pointer;
   transition: all 0.5s;
   margin-top: 2em;
@@ -172,33 +159,11 @@ const RegisterNow = styled.button`
   @media screen and (max-width: 600px) {
     font-size: 7vw;
     width: 80%;
-
-
-
   }
-
 `;
 
 function Main() {
-  const [windowDimenion, detectHW] = useState({
-    winWidth: window.innerWidth,
-    winHeight: window.innerHeight,
-  });
-
-  const detectSize = () => {
-    detectHW({
-      winWidth: window.innerWidth,
-      winHeight: window.innerHeight,
-    });
-  };
-
-  useEffect(() => {
-    window.addEventListener("resize", detectSize);
-
-    return () => {
-      window.removeEventListener("resize", detectSize);
-    };
-  }, [windowDimenion]);
+  const DeviceSize = window.innerWidth;
   return (
     <MainHeader id="Main" className="main_header">
       <HeaderBg
@@ -209,7 +174,7 @@ function Main() {
         transition={{
           staggerChildren: 0.5,
         }}
-        className="header_bg  "
+        className="header_bg"
       >
         <HeaderMainText className="header_main_text ">
           <DresteinText className="drestein">
@@ -239,19 +204,17 @@ function Main() {
             className="countdown"
             hideYear
             hideMonth
-            size={windowDimenion.winWidth < 800 ? "small" : "medium"}
+            size={DeviceSize < 550 ? "small" : "medium"}
             theme="dark"
             endAtZero
             endAt={"2022-11-09 01:26:58"}
           />
+          November 9th & 10th
         </Timer>
       </HeaderBg>
-
       <RegisterNow className="button">
         <HoverSpan className="span_btn">register now</HoverSpan>
       </RegisterNow>
-
-      {/* </HeaderBtn> */}
     </MainHeader>
   );
 }

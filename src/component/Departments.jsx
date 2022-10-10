@@ -12,12 +12,16 @@ const DepartmentContainer = styled.div`
   margin-top: 50px;
   place-items: center;
   min-height: 100px;
+  /* row-gap: 1rem; */
   gap: 1rem;
 
   @media (min-width: 600px) {
     grid-template-columns: repeat(2, 1fr);
   }
   @media (min-width: 900px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  @media (min-width: 1200px) {
     grid-template-columns: repeat(4, 1fr);
   }
 `;
@@ -36,7 +40,7 @@ function Departments() {
       </motion.h1>
       <DepartmentContainer>
         {departobj.map((data, i) => {
-          return <DepartMentCard key={i} style={{color: i=== 1? "red":"blue"}} {...data} />;
+          return <DepartMentCard key={i} {...data} />;
         })}
       </DepartmentContainer>
     </>

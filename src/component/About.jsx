@@ -4,6 +4,7 @@ import { motion, variants } from "framer-motion";
 
 function About() {
   const AboutHead = styled.div`
+
         height: auto;
         width: 100vw;
 background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
