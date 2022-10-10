@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styled, { keyframes } from "styled-components";
-import saveethalogo from "../assets/saveethaLogo.svg";
+import saveethalogo from "../assets/logo.png";
 import dresteinLogo from "../assets/dresteinLogo.svg";
 import Mobilenav from "./Mobilenav";
 import "../styles/HambBurger.css";
@@ -25,8 +25,8 @@ const Navbar = styled.nav`
 const SLogo = styled.img`
      width: 35%;
      height: auto;
-     background-color: #DADADA;
-     border-radius: 10px;
+     /* background-color: #DADADA; */
+     /* border-radius: 10px; */
 
      @media screen and (max-width:600px) {
          width: 90%;
@@ -138,6 +138,8 @@ const NavHead = styled.ul`
 }
 `;
 const NavItem = styled.li`
+    text-transform: uppercase;
+font-size:1rem;
 cursor: pointer;
 text-decoration: none;
 

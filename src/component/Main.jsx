@@ -8,6 +8,7 @@ import { animate, motion, Variant } from "framer-motion";
 import FlipCountdown from "@rumess/react-flip-countdown";
 
 const MainHeader = styled.div`
+margin-top:5rem;
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
@@ -21,6 +22,8 @@ const MainHeader = styled.div`
 
   
   @media screen and (max-width: 600px) {
+margin-top:2rem;
+
     /* background:rgba(0, 0, 0, 0.3); */
     /* z-index: -100; */
     /* margin-top: -10px; */
