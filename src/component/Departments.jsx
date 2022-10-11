@@ -40,7 +40,13 @@ function Departments() {
       </motion.h1>
       <DepartmentContainer>
         {departobj.map((data, i) => {
-          return <DepartMentCard key={i} {...data} />;
+          return (
+            <DepartMentCard
+              key={i}
+              style={{ border: "2px solid white" }}
+              {...data}
+            />
+          );
         })}
       </DepartmentContainer>
     </>

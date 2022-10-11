@@ -8,7 +8,7 @@ const DeptImage = styled.img`
   border-radius: 20px;
 `;
 
-function DepartMentCard({ img, title, des, color, bgtext }) {
+function DepartMentCard({ img, title, des, color, bgtext, mbtm }) {
   const a = title.split(" ");
 
   const Card = styled.div`
@@ -129,7 +129,14 @@ function DepartMentCard({ img, title, des, color, bgtext }) {
       },
     },
   };
-
+  const DeptTxt = styled.h2`
+  font-size: 1.5em;
+  position: relative;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #000;  
+  margin-top: ${mbtm};
+`;
   return (
     <motion.div
       initial="offscreen"
@@ -168,11 +175,11 @@ function DepartMentCard({ img, title, des, color, bgtext }) {
           </motion.div>
         </div>
         <div className="contentBx">
-          <motion.h2 variants={text}>
+          <DeptTxt as={motion.div} variants={text}>
             {a[0]}
             <br />
             {a[1]}
-          </motion.h2>
+          </DeptTxt>
           <div>
             <Event href="#">Events</Event>
           </div>

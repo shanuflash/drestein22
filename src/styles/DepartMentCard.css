@@ -46,39 +46,6 @@
   height: 175px;
 }
 
-.container .card .contentBx .lorem {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: 0.5s;
-  opacity: 0;
-  visibility: hidden;
-}
-
-.container .card:hover .contentBx .lorem {
-  opacity: 1;
-  visibility: visible;
-  transition-delay: 0.5s;
-}
-
-.container .card .contentBx .lorem h3 {
-  color: #000;
-  font-weight: 300;
-  text-transform: uppercase;
-  font-family: sans-serif;
-  letter-spacing: 2px;
-  margin-right: 10px;
-  margin-top: 10px;
-  font-weight: 500;
-  border: 1px solid #1985ff;
-  color: #1985ff;
-  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
-  border-radius: 20px 0px 20px 0px;
-  padding: 10px;
-}
-
-
-
 .container .card:hover .contentBx a {
   opacity: 1;
   transform: translateY(13px);
