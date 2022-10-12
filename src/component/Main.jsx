@@ -4,6 +4,7 @@ import "../App.css";
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import FlipCountdown from "@rumess/react-flip-countdown";
+import { Link } from "react-router-dom";
 
 const MainHeader = styled.div`
   margin-top:5rem;
@@ -212,9 +213,11 @@ function Main() {
           November 9th & 10th
         </Timer>
       </HeaderBg>
-      <RegisterNow className="button">
-        <HoverSpan className="span_btn">register now</HoverSpan>
-      </RegisterNow>
+      <Link to='/form'>
+        <RegisterNow className="button">
+          <HoverSpan className="span_btn">register now</HoverSpan>
+        </RegisterNow>
+      </Link>
     </MainHeader>
   );
 }

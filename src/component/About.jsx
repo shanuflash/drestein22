@@ -4,26 +4,21 @@ import { motion, variants } from "framer-motion";
 
 function About() {
   const AboutHead = styled.div`
-
-        height: auto;
-        width: 100vw;
-background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
-        margin-top: 100px;
-        display: flex;
-        justify-content: center;
-        overflow-x: hidden;
-        border-radius: 20px 20px 0 0;
-      overflow-y: hidden;
-       
-        
-    `;
+    height: auto;
+    width: 100vw;
+    background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    overflow-x: hidden;
+    border-radius: 20px 20px 0 0;
+    overflow-y: hidden;    
+  `;
   const AboutContainer = styled.div`
-        padding:100px 200px;
-
-        @media screen and (max-width:600px) {
-            padding: 20px 30px;
-        }
-
+      padding:100px 200px;
+      @media screen and (max-width:600px) {
+          padding: 20px 30px;
+      }
     `;
   const AboutTitle = styled.div`
 font-size: 7vw;

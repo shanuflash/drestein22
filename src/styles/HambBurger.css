@@ -14,11 +14,6 @@
 }
 
 .navbar {
-  background-color: transparent;
-  z-index: 1000000;
-}
-
-.navbar.colorChange {
   color: #000;
   background-color: #000;
   padding-bottom: 1rem;

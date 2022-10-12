@@ -121,7 +121,7 @@ const MobileNavHeader = styled.div`
 function Nav() {
   const [colorChange, setColorchange] = useState(false);
   const changeNavbarColor = () => {
-    if (window.scrollY >= 30) {
+    if (window.scrollY > 30) {
       setColorchange(true);
     } else {
       setColorchange(false);
@@ -130,10 +130,7 @@ function Nav() {
   window.addEventListener("scroll", changeNavbarColor);
 
   return (
-    <Navbar
-      className={colorChange ? "navbar colorChange" : "navbar"}
-      style={{ position: "sticky", top: "0" }}
-    >
+    <Navbar className="navbar" style={{ position: "sticky", top: "0" }}>
       <SLogo src={saveethalogo} />
       <NavHead>
         <NavItem href="#">Home</NavItem>

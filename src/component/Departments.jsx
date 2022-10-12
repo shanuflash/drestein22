@@ -43,7 +43,7 @@ function Departments() {
           return (
             <DepartMentCard
               key={i}
-              style={{ border: "2px solid white" }}
+              // style={{ border: "2px solid white" }}
               {...data}
             />
           );

@@ -140,7 +140,7 @@ function Guest() {
   };
   return (
     <GuestHead>
-      <Test>Registeration fee: ₹ 100</Test>
+      <Test>Registeration fee: ₹ 150</Test>
       <GuestTitle
         as={motion.div}
         initial="offscreen"

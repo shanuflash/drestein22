@@ -25,7 +25,8 @@ export const departobj = [
     img: "https://images.unsplash.com/photo-1413882353314-73389f63b6fd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
     des: "test",
     color: "#ff6d41",
-    bgtext: "Elec",
+    bgtext: "Elect",
+    mbtm: "-30px",
   },
   {
     title: "Artificial\tIntelligence &\tMachine\tLearning",
@@ -61,7 +62,7 @@ export const departobj = [
     img: "https://images.unsplash.com/photo-1562408590-e32931084e23?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
     des: "test",
     color: "#37c0ff",
-    bgtext: "ommu",
+    bgtext: "Elect",
     mbtm: "-30px",
   },
   {
@@ -69,7 +70,7 @@ export const departobj = [
     img: "https://images.unsplash.com/photo-1611426358403-459d85ab2ee2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80",
     des: "test",
     color: "#ff3b41",
-    bgtext: "Instr",
+    bgtext: "iInst",
     mbtm: "-30px",
   },
   {
@@ -98,21 +99,21 @@ export const departobj = [
     img: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
     des: "test",
     color: "#ff6d41",
-    bgtext: "Busin",
-    mbtm: "20px",
+    bgtext: "Work",
+    mbtm: "30px",
   },
   {
     title: "Paper Presentation",
     img: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
     des: "test",
     color: "#37c0ff",
-    bgtext: "Busin",
+    bgtext: "Paper",
   },
   {
     title: "Poster Presentation",
     img: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
     des: "test",
     color: "#ff3b41",
-    bgtext: "Busin",
+    bgtext: "Post",
   },
 ];

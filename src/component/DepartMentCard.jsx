@@ -39,9 +39,9 @@ function DepartMentCard({ img, title, des, color, bgtext, mbtm }) {
     content: "${bgtext}";
     opacity: 0.3;
     position: absolute;
-    top: 40%;
+    top: 50%;
     left: -20%;
-    font-size: 12em;
+    font-size: 10em;
     font-weight: 800;
     font-style: italic;
     color: ${color};

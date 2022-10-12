@@ -3,11 +3,9 @@
   padding: 0;
   margin: 0;
   scroll-behavior: smooth;
-
 }
 
 body {
-  /* padding-top: 200px; */
   background-color: black;
   color: white;
   font-family: "poppins", sans-serif;

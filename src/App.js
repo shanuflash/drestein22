@@ -50,14 +50,12 @@ const App = () => {
         className="img"
         style={{ y: DeviceSize < 800 ? MValue : DValue, zIndex: -1 }}
       ></motion.div>
-
       <DepartmentDiv id="Departments">
         <Departments />
       </DepartmentDiv>
       <div id="Gallery">
         <ImageGallery />
       </div>
-
       <div id="About">
         <About />
       </div>
