@@ -7,7 +7,11 @@ import { createTheme } from "@mui/material/styles";
 import blue from "@mui/material/colors/blue";
 import Nav from "./Nav";
 import { useState } from "react";
-import { CssVarsProvider, useColorScheme } from "@mui/joy/styles";
+import {
+  CssVarsProvider,
+  useColorScheme,
+  ThemeProvider,
+} from "@mui/joy/styles";
 import Sheet from "@mui/joy/Sheet";
 import Typography from "@mui/joy/Typography";
 import TextField from "@mui/joy/TextField";
@@ -29,7 +33,7 @@ import ListItem from "@mui/joy/ListItem";
 import Checkbox from "@mui/joy/Checkbox";
 import Alert from "@mui/joy/Alert";
 
-export function Selector() {
+function Selector() {
   return (
     <Box>
       <Typography mb={2}>Department-1</Typography>
@@ -75,17 +79,17 @@ const Form = () => {
     e.preventDefault();
     console.log(formdata);
   };
-  const Theme = createTheme({
-    palette: {
-      mode: "dark",
-    },
-  });
+  // const Theme = createTheme({
+  //   palette: {
+  //     mode: "dark",
+  //   },
+  // });
 
   return (
-    <div className="headcontainer">
+    <div className="headcontainer" data-joy-color-scheme="dark">
       <Nav />
-      <CssVarsProvider theme={Theme}>
-        {/* <main> */}
+      <CssVarsProvider>
+        {/* <ThemeProvider theme={Theme}> */}
         <Sheet
           sx={{
             width: "40vw",
@@ -222,7 +226,7 @@ const Form = () => {
             Register
           </Button>
         </Sheet>
-        {/* </main> */}
+        {/* </ThemeProvider> */}
       </CssVarsProvider>
     </div>
   );
