@@ -75,11 +75,16 @@ const Form = () => {
     e.preventDefault();
     console.log(formdata);
   };
+  const Theme = createTheme({
+    palette: {
+      mode: "dark",
+    },
+  });
 
   return (
     <div className="headcontainer">
       <Nav />
-      <CssVarsProvider>
+      <CssVarsProvider theme={Theme}>
         {/* <main> */}
         <Sheet
           sx={{
