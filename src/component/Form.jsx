@@ -57,6 +57,15 @@ function Selector() {
   );
 }
 
+function ModeToggle() {
+  const { mode, setMode } = useColorScheme();
+  return (
+    <Button variant="outlined" color="neutral" onClick={() => setMode("dark")}>
+      Test
+    </Button>
+  );
+}
+
 const Form = () => {
   const [formdata, setformdata] = useState({
     fname: "",
@@ -86,9 +95,9 @@ const Form = () => {
   // });
 
   return (
-    <div className="headcontainer">
+    <div className="headcontainer" data-joy-color-scheme="dark">
       <Nav />
-      <CssVarsProvider data-joy-color-scheme="dark">
+      <CssVarsProvider>
         {/* <ThemeProvider theme={Theme}> */}
         <Sheet
           sx={{
@@ -218,7 +227,7 @@ const Form = () => {
           <Selector />
           <Selector />
           <Selector />
-
+          <ModeToggle />
           <Alert variant="outlined" color="danger" sx={{ align: "center" }}>
             Registeration Fee of ₹150 has to be paid on the event date.
           </Alert>
