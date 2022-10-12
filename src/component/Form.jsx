@@ -102,10 +102,10 @@ const Form = () => {
         <Sheet
           sx={{
             width: "40vw",
-            mx: "auto", // margin left & right
-            my: 4, // margin top & botom
-            py: 3, // padding top & bottom
-            px: 2, // padding left & right
+            mx: "auto",
+            my: 4,
+            py: 3,
+            px: 2,
             display: "flex",
             flexDirection: "column",
             gap: 2,
@@ -126,6 +126,7 @@ const Form = () => {
           <Divider />
           <div className="Name">
             <TextField
+              required
               name="fname"
               value={formdata.fname}
               onChange={handleChange}
@@ -135,6 +136,7 @@ const Form = () => {
               sx={{ width: "48%" }}
             />
             <TextField
+              required
               name="lname"
               value={formdata.lname}
               onChange={handleChange}
@@ -145,69 +147,86 @@ const Form = () => {
             />
           </div>
           <TextField
+            required
             name="college"
             value={formdata.college}
             onChange={handleChange}
             type="text"
-            placeholder="Saveetha Engineering College"
+            placeholder="Your college name..."
             label="College Name"
           />
           <div className="yearno">
             <TextField
+              required
               name="regno"
               value={formdata.regno}
               onChange={handleChange}
               type="number"
-              placeholder="12345"
+              placeholder="Your roll number..."
               label="Roll Number"
               sx={{ width: "48%" }}
             />
             <FormControl
+              value={formdata.year}
+              onChange={handleChange}
+              required
               sx={{
                 width: "48%",
               }}
             >
               <FormLabel htmlFor="year">Year</FormLabel>
               <Select
+                required
                 label="Label"
                 placeholder="Select year..."
                 id="year"
                 name="year"
-                value={formdata.year}
-                onChange={handleChange}
+
                 // indicator={<KeyboardArrowDown />}
               >
-                <Option value="dog">Dog</Option>
-                <Option value="cat">Cat</Option>
-                <Option value="fish">Fish</Option>
-                <Option value="bird">Bird</Option>
+                <Option value="dog">I</Option>
+                <Option value="cat">II</Option>
+                <Option value="fish">III</Option>
+                <Option value="bird">IV</Option>
               </Select>
             </FormControl>
           </div>
-          <label htmlFor="gender">Gender</label>
-          <Select
-            id="gender"
-            name="gender"
+          <FormControl
+            required
             value={formdata.gender}
             onChange={handleChange}
-            placeholder="Select a gender..."
-            indicator={<KeyboardArrowDown />}
-            sx={{
-              // width: 240,
-              [`& .${selectClasses.indicator}`]: {
-                transition: "0.2s",
-                [`&.${selectClasses.expanded}`]: {
-                  transform: "rotate(-180deg)",
-                },
-              },
-            }}
+            sx={
+              {
+                // width: "48%",
+              }
+            }
           >
-            <Option value="dog">Male</Option>
-            <Option value="cat">Female</Option>
-            <Option value="fish">Other</Option>
-            <Option value="bird">Prefer Not To Say</Option>
-          </Select>
+            <FormLabel htmlFor="gender">Gender</FormLabel>
+            <Select
+              required
+              id="gender"
+              name="gender"
+              placeholder="Select gender..."
+              indicator={<KeyboardArrowDown />}
+              sx={{
+                // width: 240,
+                [`& .${selectClasses.indicator}`]: {
+                  transition: "0.2s",
+                  [`&.${selectClasses.expanded}`]: {
+                    transform: "rotate(-180deg)",
+                  },
+                },
+              }}
+            >
+              <Option value="dog">Male</Option>
+              <Option value="cat">Female</Option>
+              <Option value="fish">Other</Option>
+              <Option value="bird">Prefer Not To Say</Option>
+            </Select>
+          </FormControl>
+
           <TextField
+            required
             name="phno"
             type="number"
             value={formdata.phno}
@@ -216,6 +235,7 @@ const Form = () => {
             label="Phone Number"
           />
           <TextField
+            required
             name="email"
             value={formdata.email}
             onChange={handleChange}
@@ -227,7 +247,7 @@ const Form = () => {
           <Selector />
           <Selector />
           <Selector />
-          <ModeToggle />
+          {/* <ModeToggle /> */}
           <Alert variant="outlined" color="danger" sx={{ align: "center" }}>
             Registeration Fee of ₹150 has to be paid on the event date.
           </Alert>
