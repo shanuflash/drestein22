@@ -86,9 +86,9 @@ const Form = () => {
   // });
 
   return (
-    <div className="headcontainer" data-joy-color-scheme="dark">
+    <div className="headcontainer">
       <Nav />
-      <CssVarsProvider>
+      <CssVarsProvider data-joy-color-scheme="light">
         {/* <ThemeProvider theme={Theme}> */}
         <Sheet
           sx={{
