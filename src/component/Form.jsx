@@ -83,6 +83,7 @@ const Form = () => {
       ...prevState,
       [e.target.name]: e.target.value,
     }));
+    console.log(formdata);
   };
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -169,25 +170,26 @@ const Form = () => {
             <FormControl
               value={formdata.year}
               onChange={handleChange}
-              required
+              // required
               sx={{
                 width: "48%",
               }}
             >
               <FormLabel htmlFor="year">Year</FormLabel>
               <Select
-                required
-                label="Label"
                 placeholder="Select year..."
                 id="year"
                 name="year"
-
+                required
+                // sx={{
+                //   width: "48%",
+                // }}
                 // indicator={<KeyboardArrowDown />}
               >
-                <Option value="dog">I</Option>
-                <Option value="cat">II</Option>
-                <Option value="fish">III</Option>
-                <Option value="bird">IV</Option>
+                <Option value="I">I</Option>
+                <Option value="II">II</Option>
+                <Option value="III">III</Option>
+                <Option value="IV">IV</Option>
               </Select>
             </FormControl>
           </div>

@@ -7,14 +7,18 @@
     display: inline;
     position: sticky;
     top: 0;
+  }
 
-
-
+  .navbar {
+    top: -80px;
+    /* top: -30px; */
   }
 }
 
 .navbar {
-  color: #000;
+  position: "sticky";
+  top: 0px;
+  color: rgb(255, 255, 255);
   background-color: #000;
   padding-bottom: 1rem;
   border-radius: 0 0 10px 10px;
