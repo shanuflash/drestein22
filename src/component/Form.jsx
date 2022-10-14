@@ -83,7 +83,7 @@ const Form = () => {
       ...prevState,
       [e.target.name]: e.target.value,
     }));
-    console.log(formdata);
+    // console.log(formdata);
   };
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -94,7 +94,12 @@ const Form = () => {
   //     mode: "dark",
   //   },
   // });
-
+  const handleChangeSelect = (e) => {
+    setformdata((prevState) => ({
+      ...prevState,
+      [e.target.name]: e.target.innerHTML,
+    }));
+  };
   return (
     <div className="headcontainer" data-joy-color-scheme="dark">
       <Nav />
@@ -181,10 +186,8 @@ const Form = () => {
                 id="year"
                 name="year"
                 required
-                // sx={{
-                //   width: "48%",
-                // }}
                 // indicator={<KeyboardArrowDown />}
+                onChange={handleChangeSelect}
               >
                 <Option value="I">I</Option>
                 <Option value="II">II</Option>
@@ -194,7 +197,7 @@ const Form = () => {
             </FormControl>
           </div>
           <FormControl
-            required
+            // required
             value={formdata.gender}
             onChange={handleChange}
             sx={
@@ -209,6 +212,7 @@ const Form = () => {
               id="gender"
               name="gender"
               placeholder="Select gender..."
+              onChange={handleChangeSelect}
               indicator={<KeyboardArrowDown />}
               sx={{
                 // width: 240,

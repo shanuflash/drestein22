@@ -1,0 +1,7 @@
+.container{
+    color: white;
+}
+
+.events .container .title {
+    font-size: 2rem;
+}
