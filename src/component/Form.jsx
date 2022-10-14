@@ -68,15 +68,15 @@ function ModeToggle() {
 
 const Form = () => {
   const [formdata, setformdata] = useState({
-    fname: "",
-    lname: "",
-    college: "",
-    regno: "",
-    gender: "",
-    year: "",
-    dept: "",
-    email: "",
-    phno: "",
+    // fname: "",
+    // lname: "",
+    // college: "",
+    // regno: "",
+    // gender: "",
+    // year: "",
+    // dept: "",
+    // email: "",
+    // phno: "",
   });
   const handleChange = (e) => {
     setformdata((prevState) => ({
@@ -187,10 +187,18 @@ const Form = () => {
                 onChange={onchangehandle}
                 // required
               >
-                <Option value="I">I</Option>
-                <Option value="II">II</Option>
-                <Option value="III">III</Option>
-                <Option value="IV">IV</Option>
+                <Option name="year" value="I">
+                  I
+                </Option>
+                <Option name="year" value="II">
+                  II
+                </Option>
+                <Option name="year" value="III">
+                  III
+                </Option>
+                <Option name="year" value="IV">
+                  IV
+                </Option>
               </Select>
             </FormControl>
           </div>
