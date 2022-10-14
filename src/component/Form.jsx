@@ -83,7 +83,7 @@ const Form = () => {
       ...prevState,
       [e.target.name]: e.target.value,
     }));
-    // console.log(formdata);
+    console.log(formdata);
   };
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -94,7 +94,7 @@ const Form = () => {
   //     mode: "dark",
   //   },
   // });
-  const handleChangeSelect = (e) => {
+  const onchangehandle = (e) => {
     setformdata((prevState) => ({
       ...prevState,
       [e.target.name]: e.target.innerHTML,
@@ -173,21 +173,18 @@ const Form = () => {
               sx={{ width: "48%" }}
             />
             <FormControl
-              value={formdata.year}
-              onChange={handleChange}
-              // required
               sx={{
                 width: "48%",
               }}
             >
               <FormLabel htmlFor="year">Year</FormLabel>
               <Select
-                placeholder="Select year..."
                 id="year"
+                placeholder="Select year..."
                 name="year"
-                required
-                // indicator={<KeyboardArrowDown />}
-                onChange={handleChangeSelect}
+                value={formdata.year}
+                onChange={onchangehandle}
+                // required
               >
                 <Option value="I">I</Option>
                 <Option value="II">II</Option>
@@ -197,7 +194,7 @@ const Form = () => {
             </FormControl>
           </div>
           <FormControl
-            // required
+            required
             value={formdata.gender}
             onChange={handleChange}
             sx={
@@ -212,8 +209,7 @@ const Form = () => {
               id="gender"
               name="gender"
               placeholder="Select gender..."
-              onChange={handleChangeSelect}
-              // indicator={<KeyboardArrowDown />}
+              indicator={<KeyboardArrowDown />}
               sx={{
                 // width: 240,
                 [`& .${selectClasses.indicator}`]: {
