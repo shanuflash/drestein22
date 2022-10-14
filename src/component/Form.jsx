@@ -213,7 +213,7 @@ const Form = () => {
               name="gender"
               placeholder="Select gender..."
               onChange={handleChangeSelect}
-              indicator={<KeyboardArrowDown />}
+              // indicator={<KeyboardArrowDown />}
               sx={{
                 // width: 240,
                 [`& .${selectClasses.indicator}`]: {
