@@ -95,6 +95,7 @@ const Form = () => {
   //   },
   // });
   const onchangehandle = (e) => {
+    console.log(e.target.name);
     setformdata((prevState) => ({
       ...prevState,
       [e.target.name]: e.target.innerHTML,
@@ -194,9 +195,6 @@ const Form = () => {
             </FormControl>
           </div>
           <FormControl
-            required
-            value={formdata.gender}
-            onChange={handleChange}
             sx={
               {
                 // width: "48%",
@@ -209,6 +207,8 @@ const Form = () => {
               id="gender"
               name="gender"
               placeholder="Select gender..."
+              value={formdata.gender}
+              onChange={onchangehandle}
               indicator={<KeyboardArrowDown />}
               sx={{
                 // width: 240,
