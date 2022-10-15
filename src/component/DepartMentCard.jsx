@@ -10,7 +10,6 @@ const DeptImage = styled.img`
 
 function DepartMentCard({ img, title, des, color, bgtext, mbtm }) {
   const a = title.split(" ");
-
   const Card = styled.div`
     position: relative;
     width: 300px;
@@ -143,7 +142,7 @@ function DepartMentCard({ img, title, des, color, bgtext, mbtm }) {
       whileInView="onscreen"
       viewport={{ once: true, amount: 0.5 }}
       variants={device < 700 ? cardforMobile : cardforDesktop}
-      className="container"
+      className="containerdept"
     >
       <Card
         as={motion.div}

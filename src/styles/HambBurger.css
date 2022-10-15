@@ -2,11 +2,9 @@
   display: none;
 }
 
-@media screen and (max-width:600px) {
+@media (max-width: 600px) {
   .onlyshow {
-    /* display: inline; */
-    position: sticky;
-    top: 0;
+    display: block;
   }
 
   .navbar {
@@ -15,7 +13,7 @@
   }
 }
 
-.navbar {
+/* .navbar {
   position: "sticky";
   top: 0px;
   color: rgb(255, 255, 255);
@@ -23,7 +21,7 @@
   padding-bottom: 1rem;
   border-radius: 0 0 10px 10px;
   z-index: 1000000;
-}
+} */
 
 a:active {
   background-color: #000;

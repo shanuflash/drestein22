@@ -91,6 +91,9 @@ export default function App() {
     font-weight: bold;
     margin: 4rem;
     text-align: center;
+    @media (max-width: 600px) {
+      font-size: 10vw;
+    }
 
   `;
   const Images = [

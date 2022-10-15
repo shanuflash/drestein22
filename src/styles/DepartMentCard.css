@@ -1,11 +1,12 @@
 /* departments card */
 
-.container {
+.containerdept {
+  margin-bottom: 1rem;
   overflow: hidden;
   color: #000;
 }
 
-.container .card .imgBx {
+.containerdept .card .imgBx {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -16,12 +17,12 @@
   will-change: transform;
 }
 
-.container .card:hover .imgBx {
+.containerdept .card:hover .imgBx {
   /* top: 0%; */
   transform: translateY(-90%);
 }
 
-.container .card .imgBx img {
+.containerdept .card .imgBx img {
   position: absolute;
   top: 10%;
   left: 50%;
@@ -31,7 +32,7 @@
   object-fit: contain;
 }
 
-.container .card .contentBx {
+.containerdept .card .contentBx {
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -42,11 +43,11 @@
   z-index: 10;
 }
 
-.container .card:hover .contentBx {
+.containerdept .card:hover .contentBx {
   height: 175px;
 }
 
-.container .card:hover .contentBx a {
+.containerdept .card:hover .contentBx a {
   opacity: 1;
   transform: translateY(13px);
   transition-delay: 0.5s;
@@ -59,4 +60,14 @@
   align-items: center;
   color: white;
   font-family: poppins, sans-serif;
+
+  @media (max-width: 600px) {
+    font-size: 10vw;
+  }
+}
+
+@media (max-width: 600px) {
+  .DeptHead {
+    font-size: 10vw;
+  }
 }

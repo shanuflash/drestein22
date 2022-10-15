@@ -133,8 +133,9 @@ const Timer = styled.div`
   font-size: 3vw;
   text-align: center;
   width: 45%;
+  font-weight:200;
   @media screen and (max-width: 600px) {
-    font-size: 15vw;
+    font-size: 7vw;
     width: 100%;
   }
 `;
@@ -159,7 +160,7 @@ const RegisterNow = styled.button`
 
   @media screen and (max-width: 600px) {
     font-size: 7vw;
-    width: 80%;
+    width: 100%;
   }
 `;
 

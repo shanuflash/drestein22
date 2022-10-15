@@ -62,6 +62,7 @@ display: none;
       >
         <MenuIcon
           sx={{
+            color: "white",
             fontSize: "1.5em",
           }}
         />

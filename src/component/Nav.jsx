@@ -6,12 +6,20 @@ import Mobilenav from "./Mobilenav";
 import "../styles/HambBurger.css";
 
 const Navbar = styled.nav`
+  color: rgb(255, 255, 255);
+  background-color: #000;
+  padding-bottom: 1rem;
+  border-radius: 0 0 10px 10px;
+  z-index: 1000000;
   display: flex;
   justify-content: space-around;
   align-items: center;
   padding: 1rem 0 0 1rem;
   width: 100%;
+  position:sticky;
+  top:0;
  @media screen and (max-width:600px) {
+  top:-80px;
     flex-direction: column;
     gap: 20px;
     padding-left: 0;

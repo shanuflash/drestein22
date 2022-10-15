@@ -3,8 +3,6 @@ import React from "react";
 import logo from "../assets/dresteinLogo.svg";
 const FooterHeader = styled.div`
 width: 100vw;
-/* height: 100%; */
-/* background-color: #8a57ef; */
 margin-top: 5rem;
 
 /* text-transform: uppercase; */
@@ -26,6 +24,7 @@ font-size: 7vw;
 
 `;
 const FooterContainer = styled.div`
+margin-bottom: 5rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -60,15 +59,20 @@ const FooterMainText = styled.p`
 `;
 
 const FooterConatinAll = styled.div`
+margin-bottom: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
 `;
 const FooterBottom = styled.div`
+color: white;
+background: linear-gradient(0.25turn, #312755, #1c1c20, #362430);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 1rem;
+    /* margin: 1rem; */
+    padding: 0.5rem 1rem;
+    border-radius: 1rem 1rem 0 0;
     @media screen  and (max-width:600px){
         flex-direction: column;
         width: 100%;
