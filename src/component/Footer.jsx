@@ -3,7 +3,7 @@ import React from "react";
 import logo from "../assets/dresteinLogo.svg";
 const FooterHeader = styled.div`
 width: 100vw;
-height: 100%;
+/* height: 100%; */
 /* background-color: #8a57ef; */
 margin-top: 5rem;
 

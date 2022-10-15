@@ -4,7 +4,7 @@
 
 @media screen and (max-width:600px) {
   .onlyshow {
-    display: inline;
+    /* display: inline; */
     position: sticky;
     top: 0;
   }

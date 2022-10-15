@@ -144,6 +144,15 @@ export default function App() {
       </Head>
       <div>
         <Swiper
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }}
+          pagination={{
+            clickable: true,
+          }}
+          navigation={true}
+          modules={[Autoplay, Pagination, Navigation]}
           id="swipertest"
           effect={"coverflow"}
           centeredSlides={true}
@@ -189,6 +198,15 @@ export default function App() {
           centeredSlides={true}
           slidesPerView={"auto"}
           loop={true}
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }}
+          pagination={{
+            clickable: true,
+          }}
+          navigation={true}
+          modules={[Autoplay, Pagination, Navigation]}
           coverflowEffect={{
             // Without Perspective design value
             rotate: 0,
@@ -229,6 +247,15 @@ export default function App() {
           centeredSlides={true}
           slidesPerView={"auto"}
           loop={true}
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }}
+          pagination={{
+            clickable: true,
+          }}
+          navigation={true}
+          modules={[Autoplay, Pagination, Navigation]}
           coverflowEffect={{
             // Without Perspective design value
             // rotate: 0,

@@ -14,7 +14,7 @@ import About from "./component/About";
 import { motion, useScroll, useTransform } from "framer-motion";
 import Guest from "./component/Guest";
 import Footer from "./component/Footer";
-// import Slider from "./component/slider";
+import Slider from "./component/slider";
 
 const DepartmentDiv = styled.div`
 position: sticky;

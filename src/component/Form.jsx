@@ -33,6 +33,7 @@ import ListItem from "@mui/joy/ListItem";
 import Checkbox from "@mui/joy/Checkbox";
 import Alert from "@mui/joy/Alert";
 import lock from "../assets/earth.png";
+import Footer from "./Footer";
 
 function Selector() {
   return (
@@ -277,6 +278,7 @@ const Form = () => {
         </CssVarsProvider>
         <img src={lock} className="loginimage"></img>
       </div>
+      <Footer style={{ height: "auto" }} />
     </div>
   );
 };
