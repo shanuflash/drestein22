@@ -213,7 +213,7 @@ function Main() {
           November 9th & 10th
         </Timer>
       </HeaderBg>
-      <Link to='/form'>
+      <Link to="/form">
         <RegisterNow className="button">
           <HoverSpan className="span_btn">register now</HoverSpan>
         </RegisterNow>

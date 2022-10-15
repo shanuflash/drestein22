@@ -1,10 +1,14 @@
-import React, { useRef } from "react";
+import React, { useRef, useEffect, useState } from "react";
+// import { gsap } from "gsap";
+
 import "./App.css";
+// import '../src/styles/Gallery.scss'
+// import Gallery from './component/Gallery';
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
 import ImageGallery from "./component/Gallery";
-import Nav from "../src/component/Nav";
-import Main from "../src/component/Main";
+import Nav from "./component/Nav";
+import Main from "./component/Main";
 import { useCallback } from "react";
 import { Particle } from "./configsFiles/partical.config";
 import "./styles/astroid.css";
@@ -14,14 +18,16 @@ import About from "./component/About";
 import { motion, useScroll, useTransform } from "framer-motion";
 import Guest from "./component/Guest";
 import Footer from "./component/Footer";
-// import Slider from "./component/slider";
-
+import saveethalogo from '../src/assets/saveethaLogo.svg'
 const DepartmentDiv = styled.div`
 position: sticky;
 `;
 
-const App = () => {
+const InnerApp = () => {
+  const parallex = useRef(null);
   const scroll = useRef(null);
+  const [background, setBackground] = useState("#262626");
+  const headerRef = useRef(null);
   const { scrollY } = useScroll();
   const MValue = useTransform(scrollY, [0, 1000], [0, -200]);
   const DValue = useTransform(scrollY, [0, 1000], [0, -500]);
@@ -32,44 +38,80 @@ const App = () => {
   }, []);
   const particlesLoaded = useCallback(async (container) => {}, []);
 
+  const parallexFun = () => {
+    window.requestAnimationFrame(() => {
+      var pos = window.pageYOffset * parallex.current.dataset.rate;
+      if (parallex.current.dataset.direction === "vertical") {
+        parallex.current.style.transform =
+          "translate3d(0px ," + pos + "px" + ",0px)";
+      } else {
+        var posX = window.pageYOffset * parallex.current.dataset.ratex;
+        var posY = window.pageYOffset * parallex.current.dataset.ratey;
+        parallex.current.style.transform =
+          "translate3d(" + posX + "px," + posY + "px,0px)";
+      }
+    });
+  };
+
   return (
     <div ref={scroll}>
+      {/* <div style={{
+       direction:'rtl'
+      }}>
+      <img style={{
+    display:'inline-block'
+}} src={saveethalogo} />
+        <ul style={{
+        display:'inline-block'
+}} >
+  <li>
+    home
+  </li>
+  <li>
+    home
+  </li>
+  <li>
+    home
+  </li>
+</ul>
+        </div>  */}
+
       <motion.div
         className="scrollprogress"
         style={{ scaleX: scrollYProgress }}
       />
-      {/* <Particles
+      <Particles
         className="particles"
         id="tsparticles"
         init={particlesInit}
         loaded={particlesLoaded}
         options={Particle}
-      /> */}
-      <Nav />
+      />
+        <Nav />
       <Main />
       <motion.div
         className="img"
         style={{ y: DeviceSize < 800 ? MValue : DValue, zIndex: -1 }}
       ></motion.div>
+
       <DepartmentDiv id="Departments">
         <Departments />
       </DepartmentDiv>
-      <div id="Gallery">
+      <div>
         <ImageGallery />
       </div>
-      <div id="About">
+
+      <div>
         <About />
       </div>
-      <div id="Guest">
+      <div>
         <Guest />
       </div>
-      <div id="Footer">
+      <div>
         <Footer />
       </div>
-
-      {/* <Slider /> */}
     </div>
   );
 };
 
-export default App;
+export default InnerApp;

@@ -117,7 +117,11 @@ font-size: 7vw;
               Organization (SIRO) by the Department of Scientific and Industrial
               Research (DSIR), Government of India.
             </List>
-            <List as={motion.li} variants={text}>
+            <List
+              as={motion.li}
+              variants={text}
+              style={{ paddingBottom: "5rem" }}
+            >
               Five Research Centres recognised by Anna University
             </List>
           </ul>
