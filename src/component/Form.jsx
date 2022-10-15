@@ -32,7 +32,7 @@ import List from "@mui/joy/List";
 import ListItem from "@mui/joy/ListItem";
 import Checkbox from "@mui/joy/Checkbox";
 import Alert from "@mui/joy/Alert";
-import lock from "../assets/lock.png";
+import lock from "../assets/earth.png";
 
 function Selector() {
   return (
@@ -105,7 +105,7 @@ const Form = () => {
   const handleChangeDept = (e) => {
     setformdata((prev) => ({
       ...prev,
-      year: e.target.innerHTML,
+      dept: e.target.innerHTML,
     }));
   };
   return (
@@ -198,27 +198,52 @@ const Form = () => {
                 </Select>
               </FormControl>
             </div>
-            <FormControl
-              sx={
-                {
-                  // width: "48%",
-                }
-              }
+            <div
+              style={{
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "space-between",
+              }}
             >
-              <FormLabel htmlFor="gender">Gender</FormLabel>
-              <Select
-                id="gender"
-                name="gender"
-                placeholder="Select gender..."
-                value={formdata.gender}
-                onChange={handleChangeGender}
+              <FormControl
+                sx={{
+                  width: "48%",
+                }}
               >
-                <Option value="1">Male</Option>
-                <Option value="2">Female</Option>
-                <Option value="3">Other</Option>
-                <Option value="4">Prefer Not To Say</Option>
-              </Select>
-            </FormControl>
+                <FormLabel htmlFor="dept">Department</FormLabel>
+                <Select
+                  id="dept"
+                  name="dept"
+                  placeholder="Select department..."
+                  value={formdata.dept}
+                  onChange={handleChangeDept}
+                >
+                  <Option value="1">IT</Option>
+                  <Option value="2">CSE</Option>
+                  <Option value="3">ECE</Option>
+                  <Option value="4">EEE</Option>
+                </Select>
+              </FormControl>
+              <FormControl
+                sx={{
+                  width: "48%",
+                }}
+              >
+                <FormLabel htmlFor="gender">Gender</FormLabel>
+                <Select
+                  id="gender"
+                  name="gender"
+                  placeholder="Select gender..."
+                  value={formdata.gender}
+                  onChange={handleChangeGender}
+                >
+                  <Option value="1">Male</Option>
+                  <Option value="2">Female</Option>
+                  <Option value="3">Other</Option>
+                  <Option value="4">Prefer Not To Say</Option>
+                </Select>
+              </FormControl>
+            </div>
 
             <TextField
               name="phno"
