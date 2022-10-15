@@ -16,6 +16,8 @@
     font-weight: 500;
     height: 100vh;
     /* box-shadow: white; */
+
+
 }
 
 .formcontainer {
@@ -27,6 +29,7 @@
 .headcontainer .container {
     /* overflow: auto; */
     height: 70vh;
+
     overflow-y: scroll;
     background-color: whitesmoke;
     border-radius: 50px;
@@ -43,4 +46,22 @@
 .register {
     width: 100px;
     height: 40px;
+}
+
+.main-form {
+    display: flex;
+}
+
+.formsheet {
+    flex-basis: 80%;
+}
+
+.loginimage {
+    width: 40%;
+}
+
+@media screen and (max-width:600px) {
+    .loginimage {
+        display: none;
+    }
 }

@@ -32,6 +32,7 @@ import List from "@mui/joy/List";
 import ListItem from "@mui/joy/ListItem";
 import Checkbox from "@mui/joy/Checkbox";
 import Alert from "@mui/joy/Alert";
+import lock from "../assets/lock.png";
 
 function Selector() {
   return (
@@ -46,7 +47,7 @@ function Selector() {
             "--List-item-radius": "20px",
           }}
         >
-          {["Event-1", "Event-2", "Event-3", "Event-3"].map((item, index) => (
+          {["Event-1", "Event-2", "Event-3", "Event-4"].map((item, index) => (
             <ListItem key={item}>
               <Checkbox overlay disableIcon variant="soft" label={item} />
             </ListItem>
@@ -83,190 +84,174 @@ const Form = () => {
       ...prevState,
       [e.target.name]: e.target.value,
     }));
-    console.log(formdata);
   };
   const handleSubmit = (e) => {
+    alert("it works!");
     e.preventDefault();
     console.log(formdata);
   };
-  // const Theme = createTheme({
-  //   palette: {
-  //     mode: "dark",
-  //   },
-  // });
-  const onchangehandle = (e) => {
-    console.log(e.target.name);
-    setformdata((prevState) => ({
-      ...prevState,
-      [e.target.name]: e.target.innerHTML,
+  const handleChangeYear = (e) => {
+    setformdata((prev) => ({
+      ...prev,
+      year: e.target.innerHTML,
+    }));
+  };
+  const handleChangeGender = (e) => {
+    setformdata((prev) => ({
+      ...prev,
+      gender: e.target.innerHTML,
+    }));
+  };
+  const handleChangeDept = (e) => {
+    setformdata((prev) => ({
+      ...prev,
+      year: e.target.innerHTML,
     }));
   };
   return (
     <div className="headcontainer" data-joy-color-scheme="dark">
       <Nav />
-      <CssVarsProvider>
-        {/* <ThemeProvider theme={Theme}> */}
-        <Sheet
-          sx={{
-            width: "40vw",
-            mx: "auto",
-            my: 4,
-            py: 3,
-            px: 2,
-            display: "flex",
-            flexDirection: "column",
-            gap: 2,
-            borderRadius: "sm",
-            boxShadow: "md",
-          }}
-          variant="outlined"
-          className="formcontainer"
-        >
-          <div>
-            <Typography level="h4" component="h1">
-              <b>Register!</b>
-            </Typography>
-            <Typography level="body2">
-              Register now to take part in events.
-            </Typography>
-          </div>
-          <Divider />
-          <div className="Name">
+      <div className="main-form">
+        <CssVarsProvider className="formsheet">
+          {/* <ThemeProvider theme={Theme}> */}
+          <Sheet
+            sx={{
+              width: "90vw",
+              mx: 2,
+              my: 4,
+              py: 3,
+              px: 2,
+              display: "flex",
+              flexDirection: "column",
+              gap: 2,
+              borderRadius: "sm",
+              boxShadow: "md",
+            }}
+            variant="outlined"
+            className="formcontainer"
+          >
+            <div>
+              <Typography level="h4" component="h1">
+                <b>Register!</b>
+              </Typography>
+              <Typography level="body2">
+                Register now to take part in events.
+              </Typography>
+            </div>
+            <Divider />
+            <div className="Name">
+              <TextField
+                name="fname"
+                value={formdata.fname}
+                onChange={handleChange}
+                type="text"
+                placeholder="John"
+                label="First Name"
+                sx={{ width: "48%" }}
+              />
+              <TextField
+                name="lname"
+                value={formdata.lname}
+                onChange={handleChange}
+                type="text"
+                placeholder="Doe"
+                label="Last Name"
+                sx={{ width: "48%" }}
+              />
+            </div>
             <TextField
-              required
-              name="fname"
-              value={formdata.fname}
+              name="college"
+              value={formdata.college}
               onChange={handleChange}
               type="text"
-              placeholder="John"
-              label="First Name"
-              sx={{ width: "48%" }}
+              placeholder="Your college name..."
+              label="College Name"
             />
-            <TextField
-              required
-              name="lname"
-              value={formdata.lname}
-              onChange={handleChange}
-              type="text"
-              placeholder="Doe"
-              label="Last Name"
-              sx={{ width: "48%" }}
-            />
-          </div>
-          <TextField
-            required
-            name="college"
-            value={formdata.college}
-            onChange={handleChange}
-            type="text"
-            placeholder="Your college name..."
-            label="College Name"
-          />
-          <div className="yearno">
-            <TextField
-              required
-              name="regno"
-              value={formdata.regno}
-              onChange={handleChange}
-              type="number"
-              placeholder="Your roll number..."
-              label="Roll Number"
-              sx={{ width: "48%" }}
-            />
-            <FormControl
-              sx={{
-                width: "48%",
-              }}
-            >
-              <FormLabel htmlFor="year">Year</FormLabel>
-              <Select
-                id="year"
-                placeholder="Select year..."
-                name="year"
-                value={formdata.year}
-                onChange={onchangehandle}
-                // required
+            <div className="yearno">
+              <TextField
+                name="regno"
+                value={formdata.regno}
+                onChange={handleChange}
+                type="number"
+                placeholder="Your roll number..."
+                label="Roll Number"
+                sx={{ width: "48%" }}
+              />
+              <FormControl
+                sx={{
+                  width: "48%",
+                }}
               >
-                <Option name="year" value="I">
-                  I
-                </Option>
-                <Option name="year" value="II">
-                  II
-                </Option>
-                <Option name="year" value="III">
-                  III
-                </Option>
-                <Option name="year" value="IV">
-                  IV
-                </Option>
+                <FormLabel htmlFor="year">Year</FormLabel>
+                <Select
+                  id="year"
+                  name="year"
+                  placeholder="Select year..."
+                  value={formdata.year}
+                  onChange={handleChangeYear}
+                  //
+                >
+                  <Option value="1">I</Option>
+                  <Option value="2">II</Option>
+                  <Option value="3">III</Option>
+                  <Option value="4">IV</Option>
+                </Select>
+              </FormControl>
+            </div>
+            <FormControl
+              sx={
+                {
+                  // width: "48%",
+                }
+              }
+            >
+              <FormLabel htmlFor="gender">Gender</FormLabel>
+              <Select
+                id="gender"
+                name="gender"
+                placeholder="Select gender..."
+                value={formdata.gender}
+                onChange={handleChangeGender}
+              >
+                <Option value="1">Male</Option>
+                <Option value="2">Female</Option>
+                <Option value="3">Other</Option>
+                <Option value="4">Prefer Not To Say</Option>
               </Select>
             </FormControl>
-          </div>
-          <FormControl
-            sx={
-              {
-                // width: "48%",
-              }
-            }
-          >
-            <FormLabel htmlFor="gender">Gender</FormLabel>
-            <Select
-              required
-              id="gender"
-              name="gender"
-              placeholder="Select gender..."
-              value={formdata.gender}
-              onChange={onchangehandle}
-              indicator={<KeyboardArrowDown />}
-              sx={{
-                // width: 240,
-                [`& .${selectClasses.indicator}`]: {
-                  transition: "0.2s",
-                  [`&.${selectClasses.expanded}`]: {
-                    transform: "rotate(-180deg)",
-                  },
-                },
-              }}
-            >
-              <Option value="dog">Male</Option>
-              <Option value="cat">Female</Option>
-              <Option value="fish">Other</Option>
-              <Option value="bird">Prefer Not To Say</Option>
-            </Select>
-          </FormControl>
 
-          <TextField
-            required
-            name="phno"
-            type="number"
-            value={formdata.phno}
-            onChange={handleChange}
-            placeholder="98765*****"
-            label="Phone Number"
-          />
-          <TextField
-            required
-            name="email"
-            value={formdata.email}
-            onChange={handleChange}
-            type="email"
-            placeholder="johndoe@email.com"
-            label="Email"
-          />
-          <Selector />
-          <Selector />
-          <Selector />
-          <Selector />
-          {/* <ModeToggle /> */}
-          <Alert variant="outlined" color="danger" sx={{ align: "center" }}>
-            Registeration Fee of ₹150 has to be paid on the event date.
-          </Alert>
-          <Button sx={{ mt: 1 }} onSubmit={handleSubmit}>
-            Register
-          </Button>
-        </Sheet>
-        {/* </ThemeProvider> */}
-      </CssVarsProvider>
+            <TextField
+              name="phno"
+              type="number"
+              value={formdata.phno}
+              onChange={handleChange}
+              placeholder="98765*****"
+              label="Phone Number"
+            />
+            <TextField
+              name="email"
+              value={formdata.email}
+              onChange={handleChange}
+              type="email"
+              placeholder="johndoe@email.com"
+              label="Email"
+            />
+            <Selector />
+            <Selector />
+            <Selector />
+            <Selector />
+            {/* <ModeToggle /> */}
+            <Alert variant="outlined" color="danger" sx={{ align: "center" }}>
+              Registeration Fee of ₹150 has to be paid on the event date.
+            </Alert>
+            <Button sx={{ mt: 1 }} onClick={handleSubmit}>
+              Register
+            </Button>
+          </Sheet>
+          {/* </ThemeProvider> */}
+        </CssVarsProvider>
+        <img src={lock} className="loginimage"></img>
+      </div>
     </div>
   );
 };
