@@ -1,4 +1,4 @@
-export const product = [
+export const EventDetails = [
   {
     title: "Information Technology",
     eventslist: [
