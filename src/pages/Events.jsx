@@ -9,14 +9,14 @@ const Events = () => {
     <div className="event-page">
       <Nav />
       <div className="event-container">
-        {product.map((data) => (
+        {product.map((EachDept) => (
           <>
             <div className="top">
-              <div className="title">{data.title}</div>
+              <div className="title">{EachDept.title}</div>
             </div>
             <div className="wrapper">
-              {data.eventslist.map((datas) => (
-                <EventCard {...datas} />
+              {EachDept.eventslist.map((EachEvent) => (
+                <EventCard {...EachEvent} />
               ))}
             </div>
           </>
