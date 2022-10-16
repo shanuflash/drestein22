@@ -4,6 +4,7 @@ import saveethalogo from "../assets/logo.png";
 import dresteinLogo from "../assets/dresteinLogo.svg";
 import Mobilenav from "./Mobilenav";
 import "../styles/HambBurger.css";
+import { Link } from "react-router-dom";
 
 const Navbar = styled.nav`
   color: rgb(255, 255, 255);
@@ -153,13 +154,15 @@ function Nav() {
       </NavHead>
       <MobileNavHeader>
         <Mobilenav />
-        <LogoHead>
-          <DLogo src={dresteinLogo} alt="DresteinLogo" />
-          <EventLogo>
-            <DresteinLetter color="red">DRESTEIN</DresteinLetter>
-            <Year>2 0 2 2</Year>
-          </EventLogo>
-        </LogoHead>
+        <Link to='/' style={{"text-decoration": "none"}}>
+          <LogoHead>
+            <DLogo src={dresteinLogo} alt="DresteinLogo" />
+            <EventLogo>
+              <DresteinLetter color="red">DRESTEIN</DresteinLetter>
+              <Year>2 0 2 2</Year>
+            </EventLogo>
+          </LogoHead>
+        </Link>
       </MobileNavHeader>
     </Navbar>
   );

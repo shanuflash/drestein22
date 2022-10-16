@@ -4,6 +4,8 @@ import "../styles/DepartMentCard.css";
 import { motion, Variants } from "framer-motion";
 // import lap from "../assets/laptop.png";
 
+import { Link } from "react-router-dom";
+
 const DeptImage = styled.img`
   border-radius: 20px;
 `;
@@ -180,7 +182,9 @@ function DepartMentCard({ img, title, des, color, bgtext, mbtm }) {
             {a[1]}
           </DeptTxt>
           <div>
-            <Event href="#">Events</Event>
+            <Link to='/events'>
+              <Event href="#">Events</Event>
+            </Link>
           </div>
         </div>
       </Card>
