@@ -1,12 +1,11 @@
 .event-card {
     display: flex;
     flex-direction: column;
-    border-radius: 0.5rem;
+    border-radius: 1rem;
     background-color: rgba(141, 138, 138, 0.294);
     overflow: hidden;
     transition: all 500ms;
     max-width: 23rem;
-
 
     &:hover {
         transform: scale(1.10);
@@ -19,12 +18,9 @@
 
     .description {
         padding: 0.5rem 1.25rem;
-
         .title {
             font-size: 1.3rem;
-
         }
-
         .one-line-desc {
             font-size: 0.8rem;
         }

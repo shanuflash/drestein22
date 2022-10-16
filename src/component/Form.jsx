@@ -91,22 +91,11 @@ const Form = () => {
     e.preventDefault();
     console.log(formdata);
   };
-  const handleChangeYear = (e) => {
+  const handleChangeSelect = (e) => {
+    alert(e.target.innerText);
     setformdata((prev) => ({
       ...prev,
-      year: e.target.innerHTML,
-    }));
-  };
-  const handleChangeGender = (e) => {
-    setformdata((prev) => ({
-      ...prev,
-      gender: e.target.innerHTML,
-    }));
-  };
-  const handleChangeDept = (e) => {
-    setformdata((prev) => ({
-      ...prev,
-      dept: e.target.innerHTML,
+      [e.target.name]: e.target.innerText,
     }));
   };
   return (
@@ -189,8 +178,14 @@ const Form = () => {
                   name="year"
                   placeholder="Select year..."
                   value={formdata.year}
-                  onChange={handleChangeYear}
-                  //
+                  onChange={(e, newValue) =>
+                    handleChange({
+                      target: {
+                        value: newValue,
+                        name: "year",
+                      },
+                    })
+                  }
                 >
                   <Option value="1">I</Option>
                   <Option value="2">II</Option>
@@ -217,7 +212,14 @@ const Form = () => {
                   name="dept"
                   placeholder="Select department..."
                   value={formdata.dept}
-                  onChange={handleChangeDept}
+                  onChange={(e, newValue) =>
+                    handleChange({
+                      target: {
+                        value: newValue,
+                        name: "dept",
+                      },
+                    })
+                  }
                 >
                   <Option value="1">IT</Option>
                   <Option value="2">CSE</Option>
@@ -236,7 +238,14 @@ const Form = () => {
                   name="gender"
                   placeholder="Select gender..."
                   value={formdata.gender}
-                  onChange={handleChangeGender}
+                  onChange={(e, newValue) =>
+                    handleChange({
+                      target: {
+                        value: newValue,
+                        name: "gender",
+                      },
+                    })
+                  }
                 >
                   <Option value="1">Male</Option>
                   <Option value="2">Female</Option>

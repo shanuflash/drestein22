@@ -2,8 +2,6 @@ import React from "react";
 import styled from "styled-components";
 import "../styles/DepartMentCard.css";
 import { motion, Variants } from "framer-motion";
-// import lap from "../assets/laptop.png";
-
 import { Link } from "react-router-dom";
 
 const DeptImage = styled.img`
@@ -168,6 +166,8 @@ function DepartMentCard({ img, title, des, color, bgtext, mbtm }) {
           <motion.div variants={cardimg}>
             <img
               style={{
+                boxShadow:
+                  "rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px",
                 borderRadius: "20px",
                 objectFit: "cover",
               }}
@@ -182,7 +182,7 @@ function DepartMentCard({ img, title, des, color, bgtext, mbtm }) {
             {a[1]}
           </DeptTxt>
           <div>
-            <Link to='/events'>
+            <Link to="/events">
               <Event href="#">Events</Event>
             </Link>
           </div>
