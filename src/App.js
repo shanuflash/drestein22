@@ -1,75 +1,46 @@
-import React, { useRef } from "react";
+import React from "react";
+import { Route, Routes } from "react-router-dom";
+import Form from "./component/Form";
+import Events from "./pages/Events";
 import "./App.css";
-import Particles from "react-tsparticles";
-import { loadFull } from "tsparticles";
-import ImageGallery from "./component/Gallery";
-import Nav from "../src/component/Nav";
-import Main from "../src/component/Main";
-import { useCallback } from "react";
-import { Particle } from "./configsFiles/partical.config";
-import "./styles/astroid.css";
-import styled from "styled-components";
-import Departments from "./component/Departments";
-import About from "./component/About";
-import { motion, useScroll, useTransform } from "framer-motion";
-import Guest from "./component/Guest";
-import Footer from "./component/Footer";
-import Slider from "./component/slider";
+import AppMain from "./AppMain";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
-const DepartmentDiv = styled.div`
-position: sticky;
-`;
-
-const App = () => {
-  const scroll = useRef(null);
-  const { scrollY } = useScroll();
-  const MValue = useTransform(scrollY, [0, 1000], [0, -200]);
-  const DValue = useTransform(scrollY, [0, 1000], [0, -500]);
-  const { scrollYProgress } = useScroll();
-  const DeviceSize = window.innerWidth;
-  const particlesInit = useCallback(async (engine) => {
-    await loadFull(engine);
-  }, []);
-  const particlesLoaded = useCallback(async (container) => {}, []);
-
+import PrivateRoute from "./RequireAuth";
+import SignIn from "../src/Admin/components/AdminSign";
+import AdminMain from "../src/Admin/components/AdminMain";
+import PaidUsers from "../src/Admin/components/PaidUsers";
+import UnPaidUsers from "../src/Admin/components/UnpaidUsers";
+import AdminPannel from "./Admin/components/ScanUsers";
+import { UserProvider } from "./Admin/contexts/AdminContext";
+import SingleUserPage from "../src/Admin/components/SingleUserPage";
+import AdminProfile from "./Admin/components/AdminProfile";
+function App() {
   return (
-    <div ref={scroll}>
-      <motion.div
-        className="scrollprogress"
-        style={{ scaleX: scrollYProgress }}
-      />
-      {/* <Particles
-        className="particles"
-        id="tsparticles"
-        init={particlesInit}
-        loaded={particlesLoaded}
-        options={Particle}
-      /> */}
-      <Nav />
-      <Main />
-      <motion.div
-        className="img"
-        style={{ y: DeviceSize < 800 ? MValue : DValue, zIndex: -1 }}
-      ></motion.div>
-      <DepartmentDiv id="Departments">
-        <Departments />
-      </DepartmentDiv>
-      <div id="Gallery">
-        <ImageGallery />
-      </div>
-      <div id="About">
-        <About />
-      </div>
-      <div id="Guest">
-        <Guest />
-      </div>
-      <div id="Footer">
-        <Footer />
-      </div>
+    <UserProvider>
+      <div>
+        <Routes>
+          <Route path="/" element={<AppMain />} />
+          <Route path="form" element={<Form />} />
+          <Route path="events" element={<Events />} />
+          <Route path="Admin/login" element={<SignIn />} />
+          <Route path="*" element={<h1>page not found</h1>} />
+          <Route path="user/:userid" element={<SingleUserPage />} />
 
-      {/* <Slider /> */}
-    </div>
+          <Route path="/Admin" element={<PrivateRoute />}>
+            <Route path="/Admin" element={<AdminMain />}>
+              <Route path="paid" element={<PaidUsers />} />
+              <Route path="unpaid" element={<UnPaidUsers />} />
+              <Route path="scanusers" element={<AdminPannel />} />
+              <Route path='profile' element={<AdminProfile/>}/>
+            </Route>
+          </Route>
+        </Routes>
+        <ToastContainer />
+      </div>
+    </UserProvider>
   );
-};
+}
 
 export default App;

@@ -94,7 +94,6 @@ export default function App() {
     @media (max-width: 600px) {
       font-size: 10vw;
     }
-
   `;
   const Images = [
     "https://images.unsplash.com/photo-1665243066869-1f27e948de5f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=800&q=60",
@@ -115,26 +114,24 @@ export default function App() {
   };
 
   const SlideImg = styled.div`
-  position: relative;
-`;
+    position: relative;
+  `;
   const Innertext = styled.p`
-  position: absolute;
-  bottom: 10px;
-  left:10px;
-  background-color: rgba(0,0,0,0.5);
-  padding: 10px;
-  color: white;
-  border-radius: 10px;
-  border: 1px solid white;
-  cursor: pointer;
-`;
+    position: absolute;
+    bottom: 10px;
+    left:10px;
+    background-color: rgba(0,0,0,0.5);
+    padding: 10px;
+    color: white;
+    border-radius: 10px;
+    border: 1px solid white;
+    cursor: pointer;
+  `;
   const GallerHeader = styled.div`
-        height: 100%;
-        width: 100vw;
-
-
-
-`;
+    height: 100%;
+    width: 100vw;
+  `;
+  
   return (
     <GallerHeader>
       <Head
