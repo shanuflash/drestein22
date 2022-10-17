@@ -1,27 +1,28 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
-import Form from "./component/Form";
-import Events from "./pages/Events";
-import "./App.css";
-import AppMain from "./AppMain";
 import { ToastContainer, toast } from "react-toastify";
+
+import Form from "./components/Form/Form";
+import Events from "./components/Events/Events";
+import Main from "./Main";
 import "react-toastify/dist/ReactToastify.css";
+import "./App.css";
 
 import PrivateRoute from "./RequireAuth";
-import SignIn from "../src/Admin/components/AdminSign";
-import AdminMain from "../src/Admin/components/AdminMain";
-import PaidUsers from "../src/Admin/components/PaidUsers";
-import UnPaidUsers from "../src/Admin/components/UnpaidUsers";
-import AdminPannel from "./Admin/components/ScanUsers";
-import { UserProvider } from "./Admin/contexts/AdminContext";
-import SingleUserPage from "../src/Admin/components/SingleUserPage";
-import AdminProfile from "./Admin/components/AdminProfile";
+import SignIn from "./components/Admin/components/AdminSign";
+import AdminMain from "./components/Admin/components/AdminMain";
+import PaidUsers from "./components/Admin/components/PaidUsers";
+import UnPaidUsers from "./components/Admin/components/UnpaidUsers";
+import AdminPannel from "./components/Admin/components/ScanUsers";
+import { UserProvider } from "./components/Admin/contexts/AdminContext";
+import SingleUserPage from "./components/Admin/components/SingleUserPage";
+import AdminProfile from "./components/Admin/components/AdminProfile";
 function App() {
   return (
     <UserProvider>
       <div>
         <Routes>
-          <Route path="/" element={<AppMain />} />
+          <Route path="/" element={<Main />} />
           <Route path="form" element={<Form />} />
           <Route path="events" element={<Events />} />
           <Route path="Admin/login" element={<SignIn />} />
@@ -33,7 +34,7 @@ function App() {
               <Route path="paid" element={<PaidUsers />} />
               <Route path="unpaid" element={<UnPaidUsers />} />
               <Route path="scanusers" element={<AdminPannel />} />
-              <Route path='profile' element={<AdminProfile/>}/>
+              <Route path="profile" element={<AdminProfile />} />
             </Route>
           </Route>
         </Routes>
