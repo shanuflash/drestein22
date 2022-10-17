@@ -44,7 +44,7 @@ const Gallery = () => {
         whileInView="onscreen"
         variants={text}
       >
-        Gallery 2021
+        Gallery
       </Head>
       <Swiper
         autoplay={{
