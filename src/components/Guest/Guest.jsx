@@ -27,7 +27,9 @@ font-size: 8vw;
    justify-content: center;
   align-items: center;
   color: white;
-  font-family: poppins, sans-serif;
+    font-family: 'Montserrat', sans-serif;
+
+  /* font-family: poppins, sans-serif; */
   @media (max-width: 600px) {
   margin-top: 7rem;
 font-size: 10vw;
@@ -85,7 +87,9 @@ font-size: 5vw;
 text-align: center;
 background-color: white;
 width:80%;
-  font-family: poppins, sans-serif;
+    font-family: 'Montserrat', sans-serif;
+
+  /* font-family: poppins, sans-serif; */
     font-weight: bold;
 
 height: 300px;

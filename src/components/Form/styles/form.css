@@ -12,7 +12,9 @@
 .headcontainer {
     /* padding-top: 200px; */
     background-color: black;
-    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
+    --joy-fontFamily-body: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     height: 100vh;
     /* box-shadow: white; */

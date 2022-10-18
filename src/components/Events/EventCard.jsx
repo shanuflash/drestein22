@@ -4,7 +4,8 @@ import styled from "styled-components";
 
 const EventCard = ({ name, desc, img, tag, date }) => {
   const Card = styled.a`
-    font-family: "poppins", sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    /* font-family: "poppins", sans-serif; */
     --bg-filter-opacity: 0.5;
     --bg-img: url(${img});
     background-image: linear-gradient(rgba(0, 0, 0, var(--bg-filter-opacity)), rgba(0, 0, 0, var(--bg-filter-opacity))), var(--bg-img);

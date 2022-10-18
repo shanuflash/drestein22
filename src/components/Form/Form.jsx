@@ -37,24 +37,13 @@ function Selector({ name, events, setformdata, formdata }) {
     console.log(e.target.value);
     const { value, checked } = e.target;
 
-    // Case 1 : The user checks the box
     if (checked) {
       language.push(value);
       setformdata((pre) => ({ ...pre, [name]: language }));
-
-      // setformdata(pre=>({...pre,[name]:languages}))
     } else {
       language.pop(value);
       setformdata((pre) => ({ ...pre, [name]: language }));
     }
-
-    // Case 2  : The user unchecks the box
-
-    // setUserInfo({
-    //   languages: languages.filter((e) => e !== value),
-
-    // });
-    // setformdata(pre=>({...pre,[name]:languages}))
 
     console.log(language);
   };

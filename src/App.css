@@ -8,7 +8,8 @@
 body {
   background-color: black;
   color: white;
-  font-family: "poppins", sans-serif;
+  /* font-family: "poppins", sans-serif; */
+  font-family: 'Montserrat', sans-serif;
 }
 
 
@@ -94,5 +95,12 @@ section {
 ::-webkit-scrollbar {
   width: 0px;
   background: transparent;
-  /* make scrollbar transparent */
+}
+
+.flip-countdown-title {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.MainHeaderDate {
+  padding-top: 20px;
 }

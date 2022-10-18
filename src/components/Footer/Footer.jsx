@@ -18,7 +18,9 @@ font-size: 7vw;
    justify-content: center;
   align-items: center;
   color: white;
-  font-family: poppins, sans-serif;
+    font-family: 'Montserrat', sans-serif;
+
+  /* font-family: poppins, sans-serif; */
   /* padding-left: 40px; */
 
 

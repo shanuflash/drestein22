@@ -154,7 +154,7 @@ function Nav() {
       </NavHead>
       <MobileNavHeader>
         <Mobilenav />
-        <Link to='/' style={{"text-decoration": "none"}}>
+        <Link to="/" style={{ "text-decoration": "none" }}>
           <LogoHead>
             <DLogo src={dresteinLogo} alt="DresteinLogo" />
             <EventLogo>

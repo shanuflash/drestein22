@@ -28,7 +28,8 @@ function About() {
     justify-content: center;
     align-items: center;
     color: white;
-    font-family: poppins, sans-serif;
+    /* font-family: poppins, sans-serif; */
+    font-family: 'Montserrat', sans-serif;
   `;
   const AboutDescript = styled.div`
     font-size: 1em;

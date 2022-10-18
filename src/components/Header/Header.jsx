@@ -42,7 +42,7 @@ const HeaderMainText = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 50%;
+  width: 55%;
 
   @media screen and (max-width: 600px) {
     border: none;
@@ -133,9 +133,9 @@ const Timer = styled.div`
   font-size: 3vw;
   text-align: center;
   width: 45%;
-  font-weight:200;
+  font-weight:300;
   @media screen and (max-width: 600px) {
-    font-size: 7vw;
+    font-size: 6vw;
     width: 100%;
   }
 `;
@@ -150,7 +150,9 @@ const RegisterNow = styled.button`
   border-radius: 1rem;
   padding: 1rem;
   transition: all 0.5s;
-  font-family: "Poppins", sans-serif;
+    font-family: 'Montserrat', sans-serif;
+
+  /* font-family: "Poppins", sans-serif; */
 
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
   rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
@@ -211,7 +213,7 @@ function Main() {
             endAtZero
             endAt={"2022-11-09 01:26:58"}
           />
-          November 9th & 10th
+          <div className="MainHeaderDate">November 9th & 10th</div>
         </Timer>
       </HeaderBg>
       <Link to="/form">

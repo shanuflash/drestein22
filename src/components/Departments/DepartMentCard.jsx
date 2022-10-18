@@ -11,6 +11,8 @@ const DeptImage = styled.img`
 function DepartMentCard({ img, title, des, color, bgtext, mbtm }) {
   const a = title.split(" ");
   const Card = styled.div`
+  font-family: "poppins", sans-serif;
+
     position: relative;
     width: 300px;
     height: 400px;
@@ -35,6 +37,9 @@ function DepartMentCard({ img, title, des, color, bgtext, mbtm }) {
       }
     }
     &::after{
+      /* font-family: 'poppins', sans-serif; */
+  font-family: "poppins", sans-serif;
+
     content: "${bgtext}";
     opacity: 0.3;
     position: absolute;
@@ -52,7 +57,9 @@ function DepartMentCard({ img, title, des, color, bgtext, mbtm }) {
       color: #000;
     font-weight: 300;
     text-transform: uppercase;
-    font-family: sans-serif;
+    /* font-family: sans-serif; */
+    font-family: 'Montserrat', sans-serif;
+
     letter-spacing: 2px;
     margin-right: 10px;
     margin-top: 10px;

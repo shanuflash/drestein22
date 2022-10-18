@@ -1,12 +1,18 @@
-import React, { useEffect, useState } from 'react'
-import { collection, onSnapshot, query, Query,where } from 'firebase/firestore'
+import React, { useEffect, useState } from "react";
+import {
+  collection,
+  onSnapshot,
+  query,
+  Query,
+  where,
+} from "firebase/firestore";
 import { db } from "../../../configs/Firebase.config";
-import { Card } from '@mui/material'
-import{Switch} from '@mui/material'
-import {Typography} from '@mui/material'
-import styled from 'styled-components'
-import UserInfoCard from './UserInfoCard'
-import { uuidv4 } from '@firebase/util'
+import { Card } from "@mui/material";
+import { Switch } from "@mui/material";
+import { Typography } from "@mui/material";
+import styled from "styled-components";
+import UserInfoCard from "./UserInfoCard";
+import { uuidv4 } from "@firebase/util";
 const UnPaidUSerMain = styled.div`
 width: 100vw;
 padding: 0  1.5rem;
@@ -29,7 +35,7 @@ padding: 0  1.5rem;
   }
 
 
-`
+`;
 const TextusernotPaid = styled.div`
     display: flex;
     color: black;
@@ -41,50 +47,48 @@ const TextusernotPaid = styled.div`
     transform: translate(-50px,-50px);
 
     font-size: 10vw;
-`
+`;
 function UnPaidUsers() {
-    const [paidUsers,setPaidusers] = useState([])
-    const [load,setload] = useState(false)
-    useEffect(()=>{
-        setload(true)
-        const colref = collection(db,'RegisteredPeople')
-        const q= query(colref,where("cashPaid",'==',false))
+  const [paidUsers, setPaidusers] = useState([]);
+  const [load, setload] = useState(false);
+  useEffect(() => {
+    setload(true);
+    const colref = collection(db, "RegisteredPeople");
+    const q = query(colref, where("cashPaid", "==", false));
 
-    onSnapshot(q,(snapshot)=>{
-    let books=[]
-    console.log(snapshot.docs)
-    snapshot.docs.forEach((doc)=>{
-        books.push({...doc.data(),id:doc.id})
-    })
-    // console.log(books)
-    console.log(books)
-    setPaidusers(books)
-    setload(false)
+    onSnapshot(q, (snapshot) => {
+      let books = [];
+      console.log(snapshot.docs);
+      snapshot.docs.forEach((doc) => {
+        books.push({ ...doc.data(), id: doc.id });
+      });
+      // console.log(books)
+      console.log(books);
+      setPaidusers(books);
+      setload(false);
+    });
+  }, []);
+  if (load) {
+    return (
+      <h1
+        style={{
+          color: "black",
+        }}
+      >
+        loading...
+      </h1>
+    );
+  }
 
-})
-    },[])
-    if(load){
-        return <h1 style={{
-            color:'black'
-        }}>loading...</h1>
-    }
-
-   
   return (
-      <UnPaidUSerMain>
-        {
-            paidUsers.length===0 && <TextusernotPaid>no user</TextusernotPaid>
-        }
+    <UnPaidUSerMain>
+      {paidUsers.length === 0 && <TextusernotPaid>no user</TextusernotPaid>}
 
-{
-            paidUsers.map(data=>{
-                return <UserInfoCard key={uuidv4()} data={data} />
-                
-                
-            })
-        }
-      </UnPaidUSerMain>
-  )
+      {paidUsers.map((data) => {
+        return <UserInfoCard key={uuidv4()} data={data} />;
+      })}
+    </UnPaidUSerMain>
+  );
 }
 
-export default UnPaidUsers
+export default UnPaidUsers;
