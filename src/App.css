@@ -104,3 +104,28 @@ section {
 .MainHeaderDate {
   padding-top: 20px;
 }
+
+.flip-countdown .flip-countdown-piece .flip-countdown-card .flip-countdown-card-sec .card__top,
+.flip-countdown .flip-countdown-piece .flip-countdown-card .flip-countdown-card-sec .card__bottom {
+  /* border-bottom: solid 1px rgb(255, 0, 0) !important;
+   */
+  color: black !important;
+  background-color: white !important;
+}
+
+.flip-countdown .flip-countdown-piece .flip-countdown-card .flip-countdown-card-sec .card__bottom::after,
+.flip-countdown .flip-countdown-piece .flip-countdown-card .flip-countdown-card-sec .top::after {
+  color: black !important;
+}
+
+.flip-countdown .flip-countdown-piece .flip-countdown-card .flip-countdown-card-sec .card__back::after {
+  color: black !important;
+}
+
+.flip-countdown .flip-countdown-piece .flip-countdown-card .flip-countdown-card-sec .card__back::before {
+  background-color: white !important;
+}
+
+.flip-countdown .flip-countdown-piece .flip-countdown-card .flip-countdown-card-sec.flip .card__back::before {
+  color: black;
+}
