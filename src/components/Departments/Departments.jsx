@@ -2,7 +2,6 @@ import React from "react";
 import styled from "styled-components";
 import DepartMentCard from "./DepartMentCard";
 import { departobj } from "../../configs/Departments.config";
-import "./styles/Departments.css";
 import { motion } from "framer-motion";
 
 const DepartmentContainer = styled.div`
@@ -36,7 +35,7 @@ function Departments() {
         viewport={{ once: false, amount: 1 }}
         className="DeptHead"
       >
-        Departments
+        <div className="DeptHeadTxt">Departments</div>
       </motion.h1>
       <DepartmentContainer>
         {departobj.map((data, i) => {

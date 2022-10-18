@@ -100,7 +100,7 @@ export const departobj = [
     des: "test",
     color: "#ff6d41",
     bgtext: "Work",
-    mbtm: "20px",
+    mbtm: "21px",
   },
   {
     title: "Paper Presentation",

@@ -36,7 +36,8 @@ const HeaderBg = styled.div`
   }
 `;
 const HeaderMainText = styled.div`
-  border-right: 1px solid white;
+  border-right: 1.2px solid rgba(255, 255, 255, 0.57);
+;
   letter-spacing: 2px;
   display: flex;
   flex-direction: column;
@@ -152,7 +153,12 @@ const HoverSpan = styled.span``;
 const RegisterNow = styled.button`
   color: black;
   font-size: 4vw;
-  background-color: white;
+background: rgba(255, 255, 255, 0.47);
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(11.5px);
+-webkit-backdrop-filter: blur(11.5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+
   border: none;
   text-transform: uppercase;
   border-radius: 1rem;

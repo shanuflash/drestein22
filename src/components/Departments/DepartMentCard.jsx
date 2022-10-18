@@ -16,7 +16,12 @@ function DepartMentCard({ img, title, des, color, bgtext, mbtm }) {
     position: relative;
     width: 300px;
     height: 400px;
-    background: #f0f0f0;
+    /* background: rgb(0 2 36 / 90%); */
+    background: rgba(0, 2, 36 , 0.47);
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(11.5px);
+-webkit-backdrop-filter: blur(11.5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 20px;
     overflow: hidden;
     z-index: 100;
@@ -140,7 +145,7 @@ function DepartMentCard({ img, title, des, color, bgtext, mbtm }) {
   position: relative;
   font-weight: 600;
   letter-spacing: 1px;
-  color: #000;  
+  color: #fff;  
   margin-top: ${mbtm};
 `;
   return (
