@@ -52,6 +52,7 @@ const HeaderMainText = styled.div`
 `;
 const DresteinText = styled.p`
   line-height: 1.2em;
+  font-weight: 500;
   font-size: 5vw;
   text-align: center;
   width: 80%;
@@ -80,23 +81,30 @@ const Span = styled.span`
   ${(props) =>
     props.let_1 &&
     css`
-      color: #279fda;
+      color: rgb(0 169 252);
+      font-weight: 600;
     `}
 
   ${(props) =>
     props.let_2 &&
     css`
-      color: #5bba47;
+      color: rgb(40 222 0);
+      font-weight: 600;
+
     `}
   ${(props) =>
     props.let_3 &&
     css`
-      color: #ff565d;
+      color: rgb(255 0 10);
+      font-weight: 600;
+
     `}
   ${(props) =>
     props.let_4 &&
     css`
-      color: #ca3e96;
+      color: rgb(225 0 140);
+      font-weight: 600;
+
     `}
 
   ${(props) =>

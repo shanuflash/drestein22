@@ -107,8 +107,8 @@ section {
 
 .flip-countdown .flip-countdown-piece .flip-countdown-card .flip-countdown-card-sec .card__top,
 .flip-countdown .flip-countdown-piece .flip-countdown-card .flip-countdown-card-sec .card__bottom {
-  /* border-bottom: solid 1px rgb(255, 0, 0) !important;
-   */
+  /* border-bottom: solid 1px rgb(255, 0, 0) !important; */
+
   color: black !important;
   background-color: white !important;
 }
