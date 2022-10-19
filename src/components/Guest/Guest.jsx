@@ -5,8 +5,14 @@ import { motion, varients } from "framer-motion";
 const GuestHead = styled.div`
 padding-bottom: 100px;
 position: relative;
-background: url("https://raw.githubusercontent.com/judygab/web-dev-projects/main/personal-portfolio/src/assets/img/footer-bg.png");
-background-size: cover;
+    /* background: linear-gradient(90deg, #0b001d -5.91%, #00126a 111.58%); */
+    /* background: linear-gradient(90deg, #0b001d -5.91%, #630000 111.58%); */
+    background: linear-gradient(90deg, #00126a -80.91%, #0b001d 111.58%);
+ 
+
+
+/* background: url("https://raw.githubusercontent.com/judygab/web-dev-projects/main/personal-portfolio/src/assets/img/footer-bg.png"); */
+/* background-size: cover; */
 /* background-color: #760093; */
         border-radius: 0 0 20px 20px;
     width: 100%;
@@ -79,13 +85,17 @@ flex-direction: column;
   `;
 
 const Test = styled.div`
+background: rgba(255, 255, 255, 0.95);
+backdrop-filter: blur(11.5px);
+-webkit-backdrop-filter: blur(11.5px);
 display: flex;
+flex-direction:column;
 align-items: center;
 justify-content: center;
 color: black;
 font-size: 5vw;
 text-align: center;
-background-color: white;
+/* background-color: white; */
 width:80%;
     font-family: 'Montserrat', sans-serif;
 
@@ -104,6 +114,10 @@ box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3)
 
   }
 /* box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px; */
+`;
+
+const Test2 = styled.div`
+font-size: 2vw;
 `;
 
 function Guest() {
@@ -150,7 +164,10 @@ function Guest() {
   };
   return (
     <GuestHead>
-      <Test>Registeration fee: ₹ 150</Test>
+      <Test>
+        Registeration fee: ₹ 150
+        <Test2>Participate in any event with a single payment!</Test2>
+      </Test>
       <GuestTitle
         as={motion.div}
         initial="offscreen"

@@ -6,7 +6,8 @@ function About() {
   const AboutHead = styled.div`
     height: auto;
     width: 100vw;
-    background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+    /* linear-gradient(90.21deg,#0b001d -5.91%,#00126a 111.58%) */
+    background: linear-gradient(90deg, #0b001d -5.91%, #00126a 111.58%);
     margin-top: 100px;
     display: flex;
     justify-content: center;
@@ -32,7 +33,7 @@ function About() {
     font-family: 'Montserrat', sans-serif;
   `;
   const AboutDescript = styled.div`
-    font-size: 1em;
+    font-size: 1.5em;
     padding:20px 0px;
   `;
   const text = {
