@@ -68,7 +68,7 @@ margin-bottom: 2rem;
 `;
 const FooterBottom = styled.div`
 color: white;
-background: linear-gradient(0.25turn, #312755, #1c1c20, #362430);
+/* background: linear-gradient(0.25turn, #312755, #1c1c20, #362430); */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -84,7 +84,6 @@ background: linear-gradient(0.25turn, #312755, #1c1c20, #362430);
 const Policy = styled.div`
 `;
 const MadewithLove = styled.div`
-    
 `;
 const Copyright = styled.div`
 
@@ -107,9 +106,9 @@ function Footer() {
         </FooterContainer>
       </FooterConatinAll>
       <FooterBottom>
-        <Policy>Privacy Policy| Terms</Policy>
+        <Policy>Privacy Policy | Terms</Policy>
         <MadewithLove> Made with ❤️ by IT DEPT </MadewithLove>
-        <Copyright>© 2022 SAVEETHE ENGINEERING COLLEGE</Copyright>
+        <Copyright>© 2022 SAVEETHA ENGINEERING COLLEGE</Copyright>
       </FooterBottom>
     </FooterHeader>
   );

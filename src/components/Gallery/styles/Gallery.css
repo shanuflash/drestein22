@@ -13,8 +13,8 @@
 
 .swiper-slide {
   object-fit: cover;
-  width: 400px;
-  height: 400px;
+  width: 700px;
+  height: 500px;
 }
 
 @media (max-width: 768px) {
@@ -40,6 +40,20 @@
   width: 1rem;
   height: 1rem;
   border-radius: 50px;
-  background-color: #ec994b !important;
+  /* background-color: #0051ff !important; */
+  background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
   cursor: pointer;
+}
+
+.swiper-pagination {
+  margin-top: 30px;
+  position: inherit;
+}
+
+.GalleryHeadTxt {
+  /* background-image: linear-gradient(45deg, #f98bff8e 0%, #2bd1ff82 52%, #2bff8789 90%); */
+  border-radius: 2rem;
+  padding: 20px 30px;
+  margin: 5vh 20vw;
+  background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
 }
