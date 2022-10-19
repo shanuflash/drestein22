@@ -1,11 +1,23 @@
-import React from "react";
-import "./styles/test.css";
 import styled from "styled-components";
+import "./styles/test.css";
+import { useContext } from "react";
+import DisplayPopupContext from "../../context/DisplayPopupContext";
 
-const EventCard = ({ name, desc, img, tag, date }) => {
+const EventCard = ({ name, desc, img, tag, date, setOpenModal }) => {
+  const { setEventObject } = useContext(DisplayPopupContext);
+
+  const handleEventInfo = () => {
+    setOpenModal((prev) => !prev);
+    // Onclick the card setting the event details in the DisplayPopupContext.
+    setEventObject({
+      name,
+      date,
+      desc,
+    });
+  };
+
   const Card = styled.a`
-    font-family: 'Montserrat', sans-serif;
-    /* font-family: "poppins", sans-serif; */
+    font-family: "poppins", sans-serif;
     --bg-filter-opacity: 0.5;
     --bg-img: url(${img});
     background-image: linear-gradient(rgba(0, 0, 0, var(--bg-filter-opacity)), rgba(0, 0, 0, var(--bg-filter-opacity))), var(--bg-img);
@@ -27,7 +39,7 @@ const EventCard = ({ name, desc, img, tag, date }) => {
   `;
   return (
     <div className="event-card">
-      <Card className="eventcard" href="https://google.com/">
+      <Card className="eventcard" href="#" onClick={handleEventInfo}>
         <div>
           <h1>{name}</h1>
           <p>{desc}</p>

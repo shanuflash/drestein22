@@ -7,7 +7,7 @@ import Events from "./components/Events/Events";
 import Main from "./Main";
 import "react-toastify/dist/ReactToastify.css";
 import "./App.css";
-
+import { DisplayPopupProvider } from "./context/DisplayPopupContext";
 import PrivateRoute from "./RequireAuth";
 import SignIn from "./components/Admin/components/AdminSign";
 import AdminMain from "./components/Admin/components/AdminMain";
@@ -21,24 +21,26 @@ function App() {
   return (
     <UserProvider>
       <div>
-        <Routes>
-          <Route path="/" element={<Main />} />
-          <Route path="form" element={<Form />} />
-          <Route path="events" element={<Events />} />
-          <Route path="Admin/login" element={<SignIn />} />
-          <Route path="*" element={<h1>page not found</h1>} />
-          <Route path="user/:userid" element={<SingleUserPage />} />
+        <DisplayPopupProvider>
+          <Routes>
+            <Route path="/" element={<Main />} />
+            <Route path="form" element={<Form />} />
+            <Route path="events" element={<Events />} />
+            <Route path="Admin/login" element={<SignIn />} />
+            <Route path="*" element={<h1>page not found</h1>} />
+            <Route path="user/:userid" element={<SingleUserPage />} />
 
-          <Route path="/Admin" element={<PrivateRoute />}>
-            <Route path="/Admin" element={<AdminMain />}>
-              <Route path="paid" element={<PaidUsers />} />
-              <Route path="unpaid" element={<UnPaidUsers />} />
-              <Route path="scanusers" element={<AdminPannel />} />
-              <Route path="profile" element={<AdminProfile />} />
+            <Route path="/Admin" element={<PrivateRoute />}>
+              <Route path="/Admin" element={<AdminMain />}>
+                <Route path="paid" element={<PaidUsers />} />
+                <Route path="unpaid" element={<UnPaidUsers />} />
+                <Route path="scanusers" element={<AdminPannel />} />
+                <Route path="profile" element={<AdminProfile />} />
+              </Route>
             </Route>
-          </Route>
-        </Routes>
-        <ToastContainer />
+          </Routes>
+          <ToastContainer />
+        </DisplayPopupProvider>
       </div>
     </UserProvider>
   );
