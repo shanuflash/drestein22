@@ -3,9 +3,10 @@ export const EventDetails = [
     title: "Information Technology",
     eventslist: [
       {
-        name: "Event 1",
-        desc: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, totam?",
+        name: "Switcheroo",
+        desc: "Switcheroo is a coding challenge with a twist.",
         date: "10 Nov 2022",
+        rulesAndReg:"A fun event spanning over two rounds.\nMaximum participation 2 person per team.\nIn the case of cheating, using of phone or using of any unnecessary gadgets will make the team disqualify\nShortlisted participants of Round-1 will appear for Round-2 for which above rules are applicable.",
         tag: "EVENT",
         img: "https://www.gstatic.com/mobilesdk/191021_mobilesdk/discoverycards/appdistro@2x.png",
       },

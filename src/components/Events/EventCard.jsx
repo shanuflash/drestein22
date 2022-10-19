@@ -3,7 +3,7 @@ import "./styles/test.css";
 import { useContext } from "react";
 import DisplayPopupContext from "../../context/DisplayPopupContext";
 
-const EventCard = ({ name, desc, img, tag, date, setOpenModal }) => {
+const EventCard = ({ name, desc, img, tag, date, setOpenModal, rulesAndReg, }) => {
   const { setEventObject } = useContext(DisplayPopupContext);
 
   const handleEventInfo = () => {
@@ -13,10 +13,11 @@ const EventCard = ({ name, desc, img, tag, date, setOpenModal }) => {
       name,
       date,
       desc,
+      rulesAndReg,
     });
   };
 
-  const Card = styled.a`
+  const Card = styled.div`
     font-family: "poppins", sans-serif;
     --bg-filter-opacity: 0.5;
     --bg-img: url(${img});
@@ -39,7 +40,7 @@ const EventCard = ({ name, desc, img, tag, date, setOpenModal }) => {
   `;
   return (
     <div className="event-card">
-      <Card className="eventcard" href="#" onClick={handleEventInfo}>
+      <Card className="eventcard" onClick={handleEventInfo}>
         <div>
           <h1>{name}</h1>
           <p>{desc}</p>
