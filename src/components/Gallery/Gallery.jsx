@@ -24,6 +24,7 @@ const Gallery = () => {
     },
   };
   const Head = styled.div`
+
     font-size: 7vw;
     font-weight: bold;
     margin: 4rem;
@@ -44,7 +45,7 @@ const Gallery = () => {
         whileInView="onscreen"
         variants={text}
       >
-        Gallery
+        <div className="GalleryHeadTxt">Gallery</div>
       </Head>
       <Swiper
         autoplay={{
