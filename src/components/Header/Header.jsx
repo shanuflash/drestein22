@@ -213,7 +213,7 @@ function Main() {
             MANAGEMENT FEST
           </NationText>
         </HeaderMainText>
-        <Timer className="timer">
+        {/* <Timer className="timer">
           <FlipCountdown
             dayTitle="Days"
             hourTitle="Hours"
@@ -228,7 +228,7 @@ function Main() {
             endAt={"2022-11-09 01:26:58"}
           />
           <div className="MainHeaderDate">November 9th & 10th</div>
-        </Timer>
+        </Timer> */}
       </HeaderBg>
       <Link to="/form">
         <RegisterNow className="button">
