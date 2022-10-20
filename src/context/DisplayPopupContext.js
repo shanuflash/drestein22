@@ -6,7 +6,8 @@ export const DisplayPopupProvider = ({children}) => {
     const [eventObject, setEventObject] = useState({
         name: 'dummy',
         desc: 'lorem',
-        date: 'November 11'
+        date: 'November 11',
+        rulesAndReg: 'lorem'
     })
   return (
     <DisplayPopupContext.Provider value={{

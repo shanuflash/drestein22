@@ -59,6 +59,7 @@ const DLogo = styled.img`
 const LogoHead = styled.div`
   display: flex;
   flex-direction: row;
+  gap: 0.5rem;
   align-items: center;
   justify-content: center;
   @media screen and (max-width: 600px){
@@ -77,9 +78,8 @@ const EventLogo = styled.div`
   }
 `;
 const DresteinLetter = styled.p`
-  font-size: 2.5vw;
-  font-family: Montserrat, sans-serif;
-  font-weight: 800;
+  font-size: 2vw;
+  font-family: 'Azonix', sans-serif;
   letter-spacing: 1.5px;
   color: rgb(255, 255, 255);
   align-self: center;
