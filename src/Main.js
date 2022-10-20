@@ -44,10 +44,10 @@ const Main = () => {
       /> */}
       <Nav />
       <Header />
-      <motion.div
+      {/* <motion.div
         className="img"
         style={{ y: DeviceSize < 800 ? MValue : DValue, zIndex: -1 }}
-      ></motion.div>
+      ></motion.div> */}
       <DepartmentDiv id="Departments">
         <Departments />
       </DepartmentDiv>
