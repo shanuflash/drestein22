@@ -11,6 +11,7 @@
   position: fixed;
   background-color: rgba(25, 24, 24, 0.657);
   z-index: 2;
+
 }
 
 .modal {
@@ -28,12 +29,23 @@
   border-radius: 10px;
   margin-top: 3rem;
 
-  
+
+  .close-btn {
+    font-size: 2rem;
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+  }
+
+
+
+
 
   .title {
     font-family: "Azonix";
   }
-  .desc{
+
+  .desc {
     margin: 0.5rem 0;
   }
 
@@ -53,32 +65,30 @@
       gap: 1rem;
     }
   }
-  ol{
 
-    li{
+  ol {
+
+    li {
       margin: 0.5rem 1rem;
     }
   }
-}
-p{
-  margin-left: 1rem;
-}
-.close-btn {
-  font-size: 2rem;
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
 }
 
 @media only screen and (max-width: 760px) {
   .modal {
     width: 90%;
-    height: 70%;
+    height: 70vh;
     margin-top: 0;
     margin-bottom: 2rem;
-    .grid{
+
+    .grid {
       grid-template-columns: repeat(2, 1fr);
     }
+
+    .close-btn {
+      top: 1.5rem;
+      right: 1rem;
+    }
   }
-  
+
 }

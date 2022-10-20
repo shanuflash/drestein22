@@ -3,13 +3,18 @@ import "./styles/events.css";
 import { EventDetails } from "../../configs/EventDetails";
 import EventCard from "./EventCard";
 
-import React, { useState, useContext } from "react";
-import DisplayPopupContext from "../../context/DisplayPopupContext";
+import React, { useState, useEffect } from "react";
 import Modal from "./Modal.jsx";
 
 const Events = () => {
-  const { eventObject } = useContext(DisplayPopupContext);
   const [openModal, setOpenModal] = useState(false);
+
+  useEffect(() => {
+    openModal
+      ? document.body.style.overflow = 'hidden'
+      : document.body.style.overflow = 'unset'
+
+  }, [openModal])
   return (
     <div className="event-page">
       <Nav />

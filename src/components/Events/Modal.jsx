@@ -13,12 +13,15 @@ const Modal = ({ open, setOpenModal }) => {
   if (!open) return null;
   return (
     <div className="overlay" onClick={() => setOpenModal((prev) => !prev)}>
+
       <div className="modal" onClick={() => setOpenModal((prev) => !prev)}>
-        <VscClose
-          className="close-btn"
-          onClick={() => setOpenModal(prev => !prev)}
-        />
-        <h1 className="title">Squad Switch</h1>
+        <div className="btn-wrap">
+          <VscClose
+            className="close-btn"
+            onClick={() => setOpenModal(prev => !prev)}
+          />
+        </div>
+        <h1 className="title">{eventObject.name}</h1>
         <p className="desc">Switcheroo is a coding challenge with a twist.</p>
         <div className="grid">
           <div className="item"><span>Team-type</span><IoIosPeople size={32} /><span>Team or Solo</span></div>
