@@ -3,8 +3,8 @@ import React, { useEffect, useState } from "react";
 const CountDown = () => {
   const end = new Date();
   end.setFullYear(2022);
-  end.setMonth(10);
-  end.setDate(3);
+  end.setMonth(11);
+  end.setDate(10);
   end.setHours(0);
   end.setMinutes(0);
 
@@ -17,7 +17,6 @@ const CountDown = () => {
     if (end.getTime() - new Date().getTime() > 0) {
       const timer = setInterval(() => {
         const msDiff = end.getTime() - new Date().getTime();
-
         const daysDiff = Math.trunc(msDiff / (1000 * 3600 * 24));
         setdaysDiff(daysDiff);
         sethoursDiff(23 - new Date().getHours());
