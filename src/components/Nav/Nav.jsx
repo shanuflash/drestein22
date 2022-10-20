@@ -78,7 +78,7 @@ const EventLogo = styled.div`
   }
 `;
 const DresteinLetter = styled.p`
-  font-size: 2vw;
+  font-size: 2.2vw;
   font-family: 'Azonix', sans-serif;
   letter-spacing: 1.5px;
   color: rgb(255, 255, 255);

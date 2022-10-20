@@ -5,6 +5,7 @@ import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import FlipCountdown from "@rumess/react-flip-countdown";
 import { Link } from "react-router-dom";
+import CountDown from "./Countdown";
 
 const MainHeader = styled.div`
   margin-top: 5rem;
@@ -209,7 +210,8 @@ function Main() {
           </NationText>
         </HeaderMainText>
         <Timer className="timer">
-          <FlipCountdown
+          <CountDown />
+          {/* <FlipCountdown
             dayTitle="Days"
             hourTitle="Hours"
             minuteTitle="Minutes"
@@ -221,7 +223,7 @@ function Main() {
             theme="dark"
             endAtZero
             endAt={"2022-11-09 01:26:58"}
-          />
+          /> */}
           <div className="MainHeaderDate">November 9th & 10th</div>
         </Timer>
       </HeaderBg>
