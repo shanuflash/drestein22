@@ -11,6 +11,7 @@
   margin: 0;
   scroll-behavior: smooth;
 }
+
 body {
   /* background-color: black; */
   background-color: rgb(0 1 23);
@@ -27,13 +28,14 @@ body {
   background-size: contain;
 
   position: absolute;
-  top: 60%;
-  z-index: -1;
+  margin-top: -60vh;
+  /* top: 60%; */
+  /* z-index: -1; */
   min-width: 100%;
 
   will-change: transform;
   min-height: 100vh;
-  transform: translateZ(0);
+  /* transform: translateZ(0); */
 
 
 }

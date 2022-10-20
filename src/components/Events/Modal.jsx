@@ -10,17 +10,18 @@ import { IoIosPeople } from "react-icons/io";
 
 const Modal = ({ open, setOpenModal }) => {
   const { eventObject } = useContext(DisplayPopupContext);
+  const {rulesAndReg} = eventObject 
+  const a  = rulesAndReg.split('.')
+
   if (!open) return null;
   return (
     <div className="overlay" onClick={() => setOpenModal((prev) => !prev)}>
 
       <div className="modal" onClick={() => setOpenModal((prev) => !prev)}>
-        <div className="btn-wrap">
-          <VscClose
-            className="close-btn"
-            onClick={() => setOpenModal(prev => !prev)}
-          />
-        </div>
+        <VscClose
+          className="close-btn"
+          onClick={() => setOpenModal(prev => !prev)}
+        />
         <h1 className="title">{eventObject.name}</h1>
         <p className="desc">Switcheroo is a coding challenge with a twist.</p>
         <div className="grid">
@@ -31,12 +32,11 @@ const Modal = ({ open, setOpenModal }) => {
         </div>
         <h3>Rules and Regulations:</h3>
         <ol>
-          <li>A fun event spanning over two rounds.</li>
-          <li>Maximum participation 2 person per team.</li>
-          <li>In the case of cheating, using of phone or using of any unnecessary gadgets will make the
-            team disqualify.</li>
-          <li>Shortlisted participants of Round-1 will appear for Round-2 for which above rules are
-            applicable.</li>
+         {
+          a.map(data=>{
+            return <li>{data}</li>
+          })
+         }
         </ol>
         <h3>Round 1:</h3>
         <p>It’s a contest testing your abilities to work as a team. The competition not only examines your

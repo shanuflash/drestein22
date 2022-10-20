@@ -139,9 +139,9 @@ const Form = () => {
             // Username : "saveethadrestein2022@gmail.com",
             // Password : "7ED0253E9D150A7B3718C8FF2710B33F3612",
 
-            SecureToken: "59afb50e-33bb-41ff-a752-87a4bcf5ce88",
+            SecureToken: "23c731d3-a11b-4d25-b0cf-d53eaf01dcad",
             To: formdata.email,
-            From: "saveethadrestein2022@gmail.com",
+            From: "gleedara@gmail.com",
             Subject: "congrats on registration in Drestein Event 🎉🎉",
             Body: `<h2>name : ${formdata.fname} ${formdata.lname}</h2>
                          <h2>college : ${formdata.college}</h2>
@@ -185,9 +185,12 @@ const Form = () => {
 
   console.log(formdata);
   return (
-    <div className="headcontainer" data-joy-color-scheme="dark">
+    <div className="headcontainer" data-joy-color-scheme="dark" >
       <Nav />
-      <div className="main-form">
+      <div className="main-form" style={{
+      maxWidth:'800px',
+      margin:'0 auto'
+    }}>
         <CssVarsProvider className="formsheet">
           {/* <ThemeProvider theme={Theme}> */}
           <Sheet
@@ -380,7 +383,7 @@ const Form = () => {
           </Sheet>
           {/* </ThemeProvider> */}
         </CssVarsProvider>
-        <img src={lock} className="loginimage"></img>
+        {/* <img src={lock} className="loginimage"></img> */}
       </div>
     </div>
   );
