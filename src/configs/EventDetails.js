@@ -9,6 +9,7 @@ export const EventDetails = [
         rulesAndReg:"A fun event spanning over two rounds. Maximum participation 2 person per team. In the case of cheating, using of phone or using of any unnecessary gadgets will make the team disqualify. Shortlisted participants of Round-1 will appear for Round-2 for which above rules are applicable",
         tag: "EVENT",
         img: "https://www.gstatic.com/mobilesdk/191021_mobilesdk/discoverycards/appdistro@2x.png",
+        
       },
       {
         name: "Event 2",
