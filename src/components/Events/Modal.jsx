@@ -10,8 +10,7 @@ import { IoIosPeople } from "react-icons/io";
 
 const Modal = ({ open, setOpenModal }) => {
   const { eventObject } = useContext(DisplayPopupContext);
-  const { rulesAndReg } = eventObject
-  const splitedSentence = rulesAndReg.split('.')
+  const splitedSentence = eventObject?.rulesAndReg?.split('.')
 
   if (!open) return null;
   return (
@@ -22,8 +21,14 @@ const Modal = ({ open, setOpenModal }) => {
           className="close-btn"
           onClick={() => setOpenModal(prev => !prev)}
         />
-        <h1 className="title">{eventObject.name}</h1>
-        <p className="desc">{eventObject.desc}</p>
+        {eventObject.name 
+          ? <h1 className="title">{eventObject.name}</h1>
+          : <h1 className="title">Title not fetched from json</h1>
+        }
+        {eventObject.desc 
+          ? <p className="desc">{eventObject.desc}</p>
+          : <p className="desc">Disc not fetched from json</p>
+        }
         <div className="grid">
           <div className="item"><span>Team-type</span><IoIosPeople size={32} /><span>Team or Solo</span></div>
           <div className="item"><span>Venue</span><TiLocation size={32} /><span>CSE LH-01</span></div>
