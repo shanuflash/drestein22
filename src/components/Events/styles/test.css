@@ -94,3 +94,8 @@
 .eventeventcard:hover:after {
     transform: scale(1);
 }
+@media only screen and (max-width: 600px) {
+    .eventcard:hover{
+        transform: none;
+    }
+}

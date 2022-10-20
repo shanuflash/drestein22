@@ -32,6 +32,9 @@
         overflow-x: scroll;
         scroll-snap-type: x mandatory;
     }
+    .event-card{
+        scroll-snap-align: center;
+    }
 
     .event-container .top {
         margin-top: 2rem;
