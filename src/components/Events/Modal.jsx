@@ -11,6 +11,9 @@ const Modal = ({ open, setOpenModal }) => {
   const { eventObject } = useContext(DisplayPopupContext);
   const splitrules = eventObject?.rules?.split(".");
   const splitjudge = eventObject?.judge?.split(".");
+  const splitround1 = eventObject?.round1?.split(".");
+  const splitround2 = eventObject?.round2?.split(".");
+  const splitround3 = eventObject?.round3?.split(".");
 
   if (!open) return null;
   return (
@@ -66,28 +69,44 @@ const Modal = ({ open, setOpenModal }) => {
         {eventObject.round1 ? (
           <>
             <h3>Round 1:</h3>
-            <p>{eventObject.round1}</p>
+            <ul>
+              {splitround1.map((each) => {
+                return <li>{each}</li>;
+              })}
+            </ul>
             <br />
           </>
         ) : null}
         {eventObject.round2 ? (
           <>
             <h3>Round 2:</h3>
-            <p>{eventObject.round2}</p>
+            <ul>
+              {splitround2.map((each) => {
+                return <li>{each}</li>;
+              })}
+            </ul>
             <br />
           </>
         ) : null}
         {eventObject.round3 ? (
           <>
             <h3>Round 3:</h3>
-            <p>{eventObject.round3}</p>
+            <ul>
+              {splitround3.map((each) => {
+                return <li>{each}</li>;
+              })}
+            </ul>
             <br />
           </>
         ) : null}
         {eventObject.round4 ? (
           <>
             <h3>Round 4:</h3>
-            <p>{eventObject.round4}</p>
+            <ul>
+              {splitround3.map((each) => {
+                return <li>{each}</li>;
+              })}
+            </ul>
             <br />
           </>
         ) : null}
