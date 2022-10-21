@@ -19,7 +19,7 @@ const MainHeader = styled.div`
   color: white;
 
   @media screen and (max-width: 600px) {
-    margin-top: 2rem;
+    margin-top: 1rem;
   }
 `;
 const HeaderBg = styled.div`
@@ -61,8 +61,8 @@ const DresteinText = styled.p`
 
   @media screen and (max-width: 600px) {
     font-size: 10vw;
-    margin: 10px;
     min-width: 100%;
+    padding: 1rem 0;
   }
 `;
 
@@ -125,13 +125,13 @@ const NationText = styled.div`
   font-size: 1.5vw;
   width: 80%;
   @media screen and (max-width: 600px) {
-    font-size: 5vw;
-    background-color: white;
-    border-radius: 10px;
+    font-size: 1rem;
+    background-color: #ffffffdb;
+    border-radius: 1rem;
     color: black;
-    font-family: poppins;
+    font-family: 'Poppins';
     width: 80%;
-    padding: 5px;
+    padding: 0.5rem;
   }
 `;
 const Timer = styled.div`
@@ -205,8 +205,8 @@ function Main() {
           </DresteinText>
 
           <NationText className="nation ">
-            13<sup>th</sup> NATIONAL LEVEL INTER COLLEGIATE TECHNICAL AND
-            MANAGEMENT FEST
+            13<sup>th</sup> National level inter collegiate technical and
+            management fest
           </NationText>
         </HeaderMainText>
         <Timer className="timer">

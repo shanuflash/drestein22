@@ -44,10 +44,10 @@ const ResponsiveAppBar = () => {
 
 `;
 
-  const NavAll = styled.div`
-display: none;
-@media screen and (max-width:600px) {
-  display: block;
+const NavAll = styled.div`
+  display: none;
+  @media screen and (max-width:600px) {
+    display: block;
 }
 `;
   return (
