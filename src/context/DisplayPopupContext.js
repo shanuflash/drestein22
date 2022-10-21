@@ -17,6 +17,7 @@ export const DisplayPopupProvider = ({ children }) => {
     round3: "error",
     round4: "error",
     judge: "error",
+    prize: "error",
   });
   return (
     <DisplayPopupContext.Provider

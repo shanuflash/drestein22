@@ -40,10 +40,14 @@
 }
 
 .eventcard p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
     font-size: 0.7em;
-    /* font-family: 'Open Sans'; */
     margin-bottom: 1em;
-    /* line-height: 2em; */
 }
 
 .eventcard .tags {
@@ -94,8 +98,9 @@
 .eventeventcard:hover:after {
     transform: scale(1);
 }
+
 @media only screen and (max-width: 600px) {
-    .eventcard:hover{
+    .eventcard:hover {
         transform: none;
     }
 }

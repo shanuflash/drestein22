@@ -14,6 +14,7 @@ const Modal = ({ open, setOpenModal }) => {
   const splitround1 = eventObject?.round1?.split(".");
   const splitround2 = eventObject?.round2?.split(".");
   const splitround3 = eventObject?.round3?.split(".");
+  const splitprize = eventObject?.prize?.split(".");
 
   if (!open) return null;
   return (
@@ -118,6 +119,17 @@ const Modal = ({ open, setOpenModal }) => {
                 return <li>{each}</li>;
               })}
             </ul>
+          </>
+        ) : null}
+        {eventObject.prize ? (
+          <>
+            <h3>Prize:</h3>
+            <ul>
+              {splitprize.map((each) => {
+                return <li>{each}</li>;
+              })}
+            </ul>
+            <br />
           </>
         ) : null}
       </div>

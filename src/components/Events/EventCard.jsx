@@ -20,6 +20,7 @@ const EventCard = ({
   round3,
   round4,
   judge,
+  prize,
 }) => {
   const { setEventObject } = useContext(DisplayPopupContext);
 
@@ -39,6 +40,7 @@ const EventCard = ({
       round3,
       round4,
       judge,
+      prize,
     });
   };
 
@@ -63,14 +65,14 @@ const EventCard = ({
     overflow: hidden;
     text-decoration: none;
   `;
-  const desctrim = desc.substring(0, 41) + "...";
+  // const desctrim = desc.substring(0, 41) + "...";
 
   return (
     <div className="event-card">
       <Card className="eventcard" onClick={handleEventInfo}>
         <div>
           <h1>{name}</h1>
-          <p>{desctrim}</p>
+          <p>{desc}</p>
           <div className="date">{date}</div>
           <div className="tags">
             <div className="tag">{tag}</div>
