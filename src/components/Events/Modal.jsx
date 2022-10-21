@@ -7,86 +7,100 @@ import { FcAlarmClock } from "react-icons/fc";
 import { AiOutlineTeam } from "react-icons/ai";
 import { IoIosPeople } from "react-icons/io";
 
-
 const Modal = ({ open, setOpenModal }) => {
   const { eventObject } = useContext(DisplayPopupContext);
-  const splitedSentence = eventObject?.rulesAndReg?.split('.')
+  const splitrules = eventObject?.rules?.split(".");
+  const splitjudge = eventObject?.judge?.split(".");
 
   if (!open) return null;
   return (
     <div className="overlay" onClick={() => setOpenModal((prev) => !prev)}>
-
       <div className="modal" onClick={() => setOpenModal((prev) => !prev)}>
         <VscClose
           className="close-btn"
-          onClick={() => setOpenModal(prev => !prev)}
+          onClick={() => setOpenModal((prev) => !prev)}
         />
-        {eventObject.name 
-          ? <h1 className="title">{eventObject.name}</h1>
-          : <h1 className="title">Title not fetched from json</h1>
-        }
-        {eventObject.desc 
-          ? <p className="desc">{eventObject.desc}</p>
-          : <p className="desc">Disc not fetched from json</p>
-        }
+        {eventObject.name ? (
+          <h1 className="title">{eventObject.name}</h1>
+        ) : (
+          <h1 className="title">Title not fetched from json</h1>
+        )}
+        {eventObject.desc ? (
+          <p className="desc">{eventObject.desc}</p>
+        ) : (
+          <p className="desc">Disc not fetched from json</p>
+        )}
         <div className="grid">
-          <div className="item"><span>Team-type</span><IoIosPeople size={32} /><span>Team or Solo</span></div>
-          <div className="item"><span>Venue</span><TiLocation size={32} /><span>CSE LH-01</span></div>
-          <div className="item"><span>Timngs</span><FcAlarmClock size={32} /><span>9:00 - 10:00am</span></div>
-          <div className="item"><span>Members</span><AiOutlineTeam size={32} /><span>4</span></div>
+          <div className="item">
+            <span>Type</span>
+            <IoIosPeople size={32} />
+            <span>{eventObject.type}</span>
+          </div>
+          <div className="item">
+            <span>Venue</span>
+            <TiLocation size={32} />
+            <span>{eventObject.venue}</span>
+          </div>
+          <div className="item">
+            <span>Timings</span>
+            <FcAlarmClock size={32} />
+            <span>{eventObject.time}</span>
+          </div>
+          <div className="item">
+            <span>Members</span>
+            <AiOutlineTeam size={32} />
+            <span>{eventObject.members}</span>
+          </div>
         </div>
-        {eventObject.rulesAndReg
-          ? (
-            <>
-              <h3>Rules and Regulations:</h3>
-              <ol>
-                {
-                  splitedSentence.map(each => {
-                    return <li>{each}</li>
-                  })
-                }
-              </ol>
-            </>
-          )
-          : null
-        }
-        {eventObject.round1
-          ? (
-            <>
-              <h3>Round 1:</h3>
-              <p>{eventObject.round1}</p>
-            </>
-          )
-          : null
-        }
-        {eventObject.round2
-          ? (
-            <>
-              <h3>Round 2:</h3>
-              <p>{eventObject.round2}</p>
-            </>
-          )
-          : null
-        }
-        {eventObject.round3
-          ? (
-            <>
-              <h3>Round 3:</h3>
-              <p>{eventObject.round3}</p>
-            </>
-          )
-          : null
-        }
-        {eventObject.round4
-          ? (
-            <>
-              <h3>Round 4:</h3>
-              <p>{eventObject.round4}</p>
-            </>
-          )
-          : null
-        }
-
+        {eventObject.rules ? (
+          <>
+            <h3>Rules and Regulations:</h3>
+            <ul>
+              {splitrules.map((each) => {
+                return <li>{each}</li>;
+              })}
+            </ul>
+            <br />
+          </>
+        ) : null}
+        {eventObject.round1 ? (
+          <>
+            <h3>Round 1:</h3>
+            <p>{eventObject.round1}</p>
+            <br />
+          </>
+        ) : null}
+        {eventObject.round2 ? (
+          <>
+            <h3>Round 2:</h3>
+            <p>{eventObject.round2}</p>
+            <br />
+          </>
+        ) : null}
+        {eventObject.round3 ? (
+          <>
+            <h3>Round 3:</h3>
+            <p>{eventObject.round3}</p>
+            <br />
+          </>
+        ) : null}
+        {eventObject.round4 ? (
+          <>
+            <h3>Round 4:</h3>
+            <p>{eventObject.round4}</p>
+            <br />
+          </>
+        ) : null}
+        {eventObject.judge ? (
+          <>
+            <h3>Judging Criteria:</h3>
+            <ul>
+              {splitjudge.map((each) => {
+                return <li>{each}</li>;
+              })}
+            </ul>
+          </>
+        ) : null}
       </div>
     </div>
   );

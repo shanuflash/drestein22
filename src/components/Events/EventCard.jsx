@@ -3,17 +3,42 @@ import "./styles/test.css";
 import { useContext } from "react";
 import DisplayPopupContext from "../../context/DisplayPopupContext";
 
-const EventCard = ({ name, desc, img, tag, date, setOpenModal, rulesAndReg, }) => {
+const EventCard = ({
+  name,
+  desc,
+  img,
+  tag,
+  date,
+  setOpenModal,
+  rules,
+  type,
+  venue,
+  time,
+  members,
+  round1,
+  round2,
+  round3,
+  round4,
+  judge,
+}) => {
   const { setEventObject } = useContext(DisplayPopupContext);
 
   const handleEventInfo = () => {
     setOpenModal((prev) => !prev);
-    // Onclick the card setting the event details in the DisplayPopupContext.
     setEventObject({
       name,
       date,
       desc,
-      rulesAndReg,
+      rules,
+      type,
+      venue,
+      time,
+      members,
+      round1,
+      round2,
+      round3,
+      round4,
+      judge,
     });
   };
 
@@ -38,12 +63,14 @@ const EventCard = ({ name, desc, img, tag, date, setOpenModal, rulesAndReg, }) =
     overflow: hidden;
     text-decoration: none;
   `;
+  const desctrim = desc.substring(0, 41) + "...";
+
   return (
     <div className="event-card">
       <Card className="eventcard" onClick={handleEventInfo}>
         <div>
           <h1>{name}</h1>
-          <p>{desc}</p>
+          <p>{desctrim}</p>
           <div className="date">{date}</div>
           <div className="tags">
             <div className="tag">{tag}</div>
