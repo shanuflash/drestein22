@@ -54,13 +54,11 @@ const Main = () => {
       <div id="Gallery">
         <Gallery />
       </div>
-      <div className="test1">
-        <div id="About">
-          <About />
-        </div>
-        <div id="Guest">
-          <Guest />
-        </div>
+      <div id="About">
+        <About />
+      </div>
+      <div id="Guest">
+        <Guest />
       </div>
       <div id="Footer">
         <Footer />

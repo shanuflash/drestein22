@@ -113,9 +113,3 @@ section {
 .MainHeaderDate {
   padding-top: 20px;
 }
-
-.test1 {
-  background-image: linear-gradient(90deg, rgba(249, 139, 255, 0.3) 0%, hsla(193, 100%, 58%, 0.3) 52%, hsla(146, 100%, 58%, 0.3) 90%) !important;
-  border-radius: 2rem;
-  opacity: 0.75;
-}

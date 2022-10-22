@@ -6,6 +6,9 @@ function About() {
   const AboutHead = styled.div`
     height: auto;
     width: 100vw;
+        background: linear-gradient(45deg, rgb(0 40 86) 51.2%,rgb(0 125 66) 98.6%);
+    /* background: linear-gradient(109.6deg, rgb(36, 45, 57) 11.2%, rgb(16, 37, 60) 51.2%, rgb(0, 0, 0) 98.6%); */
+    /* background-image: linear-gradient(45deg, hsla(193, 100%, 60%, 0.3) 30%, hsla(146, 100%, 41%, 0.3) 80%); */
     /* linear-gradient(90.21deg,#0b001d -5.91%,#00126a 111.58%) */
     /* background: linear-gradient(90deg, #0b001d -5.91%, #00126a 111.58%); */
     /* background: linear-gradient(90deg, #0b001d -5.91%, #000833 111.58%); */

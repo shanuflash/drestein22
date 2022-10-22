@@ -5,18 +5,9 @@ import { motion, varients } from "framer-motion";
 const GuestHead = styled.div`
 padding-bottom: 100px;
 position: relative;
-    /* background: linear-gradient(90deg, #0b001d -5.91%, #00126a 111.58%); */
-    /* background: linear-gradient(90deg, #0b001d -5.91%, #630000 111.58%); */
     /* background: linear-gradient(90deg, #00126a -80.91%, #0b001d 111.58%); */
-    /* background-image: linear-gradient(90deg, #f98bff8e 0%, #2bd1ff82 52%, #2bff8789 90%); */
-
- 
-
-
-/* background: url("https://raw.githubusercontent.com/judygab/web-dev-projects/main/personal-portfolio/src/assets/img/footer-bg.png"); */
-/* background-size: cover; */
-/* background-color: #760093; */
-        border-radius: 0 0 20px 20px;
+    background: linear-gradient(109.6deg, rgb(36, 45, 57) 11.2%, rgb(16, 37, 60) 51.2%, rgb(0, 0, 0) 98.6%);
+    border-radius: 0 0 20px 20px;
     width: 100%;
     height: 100%;
     /* overflow-x: hidden; */
@@ -110,7 +101,9 @@ position: absolute;
 top: 0%;
 left: 50%;
 transform: translate(-50%, -50%);
+/* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
 box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+/* box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px 20px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px 20px inset; */
   @media (max-width: 600px) {
   height: 100px;
 
