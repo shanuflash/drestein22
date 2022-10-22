@@ -1,0 +1,18 @@
+.countdown-container {
+    justify-content: center;
+    display: flex;
+    font-size: 1.5rem;
+    gap: 1rem;
+    flex-direction: row;
+}
+
+.day, .hours, .mins, .secs {
+    display: flex;
+    flex-direction: column;
+}
+
+#countdown-card {
+    font-size: 5rem;
+    width: 100px;
+    background-color: #000;
+}

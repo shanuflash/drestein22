@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from "react";
+import "./styles/countdown.scss";
 
 const CountDown = () => {
   const end = new Date();
   end.setFullYear(2022);
-  end.setMonth(11);
+  end.setMonth(10);
   end.setDate(10);
   end.setHours(0);
   end.setMinutes(0);
@@ -23,6 +24,15 @@ const CountDown = () => {
         setminutesDiff(59 - new Date().getMinutes());
         setsecondsDiff(59 - new Date().getSeconds());
       }, 1000);
+      if (hoursDiff < 10) {
+        sethoursDiff("0" + (59 - new Date().getHours()));
+      }
+      if (minutesDiff < 10) {
+        setminutesDiff("0" + (59 - new Date().getMinutes()));
+      }
+      if (secondsDiff < 10) {
+        setsecondsDiff("0" + (59 - new Date().getSeconds()));
+      }
       return () => {
         clearInterval(timer);
       };
@@ -30,19 +40,18 @@ const CountDown = () => {
   });
 
   return (
-    <div className="">
-      <div className="">{daysDiff} Days</div>
-      <div className="">
-        {hoursDiff}
-        Hours
+    <div className="countdown-container">
+      <div className="days">
+        Days <div id="countdown-card">{daysDiff}</div>
       </div>
-      <div className="">
-        {minutesDiff}
-        Minutes
+      <div className="hours">
+        Hours <div id="countdown-card">{hoursDiff}</div>
       </div>
-      <div className="">
-        {secondsDiff}
-        Seconds
+      <div className="mins">
+        Minutes <div id="countdown-card">{minutesDiff}</div>
+      </div>
+      <div className="secs">
+        Seconds <div id="countdown-card">{secondsDiff}</div>
       </div>
     </div>
   );
