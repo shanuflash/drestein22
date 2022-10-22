@@ -38,6 +38,7 @@ const CountDown = () => {
       };
     }
   });
+  const DeviceSize = window.innerWidth;
 
   return (
     <div className="countdown-container">
@@ -47,12 +48,25 @@ const CountDown = () => {
       <div className="hours">
         Hours <div id="countdown-card">{hoursDiff}</div>
       </div>
-      <div className="mins">
-        Minutes <div id="countdown-card">{minutesDiff}</div>
-      </div>
-      <div className="secs">
-        Seconds <div id="countdown-card">{secondsDiff}</div>
-      </div>
+      {DeviceSize < 600 ? (
+        <>
+          <div className="mins">
+            Mins <div id="countdown-card">{minutesDiff}</div>
+          </div>
+          <div className="secs">
+            Secs <div id="countdown-card">{secondsDiff}</div>
+          </div>
+        </>
+      ) : (
+        <>
+          <div className="mins">
+            Minutes <div id="countdown-card">{minutesDiff}</div>
+          </div>
+          <div className="secs">
+            Seconds <div id="countdown-card">{secondsDiff}</div>
+          </div>
+        </>
+      )}
     </div>
   );
 };

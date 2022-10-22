@@ -177,7 +177,6 @@ const RegisterNow = styled.button`
 `;
 
 function Main() {
-  const DeviceSize = window.innerWidth;
   return (
     <MainHeader id="Main" className="main_header">
       <HeaderBg

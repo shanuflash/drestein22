@@ -116,7 +116,7 @@ const NavHead = styled.ul`
 const NavItem = styled.a`
   color: #fff;
   text-transform: uppercase;
-  font-size:1rem;
+  font-size:1.3vw;
   cursor: pointer;
   text-decoration: none;
 `;
