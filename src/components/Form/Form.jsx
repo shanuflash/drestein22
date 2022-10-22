@@ -127,9 +127,9 @@ const Form = () => {
         // setqr(response)
         // sending mail --
         const config = {
-          SecureToken: "1a7e3de3-b657-4c1b-bcec-42c3389c810c",
+          SecureToken: "23c731d3-a11b-4d25-b0cf-d53eaf01dcad",
           To: formdata.Email,
-          From: "saveethadrestein2022@gmail.com",
+          From: "gleedara@gmail.com",
           Subject: "congrats on registration in Drestein Event 🎉🎉",
           Body: `<h1>${formdata.name}</h1>`,
         };
@@ -185,12 +185,15 @@ const Form = () => {
 
   console.log(formdata);
   return (
-    <div className="headcontainer" data-joy-color-scheme="dark" >
+    <div className="headcontainer" data-joy-color-scheme="dark">
       <Nav />
-      <div className="main-form" style={{
-      maxWidth:'800px',
-      margin:'0 auto'
-    }}>
+      <div
+        className="main-form"
+        style={{
+          maxWidth: "800px",
+          margin: "0 auto",
+        }}
+      >
         <CssVarsProvider className="formsheet">
           {/* <ThemeProvider theme={Theme}> */}
           <Sheet
