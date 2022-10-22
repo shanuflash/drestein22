@@ -54,7 +54,7 @@ const HeaderMainText = styled.div`
 const DresteinText = styled.p`
   line-height: 1.2em;
   font-weight: 500;
-  font-size: 5vw;
+  font-size: 4.9vw;
   text-align: center;
   width: 80%;
   min-height: 10%;
@@ -224,7 +224,7 @@ function Main() {
             endAtZero
             endAt={"2022-11-09 01:26:58"}
           /> */}
-          <div className="MainHeaderDate">November 9th & 10th</div>
+          <div className="MainHeaderDate">November 10th & 11th</div>
         </Timer>
       </HeaderBg>
       <Link to="/form">
