@@ -7,7 +7,11 @@ function About() {
     height: auto;
     width: 100vw;
     /* linear-gradient(90.21deg,#0b001d -5.91%,#00126a 111.58%) */
-    background: linear-gradient(90deg, #0b001d -5.91%, #00126a 111.58%);
+    /* background: linear-gradient(90deg, #0b001d -5.91%, #00126a 111.58%); */
+    /* background: linear-gradient(90deg, #0b001d -5.91%, #000833 111.58%); */
+    /* background-image: linear-gradient(45deg, #f98bff8e 0%, #2bd1ff82 52%, #2bff8789 90%); */
+
+
     margin-top: 100px;
     display: flex;
     justify-content: center;
@@ -64,6 +68,19 @@ function About() {
   padding: 10px;
 `;
 
+  const Descard = styled.div`
+  font-size:1.3em;
+  background-color:rgba(225,225,225,0.7);
+  color: black;
+  border-radius:1rem;
+  padding:1rem;
+  margin:1rem;
+  `;
+
+  const Descardhead = styled.span`
+  font-weight:bold;
+  `;
+
   return (
     <AboutHead
       as={motion.div}
@@ -85,20 +102,22 @@ function About() {
           about saveetha
         </AboutTitle>
         <AboutDescript>
-          <ul>
-            <List as={motion.li} variants={text}>
+          <Descard as={motion.div} variants={text}>
+            <Descardhead>Our Vision:</Descardhead> To be and to be recognized
+            for setting the standard of excellence in engineering education and
+            high quality research in Science and Technology.
+          </Descard>
+          <Descard as={motion.div} variants={text}>
+            <Descardhead>Our Mission:</Descardhead> To promote academic
+            excellence; widen intellectual horizon; self-discipline and high
+            ideals for the total personality development of the individual.
+          </Descard>
+          {/* <List as={motion.li} variants={text}>
               Saveetha Engineering College (SEC) was established in 2001, by the
               Founder Chairman Dr. N. M. Veeraiyan, a committed and dedicated
               Medical Professional.
-            </List>
-            <List as={motion.li} variants={text}>
-              SEC has a total strength of 4349 students in 15 UG courses, 8 PG
-              Courses including MBA, MS by Research and Doctoral programs (PhD)
-              in five Departments.
-            </List>
-            <List as={motion.li} variants={text}>
-              National Board of Accredition NBA has Accredited 5 UG courses.
-            </List>
+            </List> */}
+          <ul>
             <List as={motion.li} variants={text}>
               Ranked 96 by NIRF- National Institute Ranking Framework for the
               academic year 2017-18 among all IITs, Central, State and Private

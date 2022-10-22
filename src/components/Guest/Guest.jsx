@@ -7,7 +7,9 @@ padding-bottom: 100px;
 position: relative;
     /* background: linear-gradient(90deg, #0b001d -5.91%, #00126a 111.58%); */
     /* background: linear-gradient(90deg, #0b001d -5.91%, #630000 111.58%); */
-    background: linear-gradient(90deg, #00126a -80.91%, #0b001d 111.58%);
+    /* background: linear-gradient(90deg, #00126a -80.91%, #0b001d 111.58%); */
+    /* background-image: linear-gradient(90deg, #f98bff8e 0%, #2bd1ff82 52%, #2bff8789 90%); */
+
  
 
 

@@ -25,9 +25,13 @@ const Gallery = () => {
   };
   const Head = styled.div`
 
-    font-size: 7vw;
+  font-size: 8vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;   
     font-weight: bold;
-    margin: 4rem;
+    /* margin: 4rem; */
     text-align: center;
     @media (max-width: 600px) {
       font-size: 10vw;
@@ -55,7 +59,7 @@ const Gallery = () => {
         pagination={{
           clickable: true,
         }}
-        navigation={true}
+        // navigation={true}
         effect={"coverflow"}
         centeredSlides={true}
         slidesPerView={"auto"}

@@ -5,8 +5,8 @@ const CountDown = () => {
   const end = new Date();
   end.setFullYear(2022);
   end.setMonth(10);
-  end.setDate(10);
-  end.setHours(0);
+  end.setDate(18);
+  end.setHours(8);
   end.setMinutes(0);
 
   const [daysDiff, setdaysDiff] = useState(0);

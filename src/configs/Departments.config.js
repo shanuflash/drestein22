@@ -95,25 +95,17 @@ export const departobj = [
     bgtext: "Busin",
   },
   {
-    title: "Workshops",
-    img: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
-    des: "test",
-    color: "#ff6d41",
-    bgtext: "Work",
-    mbtm: "21px",
-  },
-  {
     title: "Paper Presentation",
     img: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
     des: "test",
-    color: "#37c0ff",
+    color: "#ff6d41",
     bgtext: "Paper",
   },
   {
     title: "Poster Presentation",
     img: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
     des: "test",
-    color: "#ff3b41",
+    color: "#37c0ff",
     bgtext: "Post",
   },
 ];
