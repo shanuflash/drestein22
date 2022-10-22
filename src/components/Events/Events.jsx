@@ -1,5 +1,5 @@
 import Nav from "../Nav/Nav";
-import "./styles/events.css";
+import "./styles/events.scss";
 import { EventDetails } from "../../configs/EventDetails";
 import EventCard from "./EventCard";
 

@@ -1,6 +1,6 @@
 .event-container {
-    width: 80%;
-    margin: 0 auto;
+    width: 100%;
+    padding: 0 3rem;
     color: white;
 }
 
@@ -17,6 +17,25 @@
     display: flex;
     flex-wrap: wrap;
     gap: 1.5rem;
+
+    // display: grid;
+    //     margin-top: 50px;
+    //     place-items: center;
+    //     min-height: 100px;
+    //     /* row-gap: 1rem; */
+    //     /* gap: 1rem; */
+    
+    //     @media (min-width: 600px) {
+    //         grid-template-columns: repeat(2, 1fr);
+    //     }
+    
+    //     @media (min-width: 900px) {
+    //         grid-template-columns: repeat(3, 1fr);
+    //     }
+    
+    //     @media (min-width: 1250px) {
+    //         grid-template-columns: repeat(4, 1fr);
+    //     }
 }
 
 @media only screen and (max-width: 600px) {
