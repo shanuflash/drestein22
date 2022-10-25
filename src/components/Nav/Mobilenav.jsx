@@ -10,8 +10,6 @@ import MenuIcon from "@mui/icons-material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import styled from "styled-components";
 import "./styles/HambBurger.css";
-import { positions } from "@mui/system";
-import { AppBar, Toolbar } from "@mui/material";
 
 const pages = [
   { name: "Home", link: "#Main" },
@@ -38,18 +36,16 @@ const ResponsiveAppBar = () => {
     setAnchorElUser(null);
   };
   const AncherLink = styled.a`
- text-decoration: none;
- color: black;
+    text-decoration: none;
+    color: black;
+  `;
 
-
-`;
-
-const NavAll = styled.div`
-  display: none;
-  @media screen and (max-width:600px) {
-    display: block;
-}
-`;
+  const NavAll = styled.div`
+    display: none;
+    @media screen and (max-width: 600px) {
+      display: block;
+    }
+  `;
   return (
     <Box className="onlyshow">
       <IconButton

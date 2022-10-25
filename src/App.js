@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Route, Routes } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 
@@ -17,32 +17,44 @@ import AdminPannel from "./components/Admin/components/ScanUsers";
 import { UserProvider } from "./components/Admin/contexts/AdminContext";
 import SingleUserPage from "./components/Admin/components/SingleUserPage";
 import AdminProfile from "./components/Admin/components/AdminProfile";
+import Lander from "./components/LandingPage/Lander";
 function App() {
-  return (
-    <UserProvider>
-      <div>
-        <DisplayPopupProvider>
-          <Routes>
-            <Route path="/" element={<Main />} />
-            <Route path="form" element={<Form />} />
-            <Route path="events" element={<Events />} />
-            <Route path="Admin/login" element={<SignIn />} />
-            <Route path="*" element={<h1>page not found</h1>} />
-            <Route path="user/:userid" element={<SingleUserPage />} />
+  const [loading, setLoading] = useState(true);
 
-            <Route path="/Admin" element={<PrivateRoute />}>
-              <Route path="/Admin" element={<AdminMain />}>
-                <Route path="paid" element={<PaidUsers />} />
-                <Route path="unpaid" element={<UnPaidUsers />} />
-                <Route path="scanusers" element={<AdminPannel />} />
-                <Route path="profile" element={<AdminProfile />} />
-              </Route>
-            </Route>
-          </Routes>
-          <ToastContainer />
-        </DisplayPopupProvider>
-      </div>
-    </UserProvider>
+  useEffect(() => {
+    setTimeout(() => setLoading(false), 3000);
+  }, []);
+  return (
+    <>
+      {loading ? (
+        <Lander />
+      ) : (
+        <UserProvider>
+          <div>
+            <DisplayPopupProvider>
+              <Routes>
+                <Route path="/" element={<Main />} />
+                <Route path="form" element={<Form />} />
+                <Route path="events" element={<Events />} />
+                <Route path="Admin/login" element={<SignIn />} />
+                <Route path="*" element={<h1>page not found</h1>} />
+                <Route path="user/:userid" element={<SingleUserPage />} />
+
+                <Route path="/Admin" element={<PrivateRoute />}>
+                  <Route path="/Admin" element={<AdminMain />}>
+                    <Route path="paid" element={<PaidUsers />} />
+                    <Route path="unpaid" element={<UnPaidUsers />} />
+                    <Route path="scanusers" element={<AdminPannel />} />
+                    <Route path="profile" element={<AdminProfile />} />
+                  </Route>
+                </Route>
+              </Routes>
+              <ToastContainer />
+            </DisplayPopupProvider>
+          </div>
+        </UserProvider>
+      )}
+    </>
   );
 }
 
