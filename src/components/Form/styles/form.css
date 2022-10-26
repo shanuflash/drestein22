@@ -21,7 +21,9 @@
 
 
 }
-
+input::placeholder{
+    color: red;
+}
 .formcontainer {
     height: 80vh;
     overflow-y: scroll;

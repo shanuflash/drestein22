@@ -130,7 +130,7 @@ const Form = () => {
           SecureToken: "23c731d3-a11b-4d25-b0cf-d53eaf01dcad",
           To: formdata.Email,
           From: "gleedara@gmail.com",
-          Subject: "congrats on registration in Drestein Event 🎉🎉",
+          Subject: "Congrats on registration in Drestein Event 🎉🎉",
           Body: `<h1>${formdata.name}</h1>`,
         };
         if (window.Email) {
@@ -142,7 +142,7 @@ const Form = () => {
             SecureToken: "23c731d3-a11b-4d25-b0cf-d53eaf01dcad",
             To: formdata.email,
             From: "gleedara@gmail.com",
-            Subject: "congrats on registration in Drestein Event 🎉🎉",
+            Subject: "Congrats on registration in Drestein Event 🎉🎉",
             Body: `<h2>name : ${formdata.fname} ${formdata.lname}</h2>
                          <h2>college : ${formdata.college}</h2>
                          <h2>Rollno : ${formdata.regno}</h2>
@@ -246,7 +246,7 @@ const Form = () => {
               value={formdata.college}
               onChange={handleChange}
               type="text"
-              placeholder="Your college name..."
+              placeholder="College"
               label="College Name"
             />
             <div className="yearno">
@@ -255,7 +255,7 @@ const Form = () => {
                 value={formdata.regno}
                 onChange={handleChange}
                 type="number"
-                placeholder="Your roll number..."
+                placeholder="Roll No"
                 label="Roll Number"
                 sx={{ width: "48%" }}
               />
@@ -268,7 +268,7 @@ const Form = () => {
                 <Select
                   id="year"
                   data-name="year"
-                  placeholder="Select year..."
+                  placeholder="Year"
                   value={formdata.year}
                   onChange={handleChangeForSelect}
                 >
@@ -303,7 +303,7 @@ const Form = () => {
                 <Select
                   id="dept"
                   name="dept"
-                  placeholder="Select department..."
+                  placeholder="Department"
                   value={formdata.dept}
                   onChange={handleChangeForSelect}
                 >
@@ -330,7 +330,7 @@ const Form = () => {
                 <Select
                   id="gender"
                   name="gender"
-                  placeholder="Select gender..."
+                  placeholder="Gender"
                   value={formdata.gender}
                   onChange={handleChangeForSelect}
                 >
@@ -355,7 +355,7 @@ const Form = () => {
               type="number"
               value={formdata.phno}
               onChange={handleChange}
-              placeholder="98765*****"
+              placeholder="+91 7892 678 000"
               label="Phone Number"
             />
             <TextField
