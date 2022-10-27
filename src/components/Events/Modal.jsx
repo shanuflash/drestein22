@@ -19,7 +19,7 @@ const Modal = ({ open, setOpenModal }) => {
   if (!open) return null;
   return (
     <div className="overlay" onClick={() => setOpenModal((prev) => !prev)}>
-      <div className="modal" onClick={() => setOpenModal((prev) => !prev)}>
+      <div className={`modal  ${open? 'slide' : ''}`} onClick={() => setOpenModal((prev) => !prev)}>
         <VscClose
           className="close-btn"
           onClick={() => setOpenModal((prev) => !prev)}

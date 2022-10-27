@@ -3,6 +3,9 @@ import styled, { keyframes } from "styled-components";
 import saveethalogo from "../../assets/logo.png";
 import dresteinLogo from "../../assets/dresteinLogo.svg";
 import Mobilenav from "./Mobilenav";
+import { HiOutlineMenuAlt1 } from 'react-icons/hi'
+import { CgClose } from 'react-icons/cg'
+
 import "./styles/HambBurger.css";
 import { Link } from "react-router-dom";
 
@@ -63,7 +66,9 @@ const LogoHead = styled.div`
   align-items: center;
   justify-content: center;
   @media screen and (max-width: 600px){
-    width: 100%;  
+    width: 80%;  
+    margin-left: 3rem;
+
   }
 `;
 
@@ -136,6 +141,7 @@ function Nav() {
       top: "-80px",
     },
   };
+  const [openMenu, setOpenMenu] = useState(false)
   const [colorChange, setColorchange] = useState(false);
   const changeNavbarColor = () => {
     if (window.scrollY > 30) {
@@ -155,8 +161,15 @@ function Nav() {
         <NavItem href="#Gallery">Gallery</NavItem>
         <NavItem href="#About">About</NavItem>
       </NavHead>
+      <Mobilenav openMenu={openMenu} />
+      <div className="icon" onClick={() => setOpenMenu(!openMenu)}>
+        {openMenu
+          ? <CgClose />
+          : <HiOutlineMenuAlt1 />
+        }
+
+      </div>
       <MobileNavHeader>
-        <Mobilenav />
         <Link to="/" style={{ "text-decoration": "none" }}>
           <LogoHead>
             <DLogo src={dresteinLogo} alt="DresteinLogo" />
