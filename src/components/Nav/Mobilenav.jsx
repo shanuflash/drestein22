@@ -21,7 +21,6 @@ const Mobilenav = ({ openMenu }) => {
         </Link>
       </ul>
     </div >
-
   );
 };
 export default Mobilenav;

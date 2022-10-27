@@ -4,6 +4,13 @@
   font-weight: normal;
   font-style: normal;
 }
+ol{
+  width: 100%;
+}
+h3{
+  margin: 1rem 0;
+}
+
 
 .overlay {
   width: 100%;
@@ -13,7 +20,7 @@
   z-index: 2;
   backdrop-filter: blur(5px);
 
-
+  
 }
 
 
@@ -68,11 +75,13 @@
   }
 
   .desc {
-    margin: 0.5rem 0;
+    max-height: 15%;
+    overflow-y: scroll;
+    margin: 1rem 0;
   }
 
   .grid {
-    margin: 1rem 0;
+    margin: 1.5rem 0;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
@@ -107,11 +116,16 @@
 
     .grid {
       grid-template-columns: repeat(2, 1fr);
+      margin: 1.5rem 0;
     }
 
     .close-btn {
       top: 1.5rem;
       right: 1rem;
+    }
+
+    .rules, .round1, .round2, .round3, .round4, .judging{
+      margin-bottom: 1rem ;
     }
   }
 

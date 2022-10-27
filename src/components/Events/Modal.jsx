@@ -19,7 +19,7 @@ const Modal = ({ open, setOpenModal }) => {
   if (!open) return null;
   return (
     <div className="overlay" onClick={() => setOpenModal((prev) => !prev)}>
-      <div className={`modal  ${open? 'slide' : ''}`} onClick={() => setOpenModal((prev) => !prev)}>
+      <div className={`modal  ${open ? 'slide' : ''}`} onClick={() => setOpenModal((prev) => !prev)}>
         <VscClose
           className="close-btn"
           onClick={() => setOpenModal((prev) => !prev)}
@@ -57,80 +57,76 @@ const Modal = ({ open, setOpenModal }) => {
           </div>
         </div>
         {eventObject.rules ? (
-          <>
+          <div className="rules">
             <h3>Rules and Regulations:</h3>
-            <ul>
+            <ol>
               {splitrules.map((each) => {
                 return <li>{each}</li>;
               })}
-            </ul>
-            <br />
-          </>
+            </ol>
+          </div>
         ) : null}
         {eventObject.round1 ? (
-          <>
+          <div className="round1">
             <h3>Round 1:</h3>
-            <ul>
+            <ol>
               {splitround1.map((each) => {
                 return <li>{each}</li>;
               })}
-            </ul>
-            <br />
-          </>
+            </ol>
+          </div>
         ) : null}
         {eventObject.round2 ? (
-          <>
+          <div className="round2">
             <h3>Round 2:</h3>
-            <ul>
+            <ol>
               {splitround2.map((each) => {
                 return <li>{each}</li>;
               })}
-            </ul>
-            <br />
-          </>
+            </ol>
+            
+          </div>
         ) : null}
         {eventObject.round3 ? (
-          <>
+          <div className="round3">
             <h3>Round 3:</h3>
-            <ul>
+            <ol>
               {splitround3.map((each) => {
                 return <li>{each}</li>;
               })}
-            </ul>
-            <br />
-          </>
+            </ol>
+          </div>
         ) : null}
         {eventObject.round4 ? (
-          <>
+          <div className="round4">
             <h3>Round 4:</h3>
-            <ul>
+            <ol>
               {splitround3.map((each) => {
                 return <li>{each}</li>;
               })}
-            </ul>
-            <br />
-          </>
+            </ol>
+          </div>
         ) : null}
         {eventObject.judge ? (
-          <>
+          <div className="judging">
             <h3>Judging Criteria:</h3>
-            <ul>
+            <ol>
               {splitjudge.map((each) => {
                 return <li>{each}</li>;
               })}
-            </ul>
-          </>
+            </ol>
+          </div>
         ) : null}
         {eventObject.prize ? (
-          <>
+          <div className="prize">
             <h3>Prize:</h3>
-            <ul>
+            <ol>
               {splitprize.map((each) => {
                 return <li>{each}</li>;
               })}
-            </ul>
-            <br />
-          </>
+            </ol>
+            
+          </div>
         ) : null}
       </div>
     </div>
