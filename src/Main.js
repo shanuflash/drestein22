@@ -30,7 +30,7 @@ const Main = () => {
   const particlesLoaded = useCallback(async (container) => {}, []);
 
   return (
-    <div ref={scroll}>
+    <div ref={scroll} id="#">
       <motion.div
         className="scrollprogress"
         style={{ scaleX: scrollYProgress }}

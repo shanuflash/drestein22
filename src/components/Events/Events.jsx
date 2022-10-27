@@ -15,7 +15,7 @@ const Events = () => {
       : document.body.style.overflow = 'unset'
   }, [openModal])
   return (
-    <div className="event-page">
+    <div className="event-page" id="#">
       <Nav />
       <Modal open={openModal} setOpenModal={setOpenModal} />
       <div className="event-container">

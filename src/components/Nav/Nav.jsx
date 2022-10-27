@@ -157,10 +157,10 @@ function Nav() {
     <Navbar className="navbar" style={navstyle}>
       <SLogo src={saveethalogo} />
       <NavHead>
-        <NavItem href="#">Home</NavItem>
-        <NavItem href="#Departments">Departments</NavItem>
-        <NavItem href="#Gallery">Gallery</NavItem>
-        <NavItem href="#About">About</NavItem>
+        <NavItem href="/#">Home</NavItem>
+        <NavItem href="/#Departments">Departments</NavItem>
+        <NavItem href="/#Gallery">Gallery</NavItem>
+        <NavItem href="/#About">About</NavItem>
       </NavHead>
       <Mobilenav openMenu={openMenu} />
       <div className="icon" onClick={() => setOpenMenu(!openMenu)}>
