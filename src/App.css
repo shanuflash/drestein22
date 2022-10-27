@@ -13,10 +13,8 @@
 }
 
 body {
-  /* background-color: black; */
   background-color: rgb(0 1 23);
   color: white;
-  /* font-family: "poppins", sans-serif; */
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -26,18 +24,12 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-
   position: absolute;
   margin-top: -60vh;
-  /* top: 60%; */
-  /* z-index: -1; */
   min-width: 100%;
-
   will-change: transform;
   min-height: 100vh;
-  /* transform: translateZ(0); */
-
-
+  
 }
 
 @media screen and(max-width:600px) {}

@@ -130,6 +130,7 @@ const MobileNavHeader = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 0.5rem 0;
   position: sticky;
   top: 0;
   align-self: flex-start;

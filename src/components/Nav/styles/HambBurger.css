@@ -1,21 +1,21 @@
 .onlyshow {
   display: none;
   position: fixed;
-  transition: transform 1s;
+  transition: transform 700ms;
   z-index: 3;
   top: 80px;
   left: 0;
   color: white;
   width: 70%;
-  background: rgba(0, 0, 0, 0.834);
-  backdrop-filter: blur(3rem);
+  background-color: rgba(0, 0, 0, 0.85);
+  -webkit-backdrop-filter: blur(2em);
+  backdrop-filter: blur(2em);
   height: 100vh;
   overflow: hidden;
   transform: translateX(-100%);
-
-
 }
-.slide{
+
+.slide {
   transform: translateX(0);
 
 }
@@ -23,8 +23,9 @@
 .icon {
   display: none;
   position: fixed;
-  top: 80px;
-  left: 0;
+  top: 5rem;
+  width: 100%;
+  left: .5rem;
   font-size: 2rem;
   z-index: 4;
 }
