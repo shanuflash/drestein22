@@ -18,6 +18,24 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+.gmap_iframe {
+  height: 350px !important;
+}
+
+.mapouter {
+  margin-inline: auto;
+  position: relative;
+  text-align: right;
+  max-width: 700px;
+  height: 350px;
+}
+
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  max-width: 700px;
+  height: 350px;
+}
 
 .img {
   background-image: url('../src/assets/earth.png');
@@ -29,7 +47,7 @@ body {
   min-width: 100%;
   will-change: transform;
   min-height: 100vh;
-  
+
 }
 
 @media screen and(max-width:600px) {}

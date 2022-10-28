@@ -21,6 +21,8 @@ const EventCard = ({
   round4,
   judge,
   prize,
+  staff,
+  student,
 }) => {
   const { setEventObject } = useContext(DisplayPopupContext);
 
@@ -41,6 +43,8 @@ const EventCard = ({
       round4,
       judge,
       prize,
+      staff,
+      student,
     });
   };
 

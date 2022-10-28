@@ -23,7 +23,7 @@ export const EventDetails = [
             { name: 'Ms.P.Preethi', desig: 'Assistant Professor', phone: 8608721755, email: 'ppreethi@saveetha.ac.in' },
           ],
         student: [
-          { name: 'Neha MA', year: 'III', phone: 7305312546, email: 'nehamanickam74@gmail.com' },
+          { name: 'Neha M A', year: 'III', phone: 7305312546, email: 'nehamanickam74@gmail.com' },
           { name: 'Vibha Mukund', year: 'III', phone: 6360858895, email: 'vibhamukund177@gmail.com' },
           { name: 'S R Pavishmi', year: 'II', phone: 7550320820, email: 'pavishmi1S04@gmail.com' },
           { name: 'Pradeesh Kumar S', year: 'II', phone: 7550320820, email: 'pradeesh27ll.1m@gmail.com' },

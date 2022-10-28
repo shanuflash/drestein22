@@ -18,6 +18,8 @@ export const DisplayPopupProvider = ({ children }) => {
     round4: "error",
     judge: "error",
     prize: "error",
+    staff: [],
+    student: [],
   });
   return (
     <DisplayPopupContext.Provider

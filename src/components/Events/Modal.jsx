@@ -6,6 +6,9 @@ import { TiLocation } from "react-icons/ti";
 import { FcAlarmClock } from "react-icons/fc";
 import { AiOutlineTeam } from "react-icons/ai";
 import { IoIosPeople } from "react-icons/io";
+import RegisterBtn from '../register-button/RegisterBtn'
+import { HashLink as Link } from 'react-router-hash-link';
+
 
 const Modal = ({ open, setOpenModal }) => {
   const { eventObject } = useContext(DisplayPopupContext);
@@ -84,7 +87,7 @@ const Modal = ({ open, setOpenModal }) => {
                 return <li>{each}</li>;
               })}
             </ol>
-            
+
           </div>
         ) : null}
         {eventObject.round3 ? (
@@ -125,9 +128,44 @@ const Modal = ({ open, setOpenModal }) => {
                 return <li>{each}</li>;
               })}
             </ol>
-            
+
           </div>
         ) : null}
+        {eventObject.staff ? (
+          <div className="faculty">
+            <h3>Facalty Co-ordinators:</h3>
+            <ol>
+              {
+                eventObject.staff?.map(each => {
+                  return (
+                    <li><span>{each.name}</span> {`(${each.phone})`}</li>
+                  );
+                })
+              }
+            </ol>
+
+          </div>
+        ) : 'no staff allocated'}
+        {eventObject.student ? (
+          <div className="student">
+            <h3>Student Co-ordinators:</h3>
+            <ol>
+              {
+                eventObject.student?.map(each => {
+                  return (
+                    <li><span>{each.name}</span> {`(${each.phone})`}</li>
+                  );
+                })
+              }
+            </ol>
+
+          </div>
+        ) : 'no student allocated'}
+        <Link style={{ textDecoration: 'none' }} to="/form">
+          <div className="btn">
+            <RegisterBtn />
+          </div>
+        </Link>
       </div>
     </div>
   );

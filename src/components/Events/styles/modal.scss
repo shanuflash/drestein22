@@ -4,10 +4,12 @@
   font-weight: normal;
   font-style: normal;
 }
-ol{
+
+ol {
   width: 100%;
 }
-h3{
+
+h3 {
   margin: 1rem 0;
 }
 
@@ -20,7 +22,7 @@ h3{
   z-index: 2;
   backdrop-filter: blur(5px);
 
-  
+
 }
 
 
@@ -103,7 +105,18 @@ h3{
 
     li {
       margin: 0.5rem 1rem;
+
+      span {
+        font-weight: 600;
+        margin-right: 0.5rem;
+      }
     }
+  }
+
+  .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 
@@ -124,8 +137,13 @@ h3{
       right: 1rem;
     }
 
-    .rules, .round1, .round2, .round3, .round4, .judging{
-      margin-bottom: 1rem ;
+    .rules,
+    .round1,
+    .round2,
+    .round3,
+    .round4,
+    .judging {
+      margin-bottom: 1rem;
     }
   }
 

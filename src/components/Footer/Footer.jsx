@@ -2,7 +2,9 @@ import styled from "styled-components";
 import React from "react";
 import logo from "../../assets/dresteinLogo.svg";
 const FooterHeader = styled.div`
-width: 100vw;
+width: 90vw;
+margin-inline: auto;
+
 margin-top: 5rem;
 
 /* text-transform: uppercase; */
@@ -105,6 +107,12 @@ function Footer() {
           </FooterText>
         </FooterContainer>
       </FooterConatinAll>
+      <div class="mapouter">
+        <div class="gmap_canvas">
+          <iframe class="gmap_iframe" title="SEC Location" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=400&amp;height=400&amp;hl=en&amp;q=saveetha engineering college&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+          <a href="https://piratebay-proxys.com/">Piratebay</a>
+        </div>
+      </div>
       <FooterBottom>
         <Policy>Privacy Policy | Terms</Policy>
         <MadewithLove> Made with ❤️ by IT DEPT </MadewithLove>
