@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useRef } from "react";
 import { db } from "../../../configs/Firebase.config";
-
+import { TextField } from "@mui/material";
 import {
   collection,
   getDocs,
@@ -10,7 +10,7 @@ import {
   updateDoc,
 } from "firebase/firestore";
 import { toast } from "react-toastify";
-import { Card, Typography } from "@mui/material";
+import { Card, Input, Typography } from "@mui/material";
 import Alert from "@mui/material";
 import { QrReader } from "react-qr-reader";
 
@@ -66,6 +66,18 @@ function AdminPannel() {
   const onScanfile = () => {
     qrRef.current.openImageDialog();
   };
+  const handleChange=(e)=>{
+console.log(e.target.value)
+try {
+  const docRef = doc(db, "RegisteredPeople", `${e.target.value}`);
+  onSnapshot(docRef, (snapshot) => {
+    setRegistredPeople([snapshot.data()]);
+    setData(e.target.value);
+  });
+} catch (e) {
+   
+}
+  }
 
   return (
     <AdminPanelHead>
@@ -85,6 +97,13 @@ function AdminPannel() {
           </div>
         )}
       </UsersList>
+      <TextField
+          id="filled-search"
+          label="Search field"
+          type="search"
+          variant="filled"
+          onChange={handleChange}
+        />
 
       <Scanner>
         <p
@@ -92,6 +111,7 @@ function AdminPannel() {
             margin: "2rem",
           }}
         >
+      
           scanned result : {data}
         </p>
 

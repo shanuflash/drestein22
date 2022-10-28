@@ -18,6 +18,7 @@ import { UserProvider } from "./components/Admin/contexts/AdminContext";
 import SingleUserPage from "./components/Admin/components/SingleUserPage";
 import AdminProfile from "./components/Admin/components/AdminProfile";
 import Lander from "./components/LandingPage/Lander";
+import UsersData from "./components/Admin/components/PaidusersDatagrid";
 function App() {
   const [loading, setLoading] = useState(true);
 
@@ -42,7 +43,7 @@ function App() {
 
                 <Route path="/Admin" element={<PrivateRoute />}>
                   <Route path="/Admin" element={<AdminMain />}>
-                    <Route path="paid" element={<PaidUsers />} />
+                    <Route path="users" element={<UsersData />} />
                     <Route path="unpaid" element={<UnPaidUsers />} />
                     <Route path="scanusers" element={<AdminPannel />} />
                     <Route path="profile" element={<AdminProfile />} />

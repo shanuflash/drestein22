@@ -113,6 +113,7 @@ const Form = () => {
     // }).catch((e)=>{
     //     toast.error(e)
     // })
+
     const cityRef = doc(db, "RegisteredPeople", `${formdata.id}`);
 
     setDoc(cityRef, formdata)
@@ -126,23 +127,24 @@ const Form = () => {
         console.log(QrUrl);
         // setqr(response)
         // sending mail --
-        const config = {
-          SecureToken: "23c731d3-a11b-4d25-b0cf-d53eaf01dcad",
-          To: formdata.Email,
-          From: "gleedara@gmail.com",
-          Subject: "Congrats on registration in Drestein Event 🎉🎉",
-          Body: `<h1>${formdata.name}</h1>`,
-        };
+        // const config = {
+        //   SecureToken: "1a7e3de3-b657-4c1b-bcec-42c3389c810c",
+        //   To: formdata.Email,
+        //   From: "saveethadrestein2022@gmail.com",
+        //   Subject: "congrats on registration in Drestein Event 🎉🎉",
+        //   Body: `<h1>${formdata.name}</h1>`,
+        // };
         if (window.Email) {
           await window.Email.send({
             // Host : "smtp.elasticemail.com",
             // Username : "saveethadrestein2022@gmail.com",
             // Password : "7ED0253E9D150A7B3718C8FF2710B33F3612",
 
-            SecureToken: "23c731d3-a11b-4d25-b0cf-d53eaf01dcad",
+            SecureToken:process.env.REACT_APP_EMAILCODE_ID,
+
             To: formdata.email,
             From: "gleedara@gmail.com",
-            Subject: "Congrats on registration in Drestein Event 🎉🎉",
+            Subject: "congrats on registration in Drestein Event 🎉🎉",
             Body: `<h2>name : ${formdata.fname} ${formdata.lname}</h2>
                          <h2>college : ${formdata.college}</h2>
                          <h2>Rollno : ${formdata.regno}</h2>
@@ -185,15 +187,12 @@ const Form = () => {
 
   console.log(formdata);
   return (
-    <div className="headcontainer" data-joy-color-scheme="dark">
+    <div className="headcontainer" data-joy-color-scheme="dark" >
       <Nav />
-      <div
-        className="main-form"
-        style={{
-          maxWidth: "800px",
-          margin: "0 auto",
-        }}
-      >
+      <div className="main-form" style={{
+      maxWidth:'800px',
+      margin:'0 auto'
+    }}>
         <CssVarsProvider className="formsheet">
           {/* <ThemeProvider theme={Theme}> */}
           <Sheet
@@ -246,7 +245,7 @@ const Form = () => {
               value={formdata.college}
               onChange={handleChange}
               type="text"
-              placeholder="College"
+              placeholder="Your college name..."
               label="College Name"
             />
             <div className="yearno">
@@ -255,7 +254,7 @@ const Form = () => {
                 value={formdata.regno}
                 onChange={handleChange}
                 type="number"
-                placeholder="Roll No"
+                placeholder="Your roll number..."
                 label="Roll Number"
                 sx={{ width: "48%" }}
               />
@@ -268,7 +267,7 @@ const Form = () => {
                 <Select
                   id="year"
                   data-name="year"
-                  placeholder="Year"
+                  placeholder="Select year..."
                   value={formdata.year}
                   onChange={handleChangeForSelect}
                 >
@@ -303,7 +302,7 @@ const Form = () => {
                 <Select
                   id="dept"
                   name="dept"
-                  placeholder="Department"
+                  placeholder="Select department..."
                   value={formdata.dept}
                   onChange={handleChangeForSelect}
                 >
@@ -330,7 +329,7 @@ const Form = () => {
                 <Select
                   id="gender"
                   name="gender"
-                  placeholder="Gender"
+                  placeholder="Select gender..."
                   value={formdata.gender}
                   onChange={handleChangeForSelect}
                 >
@@ -355,7 +354,7 @@ const Form = () => {
               type="number"
               value={formdata.phno}
               onChange={handleChange}
-              placeholder="+91 7892 678 000"
+              placeholder="98765*****"
               label="Phone Number"
             />
             <TextField
@@ -380,8 +379,8 @@ const Form = () => {
                 processing your data don't reload the page
               </Alert>
             )}
-            <Button sx={{ mt: 1 }} onClick={handlesubmit}>
-              Register
+            <Button sx={{ mt: 1 }} disabled={load}  onClick={handlesubmit}>
+              {load ? 'processing' : 'register'}
             </Button>
           </Sheet>
           {/* </ThemeProvider> */}

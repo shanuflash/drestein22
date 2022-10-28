@@ -16,7 +16,7 @@ import { getAuth } from "firebase/auth";
 import { useNavigate } from "react-router";
 import { Link } from "react-router-dom";
 import { uuidv4 } from "@firebase/util";
-const pages = ["scanusers", "paid", "unpaid"];
+const pages = ["scanusers", "users", "unpaid"];
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
 const ResponsiveAppBar = () => {
