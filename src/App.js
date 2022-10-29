@@ -19,6 +19,7 @@ import SingleUserPage from "./components/Admin/components/SingleUserPage";
 import AdminProfile from "./components/Admin/components/AdminProfile";
 import Lander from "./components/LandingPage/Lander";
 import UsersData from "./components/Admin/components/PaidusersDatagrid";
+import Loading from "./Loading";
 function App() {
   const [loading, setLoading] = useState(true);
 
@@ -27,11 +28,13 @@ function App() {
   }, []);
   return (
     <>
+    
       {loading ? (
         <Lander />
       ) : (
         <UserProvider>
           <div>
+
             <DisplayPopupProvider>
               <Routes>
                 <Route path="/" element={<Main />} />

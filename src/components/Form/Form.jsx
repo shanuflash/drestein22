@@ -27,7 +27,8 @@ import { doc } from "firebase/firestore";
 import { db } from "../../configs/Firebase.config";
 import QRcode from "qrcode";
 import { setDoc } from "firebase/firestore";
-
+import Loading from "../../Loading";
+import ConfirmCard from "./ConfirmCard";
 function Selector({ name, events, setformdata, formdata }) {
   console.log();
   const [Eventarr, setevents] = useState([]);
@@ -92,7 +93,7 @@ const Form = () => {
   const [formdata, setformdata] = useState({});
   const [qr, setqr] = useState("");
   const [load, setload] = useState(false);
-
+  const [confirmMsg,setconfirmMsg] = useState(false)
   const handleChange = (e) => {
     setformdata((prevState) => ({
       ...prevState,
@@ -153,6 +154,7 @@ const Form = () => {
           }).then(() => {
             alert("Email send to you successfully");
             setload(false);
+            setconfirmMsg(true)
           });
         }
       })
@@ -188,8 +190,13 @@ const Form = () => {
   console.log(formdata);
   return (
     <div className="headcontainer" data-joy-color-scheme="dark" >
+     
+{load && <Loading/>}
       <Nav />
-      <div className="main-form" style={{
+      {
+  confirmMsg ? <ConfirmCard/> : 
+
+<div className="main-form" style={{
       maxWidth:'800px',
       margin:'0 auto'
     }}>
@@ -387,6 +394,8 @@ const Form = () => {
         </CssVarsProvider>
         {/* <img src={lock} className="loginimage"></img> */}
       </div>
+      }
+      
     </div>
   );
 };
