@@ -6,7 +6,7 @@ const GuestHead = styled.div`
   padding-bottom: 100px;
   position: relative;
   /* background: linear-gradient(90deg, #00126a -80.91%, #0b001d 111.58%); */
-  linear-gradient(141deg, rgb(0 40 86 / 75%) 51.2%, rgb(0 125 66 / 75%) 98.6%);
+  background: linear-gradient(141deg, rgb(0 40 86 / 75%) 51.2%, rgb(0 125 66 / 75%) 98.6%);
   border-radius: 0 0 20px 20px;
   width: 100%;
   height: 100%;
