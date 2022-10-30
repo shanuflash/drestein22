@@ -129,7 +129,7 @@ const NationText = styled.div`
     background-color: #ffffffdb;
     border-radius: 1rem;
     color: black;
-    font-family: 'Poppins';
+    font-family: "Poppins";
     width: 80%;
     padding: 0.5rem;
   }

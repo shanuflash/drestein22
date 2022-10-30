@@ -9,19 +9,16 @@ import { updateDoc } from "firebase/firestore";
 import { Alert } from "@mui/material";
 import { toast } from "react-toastify";
 const UserCard = styled.div`
-
-
   width: 100%;
   color: #000000;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
- padding: 1rem;
- display: flex;
- flex-direction: column;
- align-items: flex-start;
- justify-content: center;
-border-radius: 1rem;
-background: ${(props) => (props.paid ? "#85f49d;" : "#fb7878")};
-
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  border-radius: 1rem;
+  background: ${(props) => (props.paid ? "#85f49d;" : "#fb7878")};
 `;
 
 function UserInfoCard({ data, Scanpage }) {

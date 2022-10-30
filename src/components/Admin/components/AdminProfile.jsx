@@ -2,7 +2,7 @@ import React from "react";
 import { getAuth } from "firebase/auth";
 import styled from "styled-components";
 const AdminProfleMain = styled.div`
-    color: black;
+  color: black;
 `;
 function AdminProfile() {
   const auth = getAuth();

@@ -14,8 +14,8 @@ import styled from "styled-components";
 import UserInfoCard from "./UserInfoCard";
 import { uuidv4 } from "@firebase/util";
 const UnPaidUSerMain = styled.div`
-width: 100vw;
-padding: 0  1.5rem;
+  width: 100vw;
+  padding: 0 1.5rem;
   margin: 0 auto;
   display: grid;
   margin-top: 50px;
@@ -33,20 +33,18 @@ padding: 0  1.5rem;
   @media (min-width: 1200px) {
     grid-template-columns: repeat(4, 1fr);
   }
-
-
 `;
 const TextusernotPaid = styled.div`
-    display: flex;
-    color: black;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50px,-50px);
+  display: flex;
+  color: black;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50px, -50px);
 
-    font-size: 10vw;
+  font-size: 10vw;
 `;
 function UnPaidUsers() {
   const [paidUsers, setPaidusers] = useState([]);

@@ -35,7 +35,7 @@
 .containerdept .card .contentBx {
   /* font-family: "poppins", sans-serif; */
   color: white;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -63,7 +63,7 @@
   align-items: center;
   color: white;
   /* font-family: poppins, sans-serif; */
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 
   @media (max-width: 600px) {
     font-size: 10vw;
@@ -71,7 +71,12 @@
 }
 
 .DeptHead .DeptHeadTxt {
-  background-image: linear-gradient(45deg, #f98bff8e 0%, #2bd1ff82 52%, #2bff8789 90%);
+  background-image: linear-gradient(
+    45deg,
+    #f98bff8e 0%,
+    #2bd1ff82 52%,
+    #2bff8789 90%
+  );
   border-radius: 2rem;
   padding: 20px 30px;
   margin: 5vh 20vw;
@@ -81,5 +86,4 @@
   .DeptHead {
     font-size: 10vw;
   }
-  
 }

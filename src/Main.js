@@ -14,7 +14,7 @@ import Footer from "./components/Footer/Footer";
 import "./App.css";
 
 const DepartmentDiv = styled.div`
-position: sticky;
+  position: sticky;
 `;
 
 const Main = () => {

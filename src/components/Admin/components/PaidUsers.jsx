@@ -13,8 +13,8 @@ import { Typography } from "@mui/material";
 import styled from "styled-components";
 import UserinfoCard from "../components/UserInfoCard";
 const PaidUSerMain = styled.div`
-   width: 100vw;
-padding: 0  1.5rem;
+  width: 100vw;
+  padding: 0 1.5rem;
   margin: 0 auto;
   display: grid;
   margin-top: 50px;
@@ -32,8 +32,6 @@ padding: 0  1.5rem;
   @media (min-width: 1200px) {
     grid-template-columns: repeat(4, 1fr);
   }
-
-
 `;
 function PaidUsers() {
   const [paidUsers, setPaidusers] = useState([]);

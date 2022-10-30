@@ -52,7 +52,11 @@ const EventCard = ({
     font-family: "poppins", sans-serif;
     --bg-filter-opacity: 0.5;
     --bg-img: url(${img});
-    background-image: linear-gradient(rgba(0, 0, 0, var(--bg-filter-opacity)), rgba(0, 0, 0, var(--bg-filter-opacity))), var(--bg-img);
+    background-image: linear-gradient(
+        rgba(0, 0, 0, var(--bg-filter-opacity)),
+        rgba(0, 0, 0, var(--bg-filter-opacity))
+      ),
+      var(--bg-img);
     height: 15em;
     width: 12em;
     font-size: 1.5em;
