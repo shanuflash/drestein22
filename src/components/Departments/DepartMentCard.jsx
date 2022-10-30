@@ -1,22 +1,17 @@
 import React from "react";
 import styled from "styled-components";
 import "./styles/DepartMentCard.css";
-import { motion, Variants } from "framer-motion";
+import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-
-const DeptImage = styled.img`
-  border-radius: 20px;
-`;
 
 function DepartMentCard({ img, title, des, color, bgtext, mbtm }) {
   const a = title.split(" ");
-  const Card = styled.div`
+  const Card = styled.a`
     font-family: "poppins", sans-serif;
     position: relative;
     width: 300px;
     height: 400px;
-    /* background: rgb(0 2 36 / 90%); */
-    background: rgba(0, 2, 36, 0.47);
+    background: #00001d;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(11.5px);
     -webkit-backdrop-filter: blur(11.5px);
@@ -36,15 +31,8 @@ function DepartMentCard({ img, title, des, color, bgtext, mbtm }) {
       clip-path: circle(150px at 80% 20%);
       transition: 0.7s ease all;
     }
-    &:hover {
-      &::before {
-        clip-path: circle(300px at 80% -20%);
-      }
-    }
     &::after {
-      /* font-family: 'poppins', sans-serif; */
       font-family: "poppins", sans-serif;
-
       content: "${bgtext}";
       opacity: 0.3;
       position: absolute;
@@ -57,24 +45,6 @@ function DepartMentCard({ img, title, des, color, bgtext, mbtm }) {
     }
   `;
 
-  const RegisterNow = styled.h3`
-    color: #000;
-    font-weight: 300;
-    text-transform: uppercase;
-    /* font-family: sans-serif; */
-    font-family: "Montserrat", sans-serif;
-
-    letter-spacing: 2px;
-    margin-right: 10px;
-    margin-top: 10px;
-    font-weight: 500;
-    border: 1px solid #1985ff;
-    color: #1985ff;
-    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
-      rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
-    border-radius: 20px 0px 20px 0px;
-    padding: 10px;
-  `;
   const Event = styled.a`
     display: inline-block;
     padding: 10px 20px;
@@ -133,8 +103,6 @@ function DepartMentCard({ img, title, des, color, bgtext, mbtm }) {
       y: 0,
       opacity: 1,
       transition: {
-        // type:'spring',
-        // bounce:0.4,
         duration: 1,
       },
     },
@@ -155,50 +123,54 @@ function DepartMentCard({ img, title, des, color, bgtext, mbtm }) {
       variants={device < 700 ? cardforMobile : cardforDesktop}
       className="containerdept"
     >
-      <Card
-        as={motion.div}
-        initial="offscreen"
-        whileInView="onscreen"
-        viewport={{ once: true, amount: 0.5 }}
-        transition={{
-          staggerChildren: 0.5,
-        }}
-        className="card"
-      >
-        <div
-          class="imgBx"
-          style={{
-            width: "100%",
-            maxHeight: "150px",
-            margin: "20px 0",
+      <Link to="/events">
+        <Card
+          href="#"
+          as={motion.div}
+          initial="offscreen"
+          whileInView="onscreen"
+          viewport={{ once: true, amount: 0.5 }}
+          transition={{
+            staggerChildren: 0.5,
           }}
-          variants={text}
+          className="card"
         >
-          <motion.div variants={cardimg}>
-            <img
-              style={{
-                boxShadow:
-                  "rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px",
-                borderRadius: "20px",
-                objectFit: "cover",
-              }}
-              src={img}
-            />
-          </motion.div>
-        </div>
-        <div className="contentBx">
-          <DeptTxt as={motion.div} variants={text}>
-            {a[0]}
-            <br />
-            {a[1]}
-          </DeptTxt>
-          <div>
+          <div
+            class="imgBx"
+            style={{
+              width: "100%",
+              maxHeight: "150px",
+              margin: "20px 0",
+            }}
+            variants={text}
+          >
+            <motion.div variants={cardimg}>
+              <img
+                style={{
+                  boxShadow:
+                    "rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px",
+                  borderRadius: "20px",
+                  objectFit: "cover",
+                }}
+                src={img}
+                alt="department"
+              />
+            </motion.div>
+          </div>
+          <div className="contentBx">
+            <DeptTxt as={motion.div} variants={text}>
+              {a[0]}
+              <br />
+              {a[1]}
+            </DeptTxt>
+            {/* <div>
             <Link to="/events">
               <Event href="#">Events</Event>
             </Link>
+          </div> */}
           </div>
-        </div>
-      </Card>
+        </Card>
+      </Link>
     </motion.div>
   );
 }
