@@ -7,13 +7,6 @@ function About() {
     height: auto;
     width: 100vw;
     background: linear-gradient(45deg, rgb(0 40 86) 51.2%, rgb(0 125 66) 98.6%);
-    /* background: linear-gradient(109.6deg, rgb(36, 45, 57) 11.2%, rgb(16, 37, 60) 51.2%, rgb(0, 0, 0) 98.6%); */
-    /* background-image: linear-gradient(45deg, hsla(193, 100%, 60%, 0.3) 30%, hsla(146, 100%, 41%, 0.3) 80%); */
-    /* linear-gradient(90.21deg,#0b001d -5.91%,#00126a 111.58%) */
-    /* background: linear-gradient(90deg, #0b001d -5.91%, #00126a 111.58%); */
-    /* background: linear-gradient(90deg, #0b001d -5.91%, #000833 111.58%); */
-    /* background-image: linear-gradient(45deg, #f98bff8e 0%, #2bd1ff82 52%, #2bff8789 90%); */
-
     margin-top: 100px;
     display: flex;
     justify-content: center;
@@ -21,12 +14,14 @@ function About() {
     border-radius: 20px 20px 0 0;
     overflow-y: hidden;
   `;
+
   const AboutContainer = styled.div`
     padding: 100px 200px;
     @media screen and (max-width: 600px) {
       padding: 20px 30px;
     }
   `;
+
   const AboutTitle = styled.div`
     font-size: 7vw;
     font-weight: bold;
@@ -35,13 +30,14 @@ function About() {
     justify-content: center;
     align-items: center;
     color: white;
-    /* font-family: poppins, sans-serif; */
     font-family: "Montserrat", sans-serif;
   `;
+
   const AboutDescript = styled.div`
     font-size: 1.5em;
     padding: 20px 0px;
   `;
+
   const text = {
     offscreen: { y: 100, opacity: 0 },
     onscreen: {
@@ -66,6 +62,7 @@ function About() {
       },
     },
   };
+
   const List = styled.li`
     padding: 10px;
   `;
@@ -100,7 +97,6 @@ function About() {
           whileInView="onscreen"
           variants={headtext}
         >
-          {/* About Saveetha */}
           about saveetha
         </AboutTitle>
         <AboutDescript>
@@ -114,12 +110,12 @@ function About() {
             excellence; widen intellectual horizon; self-discipline and high
             ideals for the total personality development of the individual.
           </Descard>
-          {/* <List as={motion.li} variants={text}>
+          <ul>
+            {/* <List as={motion.li} variants={text}>
               Saveetha Engineering College (SEC) was established in 2001, by the
               Founder Chairman Dr. N. M. Veeraiyan, a committed and dedicated
               Medical Professional.
             </List> */}
-          <ul>
             <List as={motion.li} variants={text}>
               Ranked 96 by NIRF- National Institute Ranking Framework for the
               academic year 2017-18 among all IITs, Central, State and Private

@@ -2,19 +2,19 @@ import React from "react";
 import styled from "styled-components";
 import CheckCircleOutlineIcon from "@mui/icons-material/CheckCircleOutline";
 import { useEffect } from "react";
+
 const Card = styled.div`
   background: #777777;
   display: flex;
-
   justify-content: center;
   align-items: center;
   height: 100%;
   margin-top: -50px;
-
   @media screen and (max-width: 600px) {
     margin-top: -100px;
   }
 `;
+
 const InnerCard = styled.div`
   background-color: #ffffff;
   width: 50%;
@@ -26,6 +26,7 @@ const InnerCard = styled.div`
     width: 80%;
   }
 `;
+
 const HeadCard1 = styled.div`
   background-color: #6ae968;
   height: 50%;
@@ -35,6 +36,7 @@ const HeadCard1 = styled.div`
   align-items: center;
   border-radius: 10px;
 `;
+
 const HeadCard2 = styled.div`
   color: #494949;
   text-align: center;

@@ -9,32 +9,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
 
 .headcontainer {
-  /* padding-top: 200px; */
   background-color: black;
-  /* font-family: 'Roboto', sans-serif; */
+
   --joy-fontFamily-body: "Montserrat", sans-serif;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   height: 100vh;
-  /* box-shadow: white; */
 }
 input::placeholder {
   color: red;
 }
 .formcontainer {
-  height: 80vh;
+  height: 75vh;
   overflow-y: scroll;
   box-shadow: none !important;
-}
-
-.headcontainer .container {
-  /* overflow: auto; */
-  height: 70vh;
-
-  overflow-y: scroll;
-  background-color: whitesmoke;
-  border-radius: 50px;
-  margin: 3vw;
 }
 
 .Name,

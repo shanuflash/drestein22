@@ -1,9 +1,12 @@
-/* departments card */
-
 .containerdept {
   margin-bottom: 1rem;
   overflow: hidden;
   color: #fff;
+}
+
+.containerdept .card {
+  transition: all, 0.2s;
+  transition-timing-function: ease-in-out;
 }
 
 .containerdept .card .imgBx {
@@ -28,7 +31,6 @@
 }
 
 .containerdept .card .contentBx {
-  /* font-family: "poppins", sans-serif; */
   color: white;
   font-family: "Montserrat", sans-serif;
   position: absolute;
@@ -42,6 +44,7 @@
 }
 
 .containerdept .card:hover {
+  transform: scale(0.99);
   border: double 1px transparent;
   border-radius: 20px;
   background-image: linear-gradient(#00001d, #00001d),
@@ -56,7 +59,6 @@
   justify-content: center;
   align-items: center;
   color: white;
-  /* font-family: poppins, sans-serif; */
   font-family: "Montserrat", sans-serif;
 
   @media (max-width: 600px) {

@@ -1,15 +1,14 @@
 import styled from "styled-components";
 import React from "react";
 import logo from "../../assets/dresteinLogo.svg";
+
 const FooterHeader = styled.div`
   width: 90vw;
   margin-inline: auto;
-
   margin-top: 5rem;
-
-  /* text-transform: uppercase; */
   border-radius: 20px 20px 0 0;
 `;
+
 const FooterTitle = styled.h1`
   font-size: 7vw;
   font-weight: bold;
@@ -19,10 +18,8 @@ const FooterTitle = styled.h1`
   align-items: center;
   color: white;
   font-family: "Montserrat", sans-serif;
-
-  /* font-family: poppins, sans-serif; */
-  /* padding-left: 40px; */
 `;
+
 const FooterContainer = styled.div`
   margin-bottom: 5rem;
   display: flex;
@@ -34,9 +31,11 @@ const FooterContainer = styled.div`
     width: 100%;
   }
 `;
+
 const DresteinLogo = styled.img`
   width: 30%;
 `;
+
 const FooterText = styled.div`
   display: flex;
   flex-direction: column;
@@ -52,20 +51,18 @@ const FooterTextTitle = styled.h1`
 `;
 
 const FooterMainText = styled.p``;
-
 const FooterConatinAll = styled.div`
   margin-bottom: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
 `;
+
 const FooterBottom = styled.div`
   color: white;
-  /* background: linear-gradient(0.25turn, #312755, #1c1c20, #362430); */
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* margin: 1rem; */
   padding: 0.5rem 1rem;
   border-radius: 1rem 1rem 0 0;
   @media screen and (max-width: 600px) {
@@ -74,9 +71,11 @@ const FooterBottom = styled.div`
     margin: 0;
   }
 `;
+
 const Policy = styled.div``;
 const MadewithLove = styled.div``;
 const Copyright = styled.div``;
+
 function Footer() {
   return (
     <FooterHeader>
@@ -106,7 +105,6 @@ function Footer() {
             marginwidth="0"
             src="https://maps.google.com/maps?width=400&amp;height=400&amp;hl=en&amp;q=saveetha engineering college&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
           ></iframe>
-          <a href="https://piratebay-proxys.com/">Piratebay</a>
         </div>
       </div>
       <FooterBottom>

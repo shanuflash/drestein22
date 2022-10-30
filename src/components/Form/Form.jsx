@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import "./styles/form.css";
 import Nav from "../Nav/Nav";
 import { useState } from "react";
@@ -8,24 +8,19 @@ import Typography from "@mui/joy/Typography";
 import TextField from "@mui/joy/TextField";
 import Button from "@mui/joy/Button";
 import Select from "@mui/joy/Select";
-
 import Box from "@mui/material/Box";
-
 import FormControl from "@mui/joy/FormControl";
 import FormLabel from "@mui/joy/FormLabel";
-
 import Option from "@mui/joy/Option";
 import Divider from "@mui/joy/Divider";
 import List from "@mui/joy/List";
 import ListItem from "@mui/joy/ListItem";
 import Checkbox from "@mui/joy/Checkbox";
 import Alert from "@mui/joy/Alert";
-import lock from "../../assets/earth.png";
 import { uuidv4 } from "@firebase/util";
 import { toast } from "react-toastify";
 import { doc } from "firebase/firestore";
 import { db } from "../../configs/Firebase.config";
-import QRcode from "qrcode";
 import { setDoc } from "firebase/firestore";
 import Loading from "../../Loading";
 import ConfirmCard from "./ConfirmCard";
@@ -81,7 +76,6 @@ function Selector({ name, events, setformdata, formdata }) {
 
 function ModeToggle() {
   const { mode, setMode } = useColorScheme();
-
   return (
     <Button variant="outlined" color="neutral" onClick={() => setMode("dark")}>
       Test
@@ -106,43 +100,19 @@ const Form = () => {
     setload(true);
     formdata.id = uuidv4();
     formdata.cashPaid = false;
-
-    // const colref = collection(db,'RegisteredPeople');
-
-    // addDoc(colref,formData).then(()=>{
-    //     console.log('uploaded')
-    // }).catch((e)=>{
-    //     toast.error(e)
-    // })
-
     const cityRef = doc(db, "RegisteredPeople", `${formdata.id}`);
 
     setDoc(cityRef, formdata)
       .then(async () => {
         console.log("uploaded");
-        // const response= await QRcode.toDataURL(`${cityRef.id}`)
         const sendqr = await fetch(
           `https://chart.googleapis.com/chart?chs=200x200&cht=qr&chl=https://main--effulgent-horse-1b60e3.netlify.app/user/${cityRef.id}&choe=UTF-8`
         );
         const QrUrl = sendqr.url;
         console.log(QrUrl);
-        // setqr(response)
-        // sending mail --
-        // const config = {
-        //   SecureToken: "1a7e3de3-b657-4c1b-bcec-42c3389c810c",
-        //   To: formdata.Email,
-        //   From: "saveethadrestein2022@gmail.com",
-        //   Subject: "congrats on registration in Drestein Event 🎉🎉",
-        //   Body: `<h1>${formdata.name}</h1>`,
-        // };
         if (window.Email) {
           await window.Email.send({
-            // Host : "smtp.elasticemail.com",
-            // Username : "saveethadrestein2022@gmail.com",
-            // Password : "7ED0253E9D150A7B3718C8FF2710B33F3612",
-
             SecureToken: process.env.REACT_APP_EMAILCODE_ID,
-
             To: formdata.email,
             From: "gleedara@gmail.com",
             Subject: "congrats on registration in Drestein Event 🎉🎉",
@@ -161,7 +131,6 @@ const Form = () => {
       .catch((e) => {
         toast.error(e);
       });
-    // console.log(colref)
   };
 
   const handleChangeForSelect = (e) => {
@@ -375,11 +344,6 @@ const Form = () => {
                 label="Email"
               />
               <img src={qr} />
-              {/* <Selector name='IT EVENTS' events={["Event-1", "Event-2", "Event-3", "Event-4"]}  setformdata={setformdata} formdata={formdata}/>
-            <Selector name='CSE EVENTS' events={["Event-1", "Event-2", "Event-3", "Event-4"]} setformdata={setformdata} formdata={formdata}/>
-            <Selector name='EEE EVENTS' events={["Event-1", "Event-2", "Event-3", "Event-4"]} setformdata={setformdata} formdata={formdata}/>
-     */}
-              {/* <ModeToggle /> */}
               <Alert variant="outlined" color="danger" sx={{ align: "center" }}>
                 Registeration Fee of ₹150 has to be paid on the event date.
               </Alert>

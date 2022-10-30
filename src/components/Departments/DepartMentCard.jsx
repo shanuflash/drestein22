@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 
 function DepartMentCard({ img, title, des, color, bgtext, mbtm }) {
   const a = title.split(" ");
+
   const Card = styled.a`
     font-family: "poppins", sans-serif;
     position: relative;
@@ -16,7 +17,6 @@ function DepartMentCard({ img, title, des, color, bgtext, mbtm }) {
     backdrop-filter: blur(11.5px);
     -webkit-backdrop-filter: blur(11.5px);
     border: 1px solid rgba(255, 255, 255, 0.3);
-
     border-radius: 20px;
     overflow: hidden;
     z-index: 100;
@@ -70,6 +70,7 @@ function DepartMentCard({ img, title, des, color, bgtext, mbtm }) {
       },
     },
   };
+
   const device = window.innerWidth;
 
   const cardforMobile = {
@@ -93,6 +94,7 @@ function DepartMentCard({ img, title, des, color, bgtext, mbtm }) {
       },
     },
   };
+
   const DeptTxt = styled.h2`
     font-size: 1.5em;
     position: relative;
@@ -101,6 +103,7 @@ function DepartMentCard({ img, title, des, color, bgtext, mbtm }) {
     color: #fff;
     margin-top: ${mbtm};
   `;
+  
   return (
     <motion.div
       initial="offscreen"

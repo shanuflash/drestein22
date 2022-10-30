@@ -11,10 +11,8 @@ import { Link } from "react-router-dom";
 
 const Navbar = styled.nav`
   color: rgb(255, 255, 255);
-  /* background: #fff; */
   -webkit-backdrop-filter: blur(30px);
-  backdrop-filter: blur(30px);
-  /* background: linear-gradient(0deg, rgba(0,0,0,0.8012808150603992) 0%, rgba(0,0,0,1) 22%, rgba(0,0,0,1) 100%); */
+  backdrop-filter: blur(10px);
   padding-bottom: 1rem;
   border-radius: 0 0 10px 10px;
   z-index: 1000000;
@@ -105,7 +103,6 @@ const Year = styled.p`
     font-size: 3vw;
   }
 `;
-
 const NavHead = styled.ul`
   list-style: none;
   display: flex;
@@ -123,7 +120,6 @@ const NavItem = styled.a`
   cursor: pointer;
   text-decoration: none;
 `;
-
 const MobileNavHeader = styled.div`
   display: flex;
   justify-content: center;

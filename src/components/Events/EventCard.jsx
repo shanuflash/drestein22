@@ -73,7 +73,6 @@ const EventCard = ({
     overflow: hidden;
     text-decoration: none;
   `;
-  // const desctrim = desc.substring(0, 41) + "...";
 
   return (
     <div className="event-card">
