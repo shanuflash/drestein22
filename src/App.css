@@ -6,6 +6,10 @@
 }
 
 * {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   box-sizing: border-box;
   padding: 0;
   margin: 0;
@@ -15,7 +19,7 @@
 body {
   background-color: rgb(0 1 23);
   color: white;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .gmap_iframe {
@@ -38,7 +42,7 @@ body {
 }
 
 .img {
-  background-image: url('../src/assets/earth.png');
+  background-image: url("../src/assets/earth.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -47,10 +51,10 @@ body {
   min-width: 100%;
   will-change: transform;
   min-height: 100vh;
-
 }
 
-@media screen and(max-width:600px) {}
+@media screen and(max-width:600px) {
+}
 
 section {
   height: 200vh;
@@ -117,7 +121,7 @@ section {
 }
 
 .flip-countdown-title {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .MainHeaderDate {

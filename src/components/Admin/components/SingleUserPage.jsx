@@ -17,18 +17,16 @@ const SingleUserMain = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-
-
 `;
 const UserCard = styled.div`
-    width: 100%;
-    height: 100%;
-    padding: 2rem;
-    border-radius: 10px;
-    background-color: #ff4949;
-    ${({ paid }) =>
-      paid &&
-      `
+  width: 100%;
+  height: 100%;
+  padding: 2rem;
+  border-radius: 10px;
+  background-color: #ff4949;
+  ${({ paid }) =>
+    paid &&
+    `
     background: #1af51a;
   `}
 `;

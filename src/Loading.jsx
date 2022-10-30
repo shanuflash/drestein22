@@ -1,5 +1,5 @@
-import React, { useEffect } from 'react'
-import DresteinLogo from '../src/assets/dresteinLogo.svg'
+import React, { useEffect } from "react";
+import DresteinLogo from "../src/assets/dresteinLogo.svg";
 import styled, { keyframes } from "styled-components";
 const rotate = keyframes`
     from {
@@ -11,38 +11,36 @@ const rotate = keyframes`
 `;
 const DLogo = styled.img`
   width: 5%;
-  
+
   margin-right: 10px;
   animation: ${rotate} 3s infinite linear;
-  transform-origin:center;
-  @media screen and (max-width: 600px){
+  transform-origin: center;
+  @media screen and (max-width: 600px) {
     width: 16%;
   }
 `;
 const Loadingconainer = styled.div`
-width: 100vw;
-height: 100vh;
-display: flex;
-justify-content: center;
-background: rgba(72, 80, 93, 0.3);
-position: fixed;
-top: 0;
-align-items: center;
-z-index: 10000;
-
-
-`
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  background: rgba(72, 80, 93, 0.3);
+  position: fixed;
+  top: 0;
+  align-items: center;
+  z-index: 10000;
+`;
 function Loading() {
-useEffect(()=>{
-    document.body.style.overflow = 'hidden';
-    return ()=> document.body.style.overflow = 'unset';
- }, []);
+  useEffect(() => {
+    document.body.style.overflow = "hidden";
+    return () => (document.body.style.overflow = "unset");
+  }, []);
 
   return (
     <Loadingconainer>
-        <DLogo src={DresteinLogo}/>
+      <DLogo src={DresteinLogo} />
     </Loadingconainer>
-  )
+  );
 }
 
-export default Loading
+export default Loading;

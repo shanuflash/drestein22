@@ -1,9 +1,7 @@
 import React from "react";
 import styled, { css } from "styled-components";
 import "../../App.css";
-import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import FlipCountdown from "@rumess/react-flip-countdown";
 import { Link } from "react-router-dom";
 import CountDown from "./Countdown";
 
@@ -129,7 +127,7 @@ const NationText = styled.div`
     background-color: #ffffffdb;
     border-radius: 1rem;
     color: black;
-    font-family: 'Poppins';
+    font-family: "Poppins";
     width: 80%;
     padding: 0.5rem;
   }

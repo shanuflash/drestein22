@@ -25,21 +25,16 @@ const AdminPanelHead = styled.div`
   width: 100%;
   height: 100%;
   background-color: #ffffff;
-  
-  color:black;
-position: relative;
+
+  color: black;
+  position: relative;
 `;
 const UsersList = styled.div`
   width: 50%;
   height: 100%;
-  overflow-y:scroll ;
-
+  overflow-y: scroll;
 `;
-const Scanner = styled.div`
-
-
-
-`;
+const Scanner = styled.div``;
 
 function AdminPannel() {
   const [RegistredPeople, setRegistredPeople] = useState([]);
@@ -66,18 +61,16 @@ function AdminPannel() {
   const onScanfile = () => {
     qrRef.current.openImageDialog();
   };
-  const handleChange=(e)=>{
-console.log(e.target.value)
-try {
-  const docRef = doc(db, "RegisteredPeople", `${e.target.value}`);
-  onSnapshot(docRef, (snapshot) => {
-    setRegistredPeople([snapshot.data()]);
-    setData(e.target.value);
-  });
-} catch (e) {
-   
-}
-  }
+  const handleChange = (e) => {
+    console.log(e.target.value);
+    try {
+      const docRef = doc(db, "RegisteredPeople", `${e.target.value}`);
+      onSnapshot(docRef, (snapshot) => {
+        setRegistredPeople([snapshot.data()]);
+        setData(e.target.value);
+      });
+    } catch (e) {}
+  };
 
   return (
     <AdminPanelHead>
@@ -98,12 +91,12 @@ try {
         )}
       </UsersList>
       <TextField
-          id="filled-search"
-          label="Search field"
-          type="search"
-          variant="filled"
-          onChange={handleChange}
-        />
+        id="filled-search"
+        label="Search field"
+        type="search"
+        variant="filled"
+        onChange={handleChange}
+      />
 
       <Scanner>
         <p
@@ -111,7 +104,6 @@ try {
             margin: "2rem",
           }}
         >
-      
           scanned result : {data}
         </p>
 

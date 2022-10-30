@@ -24,12 +24,11 @@ const Gallery = () => {
     },
   };
   const Head = styled.div`
-
-  font-size: 8vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;   
+    font-size: 8vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
     font-weight: bold;
     /* margin: 4rem; */
     text-align: center;

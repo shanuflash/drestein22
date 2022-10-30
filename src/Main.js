@@ -14,7 +14,7 @@ import Footer from "./components/Footer/Footer";
 import "./App.css";
 
 const DepartmentDiv = styled.div`
-position: sticky;
+  position: sticky;
 `;
 
 const Main = () => {
@@ -35,13 +35,13 @@ const Main = () => {
         className="scrollprogress"
         style={{ scaleX: scrollYProgress }}
       />
-      {/* <Particles
+      <Particles
         className="particles"
         id="tsparticles"
         init={particlesInit}
         loaded={particlesLoaded}
         options={Particle}
-      /> */}
+      />
       <Nav />
       <Header />
       <motion.div

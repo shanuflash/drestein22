@@ -17,7 +17,6 @@
 
 .slide {
   transform: translateX(0);
-
 }
 
 .icon {
@@ -25,7 +24,7 @@
   position: fixed;
   top: 5rem;
   width: 100%;
-  left: .5rem;
+  left: 0.5rem;
   font-size: 2rem;
   z-index: 4;
 }
@@ -49,13 +48,12 @@
   margin-left: 2rem;
 }
 
-.onlyshow .nav-list>*:hover {
+.onlyshow .nav-list > *:hover {
   border-bottom-left-radius: 2rem;
   border-top-left-radius: 2rem;
   background-color: rgba(255, 255, 255, 0.685);
   color: rgba(0, 0, 0, 0.677);
 }
-
 
 @media (max-width: 600px) {
   .onlyshow {

@@ -6,66 +6,51 @@
 
 }*/
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
 
 .headcontainer {
-    /* padding-top: 200px; */
-    background-color: black;
-    /* font-family: 'Roboto', sans-serif; */
-    --joy-fontFamily-body: 'Montserrat', sans-serif;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-    height: 100vh;
-    /* box-shadow: white; */
+  background-color: black;
 
-
+  --joy-fontFamily-body: "Montserrat", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  height: 100vh;
 }
-input::placeholder{
-    color: red;
+input::placeholder {
+  color: red;
 }
 .formcontainer {
-    height: 80vh;
-    overflow-y: scroll;
-    box-shadow: none !important;
-}
-
-.headcontainer .container {
-    /* overflow: auto; */
-    height: 70vh;
-
-    overflow-y: scroll;
-    background-color: whitesmoke;
-    border-radius: 50px;
-    margin: 3vw;
+  height: 75vh;
+  overflow-y: scroll;
+  box-shadow: none !important;
 }
 
 .Name,
 .yearno {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .register {
-    width: 100px;
-    height: 40px;
+  width: 100px;
+  height: 40px;
 }
 
 .main-form {
-    display: flex;
+  display: flex;
 }
 
 .formsheet {
-    flex-basis: 80%;
+  flex-basis: 80%;
 }
 
 .loginimage {
-    width: 40%;
+  width: 40%;
 }
 
-@media screen and (max-width:600px) {
-    .loginimage {
-        display: none;
-    }
+@media screen and (max-width: 600px) {
+  .loginimage {
+    display: none;
+  }
 }

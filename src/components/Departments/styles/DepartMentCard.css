@@ -1,9 +1,12 @@
-/* departments card */
-
 .containerdept {
   margin-bottom: 1rem;
   overflow: hidden;
   color: #fff;
+}
+
+.containerdept .card {
+  transition: all, 0.2s;
+  transition-timing-function: ease-in-out;
 }
 
 .containerdept .card .imgBx {
@@ -14,12 +17,6 @@
   width: 100%;
   height: 220px;
   transition: 0.5s;
-  will-change: transform;
-}
-
-.containerdept .card:hover .imgBx {
-  /* top: 0%; */
-  transform: translateY(-90%);
 }
 
 .containerdept .card .imgBx img {
@@ -33,9 +30,8 @@
 }
 
 .containerdept .card .contentBx {
-  /* font-family: "poppins", sans-serif; */
   color: white;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -46,14 +42,14 @@
   z-index: 10;
 }
 
-.containerdept .card:hover .contentBx {
-  height: 175px;
-}
-
-.containerdept .card:hover .contentBx a {
-  opacity: 1;
-  transform: translateY(13px);
-  transition-delay: 0.5s;
+.containerdept .card:hover {
+  transform: scale(0.98);
+  border: double 1px transparent;
+  border-radius: 20px;
+  background-image: linear-gradient(#00001d, #00001d),
+    linear-gradient(45deg, #f98bff8e 0%, #2bd1ff82 52%, #2bff8789 90%);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
 }
 
 .DeptHead {
@@ -62,8 +58,7 @@
   justify-content: center;
   align-items: center;
   color: white;
-  /* font-family: poppins, sans-serif; */
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 
   @media (max-width: 600px) {
     font-size: 10vw;
@@ -71,7 +66,12 @@
 }
 
 .DeptHead .DeptHeadTxt {
-  background-image: linear-gradient(45deg, #f98bff8e 0%, #2bd1ff82 52%, #2bff8789 90%);
+  background-image: linear-gradient(
+    45deg,
+    #f98bff8e 0%,
+    #2bd1ff82 52%,
+    #2bff8789 90%
+  );
   border-radius: 2rem;
   padding: 20px 30px;
   margin: 5vh 20vw;
@@ -81,5 +81,4 @@
   .DeptHead {
     font-size: 10vw;
   }
-  
 }

@@ -1,10 +1,10 @@
-import { Navigate,Outlet } from "react-router";
+import { Navigate, Outlet } from "react-router";
 import { useAuthStatus } from "./hooks/useAuthStatus";
-const PrivateRoute = ()=>{
-  const {loggedIn,checkingStatus}=useAuthStatus()
-  if(checkingStatus){
-    return <h3>Loading...</h3>
+const PrivateRoute = () => {
+  const { loggedIn, checkingStatus } = useAuthStatus();
+  if (checkingStatus) {
+    return <h3>Loading...</h3>;
   }
-  return loggedIn ? <Outlet/> : <Navigate to='/Admin/login'/>
-}
+  return loggedIn ? <Outlet /> : <Navigate to="/Admin/login" />;
+};
 export default PrivateRoute;

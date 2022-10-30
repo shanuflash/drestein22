@@ -11,23 +11,56 @@ export const EventDetails = [
         time: "TBA",
         members: "2",
         rules: "",
-        round1: "In this round the teams (2-3 members) will be given a set of aptitude and logical based questions which they need to solve within the given time. This round will contain questions related to algorithms like N-queens as well as encryption and decryption using simple cipher techniques to find the clues for the second round. The teams that manage to solve all the questions correctly within assigned time will proceed to the next round",
-        round2: "Each team will be given chits with mismatched/jumbled codes and they have to rearrange it and obtain the correct code and result. The decrypted clues of the first round will reveal the idea that has to be coded in the second round. The first 20 teams which get the highest number of correct outputs in the assigned time will be qualified to the third round",
-        round3: "Based on the output of the second round, The teams have to perform file mining in the given git repository and dig through many folders and files to get snippets of algorithm to qualify to the final round.They need to arrange the algorithm in proper order.The first 5 teams to complete this round will qualify to the final round",
-        round4: "Each team will have to code the program for the found algorithm in either C programming or Python language and the first team to complete the coding will be the winner of the event",
+        round1:
+          "In this round the teams (2-3 members) will be given a set of aptitude and logical based questions which they need to solve within the given time. This round will contain questions related to algorithms like N-queens as well as encryption and decryption using simple cipher techniques to find the clues for the second round. The teams that manage to solve all the questions correctly within assigned time will proceed to the next round",
+        round2:
+          "Each team will be given chits with mismatched/jumbled codes and they have to rearrange it and obtain the correct code and result. The decrypted clues of the first round will reveal the idea that has to be coded in the second round. The first 20 teams which get the highest number of correct outputs in the assigned time will be qualified to the third round",
+        round3:
+          "Based on the output of the second round, The teams have to perform file mining in the given git repository and dig through many folders and files to get snippets of algorithm to qualify to the final round.They need to arrange the algorithm in proper order.The first 5 teams to complete this round will qualify to the final round",
+        round4:
+          "Each team will have to code the program for the found algorithm in either C programming or Python language and the first team to complete the coding will be the winner of the event",
         tag: "EVENT",
         img: "https://www.gstatic.com/mobilesdk/191021_mobilesdk/discoverycards/appdistro@2x.png",
-        staff:
-          [ 
-            { name: 'Dr.Sujatha', desig: 'Professor', phone: 9789950535, email: 'sujathae@saveetha.ac.in' },
-            { name: 'Ms.P.Preethi', desig: 'Assistant Professor', phone: 8608721755, email: 'ppreethi@saveetha.ac.in' },
-          ],
+        staff: [
+          {
+            name: "Dr.Sujatha",
+            desig: "Professor",
+            phone: 9789950535,
+            email: "sujathae@saveetha.ac.in",
+          },
+          {
+            name: "Ms.P.Preethi",
+            desig: "Assistant Professor",
+            phone: 8608721755,
+            email: "ppreethi@saveetha.ac.in",
+          },
+        ],
         student: [
-          { name: 'Neha M A', year: 'III', phone: 7305312546, email: 'nehamanickam74@gmail.com' },
-          { name: 'Vibha Mukund', year: 'III', phone: 6360858895, email: 'vibhamukund177@gmail.com' },
-          { name: 'S R Pavishmi', year: 'II', phone: 7550320820, email: 'pavishmi1S04@gmail.com' },
-          { name: 'Pradeesh Kumar S', year: 'II', phone: 7550320820, email: 'pradeesh27ll.1m@gmail.com' },
-        ]
+          {
+            name: "Neha M A",
+            year: "III",
+            phone: 7305312546,
+            email: "nehamanickam74@gmail.com",
+          },
+          {
+            name: "Vibha Mukund",
+            year: "III",
+            phone: 6360858895,
+            email: "vibhamukund177@gmail.com",
+          },
+          {
+            name: "S R Pavishmi",
+            year: "II",
+            phone: 7550320820,
+            email: "pavishmi1S04@gmail.com",
+          },
+          {
+            name: "Pradeesh Kumar S",
+            year: "II",
+            phone: 7550320820,
+            email: "pradeesh27ll.1m@gmail.com",
+          },
+        ],
       },
       {
         name: "UI Design",
@@ -229,5 +262,4 @@ export const EventDetails = [
       },
     ],
   },
-
 ];

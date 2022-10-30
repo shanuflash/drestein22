@@ -28,13 +28,11 @@ function App() {
   }, []);
   return (
     <>
-    
       {loading ? (
         <Lander />
       ) : (
         <UserProvider>
           <div>
-
             <DisplayPopupProvider>
               <Routes>
                 <Route path="/" element={<Main />} />

@@ -6,14 +6,10 @@ import { motion } from "framer-motion";
 
 const DepartmentContainer = styled.div`
   width: 100vw;
-  /* margin: 0 auto; */
   display: grid;
   margin-top: 50px;
   place-items: center;
   min-height: 100px;
-  /* row-gap: 1rem; */
-  /* gap: 1rem; */
-
   @media (min-width: 600px) {
     grid-template-columns: repeat(2, 1fr);
   }

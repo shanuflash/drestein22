@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import "./styles/form.css";
 import Nav from "../Nav/Nav";
 import { useState } from "react";
@@ -8,24 +8,19 @@ import Typography from "@mui/joy/Typography";
 import TextField from "@mui/joy/TextField";
 import Button from "@mui/joy/Button";
 import Select from "@mui/joy/Select";
-
 import Box from "@mui/material/Box";
-
 import FormControl from "@mui/joy/FormControl";
 import FormLabel from "@mui/joy/FormLabel";
-
 import Option from "@mui/joy/Option";
 import Divider from "@mui/joy/Divider";
 import List from "@mui/joy/List";
 import ListItem from "@mui/joy/ListItem";
 import Checkbox from "@mui/joy/Checkbox";
 import Alert from "@mui/joy/Alert";
-import lock from "../../assets/earth.png";
 import { uuidv4 } from "@firebase/util";
 import { toast } from "react-toastify";
 import { doc } from "firebase/firestore";
 import { db } from "../../configs/Firebase.config";
-import QRcode from "qrcode";
 import { setDoc } from "firebase/firestore";
 import Loading from "../../Loading";
 import ConfirmCard from "./ConfirmCard";
@@ -81,7 +76,6 @@ function Selector({ name, events, setformdata, formdata }) {
 
 function ModeToggle() {
   const { mode, setMode } = useColorScheme();
-
   return (
     <Button variant="outlined" color="neutral" onClick={() => setMode("dark")}>
       Test
@@ -93,7 +87,7 @@ const Form = () => {
   const [formdata, setformdata] = useState({});
   const [qr, setqr] = useState("");
   const [load, setload] = useState(false);
-  const [confirmMsg,setconfirmMsg] = useState(false)
+  const [confirmMsg, setconfirmMsg] = useState(false);
   const handleChange = (e) => {
     setformdata((prevState) => ({
       ...prevState,
@@ -106,43 +100,19 @@ const Form = () => {
     setload(true);
     formdata.id = uuidv4();
     formdata.cashPaid = false;
-
-    // const colref = collection(db,'RegisteredPeople');
-
-    // addDoc(colref,formData).then(()=>{
-    //     console.log('uploaded')
-    // }).catch((e)=>{
-    //     toast.error(e)
-    // })
-
     const cityRef = doc(db, "RegisteredPeople", `${formdata.id}`);
 
     setDoc(cityRef, formdata)
       .then(async () => {
         console.log("uploaded");
-        // const response= await QRcode.toDataURL(`${cityRef.id}`)
         const sendqr = await fetch(
           `https://chart.googleapis.com/chart?chs=200x200&cht=qr&chl=https://main--effulgent-horse-1b60e3.netlify.app/user/${cityRef.id}&choe=UTF-8`
         );
         const QrUrl = sendqr.url;
         console.log(QrUrl);
-        // setqr(response)
-        // sending mail --
-        // const config = {
-        //   SecureToken: "1a7e3de3-b657-4c1b-bcec-42c3389c810c",
-        //   To: formdata.Email,
-        //   From: "saveethadrestein2022@gmail.com",
-        //   Subject: "congrats on registration in Drestein Event 🎉🎉",
-        //   Body: `<h1>${formdata.name}</h1>`,
-        // };
         if (window.Email) {
           await window.Email.send({
-            // Host : "smtp.elasticemail.com",
-            // Username : "saveethadrestein2022@gmail.com",
-            // Password : "7ED0253E9D150A7B3718C8FF2710B33F3612",
-
-            SecureToken:process.env.REACT_APP_EMAILCODE_ID,
-
+            SecureToken: process.env.REACT_APP_EMAILCODE_ID,
             To: formdata.email,
             From: "gleedara@gmail.com",
             Subject: "congrats on registration in Drestein Event 🎉🎉",
@@ -154,14 +124,13 @@ const Form = () => {
           }).then(() => {
             alert("Email send to you successfully");
             setload(false);
-            setconfirmMsg(true)
+            setconfirmMsg(true);
           });
         }
       })
       .catch((e) => {
         toast.error(e);
       });
-    // console.log(colref)
   };
 
   const handleChangeForSelect = (e) => {
@@ -189,213 +158,213 @@ const Form = () => {
 
   console.log(formdata);
   return (
-    <div className="headcontainer" data-joy-color-scheme="dark" >
-     
-{load && <Loading/>}
+    <div className="headcontainer" data-joy-color-scheme="dark">
+      {load && <Loading />}
       <Nav />
-      {
-  confirmMsg ? <ConfirmCard/> : 
-
-<div className="main-form" style={{
-      maxWidth:'800px',
-      margin:'0 auto'
-    }}>
-        <CssVarsProvider className="formsheet">
-          {/* <ThemeProvider theme={Theme}> */}
-          <Sheet
-            sx={{
-              width: "90vw",
-              mx: 2,
-              my: 4,
-              py: 3,
-              px: 2,
-              display: "flex",
-              flexDirection: "column",
-              gap: 2,
-              borderRadius: "sm",
-              boxShadow: "md",
-            }}
-            variant="outlined"
-            className="formcontainer"
-          >
-            <div>
-              <Typography level="h4" component="h1">
-                <b>Register!</b>
-              </Typography>
-              <Typography level="body2">
-                Register now to take part in events.
-              </Typography>
-            </div>
-            <Divider />
-            <div className="Name">
-              <TextField
-                name="fname"
-                value={formdata.fname}
-                onChange={handleChange}
-                type="text"
-                placeholder="John"
-                label="First Name"
-                sx={{ width: "48%" }}
-              />
-              <TextField
-                name="lname"
-                value={formdata.lname}
-                onChange={handleChange}
-                type="text"
-                placeholder="Doe"
-                label="Last Name"
-                sx={{ width: "48%" }}
-              />
-            </div>
-            <TextField
-              name="college"
-              value={formdata.college}
-              onChange={handleChange}
-              type="text"
-              placeholder="Your college name..."
-              label="College Name"
-            />
-            <div className="yearno">
-              <TextField
-                name="regno"
-                value={formdata.regno}
-                onChange={handleChange}
-                type="number"
-                placeholder="Your roll number..."
-                label="Roll Number"
-                sx={{ width: "48%" }}
-              />
-              <FormControl
-                sx={{
-                  width: "48%",
-                }}
-              >
-                <FormLabel htmlFor="year">Year</FormLabel>
-                <Select
-                  id="year"
-                  data-name="year"
-                  placeholder="Select year..."
-                  value={formdata.year}
-                  onChange={handleChangeForSelect}
-                >
-                  <Option data-name="year" value="1">
-                    I
-                  </Option>
-                  <Option data-name="year" value="2">
-                    II
-                  </Option>
-                  <Option data-name="year" value="3">
-                    III
-                  </Option>
-                  <Option data-name="year" value="4">
-                    IV
-                  </Option>
-                </Select>
-              </FormControl>
-            </div>
-            <div
-              style={{
+      {confirmMsg ? (
+        <ConfirmCard />
+      ) : (
+        <div
+          className="main-form"
+          style={{
+            maxWidth: "800px",
+            margin: "0 auto",
+          }}
+        >
+          <CssVarsProvider className="formsheet">
+            {/* <ThemeProvider theme={Theme}> */}
+            <Sheet
+              sx={{
+                width: "90vw",
+                mx: 2,
+                my: 4,
+                py: 3,
+                px: 2,
                 display: "flex",
-                alignItems: "center",
-                justifyContent: "space-between",
+                flexDirection: "column",
+                gap: 2,
+                borderRadius: "sm",
+                boxShadow: "md",
               }}
+              variant="outlined"
+              className="formcontainer"
             >
-              <FormControl
-                sx={{
-                  width: "48%",
+              <div>
+                <Typography level="h4" component="h1">
+                  <b>Register!</b>
+                </Typography>
+                <Typography level="body2">
+                  Register now to take part in events.
+                </Typography>
+              </div>
+              <Divider />
+              <div className="Name">
+                <TextField
+                  name="fname"
+                  value={formdata.fname}
+                  onChange={handleChange}
+                  type="text"
+                  placeholder="John"
+                  label="First Name"
+                  sx={{ width: "48%" }}
+                />
+                <TextField
+                  name="lname"
+                  value={formdata.lname}
+                  onChange={handleChange}
+                  type="text"
+                  placeholder="Doe"
+                  label="Last Name"
+                  sx={{ width: "48%" }}
+                />
+              </div>
+              <TextField
+                name="college"
+                value={formdata.college}
+                onChange={handleChange}
+                type="text"
+                placeholder="Your college name..."
+                label="College Name"
+              />
+              <div className="yearno">
+                <TextField
+                  name="regno"
+                  value={formdata.regno}
+                  onChange={handleChange}
+                  type="number"
+                  placeholder="Your roll number..."
+                  label="Roll Number"
+                  sx={{ width: "48%" }}
+                />
+                <FormControl
+                  sx={{
+                    width: "48%",
+                  }}
+                >
+                  <FormLabel htmlFor="year">Year</FormLabel>
+                  <Select
+                    id="year"
+                    data-name="year"
+                    placeholder="Select year..."
+                    value={formdata.year}
+                    onChange={handleChangeForSelect}
+                  >
+                    <Option data-name="year" value="1">
+                      I
+                    </Option>
+                    <Option data-name="year" value="2">
+                      II
+                    </Option>
+                    <Option data-name="year" value="3">
+                      III
+                    </Option>
+                    <Option data-name="year" value="4">
+                      IV
+                    </Option>
+                  </Select>
+                </FormControl>
+              </div>
+              <div
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "space-between",
                 }}
               >
-                <FormLabel htmlFor="dept">Department</FormLabel>
-                <Select
-                  id="dept"
-                  name="dept"
-                  placeholder="Select department..."
-                  value={formdata.dept}
-                  onChange={handleChangeForSelect}
+                <FormControl
+                  sx={{
+                    width: "48%",
+                  }}
                 >
-                  <Option data-name="dept" value="1">
-                    IT
-                  </Option>
-                  <Option data-name="dept" value="2">
-                    CSE
-                  </Option>
-                  <Option data-name="dept" value="3">
-                    ECE
-                  </Option>
-                  <Option data-name="dept" value="4">
-                    EEE
-                  </Option>
-                </Select>
-              </FormControl>
-              <FormControl
-                sx={{
-                  width: "48%",
-                }}
-              >
-                <FormLabel htmlFor="gender">Gender</FormLabel>
-                <Select
-                  id="gender"
-                  name="gender"
-                  placeholder="Select gender..."
-                  value={formdata.gender}
-                  onChange={handleChangeForSelect}
+                  <FormLabel htmlFor="dept">Department</FormLabel>
+                  <Select
+                    id="dept"
+                    name="dept"
+                    placeholder="Select department..."
+                    value={formdata.dept}
+                    onChange={handleChangeForSelect}
+                  >
+                    <Option data-name="dept" value="1">
+                      IT
+                    </Option>
+                    <Option data-name="dept" value="2">
+                      CSE
+                    </Option>
+                    <Option data-name="dept" value="3">
+                      ECE
+                    </Option>
+                    <Option data-name="dept" value="4">
+                      EEE
+                    </Option>
+                  </Select>
+                </FormControl>
+                <FormControl
+                  sx={{
+                    width: "48%",
+                  }}
                 >
-                  <Option data-name="gender" value="1">
-                    Male
-                  </Option>
-                  <Option data-name="gender" value="2">
-                    Female
-                  </Option>
-                  <Option data-name="gender" value="3">
-                    Other
-                  </Option>
-                  <Option data-name="gender" value="4">
-                    Prefer Not To Say
-                  </Option>
-                </Select>
-              </FormControl>
-            </div>
+                  <FormLabel htmlFor="gender">Gender</FormLabel>
+                  <Select
+                    id="gender"
+                    name="gender"
+                    placeholder="Select gender..."
+                    value={formdata.gender}
+                    onChange={handleChangeForSelect}
+                  >
+                    <Option data-name="gender" value="1">
+                      Male
+                    </Option>
+                    <Option data-name="gender" value="2">
+                      Female
+                    </Option>
+                    <Option data-name="gender" value="3">
+                      Other
+                    </Option>
+                    <Option data-name="gender" value="4">
+                      Prefer Not To Say
+                    </Option>
+                  </Select>
+                </FormControl>
+              </div>
 
-            <TextField
-              name="phno"
-              type="number"
-              value={formdata.phno}
-              onChange={handleChange}
-              placeholder="98765*****"
-              label="Phone Number"
-            />
-            <TextField
-              name="email"
-              value={formdata.email}
-              onChange={handleChange}
-              type="email"
-              placeholder="johndoe@email.com"
-              label="Email"
-            />
-            <img src={qr} />
-            {/* <Selector name='IT EVENTS' events={["Event-1", "Event-2", "Event-3", "Event-4"]}  setformdata={setformdata} formdata={formdata}/>
-            <Selector name='CSE EVENTS' events={["Event-1", "Event-2", "Event-3", "Event-4"]} setformdata={setformdata} formdata={formdata}/>
-            <Selector name='EEE EVENTS' events={["Event-1", "Event-2", "Event-3", "Event-4"]} setformdata={setformdata} formdata={formdata}/>
-     */}
-            {/* <ModeToggle /> */}
-            <Alert variant="outlined" color="danger" sx={{ align: "center" }}>
-              Registeration Fee of ₹150 has to be paid on the event date.
-            </Alert>
-            {load && (
+              <TextField
+                name="phno"
+                type="number"
+                value={formdata.phno}
+                onChange={handleChange}
+                placeholder="98765*****"
+                label="Phone Number"
+              />
+              <TextField
+                name="email"
+                value={formdata.email}
+                onChange={handleChange}
+                type="email"
+                placeholder="johndoe@email.com"
+                label="Email"
+              />
+              <img src={qr} />
               <Alert variant="outlined" color="danger" sx={{ align: "center" }}>
-                processing your data don't reload the page
+                Registeration Fee of ₹150 has to be paid on the event date.
               </Alert>
-            )}
-            <Button sx={{ mt: 1 }} disabled={load}  onClick={handlesubmit}>
-              {load ? 'processing' : 'register'}
-            </Button>
-          </Sheet>
-          {/* </ThemeProvider> */}
-        </CssVarsProvider>
-        {/* <img src={lock} className="loginimage"></img> */}
-      </div>
-      }
-      
+              {load && (
+                <Alert
+                  variant="outlined"
+                  color="danger"
+                  sx={{ align: "center" }}
+                >
+                  processing your data don't reload the page
+                </Alert>
+              )}
+              <Button sx={{ mt: 1 }} disabled={load} onClick={handlesubmit}>
+                {load ? "processing" : "register"}
+              </Button>
+            </Sheet>
+            {/* </ThemeProvider> */}
+          </CssVarsProvider>
+          {/* <img src={lock} className="loginimage"></img> */}
+        </div>
+      )}
     </div>
   );
 };
