@@ -17,7 +17,6 @@
   width: 100%;
   height: 220px;
   transition: 0.5s;
-  will-change: transform;
 }
 
 .containerdept .card .imgBx img {
@@ -44,7 +43,7 @@
 }
 
 .containerdept .card:hover {
-  transform: scale(0.99);
+  transform: scale(0.98);
   border: double 1px transparent;
   border-radius: 20px;
   background-image: linear-gradient(#00001d, #00001d),

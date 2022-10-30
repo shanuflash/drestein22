@@ -8,7 +8,8 @@
       {
         "ignore": [
           "background-clip",
-          "backdrop-filter"
+          "backdrop-filter",
+          "backface-visibility"
         ]
       }
     ]
