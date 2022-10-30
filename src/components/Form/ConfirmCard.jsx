@@ -50,10 +50,10 @@ const HeadCard2 = styled.div`
 
 function ConfirmCard() {
 
-        useEffect(()=>{
-            document.body.style.overflow = 'hidden';
-            return ()=> document.body.style.overflow = 'unset';
-         }, []);
+   useEffect(()=>{
+      document.body.style.overflow = 'hidden';
+      return ()=> document.body.style.overflow = 'unset';
+   }, []);
   return (
     <Card>
         <InnerCard>

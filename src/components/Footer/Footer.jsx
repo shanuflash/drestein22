@@ -1,125 +1,99 @@
-import styled from "styled-components";
-import React from "react";
-import logo from "../../assets/dresteinLogo.svg";
-const FooterHeader = styled.div`
-width: 90vw;
-margin-inline: auto;
+import React from 'react'
+import './footer.scss'
+import styled from 'styled-components'
+import dresteinLogo from "../../assets/dresteinLogo.svg";
 
-margin-top: 5rem;
-
-/* text-transform: uppercase; */
-border-radius: 20px 20px 0 0 ;
+const Footer = () => {
 
 
-`;
-const FooterTitle = styled.h1`
-font-size: 7vw;
-    font-weight: bold;
-  display: flex; 
-  text-transform: capitalize;
-   justify-content: center;
+  const LogoHead = styled.div`
+  display: flex;
+  width: fit-content;
+  gap: 0.5rem;
   align-items: center;
-  color: white;
-    font-family: 'Montserrat', sans-serif;
-
-  /* font-family: poppins, sans-serif; */
-  /* padding-left: 40px; */
-
-
-`;
-const FooterContainer = styled.div`
-margin-bottom: 5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 80%;
-    @media screen  and (max-width:600px){
-        flex-direction: column;
-        width: 100%;
-    }
-  
-
-`;
-const DresteinLogo = styled.img`
-    width: 30%;
-`;
-const FooterText = styled.div`
-display: flex;
-flex-direction: column;
-padding:4rem;
-
-@media screen  and (max-width:600px){
-       padding: 1rem;
-    }
+  @media screen and (max-width: 600px){
+    width: 80%;  
+    margin-left: 3rem;
+    justify-content: flex-start;
     
-`;
+  }
+  `;
 
-const FooterTextTitle = styled.h1`
- padding: 1rem 0 ;
+  const DLogo = styled.img`
+  width: 20%;
+  @media screen and (max-width: 600px){
+  }
 `;
+  const EventLogo = styled.div`
+  display: flex;
+  flex-direction: column;
+  @media screen and (max-width: 600px) {
 
-const FooterMainText = styled.p`
-    
+  }
 `;
-
-const FooterConatinAll = styled.div`
-margin-bottom: 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  const DresteinLetter = styled.p`
+  font-size: 2.2vw;
+  font-family: 'Azonix', sans-serif;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  @media screen and (max-width: 600px){
+    font-size: 7vw;
+  }
 `;
-const FooterBottom = styled.div`
-color: white;
-/* background: linear-gradient(0.25turn, #312755, #1c1c20, #362430); */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    /* margin: 1rem; */
-    padding: 0.5rem 1rem;
-    border-radius: 1rem 1rem 0 0;
-    @media screen  and (max-width:600px){
-        flex-direction: column;
-        width: 100%;
-        margin: 0;
-    }
+  const Year = styled.p`
+  font-size: 1vw;
+  font-family: Montserrat, sans-serif;
+  font-weight: 800;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  height: auto;
+  letter-spacing: 0.8em;
+  @media screen and (max-width: 600px) {
+    font-size: 3vw;
+}
 `;
-const Policy = styled.div`
-`;
-const MadewithLove = styled.div`
-`;
-const Copyright = styled.div`
-
-`;
-function Footer() {
   return (
-    <FooterHeader>
-      <FooterTitle>About us</FooterTitle>
-      <FooterConatinAll>
-        <FooterContainer>
-          <DresteinLogo src={logo} />
-          <FooterText>
-            <FooterTextTitle>Lorem ipsum dolor sit amet.5</FooterTextTitle>
-            <FooterMainText>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam
-              neque, consequatur magnam aliquam doloremque nesciunt similique
-              praesentium vel pariatur provident.
-            </FooterMainText>
-          </FooterText>
-        </FooterContainer>
-      </FooterConatinAll>
-      <div class="mapouter">
-        <div class="gmap_canvas">
-          <iframe class="gmap_iframe" title="SEC Location" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=400&amp;height=400&amp;hl=en&amp;q=saveetha engineering college&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
-          <a href="https://piratebay-proxys.com/">Piratebay</a>
+    <div className='footer'>
+      <div className="flex container">
+        <div className="block">
+          <LogoHead>
+            <DLogo src={dresteinLogo} alt="DresteinLogo" />
+            <EventLogo>
+              <DresteinLetter color="red">DRESTEIN</DresteinLetter>
+              <Year>2 0 2 2</Year>
+            </EventLogo>
+          </LogoHead>
+          <div className='desc'>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur accusantium earum qui deleniti consectetur ipsa quia quam laborum sed, magni repellat, eligendi maxime nemo, aut eum officiis voluptas esse dolore?
+          </div>
+        </div>
+        <div className="block">
+          <h4 className='heading'>SOCIALS</h4>
+
+        </div>
+        <div className="block">
+          <h4 className='heading'>USEFUL LINKS</h4>
+          <div className='links'>Home</div>
+          <div className='links'>About us</div>
+          <div className='links'>Services</div>
+          <div className='links'>Terms and service</div>
+          <div className='links'>Privacy Policy</div>
+        </div>
+        <div className="block">
+          <h4 className='heading'>LOCATION</h4>
+          <p className='address'>Saveetha Nagar, Sriperumbadur Taluk, Kanchipuram - Chennai Rd, Chennai, Tamil Nadu 602105</p>
+          <div class="mapouter">
+            <div class="gmap_canvas">
+              <iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=250&amp;height=250&amp;hl=en&amp;q=Saveetha engineering college&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+            </div>
+          </div>
         </div>
       </div>
-      <FooterBottom>
-        <Policy>Privacy Policy | Terms</Policy>
-        <MadewithLove> Made with ❤️ by IT DEPT </MadewithLove>
-        <Copyright>© 2022 SAVEETHA ENGINEERING COLLEGE</Copyright>
-      </FooterBottom>
-    </FooterHeader>
-  );
+      <div className="copyright">
+        Copyright © Saveetha Engineering College, Powered by Drestein.
+      </div>
+    </div>
+  )
 }
 
-export default Footer;
+export default Footer
