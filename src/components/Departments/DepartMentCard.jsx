@@ -45,20 +45,6 @@ function DepartMentCard({ img, title, des, color, bgtext, mbtm }) {
     }
   `;
 
-  const Event = styled.a`
-    display: inline-block;
-    padding: 10px 20px;
-    background: ${color};
-    border-radius: 4px;
-    text-decoration: none;
-    font-weight: 600;
-    color: white;
-    opacity: 1;
-    transform: translateY(50px);
-    transition: 0.5s;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
-      rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-  `;
   const text = {
     offscreen: { y: 200, opacity: 0 },
     onscreen: {
@@ -163,11 +149,6 @@ function DepartMentCard({ img, title, des, color, bgtext, mbtm }) {
               <br />
               {a[1]}
             </DeptTxt>
-            {/* <div>
-            <Link to="/events">
-              <Event href="#">Events</Event>
-            </Link>
-          </div> */}
           </div>
         </Card>
       </Link>
