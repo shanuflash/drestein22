@@ -68,7 +68,7 @@ function About() {
   `;
 
   const Descard = styled.div`
-    font-size: 1.3em;
+    font-size: 0.9em;
     background-color: rgba(225, 225, 225, 0.7);
     color: black;
     border-radius: 1rem;
