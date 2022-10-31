@@ -21,6 +21,7 @@ export const EventDetails = [
           "Each team will have to code the program for the found algorithm in either C programming or Python language and the first team to complete the coding will be the winner of the event",
         tag: "EVENT",
         img: "https://www.gstatic.com/mobilesdk/191021_mobilesdk/discoverycards/appdistro@2x.png",
+        logo: "cse2.jpeg",
         staff: [
           {
             name: "Dr.Sujatha",
@@ -74,6 +75,7 @@ export const EventDetails = [
         round1: "",
         round2: "",
         tag: "EVENT",
+        logo: "cse3.jpeg",
         img: "https://www.gstatic.com/mobilesdk/191021_mobilesdk/discoverycards/appdistro@2x.png",
       },
       {
