@@ -39,6 +39,7 @@ import Chip from "@mui/joy/Chip";
 import OutlinedInput from "@mui/material/OutlinedInput";
 import InputLabel from "@mui/material/InputLabel";
 import MenuItem from "@mui/material/MenuItem";
+import { EventDetails } from "../../configs/EventDetails";
 
 const muiTheme = extendMuiTheme({
   cssVarPrefix: "joy",
@@ -226,6 +227,50 @@ const Form = () => {
               </div>
               <Divider />
 
+              {EventDetails.map((EachDept) => {
+                return (
+                  <div>
+                    {EachDept.eventslist.map((EachEvent) => {
+                      return (
+                        <div>
+                          <FormControlM sx={{ m: 1, width: 300 }}>
+                            <InputLabel>Select Events</InputLabel>
+                            <SelectM
+                              multiple
+                              value={eventName}
+                              onChange={handleChangeT}
+                              input={<OutlinedInput label="Select Events" />}
+                              renderValue={(selected) => (
+                                <Box
+                                  sx={{
+                                    display: "flex",
+                                    flexWrap: "wrap",
+                                    gap: 0.5,
+                                  }}
+                                >
+                                  {selected.map((value) => (
+                                    <Chip key={value}>{value}</Chip>
+                                  ))}
+                                </Box>
+                              )}
+                            >
+                              {EachEvent.name.map((events) => (
+                                <MenuItem key={events} value={events}>
+                                  <Checkbox
+                                    checked={eventName.indexOf(events) > -1}
+                                  />
+                                  <ListItemText primary={events} />
+                                </MenuItem>
+                              ))}
+                            </SelectM>
+                          </FormControlM>
+                        </div>
+                      );
+                    })}
+                  </div>
+                );
+              })}
+
               <FormControlM sx={{ m: 1, width: 300 }}>
                 <InputLabel>Select Events</InputLabel>
                 <SelectM
@@ -233,7 +278,6 @@ const Form = () => {
                   value={eventName}
                   onChange={handleChangeT}
                   input={<OutlinedInput label="Select Events" />}
-                  // renderValue={(selected) => selected.join(", ")}
                   renderValue={(selected) => (
                     <Box sx={{ display: "flex", flexWrap: "wrap", gap: 0.5 }}>
                       {selected.map((value) => (
