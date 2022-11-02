@@ -228,6 +228,7 @@ const Form = () => {
               <div className="Name">
                 <TextField
                   name="fname"
+                  required
                   value={formdata.fname}
                   onChange={handleChange}
                   type="text"
@@ -237,6 +238,7 @@ const Form = () => {
                 />
                 <TextField
                   name="lname"
+                  required
                   value={formdata.lname}
                   onChange={handleChange}
                   type="text"
@@ -247,6 +249,7 @@ const Form = () => {
               </div>
               <TextField
                 name="college"
+                required
                 value={formdata.college}
                 onChange={handleChange}
                 type="text"
@@ -256,6 +259,7 @@ const Form = () => {
               <div className="yearno">
                 <TextField
                   name="regno"
+                  required
                   value={formdata.regno}
                   onChange={handleChange}
                   type="number"
@@ -271,6 +275,7 @@ const Form = () => {
                   <FormLabel htmlFor="year">Year</FormLabel>
                   <Select
                     id="year"
+                    required
                     data-name="year"
                     placeholder="Select year..."
                     value={formdata.year}
@@ -306,6 +311,7 @@ const Form = () => {
                   <FormLabel htmlFor="dept">Department</FormLabel>
                   <Select
                     id="dept"
+                    required
                     name="dept"
                     placeholder="Select department..."
                     value={formdata.dept}
@@ -333,6 +339,7 @@ const Form = () => {
                   <FormLabel htmlFor="gender">Gender</FormLabel>
                   <Select
                     id="gender"
+                    required
                     name="gender"
                     placeholder="Select gender..."
                     value={formdata.gender}
@@ -356,6 +363,7 @@ const Form = () => {
 
               <TextField
                 name="phno"
+                required
                 type="number"
                 value={formdata.phno}
                 onChange={handleChange}
@@ -364,6 +372,7 @@ const Form = () => {
               />
               <TextField
                 name="email"
+                required
                 value={formdata.email}
                 onChange={handleChange}
                 type="email"
@@ -374,6 +383,30 @@ const Form = () => {
                 <FormControlM sx={{ m: 1, width: "30%" }}>
                   <InputLabel>Select Events</InputLabel>
                   <SelectM
+                    required
+                    multiple
+                    value={eventName}
+                    onChange={handleChangeT}
+                    input={<OutlinedInput label="Select Events" />}
+                    renderValue={(selected) => (
+                      <Box sx={{ display: "flex", flexWrap: "wrap", gap: 0.5 }}>
+                        {selected.map((value) => (
+                          <Chip key={value}>{value}</Chip>
+                        ))}
+                      </Box>
+                    )}
+                  >
+                    {test.map((events) => (
+                      <MenuItem key={events} value={events}>
+                        {events}
+                      </MenuItem>
+                    ))}
+                  </SelectM>
+                </FormControlM>
+                <FormControlM sx={{ m: 1, width: "30%" }}>
+                  <InputLabel>Select Events</InputLabel>
+                  <SelectM
+                    required
                     multiple
                     value={eventName}
                     onChange={handleChangeT}
@@ -397,28 +430,7 @@ const Form = () => {
                   <InputLabel>Select Events</InputLabel>
                   <SelectM
                     multiple
-                    value={eventName}
-                    onChange={handleChangeT}
-                    input={<OutlinedInput label="Select Events" />}
-                    renderValue={(selected) => (
-                      <Box sx={{ display: "flex", flexWrap: "wrap", gap: 0.5 }}>
-                        {selected.map((value) => (
-                          <Chip key={value}>{value}</Chip>
-                        ))}
-                      </Box>
-                    )}
-                  >
-                    {test.map((events) => (
-                      <MenuItem key={events} value={events}>
-                        {events}
-                      </MenuItem>
-                    ))}
-                  </SelectM>
-                </FormControlM>
-                <FormControlM sx={{ m: 1, width: "30%" }}>
-                  <InputLabel>Select Events</InputLabel>
-                  <SelectM
-                    multiple
+                    required
                     value={eventName}
                     onChange={handleChangeT}
                     input={<OutlinedInput label="Select Events" />}
