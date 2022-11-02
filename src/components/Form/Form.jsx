@@ -36,7 +36,7 @@ import { setDoc } from "firebase/firestore";
 import Loading from "../../Loading";
 import ConfirmCard from "./ConfirmCard";
 import Chip from "@mui/joy/Chip";
-import OutlinedInput from "@mui/material/OutlinedInput";
+import FilledInput from "@mui/material/OutlinedInput";
 import InputLabel from "@mui/material/InputLabel";
 import MenuItem from "@mui/material/MenuItem";
 
@@ -166,14 +166,13 @@ const Form = () => {
   };
 
   const handleChangeForSelect = (e) => {
-    console.log(e);
     const name = e.target.getAttribute("data-name");
-    console.log(name);
     setformdata((prev) => ({
       ...prev,
       [name]: e.target.innerHTML,
     }));
   };
+  const [testtt, settesttt] = React.useState([]);
   const [eventName, setEventName] = React.useState([]);
   const handleChangeT = (event) => {
     const {
@@ -181,7 +180,25 @@ const Form = () => {
     } = event;
     setEventName(typeof value === "string" ? value.split(",") : value);
   };
-  const test = ["The Lost Code", "UI Design", "Blind Coding", "Ideathon"];
+  const test = [
+    {
+      name: "cse",
+      events: ["The Lost Code", "UI Design", "Blind Coding", "Ideathon"],
+    },
+    {
+      name: "IT",
+      events: ["test", "testtt"],
+    },
+    {
+      name: "ECE",
+      events: ["123", "456"],
+    },
+    {
+      name: "EEEeeeeeeee",
+      events: ["098", "8787"],
+    },
+  ];
+  console.log(test);
 
   console.log(formdata);
   return (
@@ -380,75 +397,35 @@ const Form = () => {
                 label="Email"
               />
               <div style={{ display: "flex" }}>
-                <FormControlM sx={{ m: 1, width: "30%" }}>
-                  <InputLabel>Select Events</InputLabel>
-                  <SelectM
-                    required
-                    multiple
-                    value={eventName}
-                    onChange={handleChangeT}
-                    input={<OutlinedInput label="Select Events" />}
-                    renderValue={(selected) => (
-                      <Box sx={{ display: "flex", flexWrap: "wrap", gap: 0.5 }}>
-                        {selected.map((value) => (
-                          <Chip key={value}>{value}</Chip>
+                {test.map((depart) => {
+                  return (
+                    <FormControlM sx={{ m: 1, width: "30%" }}>
+                      <InputLabel>{depart.name}</InputLabel>
+                      <SelectM
+                        required
+                        multiple
+                        value={testtt}
+                        onChange={handleChangeT}
+                        input={<FilledInput label={depart.name} />}
+                        renderValue={(selected) => (
+                          <Box
+                            sx={{ display: "flex", flexWrap: "wrap", gap: 0.5 }}
+                          >
+                            {selected.map((value) => (
+                              <Chip key={value}>{value}</Chip>
+                            ))}
+                          </Box>
+                        )}
+                      >
+                        {depart.events.map((ev) => (
+                          <MenuItem key={ev} value={ev}>
+                            {ev}
+                          </MenuItem>
                         ))}
-                      </Box>
-                    )}
-                  >
-                    {test.map((events) => (
-                      <MenuItem key={events} value={events}>
-                        {events}
-                      </MenuItem>
-                    ))}
-                  </SelectM>
-                </FormControlM>
-                <FormControlM sx={{ m: 1, width: "30%" }}>
-                  <InputLabel>Select Events</InputLabel>
-                  <SelectM
-                    required
-                    multiple
-                    value={eventName}
-                    onChange={handleChangeT}
-                    input={<OutlinedInput label="Select Events" />}
-                    renderValue={(selected) => (
-                      <Box sx={{ display: "flex", flexWrap: "wrap", gap: 0.5 }}>
-                        {selected.map((value) => (
-                          <Chip key={value}>{value}</Chip>
-                        ))}
-                      </Box>
-                    )}
-                  >
-                    {test.map((events) => (
-                      <MenuItem key={events} value={events}>
-                        {events}
-                      </MenuItem>
-                    ))}
-                  </SelectM>
-                </FormControlM>
-                <FormControlM sx={{ m: 1, width: "30%" }}>
-                  <InputLabel>Select Events</InputLabel>
-                  <SelectM
-                    multiple
-                    required
-                    value={eventName}
-                    onChange={handleChangeT}
-                    input={<OutlinedInput label="Select Events" />}
-                    renderValue={(selected) => (
-                      <Box sx={{ display: "flex", flexWrap: "wrap", gap: 0.5 }}>
-                        {selected.map((value) => (
-                          <Chip key={value}>{value}</Chip>
-                        ))}
-                      </Box>
-                    )}
-                  >
-                    {test.map((events) => (
-                      <MenuItem key={events} value={events}>
-                        {events}
-                      </MenuItem>
-                    ))}
-                  </SelectM>
-                </FormControlM>
+                      </SelectM>
+                    </FormControlM>
+                  );
+                })}
               </div>
               <img src={qr} />
               <Alert variant="outlined" color="danger" sx={{ align: "center" }}>
