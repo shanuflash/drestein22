@@ -2,17 +2,28 @@ import React from "react";
 import "./styles/form.css";
 import Nav from "../Nav/Nav";
 import { useState } from "react";
-import { CssVarsProvider, useColorScheme } from "@mui/joy/styles";
+import { deepmerge } from "@mui/utils";
+import { experimental_extendTheme as extendMuiTheme } from "@mui/material/styles";
+import colors from "@mui/joy/colors";
+import {
+  extendTheme as extendJoyTheme,
+  CssVarsProvider,
+  useColorScheme,
+} from "@mui/joy/styles";
 import Sheet from "@mui/joy/Sheet";
 import Typography from "@mui/joy/Typography";
 import TextField from "@mui/joy/TextField";
 import Button from "@mui/joy/Button";
-import Select from "@mui/joy/Select";
+import { useTheme } from "@mui/material/styles";
 import Box from "@mui/material/Box";
 import FormControl from "@mui/joy/FormControl";
+import FormControlM from "@mui/material/FormControl";
 import FormLabel from "@mui/joy/FormLabel";
 import Option from "@mui/joy/Option";
 import Divider from "@mui/joy/Divider";
+import Select from "@mui/joy/Select";
+import SelectM from "@mui/material/Select";
+import ListItemText from "@mui/material/ListItemText";
 import List from "@mui/joy/List";
 import ListItem from "@mui/joy/ListItem";
 import Checkbox from "@mui/joy/Checkbox";
@@ -24,56 +35,77 @@ import { db } from "../../configs/Firebase.config";
 import { setDoc } from "firebase/firestore";
 import Loading from "../../Loading";
 import ConfirmCard from "./ConfirmCard";
-function Selector({ name, events, setformdata, formdata }) {
-  console.log();
-  const [Eventarr, setevents] = useState([]);
-  const language = formdata.name ? formdata.name : [];
+import Chip from "@mui/joy/Chip";
+import OutlinedInput from "@mui/material/OutlinedInput";
+import InputLabel from "@mui/material/InputLabel";
+import MenuItem from "@mui/material/MenuItem";
 
-  const handleClick = (e) => {
-    console.log(e.target.value);
-    const { value, checked } = e.target;
+const muiTheme = extendMuiTheme({
+  cssVarPrefix: "joy",
+  colorSchemes: {
+    light: {
+      palette: {
+        primary: {
+          main: colors.blue[500],
+        },
+        grey: colors.grey,
+        error: {
+          main: colors.red[500],
+        },
+        info: {
+          main: colors.purple[500],
+        },
+        success: {
+          main: colors.green[500],
+        },
+        warning: {
+          main: colors.yellow[200],
+        },
+        common: {
+          white: "#FFF",
+          black: "#09090D",
+        },
+        divider: colors.grey[200],
+        text: {
+          primary: colors.grey[800],
+          secondary: colors.grey[600],
+        },
+      },
+    },
+    dark: {
+      palette: {
+        primary: {
+          main: colors.blue[600],
+        },
+        grey: colors.grey,
+        error: {
+          main: colors.red[600],
+        },
+        info: {
+          main: colors.purple[600],
+        },
+        success: {
+          main: colors.green[600],
+        },
+        warning: {
+          main: colors.yellow[300],
+        },
+        common: {
+          white: "#FFF",
+          black: "#09090D",
+        },
+        divider: colors.grey[800],
+        text: {
+          primary: colors.grey[100],
+          secondary: colors.grey[300],
+        },
+      },
+    },
+  },
+});
 
-    if (checked) {
-      language.push(value);
-      setformdata((pre) => ({ ...pre, [name]: language }));
-    } else {
-      language.pop(value);
-      setformdata((pre) => ({ ...pre, [name]: language }));
-    }
-
-    console.log(language);
-  };
-  return (
-    <Box>
-      <Typography mb={2}>{name}</Typography>
-      <Box role="group">
-        <List
-          row
-          wrap
-          sx={{
-            "--List-gap": "8px",
-            "--List-item-radius": "20px",
-          }}
-        >
-          {events.map((item, index) => (
-            <ListItem key={uuidv4()}>
-              <Checkbox
-                onClick={handleClick}
-                onBlur={() => console.log(formdata)}
-                overlay
-                disableIcon
-                variant="soft"
-                label={item}
-                value={item}
-              />
-            </ListItem>
-          ))}
-        </List>
-      </Box>
-    </Box>
-  );
-}
-
+const joyTheme = extendJoyTheme();
+const theme = deepmerge(muiTheme, joyTheme);
 function ModeToggle() {
   const { mode, setMode } = useColorScheme();
   return (
@@ -142,19 +174,14 @@ const Form = () => {
       [name]: e.target.innerHTML,
     }));
   };
-  const handleChangeGender = (e) => {
-    setformdata((prev) => ({
-      ...prev,
-      gender: e.target.innerHTML,
-    }));
+  const [eventName, setEventName] = React.useState([]);
+  const handleChangeT = (event) => {
+    const {
+      target: { value },
+    } = event;
+    setEventName(typeof value === "string" ? value.split(",") : value);
   };
-
-  const handleChangeDept = (e) => {
-    setformdata((prev) => ({
-      ...prev,
-      dept: e.target.innerHTML,
-    }));
-  };
+  const test = ["The Lost Code", "UI Design", "Blind Coding", "Ideathon"];
 
   console.log(formdata);
   return (
@@ -171,7 +198,7 @@ const Form = () => {
             margin: "0 auto",
           }}
         >
-          <CssVarsProvider className="formsheet">
+          <CssVarsProvider theme={theme} className="formsheet">
             {/* <ThemeProvider theme={Theme}> */}
             <Sheet
               sx={{
@@ -201,6 +228,7 @@ const Form = () => {
               <div className="Name">
                 <TextField
                   name="fname"
+                  required
                   value={formdata.fname}
                   onChange={handleChange}
                   type="text"
@@ -210,6 +238,7 @@ const Form = () => {
                 />
                 <TextField
                   name="lname"
+                  required
                   value={formdata.lname}
                   onChange={handleChange}
                   type="text"
@@ -220,6 +249,7 @@ const Form = () => {
               </div>
               <TextField
                 name="college"
+                required
                 value={formdata.college}
                 onChange={handleChange}
                 type="text"
@@ -229,6 +259,7 @@ const Form = () => {
               <div className="yearno">
                 <TextField
                   name="regno"
+                  required
                   value={formdata.regno}
                   onChange={handleChange}
                   type="number"
@@ -244,6 +275,7 @@ const Form = () => {
                   <FormLabel htmlFor="year">Year</FormLabel>
                   <Select
                     id="year"
+                    required
                     data-name="year"
                     placeholder="Select year..."
                     value={formdata.year}
@@ -279,6 +311,7 @@ const Form = () => {
                   <FormLabel htmlFor="dept">Department</FormLabel>
                   <Select
                     id="dept"
+                    required
                     name="dept"
                     placeholder="Select department..."
                     value={formdata.dept}
@@ -306,6 +339,7 @@ const Form = () => {
                   <FormLabel htmlFor="gender">Gender</FormLabel>
                   <Select
                     id="gender"
+                    required
                     name="gender"
                     placeholder="Select gender..."
                     value={formdata.gender}
@@ -329,6 +363,7 @@ const Form = () => {
 
               <TextField
                 name="phno"
+                required
                 type="number"
                 value={formdata.phno}
                 onChange={handleChange}
@@ -337,12 +372,84 @@ const Form = () => {
               />
               <TextField
                 name="email"
+                required
                 value={formdata.email}
                 onChange={handleChange}
                 type="email"
                 placeholder="johndoe@email.com"
                 label="Email"
               />
+              <div style={{ display: "flex" }}>
+                <FormControlM sx={{ m: 1, width: "30%" }}>
+                  <InputLabel>Select Events</InputLabel>
+                  <SelectM
+                    required
+                    multiple
+                    value={eventName}
+                    onChange={handleChangeT}
+                    input={<OutlinedInput label="Select Events" />}
+                    renderValue={(selected) => (
+                      <Box sx={{ display: "flex", flexWrap: "wrap", gap: 0.5 }}>
+                        {selected.map((value) => (
+                          <Chip key={value}>{value}</Chip>
+                        ))}
+                      </Box>
+                    )}
+                  >
+                    {test.map((events) => (
+                      <MenuItem key={events} value={events}>
+                        {events}
+                      </MenuItem>
+                    ))}
+                  </SelectM>
+                </FormControlM>
+                <FormControlM sx={{ m: 1, width: "30%" }}>
+                  <InputLabel>Select Events</InputLabel>
+                  <SelectM
+                    required
+                    multiple
+                    value={eventName}
+                    onChange={handleChangeT}
+                    input={<OutlinedInput label="Select Events" />}
+                    renderValue={(selected) => (
+                      <Box sx={{ display: "flex", flexWrap: "wrap", gap: 0.5 }}>
+                        {selected.map((value) => (
+                          <Chip key={value}>{value}</Chip>
+                        ))}
+                      </Box>
+                    )}
+                  >
+                    {test.map((events) => (
+                      <MenuItem key={events} value={events}>
+                        {events}
+                      </MenuItem>
+                    ))}
+                  </SelectM>
+                </FormControlM>
+                <FormControlM sx={{ m: 1, width: "30%" }}>
+                  <InputLabel>Select Events</InputLabel>
+                  <SelectM
+                    multiple
+                    required
+                    value={eventName}
+                    onChange={handleChangeT}
+                    input={<OutlinedInput label="Select Events" />}
+                    renderValue={(selected) => (
+                      <Box sx={{ display: "flex", flexWrap: "wrap", gap: 0.5 }}>
+                        {selected.map((value) => (
+                          <Chip key={value}>{value}</Chip>
+                        ))}
+                      </Box>
+                    )}
+                  >
+                    {test.map((events) => (
+                      <MenuItem key={events} value={events}>
+                        {events}
+                      </MenuItem>
+                    ))}
+                  </SelectM>
+                </FormControlM>
+              </div>
               <img src={qr} />
               <Alert variant="outlined" color="danger" sx={{ align: "center" }}>
                 Registeration Fee of ₹150 has to be paid on the event date.
@@ -360,9 +467,7 @@ const Form = () => {
                 {load ? "processing" : "register"}
               </Button>
             </Sheet>
-            {/* </ThemeProvider> */}
           </CssVarsProvider>
-          {/* <img src={lock} className="loginimage"></img> */}
         </div>
       )}
     </div>

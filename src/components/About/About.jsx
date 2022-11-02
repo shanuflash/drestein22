@@ -6,7 +6,7 @@ function About() {
   const AboutHead = styled.div`
     height: auto;
     width: 100vw;
-    background: linear-gradient(45deg, rgb(0 40 86) 51.2%, rgb(0 125 66) 98.6%);
+    background: linear-gradient(45deg, rgb(0 40 86 / 75%) 51.2%, rgb(0 125 66 / 75%) 98.6%);
     margin-top: 100px;
     display: flex;
     justify-content: center;
@@ -68,7 +68,7 @@ function About() {
   `;
 
   const Descard = styled.div`
-    font-size: 1.3em;
+    font-size: 0.9em;
     background-color: rgba(225, 225, 225, 0.7);
     color: black;
     border-radius: 1rem;

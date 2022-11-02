@@ -9,6 +9,7 @@ import { IoIosPeople } from "react-icons/io";
 import RegisterBtn from "../register-button/RegisterBtn";
 import { HashLink as Link } from "react-router-hash-link";
 
+
 const Modal = ({ open, setOpenModal }) => {
   const { eventObject } = useContext(DisplayPopupContext);
   const splitrules = eventObject?.rules?.split(".");
@@ -55,10 +56,19 @@ const Modal = ({ open, setOpenModal }) => {
             <FcAlarmClock size={32} />
             <span>{eventObject.time}</span>
           </div>
-          <div className="item">
-            <span>Members</span>
-            <AiOutlineTeam size={32} />
-            <span>{eventObject.members}</span>
+          <div
+            style={{
+              padding: 0,
+            }}
+            className="item"
+          >
+            <img
+              style={{
+                width: "100%",
+              }}
+              src={`EventsAssets/${eventObject.logo}`}
+              alt="Logo"
+            />
           </div>
         </div>
         {eventObject.rules ? (
