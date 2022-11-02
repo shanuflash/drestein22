@@ -116,7 +116,6 @@ function ModeToggle() {
 }
 
 const Form = () => {
-  const test = ["The Lost Code", "UI Design", "Blind Coding", "Ideathon"];
   const [formdata, setformdata] = useState({});
   const [qr, setqr] = useState("");
   const [load, setload] = useState(false);
@@ -182,6 +181,7 @@ const Form = () => {
     } = event;
     setEventName(typeof value === "string" ? value.split(",") : value);
   };
+  const test = ["The Lost Code", "UI Design", "Blind Coding", "Ideathon"];
 
   console.log(formdata);
   return (
@@ -225,30 +225,6 @@ const Form = () => {
                 </Typography>
               </div>
               <Divider />
-
-              <FormControlM sx={{ m: 1, width: 300 }}>
-                <InputLabel>Select Events</InputLabel>
-                <SelectM
-                  multiple
-                  value={eventName}
-                  onChange={handleChangeT}
-                  input={<OutlinedInput label="Select Events" />}
-                  renderValue={(selected) => (
-                    <Box sx={{ display: "flex", flexWrap: "wrap", gap: 0.5 }}>
-                      {selected.map((value) => (
-                        <Chip key={value}>{value}</Chip>
-                      ))}
-                    </Box>
-                  )}
-                >
-                  {test.map((events) => (
-                    <MenuItem key={events} value={events}>
-                      {events}
-                    </MenuItem>
-                  ))}
-                </SelectM>
-              </FormControlM>
-
               <div className="Name">
                 <TextField
                   name="fname"
@@ -394,7 +370,74 @@ const Form = () => {
                 placeholder="johndoe@email.com"
                 label="Email"
               />
-
+              <div style={{ display: "flex" }}>
+                <FormControlM sx={{ m: 1, width: "30%" }}>
+                  <InputLabel>Select Events</InputLabel>
+                  <SelectM
+                    multiple
+                    value={eventName}
+                    onChange={handleChangeT}
+                    input={<OutlinedInput label="Select Events" />}
+                    renderValue={(selected) => (
+                      <Box sx={{ display: "flex", flexWrap: "wrap", gap: 0.5 }}>
+                        {selected.map((value) => (
+                          <Chip key={value}>{value}</Chip>
+                        ))}
+                      </Box>
+                    )}
+                  >
+                    {test.map((events) => (
+                      <MenuItem key={events} value={events}>
+                        {events}
+                      </MenuItem>
+                    ))}
+                  </SelectM>
+                </FormControlM>
+                <FormControlM sx={{ m: 1, width: "30%" }}>
+                  <InputLabel>Select Events</InputLabel>
+                  <SelectM
+                    multiple
+                    value={eventName}
+                    onChange={handleChangeT}
+                    input={<OutlinedInput label="Select Events" />}
+                    renderValue={(selected) => (
+                      <Box sx={{ display: "flex", flexWrap: "wrap", gap: 0.5 }}>
+                        {selected.map((value) => (
+                          <Chip key={value}>{value}</Chip>
+                        ))}
+                      </Box>
+                    )}
+                  >
+                    {test.map((events) => (
+                      <MenuItem key={events} value={events}>
+                        {events}
+                      </MenuItem>
+                    ))}
+                  </SelectM>
+                </FormControlM>
+                <FormControlM sx={{ m: 1, width: "30%" }}>
+                  <InputLabel>Select Events</InputLabel>
+                  <SelectM
+                    multiple
+                    value={eventName}
+                    onChange={handleChangeT}
+                    input={<OutlinedInput label="Select Events" />}
+                    renderValue={(selected) => (
+                      <Box sx={{ display: "flex", flexWrap: "wrap", gap: 0.5 }}>
+                        {selected.map((value) => (
+                          <Chip key={value}>{value}</Chip>
+                        ))}
+                      </Box>
+                    )}
+                  >
+                    {test.map((events) => (
+                      <MenuItem key={events} value={events}>
+                        {events}
+                      </MenuItem>
+                    ))}
+                  </SelectM>
+                </FormControlM>
+              </div>
               <img src={qr} />
               <Alert variant="outlined" color="danger" sx={{ align: "center" }}>
                 Registeration Fee of ₹150 has to be paid on the event date.
