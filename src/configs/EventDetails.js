@@ -1,5 +1,6 @@
 export const EventDetails = [
   {
+    id: "cse",
     title: "Computer Science & Engineering",
     eventslist: [
       {
@@ -259,6 +260,7 @@ export const EventDetails = [
     ],
   },
   {
+    id: "it",
     title: "Information Technology",
     eventslist: [
       {
@@ -499,6 +501,7 @@ export const EventDetails = [
     ],
   },
   {
+    id: "agri",
     title: "Agricultural Engineering",
     eventslist: [
       {
@@ -688,7 +691,8 @@ export const EventDetails = [
     ]
   },
   {
-    title: "Artificial Intelligence and Data Science & Artificial Intelligence and Machine Learning ",
+    id: "aids",
+    title: "Artificial Intelligence and Data Science",
     eventslist: [
       {
         name: "Code and Debug ",
@@ -959,6 +963,7 @@ export const EventDetails = [
     ]
   },
   {
+    id: "bme",
     title: "Biomedical Engineering",
     eventslist: [
       {
@@ -1216,6 +1221,7 @@ export const EventDetails = [
     ]
   },
   {
+    id: "civil",
     title: "Civil Engineering",
     eventslist: [
       {
@@ -1425,6 +1431,7 @@ export const EventDetails = [
     ]
   },
   {
+    id: "chem",
     title: "Chemical Engineering",
     eventslist: [
       {
@@ -1614,6 +1621,7 @@ export const EventDetails = [
     ]
   },
   {
+    id: "eie",
     title: "Electronics and Instrumentation Engineering",
     eventslist: [
       {
@@ -1757,6 +1765,226 @@ export const EventDetails = [
             email: "nihalmohamed25@gmail.com   ",
           },
         ],
+      }
+    ]
+  },
+  {
+    id: "mech",
+    title: "Mechanical Engineering",
+    eventslist: [
+      {
+        name: " Dezania",
+        tagline: "MCQ ",
+        date: "18 Nov 2022(AN)",
+        type: "Team",
+        venue: "TBA",
+        time: "TBA",
+        members: "2",
+        rules: "",
+        round1:
+          "Participants are asked to design primary Part modelling, Using Fusion 360  ",
+        round2:
+          "Participants are asked to do assembly, Using Fusion 360 ",
+        round3:
+          "Detailing of MODEL- Quality, Efficiency of the product will be inspected ",
+        img: "https://www.gstatic.com/mobilesdk/191021_mobilesdk/discoverycards/appdistro@2x.png",
+        tag: "EVENT",
+        logo: "mech1.jpeg",
+        staff: [
+          {
+            name: "Dr. Sivaramakrishnan N  ",
+            desig: "Assistant Professor ",
+            phone: 9101361172,
+            email: "nsivaramakrishnan @saveetha.ac.in ",
+          },
+
+        ],
+        student: [
+          {
+            name: "N.Augustin  ",
+            year: "IV ",
+            phone: 8939213987,
+            email: "augustin.sparks2001@gmail.com ",
+          },
+          {
+            name: "Gunaseelan N ",
+            year: "IV ",
+            phone: 8939213987,
+            email: "way2lovelyguna@gmail.com  ",
+          },
+
+          {
+            name: "Charan Teja D ",
+            year: "III ",
+            phone: 8247021638,
+            email: "tejacharan270@gmail.com  ",
+          },
+          {
+            name: "Monisha V  ",
+            year: "II",
+            phone: 7904856528,
+            email: "monisha070304@gmail.com  ",
+          },
+        ],
+      },
+
+      {
+        name: "Mr. Machinist",
+        date: "19 Nov 2022(AN)",
+        type: "Team",
+        venue: "TBA",
+        time: "TBA",
+        members: "1-2",
+        rules: "",
+        round1:
+          "MCQ based on Manufacturing technology(30mins) ",
+
+        round2:
+          " Facing and Step turning in Lathe Machine(30mins) .",
+        round3:
+          "Knurling in Lathe Machining(30mins) ",
+        img: "https://www.gstatic.com/mobilesdk/191021_mobilesdk/discoverycards/appdistro@2x.png",
+        tag: "EVENT",
+        logo: "mech2.jpeg",
+        staff: [
+          {
+            name: "Dr.Kripa M Suvarna ",
+            desig: "Assistant Professor ",
+            phone: 7996808280,
+            email: "kripasuvarna@saveetha.ac.in  ",
+          },
+
+        ],
+        student: [
+          {
+            name: "Lokesh A  ",
+            year: "IV ",
+            phone: 9360566513,
+            email: "lokeshcrazy19@gmail.com  ",
+          },
+          {
+            name: "Hari Prasath P ",
+            year: "IV ",
+            phone: 8925079656,
+            email: "hari.sniper05@gmail.com  ",
+          },
+          {
+            name: "Raghavan ",
+            year: "III",
+            phone: 9884250061,
+            email: "raghavanadithya@yahoo.com  ",
+          },
+          {
+            name: "Shakti AishwaryaAishwarya  ",
+            year: "II",
+            phone: 7358468534,
+            email: "shaktiaishwarya.tk@gmail.com  ",
+          },
+
+        ],
+      },
+      {
+        name: "Water Rocketry ",
+        date: "19 Nov 2022(FN)",
+        type: "Team",
+        venue: "TBA",
+        time: "TBA",
+        members: "2",
+        round1: "Round 1 will be based on distance coverage. ",
+        round2: "Round 2 will be based on distance coverage. ",
+        round3: "Round 3 will be based on distance coverage. ",
+        img: "https://www.gstatic.com/mobilesdk/191021_mobilesdk/discoverycards/appdistro@2x.png",
+        tag: "EVENT",
+        logo: "mech3.jpeg",
+        staff: [
+          {
+            name: "V.Velmurugan ",
+            desig: "Assistant Professor ",
+            phone: 9677274385,
+            email: " velmuruganv@saveetha.ac.in  ",
+          },
+
+        ],
+        student: [
+          {
+            name: "Chozhan K  ",
+            year: "IV ",
+            phone: 9789822119,
+            email: "chozhankrishnan@gmail.com   ",
+          },
+          {
+            name: "Satheesh Kumar R ",
+            year: "IV ",
+            phone: 9940093866,
+            email: "rsatheesh292002@gmail.com   ",
+          },
+          {
+            name: "Kiran Raaj KV ",
+            year: "III ",
+            phone: 9789994338,
+            email: "kiranraaj1507@gmail.com ",
+          },
+
+          {
+            name: "Shyam Sundar  ",
+            year: "II ",
+            phone: 9360719209,
+            email: "kashyam2003@gmail.com ",
+          },
+        ],
+      },
+      {
+        name: "Cad Modelling And Stimulation",
+        date: "18 Nov 2022(10.30-1.00)",
+        type: "Team",
+        venue: "TBA",
+        time: "TBA",
+        members: "1-3",
+        rules: "",
+        round1:
+          "Isometric view of a product will be given to each team. Model the product using CATIA Or ABAQUS software within 45mins  ",
+        round2:
+          "The simulation for the product has to done within 30mins.",
+        tag: "EVENT",
+        img: "https://www.gstatic.com/mobilesdk/191021_mobilesdk/discoverycards/appdistro@2x.png",
+
+        logo: "mech4.jpeg",
+        staff: [
+          {
+            name: "C Radhika ",
+            desig: "Associate Professor",
+            phone: 9884280906,
+            email: "radhika@saveetha.ac.in",
+          },
+        ],
+        student:
+          [
+            {
+              name: "Vijayragavan A.S ",
+              year: "IV ",
+              phone: 6379347756,
+              email: "vickysasikumar7@gmail.com   ",
+            },
+            {
+              name: "Samuel Jose R  ",
+              year: "IV ",
+              phone: 9962803048,
+              email: "samueljose444@gmail.com",
+            },
+
+            {
+              name: "Naveen V",
+              year: "III",
+              phone: 8608202199,
+              email: "naveenvairavel2002@gmail.com",
+            },
+            {
+              name: "Charan K   ",
+              year: "II ",
+              phone: 86082021995,
+              email: "charankannan95102gmail.com",
+            },
+          ],
       }
     ]
   },

@@ -2,9 +2,9 @@ import React from "react";
 import styled from "styled-components";
 import "./styles/DepartMentCard.css";
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
+import { HashLink as Link } from "react-router-hash-link";
 
-function DepartMentCard({ img, title, des, color, bgtext, mbtm }) {
+function DepartMentCard({ img, title, des, color, bgtext, mbtm, id }) {
   const a = title.split(" ");
 
   const Card = styled.a`
@@ -112,7 +112,7 @@ function DepartMentCard({ img, title, des, color, bgtext, mbtm }) {
       variants={device < 700 ? cardforMobile : cardforDesktop}
       className="containerdept"
     >
-      <Link to="/events">
+      <Link to={`/events${id}`}>
         <Card
           href="#"
           as={motion.div}

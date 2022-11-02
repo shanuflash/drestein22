@@ -22,7 +22,7 @@ const Events = () => {
         {EventDetails.map((EachDept) => {
           return (
             <>
-              <div className="top">
+              <div className="top" id={EachDept.id}>
                 <div className="title">{EachDept.title}</div>
               </div>
               <div className="wrapper">

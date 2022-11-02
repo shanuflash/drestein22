@@ -7,7 +7,7 @@ import { HiOutlineMenuAlt1 } from "react-icons/hi";
 import { CgClose } from "react-icons/cg";
 
 import "./styles/HambBurger.css";
-import { Link } from "react-router-dom";
+import { HashLink as Link } from "react-router-hash-link";
 
 const Navbar = styled.nav`
   color: rgb(255, 255, 255);
@@ -151,10 +151,18 @@ function Nav() {
     <Navbar className="navbar" style={navstyle}>
       <SLogo src={saveethalogo} />
       <NavHead>
-        <NavItem href="/#">Home</NavItem>
-        <NavItem href="/#Departments">Departments</NavItem>
-        <NavItem href="/#Gallery">Gallery</NavItem>
-        <NavItem href="/#About">About</NavItem>
+        <Link style={{ textDecoration: "inherit" }} to="/#">
+          <NavItem>Home</NavItem>
+        </Link>
+        <Link style={{ textDecoration: "inherit" }} to="/#Departments">
+          <NavItem>Departments</NavItem>
+        </Link>
+        <Link style={{ textDecoration: "inherit" }} to="/#Gallery">
+          <NavItem>Gallery</NavItem>
+        </Link>
+        <Link style={{ textDecoration: "inherit" }} to="/#About">
+          <NavItem>About</NavItem>
+        </Link>
       </NavHead>
       <Mobilenav openMenu={openMenu} />
       <div className="icon" onClick={() => setOpenMenu(!openMenu)}>
