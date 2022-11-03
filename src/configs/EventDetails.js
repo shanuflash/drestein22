@@ -1,4 +1,4 @@
-export const EventDetails = [
+  export const EventDetails = [
   {
     id: "cse",
     title: "Computer Science & Engineering",

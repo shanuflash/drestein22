@@ -404,7 +404,7 @@ const Form = () => {
                       <SelectM
                         required
                         multiple
-                        value={testtt}
+                        value={eventName}
                         onChange={handleChangeT}
                         input={<FilledInput label={depart.name} />}
                         renderValue={(selected) => (

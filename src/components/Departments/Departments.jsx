@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import DepartMentCard from "./DepartMentCard";
-import { departobj } from "../../configs/Departments.config";
+import { departobj, comobj } from "../../configs/Departments.config";
 import { motion } from "framer-motion";
 
 const DepartmentContainer = styled.div`
@@ -35,6 +35,23 @@ function Departments() {
       </motion.h1>
       <DepartmentContainer>
         {departobj.map((data, i) => {
+          return (
+              <DepartMentCard key={i} {...data} />
+          );
+        })}
+      </DepartmentContainer>
+
+      <motion.h1
+        initial={{ y: 100, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{ duration: 1 }}
+        viewport={{ once: false, amount: 1 }}
+        className="DeptHead"
+      >
+        <div className="DeptHeadTxt" style={{fontSize:"8vw"}}>Other Events</div>
+      </motion.h1>
+      <DepartmentContainer>
+        {comobj.map((data, i) => {
           return (
               <DepartMentCard key={i} {...data} />
           );
