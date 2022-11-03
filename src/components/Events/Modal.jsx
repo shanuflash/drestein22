@@ -4,7 +4,6 @@ import DisplayPopupContext from "../../context/DisplayPopupContext";
 import { VscClose } from "react-icons/vsc";
 import { TiLocation } from "react-icons/ti";
 import { FcAlarmClock } from "react-icons/fc";
-import { AiOutlineTeam } from "react-icons/ai";
 import { IoIosPeople } from "react-icons/io";
 import RegisterBtn from "../register-button/RegisterBtn";
 import { HashLink as Link } from "react-router-hash-link";
@@ -37,9 +36,7 @@ const Modal = ({ open, setOpenModal }) => {
         )}
         {eventObject.desc ? (
           <p className="desc">{eventObject.desc}</p>
-        ) : (
-          <p className="desc">Disc not fetched from json</p>
-        )}
+        ) : (null        )}
         <div className="grid">
           <div className="item">
             <span>Type</span>
@@ -71,6 +68,16 @@ const Modal = ({ open, setOpenModal }) => {
             />
           </div>
         </div>
+        {eventObject.format ? (
+          <div className="rules">
+            <h3>Format:</h3>
+            <ol>
+              {splitrules.map((each) => {
+                return <li>{each}</li>;
+              })}
+            </ol>
+          </div>
+        ) : null}
         {eventObject.rules ? (
           <div className="rules">
             <h3>Rules and Regulations:</h3>
@@ -83,7 +90,7 @@ const Modal = ({ open, setOpenModal }) => {
         ) : null}
         {eventObject.round1 ? (
           <div className="round1">
-            <h3>Round 1:</h3>
+            <h3>Round 1:{ eventObject.round1title? `( ${eventObject.round1title} )` : ''}</h3>
             <ol>
               {splitround1.map((each) => {
                 return <li>{each}</li>;
@@ -93,7 +100,7 @@ const Modal = ({ open, setOpenModal }) => {
         ) : null}
         {eventObject.round2 ? (
           <div className="round2">
-            <h3>Round 2:</h3>
+            <h3>Round 2:{ eventObject.round2title? `( ${eventObject.round2title} )` : ''}</h3>
             <ol>
               {splitround2.map((each) => {
                 return <li>{each}</li>;
@@ -103,7 +110,7 @@ const Modal = ({ open, setOpenModal }) => {
         ) : null}
         {eventObject.round3 ? (
           <div className="round3">
-            <h3>Round 3:</h3>
+            <h3>Round 3:{ eventObject.round3title? `( ${eventObject.round3title} )` : ''}</h3>
             <ol>
               {splitround3.map((each) => {
                 return <li>{each}</li>;
@@ -113,7 +120,7 @@ const Modal = ({ open, setOpenModal }) => {
         ) : null}
         {eventObject.round4 ? (
           <div className="round4">
-            <h3>Round 4:</h3>
+            <h3>Round 4:{ eventObject.round4title? `( ${eventObject.round4title} )` : ''}</h3>
             <ol>
               {splitround3.map((each) => {
                 return <li>{each}</li>;
