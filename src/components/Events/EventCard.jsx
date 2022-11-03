@@ -16,14 +16,20 @@ const EventCard = ({
   time,
   members,
   round1,
+  round1title,
+  round2title,
+  round3title,
+  round4title,
   round2,
   round3,
   round4,
+  tagline,
   judge,
   prize,
   staff,
   student,
   logo,
+  format,
 }) => {
   const { setEventObject } = useContext(DisplayPopupContext);
 
@@ -33,12 +39,18 @@ const EventCard = ({
       name,
       date,
       desc,
+      format,
       rules,
       type,
       venue,
       time,
       members,
       round1,
+      round1title,
+      round2title,
+      round3title,
+      round4title,
+      tagline,
       round2,
       round3,
       round4,
@@ -81,7 +93,7 @@ const EventCard = ({
       <Card className="eventcard" onClick={handleEventInfo}>
         <div>
           <h1>{name}</h1>
-          <p>{desc}</p>
+          <p>{tagline}</p>
           <div className="date">{date}</div>
           <div className="tags">
             <div className="tag">{tag}</div>

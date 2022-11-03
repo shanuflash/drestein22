@@ -15,9 +15,10 @@ const Events = () => {
       : (document.body.style.overflow = "unset");
   }, [openModal]);
   return (
+    <>
+      <Modal open={openModal} setOpenModal={setOpenModal} />
     <div className="event-page" id="#">
       <Nav />
-      <Modal open={openModal} setOpenModal={setOpenModal} />
       <div className="event-container">
         {EventDetails.map((EachDept) => {
           return (
@@ -29,19 +30,20 @@ const Events = () => {
                 {EachDept.eventslist.map((EachEvent) => {
                   return (
                     <EventCard
-                      key={EachEvent.id}
-                      event={EachEvent}
-                      {...EachEvent}
-                      setOpenModal={setOpenModal}
+                    key={EachEvent.id}
+                    event={EachEvent}
+                    {...EachEvent}
+                    setOpenModal={setOpenModal}
                     />
-                  );
-                })}
+                    );
+                  })}
               </div>
             </>
           );
         })}
       </div>
     </div>
+        </>
   );
 };
 

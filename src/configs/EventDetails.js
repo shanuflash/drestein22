@@ -26,7 +26,7 @@
           "Each team will have to code the program for the found algorithm in either C programming or Python language and the first team to complete the coding will be the winner of the event",
         tag: "EVENT",
         img: "https://www.gstatic.com/mobilesdk/191021_mobilesdk/discoverycards/appdistro@2x.png",
-        logo: "cse1.jpeg",
+        logo: "cse1.png",
         staff: [
           {
             name: "Dr.Sujatha",
@@ -87,7 +87,7 @@
           "FIGMA.FLUID UI.VISILI AI.",
         tag: "EVENT",
         img: "https://www.gstatic.com/mobilesdk/191021_mobilesdk/discoverycards/appdistro@2x.png",
-        logo: "cse2.jpeg",
+        logo: "cse2.png",
         staff: [
           {
             name: "Dr.Gopirajan PV ",
@@ -153,7 +153,7 @@
 
         tag: "EVENT",
         img: "https://www.gstatic.com/mobilesdk/191021_mobilesdk/discoverycards/appdistro@2x.png",
-        logo: "cse3.jpeg",
+        logo: "cse3.png",
         staff: [
           {
             name: "Dr.Anitha Julian ",
@@ -214,7 +214,7 @@
         tag: "EVENT",
 
         img: "https://www.gstatic.com/mobilesdk/191021_mobilesdk/discoverycards/appdistro@2x.png",
-        logo: "cse4.jpeg",
+        logo: "cse4.png",
         staff: [
           {
             name: "Dr.Vijay Anand  ",
@@ -1635,7 +1635,7 @@
         round1:
           "30 seconds per QUESTION .Correct answer will be rewarded with two points.10 Questions per round ",
         prize:
-          " FIRST PRIZES: 2500 RUPEES SECOND PRIZE: 1500 RUPEES .THIRD PRIZE: 1000 RUPEES",
+          "FIRST PRIZES: 2500 RUPEES SECOND PRIZE: 1500 RUPEES .THIRD PRIZE: 1000 RUPEES",
         round2:
           "20 seconds per QUESTION .Correct answer will be rewarded with two points .10 Questions per round.SELECTION PROCESS: Winners will be based on MAXIMUM POINTS .",
         img: "https://www.gstatic.com/mobilesdk/191021_mobilesdk/discoverycards/appdistro@2x.png",
