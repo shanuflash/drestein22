@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./styles/form.css";
 import Nav from "../Nav/Nav";
 import { useState } from "react";
@@ -28,7 +28,7 @@ import List from "@mui/joy/List";
 import ListItem from "@mui/joy/ListItem";
 import Checkbox from "@mui/joy/Checkbox";
 import Alert from "@mui/joy/Alert";
-import { uuidv4 } from "@firebase/util";
+import { isEmpty, uuidv4 } from "@firebase/util";
 import { toast } from "react-toastify";
 import { doc } from "firebase/firestore";
 import { db } from "../../configs/Firebase.config";
@@ -120,6 +120,14 @@ const Form = () => {
   const [qr, setqr] = useState("");
   const [load, setload] = useState(false);
   const [confirmMsg, setconfirmMsg] = useState(false);
+  const [eventName, setEventName] = React.useState({
+    
+    'CSE':[],
+    'IT':[],
+    'EEE':[],
+    'ECE':[],
+    
+    });
   const handleChange = (e) => {
     setformdata((prevState) => ({
       ...prevState,
@@ -129,40 +137,49 @@ const Form = () => {
 
   const handlesubmit = async (e) => {
     e.preventDefault();
-    setload(true);
+    // setload(true);
     formdata.id = uuidv4();
     formdata.cashPaid = false;
-    const cityRef = doc(db, "RegisteredPeople", `${formdata.id}`);
-
-    setDoc(cityRef, formdata)
-      .then(async () => {
-        console.log("uploaded");
-        const sendqr = await fetch(
-          `https://chart.googleapis.com/chart?chs=200x200&cht=qr&chl=https://main--effulgent-horse-1b60e3.netlify.app/user/${cityRef.id}&choe=UTF-8`
-        );
-        const QrUrl = sendqr.url;
-        console.log(QrUrl);
-        if (window.Email) {
-          await window.Email.send({
-            SecureToken: process.env.REACT_APP_EMAILCODE_ID,
-            To: formdata.email,
-            From: "gleedara@gmail.com",
-            Subject: "congrats on registration in Drestein Event 🎉🎉",
-            Body: `<h2>name : ${formdata.fname} ${formdata.lname}</h2>
-                         <h2>college : ${formdata.college}</h2>
-                         <h2>Rollno : ${formdata.regno}</h2>
-                       <img src="${QrUrl}" alt ='${cityRef.id}'>
-                `,
-          }).then(() => {
-            alert("Email send to you successfully");
-            setload(false);
-            setconfirmMsg(true);
-          });
+    formdata.CashToBePaid=0;
+    for(const key in eventName){
+   
+   console.log('thisd:',eventName[key])
+        if(!isEmpty(eventName[key])){
+          formdata.CashToBePaid=150
         }
-      })
-      .catch((e) => {
-        toast.error(e);
-      });
+    }
+    console.log(formdata)
+    // const cityRef = doc(db, "RegisteredPeople", `${formdata.id}`);
+
+    // setDoc(cityRef, formdata)
+    //   .then(async () => {
+    //     console.log("uploaded");
+    //     const sendqr = await fetch(
+    //       `https://chart.googleapis.com/chart?chs=200x200&cht=qr&chl=https://main--effulgent-horse-1b60e3.netlify.app/user/${cityRef.id}&choe=UTF-8`
+    //     );
+    //     const QrUrl = sendqr.url;
+    //     console.log(QrUrl);
+    //     if (window.Email) {
+    //       await window.Email.send({
+    //         SecureToken: process.env.REACT_APP_EMAILCODE_ID,
+    //         To: formdata.email,
+    //         From: "gleedara@gmail.com",
+    //         Subject: "congrats on registration in Drestein Event 🎉🎉",
+    //         Body: `<h2>name : ${formdata.fname} ${formdata.lname}</h2>
+    //                      <h2>college : ${formdata.college}</h2>
+    //                      <h2>Rollno : ${formdata.regno}</h2>
+    //                    <img src="${QrUrl}" alt ='${cityRef.id}'>
+    //             `,
+    //       }).then(() => {
+    //         alert("Email send to you successfully");
+    //         setload(false);
+    //         setconfirmMsg(true);
+    //       });
+    //     }
+    //   })
+    //   .catch((e) => {
+    //     toast.error(e);
+    //   });
   };
 
   const handleChangeForSelect = (e) => {
@@ -173,32 +190,43 @@ const Form = () => {
     }));
   };
   const [testtt, settesttt] = React.useState([]);
-  const [eventName, setEventName] = React.useState([]);
+
+useEffect(()=>{
+  console.log(eventName)
+},[eventName])
   const handleChangeT = (event) => {
+    // console.log('this ',event.target.name)
     const {
-      target: { value },
+      target: { value ,name},
     } = event;
-    setEventName(typeof value === "string" ? value.split(",") : value);
+    
+    // setEventName(typeof value === "string" ? value.split(",") : value);
+
+    setEventName(pre=>({...pre,[name]:[...value]}))
+    // console.log('this is value :',event.target)
+  
   };
+
+
   const test = [
     {
-      name: "cse",
+      name: "CSE",
       events: ["The Lost Code", "UI Design", "Blind Coding", "Ideathon"],
     },
     {
       name: "IT",
-      events: ["test", "testtt"],
+      events: ["event 1", "event 2"],
     },
     {
       name: "ECE",
-      events: ["123", "456"],
+      events: ["eceevent1", "eceevent2"],
     },
     {
-      name: "EEEeeeeeeee",
-      events: ["098", "8787"],
+      name: "EEE",
+      events: ["EEEevent1", "EEEevent2"],
     },
   ];
-  console.log(test);
+  // console.log(test);
 
   console.log(formdata);
   return (
@@ -404,7 +432,8 @@ const Form = () => {
                       <SelectM
                         required
                         multiple
-                        value={eventName}
+                        value={eventName[depart.name]}
+                        name={depart.name}
                         onChange={handleChangeT}
                         input={<FilledInput label={depart.name} />}
                         renderValue={(selected) => (
@@ -418,7 +447,7 @@ const Form = () => {
                         )}
                       >
                         {depart.events.map((ev) => (
-                          <MenuItem key={ev} value={ev}>
+                          <MenuItem key={ev}  value={ev}>
                             {ev}
                           </MenuItem>
                         ))}

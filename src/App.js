@@ -20,6 +20,7 @@ import AdminProfile from "./components/Admin/components/AdminProfile";
 import Lander from "./components/LandingPage/Lander";
 import UsersData from "./components/Admin/components/PaidusersDatagrid";
 import Loading from "./Loading";
+import ConditionalValidationGrid from "./dataGrid";
 function App() {
   const [loading, setLoading] = useState(true);
 
@@ -44,7 +45,7 @@ function App() {
 
                 <Route path="/Admin" element={<PrivateRoute />}>
                   <Route path="/Admin" element={<AdminMain />}>
-                    <Route path="users" element={<UsersData />} />
+                    <Route path="users" element={<ConditionalValidationGrid />} />
                     <Route path="unpaid" element={<UnPaidUsers />} />
                     <Route path="scanusers" element={<AdminPannel />} />
                     <Route path="profile" element={<AdminProfile />} />
