@@ -301,13 +301,13 @@ const Form = () => {
         <div
           className="main-form"
           style={{
-            maxWidth: "800px",
+            maxWidth: "100%",
             margin: "0 auto",
           }}
         >
           <CssVarsProvider theme={theme} className="formsheet">
             {/* <ThemeProvider theme={Theme}> */}
-            <form onSubmit={handlesubmit}>
+            <form onSubmit={handlesubmit} style={{ marginInline: "auto" }}>
               <Sheet
                 sx={{
                   width: "90vw",
@@ -521,7 +521,9 @@ const Form = () => {
                       </FormControlM>
                     );
                   })}
-                </div>
+                  </div>
+                  <Checkbox label="Paper Presentation " />
+                  <Checkbox label="Project Display" />
                 <img src={qr} />
                 <Alert
                   variant="outlined"
