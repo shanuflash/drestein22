@@ -45,32 +45,6 @@ const StyledBox = styled(Box)(({ theme }) => ({
   },
 }));
 
-// const rows = [
-//   {
-//     id: 1,
-//     expense: 'Light bill',
-//     price: randomPrice(0, 1000),
-//     dueAt: new Date(2021, 6, 8),
-//     isPaid: false,
-//     paymentMethod: '',
-//   },
-//   {
-//     id: 2,
-//     expense: 'Rent',
-//     price: randomPrice(0, 1000),
-//     dueAt: new Date(2021, 7, 1),
-//     isPaid: false,
-//     paymentMethod: '',
-//   },
-//   {
-//     id: 3,
-//     expense: 'Car insurance',
-//     price: randomPrice(0, 1000),
-//     dueAt: new Date(2021, 7, 4),
-//     isPaid: true,
-//     paymentMethod: 'Wire transfer',
-//   },
-// ];
 const Footer = () => {
   const [message, setMessage] = React.useState("");
   const apiRef = useGridApiContext();
@@ -167,28 +141,27 @@ export default function ConditionalValidationGrid() {
       regno: data.regno,
       gender: data.gender,
       isPaid: data.cashPaid,
-      paymentMethod: data.paymentMethod,
-      IT: isEmpty(data.EventsRegistered.IT) ? "" : data.EventsRegistered.IT,
-      ECE: isEmpty(data.EventsRegistered.ECE) ? "" : data.EventsRegistered.ECE,
-      EEE: isEmpty(data.EventsRegistered.EEE) ? "" : data.EventsRegistered.EEE,
-      CSE: isEmpty(data.EventsRegistered.CSE) ? "" : data.EventsRegistered.CSE,
-      EIE: isEmpty(data.EventsRegistered.EIE) ? "" : data.EventsRegistered.EIE,
+      IT: isEmpty(data.EventsRegistered.IT) ? " " : data.EventsRegistered.IT,
+      ECE: isEmpty(data.EventsRegistered.ECE) ? " " : data.EventsRegistered.ECE,
+      EEE: isEmpty(data.EventsRegistered.EEE) ? " " : data.EventsRegistered.EEE,
+      CSE: isEmpty(data.EventsRegistered.CSE) ? " " : data.EventsRegistered.CSE,
+      EIE: isEmpty(data.EventsRegistered.EIE) ? " " : data.EventsRegistered.EIE,
       MECH: isEmpty(data.EventsRegistered.MECH)
-        ? ""
+        ? " "
         : data.EventsRegistered.MECH,
-      AI: isEmpty(data.EventsRegistered.AI) ? "" : data.EventsRegistered.AI,
+      AI: isEmpty(data.EventsRegistered.AI) ? " " : data.EventsRegistered.AI,
       CHEM: isEmpty(data.EventsRegistered.CHEM)
         ? ""
         : data.EventsRegistered.CHEM,
-      MBA: isEmpty(data.EventsRegistered.MBA) ? "" : data.EventsRegistered.MBA,
-      MED: isEmpty(data.EventsRegistered.MED) ? "" : data.EventsRegistered.MED,
+      MBA: isEmpty(data.EventsRegistered.MBA) ? " " : data.EventsRegistered.MBA,
+      MED: isEmpty(data.EventsRegistered.MED) ? " " : data.EventsRegistered.MED,
       AGRI: isEmpty(data.EventsRegistered.AGRI)
-        ? ""
+        ? " "
         : data.EventsRegistered.AGRI,
       CIVIL: isEmpty(data.EventsRegistered.CIVIL)
-        ? ""
+        ? " "
         : data.EventsRegistered.CIVIL,
-      BME: isEmpty(data.EventsRegistered.BME) ? "" : data.EventsRegistered.BME,
+      BME: isEmpty(data.EventsRegistered.BME) ? " " : data.EventsRegistered.BME,
       cashtobePaid: data.CashToBePaid + " ₹ ",
     };
   });
@@ -234,40 +207,7 @@ export default function ConditionalValidationGrid() {
       editable: true,
       type: "boolean",
     },
-    {
-      field: "paymentMethod",
-      headerName: "Payment method",
-      type: "singleSelect",
-      valueOptions: ["Wire transfer", "Cash"],
-      width: 160,
-      editable: true,
 
-      preProcessEditCellProps: async (params, event) => {
-        const isPaidProps = params.otherFieldsProps.isPaid;
-        const paymentMethod = params;
-        const hasError = isPaidProps.value && !params.props.value;
-
-        if (!hasError) {
-          setload(true);
-
-          const id = params.row.id;
-
-          // setChecked(pre=>!pre)
-          const docRef = doc(db, "RegisteredPeople", `${id}`);
-
-          await updateDoc(docRef, {
-            cashPaid: isPaidProps.value,
-            paymentMethod: params.props.value,
-          }).then(() => {
-            setload(false);
-            toast.success("profile updated");
-
-            // console.log("this is loaf",load.current)
-          });
-        }
-        return { ...params.props, error: hasError };
-      },
-    },
     { field: "IT", headerName: "IT", Width: "150", editable: false },
     { field: "CSE", headerName: "CSE", Width: "150", editable: false },
     { field: "ECE", headerName: "ECE", Width: "150", editable: false },

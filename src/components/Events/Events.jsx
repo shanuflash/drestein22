@@ -17,33 +17,33 @@ const Events = () => {
   return (
     <>
       <Modal open={openModal} setOpenModal={setOpenModal} />
-    <div className="event-page" id="#">
-      <Nav />
-      <div className="event-container">
-        {EventDetails.map((EachDept) => {
-          return (
-            <>
-              <div className="top" id={EachDept.id}>
-                <div className="title">{EachDept.title}</div>
-              </div>
-              <div className="wrapper">
-                {EachDept.eventslist.map((EachEvent) => {
-                  return (
-                    <EventCard
-                    key={EachEvent.id}
-                    event={EachEvent}
-                    {...EachEvent}
-                    setOpenModal={setOpenModal}
-                    />
+      <div className="event-page" id="#">
+        <Nav />
+        <div className="event-container">
+          {EventDetails.map((EachDept) => {
+            return (
+              <>
+                <div className="top" id={EachDept.id}>
+                  <div className="title">{EachDept.title}</div>
+                </div>
+                <div className="wrapper">
+                  {EachDept.eventslist.map((EachEvent) => {
+                    return (
+                      <EventCard
+                        key={EachEvent.id}
+                        event={EachEvent}
+                        {...EachEvent}
+                        setOpenModal={setOpenModal}
+                      />
                     );
                   })}
-              </div>
-            </>
-          );
-        })}
+                </div>
+              </>
+            );
+          })}
+        </div>
       </div>
-    </div>
-        </>
+    </>
   );
 };
 

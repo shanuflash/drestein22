@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./styles/countdown.scss";
 
-const CountDown = () => { 
+const CountDown = () => {
   const end = new Date();
   end.setFullYear(2022);
   end.setMonth(10);

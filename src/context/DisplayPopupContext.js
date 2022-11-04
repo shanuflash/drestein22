@@ -11,8 +11,8 @@ export const DisplayPopupProvider = ({ children }) => {
     type: "error",
     venue: "error",
     time: "error",
-    tagline:"error",
-    format:"error",
+    tagline: "error",
+    format: "error",
     members: "error",
     round1: "error",
     round1title: "error",
@@ -26,7 +26,7 @@ export const DisplayPopupProvider = ({ children }) => {
     prize: "error",
     staff: [],
     student: [],
-    logo:"error",
+    logo: "error",
   });
   return (
     <DisplayPopupContext.Provider

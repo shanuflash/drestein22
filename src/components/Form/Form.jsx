@@ -150,7 +150,6 @@ const Form = () => {
     formdata.id = uuidv4();
     formdata.cashPaid = false;
     formdata.CashToBePaid = 0;
-    formdata.paymentMethod = "";
     for (const key in eventName) {
       console.log("thisd:", eventName[key]);
       if (!isEmpty(eventName[key])) {

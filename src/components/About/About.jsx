@@ -6,7 +6,11 @@ function About() {
   const AboutHead = styled.div`
     height: auto;
     width: 100vw;
-    background: linear-gradient(45deg, rgb(0 40 86 / 75%) 51.2%, rgb(0 125 66 / 75%) 98.6%);
+    background: linear-gradient(
+      45deg,
+      rgb(0 40 86 / 75%) 51.2%,
+      rgb(0 125 66 / 75%) 98.6%
+    );
     margin-top: 100px;
     display: flex;
     justify-content: center;
