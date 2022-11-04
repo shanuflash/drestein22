@@ -120,6 +120,8 @@ const Form = () => {
   const [qr, setqr] = useState("");
   const [load, setload] = useState(false);
   const [confirmMsg, setconfirmMsg] = useState(false);
+  const [Project, setProject] = React.useState(false);
+  const [Paper, setPaper] = React.useState(false);
   const [eventName, setEventName] = React.useState({
     CSE: [],
     IT: [],
@@ -290,7 +292,6 @@ const Form = () => {
     },
   ];
 
-  console.log(formdata);
   return (
     <div className="headcontainer" data-joy-color-scheme="dark">
       {load && <Loading />}
@@ -310,7 +311,7 @@ const Form = () => {
             <form onSubmit={handlesubmit} style={{ marginInline: "auto" }}>
               <Sheet
                 sx={{
-                  width: "90vw",
+                  width: "80vw",
                   mx: 2,
                   my: 4,
                   py: 3,
@@ -487,10 +488,22 @@ const Form = () => {
                   placeholder="johndoe@email.com"
                   label="Email"
                 />
-                <div style={{}}>
+                <Divider sx={{ "--Divider-childPosition": `50%` }}>
+                  Department Events
+                </Divider>
+                <div
+                  style={{
+                    display: "flex",
+                    justifyContent: "center",
+                    flexWrap: "wrap",
+                  }}
+                >
                   {test.map((depart) => {
                     return (
-                      <FormControlM sx={{ m: 1, width: "30%" }}>
+                      <FormControlM
+                        style={{ margin: "10px", width: "30%" }}
+                        // sx={{ m: 1, width: "30%" }}
+                      >
                         <InputLabel>{depart.name}</InputLabel>
                         <SelectM
                           multiple
@@ -521,9 +534,32 @@ const Form = () => {
                       </FormControlM>
                     );
                   })}
-                  </div>
-                  <Checkbox label="Paper Presentation " />
-                  <Checkbox label="Project Display" />
+                </div>
+                <Divider sx={{ "--Divider-childPosition": `50%` }}>
+                  Other Events
+                </Divider>
+                <div
+                  style={{ display: "flex", justifyContent: "space-evenly" }}
+                >
+                  <Checkbox
+                    color="primary"
+                    size="lg"
+                    label="Paper Presentation"
+                    onChange={(e) => {
+                      console.log("target checked? - ", e.target.checked);
+                      setPaper(e.target.checked);
+                    }}
+                  />
+                  <Checkbox
+                    color="primary"
+                    size="lg"
+                    label="Project Display"
+                    onChange={(e) => {
+                      console.log("target checked? - ", e.target.checked);
+                      setProject(e.target.checked);
+                    }}
+                  />
+                </div>
                 <img src={qr} />
                 <Alert
                   variant="outlined"
@@ -541,13 +577,20 @@ const Form = () => {
                     processing your data don't reload the page
                   </Alert>
                 )}
-                <input
-                  style={{ width: "100px" }}
+                {/* <input
+                  style={{ width: "20vw", align: "center" }}
                   type="submit"
                   value={load ? "Processing" : "Register"}
                   disabled={load}
-                />
-                {/* <Button sx={{ mt: 1 }}></Button> */}
+                /> */}
+                <Button
+                  type="submit"
+                  value={load ? "Processing" : "Register"}
+                  disabled={load}
+                  sx={{ mt: 1 }}
+                >
+                  Register
+                </Button>
               </Sheet>
             </form>
           </CssVarsProvider>

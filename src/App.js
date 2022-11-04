@@ -17,46 +17,35 @@ import AdminPannel from "./components/Admin/components/ScanUsers";
 import { UserProvider } from "./components/Admin/contexts/AdminContext";
 import SingleUserPage from "./components/Admin/components/SingleUserPage";
 import AdminProfile from "./components/Admin/components/AdminProfile";
-import Lander from "./components/LandingPage/Lander";
 import UsersData from "./components/Admin/components/PaidusersDatagrid";
-import Loading from "./Loading";
 import ConditionalValidationGrid from "./components/Admin/components/dataGrid";
 function App() {
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    setTimeout(() => setLoading(false), 2000);
-  }, []);
   return (
     <>
-      {loading ? (
-        <Lander />
-      ) : (
-        <UserProvider>
-          <div>
-            <DisplayPopupProvider>
-              <Routes>
-                <Route path="/" element={<Main />} />
-                <Route path="form" element={<Form />} />
-                <Route path="events" element={<Events />} />
-                <Route path="Admin/login" element={<SignIn />} />
-                <Route path="*" element={<h1>page not found</h1>} />
-                <Route path="user/:userid" element={<SingleUserPage />} />
+      <UserProvider>
+        <div>
+          <DisplayPopupProvider>
+            <Routes>
+              <Route path="/" element={<Main />} />
+              <Route path="form" element={<Form />} />
+              <Route path="events" element={<Events />} />
+              <Route path="Admin/login" element={<SignIn />} />
+              <Route path="*" element={<h1>page not found</h1>} />
+              <Route path="user/:userid" element={<SingleUserPage />} />
 
-                <Route path="/Admin" element={<PrivateRoute />}>
-                  <Route path="/Admin" element={<AdminMain />}>
-                    <Route path="users" element={<ConditionalValidationGrid />} />
-                    <Route path="unpaid" element={<UnPaidUsers />} />
-                    <Route path="scanusers" element={<AdminPannel />} />
-                    <Route path="profile" element={<AdminProfile />} />
-                  </Route>
+              <Route path="/Admin" element={<PrivateRoute />}>
+                <Route path="/Admin" element={<AdminMain />}>
+                  <Route path="users" element={<ConditionalValidationGrid />} />
+                  <Route path="unpaid" element={<UnPaidUsers />} />
+                  <Route path="scanusers" element={<AdminPannel />} />
+                  <Route path="profile" element={<AdminProfile />} />
                 </Route>
-              </Routes>
-              <ToastContainer />
-            </DisplayPopupProvider>
-          </div>
-        </UserProvider>
-      )}
+              </Route>
+            </Routes>
+            <ToastContainer />
+          </DisplayPopupProvider>
+        </div>
+      </UserProvider>
     </>
   );
 }
