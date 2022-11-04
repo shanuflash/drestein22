@@ -73,12 +73,12 @@ function UserInfoCard({ data, Scanpage }) {
   ];
   return (
     <UserCard paid={cashPaid}>
-      <p>Name : {fname + " " + lname}</p>
-      <p>Rgister No : {regno}</p>
-      <p>Department : {dept}</p>
-      <p>Year : {year}</p>
-      <p>college : {college}</p>
-      <p>gender : {gender}</p>
+      <p>Name: {fname + " " + lname}</p>
+      <p>Rgister No: {regno}</p>
+      <p>Department: {dept}</p>
+      <p>Year: {year}</p>
+      <p>College: {college}</p>
+      <p>Gender: {gender}</p>
       <div>
         <h4>Departments Events</h4>
 
