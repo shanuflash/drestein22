@@ -103,7 +103,7 @@ function DepartMentCard({ img, title, des, color, bgtext, mbtm, id }) {
     color: #fff;
     margin-top: ${mbtm};
   `;
-  
+
   return (
     <motion.div
       initial="offscreen"

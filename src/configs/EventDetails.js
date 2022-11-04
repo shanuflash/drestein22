@@ -1634,8 +1634,6 @@
         rules: "",
         round1:
           "30 seconds per QUESTION .Correct answer will be rewarded with two points.10 Questions per round ",
-        prize:
-          "FIRST PRIZES: 2500 RUPEES SECOND PRIZE: 1500 RUPEES .THIRD PRIZE: 1000 RUPEES",
         round2:
           "20 seconds per QUESTION .Correct answer will be rewarded with two points .10 Questions per round.SELECTION PROCESS: Winners will be based on MAXIMUM POINTS .",
         img: "https://www.gstatic.com/mobilesdk/191021_mobilesdk/discoverycards/appdistro@2x.png",
@@ -1672,7 +1670,6 @@
         round2:
           " Maximum 2 members in a team.10 minutes per round. 10 Questions per round .Every correct answer carries 2 points .Selection is based on maximum points",
         round3: "Maximum 2 members in a team .5 minutes per round.10 Questions per round.Every correct answer carries 2 points Selection is based on maximum points ",
-        prize: "FIRST PRIZES: 2500 RUPEES .SECOND PRIZE: 1500 RUPEES .THIRD PRIZE: 1000 RUPEES ",
         tag: "EVENT",
         img: "https://www.gstatic.com/mobilesdk/191021_mobilesdk/discoverycards/appdistro@2x.png",
         logo: "eie2.jpeg",

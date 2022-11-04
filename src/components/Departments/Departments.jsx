@@ -28,16 +28,14 @@ function Departments() {
         initial={{ y: 100, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
         transition={{ duration: 1 }}
-        viewport={{ once: false, amount: 1 }}
+        viewport={{ once: true, amount: 1 }}
         className="DeptHead"
       >
         <div className="DeptHeadTxt">Departments</div>
       </motion.h1>
       <DepartmentContainer>
         {departobj.map((data, i) => {
-          return (
-              <DepartMentCard key={i} {...data} />
-          );
+          return <DepartMentCard key={i} {...data} />;
         })}
       </DepartmentContainer>
 
@@ -45,16 +43,16 @@ function Departments() {
         initial={{ y: 100, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
         transition={{ duration: 1 }}
-        viewport={{ once: false, amount: 1 }}
+        viewport={{ once: true, amount: 1 }}
         className="DeptHead"
       >
-        <div className="DeptHeadTxt" style={{fontSize:"8vw"}}>Other Events</div>
+        <div className="DeptHeadTxt" style={{ fontSize: "8vw" }}>
+          Other Events
+        </div>
       </motion.h1>
       <DepartmentContainer>
         {comobj.map((data, i) => {
-          return (
-              <DepartMentCard key={i} {...data} />
-          );
+          return <DepartMentCard key={i} {...data} />;
         })}
       </DepartmentContainer>
     </>
