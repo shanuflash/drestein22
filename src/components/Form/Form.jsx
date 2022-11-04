@@ -564,7 +564,11 @@ const Form = () => {
                 <Alert
                   variant="outlined"
                   color="danger"
-                  sx={{ align: "center" }}
+                  sx={{
+                    align: "center",
+                    justifyContent: "center",
+                  }}
+                  // style={{}}
                 >
                   Registeration Fee of ₹150 has to be paid on the event date.
                 </Alert>
