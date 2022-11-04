@@ -121,13 +121,20 @@ const Form = () => {
   const [load, setload] = useState(false);
   const [confirmMsg, setconfirmMsg] = useState(false);
   const [eventName, setEventName] = React.useState({
-    
-    'CSE':[],
-    'IT':[],
-    'EEE':[],
-    'ECE':[],
-    
-    });
+    CSE: [],
+    IT: [],
+    EEE: [],
+    ECE: [],
+    EIE: [],
+    MECH: [],
+    CIVIL: [],
+    MED: [],
+    CHEM: [],
+    AGRI: [],
+    AI: [],
+    MBA: [],
+    BME: [],
+  });
   const handleChange = (e) => {
     setformdata((prevState) => ({
       ...prevState,
@@ -140,17 +147,16 @@ const Form = () => {
     setload(true);
     formdata.id = uuidv4();
     formdata.cashPaid = false;
-    formdata.CashToBePaid=0;
-    formdata.paymentMethod=''
-    for(const key in eventName){
-   
-   console.log('thisd:',eventName[key])
-        if(!isEmpty(eventName[key])){
-          formdata.CashToBePaid=150
-          formdata.EventsRegistered=eventName
-        }
+    formdata.CashToBePaid = 0;
+    formdata.paymentMethod = "";
+    for (const key in eventName) {
+      console.log("thisd:", eventName[key]);
+      if (!isEmpty(eventName[key])) {
+        formdata.CashToBePaid = 150;
+        formdata.EventsRegistered = eventName;
+      }
     }
-    console.log(formdata)
+    console.log(formdata);
     const cityRef = doc(db, "RegisteredPeople", `${formdata.id}`);
 
     setDoc(cityRef, formdata)
@@ -193,22 +199,20 @@ const Form = () => {
   };
   const [testtt, settesttt] = React.useState([]);
 
-useEffect(()=>{
-  console.log(eventName)
-},[eventName])
+  useEffect(() => {
+    console.log(eventName);
+  }, [eventName]);
   const handleChangeT = (event) => {
     // console.log('this ',event.target.name)
     const {
-      target: { value ,name},
+      target: { value, name },
     } = event;
-    
+
     // setEventName(typeof value === "string" ? value.split(",") : value);
 
-    setEventName(pre=>({...pre,[name]:[...value]}))
+    setEventName((pre) => ({ ...pre, [name]: [...value] }));
     // console.log('this is value :',event.target)
-  
   };
-
 
   const test = [
     {
@@ -217,7 +221,7 @@ useEffect(()=>{
     },
     {
       name: "IT",
-      events: ["event 1", "event 2"],
+      events: ["Switcheroo", "Game of Codes", "Cipher Hunt", "Codeverse"],
     },
     {
       name: "ECE",
@@ -227,8 +231,64 @@ useEffect(()=>{
       name: "EEE",
       events: ["EEEevent1", "EEEevent2"],
     },
+    {
+      name: "EIE",
+      events: ["Fire Tech", "Tech puzzle", "Debugging theorem", "Instantrix"],
+    },
+    {
+      name: "AGRI",
+      events: [
+        "SHERLOCK HOLMES",
+        "DEVILS ADVOCATE",
+        "TREASURE HUNT",
+        "NEURO COMBAT",
+      ],
+    },
+    {
+      name: "AI",
+      events: [
+        "Code and Debug",
+        "Shark Tank",
+        "Memesrus",
+        "WEB CON",
+        "Data Hunt",
+      ],
+    },
+    {
+      name: "BME",
+      events: [
+        "Med factory",
+        "Mind Flayers",
+        "Kampf geist",
+        "Neurotic Expelliarmus",
+      ],
+    },
+    {
+      name: "CIVIL",
+      events: ["Build-IT", "MAP THE GAP", "CADD Modeling", "Code cracking"],
+    },
+    {
+      name: "CHEM",
+      events: ["PROCESS SNIPPET", "CHEM FLUIDS", "CLASH XCAPE", "CHEM BRIDGE"],
+    },
+    {
+      name: "MECH",
+      events: [
+        "Dezania",
+        "Mr. Machinist",
+        "Water Rocketry",
+        "Cad Modelling And Stimulation",
+      ],
+    },
+    {
+      name: "MBA",
+      events: ["Test", "Test2"],
+    },
+    {
+      name: "MED",
+      events: ["Test", "Test2"],
+    },
   ];
-  // console.log(test);
 
   console.log(formdata);
   return (
@@ -247,235 +307,247 @@ useEffect(()=>{
         >
           <CssVarsProvider theme={theme} className="formsheet">
             {/* <ThemeProvider theme={Theme}> */}
-            <Sheet
-              sx={{
-                width: "90vw",
-                mx: 2,
-                my: 4,
-                py: 3,
-                px: 2,
-                display: "flex",
-                flexDirection: "column",
-                gap: 2,
-                borderRadius: "sm",
-                boxShadow: "md",
-              }}
-              variant="outlined"
-              className="formcontainer"
-            >
-              <div>
-                <Typography level="h4" component="h1">
-                  <b>Register!</b>
-                </Typography>
-                <Typography level="body2">
-                  Register now to take part in events.
-                </Typography>
-              </div>
-              <Divider />
-              <div className="Name">
-                <TextField
-                  name="fname"
-                  required
-                  value={formdata.fname}
-                  onChange={handleChange}
-                  type="text"
-                  placeholder="John"
-                  label="First Name"
-                  sx={{ width: "48%" }}
-                />
-                <TextField
-                  name="lname"
-                  required
-                  value={formdata.lname}
-                  onChange={handleChange}
-                  type="text"
-                  placeholder="Doe"
-                  label="Last Name"
-                  sx={{ width: "48%" }}
-
-                />
-              </div>
-              <TextField
-                name="college"
-                required
-                value={formdata.college}
-                onChange={handleChange}
-                type="text"
-                placeholder="Your college name..."
-                label="College Name"
-              />
-              <div className="yearno">
-                <TextField
-                  name="regno"
-                  required
-                  value={formdata.regno}
-                  onChange={handleChange}
-                  type="number"
-                  placeholder="Your roll number..."
-                  label="Roll Number"
-                  sx={{ width: "48%" }}
-                />
-                <FormControl
-                  sx={{
-                    width: "48%",
-                  }}
-                >
-                  <FormLabel htmlFor="year">Year</FormLabel>
-                  <Select
-                    id="year"
-                    required
-                    data-name="year"
-                    placeholder="Select year..."
-                    value={formdata.year}
-                    onChange={handleChangeForSelect}
-                  >
-                    <Option data-name="year" value="1">
-                      I
-                    </Option>
-                    <Option data-name="year" value="2">
-                      II
-                    </Option>
-                    <Option data-name="year" value="3">
-                      III
-                    </Option>
-                    <Option data-name="year" value="4">
-                      IV
-                    </Option>
-                  </Select>
-                </FormControl>
-              </div>
-              <div
-                style={{
+            <form onSubmit={handlesubmit}>
+              <Sheet
+                sx={{
+                  width: "90vw",
+                  mx: 2,
+                  my: 4,
+                  py: 3,
+                  px: 2,
                   display: "flex",
-                  alignItems: "center",
-                  justifyContent: "space-between",
+                  flexDirection: "column",
+                  gap: 2,
+                  borderRadius: "sm",
+                  boxShadow: "md",
                 }}
+                variant="outlined"
+                className="formcontainer"
               >
-                <FormControl
-                  sx={{
-                    width: "48%",
+                <div>
+                  <Typography level="h4" component="h1">
+                    <b>Register!</b>
+                  </Typography>
+                  <Typography level="body2">
+                    Register now to take part in events.
+                  </Typography>
+                </div>
+                <Divider />
+                <div className="Name">
+                  <TextField
+                    name="fname"
+                    required
+                    value={formdata.fname}
+                    onChange={handleChange}
+                    type="text"
+                    placeholder="John"
+                    label="First Name"
+                    sx={{ width: "48%" }}
+                  />
+                  <TextField
+                    name="lname"
+                    required
+                    value={formdata.lname}
+                    onChange={handleChange}
+                    type="text"
+                    placeholder="Doe"
+                    label="Last Name"
+                    sx={{ width: "48%" }}
+                  />
+                </div>
+                <TextField
+                  name="college"
+                  required
+                  value={formdata.college}
+                  onChange={handleChange}
+                  type="text"
+                  placeholder="Your college name..."
+                  label="College Name"
+                />
+                <div className="yearno">
+                  <TextField
+                    name="regno"
+                    required
+                    value={formdata.regno}
+                    onChange={handleChange}
+                    type="number"
+                    placeholder="Your roll number..."
+                    label="Roll Number"
+                    sx={{ width: "48%" }}
+                  />
+                  <FormControl
+                    sx={{
+                      width: "48%",
+                    }}
+                  >
+                    <FormLabel htmlFor="year">Year</FormLabel>
+                    <Select
+                      id="year"
+                      required
+                      data-name="year"
+                      placeholder="Select year..."
+                      value={formdata.year}
+                      onChange={handleChangeForSelect}
+                    >
+                      <Option data-name="year" value="1">
+                        I
+                      </Option>
+                      <Option data-name="year" value="2">
+                        II
+                      </Option>
+                      <Option data-name="year" value="3">
+                        III
+                      </Option>
+                      <Option data-name="year" value="4">
+                        IV
+                      </Option>
+                    </Select>
+                  </FormControl>
+                </div>
+                <div
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "space-between",
                   }}
                 >
-                  <FormLabel htmlFor="dept">Department</FormLabel>
-                  <Select
-                    id="dept"
-                    required
-                    name="dept"
-                    placeholder="Select department..."
-                    value={formdata.dept}
-                    onChange={handleChangeForSelect}
+                  <FormControl
+                    sx={{
+                      width: "48%",
+                    }}
                   >
-                    <Option data-name="dept" value="1">
-                      IT
-                    </Option>
-                    <Option data-name="dept" value="2">
-                      CSE
-                    </Option>
-                    <Option data-name="dept" value="3">
-                      ECE
-                    </Option>
-                    <Option data-name="dept" value="4">
-                      EEE
-                    </Option>
-                  </Select>
-                </FormControl>
-                <FormControl
-                  sx={{
-                    width: "48%",
-                  }}
-                >
-                  <FormLabel htmlFor="gender">Gender</FormLabel>
-                  <Select
-                    id="gender"
-                    required
-                    name="gender"
-                    placeholder="Select gender..."
-                    value={formdata.gender}
-                    onChange={handleChangeForSelect}
+                    <FormLabel htmlFor="dept">Department</FormLabel>
+                    <Select
+                      id="dept"
+                      required
+                      name="dept"
+                      placeholder="Select department..."
+                      value={formdata.dept}
+                      onChange={handleChangeForSelect}
+                    >
+                      <Option data-name="dept" value="1">
+                        IT
+                      </Option>
+                      <Option data-name="dept" value="2">
+                        CSE
+                      </Option>
+                      <Option data-name="dept" value="3">
+                        ECE
+                      </Option>
+                      <Option data-name="dept" value="4">
+                        EEE
+                      </Option>
+                    </Select>
+                  </FormControl>
+                  <FormControl
+                    sx={{
+                      width: "48%",
+                    }}
                   >
-                    <Option data-name="gender" value="1">
-                      Male
-                    </Option>
-                    <Option data-name="gender" value="2">
-                      Female
-                    </Option>
-                    <Option data-name="gender" value="3">
-                      Other
-                    </Option>
-                    <Option data-name="gender" value="4">
-                      Prefer Not To Say
-                    </Option>
-                  </Select>
-                </FormControl>
-              </div>
+                    <FormLabel htmlFor="gender">Gender</FormLabel>
+                    <Select
+                      id="gender"
+                      required
+                      name="gender"
+                      placeholder="Select gender..."
+                      value={formdata.gender}
+                      onChange={handleChangeForSelect}
+                    >
+                      <Option data-name="gender" value="1">
+                        Male
+                      </Option>
+                      <Option data-name="gender" value="2">
+                        Female
+                      </Option>
+                      <Option data-name="gender" value="3">
+                        Other
+                      </Option>
+                      <Option data-name="gender" value="4">
+                        Prefer Not To Say
+                      </Option>
+                    </Select>
+                  </FormControl>
+                </div>
 
-              <TextField
-                name="phno"
-                required
-                type="number"
-                value={formdata.phno}
-                onChange={handleChange}
-                placeholder="98765*****"
-                label="Phone Number"
-              />
-              <TextField
-                name="email"
-                required
-                value={formdata.email}
-                onChange={handleChange}
-                type="email"
-                placeholder="johndoe@email.com"
-                label="Email"
-              />
-              <div style={{ display: "flex" }}>
-                {test.map((depart) => {
-                  return (
-                    <FormControlM sx={{ m: 1, width: "30%" }}>
-                      <InputLabel>{depart.name}</InputLabel>
-                      <SelectM
-                        required
-                        multiple
-                        value={eventName[depart.name]}
-                        name={depart.name}
-                        onChange={handleChangeT}
-                        input={<FilledInput label={depart.name} />}
-                        renderValue={(selected) => (
-                          <Box
-                            sx={{ display: "flex", flexWrap: "wrap", gap: 0.5 }}
-                          >
-                            {selected.map((value) => (
-                              <Chip key={value}>{value}</Chip>
-                            ))}
-                          </Box>
-                        )}
-                      >
-                        {depart.events.map((ev) => (
-                          <MenuItem key={ev}  value={ev}>
-                            {ev}
-                          </MenuItem>
-                        ))}
-                      </SelectM>
-                    </FormControlM>
-                  );
-                })}
-              </div>
-              <img src={qr} />
-              <Alert variant="outlined" color="danger" sx={{ align: "center" }}>
-                Registeration Fee of ₹150 has to be paid on the event date.
-              </Alert>
-              {load && (
+                <TextField
+                  name="phno"
+                  required
+                  type="number"
+                  value={formdata.phno}
+                  onChange={handleChange}
+                  placeholder="98765*****"
+                  label="Phone Number"
+                />
+                <TextField
+                  name="email"
+                  required
+                  value={formdata.email}
+                  onChange={handleChange}
+                  type="email"
+                  placeholder="johndoe@email.com"
+                  label="Email"
+                />
+                <div style={{}}>
+                  {test.map((depart) => {
+                    return (
+                      <FormControlM sx={{ m: 1, width: "30%" }}>
+                        <InputLabel>{depart.name}</InputLabel>
+                        <SelectM
+                          multiple
+                          value={eventName[depart.name]}
+                          name={depart.name}
+                          onChange={handleChangeT}
+                          input={<FilledInput label={depart.name} />}
+                          renderValue={(selected) => (
+                            <Box
+                              sx={{
+                                display: "flex",
+                                flexWrap: "wrap",
+                                gap: 0.5,
+                              }}
+                            >
+                              {selected.map((value) => (
+                                <Chip key={value}>{value}</Chip>
+                              ))}
+                            </Box>
+                          )}
+                        >
+                          {depart.events.map((ev) => (
+                            <MenuItem key={ev} value={ev}>
+                              {ev}
+                            </MenuItem>
+                          ))}
+                        </SelectM>
+                      </FormControlM>
+                    );
+                  })}
+                </div>
+                <img src={qr} />
                 <Alert
                   variant="outlined"
                   color="danger"
                   sx={{ align: "center" }}
                 >
-                  processing your data don't reload the page
+                  Registeration Fee of ₹150 has to be paid on the event date.
                 </Alert>
-              )}
-              <Button sx={{ mt: 1 }} disabled={load} onClick={handlesubmit}>
-                {load ? "processing" : "register"}
-              </Button>
-            </Sheet>
+                {load && (
+                  <Alert
+                    variant="outlined"
+                    color="danger"
+                    sx={{ align: "center" }}
+                  >
+                    processing your data don't reload the page
+                  </Alert>
+                )}
+                <input
+                  style={{ width: "100px" }}
+                  type="submit"
+                  value={load ? "Processing" : "Register"}
+                  disabled={load}
+                />
+                {/* <Button sx={{ mt: 1 }}></Button> */}
+              </Sheet>
+            </form>
           </CssVarsProvider>
         </div>
       )}
