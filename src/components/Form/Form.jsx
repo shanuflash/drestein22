@@ -137,49 +137,51 @@ const Form = () => {
 
   const handlesubmit = async (e) => {
     e.preventDefault();
-    // setload(true);
+    setload(true);
     formdata.id = uuidv4();
     formdata.cashPaid = false;
     formdata.CashToBePaid=0;
+    formdata.paymentMethod=''
     for(const key in eventName){
    
    console.log('thisd:',eventName[key])
         if(!isEmpty(eventName[key])){
           formdata.CashToBePaid=150
+          formdata.EventsRegistered=eventName
         }
     }
     console.log(formdata)
-    // const cityRef = doc(db, "RegisteredPeople", `${formdata.id}`);
+    const cityRef = doc(db, "RegisteredPeople", `${formdata.id}`);
 
-    // setDoc(cityRef, formdata)
-    //   .then(async () => {
-    //     console.log("uploaded");
-    //     const sendqr = await fetch(
-    //       `https://chart.googleapis.com/chart?chs=200x200&cht=qr&chl=https://main--effulgent-horse-1b60e3.netlify.app/user/${cityRef.id}&choe=UTF-8`
-    //     );
-    //     const QrUrl = sendqr.url;
-    //     console.log(QrUrl);
-    //     if (window.Email) {
-    //       await window.Email.send({
-    //         SecureToken: process.env.REACT_APP_EMAILCODE_ID,
-    //         To: formdata.email,
-    //         From: "gleedara@gmail.com",
-    //         Subject: "congrats on registration in Drestein Event 🎉🎉",
-    //         Body: `<h2>name : ${formdata.fname} ${formdata.lname}</h2>
-    //                      <h2>college : ${formdata.college}</h2>
-    //                      <h2>Rollno : ${formdata.regno}</h2>
-    //                    <img src="${QrUrl}" alt ='${cityRef.id}'>
-    //             `,
-    //       }).then(() => {
-    //         alert("Email send to you successfully");
-    //         setload(false);
-    //         setconfirmMsg(true);
-    //       });
-    //     }
-    //   })
-    //   .catch((e) => {
-    //     toast.error(e);
-    //   });
+    setDoc(cityRef, formdata)
+      .then(async () => {
+        console.log("uploaded");
+        const sendqr = await fetch(
+          `https://chart.googleapis.com/chart?chs=200x200&cht=qr&chl=https://main--effulgent-horse-1b60e3.netlify.app/user/${cityRef.id}&choe=UTF-8`
+        );
+        const QrUrl = sendqr.url;
+        console.log(QrUrl);
+        if (window.Email) {
+          await window.Email.send({
+            SecureToken: process.env.REACT_APP_EMAILCODE_ID,
+            To: formdata.email,
+            From: "gleedara@gmail.com",
+            Subject: "congrats on registration in Drestein Event 🎉🎉",
+            Body: `<h2>name : ${formdata.fname} ${formdata.lname}</h2>
+                         <h2>college : ${formdata.college}</h2>
+                         <h2>Rollno : ${formdata.regno}</h2>
+                       <img src="${QrUrl}" alt ='${cityRef.id}'>
+                `,
+          }).then(() => {
+            alert("Email send to you successfully");
+            setload(false);
+            setconfirmMsg(true);
+          });
+        }
+      })
+      .catch((e) => {
+        toast.error(e);
+      });
   };
 
   const handleChangeForSelect = (e) => {
@@ -290,6 +292,7 @@ useEffect(()=>{
                   placeholder="Doe"
                   label="Last Name"
                   sx={{ width: "48%" }}
+
                 />
               </div>
               <TextField

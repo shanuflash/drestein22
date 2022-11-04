@@ -20,7 +20,7 @@ import AdminProfile from "./components/Admin/components/AdminProfile";
 import Lander from "./components/LandingPage/Lander";
 import UsersData from "./components/Admin/components/PaidusersDatagrid";
 import Loading from "./Loading";
-import ConditionalValidationGrid from "./dataGrid";
+import ConditionalValidationGrid from "./components/Admin/components/dataGrid";
 function App() {
   const [loading, setLoading] = useState(true);
 
