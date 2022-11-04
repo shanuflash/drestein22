@@ -46,7 +46,7 @@ function UserInfoCard({ data, Scanpage }) {
     });
     // console.log(e.target.checked)
   };
-  const deptnames = ['IT','CSE','ECE','EEE']
+  const deptnames = ['IT','CSE','ECE','EEE', 'EIE', 'MECH', 'AI', 'CHEM', 'MBA', 'MED', 'AGRI', 'CIVIL', 'BME']
   return (
     <UserCard paid={cashPaid}>
       <p>Name : {fname + " " + lname}</p>
