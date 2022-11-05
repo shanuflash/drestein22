@@ -545,7 +545,6 @@ const Form = () => {
                     size="lg"
                     label="Paper Presentation"
                     onChange={(e) => {
-                      console.log("target checked? - ", e.target.checked);
                       setPaper(e.target.checked);
                     }}
                   />
