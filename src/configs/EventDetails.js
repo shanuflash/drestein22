@@ -1630,6 +1630,7 @@
         type: "solo",
         venue: "TBA",
         time: "TBA",
+        tag: "EVENT",
         members: "1",
         rules: "",
         round1:
