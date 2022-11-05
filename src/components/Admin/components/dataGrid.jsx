@@ -129,11 +129,10 @@ export default function ConditionalValidationGrid() {
     //   setPaidusers(paid);
     //   setload(false);
     // });
-  
   }, []);
 
   const users = paidUsers.map((data) => {
-console.log(data)
+    console.log(data);
     return {
       id: data.id,
       id: data.id,
@@ -144,28 +143,51 @@ console.log(data)
       regno: data.regno,
       gender: data.gender,
       isPaidD: data.cashPaid,
-      isPaperPresentationPaid:data.cashPaidForPaper,
-      isProjectPresentationPaid:data.cashPaidForProject
-      ,
-      PaperPresentation:data.PaperPresentation ? "Yes" :"No" 
-      ,
-      ProjectPresentation:data.ProjectPresentation ?"Yes":'no'
-      ,
-  AmountPaid :data.AmountPaid+" ₹ ",
+      isPaperPresentationPaid: data.cashPaidForPaper,
+      isProjectPresentationPaid: data.cashPaidForProject,
+      PaperPresentation: data.PaperPresentation ? "Yes" : "No",
+      ProjectPresentation: data.ProjectPresentation ? "Yes" : "no",
+      AmountPaid: data.AmountPaid + " ₹ ",
 
-      IT: isEmpty(data.EventsRegistered.IT) ? " " : data.EventsRegistered.IT.join(','),
-      ECE: isEmpty(data.EventsRegistered.ECE) ? " " : data.EventsRegistered.ECE.join(','),
-      EEE: isEmpty(data.EventsRegistered.EEE) ? " " : data.EventsRegistered.EEE.join(','),
-      CSE: isEmpty(data.EventsRegistered.CSE) ? " " : data.EventsRegistered.CSE.join(','),
-      EIE: isEmpty(data.EventsRegistered.EIE) ? " " : data.EventsRegistered.EIE.join(','),
-      MECH: isEmpty(data.EventsRegistered.MECH)? " ": data.EventsRegistered.MECH.join(','),
-      AI: isEmpty(data.EventsRegistered.AI) ? " " : data.EventsRegistered.AI.join(','),
-      CHEM: isEmpty(data.EventsRegistered.CHEM)? " ": data.EventsRegistered.CHEM.join(','),
-      MBA: isEmpty(data.EventsRegistered.MBA) ? " " : data.EventsRegistered.MBA.join(','),
-      MED: isEmpty(data.EventsRegistered.MED) ? " " : data.EventsRegistered.MED.join(','),
-      AGRI: isEmpty(data.EventsRegistered.AGRI)? " ": data.EventsRegistered.AGRI.join(','),
-      CIVIL: isEmpty(data.EventsRegistered.CIVIL) ? " " : data.EventsRegistered.CIVIL.join(','),
-      BME: isEmpty(data.EventsRegistered.BME) ? " " : data.EventsRegistered.BME.join(','),
+      IT: isEmpty(data.EventsRegistered.IT)
+        ? " "
+        : data.EventsRegistered.IT.join(","),
+      ECE: isEmpty(data.EventsRegistered.ECE)
+        ? " "
+        : data.EventsRegistered.ECE.join(","),
+      EEE: isEmpty(data.EventsRegistered.EEE)
+        ? " "
+        : data.EventsRegistered.EEE.join(","),
+      CSE: isEmpty(data.EventsRegistered.CSE)
+        ? " "
+        : data.EventsRegistered.CSE.join(","),
+      EIE: isEmpty(data.EventsRegistered.EIE)
+        ? " "
+        : data.EventsRegistered.EIE.join(","),
+      MECH: isEmpty(data.EventsRegistered.MECH)
+        ? " "
+        : data.EventsRegistered.MECH.join(","),
+      AI: isEmpty(data.EventsRegistered.AI)
+        ? " "
+        : data.EventsRegistered.AI.join(","),
+      CHEM: isEmpty(data.EventsRegistered.CHEM)
+        ? " "
+        : data.EventsRegistered.CHEM.join(","),
+      MBA: isEmpty(data.EventsRegistered.MBA)
+        ? " "
+        : data.EventsRegistered.MBA.join(","),
+      MED: isEmpty(data.EventsRegistered.MED)
+        ? " "
+        : data.EventsRegistered.MED.join(","),
+      AGRI: isEmpty(data.EventsRegistered.AGRI)
+        ? " "
+        : data.EventsRegistered.AGRI.join(","),
+      CIVIL: isEmpty(data.EventsRegistered.CIVIL)
+        ? " "
+        : data.EventsRegistered.CIVIL.join(","),
+      BME: isEmpty(data.EventsRegistered.BME)
+        ? " "
+        : data.EventsRegistered.BME.join(","),
       cashtobePaid: data.CashToBePaid + " ₹ ",
     };
   });
@@ -184,9 +206,8 @@ console.log(data)
     // if(data.cashPaidForPaper){
     //   collectedcash +=data.AmountPaid;
     // }
-
   });
-// console.log(users)
+  // console.log(users)
   const rows = [...users];
 
   const columns = [
@@ -213,56 +234,46 @@ console.log(data)
 
     { editable: false, field: "gender", headerName: "gender", width: 100 },
 
-    { field: "ProjectPresentation", headerName: "Project presentation",width: 150, editable: false },
-    
+    {
+      field: "ProjectPresentation",
+      headerName: "Project presentation",
+      width: 150,
+      editable: false,
+    },
 
     {
-      field:'isProjectPresentationPaid',  headerName: "is Project Department?",
+      field: "isProjectPresentationPaid",
+      headerName: "is Project Department?",
       width: 150,
       editable: false,
       type: "boolean",
     },
-    
-    { field: "PaperPresentation", 
-    headerName: "Paper presentation",
-     width: 150, editable: false, 
+
+    {
+      field: "PaperPresentation",
+      headerName: "Paper presentation",
+      width: 150,
+      editable: false,
     },
 
-    { field: "isPaperPresentationPaid",
-     headerName: "is Paper Presentation", 
-     width: 150,
-     type:'boolean',
-      editable: false ,
-  
-      },
+    {
+      field: "isPaperPresentationPaid",
+      headerName: "is Paper Presentation",
+      width: 150,
+      type: "boolean",
+      editable: false,
+    },
     {
       field: "isPaidD",
       headerName: "is Paid Department?",
       width: 150,
       editable: false,
       type: "boolean",
-   
-        // const hasError = isPaidProps.value && !params.props.value;
-    
 
-      
-       
+      // const hasError = isPaidProps.value && !params.props.value;
 
-        
-      
-    // setChecked(pre=>!pre)
-
- 
-
-
-
-        
-  
-},
-
-
-
-        
+      // setChecked(pre=>!pre)
+    },
 
     {
       editable: false,
@@ -276,9 +287,9 @@ console.log(data)
       headerName: "Total amount",
       width: 100,
     },
-   
-    { field: "IT", headerName: "IT", width: '150', editable: false },
-    { field: "CSE", headerName: "CSE", width: '150', editable: false },
+
+    { field: "IT", headerName: "IT", width: "150", editable: false },
+    { field: "CSE", headerName: "CSE", width: "150", editable: false },
     { field: "ECE", headerName: "ECE", Width: "150", editable: false },
     { field: "EEE", headerName: "EEE", minWidth: "150", editable: false },
     { field: "EIE", headerName: "EIE", minWidth: "150", editable: false },
@@ -290,9 +301,7 @@ console.log(data)
     { field: "AGRI", headerName: "AGRI", minWidth: "150", editable: false },
     { field: "CIVIL", headerName: "CIVIL", minWidth: "150", editable: false },
     { field: "BME", headerName: "BME", minWidth: "150", editable: false },
-
   ];
-
 
   return (
     <StyledBox>
@@ -303,9 +312,7 @@ console.log(data)
           Toolbar: CustomToolbar,
           Footer,
         }}
-
-        getRowHeight={() => 'auto'}
-
+        getRowHeight={() => "auto"}
         rows={rows}
         columns={columns}
         editMode="row"
@@ -317,8 +324,6 @@ console.log(data)
             color: "primary.main",
           },
         }}
-
-
         experimentalFeatures={{ newEditingApi: true }}
         // onCellEditStart={(params, event) => {
         //   console.log(params);

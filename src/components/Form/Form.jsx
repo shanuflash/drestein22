@@ -167,14 +167,16 @@ const Form = () => {
 
     formdata.AmountPaid = 0;
 
-    for (const key in eventName) {
-      console.log("thisd:", eventName[key]);
-      if (!isEmpty(eventName[key])) {
-        formdata.CashToBePaid = 150;
-        formdata.DEvent = true;
-      }
+    // for (const key in eventName) {
+    //   console.log("thisd:", eventName[key]);
+    //   if (!isEmpty(eventName[key])) {
+    //     formdata.CashToBePaid += 150;
+    //     formdata.DEvent = true;
+    //   }
+    // }
+    if (Event === true) {
+      formdata.CashToBePaid += 150;
     }
-
     if (Paper === true) {
       formdata.CashToBePaid += 250;
     }

@@ -11,7 +11,7 @@ import { toast } from "react-toastify";
 import Chip from "@mui/material/Chip";
 import Stack from "@mui/material/Stack";
 import { isEmpty } from "@firebase/util";
-import {Card} from "@mui/material";
+import { Card } from "@mui/material";
 import { width } from "@mui/system";
 
 const UserCard = styled.div`
@@ -24,9 +24,12 @@ const UserCard = styled.div`
   align-items: flex-start;
   justify-content: center;
   border-radius: 1rem;
-  background: ${(props) => (props.paid&&props.PaperPaid&&props.ProjectPaid ? "#bbffca;" : "#fdaeae")};
-  
-   /* background: #f8f8f8; */
+  background: ${(props) =>
+    props.paid && props.PaperPaid && props.ProjectPaid
+      ? "#bbffca;"
+      : "#fdaeae"};
+
+  /* background: #f8f8f8; */
 `;
 
 function UserInfoCard({ data, Scanpage }) {
@@ -43,8 +46,7 @@ function UserInfoCard({ data, Scanpage }) {
     regno,
     id,
     EventsRegistered,
-    AmountPaid
-    ,
+    AmountPaid,
     PaperPresentation,
     ProjectPresentation,
     cashPaidForPaper,
@@ -52,24 +54,24 @@ function UserInfoCard({ data, Scanpage }) {
     CashToBePaid,
     DEvent,
     email,
-    phno
+    phno,
   } = data;
-console.log(AmountPaid)
-  const handleChange = async (e, id,AmountPaid) => {
+  console.log(AmountPaid);
+  const handleChange = async (e, id, AmountPaid) => {
     setload(true);
     // setChecked(pre=>!pre)
     const docRef = doc(db, "RegisteredPeople", `${id}`);
     console.log(e.target.checked);
-     let amount  = 0
-     if(e.target.checked){
-      amount = AmountPaid+150
-     }else{
-      amount = AmountPaid-150
-     }
+    let amount = 0;
+    if (e.target.checked) {
+      amount = AmountPaid + 150;
+    } else {
+      amount = AmountPaid - 150;
+    }
 
     await updateDoc(docRef, {
       cashPaid: e.target.checked,
-      AmountPaid:amount,
+      AmountPaid: amount,
     }).then(() => {
       setload(false);
       toast.success("profile updated");
@@ -79,53 +81,53 @@ console.log(AmountPaid)
     // console.log(e.target.checked)
   };
 
-const handleChangeforProject = async (e, id,AmountPaid) => {
-  setload(true);
-  // setChecked(pre=>!pre)
-  const docRef = doc(db, "RegisteredPeople", `${id}`);
-  console.log(e.target.checked);
-   let amount  = 0
-   if(e.target.checked){
-    amount = AmountPaid+200
-   }else{
-    amount = AmountPaid-200
-   }
+  const handleChangeforProject = async (e, id, AmountPaid) => {
+    setload(true);
+    // setChecked(pre=>!pre)
+    const docRef = doc(db, "RegisteredPeople", `${id}`);
+    console.log(e.target.checked);
+    let amount = 0;
+    if (e.target.checked) {
+      amount = AmountPaid + 200;
+    } else {
+      amount = AmountPaid - 200;
+    }
 
-  await updateDoc(docRef, {
-    cashPaidForProject:e.target.checked,
-    AmountPaid:amount,
-  }).then(() => {
-    setload(false);
-    toast.success("profile updated");
+    await updateDoc(docRef, {
+      cashPaidForProject: e.target.checked,
+      AmountPaid: amount,
+    }).then(() => {
+      setload(false);
+      toast.success("profile updated");
 
-    // console.log("this is loaf",load.current)
-  });
-  // console.log(e.target.checked)
-};
+      // console.log("this is loaf",load.current)
+    });
+    // console.log(e.target.checked)
+  };
 
-const handleChangeforPaper = async (e, id,AmountPaid) => {
-  setload(true);
-  // setChecked(pre=>!pre)
-  const docRef = doc(db, "RegisteredPeople", `${id}`);
-  console.log(e.target.checked);
-   let amount  = 0
-   if(e.target.checked){
-    amount = AmountPaid+250
-   }else{
-    amount = AmountPaid-250
-   }
+  const handleChangeforPaper = async (e, id, AmountPaid) => {
+    setload(true);
+    // setChecked(pre=>!pre)
+    const docRef = doc(db, "RegisteredPeople", `${id}`);
+    console.log(e.target.checked);
+    let amount = 0;
+    if (e.target.checked) {
+      amount = AmountPaid + 250;
+    } else {
+      amount = AmountPaid - 250;
+    }
 
-  await updateDoc(docRef, {
-    cashPaidForPaper:e.target.checked,
-    AmountPaid:amount,
-  }).then(() => {
-    setload(false);
-    toast.success("profile updated");
+    await updateDoc(docRef, {
+      cashPaidForPaper: e.target.checked,
+      AmountPaid: amount,
+    }).then(() => {
+      setload(false);
+      toast.success("profile updated");
 
-    // console.log("this is loaf",load.current)
-  });
-  // console.log(e.target.checked)
-};
+      // console.log("this is loaf",load.current)
+    });
+    // console.log(e.target.checked)
+  };
   const deptnames = [
     "IT",
     "CSE",
@@ -143,168 +145,175 @@ const handleChangeforPaper = async (e, id,AmountPaid) => {
   ];
 
   return (
-    <UserCard paid={cashPaid} PaperPaid={PaperPresentation ? cashPaidForPaper:true}  ProjectPaid={ProjectPresentation ? cashPaidForProject: true}>
-      {load && <Loading/>}
-      <Card sx={{
-        padding:'20px',
-        width:'100%'
-      }}>
-      <p>Name: {fname + " " + lname}</p>
-      <p>Rgister No: {regno}</p>
-      <p>Department: {dept}</p>
-      <p>Year: {year}</p>
-      <p>College: {college}</p>
-      <p>Gender: {gender}</p>
-      <p>email: {email}</p>
-      <p>phone no: {phno}</p>
+    <UserCard
+      paid={cashPaid}
+      PaperPaid={PaperPresentation ? cashPaidForPaper : true}
+      ProjectPaid={ProjectPresentation ? cashPaidForProject : true}
+    >
+      {load && <Loading />}
+      <Card
+        sx={{
+          padding: "20px",
+          width: "100%",
+        }}
+      >
+        <p>Name: {fname + " " + lname}</p>
+        <p>Rgister No: {regno}</p>
+        <p>Department: {dept}</p>
+        <p>Year: {year}</p>
+        <p>College: {college}</p>
+        <p>Gender: {gender}</p>
+        <p>email: {email}</p>
+        <p>phone no: {phno}</p>
       </Card>
-   
+
       <div>
         <h1>Departments Events</h1>
 
-        {
-          deptnames.map(deptnm=>{
-        
+        {deptnames.map((deptnm) => {
+          return (
+            !isEmpty(EventsRegistered[deptnm]) && (
+              <Stack
+                direction="row"
+                sx={{
+                  margin: "10px",
+                  display: "flex",
 
-            
-            return !isEmpty(EventsRegistered[deptnm])&&
+                  alignItems: "center",
+                }}
+                spacing={1}
+              >
+                <p>{deptnm}</p>
 
-           <Stack direction="row" sx={{
-            margin:'10px',
-            display:'flex',
+                {!isEmpty(EventsRegistered[deptnm]) &&
+                  EventsRegistered[deptnm].map((data) => {
+                    console.log("data", data);
 
-            alignItems:'center'
-          }} spacing={1}>
-
-            
-           <p>{deptnm}</p>
-            
- 
-
-
-         
-
-
-            {
-
-              (!isEmpty(EventsRegistered[deptnm]))&&
-              
-              EventsRegistered[deptnm].map(data=>{
-                console.log('data',data)
-
-                return <Chip label={data} />
-              
-              })
-      
-            }
-    </Stack>
-          })
-        }
-     
+                    return <Chip label={data} />;
+                  })}
+              </Stack>
+            )
+          );
+        })}
       </div>
-         {/* departments evnts */}
-    {DEvent && <div style={{
-  display:'flex',
-  alignItems:'center'
-}}>
-    <h3>
-        <strong>DEPARTMENTS EVENTS  : 150 ₹</strong>
-      </h3>
+      {/* departments evnts */}
+      {DEvent && (
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+          }}
+        >
+          <h3>
+            <strong>DEPARTMENTS EVENTS : 150 ₹</strong>
+          </h3>
 
-        <div>
-          <Switch
-            defaultChecked={cashPaid}
-            onChange={(e) => handleChange(e, id,AmountPaid)}
-            inputProps={{ "aria-label": "controlled" }}
+          <div>
+            <Switch
+              defaultChecked={cashPaid}
+              onChange={(e) => handleChange(e, id, AmountPaid)}
+              inputProps={{ "aria-label": "controlled" }}
+            />
+          </div>
+
+          <Chip
+            sx={{
+              color: cashPaid ? "black" : "white",
+              background: cashPaid ? "lightgreen" : "red",
+              width: "100px",
+            }}
+            label={cashPaid ? "paid" : "unpaid"}
           />
-         
         </div>
-      
-      <Chip sx={{
-         color:cashPaid ? 'black':'white',
-        background:cashPaid? 'lightgreen' : 'red',
-        width:'100px'
-      }} label={cashPaid ? 'paid' : 'unpaid'}/>
-</div>}
+      )}
       <div>
         <h1>Other Events</h1>
 
-      {PaperPresentation && 
-      <div style={{
-        display:'flex',
+        {PaperPresentation && (
+          <div
+            style={{
+              display: "flex",
 
-        alignItems:'center'
-      }}>
+              alignItems: "center",
+            }}
+          >
+            <h3>PAPER PRESENTATION : 250 ₹</h3>
+            <div>
+              <Switch
+                defaultChecked={cashPaidForPaper}
+                onChange={(e) => handleChangeforPaper(e, id, AmountPaid)}
+                inputProps={{ "aria-label": "controlled" }}
+              />
+            </div>
+            <Chip
+              sx={{
+                color: cashPaidForPaper ? "black" : "white",
+                background: cashPaidForPaper ? "lightgreen" : "red",
+                width: "100px",
+              }}
+              label={cashPaidForPaper ? "paid" : "unpaid"}
+            />
+          </div>
+        )}
+        {ProjectPresentation && (
+          <div
+            style={{
+              display: "flex",
 
-      <h3>PAPER PRESENTATION : 250 ₹</h3>
-      <div>
-          <Switch
-            defaultChecked={cashPaidForPaper}
-            onChange={(e) => handleChangeforPaper(e, id,AmountPaid)}
-            inputProps={{ "aria-label": "controlled" }}
-          />
-        
-        </div>
-        <Chip sx={{
-              color:cashPaidForPaper ? 'black':'white',
-        background:cashPaidForPaper? 'lightgreen' : 'red',
-        width:'100px'
-      }} label={cashPaidForPaper ? 'paid' : 'unpaid'}/>
-      </div>
-      }
-      {ProjectPresentation && 
-      <div style={{
-        display:'flex',
-
-        alignItems:'center'
-      }}>
-
-      <h3>PROJECT PRESENTATION : 200 ₹</h3>
-      <div>
-          <Switch
-            defaultChecked={cashPaidForProject}
-            onChange={(e) => handleChangeforProject(e, id,AmountPaid)}
-            inputProps={{ "aria-label": "controlled" }}
-          />
-        
-        </div>
-        <Chip sx={{
-        color:cashPaidForProject ? 'black':'white',
-        background:cashPaidForProject? 'lightgreen' : 'red',
-        width:'100px'
-      }} label={cashPaidForProject ? 'paid' : 'unpaid'}/>
-      </div>
-      }
-
-      </div>
-   
-
-
-      <div style={{
-        display:'flex',
-        justifyContent:'space-around'
-
-      }}>
-<Card sx={{
-  padding:'10px'
-}}>
-<h2 style={{
-    marginRight:'20px'
-   }}>Collected amount : {AmountPaid} ₹</h2>
-</Card>
- <Card sx={{
-  padding:'10px'
-}}>
- <h2>Total Amount : {CashToBePaid} ₹</h2>
- </Card>
-
+              alignItems: "center",
+            }}
+          >
+            <h3>PROJECT PRESENTATION : 200 ₹</h3>
+            <div>
+              <Switch
+                defaultChecked={cashPaidForProject}
+                onChange={(e) => handleChangeforProject(e, id, AmountPaid)}
+                inputProps={{ "aria-label": "controlled" }}
+              />
+            </div>
+            <Chip
+              sx={{
+                color: cashPaidForProject ? "black" : "white",
+                background: cashPaidForProject ? "lightgreen" : "red",
+                width: "100px",
+              }}
+              label={cashPaidForProject ? "paid" : "unpaid"}
+            />
+          </div>
+        )}
       </div>
 
-{load && (
-            <Alert severity="error">
-              updating the user don't refresh the page
-            </Alert>
-          )}
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "space-around",
+        }}
+      >
+        <Card
+          sx={{
+            padding: "10px",
+          }}
+        >
+          <h2
+            style={{
+              marginRight: "20px",
+            }}
+          >
+            Collected amount : {AmountPaid} ₹
+          </h2>
+        </Card>
+        <Card
+          sx={{
+            padding: "10px",
+          }}
+        >
+          <h2>Total Amount : {CashToBePaid} ₹</h2>
+        </Card>
+      </div>
+
+      {load && (
+        <Alert severity="error">updating the user don't refresh the page</Alert>
+      )}
     </UserCard>
   );
 }

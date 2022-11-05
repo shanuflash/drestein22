@@ -68,7 +68,11 @@ const EventCard = ({
     --color: ${color};
     --bg-filter-opacity: 0.75;
     --bg-img: url("/test.png");
-    background-image: linear-gradient(rgba(var(--color), var(--bg-filter-opacity)), rgba(0, 0, 0, var(--bg-filter-opacity))), var(--bg-img);
+    background-image: linear-gradient(
+        rgba(var(--color), var(--bg-filter-opacity)),
+        rgba(0, 0, 0, var(--bg-filter-opacity))
+      ),
+      var(--bg-img);
     border: 1px solid;
     height: 15em;
     width: 12em;
