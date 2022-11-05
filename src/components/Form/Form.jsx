@@ -116,13 +116,14 @@ function ModeToggle() {
 }
 
 const Form = () => {
-
   const [formdata, setformdata] = useState({});
   const [qr, setqr] = useState("");
   const [load, setload] = useState(false);
   const [confirmMsg, setconfirmMsg] = useState(false);
   const [Project, setProject] = React.useState(false);
   const [Paper, setPaper] = React.useState(false);
+  const [Event, setEvent] = useState(false);
+  const [Work, setWork] = useState(false);
   const [eventName, setEventName] = React.useState({
     CSE: [],
     IT: [],
@@ -163,26 +164,22 @@ const Form = () => {
     formdata.PaperPresentation = Paper;
 
     formdata.ProjectPresentation = Project;
-    
 
-    formdata.AmountPaid = 0
+    formdata.AmountPaid = 0;
 
     for (const key in eventName) {
       console.log("thisd:", eventName[key]);
       if (!isEmpty(eventName[key])) {
         formdata.CashToBePaid = 150;
-        formdata.DEvent=true
+        formdata.DEvent = true;
       }
     }
 
-    if(Paper===true){
-    formdata.CashToBePaid+=250
-   }
-     if(Project===true){
-
-      formdata.CashToBePaid+=200
-
-     
+    if (Paper === true) {
+      formdata.CashToBePaid += 250;
+    }
+    if (Project === true) {
+      formdata.CashToBePaid += 200;
     }
     console.log(formdata);
     const cityRef = doc(db, "RegisteredPeople", `${formdata.id}`);
@@ -517,56 +514,28 @@ const Form = () => {
                 <Divider sx={{ "--Divider-childPosition": `50%` }}>
                   Department Events
                 </Divider>
-                <div
-                  style={{
-                    display: "flex",
-                    justifyContent: "center",
-                    flexWrap: "wrap",
-                  }}
-                >
-                  {test.map((depart) => {
-                    return (
-                      <FormControlM
-                        style={{ margin: "10px", width: "30%" }}
-                        // sx={{ m: 1, width: "30%" }}
-                      >
-                        <InputLabel>{depart.name}</InputLabel>
-                        <SelectM
-                          multiple
-                          value={eventName[depart.name]}
-                          name={depart.name}
-                          onChange={handleChangeT}
-                          input={<FilledInput label={depart.name} />}
-                          renderValue={(selected) => (
-                            <Box
-                              sx={{
-                                display: "flex",
-                                flexWrap: "wrap",
-                                gap: 0.5,
-                              }}
-                            >
-                              {selected.map((value) => (
-                                <Chip key={value}>{value}</Chip>
-                              ))}
-                            </Box>
-                          )}
-                        >
-                          {depart.events.map((ev) => (
-                            <MenuItem key={ev} value={ev}>
-                              {ev}
-                            </MenuItem>
-                          ))}
-                        </SelectM>
-                      </FormControlM>
-                    );
-                  })}
-                </div>
                 <Divider sx={{ "--Divider-childPosition": `50%` }}>
                   Other Events
                 </Divider>
                 <div
                   style={{ display: "flex", justifyContent: "space-evenly" }}
                 >
+                  <Checkbox
+                    color="primary"
+                    size="lg"
+                    label="Events"
+                    onChange={(e) => {
+                      setEvent(e.target.checked);
+                    }}
+                  />
+                  <Checkbox
+                    color="primary"
+                    size="lg"
+                    label="Workshops"
+                    onChange={(e) => {
+                      setWork(e.target.checked);
+                    }}
+                  />
                   <Checkbox
                     color="primary"
                     size="lg"
@@ -585,6 +554,52 @@ const Form = () => {
                     }}
                   />
                 </div>
+                {Event === true ? (
+                  <div
+                    style={{
+                      display: "flex",
+                      justifyContent: "center",
+                      flexWrap: "wrap",
+                    }}
+                  >
+                    {test.map((depart) => {
+                      return (
+                        <FormControlM
+                          style={{ margin: "10px", width: "30%" }}
+                          // sx={{ m: 1, width: "30%" }}
+                        >
+                          <InputLabel>{depart.name}</InputLabel>
+                          <SelectM
+                            multiple
+                            value={eventName[depart.name]}
+                            name={depart.name}
+                            onChange={handleChangeT}
+                            input={<FilledInput label={depart.name} />}
+                            renderValue={(selected) => (
+                              <Box
+                                sx={{
+                                  display: "flex",
+                                  flexWrap: "wrap",
+                                  gap: 0.5,
+                                }}
+                              >
+                                {selected.map((value) => (
+                                  <Chip key={value}>{value}</Chip>
+                                ))}
+                              </Box>
+                            )}
+                          >
+                            {depart.events.map((ev) => (
+                              <MenuItem key={ev} value={ev}>
+                                {ev}
+                              </MenuItem>
+                            ))}
+                          </SelectM>
+                        </FormControlM>
+                      );
+                    })}
+                  </div>
+                ) : null}
                 <img src={qr} />
                 <Alert
                   variant="outlined"
