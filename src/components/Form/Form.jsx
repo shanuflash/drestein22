@@ -124,6 +124,7 @@ const Form = () => {
   const [Paper, setPaper] = React.useState(false);
   const [Event, setEvent] = useState(false);
   const [Work, setWork] = useState(false);
+  const [Pay, setPay] = useState(0);
   const [eventName, setEventName] = React.useState({
     CSE: [],
     IT: [],
@@ -238,7 +239,7 @@ const Form = () => {
     // setEventName(typeof value === "string" ? value.split(",") : value);
 
     setEventName((pre) => ({ ...pre, [name]: [...value] }));
-    // console.log('this is value :',event.target)
+    console.log(eventName);
   };
 
   const test = [
@@ -513,12 +514,14 @@ const Form = () => {
                   placeholder="johndoe@email.com"
                   label="Email"
                 />
-                <Divider sx={{ "--Divider-childPosition": `50%` }}>
+                {/* <Divider sx={{ "--Divider-childPosition": `50%` }}>
                   Department Events
                 </Divider>
                 <Divider sx={{ "--Divider-childPosition": `50%` }}>
                   Other Events
-                </Divider>
+                </Divider> */}
+                <Divider />
+
                 <div
                   style={{ display: "flex", justifyContent: "space-evenly" }}
                 >
@@ -527,6 +530,26 @@ const Form = () => {
                     size="lg"
                     label="Events"
                     onChange={(e) => {
+                      if (Event === true) {
+                        setPay(Pay - 150);
+                        setEventName({
+                          CSE: [],
+                          IT: [],
+                          EEE: [],
+                          ECE: [],
+                          EIE: [],
+                          MECH: [],
+                          CIVIL: [],
+                          MED: [],
+                          CHEM: [],
+                          AGRI: [],
+                          AI: [],
+                          MBA: [],
+                          BME: [],
+                        });
+                      } else {
+                        setPay(Pay + 150);
+                      }
                       setEvent(e.target.checked);
                     }}
                   />
@@ -535,6 +558,8 @@ const Form = () => {
                     size="lg"
                     label="Workshops"
                     onChange={(e) => {
+                      // setPay(Pay + 150);
+
                       setWork(e.target.checked);
                     }}
                   />
@@ -543,6 +568,11 @@ const Form = () => {
                     size="lg"
                     label="Paper Presentation"
                     onChange={(e) => {
+                      if (Paper === true) {
+                        setPay(Pay - 250);
+                      } else {
+                        setPay(Pay + 250);
+                      }
                       setPaper(e.target.checked);
                     }}
                   />
@@ -551,7 +581,11 @@ const Form = () => {
                     size="lg"
                     label="Project Display"
                     onChange={(e) => {
-                      console.log("target checked? - ", e.target.checked);
+                      if (Project === true) {
+                        setPay(Pay - 200);
+                      } else {
+                        setPay(Pay + 200);
+                      }
                       setProject(e.target.checked);
                     }}
                   />
@@ -603,17 +637,19 @@ const Form = () => {
                   </div>
                 ) : null}
                 <img src={qr} />
-                <Alert
-                  variant="outlined"
-                  color="danger"
-                  sx={{
-                    align: "center",
-                    justifyContent: "center",
-                  }}
-                  // style={{}}
-                >
-                  Registeration Fee of ₹150 has to be paid on the event date.
-                </Alert>
+                {Pay === 0 ? null : (
+                  <Alert
+                    variant="outlined"
+                    color="danger"
+                    sx={{
+                      align: "center",
+                      justifyContent: "center",
+                    }}
+                    // style={{}}
+                  >
+                    Registeration Fee of {Pay} has to be paid on the event date.
+                  </Alert>
+                )}
                 {load && (
                   <Alert
                     variant="outlined"
