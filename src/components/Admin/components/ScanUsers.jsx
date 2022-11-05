@@ -80,7 +80,7 @@ function AdminPannel() {
             padding: "1.5rem",
           }}
         >
-          Scan the Qr code{" "}
+          Scan the QR code
         </h1>
         {RegistredPeople[0] !== undefined && RegistredPeople.length > 0 && (
           <div>
@@ -90,21 +90,23 @@ function AdminPannel() {
           </div>
         )}
       </UsersList>
-      <TextField
-        id="filled-search"
-        label="Search field"
-        type="search"
-        variant="filled"
-        onChange={handleChange}
-      />
 
       <Scanner>
+        <TextField
+          id="filled-search"
+          label="Search field"
+          type="search"
+          variant="outlined"
+          sx={{ w: "100%" }}
+          style={{ margin: "2rem" }}
+          onChange={handleChange}
+        />
         <p
           style={{
             margin: "2rem",
           }}
         >
-          scanned result : {data}
+          Scanned Result: {data}
         </p>
 
         <QrReader

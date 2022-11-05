@@ -25,7 +25,7 @@ function App() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    setTimeout(() => setLoading(false), 2000);
+    setTimeout(() => setLoading(false), 1000);
   }, []);
   return (
     <>
@@ -42,10 +42,12 @@ function App() {
                 <Route path="Admin/login" element={<SignIn />} />
                 <Route path="*" element={<h1>page not found</h1>} />
                 <Route path="user/:userid" element={<SingleUserPage />} />
-
                 <Route path="/Admin" element={<PrivateRoute />}>
                   <Route path="/Admin" element={<AdminMain />}>
-                    <Route path="users" element={<ConditionalValidationGrid />} />
+                    <Route
+                      path="users"
+                      element={<ConditionalValidationGrid />}
+                    />
                     <Route path="unpaid" element={<UnPaidUsers />} />
                     <Route path="scanusers" element={<AdminPannel />} />
                     <Route path="profile" element={<AdminProfile />} />

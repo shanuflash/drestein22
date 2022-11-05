@@ -1,4 +1,4 @@
-  export const EventDetails = [
+export const EventDetails = [
   {
     id: "cse",
     title: "Computer Science & Engineering",
@@ -83,8 +83,7 @@
         round2title: "Innovative Interface",
         round2:
           " The participants need to design a website page based on the theme given. The participants are given 5 themes, 3 fonts and 3 images. They need to select one from the given themes and need to design a website UI ake up one of the five challenges provided and design a UI in accordance with the challenge. Font and image requirements should be fulfilled as provided in the challenge.  Participants can use images of their own if necessary. Participants should not use the pre-defined components from the external resources .Participants are given the freedom to choose any one of the given tools which is fit for designing a UI interface.",
-        Tools:
-          "FIGMA.FLUID UI.VISILI AI.",
+        Tools: "FIGMA.FLUID UI.VISILI AI.",
         tag: "EVENT",
         img: "https://www.gstatic.com/mobilesdk/191021_mobilesdk/discoverycards/appdistro@2x.png",
         logo: "cse2.png",
@@ -255,8 +254,7 @@
             email: "jaiganesh9604@gmail.com ",
           },
         ],
-      }
-
+      },
     ],
   },
   {
@@ -271,14 +269,16 @@
         venue: "TBA",
         time: "TBA",
         members: "2",
-        rules: "A fun event spanning over two rounds. Maximum participation 2 person per team. In the case of cheating, using of phone or using of any unnecessary gadgets will make the team disqualify. Shortlisted participants of Round-1 will appear for Round-2 for which above rules are applicable. ",
+        rules:
+          "A fun event spanning over two rounds. Maximum participation 2 person per team. In the case of cheating, using of phone or using of any unnecessary gadgets will make the team disqualify. Shortlisted participants of Round-1 will appear for Round-2 for which above rules are applicable. ",
         round1title: "{ code with <fun>; }",
         round1:
           "It’s a contest testing your abilities to work as a team. The competition not only examines your skills as to how well you coordinate with your partner but also how analytical you are in an isolated and tensed situation. ",
         round2title: "Blind Coding",
         round2:
           "It is a fresh and offbeat concept - where the participants need to write and compile their program with the monitor screens switched off. Each team has to write the code for given problem, with MONITOR OFF.Each team will be allowed one free “Screen time” (where the monitor screen can be turned on for 60 seconds), after which they will be penalized with 3 points for each extra screen time. Each team can avail a maximum of 5 screen times.  At a time only 5 teams will be allowed to avail the facility of Screen Time, the slots for which will be allotted on a first come first serve basis.",
-        judge: "All the problems have same points allotted to them. Participant whose code gets executed will be given higher preference. Second preference will be given to the code with least number of errors. The decision of the organizers in declaring the results will be final. No queries in this regard will be entertained. Any team found to be indulging in any form of malpractice will be immediately disqualified. ",
+        judge:
+          "All the problems have same points allotted to them. Participant whose code gets executed will be given higher preference. Second preference will be given to the code with least number of errors. The decision of the organizers in declaring the results will be final. No queries in this regard will be entertained. Any team found to be indulging in any form of malpractice will be immediately disqualified. ",
         tag: "EVENT",
         img: "https://www.gstatic.com/mobilesdk/191021_mobilesdk/discoverycards/appdistro@2x.png",
         logo: "it1.jpeg",
@@ -289,7 +289,6 @@
             phone: 9789703697,
             email: "panimalarsp@saveetha.ac.in ",
           },
-
         ],
         student: [
           {
@@ -350,7 +349,6 @@
             phone: 9360816621,
             email: "yuvashres@saveetha.ac.in  ",
           },
-
         ],
         student: [
           {
@@ -377,7 +375,6 @@
             phone: 8940416664,
             email: "kameshwaran2002@gmail.com  ",
           },
-
         ],
       },
       {
@@ -388,8 +385,10 @@
         venue: "TBA",
         time: "TBA",
         members: "2",
-        rules: "Players can compete individually or in teams of up to 2 members. Teams should work independently; sharing answers or collaborating with another team constitutes cheating. Brute-forcing the flags is not allowed.Any kind of violation of these rules will mean immediate disqualification of the team. The decision of the event managers will be deemed ",
-        format: "There will be a set of challenges from a range of categories like Cryptography, Web Security, Forensics, Steganography, Reverse Engineering, Binary Exploits, etc. The challenges can either be a collection of files that they can download and find the “Flag” or can be running as web services to which, the participants connect and exploit to retrieve the Flag. Each category contains a variety of questions with different point values and levels of difficulty.The participants will be ranked based on their scores, and the time taken will be used as a tiebreaker. ",
+        rules:
+          "Players can compete individually or in teams of up to 2 members. Teams should work independently; sharing answers or collaborating with another team constitutes cheating. Brute-forcing the flags is not allowed.Any kind of violation of these rules will mean immediate disqualification of the team. The decision of the event managers will be deemed ",
+        format:
+          "There will be a set of challenges from a range of categories like Cryptography, Web Security, Forensics, Steganography, Reverse Engineering, Binary Exploits, etc. The challenges can either be a collection of files that they can download and find the “Flag” or can be running as web services to which, the participants connect and exploit to retrieve the Flag. Each category contains a variety of questions with different point values and levels of difficulty.The participants will be ranked based on their scores, and the time taken will be used as a tiebreaker. ",
         tag: "EVENT",
         img: "https://www.gstatic.com/mobilesdk/191021_mobilesdk/discoverycards/appdistro@2x.png",
         logo: "it3.jpeg",
@@ -400,7 +399,6 @@
             phone: 8248816873,
             email: " karthikarn@saveetha.ac.in ",
           },
-
         ],
         student: [
           {
@@ -575,7 +573,6 @@
             phone: 9444803672,
             email: "gopirajan@saveetha.ac.in ",
           },
-
         ],
         student: [
           {
@@ -613,7 +610,6 @@
             phone: 9566670561,
             email: "bakkiyalakshmip@saveetha.ac.in  ",
           },
-
         ],
         student: [
           {
@@ -628,7 +624,6 @@
             phone: 9342933171,
             email: "Shriya.koneti@gmail.com  ",
           },
-
         ],
       },
 
@@ -648,7 +643,8 @@
         round2:
           "Description *-* TNAU , Exams , head quaters.Rules .Overall 15 questions will be provided.time limit for each question is 10 seconds.Only 1 attempt is given to answer the question .",
         round3title: "Mono Act_(Dumb charades) ",
-        round3: "Description *-* food preparation*-* Each team will be given 2 Chances , team member needs to answer when one of the team is performing One who is acting should not open the mouth, if they do the team will be disqualified .Time limit to perform is 3 minutes ",
+        round3:
+          "Description *-* food preparation*-* Each team will be given 2 Chances , team member needs to answer when one of the team is performing One who is acting should not open the mouth, if they do the team will be disqualified .Time limit to perform is 3 minutes ",
         tag: "EVENT",
 
         img: "https://www.gstatic.com/mobilesdk/191021_mobilesdk/discoverycards/appdistro@2x.png",
@@ -687,8 +683,8 @@
             email: "niranjananair553@gmail.com  ",
           },
         ],
-      }
-    ]
+      },
+    ],
   },
   {
     id: "aids",
@@ -702,7 +698,8 @@
         venue: "TBA",
         time: "TBA",
         members: "2",
-        rules: "The event is all about testing the programming knowledge of the participants. The participants are not restricted to any programming language. They can  choose the language of their choice. Programs are checked against a set of test cases. A program is accepted if it passes all tests. Contestants should not bring or use any reference manuals, electronic     gadgets, program listings, any machine-readable information (software or    data on any kind of storage), computing devices (handhelds, portable PCs,    notebooks, calculators), mobile phones, or any other communication devices. Winner is selected based on the score and the total time taken. ",
+        rules:
+          "The event is all about testing the programming knowledge of the participants. The participants are not restricted to any programming language. They can  choose the language of their choice. Programs are checked against a set of test cases. A program is accepted if it passes all tests. Contestants should not bring or use any reference manuals, electronic     gadgets, program listings, any machine-readable information (software or    data on any kind of storage), computing devices (handhelds, portable PCs,    notebooks, calculators), mobile phones, or any other communication devices. Winner is selected based on the score and the total time taken. ",
         round1:
           " This round will have 10 questions to debug.Each challenge has a predetermined score. A participant’s score depends on the number of test cases a participant’s code submission successfully passes.The participants are selected for the next round only if they have debugged at least 7 questions.",
 
@@ -741,9 +738,7 @@
             name: "Sai Darshan ",
             year: "II",
             phone: 8610750357,
-
           },
-
         ],
       },
 
@@ -754,7 +749,8 @@
         venue: "TBA",
         time: "TBA",
         members: "1-2",
-        rules: "3-4 participants in each group.No electronic devices are allowed to be used.Clues will be given on spot. ",
+        rules:
+          "3-4 participants in each group.No electronic devices are allowed to be used.Clues will be given on spot. ",
         round1:
           "Themes (Eg: automation (robotics), data analytics ) will be set and participants have to figure out based on clues given Groups must bring a business idea/startup plan that solves an existing problem in that domain Teams with the best ideas get promoted to round 2",
         round2:
@@ -791,7 +787,6 @@
             phone: 9940674299,
             email: "kaushika.anandh@gmail.com  ",
           },
-
         ],
       },
 
@@ -802,7 +797,8 @@
         venue: "TBA",
         time: "TBA",
         members: "2",
-        rules: "No sensitive content. No restrictions on image resolution.No videos/audio are allowed.The meme should be in English.",
+        rules:
+          "No sensitive content. No restrictions on image resolution.No videos/audio are allowed.The meme should be in English.",
         round1:
           " Participants can participate either solo or in a team of 2. Open topic (technical). The meme should be in a single image.",
         round2:
@@ -861,7 +857,8 @@
         venue: "TBA",
         time: "TBA",
         members: "1-3",
-        rules: "Programming Language (Hypertext Markup Language (HTML), CSS(no sass) , Java Script, etc. Maximum 3 members per group.Bringing your own personal computer/laptop is mandatory.Students have to design a web page on any one of the specified topics and present it to the judges.Use of USB drive is strictly prohibited.Using pre-made templates is strictly prohibited. Extra Modules and plugins like Angular, react etc are prohibited .Browsing history, downloads and recycle bin should not be cleared from the start to end of the event to ensure no malpractice is done",
+        rules:
+          "Programming Language (Hypertext Markup Language (HTML), CSS(no sass) , Java Script, etc. Maximum 3 members per group.Bringing your own personal computer/laptop is mandatory.Students have to design a web page on any one of the specified topics and present it to the judges.Use of USB drive is strictly prohibited.Using pre-made templates is strictly prohibited. Extra Modules and plugins like Angular, react etc are prohibited .Browsing history, downloads and recycle bin should not be cleared from the start to end of the event to ensure no malpractice is done",
 
         round1:
           "Technical Quiz. Each team will be asked 20 questions and get 3 mins to answer each ",
@@ -899,7 +896,6 @@
             phone: 8072002791,
             email: "varshaajith1110@gmail.com  ",
           },
-
         ],
       },
       {
@@ -909,7 +905,8 @@
         venue: "TBA",
         time: "TBA",
         members: "2",
-        rules: "A team of 2 members can participate in this event.Programming Language required: Python with data science and machine learning .Mobile phones are strictly not allowed. ",
+        rules:
+          "A team of 2 members can participate in this event.Programming Language required: Python with data science and machine learning .Mobile phones are strictly not allowed. ",
         round1:
           "-Multiple Choice Questions (Paper-Pen Mode).Time limit of 30 minutes.Questions will be asked based on the basics of Python in data science and machine learning along with graphical analysis.Top scorers will be selected for the next round ",
         round2:
@@ -960,7 +957,7 @@
           },
         ],
       },
-    ]
+    ],
   },
   {
     id: "bme",
@@ -968,7 +965,8 @@
     eventslist: [
       {
         name: "Med factory",
-        tagline: "To get familiarize with the functioning and usage of medical equipment. ",
+        tagline:
+          "To get familiarize with the functioning and usage of medical equipment. ",
         date: "18 Nov 2022(FN)",
         type: "Team",
         venue: "TBA",
@@ -994,7 +992,6 @@
             phone: 9789010142,
             email: "sivanandams@saveetha.ac.in ",
           },
-
         ],
         student: [
           {
@@ -1031,7 +1028,8 @@
       },
       {
         name: "Mind Flayers",
-        tagline: "Looking for fun ideas that will keep the game more interesting? You’re in the right place! Here are 3 rounds of fun challenges for your friends. Time based MCQs are there. Funny tasks are between those rounds. Triggering your mind with questions and boosting your activities. Each round has 2 (Two) levels to reach next round. Offers given in first round to reach final round directly. Final round winners be appreciated with rewards. ",
+        tagline:
+          "Looking for fun ideas that will keep the game more interesting? You’re in the right place! Here are 3 rounds of fun challenges for your friends. Time based MCQs are there. Funny tasks are between those rounds. Triggering your mind with questions and boosting your activities. Each round has 2 (Two) levels to reach next round. Offers given in first round to reach final round directly. Final round winners be appreciated with rewards. ",
         date: "18 Nov 2022(AN)",
         type: "Team",
         venue: "TBA",
@@ -1058,7 +1056,6 @@
             phone: 9940521704,
             email: "sinthia@saveetha.ac.in  ",
           },
-
         ],
         student: [
           {
@@ -1120,7 +1117,6 @@
             phone: 7904392157,
             email: "swarnambigaa@saveetha.ac.in ",
           },
-
         ],
         student: [
           {
@@ -1172,7 +1168,8 @@
         round2:
           "10 participants are arranged to sit in the Circle. One word is provided to them, the word-related words are passed. The one who fails to say the word related to that will disqualify from the round. ",
         round3title: "mansoorajees001@gmail.com ",
-        round3: "Puzzle related to medical Instruments or Famous Scientist Will be displayed in the laptop provided. According to the time taken by the participants we can select the winners. ",
+        round3:
+          "Puzzle related to medical Instruments or Famous Scientist Will be displayed in the laptop provided. According to the time taken by the participants we can select the winners. ",
         tag: "EVENT",
         img: "https://www.gstatic.com/mobilesdk/191021_mobilesdk/discoverycards/appdistro@2x.png",
         logo: "bm4.jpeg",
@@ -1183,7 +1180,6 @@
             phone: 7904321272,
             email: "rasheedhaa@saveetha.ac.in  ",
           },
-
         ],
         student: [
           {
@@ -1217,8 +1213,8 @@
             email: "mansoorajees001@gmail.com ",
           },
         ],
-      }
-    ]
+      },
+    ],
   },
   {
     id: "civil",
@@ -1232,7 +1228,8 @@
         venue: "TBA",
         time: "TBA",
         members: "2",
-        rules: "A fun event spanning over two rounds. Maximum participation 2 person per team. In the case of cheating, using of phone or using of any unnecessary gadgets will make the team disqualify. Shortlisted participants of Round-1 will appear for Round-2 for which above rules are applicable. ",
+        rules:
+          "A fun event spanning over two rounds. Maximum participation 2 person per team. In the case of cheating, using of phone or using of any unnecessary gadgets will make the team disqualify. Shortlisted participants of Round-1 will appear for Round-2 for which above rules are applicable. ",
         round1title: "TECHNICAL WRITTEN TEST ",
         round1:
           "25 Multiple Choice Questions related to general concepts of Civil Engineering .15 minutes duration . Mode of conducting this Round – through Google link .Participants had to use their own devices (mobile/laptop). Once the stipulated time was over, the link would be closed and no requests would be entertained .Results were decided on the basis of the highest score along with time taken to complete the Quiz .TOP FIVE SELECTED STUDENTS ARE ELIGIBLE FOR ROUND -2 ",
@@ -1249,7 +1246,6 @@
             phone: 9597594405,
             email: "theerkadharshinis@saveetha.ac.in  ",
           },
-
         ],
         student: [
           {
@@ -1270,7 +1266,6 @@
             phone: 9600026262,
             email: "saranraj2003dec@gmail.com  ",
           },
-
         ],
       },
 
@@ -1301,7 +1296,6 @@
             phone: 9445452883,
             email: "padma@saveetha.ac.in  ",
           },
-
         ],
         student: [
           {
@@ -1328,7 +1322,6 @@
             phone: 8148079380,
             email: "teju201631@gmail.com  ",
           },
-
         ],
       },
       {
@@ -1340,8 +1333,10 @@
         time: "TBA",
         members: "2",
         rules: "",
-        round1: "A set of 25 questions MCQ will be given as a printed document in round 1 for each students The questions are based on auto cadd comments and drawing inputs.The duration for the MCQ test is 30 minutes.Based on the scored marks first 5 students will be shortlisted for round 2. ",
-        round2: "The detailed line plan will be given as a question in round 2 .The students have to draw Plan with specification for the same line plan. The duration for the plan is 30 minutes. Based on the completion first three place will be finalised ",
+        round1:
+          "A set of 25 questions MCQ will be given as a printed document in round 1 for each students The questions are based on auto cadd comments and drawing inputs.The duration for the MCQ test is 30 minutes.Based on the scored marks first 5 students will be shortlisted for round 2. ",
+        round2:
+          "The detailed line plan will be given as a question in round 2 .The students have to draw Plan with specification for the same line plan. The duration for the plan is 30 minutes. Based on the completion first three place will be finalised ",
         tag: "EVENT",
         img: "https://www.gstatic.com/mobilesdk/191021_mobilesdk/discoverycards/appdistro@2x.png",
         logo: "civil3.jpeg",
@@ -1352,7 +1347,6 @@
             phone: 7708754085,
             email: "Madhankumar @saveetha.ac.in  ",
           },
-
         ],
         student: [
           {
@@ -1367,7 +1361,6 @@
             phone: 8778666195,
             email: "Mariaandrea1505 @gmail.com  ",
           },
-
         ],
       },
       {
@@ -1425,10 +1418,9 @@
             phone: 9345453710,
             email: "babyratheesh7@gmail.com  ",
           },
-
         ],
-      }
-    ]
+      },
+    ],
   },
   {
     id: "chem",
@@ -1447,7 +1439,8 @@
         round2title: "Blind Coding",
         round2:
           "It is a group event of 3.Participants will be given many charts which contain different unit operations. Participants should order them according to sector in a given time limit.The team which finishes fast with the correct answer will be selected for the next round. .",
-        round3: "It is a group event of 3. Participants will be given many charts which contain different Process of flow diagrams of different industries. Participants should order them according to sector in a given time limit.The team which finishes fast with the correct answer will be the winner. ",
+        round3:
+          "It is a group event of 3. Participants will be given many charts which contain different Process of flow diagrams of different industries. Participants should order them according to sector in a given time limit.The team which finishes fast with the correct answer will be the winner. ",
         tag: "EVENT",
         img: "https://www.gstatic.com/mobilesdk/191021_mobilesdk/discoverycards/appdistro@2x.png",
         logo: "chem1.jpeg",
@@ -1458,7 +1451,6 @@
             phone: 9444945153,
             email: "umaiyambikan@saveetha.ac.in  ",
           },
-
         ],
         student: [
           {
@@ -1473,7 +1465,6 @@
             phone: 9884729013,
             email: "keshwari19@gmail.com ",
           },
-
         ],
       },
 
@@ -1501,7 +1492,6 @@
             phone: 7305105056,
             email: "senthilkumarp@saveetha.ac.in  ",
           },
-
         ],
         student: [
           {
@@ -1516,7 +1506,6 @@
             phone: 8056051236,
             email: "snehamuniyamma1619@gmail.com ",
           },
-
         ],
       },
       {
@@ -1526,7 +1515,8 @@
         venue: "TBA",
         time: "TBA",
         members: "2",
-        rules: " Participants should play small games in the room to escape from the room. Participants should answer the questions for a minimum of 3 and also should win the game.  For winning each game participants will be given stickers at each game. Those who collect more stickers will be the winner ",
+        rules:
+          " Participants should play small games in the room to escape from the room. Participants should answer the questions for a minimum of 3 and also should win the game.  For winning each game participants will be given stickers at each game. Those who collect more stickers will be the winner ",
         tag: "EVENT",
         img: "https://www.gstatic.com/mobilesdk/191021_mobilesdk/discoverycards/appdistro@2x.png",
         logo: "chem3.jpeg",
@@ -1543,7 +1533,6 @@
             phone: 9962603615,
             email: "sundarrajanp@saveetha.ac.in  ",
           },
-
         ],
         student: [
           {
@@ -1551,7 +1540,6 @@
             year: "IV ",
             phone: 9361760541,
             email: "avesr5820@gmail.com ",
-
           },
           {
             name: "Mohamed Salman S   ",
@@ -1588,7 +1576,8 @@
         round2title: "ANIMATION",
         round2:
           "An incident will be displayed on the screen. Player has to select an option from the given clues.Players with the correct choice move on ",
-        round3title: "COMMUNICATION RELAY:(Repetition of Rules & Direct answer get Eliminated) ",
+        round3title:
+          "COMMUNICATION RELAY:(Repetition of Rules & Direct answer get Eliminated) ",
         round3:
           "3 Members standing in a row. First one gets a clue from Co-ordinator.  Second one gets a clue from the First one. Third one gets a clue from the Second one.  Third one has to choose the element from the board. ",
         tag: "EVENT",
@@ -1601,7 +1590,6 @@
             phone: 9444945153,
             email: "umaiyambikan@saveetha.ac.in  ",
           },
-
         ],
         student: [
           {
@@ -1617,8 +1605,8 @@
             email: "sandhyaa2203@gmail.com  ",
           },
         ],
-      }
-    ]
+      },
+    ],
   },
   {
     id: "eie",
@@ -1635,8 +1623,6 @@
         rules: "",
         round1:
           "30 seconds per QUESTION .Correct answer will be rewarded with two points.10 Questions per round ",
-        prize:
-          "FIRST PRIZES: 2500 RUPEES SECOND PRIZE: 1500 RUPEES .THIRD PRIZE: 1000 RUPEES",
         round2:
           "20 seconds per QUESTION .Correct answer will be rewarded with two points .10 Questions per round.SELECTION PROCESS: Winners will be based on MAXIMUM POINTS .",
         img: "https://www.gstatic.com/mobilesdk/191021_mobilesdk/discoverycards/appdistro@2x.png",
@@ -1648,7 +1634,6 @@
             phone: 9840091709,
             email: "kalaiarasi@saveetha.ac.in  ",
           },
-
         ],
         student: [
           {
@@ -1672,8 +1657,8 @@
           "Maximum 2 members in a team .10 minutes per round.10 Questions per round .Every correct answer carries 2 points .Selection is based on maximum points",
         round2:
           " Maximum 2 members in a team.10 minutes per round. 10 Questions per round .Every correct answer carries 2 points .Selection is based on maximum points",
-        round3: "Maximum 2 members in a team .5 minutes per round.10 Questions per round.Every correct answer carries 2 points Selection is based on maximum points ",
-        prize: "FIRST PRIZES: 2500 RUPEES .SECOND PRIZE: 1500 RUPEES .THIRD PRIZE: 1000 RUPEES ",
+        round3:
+          "Maximum 2 members in a team .5 minutes per round.10 Questions per round.Every correct answer carries 2 points Selection is based on maximum points ",
         tag: "EVENT",
         img: "https://www.gstatic.com/mobilesdk/191021_mobilesdk/discoverycards/appdistro@2x.png",
         logo: "eie2.jpeg",
@@ -1684,7 +1669,6 @@
             phone: 9543223030,
             email: "manonmani@saveetha.ac.in ",
           },
-
         ],
         student: [
           {
@@ -1693,7 +1677,6 @@
             phone: 9840156916,
             email: "vsaiganesh2002@gmail.com ",
           },
-
         ],
       },
       {
@@ -1704,9 +1687,12 @@
         time: "TBA",
         members: "2",
         rules: "",
-        round1: "Maximum 1 members in a team .15 minutes per round .10 Questions per round. Every correct answer carries 2 points .selection based on maximum points ",
-        round2: "maximum 1 member in a team .10 minutes per round .10 question per round .every correct answers carries 2 points.  Selection is based on maximum points ",
-        round3: "Maximum 1 member in a team .5 minutes per round .10 Questions per round . Every correct answer carries 2 points . Selection is based on maximum points",
+        round1:
+          "Maximum 1 members in a team .15 minutes per round .10 Questions per round. Every correct answer carries 2 points .selection based on maximum points ",
+        round2:
+          "maximum 1 member in a team .10 minutes per round .10 question per round .every correct answers carries 2 points.  Selection is based on maximum points ",
+        round3:
+          "Maximum 1 member in a team .5 minutes per round .10 Questions per round . Every correct answer carries 2 points . Selection is based on maximum points",
         tag: "EVENT",
         img: "https://www.gstatic.com/mobilesdk/191021_mobilesdk/discoverycards/appdistro@2x.png",
         logo: "eie3.jpeg",
@@ -1717,8 +1703,6 @@
             phone: 9789159590,
             email: " arivalagan@saveetha.ac.in  ",
           },
-
-
         ],
         student: [
           {
@@ -1726,9 +1710,7 @@
             year: "IV ",
             phone: 6379722190,
             email: "divyarv246@gmail.com ",
-
           },
-
         ],
       },
       {
@@ -1755,7 +1737,6 @@
             phone: 9865324440,
             email: "yuvarajp@saveetha.ac.in  ",
           },
-
         ],
 
         student: [
@@ -1766,8 +1747,8 @@
             email: "nihalmohamed25@gmail.com   ",
           },
         ],
-      }
-    ]
+      },
+    ],
   },
   {
     id: "mech",
@@ -1784,8 +1765,7 @@
         rules: "",
         round1:
           "Participants are asked to design primary Part modelling, Using Fusion 360  ",
-        round2:
-          "Participants are asked to do assembly, Using Fusion 360 ",
+        round2: "Participants are asked to do assembly, Using Fusion 360 ",
         round3:
           "Detailing of MODEL- Quality, Efficiency of the product will be inspected ",
         img: "https://www.gstatic.com/mobilesdk/191021_mobilesdk/discoverycards/appdistro@2x.png",
@@ -1798,7 +1778,6 @@
             phone: 9101361172,
             email: "nsivaramakrishnan @saveetha.ac.in ",
           },
-
         ],
         student: [
           {
@@ -1837,13 +1816,10 @@
         time: "TBA",
         members: "1-2",
         rules: "",
-        round1:
-          "MCQ based on Manufacturing technology(30mins) ",
+        round1: "MCQ based on Manufacturing technology(30mins) ",
 
-        round2:
-          " Facing and Step turning in Lathe Machine(30mins) .",
-        round3:
-          "Knurling in Lathe Machining(30mins) ",
+        round2: " Facing and Step turning in Lathe Machine(30mins) .",
+        round3: "Knurling in Lathe Machining(30mins) ",
         img: "https://www.gstatic.com/mobilesdk/191021_mobilesdk/discoverycards/appdistro@2x.png",
         tag: "EVENT",
         logo: "mech2.jpeg",
@@ -1854,7 +1830,6 @@
             phone: 7996808280,
             email: "kripasuvarna@saveetha.ac.in  ",
           },
-
         ],
         student: [
           {
@@ -1881,7 +1856,6 @@
             phone: 7358468534,
             email: "shaktiaishwarya.tk@gmail.com  ",
           },
-
         ],
       },
       {
@@ -1904,7 +1878,6 @@
             phone: 9677274385,
             email: " velmuruganv@saveetha.ac.in  ",
           },
-
         ],
         student: [
           {
@@ -1944,8 +1917,7 @@
         rules: "",
         round1:
           "Isometric view of a product will be given to each team. Model the product using CATIA Or ABAQUS software within 45mins  ",
-        round2:
-          "The simulation for the product has to done within 30mins.",
+        round2: "The simulation for the product has to done within 30mins.",
         tag: "EVENT",
         img: "https://www.gstatic.com/mobilesdk/191021_mobilesdk/discoverycards/appdistro@2x.png",
 
@@ -1958,35 +1930,34 @@
             email: "radhika@saveetha.ac.in",
           },
         ],
-        student:
-          [
-            {
-              name: "Vijayragavan A.S ",
-              year: "IV ",
-              phone: 6379347756,
-              email: "vickysasikumar7@gmail.com   ",
-            },
-            {
-              name: "Samuel Jose R  ",
-              year: "IV ",
-              phone: 9962803048,
-              email: "samueljose444@gmail.com",
-            },
+        student: [
+          {
+            name: "Vijayragavan A.S ",
+            year: "IV ",
+            phone: 6379347756,
+            email: "vickysasikumar7@gmail.com   ",
+          },
+          {
+            name: "Samuel Jose R  ",
+            year: "IV ",
+            phone: 9962803048,
+            email: "samueljose444@gmail.com",
+          },
 
-            {
-              name: "Naveen V",
-              year: "III",
-              phone: 8608202199,
-              email: "naveenvairavel2002@gmail.com",
-            },
-            {
-              name: "Charan K   ",
-              year: "II ",
-              phone: 86082021995,
-              email: "charankannan95102gmail.com",
-            },
-          ],
-      }
-    ]
+          {
+            name: "Naveen V",
+            year: "III",
+            phone: 8608202199,
+            email: "naveenvairavel2002@gmail.com",
+          },
+          {
+            name: "Charan K   ",
+            year: "II ",
+            phone: 86082021995,
+            email: "charankannan95102gmail.com",
+          },
+        ],
+      },
+    ],
   },
 ];

@@ -8,8 +8,8 @@ import { db } from "../../../configs/Firebase.config";
 import { updateDoc } from "firebase/firestore";
 import { Alert } from "@mui/material";
 import { toast } from "react-toastify";
-import Chip from '@mui/material/Chip';
-import Stack from '@mui/material/Stack';
+import Chip from "@mui/material/Chip";
+import Stack from "@mui/material/Stack";
 import { isEmpty } from "@firebase/util";
 const UserCard = styled.div`
   width: 100%;
@@ -27,8 +27,18 @@ const UserCard = styled.div`
 function UserInfoCard({ data, Scanpage }) {
   const [load, setload] = useState(false);
 
-  const { lname, fname, college, cashPaid, dept, gender, year, regno, id,EventsRegistered } =
-    data;
+  const {
+    lname,
+    fname,
+    college,
+    cashPaid,
+    dept,
+    gender,
+    year,
+    regno,
+    id,
+    EventsRegistered,
+  } = data;
 
   const handleChange = async (e, id) => {
     setload(true);
@@ -46,47 +56,53 @@ function UserInfoCard({ data, Scanpage }) {
     });
     // console.log(e.target.checked)
   };
-  const deptnames = ['IT','CSE','ECE','EEE', 'EIE', 'MECH', 'AI', 'CHEM', 'MBA', 'MED', 'AGRI', 'CIVIL', 'BME']
+  const deptnames = [
+    "IT",
+    "CSE",
+    "ECE",
+    "EEE",
+    "EIE",
+    "MECH",
+    "AI",
+    "CHEM",
+    "MBA",
+    "MED",
+    "AGRI",
+    "CIVIL",
+    "BME",
+  ];
   return (
     <UserCard paid={cashPaid}>
-      <p>Name : {fname + " " + lname}</p>
-      <p>Rgister No : {regno}</p>
-      <p>Department : {dept}</p>
-      <p>Year : {year}</p>
-      <p>college : {college}</p>
-      <p>gender : {gender}</p>
+      <p>Name: {fname + " " + lname}</p>
+      <p>Rgister No: {regno}</p>
+      <p>Department: {dept}</p>
+      <p>Year: {year}</p>
+      <p>College: {college}</p>
+      <p>Gender: {gender}</p>
       <div>
-      <h4>Departments Events</h4>
-  
+        <h4>Departments Events</h4>
 
-    
+        {deptnames.map((deptnm) => {
+          return (
+            <Stack
+              direction="row"
+              sx={{
+                margin: "10px",
+                display: "flex",
 
-        {
-          deptnames.map(deptnm=>{
-        
-          return   <Stack direction="row" sx={{
-            margin:'10px',
-            display:'flex',
-
-            alignItems:'center'
-          }} spacing={1}>
-            <h5>{deptnm}</h5>
-            {
-              (!isEmpty(EventsRegistered[deptnm]))&&
-              EventsRegistered[deptnm].map(data=>{
-                console.log('data',data)
-                return  <Chip label={data} />
-              })
-      
-            }
-    </Stack>
-          })
-        }
-     
-  
-
-
-
+                alignItems: "center",
+              }}
+              spacing={1}
+            >
+              <h5>{deptnm}</h5>
+              {!isEmpty(EventsRegistered[deptnm]) &&
+                EventsRegistered[deptnm].map((data) => {
+                  console.log("data", data);
+                  return <Chip label={data} />;
+                })}
+            </Stack>
+          );
+        })}
       </div>
 
       <p>
