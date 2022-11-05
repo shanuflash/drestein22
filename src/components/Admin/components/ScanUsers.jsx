@@ -62,7 +62,7 @@ function AdminPannel() {
     qrRef.current.openImageDialog();
   };
   const handleChange = (e) => {
-    console.log(e.target.value);
+    // console.log(e.target.value);
     try {
       const docRef = doc(db, "RegisteredPeople", `${e.target.value}`);
       onSnapshot(docRef, (snapshot) => {

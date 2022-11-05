@@ -116,6 +116,7 @@ function ModeToggle() {
 }
 
 const Form = () => {
+
   const [formdata, setformdata] = useState({});
   const [qr, setqr] = useState("");
   const [load, setload] = useState(false);
@@ -148,14 +149,40 @@ const Form = () => {
     e.preventDefault();
     setload(true);
     formdata.id = uuidv4();
+
     formdata.cashPaid = false;
+
+    formdata.cashPaidForPaper = false;
+
+    formdata.cashPaidForProject = false;
+
     formdata.CashToBePaid = 0;
+
+    formdata.EventsRegistered = eventName;
+
+    formdata.PaperPresentation = Paper;
+
+    formdata.ProjectPresentation = Project;
+    
+
+    formdata.AmountPaid = 0
+
     for (const key in eventName) {
       console.log("thisd:", eventName[key]);
       if (!isEmpty(eventName[key])) {
         formdata.CashToBePaid = 150;
-        formdata.EventsRegistered = eventName;
+        formdata.DEvent=true
       }
+    }
+
+    if(Paper===true){
+    formdata.CashToBePaid+=250
+   }
+     if(Project===true){
+
+      formdata.CashToBePaid+=200
+
+     
     }
     console.log(formdata);
     const cityRef = doc(db, "RegisteredPeople", `${formdata.id}`);
