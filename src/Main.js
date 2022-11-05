@@ -54,13 +54,13 @@ const Main = () => {
       <div id="Gallery">
         <Gallery />
       </div>
-      <div id="About">
+      <div id="SECLife">
         <About />
       </div>
       <div id="Guest">
         <Guest />
       </div>
-      <div id="Footer">
+      <div id="About">
         <Footer />
       </div>
 

@@ -12,8 +12,9 @@ const Events = () => {
   useEffect(() => {
     openModal
       ? (document.body.style.overflow = "hidden")
-      : (document.body.style.overflow = "unset");
+      : (document.body.style.overflow = "unset")
   }, [openModal]);
+  
   return (
     <>
       <Modal open={openModal} setOpenModal={setOpenModal} />

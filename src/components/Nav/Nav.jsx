@@ -146,7 +146,8 @@ function Nav() {
     }
   };
   window.addEventListener("scroll", changeNavbarColor);
-
+  // const navHeight = document.querySelector('.icon')
+  // console.log(navHeight)
   return (
     <Navbar className="navbar" style={navstyle}>
       <SLogo src={saveethalogo} />

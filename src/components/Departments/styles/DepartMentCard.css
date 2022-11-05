@@ -53,7 +53,7 @@
 }
 
 .DeptHead {
-  font-size: 8vw;
+  font-size: 5vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -61,11 +61,13 @@
   font-family: "Montserrat", sans-serif;
 
   @media (max-width: 600px) {
-    font-size: 10vw;
+    font-size: 6vw;
   }
 }
 
 .DeptHead .DeptHeadTxt {
+  font-size: 5vw;
+
   background-image: linear-gradient(
     45deg,
     #f98bff8e 0%,
@@ -73,12 +75,12 @@
     #2bff8789 90%
   );
   border-radius: 2rem;
-  padding: 20px 30px;
-  margin: 5vh 20vw;
+  padding: 1.2rem 2rem;
+  margin-top: 1rem;
 }
 
 @media (max-width: 600px) {
   .DeptHead {
-    font-size: 10vw;
+    font-size: 6vw;
   }
 }

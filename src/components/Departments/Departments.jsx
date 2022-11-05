@@ -44,10 +44,10 @@ function Departments() {
         whileInView={{ y: 0, opacity: 1 }}
         transition={{ duration: 1 }}
         viewport={{ once: true, amount: 1 }}
-        className="DeptHead"
+        className="DeptHead"  
       >
-        <div className="DeptHeadTxt" style={{ fontSize: "8vw" }}>
-          Other Events
+        <div className="DeptHeadTxt" id="SpecialEvents">
+          Special Events
         </div>
       </motion.h1>
       <DepartmentContainer>

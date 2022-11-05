@@ -30,13 +30,12 @@
 }
 
 .onlyshow .nav-list {
-  height: 60%;
+  height: 100%;
   list-style: none;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  margin-top: 5rem;
+  /* text-align: center; */
   font-weight: 600;
 }
 
