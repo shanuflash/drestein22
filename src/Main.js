@@ -12,6 +12,7 @@ import About from "./components/About/About";
 import Guest from "./components/Guest/Guest";
 import Footer from "./components/Footer/Footer";
 import "./App.css";
+import Counter from "./components/counter/Counter";
 
 const DepartmentDiv = styled.div`
   position: sticky;
@@ -27,7 +28,7 @@ const Main = () => {
   const particlesInit = useCallback(async (engine) => {
     await loadFull(engine);
   }, []);
-  const particlesLoaded = useCallback(async (container) => {}, []);
+  const particlesLoaded = useCallback(async (container) => { }, []);
 
   return (
     <div ref={scroll} id="#">
@@ -48,17 +49,22 @@ const Main = () => {
         className="img"
         style={{ y: DeviceSize < 800 ? MValue : DValue, zIndex: -1 }}
       ></motion.div>
+      
       <DepartmentDiv id="Departments">
         <Departments />
       </DepartmentDiv>
       <div id="Gallery">
         <Gallery />
       </div>
+
       <div id="SECLife">
         <About />
       </div>
       <div id="Guest">
         <Guest />
+      </div>
+      <div id="Count" style={{width:"100%"}}>
+        <Counter />
       </div>
       <div id="About">
         <Footer />

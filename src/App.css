@@ -19,6 +19,9 @@ body {
   color: white;
   font-family: "Montserrat", sans-serif;
 }
+.lander-text {
+  font-family: "Azonix";
+}
 
 .gmap_iframe {
   height: 350px !important;
