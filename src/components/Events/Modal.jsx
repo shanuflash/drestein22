@@ -37,7 +37,7 @@ const Modal = ({ open, setOpenModal }) => {
           <div className="item">
             <span>Type</span>
             <IoIosPeople size={32} />
-            <span>{eventObject.type? `${type}` : 'workshop'}</span>
+            <span>{eventObject.type? `${eventObject.type}` : 'workshop'}</span>
           </div>
           <div className="item">
             <span>Venue</span>

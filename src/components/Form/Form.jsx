@@ -175,6 +175,7 @@ const Form = () => {
     //     formdata.DEvent = true;
     //   }
     // }
+    formdata.DepartEvent = Event;
     if (Event === true) {
       formdata.CashToBePaid += 150;
     }
@@ -371,6 +372,7 @@ const Form = () => {
                     label="First Name"
                     sx={{ width: "48%" }}
                   />
+
                   <TextField
                     name="lname"
                     required
@@ -381,6 +383,7 @@ const Form = () => {
                     label="Last Name"
                     sx={{ width: "48%" }}
                   />
+
                 </div>
                 <TextField
                   name="college"
@@ -521,7 +524,7 @@ const Form = () => {
                   Other Events
                 </Divider> */}
                 <Divider />
-
+{/* starts here -------------------------------------- */}
                 <div
                   style={{ display: "flex", justifyContent: "space-evenly" }}
                 >

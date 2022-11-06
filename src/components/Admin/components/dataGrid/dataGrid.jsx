@@ -15,7 +15,7 @@ import { currencyPairs, randomPrice } from "@mui/x-data-grid-generator";
 import { useEffect } from "react";
 import { useState } from "react";
 import { collection, onSnapshot } from "firebase/firestore";
-import { db } from "../../../configs/Firebase.config";
+import { db } from "../../../../configs/Firebase.config";
 import { toast } from "react-toastify";
 import { async, isEmpty } from "@firebase/util";
 import { useMovieData } from "@mui/x-data-grid-generator";
@@ -24,7 +24,19 @@ import { Alert, Card } from "@mui/material";
 import { display } from "@mui/system";
 import ContentCopyIcon from "@mui/icons-material/ContentCopy";
 import { type } from "@testing-library/user-event/dist/type";
-import Loading from "../../../Loading";
+import Loading from "../../../../Loading";
+
+import {GridToolbar } from "@mui/x-data-grid";
+// import { data } from "./data.js";
+import { List, ListItemText } from "@mui/material";
+import { CustomFooterTotalComponent } from "./customFooter";
+
+
+
+
+
+
+
 
 const StyledBox = styled(Box)(({ theme }) => ({
   height: "90vh",
@@ -45,9 +57,10 @@ const StyledBox = styled(Box)(({ theme }) => ({
   },
 }));
 
-const Footer = () => {
+const Footer = ({props}) => {
   const [message, setMessage] = React.useState("");
   const apiRef = useGridApiContext();
+  console.log('this pops',props)
 
   const handleRowClick = (params) => {
     setMessage(params.row.id);
@@ -78,9 +91,11 @@ const Footer = () => {
           />
         </Card>
       )}
+      <h1>Total : {props}</h1>
     </React.Fragment>
   );
 };
+
 function CustomToolbar() {
   return (
     <GridToolbarContainer>
@@ -90,6 +105,7 @@ function CustomToolbar() {
 }
 
 export default function ConditionalValidationGrid() {
+  const [total, setTotal] = React.useState(0);
   const [paidUsers, setPaidusers] = useState([]);
   const [load, setload] = useState(false);
   //   const { data } = useDemoData({
@@ -145,57 +161,58 @@ export default function ConditionalValidationGrid() {
       isPaidD: data.cashPaid,
       isPaperPresentationPaid: data.cashPaidForPaper,
       isProjectPresentationPaid: data.cashPaidForProject,
-      PaperPresentation: data.PaperPresentation ? "Yes" : "No",
-      ProjectPresentation: data.ProjectPresentation ? "Yes" : "no",
+      PaperPresentation: data.PaperPresentation ? "✅" : "❌",
+      ProjectPresentation: data.ProjectPresentation ? "✅" : "❌",
       AmountPaid: data.AmountPaid + " ₹ ",
+      DepartEvent: data.DepartEvent ? "✅" : "❌",
 
       IT: isEmpty(data.EventsRegistered.IT)
-        ? " "
+        ? ""
         : data.EventsRegistered.IT.join(","),
       ECE: isEmpty(data.EventsRegistered.ECE)
-        ? " "
+        ? ""
         : data.EventsRegistered.ECE.join(","),
       EEE: isEmpty(data.EventsRegistered.EEE)
-        ? " "
+        ? ""
         : data.EventsRegistered.EEE.join(","),
       CSE: isEmpty(data.EventsRegistered.CSE)
-        ? " "
+        ? ""
         : data.EventsRegistered.CSE.join(","),
       EIE: isEmpty(data.EventsRegistered.EIE)
-        ? " "
+        ? ""
         : data.EventsRegistered.EIE.join(","),
       MECH: isEmpty(data.EventsRegistered.MECH)
-        ? " "
+        ? ""
         : data.EventsRegistered.MECH.join(","),
       AI: isEmpty(data.EventsRegistered.AI)
-        ? " "
+        ? ""
         : data.EventsRegistered.AI.join(","),
       CHEM: isEmpty(data.EventsRegistered.CHEM)
-        ? " "
+        ? ""
         : data.EventsRegistered.CHEM.join(","),
       MBA: isEmpty(data.EventsRegistered.MBA)
-        ? " "
+        ? ""
         : data.EventsRegistered.MBA.join(","),
       MED: isEmpty(data.EventsRegistered.MED)
-        ? " "
+        ? ""
         : data.EventsRegistered.MED.join(","),
       AGRI: isEmpty(data.EventsRegistered.AGRI)
-        ? " "
+        ? ""
         : data.EventsRegistered.AGRI.join(","),
       CIVIL: isEmpty(data.EventsRegistered.CIVIL)
-        ? " "
+        ? ""
         : data.EventsRegistered.CIVIL.join(","),
       BME: isEmpty(data.EventsRegistered.BME)
-        ? " "
+        ? ""
         : data.EventsRegistered.BME.join(","),
-      cashtobePaid: data.CashToBePaid + " ₹ ",
+      cashtobePaid: data.CashToBePaid,
     };
   });
   //total =====
-  let total = 0;
+  let totalA = 0;
   let collectedcash = 0;
   const totalAmount = paidUsers.map((data) => {
-    total += data.CashToBePaid;
+    totalA += data.CashToBePaid;
 
     //  for(const key in  data.EventsRegistered){
     //     console.log(data.EventsRegistered['CSE'][0])
@@ -243,7 +260,7 @@ export default function ConditionalValidationGrid() {
 
     {
       field: "isProjectPresentationPaid",
-      headerName: "is Project Department?",
+      headerName: "Project Paid ?",
       width: 150,
       editable: false,
       type: "boolean",
@@ -258,14 +275,20 @@ export default function ConditionalValidationGrid() {
 
     {
       field: "isPaperPresentationPaid",
-      headerName: "is Paper Presentation",
+      headerName: "Paper Paid ?",
       width: 150,
       type: "boolean",
       editable: false,
     },
     {
+      field: "DepartEvent",
+      headerName: "DepartEvent",
+      width: 150,
+      editable: false,
+    },
+    {
       field: "isPaidD",
-      headerName: "is Paid Department?",
+      headerName: "Department Paid?",
       width: 150,
       editable: false,
       type: "boolean",
@@ -302,16 +325,25 @@ export default function ConditionalValidationGrid() {
     { field: "CIVIL", headerName: "CIVIL", minWidth: "150", editable: false },
     { field: "BME", headerName: "BME", minWidth: "150", editable: false },
   ];
+  const [filterModel, setFilterModel] = React.useState({
+    items: [
+      {
+        columnField: "cashtobePaid",
+        operatorValue: ">",
+        value: "200"
+      }
+    ]
+  });
 
   return (
     <StyledBox>
       {/* {load && <Loading/>} */}
       <DataGrid
         //  rowHeight={100}
-        components={{
-          Toolbar: CustomToolbar,
-          Footer,
-        }}
+        // components={{
+        //   Toolbar: CustomToolbar,
+        //   Footer,
+        // }}
         getRowHeight={() => "auto"}
         rows={rows}
         columns={columns}
@@ -338,6 +370,33 @@ export default function ConditionalValidationGrid() {
         //     console.log(e)
         //   }}
         loading={load}
+        onFilterModelChange={(newFilterModel) => setFilterModel(newFilterModel)}
+        components={{
+          Toolbar: GridToolbar,
+          Footer: CustomFooterTotalComponent,
+        }}
+        componentsProps={{
+          footer: { total },
+        }}
+        onStateChange={(state) => {
+          const visibleRows = state.filter.visibleRowsLookup;
+          let visibleItems = [];
+          for (const [id, value] of Object.entries(visibleRows)) {
+            if (value === true) {
+              visibleItems.push(id);
+            }
+          }
+          console.log(visibleItems);
+
+          const res = rows.filter((item) => visibleItems.includes(item.id));
+          console.log("res", res);
+          const total = res
+            .map((item) => item.cashtobePaid)
+            .reduce((a, b) => a + b, 0);
+          console.log("total", total);
+          setTotal(total);
+        }}
+        
       />
       <h3
         style={{
@@ -346,7 +405,7 @@ export default function ConditionalValidationGrid() {
           marginLeft: "400px",
         }}
       >
-        TOTAL AMOUT : {total}💸
+        TOTAL AMOUT : {totalA}💸
       </h3>
       <h3
         style={{
