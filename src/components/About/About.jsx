@@ -101,7 +101,7 @@ function About() {
           whileInView="onscreen"
           variants={headtext}
         >
-        <div className="GalleryHeadTxt">SEC ERA</div>
+          <div className="GalleryHeadTxt">SEC ERA</div>
         </AboutTitle>
         <AboutDescript>
           <Descard as={motion.div} variants={text}>
