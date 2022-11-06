@@ -39,7 +39,9 @@ import Chip from "@mui/joy/Chip";
 import FilledInput from "@mui/material/OutlinedInput";
 import InputLabel from "@mui/material/InputLabel";
 import MenuItem from "@mui/material/MenuItem";
+import IdCardUpload from "./IdCardUpload";
 
+import { getStorage, ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
 const muiTheme = extendMuiTheme({
   cssVarPrefix: "joy",
   colorSchemes: {
@@ -104,6 +106,7 @@ const muiTheme = extendMuiTheme({
   },
 });
 
+
 const joyTheme = extendJoyTheme();
 const theme = deepmerge(muiTheme, joyTheme);
 function ModeToggle() {
@@ -125,6 +128,9 @@ const Form = () => {
   const [Event, setEvent] = useState(false);
   const [Work, setWork] = useState(false);
   const [Pay, setPay] = useState(0);
+  const [img ,setImg] = useState(null)
+  const [imgload,setimgload]=useState(false)
+
   const [eventName, setEventName] = React.useState({
     CSE: [],
     IT: [],
@@ -155,6 +161,7 @@ const Form = () => {
     MBA: [],
     BME: [],
   });
+
   const handleChange = (e) => {
     setformdata((prevState) => ({
       ...prevState,
@@ -162,8 +169,94 @@ const Form = () => {
     }));
   };
 
+
+    const uploadProfileImg =async(id)=>{
+       
+        return new Promise((resolve,reject)=>{
+           const storage = getStorage();
+           const fileName = `${id}-${img.name}-${uuidv4()}`
+           const storageRef = ref(storage,'images/'+id)
+   
+           const uploadTask = uploadBytesResumable(storageRef, img);
+           uploadTask.on('state_changed', 
+        (snapshot) => {
+
+
+       // Observe state change events such as progress, pause, and resume
+       // Get task progress, including the number of bytes uploaded and the total number of bytes to be uploaded
+       const progress = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
+       console.log('Upload is ' + progress + '% done');
+      //  setProgress(progress)
+       switch (snapshot.state) {
+         case 'paused':
+           console.log('Upload is paused');
+           break;
+         case 'running':
+           console.log('Upload is running');
+
+           break;
+       }
+     }, 
+     (error) => {
+      reject(error)
+     }, 
+     () => {
+       // Handle successful uploads on complete
+       // For instance, get the download URL: https://firebasestorage.googleapis.com/...
+       getDownloadURL(uploadTask.snapshot.ref).then((downloadURL) => {
+
+            resolve(downloadURL);
+            formdata.IdCard = downloadURL;
+
+            const cityRef = doc(db, "RegisteredPeople", `${formdata.id}`);
+
+            setDoc(cityRef, formdata)
+              .then(async () => {
+                console.log("uploaded");
+                const sendqr = await fetch(
+                  `https://chart.googleapis.com/chart?chs=200x200&cht=qr&chl=https://main--effulgent-horse-1b60e3.netlify.app/user/${cityRef.id}&choe=UTF-8`
+                );
+                const QrUrl = sendqr.url;
+                console.log(QrUrl);
+                if (window.Email) {
+                  await window.Email.send({
+                    SecureToken: process.env.REACT_APP_EMAILCODE_ID,
+                    To: formdata.email,
+                    From: "gleedara@gmail.com",
+                    Subject: "congrats on registration in Drestein Event 🎉🎉",
+                    Body: `<h2>name : ${formdata.fname} ${formdata.lname}</h2>
+                                 <h2>college : ${formdata.college}</h2>
+                                 <h2>Rollno : ${formdata.regno}</h2>
+                               <img src="${QrUrl}" alt ='${cityRef.id}'>
+                        `,
+                  }).then(() => {
+                    alert("Email send to you successfully");
+                    setload(false);
+                    setconfirmMsg(true);
+                  });
+                }
+              })
+              .catch((e) => {
+                toast.error(e);
+              });
+          
+       });
+
+     }
+   );
+           
+        })
+    }
+  
   const handlesubmit = async (e) => {
     e.preventDefault();
+    if(img===null){
+      toast.error('Upload you colllege Id Card photo',{
+   theme:'dark',
+   position:'bottom-left'
+      })
+      return false
+    }
     setload(true);
     formdata.id = uuidv4();
 
@@ -183,6 +276,7 @@ const Form = () => {
 
     formdata.AmountPaid = 0;
 
+
     // for (const key in eventName) {
     //   console.log("thisd:", eventName[key]);
     //   if (!isEmpty(eventName[key])) {
@@ -190,6 +284,9 @@ const Form = () => {
     //     formdata.DEvent = true;
     //   }
     // }
+    formdata.DepartEvent = Event;
+
+
     if (Event === true) {
       formdata.CashToBePaid += 150;
     }
@@ -200,37 +297,8 @@ const Form = () => {
       formdata.CashToBePaid += 200;
     }
     console.log(formdata);
-    const cityRef = doc(db, "RegisteredPeople", `${formdata.id}`);
-
-    setDoc(cityRef, formdata)
-      .then(async () => {
-        console.log("uploaded");
-        const sendqr = await fetch(
-          `https://chart.googleapis.com/chart?chs=200x200&cht=qr&chl=https://main--effulgent-horse-1b60e3.netlify.app/user/${cityRef.id}&choe=UTF-8`
-        );
-        const QrUrl = sendqr.url;
-        console.log(QrUrl);
-        if (window.Email) {
-          await window.Email.send({
-            SecureToken: process.env.REACT_APP_EMAILCODE_ID,
-            To: formdata.email,
-            From: "gleedara@gmail.com",
-            Subject: "congrats on registration in Drestein Event 🎉🎉",
-            Body: `<h2>name : ${formdata.fname} ${formdata.lname}</h2>
-                         <h2>college : ${formdata.college}</h2>
-                         <h2>Rollno : ${formdata.regno}</h2>
-                       <img src="${QrUrl}" alt ='${cityRef.id}'>
-                `,
-          }).then(() => {
-            alert("Email send to you successfully");
-            setload(false);
-            setconfirmMsg(true);
-          });
-        }
-      })
-      .catch((e) => {
-        toast.error(e);
-      });
+    uploadProfileImg(formdata.id)
+    
   };
 
   const handleChangeForSelect = (e) => {
@@ -272,6 +340,7 @@ const Form = () => {
       events: ["xxx", "xxxxxxxxx"],
     },
   ];
+
   const test = [
     {
       name: "CSE",
@@ -348,6 +417,7 @@ const Form = () => {
     },
   ];
 
+
   return (
     <div className="headcontainer" data-joy-color-scheme="dark">
       {load && <Loading />}
@@ -401,6 +471,7 @@ const Form = () => {
                     label="First Name"
                     sx={{ width: "48%" }}
                   />
+
                   <TextField
                     name="lname"
                     required
@@ -411,6 +482,7 @@ const Form = () => {
                     label="Last Name"
                     sx={{ width: "48%" }}
                   />
+
                 </div>
                 <TextField
                   name="college"
@@ -546,8 +618,8 @@ const Form = () => {
                 />
                 {/*<Divider sx={{ "--Divider-childPosition": `50%` }}>
                   Other Events
-                </Divider> 
-                <Divider /> */}
+                </Divider> */}
+                <Divider />
 
                 <div
                   style={{
@@ -714,6 +786,9 @@ const Form = () => {
                     })}
                   </div>
                 ) : null}
+                <div>
+                        <IdCardUpload setImg={setImg} img={img} />
+                </div>
                 {Pay === 0 ? null : (
                   <Alert
                     variant="outlined"
@@ -731,7 +806,7 @@ const Form = () => {
                   <Alert
                     variant="outlined"
                     color="danger"
-                    sx={{ align: "center" }}
+                    sx={{ align: "center" ,zIndex:1000}}
                   >
                     processing your data don't reload the page
                   </Alert>

@@ -20,13 +20,15 @@ const DLogo = styled.img`
   }
 `;
 const Loadingconainer = styled.div`
-  width: 100%;
+  
   height: 100vh;
   display: flex;
   justify-content: center;
   background: rgba(72, 80, 93, 0.3);
   position: fixed;
   top: 0;
+  left: 0;
+  width: 100%;
   align-items: center;
   z-index: 10000;
 `;

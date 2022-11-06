@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Loading from "../../../Loading";
-import { Switch } from "@mui/material";
+import { Button, Switch } from "@mui/material";
 import { useState } from "react";
 import { doc } from "firebase/firestore";
 import { db } from "../../../configs/Firebase.config";
@@ -13,7 +13,7 @@ import Stack from "@mui/material/Stack";
 import { isEmpty } from "@firebase/util";
 import { Card } from "@mui/material";
 import { width } from "@mui/system";
-
+import UpdateForm from "./UpdateForm";
 const UserCard = styled.div`
   width: 100%;
   color: #000000;
@@ -52,11 +52,14 @@ function UserInfoCard({ data, Scanpage }) {
     cashPaidForPaper,
     cashPaidForProject,
     CashToBePaid,
-    DEvent,
+    DepartEvent,
     email,
     phno,
+    IdCard
   } = data;
+
   console.log(AmountPaid);
+
   const handleChange = async (e, id, AmountPaid) => {
     setload(true);
     // setChecked(pre=>!pre)
@@ -105,12 +108,14 @@ function UserInfoCard({ data, Scanpage }) {
     // console.log(e.target.checked)
   };
 
+
   const handleChangeforPaper = async (e, id, AmountPaid) => {
     setload(true);
     // setChecked(pre=>!pre)
     const docRef = doc(db, "RegisteredPeople", `${id}`);
     console.log(e.target.checked);
     let amount = 0;
+
     if (e.target.checked) {
       amount = AmountPaid + 250;
     } else {
@@ -128,6 +133,7 @@ function UserInfoCard({ data, Scanpage }) {
     });
     // console.log(e.target.checked)
   };
+
   const deptnames = [
     "IT",
     "CSE",
@@ -146,7 +152,7 @@ function UserInfoCard({ data, Scanpage }) {
 
   return (
     <UserCard
-      paid={cashPaid}
+      paid={cashPaid ? cashPaid : true}
       PaperPaid={PaperPresentation ? cashPaidForPaper : true}
       ProjectPaid={ProjectPresentation ? cashPaidForProject : true}
     >
@@ -157,20 +163,67 @@ function UserInfoCard({ data, Scanpage }) {
           width: "100%",
         }}
       >
-        <p>Name: {fname + " " + lname}</p>
-        <p>Rgister No: {regno}</p>
-        <p>Department: {dept}</p>
-        <p>Year: {year}</p>
-        <p>College: {college}</p>
-        <p>Gender: {gender}</p>
-        <p>email: {email}</p>
-        <p>phone no: {phno}</p>
+        <Stack direction='row' alignItems='start' justifyContent='space-between'>
+        <div>
+        <p style={{
+          padding:'5px'
+        }}>Name: {fname + " " + lname}</p>
+        <p style={{
+          padding:'5px'
+        }}>Rgister No: {regno}</p>
+        <p style={{
+          padding:'5px'
+        }}>Department: {dept}</p>
+        <p style={{
+          padding:'5px'
+        }}>Year: {year}</p>
+        <p style={{
+          padding:'5px'
+        }}>College: {college}</p>
+        <p style={{
+          padding:'5px'
+        }}>Gender: {gender}</p>
+        <p style={{
+          padding:'5px'
+        }}>email: {email}</p>
+        <p style={{
+          padding:'5px'
+        }}>phone no: {phno}</p>
+  
+        </div>
+        <div  style={{
+          width:'400px'
+
+        }}>
+          <img style={{
+            width:'100%',
+            borderRadius:'20px',
+          }} src={IdCard} alt='Id Card'/>
+        </div>
+     
+        </Stack>
+     
+      
       </Card>
-
-      <div>
+      <div style={{
+        width:'100%'
+      }}>
+<Stack direction='row' padding='30px 0' alignItems='center' justifyContent='space-between' >
+  
         <h1>Departments Events</h1>
+        <div>
+       <UpdateForm DepartEvent={DepartEvent} 
+       EventsRegistered={EventsRegistered}  
+        PaperPresentation={PaperPresentation} 
+        ProjectPresentation={ProjectPresentation}
+        CashToBePaid={CashToBePaid}
+        id={id}
+        AmountPaid={AmountPaid}
+        />
+        </div>
+</Stack>
 
-        {deptnames.map((deptnm) => {
+       {DepartEvent &&  deptnames.map((deptnm) => {
           return (
             !isEmpty(EventsRegistered[deptnm]) && (
               <Stack
@@ -195,9 +248,11 @@ function UserInfoCard({ data, Scanpage }) {
             )
           );
         })}
+
       </div>
       {/* departments evnts */}
-      {DEvent && (
+      
+      {DepartEvent && (
         <div
           style={{
             display: "flex",
@@ -207,7 +262,7 @@ function UserInfoCard({ data, Scanpage }) {
           <h3>
             <strong>DEPARTMENTS EVENTS : 150 ₹</strong>
           </h3>
-
+      
           <div>
             <Switch
               defaultChecked={cashPaid}

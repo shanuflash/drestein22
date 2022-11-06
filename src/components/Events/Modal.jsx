@@ -37,7 +37,10 @@ const Modal = ({ open, setOpenModal }) => {
           <div className="item">
             <span>Type</span>
             <IoIosPeople size={32} />
+
+
             <span>{eventObject.type}</span>
+
           </div>
           <div className="item">
             <span>Venue</span>

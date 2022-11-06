@@ -21,20 +21,24 @@ import Switch from "@mui/material/Switch";
 import UserInfoCard from "./UserInfoCard";
 const AdminPanelHead = styled.div`
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   width: 100%;
   height: 100%;
   background-color: #ffffff;
-
+  gap: 20px;
   color: black;
   position: relative;
+  padding: 10px;
 `;
 const UsersList = styled.div`
   width: 50%;
   height: 100%;
   overflow-y: scroll;
+  flex-grow: 2;
 `;
-const Scanner = styled.div``;
+const Scanner = styled.div`
+  margin-right:0;
+`;
 
 function AdminPannel() {
   const [RegistredPeople, setRegistredPeople] = useState([]);
@@ -91,7 +95,11 @@ function AdminPannel() {
         )}
       </UsersList>
 
+
       <Scanner>
+       
+
+
         <TextField
           id="filled-search"
           label="Search field"
@@ -133,6 +141,7 @@ function AdminPannel() {
           containerStyle={{ height: "400px", width: "500px" }}
         />
       </Scanner>
+
     </AdminPanelHead>
   );
 }
