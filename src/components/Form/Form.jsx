@@ -41,7 +41,12 @@ import InputLabel from "@mui/material/InputLabel";
 import MenuItem from "@mui/material/MenuItem";
 import IdCardUpload from "./IdCardUpload";
 
-import { getStorage, ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
+import {
+  getStorage,
+  ref,
+  uploadBytesResumable,
+  getDownloadURL,
+} from "firebase/storage";
 const muiTheme = extendMuiTheme({
   cssVarPrefix: "joy",
   colorSchemes: {
@@ -106,7 +111,6 @@ const muiTheme = extendMuiTheme({
   },
 });
 
-
 const joyTheme = extendJoyTheme();
 const theme = deepmerge(muiTheme, joyTheme);
 function ModeToggle() {
@@ -128,8 +132,8 @@ const Form = () => {
   const [Event, setEvent] = useState(false);
   const [Work, setWork] = useState(false);
   const [Pay, setPay] = useState(0);
-  const [img ,setImg] = useState(null)
-  const [imgload,setimgload]=useState(false)
+  const [img, setImg] = useState(null);
+  const [imgload, setimgload] = useState(false);
 
   const [eventName, setEventName] = React.useState({
     CSE: [],
@@ -169,42 +173,39 @@ const Form = () => {
     }));
   };
 
+  const uploadProfileImg = async (id) => {
+    return new Promise((resolve, reject) => {
+      const storage = getStorage();
+      const fileName = `${id}-${img.name}-${uuidv4()}`;
+      const storageRef = ref(storage, "images/" + id);
 
-    const uploadProfileImg =async(id)=>{
-       
-        return new Promise((resolve,reject)=>{
-           const storage = getStorage();
-           const fileName = `${id}-${img.name}-${uuidv4()}`
-           const storageRef = ref(storage,'images/'+id)
-   
-           const uploadTask = uploadBytesResumable(storageRef, img);
-           uploadTask.on('state_changed', 
+      const uploadTask = uploadBytesResumable(storageRef, img);
+      uploadTask.on(
+        "state_changed",
         (snapshot) => {
+          // Observe state change events such as progress, pause, and resume
+          // Get task progress, including the number of bytes uploaded and the total number of bytes to be uploaded
+          const progress =
+            (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
+          console.log("Upload is " + progress + "% done");
+          //  setProgress(progress)
+          switch (snapshot.state) {
+            case "paused":
+              console.log("Upload is paused");
+              break;
+            case "running":
+              console.log("Upload is running");
 
-
-       // Observe state change events such as progress, pause, and resume
-       // Get task progress, including the number of bytes uploaded and the total number of bytes to be uploaded
-       const progress = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
-       console.log('Upload is ' + progress + '% done');
-      //  setProgress(progress)
-       switch (snapshot.state) {
-         case 'paused':
-           console.log('Upload is paused');
-           break;
-         case 'running':
-           console.log('Upload is running');
-
-           break;
-       }
-     }, 
-     (error) => {
-      reject(error)
-     }, 
-     () => {
-       // Handle successful uploads on complete
-       // For instance, get the download URL: https://firebasestorage.googleapis.com/...
-       getDownloadURL(uploadTask.snapshot.ref).then((downloadURL) => {
-
+              break;
+          }
+        },
+        (error) => {
+          reject(error);
+        },
+        () => {
+          // Handle successful uploads on complete
+          // For instance, get the download URL: https://firebasestorage.googleapis.com/...
+          getDownloadURL(uploadTask.snapshot.ref).then((downloadURL) => {
             resolve(downloadURL);
             formdata.IdCard = downloadURL;
 
@@ -239,23 +240,20 @@ const Form = () => {
               .catch((e) => {
                 toast.error(e);
               });
-          
-       });
+          });
+        }
+      );
+    });
+  };
 
-     }
-   );
-           
-        })
-    }
-  
   const handlesubmit = async (e) => {
     e.preventDefault();
-    if(img===null){
-      toast.error('Upload you colllege Id Card photo',{
-   theme:'dark',
-   position:'bottom-left'
-      })
-      return false
+    if (img === null) {
+      toast.error("Upload you colllege Id Card photo", {
+        theme: "dark",
+        position: "bottom-left",
+      });
+      return false;
     }
     setload(true);
     formdata.id = uuidv4();
@@ -276,7 +274,6 @@ const Form = () => {
 
     formdata.AmountPaid = 0;
 
-
     // for (const key in eventName) {
     //   console.log("thisd:", eventName[key]);
     //   if (!isEmpty(eventName[key])) {
@@ -285,7 +282,6 @@ const Form = () => {
     //   }
     // }
     formdata.DepartEvent = Event;
-
 
     if (Event === true) {
       formdata.CashToBePaid += 150;
@@ -297,8 +293,7 @@ const Form = () => {
       formdata.CashToBePaid += 200;
     }
     console.log(formdata);
-    uploadProfileImg(formdata.id)
-    
+    uploadProfileImg(formdata.id);
   };
 
   const handleChangeForSelect = (e) => {
@@ -328,16 +323,51 @@ const Form = () => {
   };
   const worktest = [
     {
-      name: "CSE",
-      events: ["Test", "Testezz"],
+      name: "AGRI",
+      events: ["FIELD DEMONSTRATION OF DRONE SPRAYER", "ORGANIC FARMING"],
     },
     {
-      name: "IT",
-      events: ["ttttt", "tttezzz"],
+      name: "BME",
+      events: [
+        "3D modelling in CT & MRI scans on Navigation based surgery",
+        "Biomechanics & LabVIEW for Healthcare Applications",
+      ],
     },
     {
-      name: "ECE",
-      events: ["xxx", "xxxxxxxxx"],
+      name: "CIVIL",
+      events: [
+        "Recent technological advancements in building designs using revit",
+        "4D Building Information Modelling for Project Management",
+        "5D BIM for Construction Industry",
+      ],
+    },
+    {
+      name: "CHEM",
+      events: ["EXCEL for Chemical Engineers : Basics to Advanced"],
+    },
+    ,
+    {
+      name: "MECH",
+      events: [
+        "Augmented Reality for 4.0 (Online)",
+        "Robotics Simulation (Online)",
+        "Hands on training in Fusion 360 (Offline)",
+      ],
+    },
+    {
+      name: "MBA",
+      events: [
+        "Goal setting and creative thinking",
+        "Design-Data-Digital-3D Model",
+      ],
+    },
+    {
+      name: "EEE",
+      events: [
+        "E-Vehicle ",
+        "Basics of Machine Learning using python",
+        "EV Battery Assembling using Lithium iron phosphate cells",
+      ],
     },
   ];
 
@@ -417,7 +447,6 @@ const Form = () => {
     },
   ];
 
-
   return (
     <div className="headcontainer" data-joy-color-scheme="dark">
       {load && <Loading />}
@@ -482,7 +511,6 @@ const Form = () => {
                     label="Last Name"
                     sx={{ width: "48%" }}
                   />
-
                 </div>
                 <TextField
                   name="college"
@@ -490,7 +518,7 @@ const Form = () => {
                   value={formdata.college}
                   onChange={handleChange}
                   type="text"
-                  placeholder="College"
+                  placeholder="Your college name..."
                   label="College Name"
                 />
                 <div className="yearno">
@@ -500,7 +528,7 @@ const Form = () => {
                     value={formdata.regno}
                     onChange={handleChange}
                     type="number"
-                    placeholder="Year"
+                    placeholder="Your roll number..."
                     label="Roll Number"
                     sx={{ width: "48%" }}
                   />
@@ -514,7 +542,7 @@ const Form = () => {
                       id="year"
                       required
                       data-name="year"
-                      placeholder="Year"
+                      placeholder="Select year..."
                       value={formdata.year}
                       onChange={handleChangeForSelect}
                     >
@@ -550,7 +578,7 @@ const Form = () => {
                       id="dept"
                       required
                       name="dept"
-                      placeholder="Department"
+                      placeholder="Select department..."
                       value={formdata.dept}
                       onChange={handleChangeForSelect}
                     >
@@ -578,7 +606,7 @@ const Form = () => {
                       id="gender"
                       required
                       name="gender"
-                      placeholder="Gender"
+                      placeholder="Select gender..."
                       value={formdata.gender}
                       onChange={handleChangeForSelect}
                     >
@@ -613,7 +641,7 @@ const Form = () => {
                   value={formdata.email}
                   onChange={handleChange}
                   type="email"
-                  placeholder="johndone@email.com"
+                  placeholder="johndoe@email.com"
                   label="Email"
                 />
                 {/*<Divider sx={{ "--Divider-childPosition": `50%` }}>
@@ -749,45 +777,55 @@ const Form = () => {
                     <Divider sx={{ "--Divider-childPosition": `50%` }}>
                       Workshops
                     </Divider>
-                    {worktest.map((departw) => {
-                      return (
-                        <FormControlM style={{ margin: "10px", width: "30%" }}>
-                          <InputLabel>{departw.name}</InputLabel>
-                          <SelectM
-                            multiple
-                            value={workName[departw.name]}
-                            name={departw.name}
-                            onChange={handleChangeTT}
-                            input={<FilledInput label={departw.name} />}
-                            renderValue={(selected) => (
-                              <Box
-                                sx={{
-                                  display: "flex",
-                                  flexWrap: "wrap",
-                                  gap: 0.5,
-                                }}
-                              >
-                                {selected.map((value) => (
-                                  <Chip key={value}>{value}</Chip>
-                                ))}
-                              </Box>
-                            )}
+                    <div
+                      style={{
+                        display: "flex",
+                        justifyContent: "center",
+                        flexWrap: "wrap",
+                      }}
+                    >
+                      {worktest.map((departw) => {
+                        return (
+                          <FormControlM
+                            style={{ margin: "10px", width: "30%" }}
                           >
-                            {departw.events.map((ev) => {
-                              return (
-                                <MenuItem key={ev} value={ev}>
-                                  {ev}
-                                </MenuItem>
-                              );
-                            })}
-                          </SelectM>
-                        </FormControlM>
-                      );
-                    })}
+                            <InputLabel>{departw.name}</InputLabel>
+                            <SelectM
+                              multiple
+                              value={workName[departw.name]}
+                              name={departw.name}
+                              onChange={handleChangeTT}
+                              input={<FilledInput label={departw.name} />}
+                              renderValue={(selected) => (
+                                <Box
+                                  sx={{
+                                    display: "flex",
+                                    flexWrap: "wrap",
+                                    gap: 0.5,
+                                  }}
+                                >
+                                  {selected.map((value) => (
+                                    <Chip key={value}>{value}</Chip>
+                                  ))}
+                                </Box>
+                              )}
+                            >
+                              {departw.events.map((ev) => {
+                                return (
+                                  <MenuItem key={ev} value={ev}>
+                                    {ev}
+                                  </MenuItem>
+                                );
+                              })}
+                            </SelectM>
+                          </FormControlM>
+                        );
+                      })}
+                    </div>
                   </div>
                 ) : null}
                 <div>
-                        <IdCardUpload setImg={setImg} img={img} />
+                  <IdCardUpload setImg={setImg} img={img} />
                 </div>
                 {Pay === 0 ? null : (
                   <Alert
@@ -806,7 +844,7 @@ const Form = () => {
                   <Alert
                     variant="outlined"
                     color="danger"
-                    sx={{ align: "center" ,zIndex:1000}}
+                    sx={{ align: "center", zIndex: 1000 }}
                   >
                     processing your data don't reload the page
                   </Alert>
