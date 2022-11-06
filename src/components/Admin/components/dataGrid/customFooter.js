@@ -14,11 +14,9 @@ import { toast } from "react-toastify";
 import { Card } from "@mui/material";
 import ContentCopyIcon from "@mui/icons-material/ContentCopy";
 function CustomFooterTotalComponent(props) {
-
-
   const [message, setMessage] = React.useState("");
   const apiRef = useGridApiContext();
-  console.log('this pops',props)
+  console.log("this pops", props);
 
   const handleRowClick = (params) => {
     setMessage(params.row.id);
@@ -55,7 +53,7 @@ function CustomFooterTotalComponent(props) {
 }
 
 CustomFooterTotalComponent.propTypes = {
-  total: PropTypes.number
+  total: PropTypes.number,
 };
 
 export { CustomFooterTotalComponent };

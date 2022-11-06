@@ -22,7 +22,6 @@ const Events = () => {
         <Nav />
         <div className="event-container">
           {EventDetails.map((EachDept) => {
-
             return (
               <>
                 <div className="top" id={EachDept.id}>
@@ -39,17 +38,14 @@ const Events = () => {
                       />
                     );
                   })}
-                    {EachDept.workshopslist && EachDept.workshopslist.map(data=>{
-                      return <EventCard {...data}  />
-                    })
-                  }
-                  
+                  {EachDept.workshopslist &&
+                    EachDept.workshopslist.map((data) => {
+                      return <EventCard {...data} />;
+                    })}
                 </div>
-                
               </>
             );
           })}
-          
         </div>
       </div>
     </>

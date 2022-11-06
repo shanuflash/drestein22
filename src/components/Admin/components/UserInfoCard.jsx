@@ -55,7 +55,7 @@ function UserInfoCard({ data, Scanpage }) {
     DepartEvent,
     email,
     phno,
-    IdCard
+    IdCard,
   } = data;
 
   console.log(AmountPaid);
@@ -107,7 +107,6 @@ function UserInfoCard({ data, Scanpage }) {
     });
     // console.log(e.target.checked)
   };
-
 
   const handleChangeforPaper = async (e, id, AmountPaid) => {
     setload(true);
@@ -163,95 +162,139 @@ function UserInfoCard({ data, Scanpage }) {
           width: "100%",
         }}
       >
-        <Stack direction='row' alignItems='start' justifyContent='space-between'>
-        <div>
-        <p style={{
-          padding:'5px'
-        }}>Name: {fname + " " + lname}</p>
-        <p style={{
-          padding:'5px'
-        }}>Rgister No: {regno}</p>
-        <p style={{
-          padding:'5px'
-        }}>Department: {dept}</p>
-        <p style={{
-          padding:'5px'
-        }}>Year: {year}</p>
-        <p style={{
-          padding:'5px'
-        }}>College: {college}</p>
-        <p style={{
-          padding:'5px'
-        }}>Gender: {gender}</p>
-        <p style={{
-          padding:'5px'
-        }}>email: {email}</p>
-        <p style={{
-          padding:'5px'
-        }}>phone no: {phno}</p>
-  
-        </div>
-        <div  style={{
-          width:'400px'
-
-        }}>
-          <img style={{
-            width:'100%',
-            borderRadius:'20px',
-          }} src={IdCard} alt='Id Card'/>
-        </div>
-     
+        <Stack
+          direction="row"
+          alignItems="start"
+          justifyContent="space-between"
+        >
+          <div>
+            <p
+              style={{
+                padding: "5px",
+              }}
+            >
+              Name: {fname + " " + lname}
+            </p>
+            <p
+              style={{
+                padding: "5px",
+              }}
+            >
+              Rgister No: {regno}
+            </p>
+            <p
+              style={{
+                padding: "5px",
+              }}
+            >
+              Department: {dept}
+            </p>
+            <p
+              style={{
+                padding: "5px",
+              }}
+            >
+              Year: {year}
+            </p>
+            <p
+              style={{
+                padding: "5px",
+              }}
+            >
+              College: {college}
+            </p>
+            <p
+              style={{
+                padding: "5px",
+              }}
+            >
+              Gender: {gender}
+            </p>
+            <p
+              style={{
+                padding: "5px",
+              }}
+            >
+              email: {email}
+            </p>
+            <p
+              style={{
+                padding: "5px",
+              }}
+            >
+              phone no: {phno}
+            </p>
+          </div>
+          <div
+            style={{
+              width: "400px",
+            }}
+          >
+            <img
+              style={{
+                width: "100%",
+                borderRadius: "20px",
+              }}
+              src={IdCard}
+              alt="Id Card"
+            />
+          </div>
         </Stack>
-     
-      
       </Card>
-      <div style={{
-        width:'100%'
-      }}>
-<Stack direction='row' padding='30px 0' alignItems='center' justifyContent='space-between' >
-  
-        <h1>Departments Events</h1>
-        <div>
-       <UpdateForm DepartEvent={DepartEvent} 
-       EventsRegistered={EventsRegistered}  
-        PaperPresentation={PaperPresentation} 
-        ProjectPresentation={ProjectPresentation}
-        CashToBePaid={CashToBePaid}
-        id={id}
-        AmountPaid={AmountPaid}
-        />
-        </div>
-</Stack>
+      <div
+        style={{
+          width: "100%",
+        }}
+      >
+        <Stack
+          direction="row"
+          padding="30px 0"
+          alignItems="center"
+          justifyContent="space-between"
+        >
+          <h1>Departments Events</h1>
+          <div>
+            <UpdateForm
+              DepartEvent={DepartEvent}
+              EventsRegistered={EventsRegistered}
+              PaperPresentation={PaperPresentation}
+              ProjectPresentation={ProjectPresentation}
+              CashToBePaid={CashToBePaid}
+              id={id}
+              AmountPaid={AmountPaid}
+            />
+          </div>
+        </Stack>
 
-       {DepartEvent &&  deptnames.map((deptnm) => {
-          return (
-            !isEmpty(EventsRegistered[deptnm]) && (
-              <Stack
-                direction="row"
-                sx={{
-                  margin: "10px",
-                  display: "flex",
+        {DepartEvent &&
+          deptnames.map((deptnm) => {
+            return (
+              !isEmpty(EventsRegistered[deptnm]) && (
+                <Stack
+                  direction="row"
+                  sx={{
+                    margin: "10px",
+                    display: "flex",
 
-                  alignItems: "center",
-                }}
-                spacing={1}
-              >
-                <p>{deptnm}</p>
+                    alignItems: "center",
+                  }}
+                  spacing={1}
+                >
+                  <p>{deptnm}</p>
 
-                {!isEmpty(EventsRegistered[deptnm]) &&
-                  EventsRegistered[deptnm].map((data) => {
-                    console.log("data", data);
+                  {!isEmpty(EventsRegistered[deptnm]) &&
+                    EventsRegistered[deptnm].map((data) => {
+                      console.log("data", data);
 
-                    return <Chip label={data} />;
-                  })}
-              </Stack>
-            )
-          );
-        })}
-
+                      return <Chip label={data} />;
+                    })}
+                </Stack>
+              )
+            );
+          })}
       </div>
       {/* departments evnts */}
-      
+
       {DepartEvent && (
         <div
           style={{
@@ -262,7 +305,7 @@ function UserInfoCard({ data, Scanpage }) {
           <h3>
             <strong>DEPARTMENTS EVENTS : 150 ₹</strong>
           </h3>
-      
+
           <div>
             <Switch
               defaultChecked={cashPaid}

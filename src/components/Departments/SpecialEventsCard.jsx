@@ -112,49 +112,47 @@ function SpacialEventsCard({ img, title, des, color, bgtext, mbtm, id }) {
       variants={device < 700 ? cardforMobile : cardforDesktop}
       className="containerdept"
     >
-
-        <Card
-          href="#"
-          as={motion.div}
-          initial="offscreen"
-          whileInView="onscreen"
-          viewport={{ once: true, amount: 0.5 }}
-          transition={{
-            staggerChildren: 0.5,
+      <Card
+        href="#"
+        as={motion.div}
+        initial="offscreen"
+        whileInView="onscreen"
+        viewport={{ once: true, amount: 0.5 }}
+        transition={{
+          staggerChildren: 0.5,
+        }}
+        className="card"
+      >
+        <div
+          class="imgBx"
+          style={{
+            width: "100%",
+            maxHeight: "150px",
+            margin: "20px 0",
           }}
-          className="card"
+          variants={text}
         >
-          <div
-            class="imgBx"
-            style={{
-              width: "100%",
-              maxHeight: "150px",
-              margin: "20px 0",
-            }}
-            variants={text}
-          >
-            <motion.div variants={cardimg}>
-              <img
-                style={{
-                  boxShadow:
-                    "rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px",
-                  borderRadius: "20px",
-                  objectFit: "cover",
-                }}
-                src={img}
-                alt="department"
-              />
-            </motion.div>
-          </div>
-          <div className="contentBx">
-            <DeptTxt as={motion.div} variants={text}>
-              {a[0]}
-              <br />
-              {a[1]}
-            </DeptTxt>
-          </div>
-        </Card>
-
+          <motion.div variants={cardimg}>
+            <img
+              style={{
+                boxShadow:
+                  "rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px",
+                borderRadius: "20px",
+                objectFit: "cover",
+              }}
+              src={img}
+              alt="department"
+            />
+          </motion.div>
+        </div>
+        <div className="contentBx">
+          <DeptTxt as={motion.div} variants={text}>
+            {a[0]}
+            <br />
+            {a[1]}
+          </DeptTxt>
+        </div>
+      </Card>
     </motion.div>
   );
 }

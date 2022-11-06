@@ -37,7 +37,7 @@ const UsersList = styled.div`
   flex-grow: 2;
 `;
 const Scanner = styled.div`
-  margin-right:0;
+  margin-right: 0;
 `;
 
 function AdminPannel() {
@@ -95,11 +95,7 @@ function AdminPannel() {
         )}
       </UsersList>
 
-
       <Scanner>
-       
-
-
         <TextField
           id="filled-search"
           label="Search field"
@@ -141,7 +137,6 @@ function AdminPannel() {
           containerStyle={{ height: "400px", width: "500px" }}
         />
       </Scanner>
-
     </AdminPanelHead>
   );
 }

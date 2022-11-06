@@ -14,8 +14,8 @@ html {
   scroll-behavior: smooth;
   scroll-padding-top: 130px;
 }
-@media  screen and (max-width: 600px) {
-  html{
+@media screen and (max-width: 600px) {
+  html {
     scroll-padding-top: 90px;
   }
 }

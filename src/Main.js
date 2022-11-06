@@ -28,7 +28,7 @@ const Main = () => {
   const particlesInit = useCallback(async (engine) => {
     await loadFull(engine);
   }, []);
-  const particlesLoaded = useCallback(async (container) => { }, []);
+  const particlesLoaded = useCallback(async (container) => {}, []);
 
   return (
     <div ref={scroll} id="#">
@@ -49,7 +49,7 @@ const Main = () => {
         className="img"
         style={{ y: DeviceSize < 800 ? MValue : DValue, zIndex: -1 }}
       ></motion.div>
-      
+
       <DepartmentDiv id="Departments">
         <Departments />
       </DepartmentDiv>
@@ -63,7 +63,7 @@ const Main = () => {
       <div id="Guest">
         <Guest />
       </div>
-      <div id="Count" style={{width:"100%"}}>
+      <div id="Count" style={{ width: "100%" }}>
         <Counter />
       </div>
       <div id="About">

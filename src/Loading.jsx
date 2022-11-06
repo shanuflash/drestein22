@@ -20,7 +20,6 @@ const DLogo = styled.img`
   }
 `;
 const Loadingconainer = styled.div`
-  
   height: 100vh;
   display: flex;
   justify-content: center;

@@ -26,17 +26,12 @@ import ContentCopyIcon from "@mui/icons-material/ContentCopy";
 import { type } from "@testing-library/user-event/dist/type";
 import Loading from "../../../../Loading";
 
-import {GridToolbar } from "@mui/x-data-grid";
+import { GridToolbar } from "@mui/x-data-grid";
 // import { data } from "./data.js";
 import { List, ListItemText } from "@mui/material";
 import { CustomFooterTotalComponent } from "./customFooter";
 
-
-import clsx from 'clsx';
-
-
-
-
+import clsx from "clsx";
 
 const StyledBox = styled(Box)(({ theme }) => ({
   height: "90vh",
@@ -57,10 +52,10 @@ const StyledBox = styled(Box)(({ theme }) => ({
   },
 }));
 
-const Footer = ({props}) => {
+const Footer = ({ props }) => {
   const [message, setMessage] = React.useState("");
   const apiRef = useGridApiContext();
-  console.log('this pops',props)
+  console.log("this pops", props);
 
   const handleRowClick = (params) => {
     setMessage(params.row.id);
@@ -266,12 +261,12 @@ export default function ConditionalValidationGrid() {
       type: "boolean",
       cellClassName: (params) => {
         if (params.value == null) {
-          return '';
+          return "";
         }
-  
-        return clsx('super-app', {
-          paid: params.value===true ,
-          notpaid: params.value===false,
+
+        return clsx("super-app", {
+          paid: params.value === true,
+          notpaid: params.value === false,
         });
       },
     },
@@ -291,12 +286,12 @@ export default function ConditionalValidationGrid() {
       editable: false,
       cellClassName: (params) => {
         if (params.value == null) {
-          return '';
+          return "";
         }
-  
-        return clsx('super-app', {
-          paid: params.value===true ,
-          notpaid: params.value===false,
+
+        return clsx("super-app", {
+          paid: params.value === true,
+          notpaid: params.value === false,
         });
       },
     },
@@ -314,12 +309,12 @@ export default function ConditionalValidationGrid() {
       type: "boolean",
       cellClassName: (params) => {
         if (params.value == null) {
-          return '';
+          return "";
         }
-  
-        return clsx('super-app', {
-          paid: params.value===true ,
-          notpaid: params.value===false,
+
+        return clsx("super-app", {
+          paid: params.value === true,
+          notpaid: params.value === false,
         });
       },
 
@@ -360,31 +355,33 @@ export default function ConditionalValidationGrid() {
       {
         columnField: "cashtobePaid",
         operatorValue: ">",
-        value: "200"
-      }
-    ]
+        value: "200",
+      },
+    ],
   });
 
   return (
-    <Box   sx={{
-      height:'90%',
-      width: '100%',
-      '& .super-app-theme--cell': {
-        backgroundColor: 'red',
-        color: '#1a3e72',
-        fontWeight: '600',
-      },
-      '& .super-app.paid': {
-        backgroundColor: 'rgba(157, 255, 118, 0.49)',
-        color: '#1a3e72',
-        fontWeight: '600',
-      },
-      '& .super-app.notpaid': {
-        backgroundColor: '#ff8194',
-        color: '#1a3e72',
-        fontWeight: '600',
-      },
-    }}>
+    <Box
+      sx={{
+        height: "90%",
+        width: "100%",
+        "& .super-app-theme--cell": {
+          backgroundColor: "red",
+          color: "#1a3e72",
+          fontWeight: "600",
+        },
+        "& .super-app.paid": {
+          backgroundColor: "rgba(157, 255, 118, 0.49)",
+          color: "#1a3e72",
+          fontWeight: "600",
+        },
+        "& .super-app.notpaid": {
+          backgroundColor: "#ff8194",
+          color: "#1a3e72",
+          fontWeight: "600",
+        },
+      }}
+    >
       {/* {load && <Loading/>} */}
       <DataGrid
         //  rowHeight={100}
@@ -444,7 +441,6 @@ export default function ConditionalValidationGrid() {
           console.log("total", total);
           setTotal(total);
         }}
-        
       />
       <h3
         style={{

@@ -112,7 +112,7 @@ function DepartMentCard({ img, title, des, color, bgtext, mbtm, id }) {
       variants={device < 700 ? cardforMobile : cardforDesktop}
       className="containerdept"
     >
-       <Link to={`/events${id}`}>
+      <Link to={`/events${id}`}>
         <Card
           href="#"
           as={motion.div}

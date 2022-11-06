@@ -45,7 +45,10 @@ function App() {
                 <Route path="user/:userid" element={<SingleUserPage />} />
                 <Route path="/Admin" element={<PrivateRoute />}>
                   <Route path="/Admin" element={<AdminMain />}>
-                    <Route path="users" element={<ConditionalValidationGrid />} />
+                    <Route
+                      path="users"
+                      element={<ConditionalValidationGrid />}
+                    />
                     <Route path="unpaid" element={<UnPaidUsers />} />
                     <Route path="scanusers" element={<AdminPannel />} />
                     <Route path="profile" element={<AdminProfile />} />
