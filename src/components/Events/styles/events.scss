@@ -5,6 +5,7 @@
   padding: 0 1rem 0 3rem;
   color: white;
   margin-bottom: 2rem;
+
 }
 
 .event-container .top {
@@ -18,7 +19,10 @@
 .wrapper {
   margin-top: 2rem;
   display: flex;
-overflow-x: scroll;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+
+
   gap: 1.5rem;
 
   // display: grid;

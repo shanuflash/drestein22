@@ -40,7 +40,7 @@ const Events = () => {
                     );
                   })}
                     {EachDept.workshopslist && EachDept.workshopslist.map(data=>{
-                      return <EventCard {...data}/>
+                      return <EventCard {...data}  />
                     })
                   }
                   
