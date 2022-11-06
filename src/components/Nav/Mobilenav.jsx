@@ -18,11 +18,11 @@ const Mobilenav = ({ openMenu }) => {
           <li>GALLERY</li>
         </Link>
         <Link style={{ textDecoration: "inherit" }} to="/#SECLife">
-          <li>SEC LIFE</li>
+          <li>SEC ERA</li>
         </Link>
-        <Link style={{ textDecoration: "inherit" }} to="/#Guest">
+        {/* <Link style={{ textDecoration: "inherit" }} to="/#Guest">
           <li>CHIEF GUEST</li>
-        </Link>
+        </Link> */}
         <Link style={{ textDecoration: "inherit" }} to="/#About">
           <li>ABOUT</li>
         </Link>

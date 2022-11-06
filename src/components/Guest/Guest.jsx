@@ -161,7 +161,7 @@ function Guest() {
         whileInView="onscreen"
         variants={textlight}
       >
-        Chief Guests
+        <div className="GalleryHeadTxt">Cheif Guest</div>
       </GuestTitle>
 
       <GuestContainer>
