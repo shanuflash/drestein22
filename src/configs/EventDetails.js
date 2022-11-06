@@ -13,7 +13,6 @@ export const EventDetails = [
         time: "TBA",
         members: "2",
         rules: "",
-        color: "0, 1, 38",
         round1title: "Aptitude and Quantitative puzzles/problems",
         round1:
           "In this round the teams (2-3 members) will be given a set of aptitude and logical based questions which they need to solve within the given time. This round will contain questions related to algorithms like N-queens as well as encryption and decryption using simple cipher techniques to find the clues for the second round. The teams that manage to solve all the questions correctly within assigned time will proceed to the next round",
@@ -27,6 +26,7 @@ export const EventDetails = [
         round4:
           "Each team will have to code the program for the found algorithm in either C programming or Python language and the first team to complete the coding will be the winner of the event",
         tag: "EVENT",
+        color: "0, 1, 38",
         logo: "/EventsAssets/cse1.png",
         staff: [
           {
@@ -78,7 +78,6 @@ export const EventDetails = [
         time: "TBA",
         members: "1-2",
         rules: "",
-        color: "0, 1, 38",
 
         round1title: "Quiz",
         round1:
@@ -88,6 +87,7 @@ export const EventDetails = [
           " The participants need to design a website page based on the theme given. The participants are given 5 themes, 3 fonts and 3 images. They need to select one from the given themes and need to design a website UI ake up one of the five challenges provided and design a UI in accordance with the challenge. Font and image requirements should be fulfilled as provided in the challenge.  Participants can use images of their own if necessary. Participants should not use the pre-defined components from the external resources .Participants are given the freedom to choose any one of the given tools which is fit for designing a UI interface.",
         Tools: "FIGMA.FLUID UI.VISILI AI.",
         tag: "EVENT",
+        color: "0, 1, 38",
         logo: "/EventsAssets/cse2.png",
         staff: [
           {
@@ -144,7 +144,6 @@ export const EventDetails = [
         venue: "TBA",
         time: "TBA",
         members: "2",
-        color: "0, 1, 38",
 
         rules: "",
         round1:
@@ -155,6 +154,7 @@ export const EventDetails = [
           "Program with some errors is given in the paper to the coders and first they have to debug that program in the paper and then they have to execute the same program in the system with screen off.Then three pattern programs are given to them and they have to find the solution to that program then they have to execute it in the system with screen off. ",
 
         tag: "EVENT",
+        color: "0, 1, 38",
         /* background-color: #000126;  */
         logo: "/EventsAssets/cse3.png",
         staff: [
@@ -206,7 +206,6 @@ export const EventDetails = [
         type: "Team",
         venue: "TBA",
         time: "TBA",
-        color: "0, 1, 38",
 
         members: "1-3",
         rules: "",
@@ -217,6 +216,7 @@ export const EventDetails = [
         round2:
           "Each team will be receiving 3-4 minutes to present their idea through ppt and 2-3 minutes to solve the given questions (Timing may vary based on number of teams).The TOP 3 will be selected based on the idea of the presentation.",
         tag: "EVENT",
+        color: "0, 1, 38",
         logo: "/EventsAssets/cse4.png",
         staff: [
           {
@@ -272,7 +272,6 @@ export const EventDetails = [
         type: "Team",
         venue: "TBA",
         time: "TBA",
-        color: "0, 128, 255",
 
         members: "2",
         rules:
@@ -286,6 +285,7 @@ export const EventDetails = [
         judge:
           "All the problems have same points allotted to them. Participant whose code gets executed will be given higher preference. Second preference will be given to the code with least number of errors. The decision of the organizers in declaring the results will be final. No queries in this regard will be entertained. Any team found to be indulging in any form of malpractice will be immediately disqualified. ",
         tag: "EVENT",
+        color: "0, 1, 38",
         logo: "/EventsAssets/it1.png",
         staff: [
           {
@@ -345,6 +345,7 @@ export const EventDetails = [
         round3:
           "Top 4 teams in this round .Same team member .Any language can be used .Solve medium difficulty code snippets to win .Code should be perfect to conquer the final game.",
         tag: "EVENT",
+        color: "0, 1, 38",
         logo: "/EventsAssets/it2.png",
         staff: [
           {
@@ -394,6 +395,7 @@ export const EventDetails = [
         format:
           "There will be a set of challenges from a range of categories like Cryptography, Web Security, Forensics, Steganography, Reverse Engineering, Binary Exploits, etc. The challenges can either be a collection of files that they can download and find the “Flag” or can be running as web services to which, the participants connect and exploit to retrieve the Flag. Each category contains a variety of questions with different point values and levels of difficulty.The participants will be ranked based on their scores, and the time taken will be used as a tiebreaker. ",
         tag: "EVENT",
+        color: "0, 1, 38",
         logo: "/EventsAssets/it3.png",
         staff: [
           {
@@ -455,6 +457,7 @@ export const EventDetails = [
         round3:
           "Participants will be provided with an executable file and they will have to perform reverse coding. They will have to test for different inputs and outputs.Finally, the source code is to be generated. The round will have five such questions.The winner will be selected based on accuracy and working code. ",
         tag: "EVENT",
+        color: "0, 1, 38",
 
         logo: "/EventsAssets/it4.png",
         staff: [
@@ -520,6 +523,7 @@ export const EventDetails = [
           "The participants are requested to explain about the functions of the parts found out by them. Participants should explain the functions within the given time limit. The time limit is about 20seconds.The highest explained team(or)individual will be given 1st prize and following by the runner ups ",
 
         tag: "EVENT",
+        color: "0, 1, 38",
         logo: "/EventsAssets/agri1.png",
         staff: [
           {
@@ -565,6 +569,7 @@ export const EventDetails = [
           "Participants will have a time limit of 2mins .Marks will be deducted for repetition of points .The team leading the points table will be declared as winners (NOTE: Number of rounds will depend on the number of entries)",
 
         tag: "EVENT",
+        color: "0, 1, 38",
         logo: "/EventsAssets/agri2.png",
         staff: [
           {
@@ -601,6 +606,7 @@ export const EventDetails = [
         round1:
           " Per team  comprises of 4members.Team is required to finish as much hunt as possible within the limit.Team members must stay together at all times.Participants will have time limit of 2hours.Teams are not supposed to take away the treasure with them neither touch it. ",
         tag: "EVENT",
+        color: "0, 1, 38",
         logo: "/EventsAssets/agri3.png",
         staff: [
           {
@@ -645,6 +651,7 @@ export const EventDetails = [
         round3:
           "Description *-* food preparation*-* Each team will be given 2 Chances , team member needs to answer when one of the team is performing One who is acting should not open the mouth, if they do the team will be disqualified .Time limit to perform is 3 minutes ",
         tag: "EVENT",
+        color: "0, 1, 38",
 
         logo: "/EventsAssets/agri4.png",
         staff: [
@@ -685,102 +692,90 @@ export const EventDetails = [
     ],
     workshopslist: [
       {
-          name: "FIELD DEMONSTRATION OF DRONE SPRAYER  ",
-          logo: "agriw1.png",
-          tag: "WORKSHOP",
-  
-          day1: {
-              date: "16/11/2022-FN",
-              time: "12-3.00",
-              mode: "OFFLINE",
-              venu: "TBA",
-              resource: [
-  
-              ],
-              staff: [
-                  {
-  
-                      name: "MR.TAJUDDIN   ",
-                      desig: "Professor and Head  ",
-                      phone: 9677883599,
-                      email: "hod.agri@saveetha.ac.in  ",
-  
-                  },
-                  {
-  
-                      name: "MR.GANAPATHI  ",
-                      desig: "Assistant Professor (SG)  ",
-                      phone: 9787982231,
-                      email: "ganapathid@saveetha.ac.in   ",
-  
-                  }
-  
-              ],
-              studennt: [
-                  {
-                      name: "DHANALAKSHMI    ",
-                      year: "IV ",
-                      phone: 9360677202,
-                      email: "ruthudhana25@gmail.com  ",
-                  },
-                  {
-                      name: "SANJAY  ",
-                      year: "III",
-                      phone: 9940631302,
-                      email: "ssanjay1303@gmail.com  ",
-                  }
-              ]
-          },
+        name: "FIELD DEMONSTRATION OF DRONE SPRAYER  ",
+        logo: "agriw1.png",
+        tag: "WORKSHOP",
+        color: "0, 70, 90",
+
+        day1: {
+          date: "16/11/2022-FN",
+          time: "12-3.00",
+          mode: "OFFLINE",
+          venu: "TBA",
+          resource: [],
+          staff: [
+            {
+              name: "MR.TAJUDDIN   ",
+              desig: "Professor and Head  ",
+              phone: 9677883599,
+              email: "hod.agri@saveetha.ac.in  ",
+            },
+            {
+              name: "MR.GANAPATHI  ",
+              desig: "Assistant Professor (SG)  ",
+              phone: 9787982231,
+              email: "ganapathid@saveetha.ac.in   ",
+            },
+          ],
+          studennt: [
+            {
+              name: "DHANALAKSHMI    ",
+              year: "IV ",
+              phone: 9360677202,
+              email: "ruthudhana25@gmail.com  ",
+            },
+            {
+              name: "SANJAY  ",
+              year: "III",
+              phone: 9940631302,
+              email: "ssanjay1303@gmail.com  ",
+            },
+          ],
+        },
       },
       {
-          name: "ORGANIC FARMING   ",
-          logo: "agriw1.png",
-          tag: "WORKSHOP",
-  
-          day1: {
-              date: "16/11/2022-FN",
-              time: "12.00-3.00pm",
-              mode: "OFFLINE",
-              venu: "TBA",
-              resource: [
-  
-              ],
-              staff: [
-                  {
-  
-                      name: "Mrs.Bakkiyalakshmi   ",
-                      desig: "Assistant Professor  ",
-                      phone: 9566670561,
-                      email: "bakkiyalakshmip@saveetha.ac.in  ",
-  
-                  },
-                  {
-  
-                      name: "MS.DIVYA   ",
-                      desig: "Assistant Professor  ",
-                      phone: 8940553325,
-                      email: "divyaprabhav@saveetha.ac.in   ",
-  
-                  }
-  
-              ],
-              studennt: [
-                  {
-                      name: "SWATHI    ",
-                      year: "IV ",
-                      phone: 9150923359,
-                      email: "swathisri3148@gmail.com  ",
-                  },
-                  {
-                      name: "KINAKSHA  ",
-                      year: "II",
-                      phone: 9790559908,
-                      email: "kinaksha@icloud.com  ",
-                  }
-              ]
-          },
+        name: "ORGANIC FARMING   ",
+        logo: "agriw1.png",
+        tag: "WORKSHOP",
+        color: "0, 70, 90",
+
+        day1: {
+          date: "16/11/2022-FN",
+          time: "12.00-3.00pm",
+          mode: "OFFLINE",
+          venu: "TBA",
+          resource: [],
+          staff: [
+            {
+              name: "Mrs.Bakkiyalakshmi   ",
+              desig: "Assistant Professor  ",
+              phone: 9566670561,
+              email: "bakkiyalakshmip@saveetha.ac.in  ",
+            },
+            {
+              name: "MS.DIVYA   ",
+              desig: "Assistant Professor  ",
+              phone: 8940553325,
+              email: "divyaprabhav@saveetha.ac.in   ",
+            },
+          ],
+          studennt: [
+            {
+              name: "SWATHI    ",
+              year: "IV ",
+              phone: 9150923359,
+              email: "swathisri3148@gmail.com  ",
+            },
+            {
+              name: "KINAKSHA  ",
+              year: "II",
+              phone: 9790559908,
+              email: "kinaksha@icloud.com  ",
+            },
+          ],
+        },
       },
-  ]
+    ],
   },
   {
     id: "aids",
@@ -806,6 +801,7 @@ export const EventDetails = [
           "New programming language (GO) basic syntax of the language will be provided for a given period of time for preparation.This round will have 5 questions. Each challenge has a predetermined score.A participant’s score depends on the number of test cases a participant’s code submission successfully passes. If a participant submits more than one solution per challenge, then the participant’s score will reflect the highest score achieved. In a game challenge, the participant's score will reflect the last code submission. ",
 
         tag: "EVENT",
+        color: "0, 1, 38",
         logo: "/EventsAssets/aids1.png",
         staff: [
           {
@@ -853,6 +849,7 @@ export const EventDetails = [
         round3:
           "They are proposed to questions regarding their plans where the teams have to come up with apt ideas to solve them .Top 3 teams are assessed by judges based on how they can handle further situations after idea building and budgeting",
         tag: "EVENT",
+        color: "0, 1, 38",
         logo: "/EventsAssets/aids2.png",
         staff: [
           {
@@ -901,6 +898,7 @@ export const EventDetails = [
           "The topic will be given on the spot.No restrictions on the choice of photos/templates to be used.The meme can be with 1-3 slides.The number of slides doesn't affect the evaluation.   ",
 
         tag: "EVENT",
+        color: "0, 1, 38",
         logo: "/EventsAssets/aids3.png",
         staff: [
           {
@@ -959,6 +957,7 @@ export const EventDetails = [
         round2:
           "Landing Page. A concept will be given on the spot and the participants are asked to create an impressive home page for a company. Maximum 2 hours will be provided to complete this round.",
         tag: "EVENT",
+        color: "0, 1, 38",
 
         logo: "/EventsAssets/aids4.png",
         staff: [
@@ -1006,6 +1005,7 @@ export const EventDetails = [
         round3:
           "-Two problem statement questions will be given with a time limit of 1hr.The participants can run the programs in the compiler and note down their analysis in the provided paper.Evaluation criteria: The team that takes less time to complete the given problem statements will be selected as the winner.  ",
         tag: "EVENT",
+        color: "0, 1, 38",
         logo: "/EventsAssets/aids5.png",
         staff: [
           {
@@ -1074,6 +1074,7 @@ export const EventDetails = [
         round3:
           "Group activity, a team of four members. Objective of the round is to identify the appropriate medical equipment required for respective trivia Flashcards of equipment with the description of function and usage will be handed out to the participants. Teams are expected to assign the appropriate cards to the given situations.Every correct answer will be rewarded with a point in the team can use to move forward or hold back the opponent team. First team to complete the highest number of trivia wins.",
         tag: "EVENT",
+        color: "0, 1, 38",
         logo: "/EventsAssets/bme1.png",
         staff: [
           {
@@ -1137,6 +1138,7 @@ export const EventDetails = [
           "Shortlisted students taken from 2nd round .Different set of questions (4 to 5 category of ideas). Individual performance is noted. (At a time only one player in the room) .Writing pad/slate given to hand. (written) .5 to 10 mins per person.Winners selected based on timing and answers.",
 
         tag: "EVENT",
+        color: "0, 1, 38",
         logo: "/EventsAssets/bme2.png",
         staff: [
           {
@@ -1197,6 +1199,7 @@ export const EventDetails = [
         round2:
           " The top 4 players shall be selected from the previous round on the basis of the 1st round.In this round, there will be 2 qualifiers, one elimination round and one final round.Teams are said to stand at their respective ends. A question will be asked commonly, when both team player meet at one point. The player who gives the correct answer proceeds the disc path.The team which reaches the other end will be declared as the winner",
         tag: "EVENT",
+        color: "0, 1, 38",
         logo: "/EventsAssets/bme3.png",
         staff: [
           {
@@ -1259,6 +1262,7 @@ export const EventDetails = [
         round3:
           "Puzzle related to medical Instruments or Famous Scientist Will be displayed in the laptop provided. According to the time taken by the participants we can select the winners. ",
         tag: "EVENT",
+        color: "0, 1, 38",
         logo: "/EventsAssets/bme4.png",
         staff: [
           {
@@ -1304,126 +1308,117 @@ export const EventDetails = [
     ],
     workshopslist: [
       {
-          name: "3D modelling in CT & MRI scans on Navigation based surgery  ",
-          logo: "biow1.png",
-          tag: "WORKSHOP",
-  
-          day1: {
-              date: "07/11/2022-FN",
-              time: "12:00pm -3.00pm",
-              mode:"OFFLINE",
-              venu:"TBA",
-              resource: [
-                  {
-                      
-                      name: "Arjunan Senthilkumar  ",
-                      desig: "Senior Application Engineer  ",
-                      phone: 7358936818  ,
-                      email: "arjunavilash02@gmail.com  ",
-                  
-              },
-                 
-              ],
-              staff: [
-                  {
-                      
-                      name: "Sushmitha M  ",
-                      desig: "Associate Professor  ",
-                      phone: 8754566010   ,
-                      email: "sushmitham@saveetha.ac. in  ",
-                  
-              },
-            
-              ],
-              student: [
-                  {
-                      name: "Priyadharshni T  ",
-                      year: "IV ",
-                      phone:6380357148   ,
-                      email: "priyashini2002@gmail.com  ",
-                    },
-                    {
-                      name: "M Priyanka   ",
-                      year: "III",
-                      phone:8072631038   ,
-                      email: "priyankapooja.2003@gmail.com  ",
-                    },
-                    {
-                      name: "Rejith Kumar S   ",
-                      year: "III",
-                      phone:6374785250   ,
-                      email: "rejiyh4@gmail.com  ",
-                    },
-                    {
-                      name: "Arshath H   ",
-                      year: "II",
-                      phone:8754668607   ,
-                      email: "arshathmohammedarshathth@gmail.com ",
-                    }
-              ]
-          },
-      },
+        name: "3D modelling in CT & MRI scans on Navigation based surgery  ",
+        logo: "biow1.png",
+        tag: "WORKSHOP",
+        color: "0, 70, 90",
+
+        day1: {
+          date: "07/11/2022-FN",
+          time: "12:00pm -3.00pm",
+          mode: "OFFLINE",
+          venu: "TBA",
+          resource: [
             {
-              name: "Biomechanics & LabVIEW for Healthcare Applications ",
-              logo: "biow1.png",
-              tag: "WORKSHOP",
-              company:"Prashan Medical Technologies",
-      
-              day1: {
-                  date: "16/11/2022-FN",
-                  time: "12-3.00",
-                  mode:"OFFLINE",
-                  venu:"TBA",
-                  resource: [
-                      {
-                      
-                          name: "Boopathi Sakthivel  ",
-                          desig: "Founder, CEO & Biomedical Engineer   ",
-                          phone: 8883774112  ,
-                          email: "prashanmedtech@gmail.com ",
-                      
-                  },
-                     
-                  ],
-                  staff: [
-                      {
-                          
-                          name: "Rasheedha A   ",
-                          desig: "TBA  ",
-                          phone: 7904321272   ,
-                          email: "rasheedhaa@saveetha.ac.in  ",
-                      
-                  },
-                  ],
-                  student: [
-                      {
-                          name: "Sivasakthi M    ",
-                          year: "IV ",
-                          phone: 9150840270   ,
-                          email: "chsmsivasakthi@gmail.com  ",
-                        },
-                        {
-                          name: "Kamesh B  ",
-                          year: "III",
-                          phone: 9361934096   ,
-                          email: "kamesh5002@gmail.com  ",
-                        },
-                        {
-                          name: "Amirdha   ",
-                          year: "II ",
-                          phone: 9344278841    ,
-                          email: "amirdhas2003@gmail.com  ",
-                        },
-                        {
-                          name: "Purushotham an.C  ",
-                          year: "III",
-                          phone: 9952028003   ,
-                          email: "purushothchakaravarthi@g mail.com ",
-                        }
-                  ]
-              },
+              name: "Arjunan Senthilkumar  ",
+              desig: "Senior Application Engineer  ",
+              phone: 7358936818,
+              email: "arjunavilash02@gmail.com  ",
+            },
+          ],
+          staff: [
+            {
+              name: "Sushmitha M  ",
+              desig: "Associate Professor  ",
+              phone: 8754566010,
+              email: "sushmitham@saveetha.ac. in  ",
+            },
+          ],
+          student: [
+            {
+              name: "Priyadharshni T  ",
+              year: "IV ",
+              phone: 6380357148,
+              email: "priyashini2002@gmail.com  ",
+            },
+            {
+              name: "M Priyanka   ",
+              year: "III",
+              phone: 8072631038,
+              email: "priyankapooja.2003@gmail.com  ",
+            },
+            {
+              name: "Rejith Kumar S   ",
+              year: "III",
+              phone: 6374785250,
+              email: "rejiyh4@gmail.com  ",
+            },
+            {
+              name: "Arshath H   ",
+              year: "II",
+              phone: 8754668607,
+              email: "arshathmohammedarshathth@gmail.com ",
+            },
+          ],
+        },
       },
-  ]
+      {
+        name: "Biomechanics & LabVIEW for Healthcare Applications ",
+        logo: "biow1.png",
+        tag: "WORKSHOP",
+        color: "0, 70, 90",
+        company: "Prashan Medical Technologies",
+
+        day1: {
+          date: "16/11/2022-FN",
+          time: "12-3.00",
+          mode: "OFFLINE",
+          venu: "TBA",
+          resource: [
+            {
+              name: "Boopathi Sakthivel  ",
+              desig: "Founder, CEO & Biomedical Engineer   ",
+              phone: 8883774112,
+              email: "prashanmedtech@gmail.com ",
+            },
+          ],
+          staff: [
+            {
+              name: "Rasheedha A   ",
+              desig: "TBA  ",
+              phone: 7904321272,
+              email: "rasheedhaa@saveetha.ac.in  ",
+            },
+          ],
+          student: [
+            {
+              name: "Sivasakthi M    ",
+              year: "IV ",
+              phone: 9150840270,
+              email: "chsmsivasakthi@gmail.com  ",
+            },
+            {
+              name: "Kamesh B  ",
+              year: "III",
+              phone: 9361934096,
+              email: "kamesh5002@gmail.com  ",
+            },
+            {
+              name: "Amirdha   ",
+              year: "II ",
+              phone: 9344278841,
+              email: "amirdhas2003@gmail.com  ",
+            },
+            {
+              name: "Purushotham an.C  ",
+              year: "III",
+              phone: 9952028003,
+              email: "purushothchakaravarthi@g mail.com ",
+            },
+          ],
+        },
+      },
+    ],
   },
   {
     id: "civil",
@@ -1446,6 +1441,7 @@ export const EventDetails = [
           " Only bridge deck is required to build.   It must be of TRUSS type.  It should be made up of candy sticks only (popsticle sticks). Sticks and adhesive will be provided from the institute. Maximum of 3 members are allowed in a team. Minimum dimension of the bridge: Length = 80cm; Width = 12cm,Max height=15 cm . Any member can use only 4 sticks to overlap. Maximum height of the bridge should not exceed 15cm.The load test will be carried out on the next day of bridge making. THE  MODEL WHICH CARRIES MORE LOAD WILL BE CONSIDERED AS A WINNER",
 
         tag: "EVENT",
+        color: "0, 1, 38",
         logo: "/EventsAssets/civil1.png",
         staff: [
           {
@@ -1495,6 +1491,7 @@ export const EventDetails = [
         round3:
           "The selected 5 teams will be presented with an online treasure hunt framework in a laptop.Each team needs to decipher the clues to find the treasure (letters shape or structure) The team that clinches the treasure (identifies the pattern) at first will be announced as winner. Total event duration: 2 hours (including briefing of instructions) ",
         tag: "EVENT",
+        color: "0, 1, 38",
         logo: "/EventsAssets/civil2.png",
         staff: [
           {
@@ -1545,6 +1542,7 @@ export const EventDetails = [
         round2:
           "The detailed line plan will be given as a question in round 2 .The students have to draw Plan with specification for the same line plan. The duration for the plan is 30 minutes. Based on the completion first three place will be finalised ",
         tag: "EVENT",
+        color: "0, 1, 38",
         logo: "/EventsAssets/civil3.png",
         staff: [
           {
@@ -1588,6 +1586,7 @@ export const EventDetails = [
         round3:
           "Participants will be provided with an executable file and they will have to perform reverse coding. They will have to test for different inputs and outputs.Finally, the source code is to be generated. The round will have five such questions.The winner will be selected based on accuracy and working code. ",
         tag: "EVENT",
+        color: "0, 1, 38",
 
         logo: "/EventsAssets/civil4.png",
         staff: [
@@ -1628,10 +1627,11 @@ export const EventDetails = [
     ],
     workshopslist: [
       {
-        name: "3D modelling in CT & MRI scans on Navigation based surgery  ",
+        name: "Recent technological advancements in building designs using revit",
         logo: "civilw1.png",
         tag: "WORKSHOP",
-    
+        color: "0, 70, 90",
+
         day1: {
           date: "07/11/2022-FN",
           time: "12.00-3.00",
@@ -1639,43 +1639,37 @@ export const EventDetails = [
           venu: "TBA",
           resource: [
             {
-    
-              name: "Arjunan Senthilkumar  ",
-              desig: "Senior Application Engineer  ",
-              phone: 7358936818,
-              email: "arjunavilash02@gmail.com  ",
-    
+              name: "Mrs. Pavithra Adikesavan  ",
+              desig: "FOUNDER / CEO- Dynamiq Engineering Research Centre",
+              phone: 9629819560,
+              email: "dercprojects@gmail.com",
             },
-    
           ],
           staff: [
             {
-    
               name: "Dr.Venkatesan G ",
               desig: "Associate Professor  ",
               phone: 9789290995,
               email: "gvenkatesan@saveetha.ac.in  ",
-    
             },
-    
           ],
           student: [
-    
             {
               name: "TEJAVATH PAVAN KALYAN   ",
               year: "III",
               phone: 8072631038,
               email: "priyankapooja.2003@gmail.com  ",
             },
-          ]
+          ],
         },
       },
       {
         name: "4D Building Information Modelling for Project Management ",
         logo: "civilw2.png",
         tag: "WORKSHOP",
+        color: "0, 70, 90",
         company: " Infinity PMC Solutions, Chennai.",
-    
+
         day1: {
           date: "08/11/2022-FN",
           time: "TBA",
@@ -1683,27 +1677,21 @@ export const EventDetails = [
           venu: "TBA",
           resource: [
             {
-    
               name: "SuganyaSekar ",
               desig: "Senior Manager (Delivery & Services)   ",
               phone: 9840035551,
               email: "p.ravikumar@infinitypmc.co.in ",
-    
             },
-    
           ],
           staff: [
             {
-    
               name: "Dr. C. JenifaLatha ",
               desig: "Professor ",
               phone: 7094851856,
               email: "jenifalathac@saveetha.ac.in  ",
-    
             },
           ],
           student: [
-    
             {
               name: "Anbarasu A  ",
               year: "III",
@@ -1721,7 +1709,7 @@ export const EventDetails = [
               year: "II",
               phone: 8525833108,
               email: "trescothick611@gmail.com ",
-            }
+            },
           ],
         },
       },
@@ -1729,8 +1717,9 @@ export const EventDetails = [
         name: "5D BIM for Construction Industry",
         logo: "civilw3.png",
         tag: "WORKSHOP",
+        color: "0, 70, 90",
         company: " Infinity PMC Solutions, Chennai.",
-    
+
         day1: {
           date: "09/11/2022-FN",
           time: "TBA",
@@ -1738,27 +1727,21 @@ export const EventDetails = [
           venu: "TBA",
           resource: [
             {
-    
               name: "Mr. VivekKennady  ",
               desig: "Manager – Professional Services   ",
               phone: 9789096485,
               email: "p.ravikumar@infinitypmc.co.in ",
-    
             },
-    
           ],
           staff: [
             {
-    
               name: "Dr. L. Kanagarathinam  ",
               desig: "Assistant Professor  ",
               phone: 7093800321,
               email: "kanagarathinaml@saveetha.ac.in  ",
-    
             },
           ],
           student: [
-    
             {
               name: "Ravi Kumar S   ",
               year: "III",
@@ -1776,11 +1759,11 @@ export const EventDetails = [
               year: "II",
               phone: 8248184403,
               email: "offvigneshvicky13@gmail.com  ",
-            }
-          ]
+            },
+          ],
         },
       },
-    ]
+    ],
   },
   {
     id: "chem",
@@ -1802,6 +1785,7 @@ export const EventDetails = [
         round3:
           "It is a group event of 3. Participants will be given many charts which contain different Process of flow diagrams of different industries. Participants should order them according to sector in a given time limit.The team which finishes fast with the correct answer will be the winner. ",
         tag: "EVENT",
+        color: "0, 1, 38",
         logo: "/EventsAssets/chem1.png",
         staff: [
           {
@@ -1842,6 +1826,7 @@ export const EventDetails = [
         round2:
           " A situational task is given to the participant . The task is related to chemical process industries.A simple Example is that if there is spillage of Sulphuric acid. What will you do! .They must apply the most reluctant procedure to accomplish the task and get their points.",
         tag: "EVENT",
+        color: "0, 1, 38",
         logo: "/EventsAssets/chem2.png",
         staff: [
           {
@@ -1876,6 +1861,7 @@ export const EventDetails = [
         rules:
           " Participants should play small games in the room to escape from the room. Participants should answer the questions for a minimum of 3 and also should win the game.  For winning each game participants will be given stickers at each game. Those who collect more stickers will be the winner ",
         tag: "EVENT",
+        color: "0, 1, 38",
         logo: "/EventsAssets/chem3.png",
         staff: [
           {
@@ -1938,6 +1924,7 @@ export const EventDetails = [
         round3:
           "3 Members standing in a row. First one gets a clue from Co-ordinator.  Second one gets a clue from the First one. Third one gets a clue from the Second one.  Third one has to choose the element from the board. ",
         tag: "EVENT",
+        color: "0, 1, 38",
         logo: "/EventsAssets/chem4.png",
         staff: [
           {
@@ -1968,132 +1955,108 @@ export const EventDetails = [
         name: "EXCEL for Chemical Engineers : Basics to Advanced",
         logo: "chemw1.png",
         tag: "WORKSHOP",
+        color: "0, 70, 90",
 
         day1: {
           date: "08/11/2022",
           time: "TBA",
           company: "International Flavours & Fragrances India Pvt.Ltd",
-          topic: "Basics and intermediate level in excel which is used in Chemical Engineering field.  Basic level: Eg. Fitting, Plotting, and Solving Intermediate level: Eg. Piping Design and Unit operation",
+          topic:
+            "Basics and intermediate level in excel which is used in Chemical Engineering field.  Basic level: Eg. Fitting, Plotting, and Solving Intermediate level: Eg. Piping Design and Unit operation",
           resource: [
             {
-
               name: "Mr.Dayalan Chokkalingam  ",
               desig: "Senior process Engineer, IFF, Chennai   ",
               phone: 7397529444,
               email: "Dayalan.C@iff.com   ",
-
             },
             {
-
               name: "Dr.A.Balasubramanian  ",
               desig: "Associate professor, SEC  ",
               phone: 9488478235,
               email: "balasubramaniana@saveetha.ac.in   ",
-
             },
             {
-
               name: "Dr.P. Senthil Kumar  ",
               desig: "Associate professor, SEC  ",
               phone: 7305105056,
               email: "senthilkumarp@saveetha.ac.in   ",
-
             },
           ],
           staff: [
             {
-
               name: "Dr.A.Balasubramanian ",
               desig: "Associate Professor  ",
               phone: 9488478235,
               email: "balasubramaniana@saveetha.ac.in   ",
-
             },
-
           ],
           student: [
             {
-
               name: "Abherna shree M  ",
               year: "IV ",
               phone: 9361896759,
               email: "abhernashree80@gmail.com   ",
-
             },
             {
-
               name: "Srikanth  ",
               year: "III  ",
               phone: 6382979534,
               email: "srikanthkanagavalli@gmail.com  ",
-
             },
           ],
           day2: {
             date: "08/11/2022",
             time: "TBA",
             company: "International Flavours & Fragrances India Pvt.Ltd",
-            topic: "Advanced GV level in excel which is used in Chemical Engineering field. Advanced level: Eg. Process Analysis ",
+            topic:
+              "Advanced GV level in excel which is used in Chemical Engineering field. Advanced level: Eg. Process Analysis ",
             resource: [
               {
-
                 name: "Mr.Dayalan Chokkalingam  ",
                 desig: "Senior process Engineer, IFF, Chennai   ",
                 phone: 7397529444,
                 email: "Dayalan.C@iff.com   ",
-
               },
               {
-
                 name: "Dr.A.Balasubramanian  ",
                 desig: "Associate professor, SEC  ",
                 phone: 9488478235,
                 email: "balasubramaniana@saveetha.ac.in   ",
-
               },
               {
-
                 name: "Dr.P. Senthil Kumar  ",
                 desig: "Associate professor, SEC  ",
                 phone: 7305105056,
                 email: "senthilkumarp@saveetha.ac.in   ",
-
               },
             ],
             staff: [
               {
-
                 name: "Dr.A.Balasubramanian ",
                 desig: "Associate Professor  ",
                 phone: 9488478235,
                 email: "balasubramaniana@saveetha.ac.in   ",
-
               },
-
             ],
             student: [
               {
-
                 name: "Abherna shree M  ",
                 year: "IV ",
                 phone: 9361896759,
                 email: "abhernashree80@gmail.com   ",
-
               },
               {
-
                 name: "Srikanth  ",
                 year: "III  ",
                 phone: 6382979534,
                 email: "srikanthkanagavalli@gmail.com  ",
-
               },
-            ]
+            ],
           },
-
-        }
+        },
       },
-    ]
+    ],
   },
   {
     id: "eie",
@@ -2106,6 +2069,7 @@ export const EventDetails = [
         venue: "TBA",
         time: "TBA",
         tag: "EVENT",
+        color: "0, 1, 38",
         members: "1",
         rules: "",
         round1:
@@ -2146,6 +2110,7 @@ export const EventDetails = [
         round3:
           "Maximum 2 members in a team .5 minutes per round.10 Questions per round.Every correct answer carries 2 points Selection is based on maximum points ",
         tag: "EVENT",
+        color: "0, 1, 38",
         logo: "/EventsAssets/eie2.png",
         staff: [
           {
@@ -2179,6 +2144,7 @@ export const EventDetails = [
         round3:
           "Maximum 1 member in a team .5 minutes per round .10 Questions per round . Every correct answer carries 2 points . Selection is based on maximum points",
         tag: "EVENT",
+        color: "0, 1, 38",
         logo: "/EventsAssets/eie3.png",
         staff: [
           {
@@ -2212,6 +2178,7 @@ export const EventDetails = [
         round3:
           "Maximum 2 members in a team.15 minutes per round.1Debugging per round.Design contains maximum 20points .selection based on maximum points ",
         tag: "EVENT",
+        color: "0, 1, 38",
         logo: "/EventsAssets/eie4.png",
         staff: [
           {
@@ -2252,6 +2219,7 @@ export const EventDetails = [
         round3:
           "Detailing of MODEL- Quality, Efficiency of the product will be inspected ",
         tag: "EVENT",
+        color: "0, 1, 38",
         logo: "/EventsAssets/mech1.png",
         staff: [
           {
@@ -2303,6 +2271,7 @@ export const EventDetails = [
         round2: " Facing and Step turning in Lathe Machine(30mins) .",
         round3: "Knurling in Lathe Machining(30mins) ",
         tag: "EVENT",
+        color: "0, 1, 38",
         logo: "/EventsAssets/mech2.png",
         staff: [
           {
@@ -2350,6 +2319,7 @@ export const EventDetails = [
         round2: "Round 2 will be based on distance coverage. ",
         round3: "Round 3 will be based on distance coverage. ",
         tag: "EVENT",
+        color: "0, 1, 38",
         logo: "/EventsAssets/mech3.png",
         staff: [
           {
@@ -2399,6 +2369,7 @@ export const EventDetails = [
           "Isometric view of a product will be given to each team. Model the product using CATIA Or ABAQUS software within 45mins  ",
         round2: "The simulation for the product has to done within 30mins.",
         tag: "EVENT",
+        color: "0, 1, 38",
 
         logo: "/EventsAssets/mech4.png",
         staff: [
@@ -2443,6 +2414,7 @@ export const EventDetails = [
         name: "Augmented Reality for 4.0 (Online)",
         logo: "mechw1.png",
         tag: "WORKSHOP",
+        color: "0, 70, 90",
         company: "Ideazone",
 
         day1: {
@@ -2454,7 +2426,7 @@ export const EventDetails = [
               desig: "Product Manager  ",
               phone: 7846539900,
               email: "Balajikumaranan67@gmail.com   ",
-            }
+            },
           ],
           staff: [
             {
@@ -2463,7 +2435,6 @@ export const EventDetails = [
               phone: 8015704764,
               email: "senbagaraman@saveetha.ac.in  ",
             },
-
           ],
           student: [
             {
@@ -2482,21 +2453,22 @@ export const EventDetails = [
               name: "A Surya    ",
               year: "III  ",
               phone: 9003018244,
-              email: "smartsurya6220@gmail.com  "
+              email: "smartsurya6220@gmail.com  ",
             },
             {
               name: "Veerahariharan V   ",
               year: "II  ",
               phone: 8248418893,
               email: "Veerahari047@gmail.com  ",
-            }
-          ]
+            },
+          ],
         },
       },
       {
         name: "Robotics Simulation (Online)",
         logo: "mechw2.png",
         tag: "WORKSHOP",
+        color: "0, 70, 90",
         company: " J&R industries on robotics",
 
         day1: {
@@ -2508,7 +2480,7 @@ export const EventDetails = [
               desig: "Production Manager  ",
               phone: 8840032216,
               email: "jagadheeshmani@gmail.com    ",
-            }
+            },
           ],
           staff: [
             {
@@ -2517,7 +2489,6 @@ export const EventDetails = [
               phone: 9445181113,
               email: "selvamr@saveetha.ac.in  ",
             },
-
           ],
           student: [
             {
@@ -2536,21 +2507,22 @@ export const EventDetails = [
               name: "ShreeRam S  ",
               year: "III  ",
               phone: 9940658571,
-              email: "Sshreeram.enl@gmail.com  "
+              email: "Sshreeram.enl@gmail.com  ",
             },
             {
               name: "Balaji K  ",
               year: "II  ",
               phone: 8925223095,
               email: "kpbalajizzzk@gmail.com  ",
-            }
-          ]
+            },
+          ],
         },
       },
       {
         name: "Hands on training in Fusion 360(offline) ",
         logo: "mechw3.png",
         tag: "WORKSHOP",
+        color: "0, 70, 90",
         company: " Bessel Automation",
 
         day1: {
@@ -2562,8 +2534,7 @@ export const EventDetails = [
               desig: "Assistant Professor ",
               phone: 9884486275,
               email: "ramprasath@saveetha.ac.in ",
-            }
-
+            },
           ],
 
           staff: [
@@ -2573,7 +2544,6 @@ export const EventDetails = [
               phone: 9952195632,
               email: "Subburam@saveetha.ac.in  ",
             },
-
           ],
           student: [
             {
@@ -2600,7 +2570,7 @@ export const EventDetails = [
               phone: 7358244067,
               email: "arune1903@gmail.com  ",
             },
-          ]
+          ],
         },
         day2: {
           date: "17/11/2022 ",
@@ -2612,7 +2582,7 @@ export const EventDetails = [
               desig: "Technical Assistant",
               phone: 7200266259,
               email: "Parthimg34@gmail.com ",
-            }
+            },
           ],
           staff: [
             {
@@ -2621,7 +2591,6 @@ export const EventDetails = [
               phone: 7708940279,
               email: "Jeromenithin gladson@saveetha.ac.in   ",
             },
-
           ],
           student: [
             {
@@ -2648,14 +2617,14 @@ export const EventDetails = [
               phone: 7358244067,
               email: "arune1903@gmail.com  ",
             },
-          ]
-        }
+          ],
+        },
       },
-    ]
+    ],
   },
   {
-    id: 'mba',
-    title: 'Management Studies',
+    id: "mba",
+    title: "Management Studies",
     eventslist: [
       {
         name: " Adzap",
@@ -2672,6 +2641,7 @@ export const EventDetails = [
         round3:
           "Political & Illegal Words Shouldn't Be Used During The Performance  ",
         tag: "EVENT",
+        color: "0, 1, 38",
         logo: "/EventsAssets/mba1.png",
         staff: [
           {
@@ -2713,6 +2683,7 @@ export const EventDetails = [
           " Both the team members join together to attend this round Total of 25 questions will be asked. 5 questions per team Each question carries 2 Marks, If question get passed to the next team it carries 1 Mark In case of tie, extra tie breaker questions may be asked to decide the winners  .",
 
         tag: "EVENT",
+        color: "0, 1, 38",
         logo: "/EventsAssets/mba2.png",
         staff: [
           {
@@ -2754,6 +2725,7 @@ export const EventDetails = [
         round3:
           " This round consists of potpourri of Questions.In this round the fastest mind gets to answer the questions. Each contestant will be given a set of 5 questions. Mobile phones & Internet access are prohibited. . ",
         tag: "EVENT",
+        color: "0, 1, 38",
         logo: "/EventsAssets/mba3.png",
         staff: [
           {
@@ -2794,6 +2766,7 @@ export const EventDetails = [
         rules:
           "ndigenous photo captured through Camera or Mobile (Should be clear). No editing should be done.Idea behind the photograph in regards with management concepts. Photograph should be sent before deadline .  ",
         tag: "EVENT",
+        color: "0, 1, 38",
         logo: "/EventsAssets/mba4.png",
         staff: [
           {
@@ -2803,43 +2776,41 @@ export const EventDetails = [
             email: "Venithvijay@savee tha.ac.in  ",
           },
         ],
-        student:
-          [
-            {
-              name: "Laksiya.V ",
-              year: "II  ",
-              phone: 7433933555,
-              email: "laksiya2001 @gmail.com   ",
-            },
-            {
-              name: "Smily.S  ",
-              year: "II  ",
-              phone: 7092724135,
-              email: "Smilysornam @gmail.com  ",
-            },
+        student: [
+          {
+            name: "Laksiya.V ",
+            year: "II  ",
+            phone: 7433933555,
+            email: "laksiya2001 @gmail.com   ",
+          },
+          {
+            name: "Smily.S  ",
+            year: "II  ",
+            phone: 7092724135,
+            email: "Smilysornam @gmail.com  ",
+          },
 
-            {
-              name: "Naveen V",
-              year: "III  ",
-              phone: 8608202199,
-              email: "naveenvairavel2002@gmail.com  ",
-            },
-            {
-              name: "Charan K",
-              year: "II ",
-              phone: 86082021995,
-              email: "charankannan95102gmail.com  ",
-            },
-          ],
-
-
-      }
+          {
+            name: "Naveen V",
+            year: "III  ",
+            phone: 8608202199,
+            email: "naveenvairavel2002@gmail.com  ",
+          },
+          {
+            name: "Charan K",
+            year: "II ",
+            phone: 86082021995,
+            email: "charankannan95102gmail.com  ",
+          },
+        ],
+      },
     ],
     workshopslist: [
       {
         name: "Goal setting and creative thinking",
         logo: "mbaw1.png",
         tag: "WORKSHOP",
+        color: "0, 70, 90",
         mode: "TBA",
         venue: "TBA",
 
@@ -2853,7 +2824,6 @@ export const EventDetails = [
               phone: 9965303553,
               email: "drrpartheepan@gmail.com  ",
             },
-
           ],
           staff: [
             {
@@ -2870,14 +2840,14 @@ export const EventDetails = [
               phone: 7092724835,
               email: "Smilysornam @gmail.com  ",
             },
-          ]
+          ],
         },
-
       },
       {
         name: "Design-Data-Digital-3D Model ",
         logo: "mbaw2.png",
         tag: "WORKSHOP",
+        color: "0, 70, 90",
         mode: "TBA",
         venue: "TBA",
 
@@ -2891,7 +2861,6 @@ export const EventDetails = [
               phone: 9500034681,
               email: " vimalanv@srmist.edu.in ",
             },
-
           ],
           staff: [
             {
@@ -2900,7 +2869,6 @@ export const EventDetails = [
               phone: 7550271014,
               email: "cmsudhaarogyamary @saveetha.ac.in   ",
             },
-
           ],
           student: [
             {
@@ -2909,12 +2877,10 @@ export const EventDetails = [
               phone: 9445952045,
               email: "sudhirshamohan @gmail.com  ",
             },
-
-          ]
+          ],
         },
-
       },
-    ]
+    ],
   },
   {
     id: "med",
@@ -2935,6 +2901,7 @@ export const EventDetails = [
         round3:
           "You have to draw neat diagram and label the parts. For your reference the picture will be shown for 3 to 5 minutes. Best team will be awarded.   ",
         tag: "EVENT",
+        color: "0, 1, 38",
         logo: "/EventsAssets/med1.png",
         staff: [
           {
@@ -2943,7 +2910,6 @@ export const EventDetails = [
             phone: 9894320588,
             email: "Sgangadharan @gmail.com  ",
           },
-
         ],
         student: [
           {
@@ -2970,7 +2936,6 @@ export const EventDetails = [
             phone: 744910268,
             email: "vaithyx5@gmail.com  ",
           },
-
         ],
       },
 
@@ -2989,8 +2954,10 @@ export const EventDetails = [
         round2:
           "A box full of electronic components will be given to each team .They has to pinpoint the names of the given components within  the given time .Teams will be selected based on the counts of component they listed   .",
         round3title: "MEMORY MASTER",
-        round3: "Pictures of simple electronic circuits will be displayed on the projector for 30 seconds Each team will be given a breadboard and the required components Team members has to make circuit connections of the displayed schematics within the stipulated timing Selected teams will be awarded ",
+        round3:
+          "Pictures of simple electronic circuits will be displayed on the projector for 30 seconds Each team will be given a breadboard and the required components Team members has to make circuit connections of the displayed schematics within the stipulated timing Selected teams will be awarded ",
         tag: "EVENT",
+        color: "0, 1, 38",
         logo: "/EventsAssets/med2.png",
         staff: [
           {
@@ -2999,7 +2966,6 @@ export const EventDetails = [
             phone: 9003025299,
             email: "indumathyt@saveetha.ac.in   ",
           },
-
         ],
         student: [
           {
@@ -3025,8 +2991,7 @@ export const EventDetails = [
             year: "II ",
             phone: 9940233105,
             email: "durgaaanagarajan2019@gmail.com  ",
-          }
-
+          },
         ],
       },
       {
@@ -3037,10 +3002,14 @@ export const EventDetails = [
         time: "8.30am-12.00pm",
         members: "2",
         round1title: "Puzzle ",
-        round1: "Maximum of 2 members per team  Pieces of papers with medical instrument will be provided for each team. One in a team will be blind folded and the other can guide his teammate providing instruction to fit the pieces correctly to form a picture.  Max time : 120 seconds The best three teams will be selected for next round. ",
-        round2: "Rule to be followed as same as round 1 Max time : 60 seconds teams will be selected for final round . ",
-        round3: "Rule to be followed as same as round 1 Max time : 40 seconds  . ",
+        round1:
+          "Maximum of 2 members per team  Pieces of papers with medical instrument will be provided for each team. One in a team will be blind folded and the other can guide his teammate providing instruction to fit the pieces correctly to form a picture.  Max time : 120 seconds The best three teams will be selected for next round. ",
+        round2:
+          "Rule to be followed as same as round 1 Max time : 60 seconds teams will be selected for final round . ",
+        round3:
+          "Rule to be followed as same as round 1 Max time : 40 seconds  . ",
         tag: "EVENT",
+        color: "0, 1, 38",
         logo: "/EventsAssets/med3.png",
         staff: [
           {
@@ -3049,7 +3018,6 @@ export const EventDetails = [
             phone: 9486191161,
             email: "vigneshwarin@saveetha.ac.in  ",
           },
-
         ],
         student: [
           {
@@ -3078,7 +3046,7 @@ export const EventDetails = [
           },
         ],
       },
-    ]
+    ],
   },
   {
     id: "ece",
@@ -3099,8 +3067,10 @@ export const EventDetails = [
         round2:
           "Ten Circuits will be displayed for 10 Seconds to  each participant. Those who draw the maximum number of circuits correctly will be shortlisted for the next round. Note:No mobile phones are allowed.No discussions are allowed ",
         round3title: "Spectrum Analysis ",
-        round3: "At the time of events a circuit name will be informed to for each team, Circuits ideas and  components will be provided . The team that shows the spectrum analysis (output)  first will be considered as the winner. (On a first-come, first-served basis.)  Total time for this event is 15 minutes. On the basis of time management and relevant explanation, participants will be selected. The winners will be declared on the basis of the shortest time period of completion of the task.Note:. No mobile phones are allowed during the participation of the event.   No discussion or sharing of answers among the participants .   If any malpractices are noticed, then the term will be disqualified from all the events.",
+        round3:
+          "At the time of events a circuit name will be informed to for each team, Circuits ideas and  components will be provided . The team that shows the spectrum analysis (output)  first will be considered as the winner. (On a first-come, first-served basis.)  Total time for this event is 15 minutes. On the basis of time management and relevant explanation, participants will be selected. The winners will be declared on the basis of the shortest time period of completion of the task.Note:. No mobile phones are allowed during the participation of the event.   No discussion or sharing of answers among the participants .   If any malpractices are noticed, then the term will be disqualified from all the events.",
         tag: "EVENT",
+        color: "0, 1, 38",
         logo: "mba1.png",
         staff: [
           {
@@ -3129,7 +3099,6 @@ export const EventDetails = [
             phone: 9445300407,
             email: "ajuprasath12@gmail.com",
           },
-
         ],
       },
 
@@ -3148,8 +3117,10 @@ export const EventDetails = [
         round2:
           "Participants will have a time limit of 2mins .Marks will be deducted for repetition of points .The team leading the points table will be declared as winners (NOTE: Number of rounds will depend on the number of entries)",
         round3title: "FIND ME IF YOU CAN ? ",
-        round3title: "The image of  external/ internal modules supported by  various development boards (Arduino,Raspberry Pi,ESP)  will be  displayed. participants need to identify the name of the module. Points will be awarded according to the weightage of the questions. winners will be selected based on scoring more points",
+        round3:
+          "The image of  external/ internal modules supported by  various development boards (Arduino,Raspberry Pi,ESP)  will be  displayed. participants need to identify the name of the module. Points will be awarded according to the weightage of the questions. winners will be selected based on scoring more points",
         tag: "EVENT",
+        color: "0, 1, 38",
         logo: "agri2.jpeg",
         staff: [
           {
@@ -3178,7 +3149,6 @@ export const EventDetails = [
             phone: 9944612176,
             email: "sabarisrinivasa.ece.sec@gmail.com",
           },
-
         ],
       },
       {
@@ -3193,13 +3163,15 @@ export const EventDetails = [
         round1:
           "Time for the event is 2 mins. Each team can have 2 members. The participants try to write the maximum number of components, technical terms (such as ground, connecting wire etc) related to electronics circuits etc. The team which has least count of technical terms will not be forward to the next round ",
         round2title: "TECH CHARADES ",
-        round2title: "A circuit diagram will be displayed for 2 minutes.  Next 3 minutes will be given to reproduce ( implement) the circuit diagram using breadboard  and component, which will be provided. Depending on the circuit's fulfillness ( correct component placed in correct position) terms will be forwarded to the next round ",
+        round2:
+          "A circuit diagram will be displayed for 2 minutes.  Next 3 minutes will be given to reproduce ( implement) the circuit diagram using breadboard  and component, which will be provided. Depending on the circuit's fulfillness ( correct component placed in correct position) terms will be forwarded to the next round ",
         round3title: "TECH CHARADES 2.0 ",
-        round3: "Each team has to pick  their questions from the question pool bowl. Selected circuits will be displayed for each team for 2 minutes .  Next 3 minutes will be given to reproduce ( implement) the circuit diagram using breadboard  and component, which will be provided.  Depending on the circuit's fulfillness ( correct component placed in correct position) terms will be forwarded to the next round",
+        round3:
+          "Each team has to pick  their questions from the question pool bowl. Selected circuits will be displayed for each team for 2 minutes .  Next 3 minutes will be given to reproduce ( implement) the circuit diagram using breadboard  and component, which will be provided.  Depending on the circuit's fulfillness ( correct component placed in correct position) terms will be forwarded to the next round",
         tag: "EVENT",
+        color: "0, 1, 38",
         logo: "agri3.jpeg",
         staff: [
-
           {
             name: "Dr.S. kanagamalliga  ",
             desig: " Associate Professor",
@@ -3212,7 +3184,6 @@ export const EventDetails = [
             phone: 9994365720,
             email: "subashreev@saveetha.ac.in  ",
           },
-
         ],
         student: [
           {
@@ -3227,7 +3198,6 @@ export const EventDetails = [
             phone: 8248955042,
             email: "sureshbabu02@gmail.com  ",
           },
-
         ],
       },
       {
@@ -3237,7 +3207,8 @@ export const EventDetails = [
         venue: "TBA",
         time: "TBA",
         members: "1-3",
-        rules: "A team should consist of two/three members .  No mobile phones are allowed during the participation of the event.No discussion or sharing of answers among the teams.If any malpractices are noticed then the team will be disqualified. ",
+        rules:
+          "A team should consist of two/three members .  No mobile phones are allowed during the participation of the event.No discussion or sharing of answers among the teams.If any malpractices are noticed then the team will be disqualified. ",
         round1title: " COMPONENTS IDENTIFICATION ",
         round1:
           "Participants should identify the suitable components which are related to the topic and questions will be asked related to the topic. Certain Time Periods will be allotted to the participants. They should identify the suitable components within that time period. The team which score most count of technical terms will be qualified to the next round ",
@@ -3245,8 +3216,10 @@ export const EventDetails = [
         round2:
           "The participants/ teams  should identify and rectify the errors which are present in the code. Certain Time Periods will be allotted to the participants/teams. A set of 4-6 teams which completes the task in the shortest period will be qualified to the next level",
         round3title: "ROBOT ASSEMBLE  ",
-        round3: "The participants should assemble the components with help of the code and build the OBSTACLE ROBOT. The team which completes the task in the shortest period will be announced as WINNER ",
+        round3:
+          "The participants should assemble the components with help of the code and build the OBSTACLE ROBOT. The team which completes the task in the shortest period will be announced as WINNER ",
         tag: "EVENT",
+        color: "0, 1, 38",
 
         logo: "agri4.jpeg",
         staff: [
@@ -3284,8 +3257,7 @@ export const EventDetails = [
           },
         ],
       },
-    ]
-
+    ],
   },
   {
     id: "eee",
@@ -3300,17 +3272,21 @@ export const EventDetails = [
         members: "2",
         rules: "",
         round1title: "Knock out:",
-        round1: "Participants play against 1vs1. The total duration of game is 7mins which is divided into two half each half is of 3 mins of duration with a 60 seconds of break in between.The winners of the match will be qualified to the next round.If the match has been tied,The winner of the match has been selected by a penalty shot.If both the players misses to score a goal both of them will be eliminated",
+        round1:
+          "Participants play against 1vs1. The total duration of game is 7mins which is divided into two half each half is of 3 mins of duration with a 60 seconds of break in between.The winners of the match will be qualified to the next round.If the match has been tied,The winner of the match has been selected by a penalty shot.If both the players misses to score a goal both of them will be eliminated",
         round2title: "Semi Finals: ",
-        round2: "The matches will be conducted as per the regulations mentioned below.The winners of the knock out matches are qualified for the next level.According to the goals scored by the participants the table will be tabulated.The matches will be conducted as per odd and even positioned places in table (1st vs 3rd position & 2nd position vs 4th position as such).The regulations of the knockout matches will be followed here.(note: the goals scored by player will not be considered if the player has been eliminated)",
+        round2:
+          "The matches will be conducted as per the regulations mentioned below.The winners of the knock out matches are qualified for the next level.According to the goals scored by the participants the table will be tabulated.The matches will be conducted as per odd and even positioned places in table (1st vs 3rd position & 2nd position vs 4th position as such).The regulations of the knockout matches will be followed here.(note: the goals scored by player will not be considered if the player has been eliminated)",
         round3title: "Finals:",
-        round3: "The regulations of the semi finals  will be same here.After the completion of this round the winners will be selected according to the overall goals scored by the player from the beginning.(note: the goals scored by player will not be considered if the player has been eliminated). (note: the goals scored by player will not be considered if the player has been eliminated).(note: the goals scored by player will not be considered if the player has been eliminated)",
+        round3:
+          "The regulations of the semi finals  will be same here.After the completion of this round the winners will be selected according to the overall goals scored by the player from the beginning.(note: the goals scored by player will not be considered if the player has been eliminated). (note: the goals scored by player will not be considered if the player has been eliminated).(note: the goals scored by player will not be considered if the player has been eliminated)",
         tag: "EVENT",
+        color: "0, 1, 38",
         logo: "eee1.png",
         staff: [
           {
-            name: 'Mrs.Hemalatha ',
-            desig: 'Assistant proffesor',
+            name: "Mrs.Hemalatha ",
+            desig: "Assistant proffesor",
             phone: 8870186912,
             email: "keerthigag@hemalathar@saveetha.ac.in ",
           },
@@ -3340,7 +3316,6 @@ export const EventDetails = [
             phone: 7338956845,
             email: "nithi20sree09@gmail.com",
           },
-
         ],
       },
       {
@@ -3352,17 +3327,21 @@ export const EventDetails = [
         members: "2",
         rules: "",
         round1title: "Connection",
-        round1: "Connection is a game where a set of images are displayed on the screen and also a question will be placed before you. With the help of the images, the answer to that question must be found.The participator should be able to connect all those images to form a word that can be related to the question asked.The participator must be able to identify the answer with the help of the clues given in the images.When the participant tries to guess the answer, he/she must raise his/her hands to answer the question.If the answer is right, then that particular group will be selected for the next round.If not, the group will not be qualified for the next round.There will be 3 phases",
+        round1:
+          "Connection is a game where a set of images are displayed on the screen and also a question will be placed before you. With the help of the images, the answer to that question must be found.The participator should be able to connect all those images to form a word that can be related to the question asked.The participator must be able to identify the answer with the help of the clues given in the images.When the participant tries to guess the answer, he/she must raise his/her hands to answer the question.If the answer is right, then that particular group will be selected for the next round.If not, the group will not be qualified for the next round.There will be 3 phases",
         round2title: "Brainstorming",
-        round2: "Brainstorming is a technical quiz on topics related to electrical and electronics. With the electrical and electronics industry growing at such an alarming rate, we need a brain that’s sharp as a diamond.Each team has 4rounds. 1:Shoot Up 2: Riddle 3: Decode 4: More or less.Shoot Up: Direct Questions (q/a) (10 points)If it is not answered questions will be passed on. Riddle: A question or puzzle to be solved (30 points). Decode:Tricky questions will be asked. They've to find the answer which will be a single word (10 points).More or Less:Questions will be asked related to values and numbers. Participants should find whether the value is more or less. (True or False). Answering time is limited to 15 seconds per question.",
+        round2:
+          "Brainstorming is a technical quiz on topics related to electrical and electronics. With the electrical and electronics industry growing at such an alarming rate, we need a brain that’s sharp as a diamond.Each team has 4rounds. 1:Shoot Up 2: Riddle 3: Decode 4: More or less.Shoot Up: Direct Questions (q/a) (10 points)If it is not answered questions will be passed on. Riddle: A question or puzzle to be solved (30 points). Decode:Tricky questions will be asked. They've to find the answer which will be a single word (10 points).More or Less:Questions will be asked related to values and numbers. Participants should find whether the value is more or less. (True or False). Answering time is limited to 15 seconds per question.",
         round3title: "Circuitrix",
-        round3: "Circuit bugging is one of the fine arts in electronics design. Circuitrix comes with an unleashing event to kindle your circuit knowledge.Each team will be given a Half-Completed Logic Circuit and its equation their task is to Verify the binary outputs. (Required Components and the data sheets will be provided). A team consists of 2 members. Note: Usage of electronic gadgets is not permitted. Teams will be disqualified if it is found to be under any act of malpractice.",
+        round3:
+          "Circuit bugging is one of the fine arts in electronics design. Circuitrix comes with an unleashing event to kindle your circuit knowledge.Each team will be given a Half-Completed Logic Circuit and its equation their task is to Verify the binary outputs. (Required Components and the data sheets will be provided). A team consists of 2 members. Note: Usage of electronic gadgets is not permitted. Teams will be disqualified if it is found to be under any act of malpractice.",
         tag: "EVENT",
+        color: "0, 1, 38",
         logo: "eee2.png",
         staff: [
           {
-            name: 'Dr.M.Ulagammai',
-            desig: 'Assistant proffesor',
+            name: "Dr.M.Ulagammai",
+            desig: "Assistant proffesor",
             phone: 9842925311,
             email: "ulagammai@saveetha.ac.in",
           },
@@ -3398,7 +3377,6 @@ export const EventDetails = [
             phone: 8072209395,
             email: "rajashankar061796@gmail.com",
           },
-
         ],
       },
       {
@@ -3410,17 +3388,21 @@ export const EventDetails = [
         members: "2",
         rules: "",
         round1title: "Gamegenix:",
-        round1: "It is a group of 2-3 members round.It contains 10 Quiz,10 Puzzles and 5 Find the language questions.Questions will be displayed on the screen.This round will be conducted for 20 mins.No grace time will be given.Answer can be filled in the sheets provided to them by the co-ordinators.After this round, the answered paper will be collected and corrected by the co-ordinators.Based upon the score, team will get into next round",
+        round1:
+          "It is a group of 2-3 members round.It contains 10 Quiz,10 Puzzles and 5 Find the language questions.Questions will be displayed on the screen.This round will be conducted for 20 mins.No grace time will be given.Answer can be filled in the sheets provided to them by the co-ordinators.After this round, the answered paper will be collected and corrected by the co-ordinators.Based upon the score, team will get into next round",
         round2title: "Brain Train",
-        round2: "Picture contain multiple images will be displayed on the screen for 20 sec.It is 1 vs 1 round.The team members can memorize the maximum number of pictures they can,But only one member per team will be allowed to answer, others from the team shall bet that how much can be tell by their team mate.If your team mate will failed to answer the counts you bet, the point would be automatically goes to your opponent.Team with maximum counts will be considered as the winner",
+        round2:
+          "Picture contain multiple images will be displayed on the screen for 20 sec.It is 1 vs 1 round.The team members can memorize the maximum number of pictures they can,But only one member per team will be allowed to answer, others from the team shall bet that how much can be tell by their team mate.If your team mate will failed to answer the counts you bet, the point would be automatically goes to your opponent.Team with maximum counts will be considered as the winner",
         round3title: "Mind Play",
-        round3: "Observe the given images and give the answer.You have to find the common word in that set and find the answer.You will be provided with 30 seconds for each question.One should answer the question only once.The next set of question is more or the same WORD PUZZLE kind.We will give a word as a hint, you have to find best three words which suits the given hint inside the word puzzle.Questions can be 6x6 format or any size format.For each question time limit is 60 seconds.Note: No gadgets will be permitted,Interaction between teams aren’t allowed.",
+        round3:
+          "Observe the given images and give the answer.You have to find the common word in that set and find the answer.You will be provided with 30 seconds for each question.One should answer the question only once.The next set of question is more or the same WORD PUZZLE kind.We will give a word as a hint, you have to find best three words which suits the given hint inside the word puzzle.Questions can be 6x6 format or any size format.For each question time limit is 60 seconds.Note: No gadgets will be permitted,Interaction between teams aren’t allowed.",
         tag: "EVENT",
+        color: "0, 1, 38",
         logo: "eee3.png",
         staff: [
           {
-            name: 'Dr.Rajalingam ',
-            desig: 'Assistant proffesor',
+            name: "Dr.Rajalingam ",
+            desig: "Assistant proffesor",
             phone: 9790248476,
             email: "rajalingams@saveetha.ac.in",
           },
@@ -3461,17 +3443,21 @@ export const EventDetails = [
         members: "2",
         rules: "",
         round1title: "Tracing:",
-        round1: "In this round, the circuit diagram was given to participants with the required components.They need to trace the diagram to build the circuit within the given time.In each team maximum of two participants is mandatory.Depending on the circuit design the points will be awarded.Maximum 10 points for this round.This round will be conducted for 20 minutes.Based on their performance moves on to the next round",
+        round1:
+          "In this round, the circuit diagram was given to participants with the required components.They need to trace the diagram to build the circuit within the given time.In each team maximum of two participants is mandatory.Depending on the circuit design the points will be awarded.Maximum 10 points for this round.This round will be conducted for 20 minutes.Based on their performance moves on to the next round",
         round2title: "Rectifier",
-        round2: "In this round, the fault circuit is provided for each participant to find the solution and draw the correct circuit diagram within the stipulated time.For each team, paper is provided to draw the final circuit.In each team maximum of two participants is mandatory.Depending on the fault attend in a circuit the points will be awarded.Maximum 20 points for this round.This round will be conducted for 20 minutes.Based on their performance moves on to the next round",
+        round2:
+          "In this round, the fault circuit is provided for each participant to find the solution and draw the correct circuit diagram within the stipulated time.For each team, paper is provided to draw the final circuit.In each team maximum of two participants is mandatory.Depending on the fault attend in a circuit the points will be awarded.Maximum 20 points for this round.This round will be conducted for 20 minutes.Based on their performance moves on to the next round",
         round3title: "Tateru",
-        round3: "In this round, the complex circuit diagram will be given, the team should analyze the diagram and assemble it on the breadboard.Finally, the connection is checked by the coordinators, and the power supply is given to the circuit to check the final output.If the output is correct full points will be given to the team.In each team maximum of two participants is mandatory.Depending on the circuit design the points will be awarded.For the final output the total marks will be awarded.Maximum 30 points for this round.This round will be conducted for 30 minutes.Based on their performance moves on to the next round",
+        round3:
+          "In this round, the complex circuit diagram will be given, the team should analyze the diagram and assemble it on the breadboard.Finally, the connection is checked by the coordinators, and the power supply is given to the circuit to check the final output.If the output is correct full points will be given to the team.In each team maximum of two participants is mandatory.Depending on the circuit design the points will be awarded.For the final output the total marks will be awarded.Maximum 30 points for this round.This round will be conducted for 30 minutes.Based on their performance moves on to the next round",
         tag: "EVENT",
+        color: "0, 1, 38",
         logo: "eee4.png",
         staff: [
           {
-            name: 'Dr.R.Vinifa',
-            desig: 'Assistant proffesor',
+            name: "Dr.R.Vinifa",
+            desig: "Assistant proffesor",
             phone: 9442912448,
             email: "rvinifa@saveetha.ac.in",
           },
@@ -3521,256 +3507,207 @@ export const EventDetails = [
         name: "E-Vehicle ",
         logo: "eeew1.png",
         tag: "WORKSHOP",
+        color: "0, 70, 90",
 
         day1: {
           date: "07/11/2022-FN",
           time: "TBA",
           company: "Skill lync",
-          topic: "Basics and intermediate level in excel which is used in Chemical Engineering field.  Basic level: Eg. Fitting, Plotting, and Solving Intermediate level: Eg. Piping Design and Unit operation",
+          topic:
+            "Basics and intermediate level in excel which is used in Chemical Engineering field.  Basic level: Eg. Fitting, Plotting, and Solving Intermediate level: Eg. Piping Design and Unit operation",
           resource: [
             {
-
               name: "Mr.Maxsavio  ",
               desig: "Assistant Professor  ",
               phone: 9840188187,
               email: "maxsavio@saveetha.ac.in  ",
-
             },
           ],
           staff: [
             {
-
               name: "Mr.Maxsavio ",
               desig: "Associate Professor  ",
               phone: 9840188187,
               email: "maxsavio@saveetha.ac.in  ",
-
             },
             {
-
               name: "Dr.Kanachanaa  ",
               desig: "Associate Professor  ",
               phone: 9444189111,
               email: "kanchana@saveetha.ac.in  ",
-
             },
             {
-
               name: "Mrs.Hemalatha ",
               desig: "Associate Professor  ",
               phone: 8870186912,
               email: "hemalathar@saveetha.ac.in  ",
-
             },
-
           ],
           student: [
             {
-
               name: "M.R.Harishwaran   ",
               year: "II ",
               phone: 9840603038,
               email: "mr.harishwaran2004@gmail.com   ",
-
             },
             {
-
               name: "A.Eswar Babu  ",
               year: "IV ",
               phone: 9150796626,
               email: "mail2eswarbabu@gmail.com  ",
-
             },
             {
-
               name: "M.sasikumar  ",
               year: "IV ",
               phone: 9677810711,
               email: "sasikumarm482@gmail.com   ",
-
             },
           ],
-
-
-        }
+        },
       },
       {
         name: "Basics of Machine Learning using python ",
         logo: "eeew2.png",
         tag: "WORKSHOP",
+        color: "0, 70, 90",
 
         day1: {
           date: "08/11/2022-FN",
           time: "TBA",
           company: "Skill lync",
-          topic: "Basics and intermediate level in excel which is used in Chemical Engineering field.  Basic level: Eg. Fitting, Plotting, and Solving Intermediate level: Eg. Piping Design and Unit operation",
+          topic:
+            "Basics and intermediate level in excel which is used in Chemical Engineering field.  Basic level: Eg. Fitting, Plotting, and Solving Intermediate level: Eg. Piping Design and Unit operation",
           resource: [
             {
-
               name: "Dr.M.Ulagammai  ",
               desig: "Assistant Professor  ",
               phone: 9842925311,
               email: "Ulagammai@saveetha.ac.in   ",
-
             },
             {
-
               name: "Mr.Joyal Isac  ",
               desig: "Assistant Professor (SG) ",
               phone: 9965882354,
               email: "joyalisac@saveetha.ac.in   ",
-
             },
           ],
           staff: [
             {
-
               name: "Dr.M.Ulagammai   ",
               desig: "Associate Professor  ",
               phone: 9842925311,
               email: "Ulagammai@saveetha.ac.in   ",
-
             },
             {
-
               name: "Dr.R.Vinifa ",
               desig: "Associate Professor  ",
               phone: 9442912448,
               email: "rvinifar@saveetha.ac.in  ",
-
             },
             {
-
               name: "Mr.Joyal Isac  ",
               desig: "Associate Professor (SG) ",
               phone: 9965882354,
               email: "joyalisac@saveetha.ac.in  ",
-
             },
-
           ],
           student: [
             {
-
               name: "P.K.Pradeep",
               year: "IV ",
               phone: 9361643512,
               email: "Krishnapradeep2019@gmail.com   ",
-
             },
             {
-
               name: "J.Dinesh  ",
               year: "IV ",
               phone: 7092147704,
               email: "Dinesharini2001@gmail.com  ",
-
             },
             {
-
               name: "Dravid Akash  ",
               year: "IV ",
               phone: 9445502533,
               email: "Dravidakash2k1@gmail.com  ",
-
             },
           ],
-        }
-
+        },
       },
       {
         name: "EV Battery Assembling using Lithium iron phosphate cells ",
         logo: "eeew3.png",
         tag: "WORKSHOP",
+        color: "0, 70, 90",
 
         day1: {
           date: "09/11/2022",
           time: "TBA",
           company: "TBA",
-          topic: "Basics and intermediate level in excel which is used in Chemical Engineering field.  Basic level: Eg. Fitting, Plotting, and Solving Intermediate level: Eg. Piping Design and Unit operation",
+          topic:
+            "Basics and intermediate level in excel which is used in Chemical Engineering field.  Basic level: Eg. Fitting, Plotting, and Solving Intermediate level: Eg. Piping Design and Unit operation",
           resource: [
             {
-
               name: "Mr.V.Prabhu  ",
-              desig: "Assistant Engineer KOODS Lithium Iron Phosphate Battery   ",
+              desig:
+                "Assistant Engineer KOODS Lithium Iron Phosphate Battery   ",
               phone: "TBA",
               email: "TBA",
-
             },
             {
-
               name: "Dr.S.Rajalingam  ",
               desig: "Associate Professor ",
               phone: 9790248476,
               email: "rajalingams@saveetha.ac.in ",
-
             },
             {
-
               name: "Ms.S.Kavitha ",
               desig: "Associate Professor ",
               phone: 9444533061,
               email: "kavitha@saveetha.ac.in ",
-
             },
           ],
           staff: [
             {
-
               name: "Dr.S.Rajalingam   ",
               desig: "Associate Professor  ",
               phone: 9790248476,
               email: "rajalingams@saveetha.ac.in   ",
-
             },
             {
-
               name: "Ms.S.Kavitha  ",
               desig: "Associate Professor  ",
               phone: 9444533061,
               email: "kavitha@saveetha.ac.in  ",
-
             },
             {
-
               name: "Dr.R.Karpagapriya  ",
               desig: "Associate Professor  ",
               phone: 9597727988,
               email: "karpagapriyar@saveetha.ac.in  ",
-
             },
-
           ],
           student: [
             {
-
               name: "S.S.Manoj  ",
               year: "IV",
               phone: 8925239676,
               email: "Manojshanmugam63@gmail.com  ",
-
             },
             {
-
               name: "K.sakthivel ",
               year: "IV ",
               phone: 9360403319,
               email: "Skssakthivel19@gmail.com ",
-
             },
             {
-
               name: "Sanjay kumar  ",
               year: "IV ",
               phone: 8056492148,
               email: "Sanjaykumar080801@gmail.com  ",
-
             },
           ],
-
-
-        }
+        },
       },
-    ]
+    ],
   },
 ];
