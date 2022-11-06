@@ -55,6 +55,7 @@ function UserInfoCard({ data, Scanpage }) {
     DepartEvent,
     email,
     phno,
+    IdCard
   } = data;
 
   console.log(AmountPaid);
@@ -114,6 +115,7 @@ function UserInfoCard({ data, Scanpage }) {
     const docRef = doc(db, "RegisteredPeople", `${id}`);
     console.log(e.target.checked);
     let amount = 0;
+
     if (e.target.checked) {
       amount = AmountPaid + 250;
     } else {
@@ -150,7 +152,7 @@ function UserInfoCard({ data, Scanpage }) {
 
   return (
     <UserCard
-      paid={cashPaid}
+      paid={cashPaid ? cashPaid : true}
       PaperPaid={PaperPresentation ? cashPaidForPaper : true}
       ProjectPaid={ProjectPresentation ? cashPaidForProject : true}
     >
@@ -189,6 +191,26 @@ function UserInfoCard({ data, Scanpage }) {
         }}>phone no: {phno}</p>
   
         </div>
+        <div  style={{
+          width:'400px'
+
+        }}>
+          <img style={{
+            width:'100%',
+            borderRadius:'20px',
+          }} src={IdCard} alt='Id Card'/>
+        </div>
+     
+        </Stack>
+     
+      
+      </Card>
+      <div style={{
+        width:'100%'
+      }}>
+<Stack direction='row' padding='30px 0' alignItems='center' justifyContent='space-between' >
+  
+        <h1>Departments Events</h1>
         <div>
        <UpdateForm DepartEvent={DepartEvent} 
        EventsRegistered={EventsRegistered}  
@@ -196,17 +218,12 @@ function UserInfoCard({ data, Scanpage }) {
         ProjectPresentation={ProjectPresentation}
         CashToBePaid={CashToBePaid}
         id={id}
+        AmountPaid={AmountPaid}
         />
         </div>
-        </Stack>
-     
-      
-      </Card>
+</Stack>
 
-      <div>
-        <h1>Departments Events</h1>
-
-        {deptnames.map((deptnm) => {
+       {DepartEvent &&  deptnames.map((deptnm) => {
           return (
             !isEmpty(EventsRegistered[deptnm]) && (
               <Stack
@@ -231,8 +248,10 @@ function UserInfoCard({ data, Scanpage }) {
             )
           );
         })}
+
       </div>
       {/* departments evnts */}
+      
       {DepartEvent && (
         <div
           style={{
@@ -243,7 +262,7 @@ function UserInfoCard({ data, Scanpage }) {
           <h3>
             <strong>DEPARTMENTS EVENTS : 150 ₹</strong>
           </h3>
-
+      
           <div>
             <Switch
               defaultChecked={cashPaid}

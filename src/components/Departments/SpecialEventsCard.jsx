@@ -4,7 +4,7 @@ import "./styles/DepartMentCard.css";
 import { motion } from "framer-motion";
 import { HashLink as Link } from "react-router-hash-link";
 
-function DepartMentCard({ img, title, des, color, bgtext, mbtm, id }) {
+function SpacialEventsCard({ img, title, des, color, bgtext, mbtm, id }) {
   const a = title.split(" ");
 
   const Card = styled.a`
@@ -112,7 +112,7 @@ function DepartMentCard({ img, title, des, color, bgtext, mbtm, id }) {
       variants={device < 700 ? cardforMobile : cardforDesktop}
       className="containerdept"
     >
-       <Link to={`/events${id}`}>
+
         <Card
           href="#"
           as={motion.div}
@@ -154,9 +154,9 @@ function DepartMentCard({ img, title, des, color, bgtext, mbtm, id }) {
             </DeptTxt>
           </div>
         </Card>
-      </Link>
+
     </motion.div>
   );
 }
 
-export default DepartMentCard;
+export default SpacialEventsCard;

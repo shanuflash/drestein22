@@ -3,6 +3,7 @@ import styled from "styled-components";
 import DepartMentCard from "./DepartMentCard";
 import { departobj, comobj } from "../../configs/Departments.config";
 import { motion } from "framer-motion";
+import SpacialEventsCard from "./SpecialEventsCard";
 
 const DepartmentContainer = styled.div`
   width: 100vw;
@@ -52,7 +53,11 @@ function Departments() {
       </motion.h1>
       <DepartmentContainer>
         {comobj.map((data, i) => {
-          return <DepartMentCard key={i} {...data} />;
+          console.log(data)
+          if(data.title==='Paper Presentation'){
+            return <a href="drestein.pdf" download='drestein.pdf'><SpacialEventsCard key={i} {...data} /></a>
+          }
+          return <SpacialEventsCard key={i} {...data} />
         })}
       </DepartmentContainer>
     </>

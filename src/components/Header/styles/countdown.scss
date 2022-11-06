@@ -23,7 +23,7 @@
   flex-direction: column;
 }
 
-#countdown-card {
+#countdown-card{
   margin-top: 1vh;
   align-items: center;
   justify-content: center;
@@ -34,10 +34,12 @@
   font-size: 5vw;
   width: 7vw;
   // background-color: #000;
-  background: rgba(255, 255, 255, 0.47);
+  // background: rgba(255, 255, 255, 0.47);
+ background: transparent;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(11.5px);
   -webkit-backdrop-filter: blur(11.5px);
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 1rem;
 }
+

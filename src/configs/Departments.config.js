@@ -118,14 +118,7 @@ export const comobj = [
     color: "#37c0ff",
     bgtext: "Paper",
   },
-  {
-    id: "#poster",
-    title: "Poster Presentation",
-    img: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
-    des: "test",
-    color: "#67ff45",
-    bgtext: "Post",
-  },
+
   {
     id: "#project",
     title: "Project Display",

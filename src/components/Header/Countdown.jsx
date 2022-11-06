@@ -32,7 +32,7 @@ const CountDown = () => {
   const DeviceSize = window.innerWidth;
 
   return (
-    <div className="countdown-container">
+    <div className="countdown-container" >
       <div className="days">
         Days <div id="countdown-card">{daysDiff}</div>
       </div>

@@ -32,7 +32,7 @@ import { List, ListItemText } from "@mui/material";
 import { CustomFooterTotalComponent } from "./customFooter";
 
 
-
+import clsx from 'clsx';
 
 
 
@@ -264,6 +264,16 @@ export default function ConditionalValidationGrid() {
       width: 150,
       editable: false,
       type: "boolean",
+      cellClassName: (params) => {
+        if (params.value == null) {
+          return '';
+        }
+  
+        return clsx('super-app', {
+          paid: params.value===true ,
+          notpaid: params.value===false,
+        });
+      },
     },
 
     {
@@ -279,6 +289,16 @@ export default function ConditionalValidationGrid() {
       width: 150,
       type: "boolean",
       editable: false,
+      cellClassName: (params) => {
+        if (params.value == null) {
+          return '';
+        }
+  
+        return clsx('super-app', {
+          paid: params.value===true ,
+          notpaid: params.value===false,
+        });
+      },
     },
     {
       field: "DepartEvent",
@@ -292,6 +312,16 @@ export default function ConditionalValidationGrid() {
       width: 150,
       editable: false,
       type: "boolean",
+      cellClassName: (params) => {
+        if (params.value == null) {
+          return '';
+        }
+  
+        return clsx('super-app', {
+          paid: params.value===true ,
+          notpaid: params.value===false,
+        });
+      },
 
       // const hasError = isPaidProps.value && !params.props.value;
 
@@ -336,7 +366,25 @@ export default function ConditionalValidationGrid() {
   });
 
   return (
-    <StyledBox>
+    <Box   sx={{
+      height:'90%',
+      width: '100%',
+      '& .super-app-theme--cell': {
+        backgroundColor: 'red',
+        color: '#1a3e72',
+        fontWeight: '600',
+      },
+      '& .super-app.paid': {
+        backgroundColor: 'rgba(157, 255, 118, 0.49)',
+        color: '#1a3e72',
+        fontWeight: '600',
+      },
+      '& .super-app.notpaid': {
+        backgroundColor: '#ff8194',
+        color: '#1a3e72',
+        fontWeight: '600',
+      },
+    }}>
       {/* {load && <Loading/>} */}
       <DataGrid
         //  rowHeight={100}
@@ -416,6 +464,6 @@ export default function ConditionalValidationGrid() {
       >
         RECEIVED AMOUT : {collectedcash}💸
       </h3>
-    </StyledBox>
+    </Box>
   );
 }

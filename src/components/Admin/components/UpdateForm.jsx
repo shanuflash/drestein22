@@ -39,7 +39,7 @@ const style = {
 
 };
 
-export default function UpdateForm({DepartEvent,EventsRegistered,ProjectPresentation,PaperPresentation,CashToBePaid,id}) {
+export default function UpdateForm({DepartEvent,EventsRegistered,ProjectPresentation,PaperPresentation,CashToBePaid,id,AmountPaid}) {
     console.log(ProjectPresentation,PaperPresentation)
   const [open, setOpen] = React.useState(false);
   const [load,setload] = useState(false)
@@ -51,7 +51,9 @@ export default function UpdateForm({DepartEvent,EventsRegistered,ProjectPresenta
   const [Paper, setPaper] = React.useState(PaperPresentation);
   const [Work, setWork] = useState(false);
   const [eventName, setEventName] = React.useState(EventsRegistered);
-
+  const [Amountpaid,setAmountpaid] = useState(AmountPaid)
+  const prevProject = ProjectPresentation
+  const prePaper  = PaperPresentation
   const handleChangeT = (event) => {
     // console.log('this ',event.target.name)
     const {
@@ -144,7 +146,11 @@ export default function UpdateForm({DepartEvent,EventsRegistered,ProjectPresenta
 
   const handleUpdateForm = async()=>{
     console.log(Event,Project,Paper,eventName)
+
     setload(true);
+
+
+    console.log(Amountpaid)
     // setChecked(pre=>!pre)
     const docRef = doc(db, "RegisteredPeople", `${id}`);
 
@@ -153,7 +159,8 @@ export default function UpdateForm({DepartEvent,EventsRegistered,ProjectPresenta
         DepartEvent:Event,
         ProjectPresentation:Project,
         PaperPresentation:Paper,
-        EventsRegistered:eventName
+        EventsRegistered:eventName,
+
 
     }).then(() => {
       setload(false);
