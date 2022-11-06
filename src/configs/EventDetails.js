@@ -286,7 +286,7 @@ export const EventDetails = [
         judge:
           "All the problems have same points allotted to them. Participant whose code gets executed will be given higher preference. Second preference will be given to the code with least number of errors. The decision of the organizers in declaring the results will be final. No queries in this regard will be entertained. Any team found to be indulging in any form of malpractice will be immediately disqualified. ",
         tag: "EVENT",
-        logo: "it1.png",
+        logo: "/EventsAssets/it1.png",
         staff: [
           {
             name: "Ms. S.P. Panimalar ",
@@ -345,7 +345,7 @@ export const EventDetails = [
         round3:
           "Top 4 teams in this round .Same team member .Any language can be used .Solve medium difficulty code snippets to win .Code should be perfect to conquer the final game.",
         tag: "EVENT",
-        logo: "it2.png",
+        logo: "/EventsAssets/it2.png",
         staff: [
           {
             name: "Ms. Yuvashree S ",
@@ -394,7 +394,7 @@ export const EventDetails = [
         format:
           "There will be a set of challenges from a range of categories like Cryptography, Web Security, Forensics, Steganography, Reverse Engineering, Binary Exploits, etc. The challenges can either be a collection of files that they can download and find the “Flag” or can be running as web services to which, the participants connect and exploit to retrieve the Flag. Each category contains a variety of questions with different point values and levels of difficulty.The participants will be ranked based on their scores, and the time taken will be used as a tiebreaker. ",
         tag: "EVENT",
-        logo: "it3.png",
+        logo: "/EventsAssets/it3.png",
         staff: [
           {
             name: "Ms. R N Karthika ",
@@ -456,7 +456,7 @@ export const EventDetails = [
           "Participants will be provided with an executable file and they will have to perform reverse coding. They will have to test for different inputs and outputs.Finally, the source code is to be generated. The round will have five such questions.The winner will be selected based on accuracy and working code. ",
         tag: "EVENT",
 
-        logo: "it4.png",
+        logo: "/EventsAssets/it4.png",
         staff: [
           {
             name: "Dr. S. Vidhya   ",
@@ -520,7 +520,7 @@ export const EventDetails = [
           "The participants are requested to explain about the functions of the parts found out by them. Participants should explain the functions within the given time limit. The time limit is about 20seconds.The highest explained team(or)individual will be given 1st prize and following by the runner ups ",
 
         tag: "EVENT",
-        logo: "agri1.png",
+        logo: "/EventsAssets/agri1.png",
         staff: [
           {
             name: "Er.RAGESH ",
@@ -565,7 +565,7 @@ export const EventDetails = [
           "Participants will have a time limit of 2mins .Marks will be deducted for repetition of points .The team leading the points table will be declared as winners (NOTE: Number of rounds will depend on the number of entries)",
 
         tag: "EVENT",
-        logo: "agri2.png",
+        logo: "/EventsAssets/agri2.png",
         staff: [
           {
             name: "MR.GANAPATHI  ",
@@ -601,7 +601,7 @@ export const EventDetails = [
         round1:
           " Per team  comprises of 4members.Team is required to finish as much hunt as possible within the limit.Team members must stay together at all times.Participants will have time limit of 2hours.Teams are not supposed to take away the treasure with them neither touch it. ",
         tag: "EVENT",
-        logo: "agri3.png",
+        logo: "/EventsAssets/agri3.png",
         staff: [
           {
             name: "Mrs.BAKKIYALAKSHMI  ",
@@ -646,7 +646,7 @@ export const EventDetails = [
           "Description *-* food preparation*-* Each team will be given 2 Chances , team member needs to answer when one of the team is performing One who is acting should not open the mouth, if they do the team will be disqualified .Time limit to perform is 3 minutes ",
         tag: "EVENT",
 
-        logo: "agri4.png",
+        logo: "/EventsAssets/agri4.png",
         staff: [
           {
             name: "Er.R.NANDHINI  ",
@@ -708,7 +708,7 @@ export const EventDetails = [
           "New programming language (GO) basic syntax of the language will be provided for a given period of time for preparation.This round will have 5 questions. Each challenge has a predetermined score.A participant’s score depends on the number of test cases a participant’s code submission successfully passes. If a participant submits more than one solution per challenge, then the participant’s score will reflect the highest score achieved. In a game challenge, the participant's score will reflect the last code submission. ",
 
         tag: "EVENT",
-        logo: "ai1.png",
+        logo: "/EventsAssets/aids1.png",
         staff: [
           {
             name: "Dr.Aswini Jayaraman ",
@@ -755,7 +755,7 @@ export const EventDetails = [
         round3:
           "They are proposed to questions regarding their plans where the teams have to come up with apt ideas to solve them .Top 3 teams are assessed by judges based on how they can handle further situations after idea building and budgeting",
         tag: "EVENT",
-        logo: "ai2.png",
+        logo: "/EventsAssets/aids2.png",
         staff: [
           {
             name: "Ms. Surya S ",
@@ -803,7 +803,7 @@ export const EventDetails = [
           "The topic will be given on the spot.No restrictions on the choice of photos/templates to be used.The meme can be with 1-3 slides.The number of slides doesn't affect the evaluation.   ",
 
         tag: "EVENT",
-        logo: "ai3.png",
+        logo: "/EventsAssets/aids3.png",
         staff: [
           {
             name: "Mr.Sridhar S",
@@ -862,7 +862,7 @@ export const EventDetails = [
           "Landing Page. A concept will be given on the spot and the participants are asked to create an impressive home page for a company. Maximum 2 hours will be provided to complete this round.",
         tag: "EVENT",
 
-        logo: "ai4.png",
+        logo: "/EventsAssets/aids4.png",
         staff: [
           {
             name: "Ms. Varalakshmi J  ",
@@ -908,7 +908,7 @@ export const EventDetails = [
         round3:
           "-Two problem statement questions will be given with a time limit of 1hr.The participants can run the programs in the compiler and note down their analysis in the provided paper.Evaluation criteria: The team that takes less time to complete the given problem statements will be selected as the winner.  ",
         tag: "EVENT",
-        logo: "ai5.png",
+        logo: "/EventsAssets/aids5.png",
         staff: [
           {
             name: "Mr. Dhinesh Kumar K S  ",
@@ -976,7 +976,7 @@ export const EventDetails = [
         round3:
           "Group activity, a team of four members. Objective of the round is to identify the appropriate medical equipment required for respective trivia Flashcards of equipment with the description of function and usage will be handed out to the participants. Teams are expected to assign the appropriate cards to the given situations.Every correct answer will be rewarded with a point in the team can use to move forward or hold back the opponent team. First team to complete the highest number of trivia wins.",
         tag: "EVENT",
-        logo: "bm1.png",
+        logo: "/EventsAssets/bme1.png",
         staff: [
           {
             name: "Dr.Sivanandam S ",
@@ -1039,7 +1039,7 @@ export const EventDetails = [
           "Shortlisted students taken from 2nd round .Different set of questions (4 to 5 category of ideas). Individual performance is noted. (At a time only one player in the room) .Writing pad/slate given to hand. (written) .5 to 10 mins per person.Winners selected based on timing and answers.",
 
         tag: "EVENT",
-        logo: "bm2.png",
+        logo: "/EventsAssets/bme2.png",
         staff: [
           {
             name: "Dr. P.  Sinthia  ",
@@ -1099,7 +1099,7 @@ export const EventDetails = [
         round2:
           " The top 4 players shall be selected from the previous round on the basis of the 1st round.In this round, there will be 2 qualifiers, one elimination round and one final round.Teams are said to stand at their respective ends. A question will be asked commonly, when both team player meet at one point. The player who gives the correct answer proceeds the disc path.The team which reaches the other end will be declared as the winner",
         tag: "EVENT",
-        logo: "bm3.png",
+        logo: "/EventsAssets/bme3.png",
         staff: [
           {
             name: "Dr. Swarnambiga A  ",
@@ -1161,7 +1161,7 @@ export const EventDetails = [
         round3:
           "Puzzle related to medical Instruments or Famous Scientist Will be displayed in the laptop provided. According to the time taken by the participants we can select the winners. ",
         tag: "EVENT",
-        logo: "bm4.png",
+        logo: "/EventsAssets/bme4.png",
         staff: [
           {
             name: "Ms. Rasheedha A  ",
@@ -1226,7 +1226,7 @@ export const EventDetails = [
           " Only bridge deck is required to build.   It must be of TRUSS type.  It should be made up of candy sticks only (popsticle sticks). Sticks and adhesive will be provided from the institute. Maximum of 3 members are allowed in a team. Minimum dimension of the bridge: Length = 80cm; Width = 12cm,Max height=15 cm . Any member can use only 4 sticks to overlap. Maximum height of the bridge should not exceed 15cm.The load test will be carried out on the next day of bridge making. THE  MODEL WHICH CARRIES MORE LOAD WILL BE CONSIDERED AS A WINNER",
 
         tag: "EVENT",
-        logo: "civil1.png",
+        logo: "/EventsAssets/civil1.png",
         staff: [
           {
             name: "S.Theerkadharshini ",
@@ -1275,7 +1275,7 @@ export const EventDetails = [
         round3:
           "The selected 5 teams will be presented with an online treasure hunt framework in a laptop.Each team needs to decipher the clues to find the treasure (letters shape or structure) The team that clinches the treasure (identifies the pattern) at first will be announced as winner. Total event duration: 2 hours (including briefing of instructions) ",
         tag: "EVENT",
-        logo: "civil2.png",
+        logo: "/EventsAssets/civil2.png",
         staff: [
           {
             name: "Dr. S. Padma  ",
@@ -1325,7 +1325,7 @@ export const EventDetails = [
         round2:
           "The detailed line plan will be given as a question in round 2 .The students have to draw Plan with specification for the same line plan. The duration for the plan is 30 minutes. Based on the completion first three place will be finalised ",
         tag: "EVENT",
-        logo: "civil3.png",
+        logo: "/EventsAssets/civil3.png",
         staff: [
           {
             name: "M Madhan Kumar ",
@@ -1369,7 +1369,7 @@ export const EventDetails = [
           "Participants will be provided with an executable file and they will have to perform reverse coding. They will have to test for different inputs and outputs.Finally, the source code is to be generated. The round will have five such questions.The winner will be selected based on accuracy and working code. ",
         tag: "EVENT",
 
-        logo: "civil4.png",
+        logo: "/EventsAssets/civil4.png",
         staff: [
           {
             name: "A.Aishwarya lakshmi   ",
@@ -1427,7 +1427,7 @@ export const EventDetails = [
         round3:
           "It is a group event of 3. Participants will be given many charts which contain different Process of flow diagrams of different industries. Participants should order them according to sector in a given time limit.The team which finishes fast with the correct answer will be the winner. ",
         tag: "EVENT",
-        logo: "chem1.png",
+        logo: "/EventsAssets/chem1.png",
         staff: [
           {
             name: "Ms.N Umaiyambika  ",
@@ -1467,7 +1467,7 @@ export const EventDetails = [
         round2:
           " A situational task is given to the participant . The task is related to chemical process industries.A simple Example is that if there is spillage of Sulphuric acid. What will you do! .They must apply the most reluctant procedure to accomplish the task and get their points.",
         tag: "EVENT",
-        logo: "chem2.png",
+        logo: "/EventsAssets/chem2.png",
         staff: [
           {
             name: "Dr.P.Senthilkumar  ",
@@ -1501,7 +1501,7 @@ export const EventDetails = [
         rules:
           " Participants should play small games in the room to escape from the room. Participants should answer the questions for a minimum of 3 and also should win the game.  For winning each game participants will be given stickers at each game. Those who collect more stickers will be the winner ",
         tag: "EVENT",
-        logo: "chem3.png",
+        logo: "/EventsAssets/chem3.png",
         staff: [
           {
             name: "Dr.S. Balachandran  ",
@@ -1563,7 +1563,7 @@ export const EventDetails = [
         round3:
           "3 Members standing in a row. First one gets a clue from Co-ordinator.  Second one gets a clue from the First one. Third one gets a clue from the Second one.  Third one has to choose the element from the board. ",
         tag: "EVENT",
-        logo: "chem4.png",
+        logo: "/EventsAssets/chem4.png",
         staff: [
           {
             name: "Ms.N Umaiyambika  ",
@@ -1606,7 +1606,7 @@ export const EventDetails = [
           "30 seconds per QUESTION .Correct answer will be rewarded with two points.10 Questions per round ",
         round2:
           "20 seconds per QUESTION .Correct answer will be rewarded with two points .10 Questions per round.SELECTION PROCESS: Winners will be based on MAXIMUM POINTS .",
-        logo: "eie1.png",
+        logo: "/EventsAssets/eie1.png",
         staff: [
           {
             name: "Dr.A.R.Kalaiarasi  ",
@@ -1640,7 +1640,7 @@ export const EventDetails = [
         round3:
           "Maximum 2 members in a team .5 minutes per round.10 Questions per round.Every correct answer carries 2 points Selection is based on maximum points ",
         tag: "EVENT",
-        logo: "eie2.png",
+        logo: "/EventsAssets/eie2.png",
         staff: [
           {
             name: "Dr.A.Manonmani ",
@@ -1673,7 +1673,7 @@ export const EventDetails = [
         round3:
           "Maximum 1 member in a team .5 minutes per round .10 Questions per round . Every correct answer carries 2 points . Selection is based on maximum points",
         tag: "EVENT",
-        logo: "eie3.png",
+        logo: "/EventsAssets/eie3.png",
         staff: [
           {
             name: "Dr.M.Arivalagam  ",
@@ -1706,7 +1706,7 @@ export const EventDetails = [
         round3:
           "Maximum 2 members in a team.15 minutes per round.1Debugging per round.Design contains maximum 20points .selection based on maximum points ",
         tag: "EVENT",
-        logo: "eie4.png",
+        logo: "/EventsAssets/eie4.png",
         staff: [
           {
             name: " Dr.  P. Yuvaraj ",
@@ -1746,7 +1746,7 @@ export const EventDetails = [
         round3:
           "Detailing of MODEL- Quality, Efficiency of the product will be inspected ",
         tag: "EVENT",
-        logo: "mech1.png",
+        logo: "/EventsAssets/mech1.png",
         staff: [
           {
             name: "Dr. Sivaramakrishnan N  ",
@@ -1797,7 +1797,7 @@ export const EventDetails = [
         round2: " Facing and Step turning in Lathe Machine(30mins) .",
         round3: "Knurling in Lathe Machining(30mins) ",
         tag: "EVENT",
-        logo: "mech2.png",
+        logo: "/EventsAssets/mech2.png",
         staff: [
           {
             name: "Dr.Kripa M Suvarna ",
@@ -1844,7 +1844,7 @@ export const EventDetails = [
         round2: "Round 2 will be based on distance coverage. ",
         round3: "Round 3 will be based on distance coverage. ",
         tag: "EVENT",
-        logo: "mech3.png",
+        logo: "/EventsAssets/mech3.png",
         staff: [
           {
             name: "V.Velmurugan ",
@@ -1894,7 +1894,7 @@ export const EventDetails = [
         round2: "The simulation for the product has to done within 30mins.",
         tag: "EVENT",
 
-        logo: "mech4.png",
+        logo: "/EventsAssets/mech4.png",
         staff: [
           {
             name: "C Radhika ",
@@ -1934,8 +1934,8 @@ export const EventDetails = [
     ],
   },
   {
-    id: 'mba',
-    title: 'Management Studies',
+    id: "mba",
+    title: "Management Studies",
     eventslist: [
       {
         name: " Adzap",
@@ -1952,7 +1952,7 @@ export const EventDetails = [
         round3:
           "Political & Illegal Words Shouldn't Be Used During The Performance  ",
         tag: "EVENT",
-        logo: "mba1.png",
+        logo: "/EventsAssets/mba1.png",
         staff: [
           {
             name: "Dr.S.GANGADHARAN  ",
@@ -1960,7 +1960,6 @@ export const EventDetails = [
             phone: 9894320588,
             email: "Sgangadharan @gmail.com  ",
           },
-
         ],
         student: [
           {
@@ -1975,8 +1974,6 @@ export const EventDetails = [
             phone: 8778270202,
             email: "Siddhu @gmail.com  ",
           },
-
-
         ],
       },
 
@@ -1987,7 +1984,8 @@ export const EventDetails = [
         venue: "TBA",
         time: "TBA",
         members: "1-2",
-        rules: "Participation in the form of Team only [2 Members per team]. Compulsory the team has to register to be eligible for the competition. Replacement of any participant of a team is not allowed after registration.  Participants shall not be allowed to use Mobile phones or any other electronic devices during the stages of quiz.  There are no restrictions on the number of teams. Judges decision are final ",
+        rules:
+          "Participation in the form of Team only [2 Members per team]. Compulsory the team has to register to be eligible for the competition. Replacement of any participant of a team is not allowed after registration.  Participants shall not be allowed to use Mobile phones or any other electronic devices during the stages of quiz.  There are no restrictions on the number of teams. Judges decision are final ",
         round1:
           "Total of 15 MCQ type Questions Each question carries 1 Mark  Only 1 member per team allowed to attend this round The Top 5 selected teams will move on to the round 2 ",
 
@@ -1995,7 +1993,7 @@ export const EventDetails = [
           " Both the team members join together to attend this round Total of 25 questions will be asked. 5 questions per team Each question carries 2 Marks, If question get passed to the next team it carries 1 Mark In case of tie, extra tie breaker questions may be asked to decide the winners  .",
 
         tag: "EVENT",
-        logo: "mba2.png",
+        logo: "/EventsAssets/mba2.png",
         staff: [
           {
             name: "Dr.L.Anitha  ",
@@ -2003,7 +2001,6 @@ export const EventDetails = [
             phone: 9841337619,
             email: "kripasuvarna@saveetha.ac.in  ",
           },
-
         ],
         student: [
           {
@@ -2017,8 +2014,7 @@ export const EventDetails = [
             year: "II ",
             phone: 9486818390,
             email: "Rajalakshmisankar1971 @gmail.com  ",
-          }
-
+          },
         ],
       },
       {
@@ -2029,13 +2025,16 @@ export const EventDetails = [
         time: "8.30am-12.00pm",
         members: "2",
         round1title: "CRACK THE CODE ",
-        round1: " Timings: 20min. No. Of questions: 20 Candidates are provided with set of mcqs related to general management, marketing, advertising, HRM, finance, business events, concepts and recent issues. No negative marks . ",
+        round1:
+          " Timings: 20min. No. Of questions: 20 Candidates are provided with set of mcqs related to general management, marketing, advertising, HRM, finance, business events, concepts and recent issues. No negative marks . ",
         round2title: "SHERLOCK & WATSON ",
-        round2: "Each contestant will be given a caselet for which 10 minutes will be given to prepare the caselet.  Each contestant will present the case before the panel of judges for a maximum of 5 minutes.  Contestants are expected to explain the relevant background information of the case, which may include legal, financial, economic, marketing, and management issues relevant to the caselet, and present the issue identified in the caselet.  After presenting the case, each contestant must make recommendations for action that are solidly grounded to the given caselet.Mobile phones & Internet access are prohibited . ",
+        round2:
+          "Each contestant will be given a caselet for which 10 minutes will be given to prepare the caselet.  Each contestant will present the case before the panel of judges for a maximum of 5 minutes.  Contestants are expected to explain the relevant background information of the case, which may include legal, financial, economic, marketing, and management issues relevant to the caselet, and present the issue identified in the caselet.  After presenting the case, each contestant must make recommendations for action that are solidly grounded to the given caselet.Mobile phones & Internet access are prohibited . ",
         round3title: "Rapid fire round ",
-        round3: " This round consists of potpourri of Questions.In this round the fastest mind gets to answer the questions. Each contestant will be given a set of 5 questions. Mobile phones & Internet access are prohibited. . ",
+        round3:
+          " This round consists of potpourri of Questions.In this round the fastest mind gets to answer the questions. Each contestant will be given a set of 5 questions. Mobile phones & Internet access are prohibited. . ",
         tag: "EVENT",
-        logo: "mba3.png",
+        logo: "/EventsAssets/mba3.png",
         staff: [
           {
             name: "Dr.J.Premila  ",
@@ -2072,9 +2071,10 @@ export const EventDetails = [
         venue: "TBA",
         time: "TBA",
         members: "1-3",
-        rules: "ndigenous photo captured through Camera or Mobile (Should be clear). No editing should be done.Idea behind the photograph in regards with management concepts. Photograph should be sent before deadline .  ",
+        rules:
+          "ndigenous photo captured through Camera or Mobile (Should be clear). No editing should be done.Idea behind the photograph in regards with management concepts. Photograph should be sent before deadline .  ",
         tag: "EVENT",
-        logo: "mba4.png",
+        logo: "/EventsAssets/mba4.png",
         staff: [
           {
             name: "Dr.M.Venith Vijay ",
@@ -2083,38 +2083,35 @@ export const EventDetails = [
             email: "Venithvijay@savee tha.ac.in  ",
           },
         ],
-          student:
-          [
-            {
-              name: "Laksiya.V ",
-              year: "II  ",
-              phone: 7433933555,
-              email: "laksiya2001 @gmail.com   ",
-            },
-            {
-              name: "Smily.S  ",
-              year: "II  ",
-              phone: 7092724135,
-              email: "Smilysornam @gmail.com  ",
-            },
+        student: [
+          {
+            name: "Laksiya.V ",
+            year: "II  ",
+            phone: 7433933555,
+            email: "laksiya2001 @gmail.com   ",
+          },
+          {
+            name: "Smily.S  ",
+            year: "II  ",
+            phone: 7092724135,
+            email: "Smilysornam @gmail.com  ",
+          },
 
-            {
-              name: "Naveen V",
-              year: "III  ",
-              phone: 8608202199,
-              email: "naveenvairavel2002@gmail.com  ",
-            },
-            {
-              name: "Charan K",
-              year: "II ",
-              phone: 86082021995,
-              email: "charankannan95102gmail.com  ",
-            },
-          ],
-
-
-      }
-    ]
+          {
+            name: "Naveen V",
+            year: "III  ",
+            phone: 8608202199,
+            email: "naveenvairavel2002@gmail.com  ",
+          },
+          {
+            name: "Charan K",
+            year: "II ",
+            phone: 86082021995,
+            email: "charankannan95102gmail.com  ",
+          },
+        ],
+      },
+    ],
   },
   {
     id: "med",
@@ -2135,45 +2132,43 @@ export const EventDetails = [
         round3:
           "You have to draw neat diagram and label the parts. For your reference the picture will be shown for 3 to 5 minutes. Best team will be awarded.   ",
         tag: "EVENT",
-        logo: "mba1.png",
+        logo: "/EventsAssets/med1.png",
         staff: [
           {
             name: "U. Madhanlal  ",
             desig: "Assistant Professor ",
-            phone: 9894320588 ,
+            phone: 9894320588,
             email: "Sgangadharan @gmail.com  ",
           },
-          
         ],
         student: [
           {
             name: "S. Vajeha Jameela  ",
             year: "IV ",
-            phone:9600679615   ,
+            phone: 9600679615,
             email: "vajehasahul@gmaiil.com  ",
           },
-          { 
+          {
             name: "Allen Maria Brando  ",
             year: "IV ",
-            phone: 8925240742   ,
+            phone: 8925240742,
             email: "mariabrando0511@gmail.com  ",
           },
-          { 
+          {
             name: "Indhuja.S. U   ",
             year: "III ",
-            phone: 9751653131   ,
+            phone: 9751653131,
             email: "indhujasrinivasan2003@gmail.com  ",
           },
-          { 
+          {
             name: "Vaitheswaran.S  ",
             year: "III ",
-            phone: 744910268  ,
+            phone: 744910268,
             email: "vaithyx5@gmail.com  ",
           },
-        
         ],
       },
-    
+
       {
         name: " CIRCUITO",
         date: "18 Nov 2022(AN)",
@@ -2182,51 +2177,50 @@ export const EventDetails = [
         time: "TBA",
         members: "1-2",
         rules: "",
-        round1title:"QUIZOID",
+        round1title: "QUIZOID",
         round1:
           "Maximum 3 members per team  MCQ Questions will be displayed on the projector and answer sheets will be given  Participants has to choose the appropriate answers from the given options They will be qualified to the next round based on the scores  ",
-       round2title:" WHO AM I ?",
-      round2:
-          "A box full of electronic components will be given to each team .They has to pinpoint the names of the given components within  the given time .Teams will be selected based on the counts of component they listed   .", 
-        round3title:"MEMORY MASTER",
-        round3:"Pictures of simple electronic circuits will be displayed on the projector for 30 seconds Each team will be given a breadboard and the required components Team members has to make circuit connections of the displayed schematics within the stipulated timing Selected teams will be awarded ",
+        round2title: " WHO AM I ?",
+        round2:
+          "A box full of electronic components will be given to each team .They has to pinpoint the names of the given components within  the given time .Teams will be selected based on the counts of component they listed   .",
+        round3title: "MEMORY MASTER",
+        round3:
+          "Pictures of simple electronic circuits will be displayed on the projector for 30 seconds Each team will be given a breadboard and the required components Team members has to make circuit connections of the displayed schematics within the stipulated timing Selected teams will be awarded ",
         tag: "EVENT",
-        logo: "mba2.png",
+        logo: "/EventsAssets/med2.png",
         staff: [
           {
             name: "Mrs.Indumathy ",
             desig: "Assistant Professor ",
-            phone: 9003025299   ,
+            phone: 9003025299,
             email: "indumathyt@saveetha.ac.in   ",
           },
-         
         ],
         student: [
           {
             name: "S Alagu Meenal  ",
             year: "IV  ",
-            phone: 6374086494  ,
+            phone: 6374086494,
             email: "meenusundaraam@gmail.com   ",
           },
           {
             name: "N Durga  ",
             year: "IV  ",
-            phone: 9786538472    ,
+            phone: 9786538472,
             email: "durgaaanagarajan2019@gmail.com  ",
           },
           {
             name: "R Kiran  ",
             year: "III   ",
-            phone: 9080083973   ,
+            phone: 9080083973,
             email: "meenusundaraam@gmail.com   ",
           },
           {
             name: "E Allwin Donald   ",
             year: "II ",
-            phone: 9940233105    ,
+            phone: 9940233105,
             email: "durgaaanagarajan2019@gmail.com  ",
-          }
-         
+          },
         ],
       },
       {
@@ -2236,48 +2230,50 @@ export const EventDetails = [
         venue: "TBA",
         time: "8.30am-12.00pm",
         members: "2",
-        round1title:"Puzzle ",
-        round1:"Maximum of 2 members per team  Pieces of papers with medical instrument will be provided for each team. One in a team will be blind folded and the other can guide his teammate providing instruction to fit the pieces correctly to form a picture.  Max time : 120 seconds The best three teams will be selected for next round. ",         
-        round2:"Rule to be followed as same as round 1 Max time : 60 seconds teams will be selected for final round . ",
-        round3:"Rule to be followed as same as round 1 Max time : 40 seconds  . ",
+        round1title: "Puzzle ",
+        round1:
+          "Maximum of 2 members per team  Pieces of papers with medical instrument will be provided for each team. One in a team will be blind folded and the other can guide his teammate providing instruction to fit the pieces correctly to form a picture.  Max time : 120 seconds The best three teams will be selected for next round. ",
+        round2:
+          "Rule to be followed as same as round 1 Max time : 60 seconds teams will be selected for final round . ",
+        round3:
+          "Rule to be followed as same as round 1 Max time : 40 seconds  . ",
         tag: "EVENT",
-        logo: "mba3.png",
+        logo: "/EventsAssets/med3.png",
         staff: [
           {
             name: "Vigneshwari N  ",
             desig: "Assistant Professor ",
-            phone: 9486191161   ,
+            phone: 9486191161,
             email: "vigneshwarin@saveetha.ac.in  ",
           },
-          
         ],
         student: [
           {
             name: "Gugan B M   ",
             year: "IV ",
-            phone: 7708808479  ,
+            phone: 7708808479,
             email: "guganbm2002@gmail.com   ",
           },
           {
             name: "Thiruneelan R ",
             year: "IV ",
-            phone: 6369643709  ,
+            phone: 6369643709,
             email: "thiruneelan361@gmail.com  ",
           },
           {
             name: "Sharmila  ",
             year: "III",
-            phone:6382785465  ,
+            phone: 6382785465,
             email: "sharmila85465@gmail.com  ",
           },
           {
             name: "Dinesh Kumar  ",
             year: "II ",
-            phone: 6369582940  ,
+            phone: 6369582940,
             email: "kumardineshgj@gmail.com  ",
           },
         ],
       },
-    ]
-  }
+    ],
+  },
 ];

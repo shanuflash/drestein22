@@ -30,18 +30,20 @@
     display: flex;
     flex-wrap: wrap;
   }
-  .block .social-links a{
-    display: flex;justify-content: center;align-items: center;
+  .block .social-links a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     height: 2.5rem;
     width: 2.5rem;
-    background-color: rgba(255,255,255,0.2);
-    margin:0 10px 10px 0;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
     border-radius: 50%;
     color: #ffffff;
     transition: all 0.5s ease;
   }
-  .block .social-links a:hover{
+  .block .social-links a:hover {
     color: #24262b;
     background-color: #ffffff;
   }

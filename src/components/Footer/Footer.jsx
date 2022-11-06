@@ -2,7 +2,13 @@ import React from "react";
 import "./footer.scss";
 import styled from "styled-components";
 import dresteinLogo from "../../assets/dresteinLogo.svg";
-import { FaFacebook, FaTwitter, FaLinkedinIn, FaInstagram, FaPinterest } from 'react-icons/fa'
+import {
+  FaFacebook,
+  FaTwitter,
+  FaLinkedinIn,
+  FaInstagram,
+  FaPinterest,
+} from "react-icons/fa";
 
 const Footer = () => {
   const LogoHead = styled.div`
@@ -69,7 +75,6 @@ const Footer = () => {
         </div>
         <div className="block">
           <h4 className="heading">CO-ORDINATORS</h4>
-          
         </div>
         <div className="block">
           <h4 className="heading">USEFUL LINKS</h4>
@@ -79,14 +84,41 @@ const Footer = () => {
           <div className="links">Terms and service</div>
           <div className="links">Privacy Policy</div>
 
-          <h4 className="heading" style={{marginTop: "2rem", marginBottom: "1rem"}}>SOCIALS</h4>
+          <h4
+            className="heading"
+            style={{ marginTop: "2rem", marginBottom: "1rem" }}
+          >
+            SOCIALS
+          </h4>
           <div class="social-links">
-  	 				<a target="_blank" href="https://www.facebook.com/pg/SaveethaEngineeringCollegeSEC/posts/?ref=page_internal"><FaFacebook /></a>
-  	 				<a target="_blank" href="https://twitter.com/SaveethaSEC/"><FaTwitter /></a>
-  	 				<a target="_blank" href="https://www.instagram.com/saveethaengineeringcollege/"><FaInstagram /></a>
-  	 				<a target="_blank" href="https://www.linkedin.com/in/saveetha-engineering-college/"><FaLinkedinIn /></a>
-  	 				<a target="_blank" href="https://in.pinterest.com/saveethaengineering/"><FaPinterest /></a>
-  	 			</div>
+            <a
+              target="_blank"
+              href="https://www.facebook.com/pg/SaveethaEngineeringCollegeSEC/posts/?ref=page_internal"
+            >
+              <FaFacebook />
+            </a>
+            <a target="_blank" href="https://twitter.com/SaveethaSEC/">
+              <FaTwitter />
+            </a>
+            <a
+              target="_blank"
+              href="https://www.instagram.com/saveethaengineeringcollege/"
+            >
+              <FaInstagram />
+            </a>
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/saveetha-engineering-college/"
+            >
+              <FaLinkedinIn />
+            </a>
+            <a
+              target="_blank"
+              href="https://in.pinterest.com/saveethaengineering/"
+            >
+              <FaPinterest />
+            </a>
+          </div>
         </div>
         <div className="block">
           <h4 className="heading">LOCATION</h4>
