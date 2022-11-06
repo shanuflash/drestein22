@@ -7,7 +7,7 @@ import { FcAlarmClock } from "react-icons/fc";
 import { IoIosPeople } from "react-icons/io";
 import RegisterBtn from "../register-button/RegisterBtn";
 import { HashLink as Link } from "react-router-hash-link";
-
+import test from '../../assets/EventsAssets/cse1.png'
 const Modal = ({ open, setOpenModal }) => {
   const { eventObject } = useContext(DisplayPopupContext);
   const splitrules = eventObject?.rules?.split(".");
@@ -59,7 +59,8 @@ const Modal = ({ open, setOpenModal }) => {
               style={{
                 width: "100%",
               }}
-              src={`EventsAssets/${eventObject.logo}`}
+              src={`../../assets/EventsAssets/${eventObject.logo}`}
+              // src={test}
               alt="Logo"
             />
           </div>
