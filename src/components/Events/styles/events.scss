@@ -18,7 +18,7 @@
 .wrapper {
   margin-top: 2rem;
   display: flex;
-  flex-wrap: wrap;
+overflow-x: scroll;
   gap: 1.5rem;
 
   // display: grid;

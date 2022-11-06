@@ -3693,7 +3693,7 @@ export const EventDetails = [
 
               name: "Mr.V.Prabhu  ",
               desig: "Assistant Engineer KOODS Lithium Iron Phosphate Battery   ",
-              phone: TBA,
+              phone: 'TBA',
               email: "TBA",
 
             },
