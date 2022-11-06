@@ -37,7 +37,10 @@ const Modal = ({ open, setOpenModal }) => {
           <div className="item">
             <span>Type</span>
             <IoIosPeople size={32} />
-            <span>{eventObject.type? `${eventObject.type}` : 'workshop'}</span>
+
+
+            <span>{eventObject.type}</span>
+
           </div>
           <div className="item">
             <span>Venue</span>
@@ -58,8 +61,10 @@ const Modal = ({ open, setOpenModal }) => {
             <img
               style={{
                 width: "100%",
+                borderRadius: "0.4rem",
               }}
-              src={`EventsAssets/${eventObject.logo}`}
+              src={`${eventObject.logo}`}
+              // src={test}
               alt="Logo"
             />
           </div>

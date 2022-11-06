@@ -3,7 +3,6 @@ import "./styles/test.css";
 import { useContext } from "react";
 import { departobj } from "../../configs/Departments.config.js";
 import DisplayPopupContext from "../../context/DisplayPopupContext";
-
 const EventCard = ({
   name,
   desc,
@@ -96,7 +95,7 @@ const EventCard = ({
       <Card className="eventcard" onClick={handleEventInfo}>
         <div>
           <img
-            src={logo}
+            src={`${logo}`}
             style={{
               borderRadius: "30px",
               height: "111px",
