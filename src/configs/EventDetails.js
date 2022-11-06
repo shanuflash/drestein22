@@ -683,6 +683,104 @@ export const EventDetails = [
         ],
       },
     ],
+    workshopslist: [
+      {
+          name: "FIELD DEMONSTRATION OF DRONE SPRAYER  ",
+          logo: "agriw1.png",
+          tag: "WORKSHOP",
+  
+          day1: {
+              date: "16/11/2022-FN",
+              time: "12-3.00",
+              mode: "OFFLINE",
+              venu: "TBA",
+              resource: [
+  
+              ],
+              staff: [
+                  {
+  
+                      name: "MR.TAJUDDIN   ",
+                      desig: "Professor and Head  ",
+                      phone: 9677883599,
+                      email: "hod.agri@saveetha.ac.in  ",
+  
+                  },
+                  {
+  
+                      name: "MR.GANAPATHI  ",
+                      desig: "Assistant Professor (SG)  ",
+                      phone: 9787982231,
+                      email: "ganapathid@saveetha.ac.in   ",
+  
+                  }
+  
+              ],
+              studennt: [
+                  {
+                      name: "DHANALAKSHMI    ",
+                      year: "IV ",
+                      phone: 9360677202,
+                      email: "ruthudhana25@gmail.com  ",
+                  },
+                  {
+                      name: "SANJAY  ",
+                      year: "III",
+                      phone: 9940631302,
+                      email: "ssanjay1303@gmail.com  ",
+                  }
+              ]
+          },
+      },
+      {
+          name: "ORGANIC FARMING   ",
+          logo: "agriw1.png",
+          tag: "WORKSHOP",
+  
+          day1: {
+              date: "16/11/2022-FN",
+              time: "12.00-3.00pm",
+              mode: "OFFLINE",
+              venu: "TBA",
+              resource: [
+  
+              ],
+              staff: [
+                  {
+  
+                      name: "Mrs.Bakkiyalakshmi   ",
+                      desig: "Assistant Professor  ",
+                      phone: 9566670561,
+                      email: "bakkiyalakshmip@saveetha.ac.in  ",
+  
+                  },
+                  {
+  
+                      name: "MS.DIVYA   ",
+                      desig: "Assistant Professor  ",
+                      phone: 8940553325,
+                      email: "divyaprabhav@saveetha.ac.in   ",
+  
+                  }
+  
+              ],
+              studennt: [
+                  {
+                      name: "SWATHI    ",
+                      year: "IV ",
+                      phone: 9150923359,
+                      email: "swathisri3148@gmail.com  ",
+                  },
+                  {
+                      name: "KINAKSHA  ",
+                      year: "II",
+                      phone: 9790559908,
+                      email: "kinaksha@icloud.com  ",
+                  }
+              ]
+          },
+      },
+  ]
   },
   {
     id: "aids",
@@ -1204,6 +1302,128 @@ export const EventDetails = [
         ],
       },
     ],
+    workshopslist: [
+      {
+          name: "3D modelling in CT & MRI scans on Navigation based surgery  ",
+          logo: "biow1.png",
+          tag: "WORKSHOP",
+  
+          day1: {
+              date: "07/11/2022-FN",
+              time: "12:00pm -3.00pm",
+              mode:"OFFLINE",
+              venu:"TBA",
+              resource: [
+                  {
+                      
+                      name: "Arjunan Senthilkumar  ",
+                      desig: "Senior Application Engineer  ",
+                      phone: 7358936818  ,
+                      email: "arjunavilash02@gmail.com  ",
+                  
+              },
+                 
+              ],
+              staff: [
+                  {
+                      
+                      name: "Sushmitha M  ",
+                      desig: "Associate Professor  ",
+                      phone: 8754566010   ,
+                      email: "sushmitham@saveetha.ac. in  ",
+                  
+              },
+            
+              ],
+              student: [
+                  {
+                      name: "Priyadharshni T  ",
+                      year: "IV ",
+                      phone:6380357148   ,
+                      email: "priyashini2002@gmail.com  ",
+                    },
+                    {
+                      name: "M Priyanka   ",
+                      year: "III",
+                      phone:8072631038   ,
+                      email: "priyankapooja.2003@gmail.com  ",
+                    },
+                    {
+                      name: "Rejith Kumar S   ",
+                      year: "III",
+                      phone:6374785250   ,
+                      email: "rejiyh4@gmail.com  ",
+                    },
+                    {
+                      name: "Arshath H   ",
+                      year: "II",
+                      phone:8754668607   ,
+                      email: "arshathmohammedarshathth@gmail.com ",
+                    }
+              ]
+          },
+      },
+            {
+              name: "Biomechanics & LabVIEW for Healthcare Applications ",
+              logo: "biow1.png",
+              tag: "WORKSHOP",
+              company:"Prashan Medical Technologies",
+      
+              day1: {
+                  date: "16/11/2022-FN",
+                  time: "12-3.00",
+                  mode:"OFFLINE",
+                  venu:"TBA",
+                  resource: [
+                      {
+                      
+                          name: "Boopathi Sakthivel  ",
+                          desig: "Founder, CEO & Biomedical Engineer   ",
+                          phone: 8883774112  ,
+                          email: "prashanmedtech@gmail.com ",
+                      
+                  },
+                     
+                  ],
+                  staff: [
+                      {
+                          
+                          name: "Rasheedha A   ",
+                          desig: "TBA  ",
+                          phone: 7904321272   ,
+                          email: "rasheedhaa@saveetha.ac.in  ",
+                      
+                  },
+                  ],
+                  student: [
+                      {
+                          name: "Sivasakthi M    ",
+                          year: "IV ",
+                          phone: 9150840270   ,
+                          email: "chsmsivasakthi@gmail.com  ",
+                        },
+                        {
+                          name: "Kamesh B  ",
+                          year: "III",
+                          phone: 9361934096   ,
+                          email: "kamesh5002@gmail.com  ",
+                        },
+                        {
+                          name: "Amirdha   ",
+                          year: "II ",
+                          phone: 9344278841    ,
+                          email: "amirdhas2003@gmail.com  ",
+                        },
+                        {
+                          name: "Purushotham an.C  ",
+                          year: "III",
+                          phone: 9952028003   ,
+                          email: "purushothchakaravarthi@g mail.com ",
+                        }
+                  ]
+              },
+      },
+  ]
   },
   {
     id: "civil",
@@ -1406,6 +1626,161 @@ export const EventDetails = [
         ],
       },
     ],
+    workshopslist: [
+      {
+        name: "3D modelling in CT & MRI scans on Navigation based surgery  ",
+        logo: "civilw1.png",
+        tag: "WORKSHOP",
+    
+        day1: {
+          date: "07/11/2022-FN",
+          time: "12.00-3.00",
+          mode: "OFFLINE",
+          venu: "TBA",
+          resource: [
+            {
+    
+              name: "Arjunan Senthilkumar  ",
+              desig: "Senior Application Engineer  ",
+              phone: 7358936818,
+              email: "arjunavilash02@gmail.com  ",
+    
+            },
+    
+          ],
+          staff: [
+            {
+    
+              name: "Dr.Venkatesan G ",
+              desig: "Associate Professor  ",
+              phone: 9789290995,
+              email: "gvenkatesan@saveetha.ac.in  ",
+    
+            },
+    
+          ],
+          student: [
+    
+            {
+              name: "TEJAVATH PAVAN KALYAN   ",
+              year: "III",
+              phone: 8072631038,
+              email: "priyankapooja.2003@gmail.com  ",
+            },
+          ]
+        },
+      },
+      {
+        name: "4D Building Information Modelling for Project Management ",
+        logo: "civilw2.png",
+        tag: "WORKSHOP",
+        company: " Infinity PMC Solutions, Chennai.",
+    
+        day1: {
+          date: "08/11/2022-FN",
+          time: "TBA",
+          mode: "OFFLINE",
+          venu: "TBA",
+          resource: [
+            {
+    
+              name: "SuganyaSekar ",
+              desig: "Senior Manager (Delivery & Services)   ",
+              phone: 9840035551,
+              email: "p.ravikumar@infinitypmc.co.in ",
+    
+            },
+    
+          ],
+          staff: [
+            {
+    
+              name: "Dr. C. JenifaLatha ",
+              desig: "Professor ",
+              phone: 7094851856,
+              email: "jenifalathac@saveetha.ac.in  ",
+    
+            },
+          ],
+          student: [
+    
+            {
+              name: "Anbarasu A  ",
+              year: "III",
+              phone: 7867008957,
+              email: "anbarasu.annamalai2003@gmail.com  ",
+            },
+            {
+              name: "Prakalya C A  ",
+              year: "II ",
+              phone: 9342479383,
+              email: "prakalyaamarnath@gmail.com   ",
+            },
+            {
+              name: "Trescothick S   ",
+              year: "II",
+              phone: 8525833108,
+              email: "trescothick611@gmail.com ",
+            }
+          ],
+        },
+      },
+      {
+        name: "5D BIM for Construction Industry",
+        logo: "civilw3.png",
+        tag: "WORKSHOP",
+        company: " Infinity PMC Solutions, Chennai.",
+    
+        day1: {
+          date: "09/11/2022-FN",
+          time: "TBA",
+          mode: "OFFLINE",
+          venu: "TBA",
+          resource: [
+            {
+    
+              name: "Mr. VivekKennady  ",
+              desig: "Manager – Professional Services   ",
+              phone: 9789096485,
+              email: "p.ravikumar@infinitypmc.co.in ",
+    
+            },
+    
+          ],
+          staff: [
+            {
+    
+              name: "Dr. L. Kanagarathinam  ",
+              desig: "Assistant Professor  ",
+              phone: 7093800321,
+              email: "kanagarathinaml@saveetha.ac.in  ",
+    
+            },
+          ],
+          student: [
+    
+            {
+              name: "Ravi Kumar S   ",
+              year: "III",
+              phone: 9894621499,
+              email: "ravikumarsiva2003@gmail.com ",
+            },
+            {
+              name: "KamsalaMadhurya  ",
+              year: "II ",
+              phone: 9502883058,
+              email: "madhuprabhakar861@gmail.com  ",
+            },
+            {
+              name: "Vignesh Babu N K  ",
+              year: "II",
+              phone: 8248184403,
+              email: "offvigneshvicky13@gmail.com  ",
+            }
+          ]
+        },
+      },
+    ]
   },
   {
     id: "chem",
@@ -1588,6 +1963,137 @@ export const EventDetails = [
         ],
       },
     ],
+    workshopslist: [
+      {
+        name: "EXCEL for Chemical Engineers : Basics to Advanced",
+        logo: "chemw1.png",
+        tag: "WORKSHOP",
+
+        day1: {
+          date: "08/11/2022",
+          time: "TBA",
+          company: "International Flavours & Fragrances India Pvt.Ltd",
+          topic: "Basics and intermediate level in excel which is used in Chemical Engineering field.  Basic level: Eg. Fitting, Plotting, and Solving Intermediate level: Eg. Piping Design and Unit operation",
+          resource: [
+            {
+
+              name: "Mr.Dayalan Chokkalingam  ",
+              desig: "Senior process Engineer, IFF, Chennai   ",
+              phone: 7397529444,
+              email: "Dayalan.C@iff.com   ",
+
+            },
+            {
+
+              name: "Dr.A.Balasubramanian  ",
+              desig: "Associate professor, SEC  ",
+              phone: 9488478235,
+              email: "balasubramaniana@saveetha.ac.in   ",
+
+            },
+            {
+
+              name: "Dr.P. Senthil Kumar  ",
+              desig: "Associate professor, SEC  ",
+              phone: 7305105056,
+              email: "senthilkumarp@saveetha.ac.in   ",
+
+            },
+          ],
+          staff: [
+            {
+
+              name: "Dr.A.Balasubramanian ",
+              desig: "Associate Professor  ",
+              phone: 9488478235,
+              email: "balasubramaniana@saveetha.ac.in   ",
+
+            },
+
+          ],
+          student: [
+            {
+
+              name: "Abherna shree M  ",
+              year: "IV ",
+              phone: 9361896759,
+              email: "abhernashree80@gmail.com   ",
+
+            },
+            {
+
+              name: "Srikanth  ",
+              year: "III  ",
+              phone: 6382979534,
+              email: "srikanthkanagavalli@gmail.com  ",
+
+            },
+          ],
+          day2: {
+            date: "08/11/2022",
+            time: "TBA",
+            company: "International Flavours & Fragrances India Pvt.Ltd",
+            topic: "Advanced GV level in excel which is used in Chemical Engineering field. Advanced level: Eg. Process Analysis ",
+            resource: [
+              {
+
+                name: "Mr.Dayalan Chokkalingam  ",
+                desig: "Senior process Engineer, IFF, Chennai   ",
+                phone: 7397529444,
+                email: "Dayalan.C@iff.com   ",
+
+              },
+              {
+
+                name: "Dr.A.Balasubramanian  ",
+                desig: "Associate professor, SEC  ",
+                phone: 9488478235,
+                email: "balasubramaniana@saveetha.ac.in   ",
+
+              },
+              {
+
+                name: "Dr.P. Senthil Kumar  ",
+                desig: "Associate professor, SEC  ",
+                phone: 7305105056,
+                email: "senthilkumarp@saveetha.ac.in   ",
+
+              },
+            ],
+            staff: [
+              {
+
+                name: "Dr.A.Balasubramanian ",
+                desig: "Associate Professor  ",
+                phone: 9488478235,
+                email: "balasubramaniana@saveetha.ac.in   ",
+
+              },
+
+            ],
+            student: [
+              {
+
+                name: "Abherna shree M  ",
+                year: "IV ",
+                phone: 9361896759,
+                email: "abhernashree80@gmail.com   ",
+
+              },
+              {
+
+                name: "Srikanth  ",
+                year: "III  ",
+                phone: 6382979534,
+                email: "srikanthkanagavalli@gmail.com  ",
+
+              },
+            ]
+          },
+
+        }
+      },
+    ]
   },
   {
     id: "eie",
@@ -1932,6 +2438,220 @@ export const EventDetails = [
         ],
       },
     ],
+    workshopslist: [
+      {
+        name: "Augmented Reality for 4.0 (Online)",
+        logo: "mechw1.png",
+        tag: "WORKSHOP",
+        company: "Ideazone",
+
+        day1: {
+          date: "",
+          time: "",
+          resource: [
+            {
+              name: "Mr. Balaji/Dhanrajan  ",
+              desig: "Product Manager  ",
+              phone: 7846539900,
+              email: "Balajikumaranan67@gmail.com   ",
+            }
+          ],
+          staff: [
+            {
+              name: "S.SHENBAGARAMAN ",
+              desig: "Associate Professor  ",
+              phone: 8015704764,
+              email: "senbagaraman@saveetha.ac.in  ",
+            },
+
+          ],
+          student: [
+            {
+              name: "Romnic Stephen    ",
+              year: "IV  ",
+              phone: 8825544712,
+              email: "romnic2002@gmail.com  ",
+            },
+            {
+              name: "BarathBalaji    ",
+              year: "IV  ",
+              phone: 8248225077,
+              email: "barathbalajioffl@gmail.com ",
+            },
+            {
+              name: "A Surya    ",
+              year: "III  ",
+              phone: 9003018244,
+              email: "smartsurya6220@gmail.com  "
+            },
+            {
+              name: "Veerahariharan V   ",
+              year: "II  ",
+              phone: 8248418893,
+              email: "Veerahari047@gmail.com  ",
+            }
+          ]
+        },
+      },
+      {
+        name: "Robotics Simulation (Online)",
+        logo: "mechw2.png",
+        tag: "WORKSHOP",
+        company: " J&R industries on robotics",
+
+        day1: {
+          date: "15/11/2022",
+          time: "10am-12pm",
+          resource: [
+            {
+              name: "Mr. Jagadheesh.  ",
+              desig: "Production Manager  ",
+              phone: 8840032216,
+              email: "jagadheeshmani@gmail.com    ",
+            }
+          ],
+          staff: [
+            {
+              name: "Dr. R. Selvam  ",
+              desig: "Professor  ",
+              phone: 9445181113,
+              email: "selvamr@saveetha.ac.in  ",
+            },
+
+          ],
+          student: [
+            {
+              name: "Suriya JR    ",
+              year: "IV  ",
+              phone: 8925260409,
+              email: "Suriyajr45@gmail.com  ",
+            },
+            {
+              name: "Praveen Kumar J   ",
+              year: "IV  ",
+              phone: 8428635783,
+              email: "Praveenjayasimman007@gmail.com ",
+            },
+            {
+              name: "ShreeRam S  ",
+              year: "III  ",
+              phone: 9940658571,
+              email: "Sshreeram.enl@gmail.com  "
+            },
+            {
+              name: "Balaji K  ",
+              year: "II  ",
+              phone: 8925223095,
+              email: "kpbalajizzzk@gmail.com  ",
+            }
+          ]
+        },
+      },
+      {
+        name: "Hands on training in Fusion 360(offline) ",
+        logo: "mechw3.png",
+        tag: "WORKSHOP",
+        company: " Bessel Automation",
+
+        day1: {
+          date: "16/11/2022",
+          time: "10am-3pm",
+          resource: [
+            {
+              name: "Mr. G. Ram Prasath  ",
+              desig: "Assistant Professor ",
+              phone: 9884486275,
+              email: "ramprasath@saveetha.ac.in ",
+            }
+
+          ],
+
+          staff: [
+            {
+              name: "Mr. P.Subburam  ",
+              desig: "Assistant Professor ",
+              phone: 9952195632,
+              email: "Subburam@saveetha.ac.in  ",
+            },
+
+          ],
+          student: [
+            {
+              name: "Sowndhar V  ",
+              year: "IV ",
+              phone: 9361204515,
+              email: "subbansowndhar@gmail.com   ",
+            },
+            {
+              name: "R.Giridharan  ",
+              year: "IV ",
+              phone: 9360338120,
+              email: "giridharan20026@gmail.com ",
+            },
+            {
+              name: "Siva Sanjay S ",
+              year: "III",
+              phone: 7305676359,
+              email: "sivasanjaysss5735@gmail.com  ",
+            },
+            {
+              name: "E Arun ",
+              year: "II ",
+              phone: 7358244067,
+              email: "arune1903@gmail.com  ",
+            },
+          ]
+        },
+        day2: {
+          date: "17/11/2022 ",
+          time: "10am-3pm",
+          company: "Bessel Automation",
+          resource: [
+            {
+              name: "Mr.Parthi  ",
+              desig: "Technical Assistant",
+              phone: 7200266259,
+              email: "Parthimg34@gmail.com ",
+            }
+          ],
+          staff: [
+            {
+              name: "Mr. Jerome Nithin Gladson   ",
+              desig: "Assistant Professor ",
+              phone: 7708940279,
+              email: "Jeromenithin gladson@saveetha.ac.in   ",
+            },
+
+          ],
+          student: [
+            {
+              name: "Malick basha  ",
+              year: "IV ",
+              phone: 9025695862,
+              email: "Malick3101@gmail.com   ",
+            },
+            {
+              name: "Deepak ganesh  ",
+              year: "IV ",
+              phone: 9789333959,
+              email: "giridharan20026@gmail.com ",
+            },
+            {
+              name: "Mukku Manya Reddy  ",
+              year: "III",
+              phone: 7995338421,
+              email: "Manyareddy2002@gmail.com  ",
+            },
+            {
+              name: "Praveen  ",
+              year: "II ",
+              phone: 7358244067,
+              email: "arune1903@gmail.com  ",
+            },
+          ]
+        }
+      },
+    ]
   },
   {
     id: 'mba',
@@ -2083,7 +2803,7 @@ export const EventDetails = [
             email: "Venithvijay@savee tha.ac.in  ",
           },
         ],
-          student:
+        student:
           [
             {
               name: "Laksiya.V ",
@@ -2114,6 +2834,86 @@ export const EventDetails = [
 
 
       }
+    ],
+    workshopslist: [
+      {
+        name: "Goal setting and creative thinking",
+        logo: "mbaw1.png",
+        tag: "WORKSHOP",
+        mode: "TBA",
+        venue: "TBA",
+
+        day1: {
+          date: "14/11/2022",
+          time: "TBA",
+          resource: [
+            {
+              name: "Mr.Partheepan Rudrapati  ",
+              desig: "CEO  ",
+              phone: 9965303553,
+              email: "drrpartheepan@gmail.com  ",
+            },
+
+          ],
+          staff: [
+            {
+              name: "Dr.SUDHA AROGYA MARY.C.M ",
+              desig: "Assistant Professor ",
+              phone: 7550271014,
+              email: "cmsebagaraman@saveetha.ac.inn ",
+            },
+          ],
+          student: [
+            {
+              name: "SMILY  ",
+              year: "II ",
+              phone: 7092724835,
+              email: "Smilysornam @gmail.com  ",
+            },
+          ]
+        },
+
+      },
+      {
+        name: "Design-Data-Digital-3D Model ",
+        logo: "mbaw2.png",
+        tag: "WORKSHOP",
+        mode: "TBA",
+        venue: "TBA",
+
+        day1: {
+          date: "17/11/2022",
+          time: "TBA",
+          resource: [
+            {
+              name: "Dr.Vimalnath Venkatasubramanion  ",
+              desig: "Assistant Professor  (SG)",
+              phone: 9500034681,
+              email: " vimalanv@srmist.edu.in ",
+            },
+
+          ],
+          staff: [
+            {
+              name: "Dr.Sudha Aroya Mary.C.M  ",
+              desig: " Assistant Professor ",
+              phone: 7550271014,
+              email: "cmsudhaarogyamary @saveetha.ac.in   ",
+            },
+
+          ],
+          student: [
+            {
+              name: "SUDHIRSHA    ",
+              year: "II  ",
+              phone: 9445952045,
+              email: "sudhirshamohan @gmail.com  ",
+            },
+
+          ]
+        },
+
+      },
     ]
   },
   {
@@ -2140,40 +2940,40 @@ export const EventDetails = [
           {
             name: "U. Madhanlal  ",
             desig: "Assistant Professor ",
-            phone: 9894320588 ,
+            phone: 9894320588,
             email: "Sgangadharan @gmail.com  ",
           },
-          
+
         ],
         student: [
           {
             name: "S. Vajeha Jameela  ",
             year: "IV ",
-            phone:9600679615   ,
+            phone: 9600679615,
             email: "vajehasahul@gmaiil.com  ",
           },
-          { 
+          {
             name: "Allen Maria Brando  ",
             year: "IV ",
-            phone: 8925240742   ,
+            phone: 8925240742,
             email: "mariabrando0511@gmail.com  ",
           },
-          { 
+          {
             name: "Indhuja.S. U   ",
             year: "III ",
-            phone: 9751653131   ,
+            phone: 9751653131,
             email: "indhujasrinivasan2003@gmail.com  ",
           },
-          { 
+          {
             name: "Vaitheswaran.S  ",
             year: "III ",
-            phone: 744910268  ,
+            phone: 744910268,
             email: "vaithyx5@gmail.com  ",
           },
-        
+
         ],
       },
-    
+
       {
         name: " CIRCUITO",
         date: "18 Nov 2022(AN)",
@@ -2182,51 +2982,51 @@ export const EventDetails = [
         time: "TBA",
         members: "1-2",
         rules: "",
-        round1title:"QUIZOID",
+        round1title: "QUIZOID",
         round1:
           "Maximum 3 members per team  MCQ Questions will be displayed on the projector and answer sheets will be given  Participants has to choose the appropriate answers from the given options They will be qualified to the next round based on the scores  ",
-       round2title:" WHO AM I ?",
-      round2:
-          "A box full of electronic components will be given to each team .They has to pinpoint the names of the given components within  the given time .Teams will be selected based on the counts of component they listed   .", 
-        round3title:"MEMORY MASTER",
-        round3:"Pictures of simple electronic circuits will be displayed on the projector for 30 seconds Each team will be given a breadboard and the required components Team members has to make circuit connections of the displayed schematics within the stipulated timing Selected teams will be awarded ",
+        round2title: " WHO AM I ?",
+        round2:
+          "A box full of electronic components will be given to each team .They has to pinpoint the names of the given components within  the given time .Teams will be selected based on the counts of component they listed   .",
+        round3title: "MEMORY MASTER",
+        round3: "Pictures of simple electronic circuits will be displayed on the projector for 30 seconds Each team will be given a breadboard and the required components Team members has to make circuit connections of the displayed schematics within the stipulated timing Selected teams will be awarded ",
         tag: "EVENT",
         logo: "mba2.png",
         staff: [
           {
             name: "Mrs.Indumathy ",
             desig: "Assistant Professor ",
-            phone: 9003025299   ,
+            phone: 9003025299,
             email: "indumathyt@saveetha.ac.in   ",
           },
-         
+
         ],
         student: [
           {
             name: "S Alagu Meenal  ",
             year: "IV  ",
-            phone: 6374086494  ,
+            phone: 6374086494,
             email: "meenusundaraam@gmail.com   ",
           },
           {
             name: "N Durga  ",
             year: "IV  ",
-            phone: 9786538472    ,
+            phone: 9786538472,
             email: "durgaaanagarajan2019@gmail.com  ",
           },
           {
             name: "R Kiran  ",
             year: "III   ",
-            phone: 9080083973   ,
+            phone: 9080083973,
             email: "meenusundaraam@gmail.com   ",
           },
           {
             name: "E Allwin Donald   ",
             year: "II ",
-            phone: 9940233105    ,
+            phone: 9940233105,
             email: "durgaaanagarajan2019@gmail.com  ",
           }
-         
+
         ],
       },
       {
@@ -2236,48 +3036,741 @@ export const EventDetails = [
         venue: "TBA",
         time: "8.30am-12.00pm",
         members: "2",
-        round1title:"Puzzle ",
-        round1:"Maximum of 2 members per team  Pieces of papers with medical instrument will be provided for each team. One in a team will be blind folded and the other can guide his teammate providing instruction to fit the pieces correctly to form a picture.  Max time : 120 seconds The best three teams will be selected for next round. ",         
-        round2:"Rule to be followed as same as round 1 Max time : 60 seconds teams will be selected for final round . ",
-        round3:"Rule to be followed as same as round 1 Max time : 40 seconds  . ",
+        round1title: "Puzzle ",
+        round1: "Maximum of 2 members per team  Pieces of papers with medical instrument will be provided for each team. One in a team will be blind folded and the other can guide his teammate providing instruction to fit the pieces correctly to form a picture.  Max time : 120 seconds The best three teams will be selected for next round. ",
+        round2: "Rule to be followed as same as round 1 Max time : 60 seconds teams will be selected for final round . ",
+        round3: "Rule to be followed as same as round 1 Max time : 40 seconds  . ",
         tag: "EVENT",
         logo: "mba3.png",
         staff: [
           {
             name: "Vigneshwari N  ",
             desig: "Assistant Professor ",
-            phone: 9486191161   ,
+            phone: 9486191161,
             email: "vigneshwarin@saveetha.ac.in  ",
           },
-          
+
         ],
         student: [
           {
             name: "Gugan B M   ",
             year: "IV ",
-            phone: 7708808479  ,
+            phone: 7708808479,
             email: "guganbm2002@gmail.com   ",
           },
           {
             name: "Thiruneelan R ",
             year: "IV ",
-            phone: 6369643709  ,
+            phone: 6369643709,
             email: "thiruneelan361@gmail.com  ",
           },
           {
             name: "Sharmila  ",
             year: "III",
-            phone:6382785465  ,
+            phone: 6382785465,
             email: "sharmila85465@gmail.com  ",
           },
           {
             name: "Dinesh Kumar  ",
             year: "II ",
-            phone: 6369582940  ,
+            phone: 6369582940,
             email: "kumardineshgj@gmail.com  ",
           },
         ],
       },
     ]
-  }
+  },
+  {
+    id: "ece",
+    title: "Electronics and Communication Engineering",
+    eventslist: [
+      {
+        name: "ElectroBlitz",
+        date: "18 Nov 2022(FN)",
+        type: "Team",
+        venue: "TBA",
+        time: "TBA",
+        members: "2",
+        rules: "",
+        round1title: "MindSweeper-The Tech Quiz ",
+        round1:
+          "The technical-based questions will be displayed on the projector screen.  Participants can discuss the answer with their teammates and raise their hands to answer the question. The participant should answer when the judge asks questions. Points will be awarded to whoever has answered first.Points will be awarded to the teams based on the correct answer and the explanation.  If the team fails to give a proper explanation / answer, the turn will be given to the immediate  next team.  If the next team gives the correct answer with proper explanation, points will be awarded to the corresponding  team. The team which scores more points will be qualified for the next level.Note: Those who first raise their hands will be given an opportunity to answer. No mobile phones are allowed inside the hall",
+        round2title: "What did you see now? ",
+        round2:
+          "Ten Circuits will be displayed for 10 Seconds to  each participant. Those who draw the maximum number of circuits correctly will be shortlisted for the next round. Note:No mobile phones are allowed.No discussions are allowed ",
+        round3title: "Spectrum Analysis ",
+        round3: "At the time of events a circuit name will be informed to for each team, Circuits ideas and  components will be provided . The team that shows the spectrum analysis (output)  first will be considered as the winner. (On a first-come, first-served basis.)  Total time for this event is 15 minutes. On the basis of time management and relevant explanation, participants will be selected. The winners will be declared on the basis of the shortest time period of completion of the task.Note:. No mobile phones are allowed during the participation of the event.   No discussion or sharing of answers among the participants .   If any malpractices are noticed, then the term will be disqualified from all the events.",
+        tag: "EVENT",
+        logo: "mba1.png",
+        staff: [
+          {
+            name: "Ms. G Keerthiga  ",
+            desig: "Assistant Professor  ",
+            phone: 8825783729,
+            email: "keerthigag@saveet ",
+          },
+          {
+            name: "Dr.S Kumaran",
+            desig: "Assistant Professor (sG) ",
+            phone: 9994958058,
+            email: "kumarans@saveetha",
+          },
+        ],
+        student: [
+          {
+            name: "Kaviya.R ",
+            year: "III",
+            phone: 8825964471,
+            email: "kaviya.ece.sec@gmail.com",
+          },
+          {
+            name: "Arunachalam  ",
+            year: "IV ",
+            phone: 9445300407,
+            email: "ajuprasath12@gmail.com",
+          },
+
+        ],
+      },
+
+      {
+        name: "CRYOSAT ",
+        date: "18 Nov 2022(AN)",
+        type: "Team",
+        venue: "TBA",
+        time: "TBA",
+        members: "1-2",
+        rules: "",
+        round1title: "RESISTHON ",
+        round1:
+          "It is an individual game. The value of the resistor will be given. Participants need to identify the respective colour code for the given resistor.Those who  are giving more correct answers, they  will be shortlisted for the next round",
+        round2title: "Who am I ? ",
+        round2:
+          "Participants will have a time limit of 2mins .Marks will be deducted for repetition of points .The team leading the points table will be declared as winners (NOTE: Number of rounds will depend on the number of entries)",
+        round3title: "FIND ME IF YOU CAN ? ",
+        round3title: "The image of  external/ internal modules supported by  various development boards (Arduino,Raspberry Pi,ESP)  will be  displayed. participants need to identify the name of the module. Points will be awarded according to the weightage of the questions. winners will be selected based on scoring more points",
+        tag: "EVENT",
+        logo: "agri2.jpeg",
+        staff: [
+          {
+            name: "Dr.A.Saranya  ",
+            desig: "Assistant Professor ",
+            phone: 9789023346,
+            email: "saranyaa@saveetha.ac.in ",
+          },
+          {
+            name: "Ms.M.Sowmiya Manoj  ",
+            desig: "Assistant Professor (SG)",
+            phone: 7358747803,
+            email: "sowmiyamanojm@saveetha.ac.in",
+          },
+        ],
+        student: [
+          {
+            name: "SHALINI.S  ",
+            year: "III",
+            phone: 9384685441,
+            email: "shalini.ece.sec@gmail.com  ",
+          },
+          {
+            name: "Sabarisrinivas  ",
+            year: "IV",
+            phone: 9944612176,
+            email: "sabarisrinivasa.ece.sec@gmail.com",
+          },
+
+        ],
+      },
+      {
+        name: "Circuit Buzz",
+        date: "19 Nov 2022(FN)",
+        type: "Team",
+        venue: "TBA",
+        time: "TBA",
+        members: "2",
+        rules: "",
+        round1title: "KNOWLEDGE BLOW ",
+        round1:
+          "Time for the event is 2 mins. Each team can have 2 members. The participants try to write the maximum number of components, technical terms (such as ground, connecting wire etc) related to electronics circuits etc. The team which has least count of technical terms will not be forward to the next round ",
+        round2title: "TECH CHARADES ",
+        round2title: "A circuit diagram will be displayed for 2 minutes.  Next 3 minutes will be given to reproduce ( implement) the circuit diagram using breadboard  and component, which will be provided. Depending on the circuit's fulfillness ( correct component placed in correct position) terms will be forwarded to the next round ",
+        round3title: "TECH CHARADES 2.0 ",
+        round3: "Each team has to pick  their questions from the question pool bowl. Selected circuits will be displayed for each team for 2 minutes .  Next 3 minutes will be given to reproduce ( implement) the circuit diagram using breadboard  and component, which will be provided.  Depending on the circuit's fulfillness ( correct component placed in correct position) terms will be forwarded to the next round",
+        tag: "EVENT",
+        logo: "agri3.jpeg",
+        staff: [
+
+          {
+            name: "Dr.S. kanagamalliga  ",
+            desig: " Associate Professor",
+            phone: 770862408,
+            email: "kanagamalligas@saveetha.ac. ",
+          },
+          {
+            name: "Ms.V Subashree  ",
+            desig: " Associate Professor",
+            phone: 9994365720,
+            email: "subashreev@saveetha.ac.in  ",
+          },
+
+        ],
+        student: [
+          {
+            name: "ROSHINI S  ",
+            year: " III",
+            phone: 9092522219,
+            email: "roshinisece@gmail.",
+          },
+          {
+            name: "VARSHINI S  ",
+            year: "III",
+            phone: 8248955042,
+            email: "sureshbabu02@gmail.com  ",
+          },
+
+        ],
+      },
+      {
+        name: "Obstacle Mania    ",
+        date: "19 Nov 2022(AN & FN)",
+        type: "Team",
+        venue: "TBA",
+        time: "TBA",
+        members: "1-3",
+        rules: "A team should consist of two/three members .  No mobile phones are allowed during the participation of the event.No discussion or sharing of answers among the teams.If any malpractices are noticed then the team will be disqualified. ",
+        round1title: " COMPONENTS IDENTIFICATION ",
+        round1:
+          "Participants should identify the suitable components which are related to the topic and questions will be asked related to the topic. Certain Time Periods will be allotted to the participants. They should identify the suitable components within that time period. The team which score most count of technical terms will be qualified to the next round ",
+        round2title: "DECODER ",
+        round2:
+          "The participants/ teams  should identify and rectify the errors which are present in the code. Certain Time Periods will be allotted to the participants/teams. A set of 4-6 teams which completes the task in the shortest period will be qualified to the next level",
+        round3title: "ROBOT ASSEMBLE  ",
+        round3: "The participants should assemble the components with help of the code and build the OBSTACLE ROBOT. The team which completes the task in the shortest period will be announced as WINNER ",
+        tag: "EVENT",
+
+        logo: "agri4.jpeg",
+        staff: [
+          {
+            name: "Ms.K Padma Priya  ",
+            desig: "Assistant Professor (SG)",
+            phone: 7811939196,
+            email: "padmapriya@saveetha.ac.in  ",
+          },
+          {
+            name: "Dr.K Mahendran ",
+            desig: "Assistant Professor (SG)",
+            phone: 9698999699,
+            email: "mahendrank@saveetha.ac",
+          },
+          {
+            name: "Dr.S Navaneethan ",
+            desig: "Assistant Professor (OG)",
+            phone: 8939755682,
+            email: "navaneethans@saveetha.a",
+          },
+        ],
+        student: [
+          {
+            name: "S.Hariharan  ",
+            year: "III",
+            phone: 6382597804,
+            email: "hariharan2003jan@gmail.com   ",
+          },
+          {
+            name: "M. Suria Prasanth  ",
+            year: "III",
+            phone: 9361539039,
+            email: "suriaprasanth24@gmail.com  ",
+          },
+        ],
+      },
+    ]
+
+  },
+  {
+    id: "eee",
+    title: "Electrical and Electronics Engineering",
+    eventslist: [
+      {
+        name: "ROBO SOCCER CHALLENGE",
+        date: "11 Nov 2022(FN)",
+        type: "Team",
+        venue: "TBA",
+        time: "TBA",
+        members: "2",
+        rules: "",
+        round1title: "Knock out:",
+        round1: "Participants play against 1vs1. The total duration of game is 7mins which is divided into two half each half is of 3 mins of duration with a 60 seconds of break in between.The winners of the match will be qualified to the next round.If the match has been tied,The winner of the match has been selected by a penalty shot.If both the players misses to score a goal both of them will be eliminated",
+        round2title: "Semi Finals: ",
+        round2: "The matches will be conducted as per the regulations mentioned below.The winners of the knock out matches are qualified for the next level.According to the goals scored by the participants the table will be tabulated.The matches will be conducted as per odd and even positioned places in table (1st vs 3rd position & 2nd position vs 4th position as such).The regulations of the knockout matches will be followed here.(note: the goals scored by player will not be considered if the player has been eliminated)",
+        round3title: "Finals:",
+        round3: "The regulations of the semi finals  will be same here.After the completion of this round the winners will be selected according to the overall goals scored by the player from the beginning.(note: the goals scored by player will not be considered if the player has been eliminated). (note: the goals scored by player will not be considered if the player has been eliminated).(note: the goals scored by player will not be considered if the player has been eliminated)",
+        tag: "EVENT",
+        logo: "eee1.png",
+        staff: [
+          {
+            name: 'Mrs.Hemalatha ',
+            desig: 'Assistant proffesor',
+            phone: 8870186912,
+            email: "keerthigag@hemalathar@saveetha.ac.in ",
+          },
+        ],
+        student: [
+          {
+            name: "R.Ashwinkumaar",
+            year: "2nd",
+            phone: 9345587384,
+            email: "kashwinkumaar102003@gmail.com",
+          },
+          {
+            name: "Keshika s.v",
+            year: "2nd",
+            phone: 9043849083,
+            email: "s.v.keshikakrs03@gmail.com",
+          },
+          {
+            name: "Rahul GS",
+            year: "2nd",
+            phone: 8939360814,
+            email: "rsv30112002@gmail.com",
+          },
+          {
+            name: "Nithyasree",
+            year: "2nd",
+            phone: 7338956845,
+            email: "nithi20sree09@gmail.com",
+          },
+
+        ],
+      },
+      {
+        name: "Techisetz 2k22",
+        date: "18 Nov 2022(AN)",
+        type: "Team",
+        venue: "TBA",
+        time: "TBA",
+        members: "2",
+        rules: "",
+        round1title: "Connection",
+        round1: "Connection is a game where a set of images are displayed on the screen and also a question will be placed before you. With the help of the images, the answer to that question must be found.The participator should be able to connect all those images to form a word that can be related to the question asked.The participator must be able to identify the answer with the help of the clues given in the images.When the participant tries to guess the answer, he/she must raise his/her hands to answer the question.If the answer is right, then that particular group will be selected for the next round.If not, the group will not be qualified for the next round.There will be 3 phases",
+        round2title: "Brainstorming",
+        round2: "Brainstorming is a technical quiz on topics related to electrical and electronics. With the electrical and electronics industry growing at such an alarming rate, we need a brain that’s sharp as a diamond.Each team has 4rounds. 1:Shoot Up 2: Riddle 3: Decode 4: More or less.Shoot Up: Direct Questions (q/a) (10 points)If it is not answered questions will be passed on. Riddle: A question or puzzle to be solved (30 points). Decode:Tricky questions will be asked. They've to find the answer which will be a single word (10 points).More or Less:Questions will be asked related to values and numbers. Participants should find whether the value is more or less. (True or False). Answering time is limited to 15 seconds per question.",
+        round3title: "Circuitrix",
+        round3: "Circuit bugging is one of the fine arts in electronics design. Circuitrix comes with an unleashing event to kindle your circuit knowledge.Each team will be given a Half-Completed Logic Circuit and its equation their task is to Verify the binary outputs. (Required Components and the data sheets will be provided). A team consists of 2 members. Note: Usage of electronic gadgets is not permitted. Teams will be disqualified if it is found to be under any act of malpractice.",
+        tag: "EVENT",
+        logo: "eee2.png",
+        staff: [
+          {
+            name: 'Dr.M.Ulagammai',
+            desig: 'Assistant proffesor',
+            phone: 9842925311,
+            email: "ulagammai@saveetha.ac.in",
+          },
+        ],
+        student: [
+          {
+            name: "VHEDHA RHYTHESH V R",
+            year: "IV",
+            phone: 8870509448,
+            email: "vhedharhythesh@gmail.com",
+          },
+          {
+            name: "RISHI M",
+            year: "2nd",
+            phone: 6385298615,
+            email: "rishimrl16@gmail.com",
+          },
+          {
+            name: "SANJAY KUMAR T",
+            year: "2nd",
+            phone: 8056492148,
+            email: "sanjaykumar080801@gmail.com",
+          },
+          {
+            name: "MANOJ S S",
+            year: "2nd",
+            phone: 8925239676,
+            email: "manojshanmugam63@gmail.com",
+          },
+          {
+            name: "RAJA SHANKAR",
+            year: "2nd",
+            phone: 8072209395,
+            email: "rajashankar061796@gmail.com",
+          },
+
+        ],
+      },
+      {
+        name: "BRAIN SCAPE",
+        date: "18 Nov 2022(AN)",
+        type: "Team",
+        venue: "TBA",
+        time: "TBA",
+        members: "2",
+        rules: "",
+        round1title: "Gamegenix:",
+        round1: "It is a group of 2-3 members round.It contains 10 Quiz,10 Puzzles and 5 Find the language questions.Questions will be displayed on the screen.This round will be conducted for 20 mins.No grace time will be given.Answer can be filled in the sheets provided to them by the co-ordinators.After this round, the answered paper will be collected and corrected by the co-ordinators.Based upon the score, team will get into next round",
+        round2title: "Brain Train",
+        round2: "Picture contain multiple images will be displayed on the screen for 20 sec.It is 1 vs 1 round.The team members can memorize the maximum number of pictures they can,But only one member per team will be allowed to answer, others from the team shall bet that how much can be tell by their team mate.If your team mate will failed to answer the counts you bet, the point would be automatically goes to your opponent.Team with maximum counts will be considered as the winner",
+        round3title: "Mind Play",
+        round3: "Observe the given images and give the answer.You have to find the common word in that set and find the answer.You will be provided with 30 seconds for each question.One should answer the question only once.The next set of question is more or the same WORD PUZZLE kind.We will give a word as a hint, you have to find best three words which suits the given hint inside the word puzzle.Questions can be 6x6 format or any size format.For each question time limit is 60 seconds.Note: No gadgets will be permitted,Interaction between teams aren’t allowed.",
+        tag: "EVENT",
+        logo: "eee3.png",
+        staff: [
+          {
+            name: 'Dr.Rajalingam ',
+            desig: 'Assistant proffesor',
+            phone: 9790248476,
+            email: "rajalingams@saveetha.ac.in",
+          },
+        ],
+        student: [
+          {
+            name: "Guru.V",
+            year: "III",
+            phone: 7358308445,
+            email: "luciferguru25@gmail.com",
+          },
+          {
+            name: "Chandru.A.K",
+            year: "III",
+            phone: 9344299365,
+            email: "chandruak04@gmail.com",
+          },
+          {
+            name: "Loshini",
+            year: "III",
+            phone: 9790143860,
+            email: "loshinisrinivasan04@gmail.com",
+          },
+          {
+            name: "Yukesh",
+            year: "III",
+            phone: 9080117098,
+            email: "yukeshappu8@gmail.com",
+          },
+        ],
+      },
+      {
+        name: "RAIKIRI",
+        date: "19 Nov 2022(FN)",
+        type: "Team",
+        venue: "TBA",
+        time: "TBA",
+        members: "2",
+        rules: "",
+        round1title: "Tracing:",
+        round1: "In this round, the circuit diagram was given to participants with the required components.They need to trace the diagram to build the circuit within the given time.In each team maximum of two participants is mandatory.Depending on the circuit design the points will be awarded.Maximum 10 points for this round.This round will be conducted for 20 minutes.Based on their performance moves on to the next round",
+        round2title: "Rectifier",
+        round2: "In this round, the fault circuit is provided for each participant to find the solution and draw the correct circuit diagram within the stipulated time.For each team, paper is provided to draw the final circuit.In each team maximum of two participants is mandatory.Depending on the fault attend in a circuit the points will be awarded.Maximum 20 points for this round.This round will be conducted for 20 minutes.Based on their performance moves on to the next round",
+        round3title: "Tateru",
+        round3: "In this round, the complex circuit diagram will be given, the team should analyze the diagram and assemble it on the breadboard.Finally, the connection is checked by the coordinators, and the power supply is given to the circuit to check the final output.If the output is correct full points will be given to the team.In each team maximum of two participants is mandatory.Depending on the circuit design the points will be awarded.For the final output the total marks will be awarded.Maximum 30 points for this round.This round will be conducted for 30 minutes.Based on their performance moves on to the next round",
+        tag: "EVENT",
+        logo: "eee4.png",
+        staff: [
+          {
+            name: 'Dr.R.Vinifa',
+            desig: 'Assistant proffesor',
+            phone: 9442912448,
+            email: "rvinifa@saveetha.ac.in",
+          },
+        ],
+        student: [
+          {
+            name: "V. Subhaash",
+            year: "4th",
+            phone: 7395976639,
+            email: "subhaashmeghalingam@gmail.com",
+          },
+          {
+            name: "J.R.Gopalakrisnan",
+            year: "4th",
+            phone: 9500028867,
+            email: "marvelquestrac@gmail.com",
+          },
+          {
+            name: "M.Enba Prince Raj",
+            year: "4th",
+            phone: 8675742626,
+            email: "enbaprinceraj@gmail.com",
+          },
+          {
+            name: "K. Sakthivel",
+            year: "4th",
+            phone: 9360403319,
+            email: "skssakthivel19@gmail.com",
+          },
+          {
+            name: "B. Subashini",
+            year: "4th",
+            phone: 9361569543,
+            email: "hashinisuba555@gmail.com",
+          },
+          {
+            name: "K.T. Swathi",
+            year: "4th",
+            phone: 9150306325,
+            email: "thamariswathi@gmail.com",
+          },
+        ],
+      },
+    ],
+    workshopslist: [
+      {
+        name: "E-Vehicle ",
+        logo: "eeew1.png",
+        tag: "WORKSHOP",
+
+        day1: {
+          date: "07/11/2022-FN",
+          time: "TBA",
+          company: "Skill lync",
+          topic: "Basics and intermediate level in excel which is used in Chemical Engineering field.  Basic level: Eg. Fitting, Plotting, and Solving Intermediate level: Eg. Piping Design and Unit operation",
+          resource: [
+            {
+
+              name: "Mr.Maxsavio  ",
+              desig: "Assistant Professor  ",
+              phone: 9840188187,
+              email: "maxsavio@saveetha.ac.in  ",
+
+            },
+          ],
+          staff: [
+            {
+
+              name: "Mr.Maxsavio ",
+              desig: "Associate Professor  ",
+              phone: 9840188187,
+              email: "maxsavio@saveetha.ac.in  ",
+
+            },
+            {
+
+              name: "Dr.Kanachanaa  ",
+              desig: "Associate Professor  ",
+              phone: 9444189111,
+              email: "kanchana@saveetha.ac.in  ",
+
+            },
+            {
+
+              name: "Mrs.Hemalatha ",
+              desig: "Associate Professor  ",
+              phone: 8870186912,
+              email: "hemalathar@saveetha.ac.in  ",
+
+            },
+
+          ],
+          student: [
+            {
+
+              name: "M.R.Harishwaran   ",
+              year: "II ",
+              phone: 9840603038,
+              email: "mr.harishwaran2004@gmail.com   ",
+
+            },
+            {
+
+              name: "A.Eswar Babu  ",
+              year: "IV ",
+              phone: 9150796626,
+              email: "mail2eswarbabu@gmail.com  ",
+
+            },
+            {
+
+              name: "M.sasikumar  ",
+              year: "IV ",
+              phone: 9677810711,
+              email: "sasikumarm482@gmail.com   ",
+
+            },
+          ],
+
+
+        }
+      },
+      {
+        name: "Basics of Machine Learning using python ",
+        logo: "eeew2.png",
+        tag: "WORKSHOP",
+
+        day1: {
+          date: "08/11/2022-FN",
+          time: "TBA",
+          company: "Skill lync",
+          topic: "Basics and intermediate level in excel which is used in Chemical Engineering field.  Basic level: Eg. Fitting, Plotting, and Solving Intermediate level: Eg. Piping Design and Unit operation",
+          resource: [
+            {
+
+              name: "Dr.M.Ulagammai  ",
+              desig: "Assistant Professor  ",
+              phone: 9842925311,
+              email: "Ulagammai@saveetha.ac.in   ",
+
+            },
+            {
+
+              name: "Mr.Joyal Isac  ",
+              desig: "Assistant Professor (SG) ",
+              phone: 9965882354,
+              email: "joyalisac@saveetha.ac.in   ",
+
+            },
+          ],
+          staff: [
+            {
+
+              name: "Dr.M.Ulagammai   ",
+              desig: "Associate Professor  ",
+              phone: 9842925311,
+              email: "Ulagammai@saveetha.ac.in   ",
+
+            },
+            {
+
+              name: "Dr.R.Vinifa ",
+              desig: "Associate Professor  ",
+              phone: 9442912448,
+              email: "rvinifar@saveetha.ac.in  ",
+
+            },
+            {
+
+              name: "Mr.Joyal Isac  ",
+              desig: "Associate Professor (SG) ",
+              phone: 9965882354,
+              email: "joyalisac@saveetha.ac.in  ",
+
+            },
+
+          ],
+          student: [
+            {
+
+              name: "P.K.Pradeep",
+              year: "IV ",
+              phone: 9361643512,
+              email: "Krishnapradeep2019@gmail.com   ",
+
+            },
+            {
+
+              name: "J.Dinesh  ",
+              year: "IV ",
+              phone: 7092147704,
+              email: "Dinesharini2001@gmail.com  ",
+
+            },
+            {
+
+              name: "Dravid Akash  ",
+              year: "IV ",
+              phone: 9445502533,
+              email: "Dravidakash2k1@gmail.com  ",
+
+            },
+          ],
+        }
+
+      },
+      {
+        name: "EV Battery Assembling using Lithium iron phosphate cells ",
+        logo: "eeew3.png",
+        tag: "WORKSHOP",
+
+        day1: {
+          date: "09/11/2022",
+          time: "TBA",
+          company: "TBA",
+          topic: "Basics and intermediate level in excel which is used in Chemical Engineering field.  Basic level: Eg. Fitting, Plotting, and Solving Intermediate level: Eg. Piping Design and Unit operation",
+          resource: [
+            {
+
+              name: "Mr.V.Prabhu  ",
+              desig: "Assistant Engineer KOODS Lithium Iron Phosphate Battery   ",
+              phone: TBA,
+              email: "TBA",
+
+            },
+            {
+
+              name: "Dr.S.Rajalingam  ",
+              desig: "Associate Professor ",
+              phone: 9790248476,
+              email: "rajalingams@saveetha.ac.in ",
+
+            },
+            {
+
+              name: "Ms.S.Kavitha ",
+              desig: "Associate Professor ",
+              phone: 9444533061,
+              email: "kavitha@saveetha.ac.in ",
+
+            },
+          ],
+          staff: [
+            {
+
+              name: "Dr.S.Rajalingam   ",
+              desig: "Associate Professor  ",
+              phone: 9790248476,
+              email: "rajalingams@saveetha.ac.in   ",
+
+            },
+            {
+
+              name: "Ms.S.Kavitha  ",
+              desig: "Associate Professor  ",
+              phone: 9444533061,
+              email: "kavitha@saveetha.ac.in  ",
+
+            },
+            {
+
+              name: "Dr.R.Karpagapriya  ",
+              desig: "Associate Professor  ",
+              phone: 9597727988,
+              email: "karpagapriyar@saveetha.ac.in  ",
+
+            },
+
+          ],
+          student: [
+            {
+
+              name: "S.S.Manoj  ",
+              year: "IV",
+              phone: 8925239676,
+              email: "Manojshanmugam63@gmail.com  ",
+
+            },
+            {
+
+              name: "K.sakthivel ",
+              year: "IV ",
+              phone: 9360403319,
+              email: "Skssakthivel19@gmail.com ",
+
+            },
+            {
+
+              name: "Sanjay kumar  ",
+              year: "IV ",
+              phone: 8056492148,
+              email: "Sanjaykumar080801@gmail.com  ",
+
+            },
+          ],
+
+
+        }
+      },
+    ]
+  },
 ];
