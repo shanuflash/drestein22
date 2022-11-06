@@ -69,8 +69,6 @@ const Main = () => {
       <div id="About">
         <Footer />
       </div>
-
-      {/* <Slider /> */}
     </div>
   );
 };

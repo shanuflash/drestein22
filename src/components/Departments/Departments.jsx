@@ -32,7 +32,7 @@ function Departments() {
         viewport={{ once: true, amount: 1 }}
         className="DeptHead"
       >
-        <div className="DeptHeadTxt">Departments</div>
+        <div className="DeptHeadTxt">Department Events</div>
       </motion.h1>
       <DepartmentContainer>
         {departobj.map((data, i) => {

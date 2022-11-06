@@ -490,7 +490,7 @@ const Form = () => {
                   value={formdata.college}
                   onChange={handleChange}
                   type="text"
-                  placeholder="Your college name..."
+                  placeholder="College"
                   label="College Name"
                 />
                 <div className="yearno">
@@ -500,7 +500,7 @@ const Form = () => {
                     value={formdata.regno}
                     onChange={handleChange}
                     type="number"
-                    placeholder="Your roll number..."
+                    placeholder="Year"
                     label="Roll Number"
                     sx={{ width: "48%" }}
                   />
@@ -514,7 +514,7 @@ const Form = () => {
                       id="year"
                       required
                       data-name="year"
-                      placeholder="Select year..."
+                      placeholder="Year"
                       value={formdata.year}
                       onChange={handleChangeForSelect}
                     >
@@ -550,7 +550,7 @@ const Form = () => {
                       id="dept"
                       required
                       name="dept"
-                      placeholder="Select department..."
+                      placeholder="Department"
                       value={formdata.dept}
                       onChange={handleChangeForSelect}
                     >
@@ -578,7 +578,7 @@ const Form = () => {
                       id="gender"
                       required
                       name="gender"
-                      placeholder="Select gender..."
+                      placeholder="Gender"
                       value={formdata.gender}
                       onChange={handleChangeForSelect}
                     >
@@ -613,7 +613,7 @@ const Form = () => {
                   value={formdata.email}
                   onChange={handleChange}
                   type="email"
-                  placeholder="johndoe@email.com"
+                  placeholder="johndone@email.com"
                   label="Email"
                 />
                 {/*<Divider sx={{ "--Divider-childPosition": `50%` }}>

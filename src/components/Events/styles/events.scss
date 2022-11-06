@@ -1,10 +1,14 @@
 .event-page {
-}
-.event-container {
   width: 100%;
+
+}
+
+.event-container {
   padding: 0 1rem 0 3rem;
   color: white;
   margin-bottom: 2rem;
+  width: 90%;
+  margin-inline: auto;
 
 }
 
@@ -19,10 +23,8 @@
 .wrapper {
   margin-top: 2rem;
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   overflow-x: scroll;
-
-
   gap: 1.5rem;
 
   // display: grid;
@@ -59,6 +61,7 @@
     overflow-x: scroll;
     scroll-snap-type: x mandatory;
   }
+
   .event-card {
     scroll-snap-align: center;
   }
@@ -71,6 +74,7 @@
 .event-container .title {
   font-size: 2rem;
 }
+
 @media only screen and (max-width: 400px) {
   .event-container .top {
     margin-top: 1rem;
