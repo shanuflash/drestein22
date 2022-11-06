@@ -1933,4 +1933,351 @@ export const EventDetails = [
       },
     ],
   },
+  {
+    id: 'mba',
+    title: 'Management Studies',
+    eventslist: [
+      {
+        name: " Adzap",
+        date: "18 Nov 2022(FN)",
+        type: "Team",
+        venue: "TBA",
+        time: "TBA",
+        members: "2",
+        rules: "",
+        round1:
+          "No electronic gadget allowed in stage and during discussion. In a group at least 3 person should participate and maximum 7. All must have a equal participation (in group).  Any property related to ad can be used.  ",
+        round2:
+          "Timing for the stage performance is 5 minutes. They should not extend the time. No illegal or political word should be used. From one college only one team is allowed.In Group Maximum of 3 people should be PRELIMINARY Judges decision is the final one. ",
+        round3:
+          "Political & Illegal Words Shouldn't Be Used During The Performance  ",
+        tag: "EVENT",
+        logo: "mba1.jpeg",
+        staff: [
+          {
+            name: "Dr.S.GANGADHARAN  ",
+            desig: "Assistant Professor ",
+            phone: 9894320588,
+            email: "Sgangadharan @gmail.com  ",
+          },
+
+        ],
+        student: [
+          {
+            name: "Jayasri.V   ",
+            year: "I ",
+            phone: 8074340999,
+            email: "jsrikumar008 @gmail.com  ",
+          },
+          {
+            name: "Krishna Kumar.S  ",
+            year: "I ",
+            phone: 8778270202,
+            email: "Siddhu @gmail.com  ",
+          },
+
+
+        ],
+      },
+
+      {
+        name: " Business Quiz",
+        date: "18 Nov 2022(AN)",
+        type: "Team",
+        venue: "TBA",
+        time: "TBA",
+        members: "1-2",
+        rules: "Participation in the form of Team only [2 Members per team]. Compulsory the team has to register to be eligible for the competition. Replacement of any participant of a team is not allowed after registration.  Participants shall not be allowed to use Mobile phones or any other electronic devices during the stages of quiz.  There are no restrictions on the number of teams. Judges decision are final ",
+        round1:
+          "Total of 15 MCQ type Questions Each question carries 1 Mark  Only 1 member per team allowed to attend this round The Top 5 selected teams will move on to the round 2 ",
+
+        round2:
+          " Both the team members join together to attend this round Total of 25 questions will be asked. 5 questions per team Each question carries 2 Marks, If question get passed to the next team it carries 1 Mark In case of tie, extra tie breaker questions may be asked to decide the winners  .",
+
+        tag: "EVENT",
+        logo: "mba2.jpeg",
+        staff: [
+          {
+            name: "Dr.L.Anitha  ",
+            desig: "Assistant Professor ",
+            phone: 9841337619,
+            email: "kripasuvarna@saveetha.ac.in  ",
+          },
+
+        ],
+        student: [
+          {
+            name: "Mohammed Jaffer Aslam.M  ",
+            year: "II ",
+            phone: 9841337619,
+            email: "jaf3aslam @gmail.com  ",
+          },
+          {
+            name: "Nivedha  ",
+            year: "II ",
+            phone: 9486818390,
+            email: "Rajalakshmisankar1971 @gmail.com  ",
+          }
+
+        ],
+      },
+      {
+        name: "FUTURE MANAGER ",
+        date: "19 Nov 2022(FN)",
+        type: "Team",
+        venue: "TBA",
+        time: "8.30am-12.00pm",
+        members: "2",
+        round1title: "CRACK THE CODE ",
+        round1: " Timings: 20min. No. Of questions: 20 Candidates are provided with set of mcqs related to general management, marketing, advertising, HRM, finance, business events, concepts and recent issues. No negative marks . ",
+        round2title: "SHERLOCK & WATSON ",
+        round2: "Each contestant will be given a caselet for which 10 minutes will be given to prepare the caselet.  Each contestant will present the case before the panel of judges for a maximum of 5 minutes.  Contestants are expected to explain the relevant background information of the case, which may include legal, financial, economic, marketing, and management issues relevant to the caselet, and present the issue identified in the caselet.  After presenting the case, each contestant must make recommendations for action that are solidly grounded to the given caselet.Mobile phones & Internet access are prohibited . ",
+        round3title: "Rapid fire round ",
+        round3: " This round consists of potpourri of Questions.In this round the fastest mind gets to answer the questions. Each contestant will be given a set of 5 questions. Mobile phones & Internet access are prohibited. . ",
+        tag: "EVENT",
+        logo: "mba3.jpeg",
+        staff: [
+          {
+            name: "Dr.J.Premila  ",
+            desig: "Assistant Professor ",
+            phone: 7200955529,
+            email: "Premilaj @saveetha.ac.in  ",
+          },
+          {
+            name: "Dr.Siji Joseph  ",
+            desig: "Assistant Professor ",
+            phone: 9677274385,
+            email: "Sijijoseph@saveetha.aca.in  ",
+          },
+        ],
+        student: [
+          {
+            name: "Kishore.V   ",
+            year: "IV ",
+            phone: 8668056578,
+            email: "kishore080898 @gmail.com   ",
+          },
+          {
+            name: "Jaisha Evagelin.J ",
+            year: "IV ",
+            phone: 9789373559,
+            email: "Jpjaisha @gmail.com  ",
+          },
+        ],
+      },
+      {
+        name: " Imagine Through Lens",
+        date: "19 Nov 2022(AN)",
+        type: "Team",
+        venue: "TBA",
+        time: "TBA",
+        members: "1-3",
+        rules: "ndigenous photo captured through Camera or Mobile (Should be clear). No editing should be done.Idea behind the photograph in regards with management concepts. Photograph should be sent before deadline .  ",
+        tag: "EVENT",
+        logo: "mba4.jpeg",
+        staff: [
+          {
+            name: "Dr.M.Venith Vijay ",
+            desig: "Associate Professor ",
+            phone: 9840611531,
+            email: "Venithvijay@savee tha.ac.in  ",
+          },
+        ],
+          student:
+          [
+            {
+              name: "Laksiya.V ",
+              year: "II  ",
+              phone: 7433933555,
+              email: "laksiya2001 @gmail.com   ",
+            },
+            {
+              name: "Smily.S  ",
+              year: "II  ",
+              phone: 7092724135,
+              email: "Smilysornam @gmail.com  ",
+            },
+
+            {
+              name: "Naveen V",
+              year: "III  ",
+              phone: 8608202199,
+              email: "naveenvairavel2002@gmail.com  ",
+            },
+            {
+              name: "Charan K",
+              year: "II ",
+              phone: 86082021995,
+              email: "charankannan95102gmail.com  ",
+            },
+          ],
+
+
+      }
+    ]
+  },
+  {
+    id: "med",
+    title: "Medical Electronics",
+    eventslist: [
+      {
+        name: " Anatomia",
+        date: "18 Nov 2022(FN)",
+        type: "Team",
+        venue: "TBA",
+        time: "TBA",
+        members: "2",
+        rules: "",
+        round1:
+          "Maximum 3 Members per team Mobile Phones are not allowed Concept will be explained and MCQ will be asked either in app or in written format Best 3 teams will be qualified for next round  ",
+        round2:
+          "We will be providing the picture in sheet as per the lot method and you have to mark the parts.  The team which marks the correct parts in maximum number will be qualified for the next round. ",
+        round3:
+          "You have to draw neat diagram and label the parts. For your reference the picture will be shown for 3 to 5 minutes. Best team will be awarded.   ",
+        tag: "EVENT",
+        logo: "mba1.jpeg",
+        staff: [
+          {
+            name: "U. Madhanlal  ",
+            desig: "Assistant Professor ",
+            phone: 9894320588 ,
+            email: "Sgangadharan @gmail.com  ",
+          },
+          
+        ],
+        student: [
+          {
+            name: "S. Vajeha Jameela  ",
+            year: "IV ",
+            phone:9600679615   ,
+            email: "vajehasahul@gmaiil.com  ",
+          },
+          { 
+            name: "Allen Maria Brando  ",
+            year: "IV ",
+            phone: 8925240742   ,
+            email: "mariabrando0511@gmail.com  ",
+          },
+          { 
+            name: "Indhuja.S. U   ",
+            year: "III ",
+            phone: 9751653131   ,
+            email: "indhujasrinivasan2003@gmail.com  ",
+          },
+          { 
+            name: "Vaitheswaran.S  ",
+            year: "III ",
+            phone: 744910268  ,
+            email: "vaithyx5@gmail.com  ",
+          },
+        
+        ],
+      },
+    
+      {
+        name: " CIRCUITO",
+        date: "18 Nov 2022(AN)",
+        type: "Team",
+        venue: "TBA",
+        time: "TBA",
+        members: "1-2",
+        rules: "",
+        round1title:"QUIZOID",
+        round1:
+          "Maximum 3 members per team  MCQ Questions will be displayed on the projector and answer sheets will be given  Participants has to choose the appropriate answers from the given options They will be qualified to the next round based on the scores  ",
+       round2title:" WHO AM I ?",
+        round2:
+          "A box full of electronic components will be given to each team .They has to pinpoint the names of the given components within  the given time .Teams will be selected based on the counts of component they listed   .", 
+        round3title:"MEMORY MASTER",
+        round3title:"Pictures of simple electronic circuits will be displayed on the projector for 30 seconds Each team will be given a breadboard and the required components Team members has to make circuit connections of the displayed schematics within the stipulated timing Selected teams will be awarded ",
+        tag: "EVENT",
+        logo: "mba2.jpeg",
+        staff: [
+          {
+            name: "Mrs.Indumathy ",
+            desig: "Assistant Professor ",
+            phone: 9003025299   ,
+            email: "indumathyt@saveetha.ac.in   ",
+          },
+         
+        ],
+        student: [
+          {
+            name: "S Alagu Meenal  ",
+            year: "IV  ",
+            phone: 6374086494  ,
+            email: "meenusundaraam@gmail.com   ",
+          },
+          {
+            name: "N Durga  ",
+            year: "IV  ",
+            phone: 9786538472    ,
+            email: "durgaaanagarajan2019@gmail.com  ",
+          },
+          {
+            name: "R Kiran  ",
+            year: "III   ",
+            phone: 9080083973   ,
+            email: "meenusundaraam@gmail.com   ",
+          },
+          {
+            name: "E Allwin Donald   ",
+            year: "II ",
+            phone: 9940233105    ,
+            email: "durgaaanagarajan2019@gmail.com  ",
+          }
+         
+        ],
+      },
+      {
+        name: "BLIND TEASER ",
+        date: "19 Nov 2022(FN)",
+        type: "Team",
+        venue: "TBA",
+        time: "8.30am-12.00pm",
+        members: "2",
+        round1title:"Puzzle ",
+        round1:"Maximum of 2 members per team  Pieces of papers with medical instrument will be provided for each team. One in a team will be blind folded and the other can guide his teammate providing instruction to fit the pieces correctly to form a picture.  Max time : 120 seconds The best three teams will be selected for next round. ",         
+        round2:"Rule to be followed as same as round 1 Max time : 60 seconds teams will be selected for final round . ",
+        round3:"Rule to be followed as same as round 1 Max time : 40 seconds  . ",
+        tag: "EVENT",
+        logo: "mba3.jpeg",
+        staff: [
+          {
+            name: "Vigneshwari N  ",
+            desig: "Assistant Professor ",
+            phone: 9486191161   ,
+            email: "vigneshwarin@saveetha.ac.in  ",
+          },
+          
+        ],
+        student: [
+          {
+            name: "Gugan B M   ",
+            year: "IV ",
+            phone: 7708808479  ,
+            email: "guganbm2002@gmail.com   ",
+          },
+          {
+            name: "Thiruneelan R ",
+            year: "IV ",
+            phone: 6369643709  ,
+            email: "thiruneelan361@gmail.com  ",
+          },
+          {
+            name: "Sharmila  ",
+            year: "III",
+            phone:6382785465  ,
+            email: "sharmila85465@gmail.com  ",
+          },
+          {
+            name: "Dinesh Kumar  ",
+            year: "II ",
+            phone: 6369582940  ,
+            email: "kumardineshgj@gmail.com  ",
+          },
+        ],
+      },
+    ]
+  }
 ];
