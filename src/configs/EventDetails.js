@@ -2,6 +2,7 @@ export const EventDetails = [
   {
     id: "cse",
     title: "Computer Science & Engineering",
+
     eventslist: [
       {
         name: "The Lost Code",
@@ -12,6 +13,7 @@ export const EventDetails = [
         time: "TBA",
         members: "2",
         rules: "",
+        color: "0, 1, 38",
         round1title: "Aptitude and Quantitative puzzles/problems",
         round1:
           "In this round the teams (2-3 members) will be given a set of aptitude and logical based questions which they need to solve within the given time. This round will contain questions related to algorithms like N-queens as well as encryption and decryption using simple cipher techniques to find the clues for the second round. The teams that manage to solve all the questions correctly within assigned time will proceed to the next round",
@@ -25,8 +27,7 @@ export const EventDetails = [
         round4:
           "Each team will have to code the program for the found algorithm in either C programming or Python language and the first team to complete the coding will be the winner of the event",
         tag: "EVENT",
-        img: "https://www.gstatic.com/mobilesdk/191021_mobilesdk/discoverycards/appdistro@2x.png",
-        logo: "cse1.png",
+        logo: "/EventsAssets/cse1.jpeg",
         staff: [
           {
             name: "Dr.Sujatha",
@@ -77,6 +78,8 @@ export const EventDetails = [
         time: "TBA",
         members: "1-2",
         rules: "",
+        color: "0, 1, 38",
+
         round1title: "Quiz",
         round1:
           "A team shall consist of one or two persons (Max).The participants shall not be allowed to use mobile. The participants need to attend a quiz consisting of 20 questions in 10 mins. Questions will be from general computers and UI.After completing the quiz, participants need to design a website UI.  ",
@@ -85,8 +88,7 @@ export const EventDetails = [
           " The participants need to design a website page based on the theme given. The participants are given 5 themes, 3 fonts and 3 images. They need to select one from the given themes and need to design a website UI ake up one of the five challenges provided and design a UI in accordance with the challenge. Font and image requirements should be fulfilled as provided in the challenge.  Participants can use images of their own if necessary. Participants should not use the pre-defined components from the external resources .Participants are given the freedom to choose any one of the given tools which is fit for designing a UI interface.",
         Tools: "FIGMA.FLUID UI.VISILI AI.",
         tag: "EVENT",
-        img: "https://www.gstatic.com/mobilesdk/191021_mobilesdk/discoverycards/appdistro@2x.png",
-        logo: "cse2.png",
+        logo: "/EventsAssets/cse2.jpeg",
         staff: [
           {
             name: "Dr.Gopirajan PV ",
@@ -142,6 +144,8 @@ export const EventDetails = [
         venue: "TBA",
         time: "TBA",
         members: "2",
+        color: "0, 1, 38",
+
         rules: "",
         round1:
           " A set of simple programs are given to the coders, they have to find the solution to those programs and execute it in the system with screen off. Those who give the correct answer with in certain time they are qualified to the next round ",
@@ -151,8 +155,8 @@ export const EventDetails = [
           "Program with some errors is given in the paper to the coders and first they have to debug that program in the paper and then they have to execute the same program in the system with screen off.Then three pattern programs are given to them and they have to find the solution to that program then they have to execute it in the system with screen off. ",
 
         tag: "EVENT",
-        img: "https://www.gstatic.com/mobilesdk/191021_mobilesdk/discoverycards/appdistro@2x.png",
-        logo: "cse3.png",
+        /* background-color: #000126;  */
+        logo: "/EventsAssets/cse3.jpeg",
         staff: [
           {
             name: "Dr.Anitha Julian ",
@@ -202,6 +206,8 @@ export const EventDetails = [
         type: "Team",
         venue: "TBA",
         time: "TBA",
+        color: "0, 1, 38",
+
         members: "1-3",
         rules: "",
         round1title: "Abstract extraction",
@@ -211,9 +217,7 @@ export const EventDetails = [
         round2:
           "Each team will be receiving 3-4 minutes to present their idea through ppt and 2-3 minutes to solve the given questions (Timing may vary based on number of teams).The TOP 3 will be selected based on the idea of the presentation.",
         tag: "EVENT",
-
-        img: "https://www.gstatic.com/mobilesdk/191021_mobilesdk/discoverycards/appdistro@2x.png",
-        logo: "cse4.png",
+        logo: "/EventsAssets/cse4.jpg",
         staff: [
           {
             name: "Dr.Vijay Anand  ",
@@ -268,6 +272,8 @@ export const EventDetails = [
         type: "Team",
         venue: "TBA",
         time: "TBA",
+        color: "0, 128, 255",
+
         members: "2",
         rules:
           "A fun event spanning over two rounds. Maximum participation 2 person per team. In the case of cheating, using of phone or using of any unnecessary gadgets will make the team disqualify. Shortlisted participants of Round-1 will appear for Round-2 for which above rules are applicable. ",
@@ -280,7 +286,6 @@ export const EventDetails = [
         judge:
           "All the problems have same points allotted to them. Participant whose code gets executed will be given higher preference. Second preference will be given to the code with least number of errors. The decision of the organizers in declaring the results will be final. No queries in this regard will be entertained. Any team found to be indulging in any form of malpractice will be immediately disqualified. ",
         tag: "EVENT",
-        img: "https://www.gstatic.com/mobilesdk/191021_mobilesdk/discoverycards/appdistro@2x.png",
         logo: "it1.jpeg",
         staff: [
           {
@@ -340,7 +345,6 @@ export const EventDetails = [
         round3:
           "Top 4 teams in this round .Same team member .Any language can be used .Solve medium difficulty code snippets to win .Code should be perfect to conquer the final game.",
         tag: "EVENT",
-        img: "https://www.gstatic.com/mobilesdk/191021_mobilesdk/discoverycards/appdistro@2x.png",
         logo: "it2.jpeg",
         staff: [
           {
@@ -390,7 +394,6 @@ export const EventDetails = [
         format:
           "There will be a set of challenges from a range of categories like Cryptography, Web Security, Forensics, Steganography, Reverse Engineering, Binary Exploits, etc. The challenges can either be a collection of files that they can download and find the “Flag” or can be running as web services to which, the participants connect and exploit to retrieve the Flag. Each category contains a variety of questions with different point values and levels of difficulty.The participants will be ranked based on their scores, and the time taken will be used as a tiebreaker. ",
         tag: "EVENT",
-        img: "https://www.gstatic.com/mobilesdk/191021_mobilesdk/discoverycards/appdistro@2x.png",
         logo: "it3.jpeg",
         staff: [
           {
@@ -453,7 +456,6 @@ export const EventDetails = [
           "Participants will be provided with an executable file and they will have to perform reverse coding. They will have to test for different inputs and outputs.Finally, the source code is to be generated. The round will have five such questions.The winner will be selected based on accuracy and working code. ",
         tag: "EVENT",
 
-        img: "https://www.gstatic.com/mobilesdk/191021_mobilesdk/discoverycards/appdistro@2x.png",
         logo: "cse4.jpeg",
         staff: [
           {
@@ -518,7 +520,6 @@ export const EventDetails = [
           "The participants are requested to explain about the functions of the parts found out by them. Participants should explain the functions within the given time limit. The time limit is about 20seconds.The highest explained team(or)individual will be given 1st prize and following by the runner ups ",
 
         tag: "EVENT",
-        img: "https://www.gstatic.com/mobilesdk/191021_mobilesdk/discoverycards/appdistro@2x.png",
         logo: "agri1.jpeg",
         staff: [
           {
@@ -564,7 +565,6 @@ export const EventDetails = [
           "Participants will have a time limit of 2mins .Marks will be deducted for repetition of points .The team leading the points table will be declared as winners (NOTE: Number of rounds will depend on the number of entries)",
 
         tag: "EVENT",
-        img: "https://www.gstatic.com/mobilesdk/191021_mobilesdk/discoverycards/appdistro@2x.png",
         logo: "agri2.jpeg",
         staff: [
           {
@@ -601,7 +601,6 @@ export const EventDetails = [
         round1:
           " Per team  comprises of 4members.Team is required to finish as much hunt as possible within the limit.Team members must stay together at all times.Participants will have time limit of 2hours.Teams are not supposed to take away the treasure with them neither touch it. ",
         tag: "EVENT",
-        img: "https://www.gstatic.com/mobilesdk/191021_mobilesdk/discoverycards/appdistro@2x.png",
         logo: "agri3.jpeg",
         staff: [
           {
@@ -647,7 +646,6 @@ export const EventDetails = [
           "Description *-* food preparation*-* Each team will be given 2 Chances , team member needs to answer when one of the team is performing One who is acting should not open the mouth, if they do the team will be disqualified .Time limit to perform is 3 minutes ",
         tag: "EVENT",
 
-        img: "https://www.gstatic.com/mobilesdk/191021_mobilesdk/discoverycards/appdistro@2x.png",
         logo: "agri4.jpeg",
         staff: [
           {
@@ -710,7 +708,6 @@ export const EventDetails = [
           "New programming language (GO) basic syntax of the language will be provided for a given period of time for preparation.This round will have 5 questions. Each challenge has a predetermined score.A participant’s score depends on the number of test cases a participant’s code submission successfully passes. If a participant submits more than one solution per challenge, then the participant’s score will reflect the highest score achieved. In a game challenge, the participant's score will reflect the last code submission. ",
 
         tag: "EVENT",
-        img: "https://www.gstatic.com/mobilesdk/191021_mobilesdk/discoverycards/appdistro@2x.png",
         logo: "ai1.jpeg",
         staff: [
           {
@@ -758,7 +755,6 @@ export const EventDetails = [
         round3:
           "They are proposed to questions regarding their plans where the teams have to come up with apt ideas to solve them .Top 3 teams are assessed by judges based on how they can handle further situations after idea building and budgeting",
         tag: "EVENT",
-        img: "https://www.gstatic.com/mobilesdk/191021_mobilesdk/discoverycards/appdistro@2x.png",
         logo: "ai2.jpeg",
         staff: [
           {
@@ -807,7 +803,6 @@ export const EventDetails = [
           "The topic will be given on the spot.No restrictions on the choice of photos/templates to be used.The meme can be with 1-3 slides.The number of slides doesn't affect the evaluation.   ",
 
         tag: "EVENT",
-        img: "https://www.gstatic.com/mobilesdk/191021_mobilesdk/discoverycards/appdistro@2x.png",
         logo: "ai3.jpeg",
         staff: [
           {
@@ -867,7 +862,6 @@ export const EventDetails = [
           "Landing Page. A concept will be given on the spot and the participants are asked to create an impressive home page for a company. Maximum 2 hours will be provided to complete this round.",
         tag: "EVENT",
 
-        img: "https://www.gstatic.com/mobilesdk/191021_mobilesdk/discoverycards/appdistro@2x.png",
         logo: "ai4.jpeg",
         staff: [
           {
@@ -914,7 +908,6 @@ export const EventDetails = [
         round3:
           "-Two problem statement questions will be given with a time limit of 1hr.The participants can run the programs in the compiler and note down their analysis in the provided paper.Evaluation criteria: The team that takes less time to complete the given problem statements will be selected as the winner.  ",
         tag: "EVENT",
-        img: "https://www.gstatic.com/mobilesdk/191021_mobilesdk/discoverycards/appdistro@2x.png",
         logo: "ai5.jpeg",
         staff: [
           {
@@ -983,7 +976,6 @@ export const EventDetails = [
         round3:
           "Group activity, a team of four members. Objective of the round is to identify the appropriate medical equipment required for respective trivia Flashcards of equipment with the description of function and usage will be handed out to the participants. Teams are expected to assign the appropriate cards to the given situations.Every correct answer will be rewarded with a point in the team can use to move forward or hold back the opponent team. First team to complete the highest number of trivia wins.",
         tag: "EVENT",
-        img: "https://www.gstatic.com/mobilesdk/191021_mobilesdk/discoverycards/appdistro@2x.png",
         logo: "bm1.jpeg",
         staff: [
           {
@@ -1047,7 +1039,6 @@ export const EventDetails = [
           "Shortlisted students taken from 2nd round .Different set of questions (4 to 5 category of ideas). Individual performance is noted. (At a time only one player in the room) .Writing pad/slate given to hand. (written) .5 to 10 mins per person.Winners selected based on timing and answers.",
 
         tag: "EVENT",
-        img: "https://www.gstatic.com/mobilesdk/191021_mobilesdk/discoverycards/appdistro@2x.png",
         logo: "bm2.jpeg",
         staff: [
           {
@@ -1108,7 +1099,6 @@ export const EventDetails = [
         round2:
           " The top 4 players shall be selected from the previous round on the basis of the 1st round.In this round, there will be 2 qualifiers, one elimination round and one final round.Teams are said to stand at their respective ends. A question will be asked commonly, when both team player meet at one point. The player who gives the correct answer proceeds the disc path.The team which reaches the other end will be declared as the winner",
         tag: "EVENT",
-        img: "https://www.gstatic.com/mobilesdk/191021_mobilesdk/discoverycards/appdistro@2x.png",
         logo: "bm3.jpeg",
         staff: [
           {
@@ -1171,7 +1161,6 @@ export const EventDetails = [
         round3:
           "Puzzle related to medical Instruments or Famous Scientist Will be displayed in the laptop provided. According to the time taken by the participants we can select the winners. ",
         tag: "EVENT",
-        img: "https://www.gstatic.com/mobilesdk/191021_mobilesdk/discoverycards/appdistro@2x.png",
         logo: "bm4.jpeg",
         staff: [
           {
@@ -1237,7 +1226,6 @@ export const EventDetails = [
           " Only bridge deck is required to build.   It must be of TRUSS type.  It should be made up of candy sticks only (popsticle sticks). Sticks and adhesive will be provided from the institute. Maximum of 3 members are allowed in a team. Minimum dimension of the bridge: Length = 80cm; Width = 12cm,Max height=15 cm . Any member can use only 4 sticks to overlap. Maximum height of the bridge should not exceed 15cm.The load test will be carried out on the next day of bridge making. THE  MODEL WHICH CARRIES MORE LOAD WILL BE CONSIDERED AS A WINNER",
 
         tag: "EVENT",
-        img: "https://www.gstatic.com/mobilesdk/191021_mobilesdk/discoverycards/appdistro@2x.png",
         logo: "civil1.jpeg",
         staff: [
           {
@@ -1287,7 +1275,6 @@ export const EventDetails = [
         round3:
           "The selected 5 teams will be presented with an online treasure hunt framework in a laptop.Each team needs to decipher the clues to find the treasure (letters shape or structure) The team that clinches the treasure (identifies the pattern) at first will be announced as winner. Total event duration: 2 hours (including briefing of instructions) ",
         tag: "EVENT",
-        img: "https://www.gstatic.com/mobilesdk/191021_mobilesdk/discoverycards/appdistro@2x.png",
         logo: "civil2.jpeg",
         staff: [
           {
@@ -1338,7 +1325,6 @@ export const EventDetails = [
         round2:
           "The detailed line plan will be given as a question in round 2 .The students have to draw Plan with specification for the same line plan. The duration for the plan is 30 minutes. Based on the completion first three place will be finalised ",
         tag: "EVENT",
-        img: "https://www.gstatic.com/mobilesdk/191021_mobilesdk/discoverycards/appdistro@2x.png",
         logo: "civil3.jpeg",
         staff: [
           {
@@ -1383,7 +1369,6 @@ export const EventDetails = [
           "Participants will be provided with an executable file and they will have to perform reverse coding. They will have to test for different inputs and outputs.Finally, the source code is to be generated. The round will have five such questions.The winner will be selected based on accuracy and working code. ",
         tag: "EVENT",
 
-        img: "https://www.gstatic.com/mobilesdk/191021_mobilesdk/discoverycards/appdistro@2x.png",
         logo: "civil4.jpeg",
         staff: [
           {
@@ -1442,7 +1427,6 @@ export const EventDetails = [
         round3:
           "It is a group event of 3. Participants will be given many charts which contain different Process of flow diagrams of different industries. Participants should order them according to sector in a given time limit.The team which finishes fast with the correct answer will be the winner. ",
         tag: "EVENT",
-        img: "https://www.gstatic.com/mobilesdk/191021_mobilesdk/discoverycards/appdistro@2x.png",
         logo: "chem1.jpeg",
         staff: [
           {
@@ -1483,7 +1467,6 @@ export const EventDetails = [
         round2:
           " A situational task is given to the participant . The task is related to chemical process industries.A simple Example is that if there is spillage of Sulphuric acid. What will you do! .They must apply the most reluctant procedure to accomplish the task and get their points.",
         tag: "EVENT",
-        img: "https://www.gstatic.com/mobilesdk/191021_mobilesdk/discoverycards/appdistro@2x.png",
         logo: "chem2.jpeg",
         staff: [
           {
@@ -1518,7 +1501,6 @@ export const EventDetails = [
         rules:
           " Participants should play small games in the room to escape from the room. Participants should answer the questions for a minimum of 3 and also should win the game.  For winning each game participants will be given stickers at each game. Those who collect more stickers will be the winner ",
         tag: "EVENT",
-        img: "https://www.gstatic.com/mobilesdk/191021_mobilesdk/discoverycards/appdistro@2x.png",
         logo: "chem3.jpeg",
         staff: [
           {
@@ -1581,7 +1563,6 @@ export const EventDetails = [
         round3:
           "3 Members standing in a row. First one gets a clue from Co-ordinator.  Second one gets a clue from the First one. Third one gets a clue from the Second one.  Third one has to choose the element from the board. ",
         tag: "EVENT",
-        img: "https://www.gstatic.com/mobilesdk/191021_mobilesdk/discoverycards/appdistro@2x.png",
         logo: "chem4.jpeg",
         staff: [
           {
@@ -1625,7 +1606,6 @@ export const EventDetails = [
           "30 seconds per QUESTION .Correct answer will be rewarded with two points.10 Questions per round ",
         round2:
           "20 seconds per QUESTION .Correct answer will be rewarded with two points .10 Questions per round.SELECTION PROCESS: Winners will be based on MAXIMUM POINTS .",
-        img: "https://www.gstatic.com/mobilesdk/191021_mobilesdk/discoverycards/appdistro@2x.png",
         logo: "eie1.jpeg",
         staff: [
           {
@@ -1660,7 +1640,6 @@ export const EventDetails = [
         round3:
           "Maximum 2 members in a team .5 minutes per round.10 Questions per round.Every correct answer carries 2 points Selection is based on maximum points ",
         tag: "EVENT",
-        img: "https://www.gstatic.com/mobilesdk/191021_mobilesdk/discoverycards/appdistro@2x.png",
         logo: "eie2.jpeg",
         staff: [
           {
@@ -1694,7 +1673,6 @@ export const EventDetails = [
         round3:
           "Maximum 1 member in a team .5 minutes per round .10 Questions per round . Every correct answer carries 2 points . Selection is based on maximum points",
         tag: "EVENT",
-        img: "https://www.gstatic.com/mobilesdk/191021_mobilesdk/discoverycards/appdistro@2x.png",
         logo: "eie3.jpeg",
         staff: [
           {
@@ -1728,7 +1706,6 @@ export const EventDetails = [
         round3:
           "Maximum 2 members in a team.15 minutes per round.1Debugging per round.Design contains maximum 20points .selection based on maximum points ",
         tag: "EVENT",
-        img: "https://www.gstatic.com/mobilesdk/191021_mobilesdk/discoverycards/appdistro@2x.png",
         logo: "eie4.jpeg",
         staff: [
           {
@@ -1768,7 +1745,6 @@ export const EventDetails = [
         round2: "Participants are asked to do assembly, Using Fusion 360 ",
         round3:
           "Detailing of MODEL- Quality, Efficiency of the product will be inspected ",
-        img: "https://www.gstatic.com/mobilesdk/191021_mobilesdk/discoverycards/appdistro@2x.png",
         tag: "EVENT",
         logo: "mech1.jpeg",
         staff: [
@@ -1820,7 +1796,6 @@ export const EventDetails = [
 
         round2: " Facing and Step turning in Lathe Machine(30mins) .",
         round3: "Knurling in Lathe Machining(30mins) ",
-        img: "https://www.gstatic.com/mobilesdk/191021_mobilesdk/discoverycards/appdistro@2x.png",
         tag: "EVENT",
         logo: "mech2.jpeg",
         staff: [
@@ -1868,7 +1843,6 @@ export const EventDetails = [
         round1: "Round 1 will be based on distance coverage. ",
         round2: "Round 2 will be based on distance coverage. ",
         round3: "Round 3 will be based on distance coverage. ",
-        img: "https://www.gstatic.com/mobilesdk/191021_mobilesdk/discoverycards/appdistro@2x.png",
         tag: "EVENT",
         logo: "mech3.jpeg",
         staff: [
@@ -1919,7 +1893,6 @@ export const EventDetails = [
           "Isometric view of a product will be given to each team. Model the product using CATIA Or ABAQUS software within 45mins  ",
         round2: "The simulation for the product has to done within 30mins.",
         tag: "EVENT",
-        img: "https://www.gstatic.com/mobilesdk/191021_mobilesdk/discoverycards/appdistro@2x.png",
 
         logo: "mech4.jpeg",
         staff: [

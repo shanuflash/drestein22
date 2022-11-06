@@ -1,12 +1,13 @@
 import styled from "styled-components";
 import "./styles/test.css";
 import { useContext } from "react";
+import { departobj } from "../../configs/Departments.config.js";
 import DisplayPopupContext from "../../context/DisplayPopupContext";
 
 const EventCard = ({
   name,
   desc,
-  img,
+  color,
   tag,
   date,
   setOpenModal,
@@ -64,13 +65,15 @@ const EventCard = ({
 
   const Card = styled.div`
     font-family: "poppins", sans-serif;
-    --bg-filter-opacity: 0.5;
-    --bg-img: url(${img});
+    --color: ${color};
+    --bg-filter-opacity: 0.75;
+    --bg-img: url("/test.png");
     background-image: linear-gradient(
-        rgba(0, 0, 0, var(--bg-filter-opacity)),
+        rgba(var(--color), var(--bg-filter-opacity)),
         rgba(0, 0, 0, var(--bg-filter-opacity))
       ),
       var(--bg-img);
+    border: 1px solid;
     height: 15em;
     width: 12em;
     font-size: 1.5em;
@@ -92,8 +95,26 @@ const EventCard = ({
     <div className="event-card">
       <Card className="eventcard" onClick={handleEventInfo}>
         <div>
-          <h1>{name}</h1>
-          <p>{tagline}</p>
+          <img
+            src={logo}
+            style={{
+              borderRadius: "30px",
+              height: "111px",
+              width: "111px",
+              objectFit: "cover",
+              boxShadow:
+                "rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px",
+            }}
+            alt="test"
+          />
+          <h1
+            style={{
+              marginVottom: "0.7rem",
+            }}
+          >
+            {name}
+          </h1>
+          {/* <p>{tagline}</p> */}
           <div className="date">{date}</div>
           <div className="tags">
             <div className="tag">{tag}</div>

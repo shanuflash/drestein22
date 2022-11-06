@@ -97,7 +97,7 @@ export default function ConditionalValidationGrid() {
   //     rowLength: 5,
   //     maxColumns: 6,
   //   });
-  const data = useMovieData();
+  // const data = useMovieData();
   useEffect(() => {
     setload(true);
     const colref = collection(db, "RegisteredPeople");
@@ -111,7 +111,9 @@ export default function ConditionalValidationGrid() {
         //   console.log(users);
         setPaidusers(users);
         setload(false);
+        // console.log('this is head ',paidUsers)
       },
+
       []
     );
     // const q = query(colref, where("cashPaid", "==", true));
@@ -130,7 +132,7 @@ export default function ConditionalValidationGrid() {
   }, []);
 
   const users = paidUsers.map((data) => {
-    console.log("this ", data.EventsRegistered);
+    console.log(data);
     return {
       id: data.id,
       id: data.id,
@@ -140,28 +142,52 @@ export default function ConditionalValidationGrid() {
       college: data.college,
       regno: data.regno,
       gender: data.gender,
-      isPaid: data.cashPaid,
-      IT: isEmpty(data.EventsRegistered.IT) ? " " : data.EventsRegistered.IT,
-      ECE: isEmpty(data.EventsRegistered.ECE) ? " " : data.EventsRegistered.ECE,
-      EEE: isEmpty(data.EventsRegistered.EEE) ? " " : data.EventsRegistered.EEE,
-      CSE: isEmpty(data.EventsRegistered.CSE) ? " " : data.EventsRegistered.CSE,
-      EIE: isEmpty(data.EventsRegistered.EIE) ? " " : data.EventsRegistered.EIE,
+      isPaidD: data.cashPaid,
+      isPaperPresentationPaid: data.cashPaidForPaper,
+      isProjectPresentationPaid: data.cashPaidForProject,
+      PaperPresentation: data.PaperPresentation ? "Yes" : "No",
+      ProjectPresentation: data.ProjectPresentation ? "Yes" : "no",
+      AmountPaid: data.AmountPaid + " ₹ ",
+
+      IT: isEmpty(data.EventsRegistered.IT)
+        ? " "
+        : data.EventsRegistered.IT.join(","),
+      ECE: isEmpty(data.EventsRegistered.ECE)
+        ? " "
+        : data.EventsRegistered.ECE.join(","),
+      EEE: isEmpty(data.EventsRegistered.EEE)
+        ? " "
+        : data.EventsRegistered.EEE.join(","),
+      CSE: isEmpty(data.EventsRegistered.CSE)
+        ? " "
+        : data.EventsRegistered.CSE.join(","),
+      EIE: isEmpty(data.EventsRegistered.EIE)
+        ? " "
+        : data.EventsRegistered.EIE.join(","),
       MECH: isEmpty(data.EventsRegistered.MECH)
         ? " "
-        : data.EventsRegistered.MECH,
-      AI: isEmpty(data.EventsRegistered.AI) ? " " : data.EventsRegistered.AI,
+        : data.EventsRegistered.MECH.join(","),
+      AI: isEmpty(data.EventsRegistered.AI)
+        ? " "
+        : data.EventsRegistered.AI.join(","),
       CHEM: isEmpty(data.EventsRegistered.CHEM)
-        ? ""
-        : data.EventsRegistered.CHEM,
-      MBA: isEmpty(data.EventsRegistered.MBA) ? " " : data.EventsRegistered.MBA,
-      MED: isEmpty(data.EventsRegistered.MED) ? " " : data.EventsRegistered.MED,
+        ? " "
+        : data.EventsRegistered.CHEM.join(","),
+      MBA: isEmpty(data.EventsRegistered.MBA)
+        ? " "
+        : data.EventsRegistered.MBA.join(","),
+      MED: isEmpty(data.EventsRegistered.MED)
+        ? " "
+        : data.EventsRegistered.MED.join(","),
       AGRI: isEmpty(data.EventsRegistered.AGRI)
         ? " "
-        : data.EventsRegistered.AGRI,
+        : data.EventsRegistered.AGRI.join(","),
       CIVIL: isEmpty(data.EventsRegistered.CIVIL)
         ? " "
-        : data.EventsRegistered.CIVIL,
-      BME: isEmpty(data.EventsRegistered.BME) ? " " : data.EventsRegistered.BME,
+        : data.EventsRegistered.CIVIL.join(","),
+      BME: isEmpty(data.EventsRegistered.BME)
+        ? " "
+        : data.EventsRegistered.BME.join(","),
       cashtobePaid: data.CashToBePaid + " ₹ ",
     };
   });
@@ -175,23 +201,29 @@ export default function ConditionalValidationGrid() {
     //     console.log(data.EventsRegistered['CSE'][0])
     //  }
     if (data.cashPaid) {
-      collectedcash += data.CashToBePaid;
+      collectedcash += data.AmountPaid;
     }
+    // if(data.cashPaidForPaper){
+    //   collectedcash +=data.AmountPaid;
+    // }
   });
-
+  // console.log(users)
   const rows = [...users];
 
   const columns = [
-    { editable: false, field: "id", headerName: "id", width: 100 },
+    // { editable: false, field: "id", headerName: "id", width: 100 },
     { editable: false, field: "name", headerName: "name", width: 150 },
+
     {
       editable: false,
       field: "email",
-      type: "email",
+
       headerName: "email",
       width: 150,
     },
+
     { editable: false, field: "phno", headerName: "phone no", width: 150 },
+
     {
       editable: false,
       field: "college",
@@ -199,17 +231,65 @@ export default function ConditionalValidationGrid() {
       minWidth: 150,
     },
     { editable: false, field: "regno", headerName: "register No", width: 150 },
+
     { editable: false, field: "gender", headerName: "gender", width: 100 },
+
     {
-      field: "isPaid",
-      headerName: "is Paid?",
-      width: 140,
-      editable: true,
+      field: "ProjectPresentation",
+      headerName: "Project presentation",
+      width: 150,
+      editable: false,
+    },
+
+    {
+      field: "isProjectPresentationPaid",
+      headerName: "is Project Department?",
+      width: 150,
+      editable: false,
       type: "boolean",
     },
 
-    { field: "IT", headerName: "IT", Width: "150", editable: false },
-    { field: "CSE", headerName: "CSE", Width: "150", editable: false },
+    {
+      field: "PaperPresentation",
+      headerName: "Paper presentation",
+      width: 150,
+      editable: false,
+    },
+
+    {
+      field: "isPaperPresentationPaid",
+      headerName: "is Paper Presentation",
+      width: 150,
+      type: "boolean",
+      editable: false,
+    },
+    {
+      field: "isPaidD",
+      headerName: "is Paid Department?",
+      width: 150,
+      editable: false,
+      type: "boolean",
+
+      // const hasError = isPaidProps.value && !params.props.value;
+
+      // setChecked(pre=>!pre)
+    },
+
+    {
+      editable: false,
+      field: "AmountPaid",
+      headerName: "Amount Paid",
+      width: 100,
+    },
+    {
+      editable: false,
+      field: "cashtobePaid",
+      headerName: "Total amount",
+      width: 100,
+    },
+
+    { field: "IT", headerName: "IT", width: "150", editable: false },
+    { field: "CSE", headerName: "CSE", width: "150", editable: false },
     { field: "ECE", headerName: "ECE", Width: "150", editable: false },
     { field: "EEE", headerName: "EEE", minWidth: "150", editable: false },
     { field: "EIE", headerName: "EIE", minWidth: "150", editable: false },
@@ -221,13 +301,6 @@ export default function ConditionalValidationGrid() {
     { field: "AGRI", headerName: "AGRI", minWidth: "150", editable: false },
     { field: "CIVIL", headerName: "CIVIL", minWidth: "150", editable: false },
     { field: "BME", headerName: "BME", minWidth: "150", editable: false },
-
-    {
-      editable: false,
-      field: "cashtobePaid",
-      headerName: "amount",
-      width: 100,
-    },
   ];
 
   return (
@@ -239,6 +312,7 @@ export default function ConditionalValidationGrid() {
           Toolbar: CustomToolbar,
           Footer,
         }}
+        getRowHeight={() => "auto"}
         rows={rows}
         columns={columns}
         editMode="row"
@@ -251,9 +325,9 @@ export default function ConditionalValidationGrid() {
           },
         }}
         experimentalFeatures={{ newEditingApi: true }}
-        onCellEditStart={(params, event) => {
-          console.log(params);
-        }}
+        // onCellEditStart={(params, event) => {
+        //   console.log(params);
+        // }}
         onCellEditStop={(params, event) => {
           console.log(params);
           if (params.reason === GridCellEditStopReasons.cellFocusOut) {

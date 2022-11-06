@@ -122,6 +122,9 @@ const Form = () => {
   const [confirmMsg, setconfirmMsg] = useState(false);
   const [Project, setProject] = React.useState(false);
   const [Paper, setPaper] = React.useState(false);
+  const [Event, setEvent] = useState(false);
+  const [Work, setWork] = useState(false);
+  const [Pay, setPay] = useState(0);
   const [eventName, setEventName] = React.useState({
     CSE: [],
     IT: [],
@@ -148,14 +151,38 @@ const Form = () => {
     e.preventDefault();
     setload(true);
     formdata.id = uuidv4();
+
     formdata.cashPaid = false;
+
+    formdata.cashPaidForPaper = false;
+
+    formdata.cashPaidForProject = false;
+
     formdata.CashToBePaid = 0;
-    for (const key in eventName) {
-      console.log("thisd:", eventName[key]);
-      if (!isEmpty(eventName[key])) {
-        formdata.CashToBePaid = 150;
-        formdata.EventsRegistered = eventName;
-      }
+
+    formdata.EventsRegistered = eventName;
+
+    formdata.PaperPresentation = Paper;
+
+    formdata.ProjectPresentation = Project;
+
+    formdata.AmountPaid = 0;
+
+    // for (const key in eventName) {
+    //   console.log("thisd:", eventName[key]);
+    //   if (!isEmpty(eventName[key])) {
+    //     formdata.CashToBePaid += 150;
+    //     formdata.DEvent = true;
+    //   }
+    // }
+    if (Event === true) {
+      formdata.CashToBePaid += 150;
+    }
+    if (Paper === true) {
+      formdata.CashToBePaid += 250;
+    }
+    if (Project === true) {
+      formdata.CashToBePaid += 200;
     }
     console.log(formdata);
     const cityRef = doc(db, "RegisteredPeople", `${formdata.id}`);
@@ -212,7 +239,7 @@ const Form = () => {
     // setEventName(typeof value === "string" ? value.split(",") : value);
 
     setEventName((pre) => ({ ...pre, [name]: [...value] }));
-    // console.log('this is value :',event.target)
+    console.log(eventName);
   };
 
   const test = [
@@ -487,65 +514,65 @@ const Form = () => {
                   placeholder="johndoe@email.com"
                   label="Email"
                 />
-                <Divider sx={{ "--Divider-childPosition": `50%` }}>
+                {/* <Divider sx={{ "--Divider-childPosition": `50%` }}>
                   Department Events
                 </Divider>
-                <div
-                  style={{
-                    display: "flex",
-                    justifyContent: "center",
-                    flexWrap: "wrap",
-                  }}
-                >
-                  {test.map((depart) => {
-                    return (
-                      <FormControlM
-                        style={{ margin: "10px", width: "30%" }}
-                        // sx={{ m: 1, width: "30%" }}
-                      >
-                        <InputLabel>{depart.name}</InputLabel>
-                        <SelectM
-                          multiple
-                          value={eventName[depart.name]}
-                          name={depart.name}
-                          onChange={handleChangeT}
-                          input={<FilledInput label={depart.name} />}
-                          renderValue={(selected) => (
-                            <Box
-                              sx={{
-                                display: "flex",
-                                flexWrap: "wrap",
-                                gap: 0.5,
-                              }}
-                            >
-                              {selected.map((value) => (
-                                <Chip key={value}>{value}</Chip>
-                              ))}
-                            </Box>
-                          )}
-                        >
-                          {depart.events.map((ev) => (
-                            <MenuItem key={ev} value={ev}>
-                              {ev}
-                            </MenuItem>
-                          ))}
-                        </SelectM>
-                      </FormControlM>
-                    );
-                  })}
-                </div>
                 <Divider sx={{ "--Divider-childPosition": `50%` }}>
                   Other Events
-                </Divider>
+                </Divider> */}
+                <Divider />
+
                 <div
                   style={{ display: "flex", justifyContent: "space-evenly" }}
                 >
                   <Checkbox
                     color="primary"
                     size="lg"
+                    label="Events"
+                    onChange={(e) => {
+                      if (Event === true) {
+                        setPay(Pay - 150);
+                        setEventName({
+                          CSE: [],
+                          IT: [],
+                          EEE: [],
+                          ECE: [],
+                          EIE: [],
+                          MECH: [],
+                          CIVIL: [],
+                          MED: [],
+                          CHEM: [],
+                          AGRI: [],
+                          AI: [],
+                          MBA: [],
+                          BME: [],
+                        });
+                      } else {
+                        setPay(Pay + 150);
+                      }
+                      setEvent(e.target.checked);
+                    }}
+                  />
+                  <Checkbox
+                    color="primary"
+                    size="lg"
+                    label="Workshops"
+                    onChange={(e) => {
+                      // setPay(Pay + 150);
+
+                      setWork(e.target.checked);
+                    }}
+                  />
+                  <Checkbox
+                    color="primary"
+                    size="lg"
                     label="Paper Presentation"
                     onChange={(e) => {
-                      console.log("target checked? - ", e.target.checked);
+                      if (Paper === true) {
+                        setPay(Pay - 250);
+                      } else {
+                        setPay(Pay + 250);
+                      }
                       setPaper(e.target.checked);
                     }}
                   />
@@ -554,23 +581,75 @@ const Form = () => {
                     size="lg"
                     label="Project Display"
                     onChange={(e) => {
-                      console.log("target checked? - ", e.target.checked);
+                      if (Project === true) {
+                        setPay(Pay - 200);
+                      } else {
+                        setPay(Pay + 200);
+                      }
                       setProject(e.target.checked);
                     }}
                   />
                 </div>
+                {Event === true ? (
+                  <div
+                    style={{
+                      display: "flex",
+                      justifyContent: "center",
+                      flexWrap: "wrap",
+                    }}
+                  >
+                    {test.map((depart) => {
+                      return (
+                        <FormControlM
+                          style={{ margin: "10px", width: "30%" }}
+                          // sx={{ m: 1, width: "30%" }}
+                        >
+                          <InputLabel>{depart.name}</InputLabel>
+                          <SelectM
+                            multiple
+                            value={eventName[depart.name]}
+                            name={depart.name}
+                            onChange={handleChangeT}
+                            input={<FilledInput label={depart.name} />}
+                            renderValue={(selected) => (
+                              <Box
+                                sx={{
+                                  display: "flex",
+                                  flexWrap: "wrap",
+                                  gap: 0.5,
+                                }}
+                              >
+                                {selected.map((value) => (
+                                  <Chip key={value}>{value}</Chip>
+                                ))}
+                              </Box>
+                            )}
+                          >
+                            {depart.events.map((ev) => (
+                              <MenuItem key={ev} value={ev}>
+                                {ev}
+                              </MenuItem>
+                            ))}
+                          </SelectM>
+                        </FormControlM>
+                      );
+                    })}
+                  </div>
+                ) : null}
                 <img src={qr} />
-                <Alert
-                  variant="outlined"
-                  color="danger"
-                  sx={{
-                    align: "center",
-                    justifyContent: "center",
-                  }}
-                  // style={{}}
-                >
-                  Registeration Fee of ₹150 has to be paid on the event date.
-                </Alert>
+                {Pay === 0 ? null : (
+                  <Alert
+                    variant="outlined"
+                    color="danger"
+                    sx={{
+                      align: "center",
+                      justifyContent: "center",
+                    }}
+                    // style={{}}
+                  >
+                    Registeration Fee of {Pay} has to be paid on the event date.
+                  </Alert>
+                )}
                 {load && (
                   <Alert
                     variant="outlined"

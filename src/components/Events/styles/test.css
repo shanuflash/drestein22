@@ -33,7 +33,13 @@
 }
 
 .eventcard h1 {
-  margin: 0;
+  margin-bottom: 0.7rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
   font-size: 1.5em;
   line-height: 1.2em;
 }
