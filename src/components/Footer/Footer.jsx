@@ -143,7 +143,7 @@ const Footer = () => {
           <h4 className="heading">USEFUL LINKS</h4>
           <a href="#" className="links">
             Home
-          </a>{" "}
+          </a>
           <a href="#Departments" className="links">
             Departments
           </a>

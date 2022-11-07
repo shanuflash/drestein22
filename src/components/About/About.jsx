@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { motion, variants } from "framer-motion";
+import { motion } from "framer-motion";
 
 function About() {
   const AboutHead = styled.div`

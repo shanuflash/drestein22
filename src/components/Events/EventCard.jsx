@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import "./styles/test.css";
 import { useContext } from "react";
-import { departobj } from "../../configs/Departments.config.js";
 import DisplayPopupContext from "../../context/DisplayPopupContext";
 const EventCard = ({
   name,

@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { motion, varients } from "framer-motion";
+import { motion } from "framer-motion";
 
 const GuestHead = styled.div`
   padding-bottom: 100px;
