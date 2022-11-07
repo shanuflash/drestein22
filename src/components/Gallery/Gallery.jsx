@@ -72,28 +72,37 @@ const Gallery = () => {
         }}
       >
         <SwiperSlide className=".swiper-slide">
-          <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" />
+          <img src="/GalleryAssets/1.JPG" />
         </SwiperSlide>
         <SwiperSlide className=".swiper-slide">
-          <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" />
+          <img src="/GalleryAssets/2.JPG" />
         </SwiperSlide>
         <SwiperSlide className=".swiper-slide">
-          <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" />
+          <img src="/GalleryAssets/3.JPeG" />
         </SwiperSlide>
         <SwiperSlide className=".swiper-slide">
-          <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" />
+          <img src="/GalleryAssets/4.JPG" />
         </SwiperSlide>
         <SwiperSlide className=".swiper-slide">
-          <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" />
+          <img src="/GalleryAssets/5.JPG" />
         </SwiperSlide>
         <SwiperSlide className=".swiper-slide">
-          <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" />
+          <img src="/GalleryAssets/6.JPG" />
         </SwiperSlide>
         <SwiperSlide className=".swiper-slide">
-          <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" />
+          <img src="/GalleryAssets/7.JPeG" />
         </SwiperSlide>
         <SwiperSlide className=".swiper-slide">
-          <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" />
+          <img src="/GalleryAssets/8.JPeG" />
+        </SwiperSlide>
+        <SwiperSlide className=".swiper-slide">
+          <img src="/GalleryAssets/9.JPeG" />
+        </SwiperSlide>
+        <SwiperSlide className=".swiper-slide">
+          <img src="/GalleryAssets/10.JPeG" />
+        </SwiperSlide>
+        <SwiperSlide className=".swiper-slide">
+          <img src="/GalleryAssets/11.JPeG" />
         </SwiperSlide>
       </Swiper>
     </GallerHeader>
