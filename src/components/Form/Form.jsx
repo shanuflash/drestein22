@@ -150,22 +150,29 @@ const Form = () => {
     MBA: [],
     BME: [],
   });
-  const [workName, setworkName] = React.useState({
-    CSE: [],
-    IT: [],
-    EEE: [],
-    ECE: [],
-    EIE: [],
-    MECH: [],
-    CIVIL: [],
-    MED: [],
-    CHEM: [],
-    AGRI: [],
-    AI: [],
-    MBA: [],
-    BME: [],
-  });
+  const [workName, setworkName] = React.useState([
+    {
+      name: "AGRI",
+      events: [],
+    },
+    {
+      name: "IT",
+      events: [
+        {
+          name: "FIELD DEMONSTRATION OF DRONE SPRAYER",
+          price: 200,
+        },
+        {
+          name: "ORGANIC FARMING",
+          price: 100,
+        },
+      ],
+    },
+  ]);
 
+  useEffect(() => {
+    console.log(workName);
+  }, [workName]);
   const handleChange = (e) => {
     setformdata((prevState) => ({
       ...prevState,
@@ -293,7 +300,7 @@ const Form = () => {
       formdata.CashToBePaid += 200;
     }
     console.log(formdata);
-    uploadProfileImg(formdata.id);
+    // uploadProfileImg(formdata.id);
   };
 
   const handleChangeForSelect = (e) => {
@@ -318,57 +325,97 @@ const Form = () => {
     const {
       target: { value, name },
     } = event;
-    setworkName((pre) => ({ ...pre, [name]: [...value] }));
-    console.log(workName);
+
+    // console.log('this ',value,name)
+    const newObj = value;
+    setworkName((pre) => {
+      return pre.map((data) => {
+        console.log(data);
+        if (data.name === name) {
+          return {
+            name: name,
+            events: [...data.events, newObj],
+          };
+        } else {
+          return data;
+        }
+      });
+    });
+
+    // setworkName((pre) => ({ ...pre, [name]: [...value] }));
+    // console.log(workName);
   };
   const worktest = [
     {
       name: "AGRI",
-      events: ["FIELD DEMONSTRATION OF DRONE SPRAYER", "ORGANIC FARMING"],
-    },
-    {
-      name: "BME",
       events: [
-        "3D modelling in CT & MRI scans on Navigation based surgery",
-        "Biomechanics & LabVIEW for Healthcare Applications",
+        {
+          name: "FIELD DEMONSTRATION OF DRONE SPRAYER",
+          price: 200,
+        },
+        {
+          name: "ORGANIC FARMING",
+          price: 100,
+        },
       ],
     },
     {
-      name: "CIVIL",
+      name: "IT",
       events: [
-        "Recent technological advancements in building designs using revit",
-        "4D Building Information Modelling for Project Management",
-        "5D BIM for Construction Industry",
+        {
+          name: " DEMONSTRATION OF DRONE SPRAYER",
+          price: 200,
+        },
+        {
+          name: "FARMING",
+          price: 100,
+        },
       ],
     },
-    {
-      name: "CHEM",
-      events: ["EXCEL for Chemical Engineers : Basics to Advanced"],
-    },
-    ,
-    {
-      name: "MECH",
-      events: [
-        "Augmented Reality for 4.0 (Online)",
-        "Robotics Simulation (Online)",
-        "Hands on training in Fusion 360 (Offline)",
-      ],
-    },
-    {
-      name: "MBA",
-      events: [
-        "Goal setting and creative thinking",
-        "Design-Data-Digital-3D Model",
-      ],
-    },
-    {
-      name: "EEE",
-      events: [
-        "E-Vehicle ",
-        "Basics of Machine Learning using python",
-        "EV Battery Assembling using Lithium iron phosphate cells",
-      ],
-    },
+
+    // {
+    //   name: "BME",
+    //   events: [
+    //     "3D modelling in CT & MRI scans on Navigation based surgery",
+    //     "Biomechanics & LabVIEW for Healthcare Applications",
+    //   ],
+    // },
+    // {
+    //   name: "CIVIL",
+    //   events: [
+    //     "Recent technological advancements in building designs using revit",
+    //     "4D Building Information Modelling for Project Management",
+    //     "5D BIM for Construction Industry",
+    //   ],
+    // },
+    // {
+    //   name: "CHEM",
+    //   events: ["EXCEL for Chemical Engineers : Basics to Advanced"],
+    // },
+    // ,
+    // {
+    //   name: "MECH",
+    //   events: [
+    //     "Augmented Reality for 4.0 (Online)",
+    //     "Robotics Simulation (Online)",
+    //     "Hands on training in Fusion 360 (Offline)",
+    //   ],
+    // },
+    // {
+    //   name: "MBA",
+    //   events: [
+    //     "Goal setting and creative thinking",
+    //     "Design-Data-Digital-3D Model",
+    //   ],
+    // },
+    // {
+    //   name: "EEE",
+    //   events: [
+    //     "E-Vehicle ",
+    //     "Basics of Machine Learning using python",
+    //     "EV Battery Assembling using Lithium iron phosphate cells",
+    //   ],
+    // },
   ];
 
   const test = [
@@ -462,8 +509,19 @@ const Form = () => {
           }}
         >
           <CssVarsProvider theme={theme} className="formsheet">
+            <div
+              style={{
+                fontSize: "10vw",
+                display: "flex",
+                justifyContent: "center",
+                height: "100vh",
+                width: "100%",
+              }}
+            >
+              Opening Soon!
+            </div>
             {/* <ThemeProvider theme={Theme}> */}
-            <form onSubmit={handlesubmit} style={{ marginInline: "auto" }}>
+            {/* <form onSubmit={handlesubmit} style={{ marginInline: "auto" }}>
               <Sheet
                 sx={{
                   width: "80vw",
@@ -480,25 +538,12 @@ const Form = () => {
                 variant="outlined"
                 className="formcontainer"
               >
-                <div
-                  style={{
-                    position: "sticky",
-                    top: "20px",
-                    width: "max-content",
-                    marginLeft: "auto",
-                    zIndex: "100000",
-                  }}
-                >
-                  Test
-                </div>
                 <div>
                   <Typography level="h4" component="h1">
                     <b>Register!</b>
                   </Typography>
                   <Typography level="body2">
-                    Register now to take part in events. <br></br>
-                    Registeration can also be done offline while attending the
-                    event!
+                    Register now to take part in events.
                   </Typography>
                 </div>
                 <Divider />
@@ -660,7 +705,7 @@ const Form = () => {
                 {/*<Divider sx={{ "--Divider-childPosition": `50%` }}>
                   Other Events
                 </Divider> */}
-                <Divider />
+            {/* <Divider />
 
                 <div
                   style={{
@@ -798,6 +843,23 @@ const Form = () => {
                       }}
                     >
                       {worktest.map((departw) => {
+                        const a = workName.map((data) => {
+                          if (data.name === departw.name) {
+                            return data.events.map((data) => {
+                              return data.name;
+                            });
+                          } else {
+                            return "";
+                          }
+                        });
+                        const b = a.filter((data) => {
+                          if (data !== undefined) {
+                            return data;
+                          }
+                        });
+
+                        // console.log('thidlqdwmle',departw.events)
+
                         return (
                           <FormControlM
                             style={{ margin: "10px", width: "30%" }}
@@ -805,7 +867,7 @@ const Form = () => {
                             <InputLabel>{departw.name}</InputLabel>
                             <SelectM
                               multiple
-                              value={workName[departw.name]}
+                              value={b[0]}
                               name={departw.name}
                               onChange={handleChangeTT}
                               input={<FilledInput label={departw.name} />}
@@ -824,9 +886,13 @@ const Form = () => {
                               )}
                             >
                               {departw.events.map((ev) => {
+                                console.log(ev);
                                 return (
-                                  <MenuItem key={ev} value={ev}>
-                                    {ev}
+                                  <MenuItem
+                                    key={ev.name}
+                                    value={{ name: ev.name, price: ev.price }}
+                                  >
+                                    {ev.name}
                                   </MenuItem>
                                 );
                               })}
@@ -867,7 +933,7 @@ const Form = () => {
                   type="submit"
                   value={load ? "Processing" : "Register"}
                   disabled={load}
-                /> */}
+                /> 
                 <Button
                   type="submit"
                   value={load ? "Processing" : "Register"}
@@ -877,7 +943,7 @@ const Form = () => {
                   Register
                 </Button>
               </Sheet>
-            </form>
+            </form> */}
           </CssVarsProvider>
         </div>
       )}
