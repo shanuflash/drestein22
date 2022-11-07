@@ -480,12 +480,25 @@ const Form = () => {
                 variant="outlined"
                 className="formcontainer"
               >
+                <div
+                  style={{
+                    position: "sticky",
+                    top: "20px",
+                    width: "max-content",
+                    marginLeft: "auto",
+                    zIndex: "100000",
+                  }}
+                >
+                  Test
+                </div>
                 <div>
                   <Typography level="h4" component="h1">
                     <b>Register!</b>
                   </Typography>
                   <Typography level="body2">
-                    Register now to take part in events.
+                    Register now to take part in events. <br></br>
+                    Registeration can also be done offline while attending the
+                    event!
                   </Typography>
                 </div>
                 <Divider />

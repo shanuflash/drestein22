@@ -74,7 +74,7 @@ function UserInfoCard({ data, Scanpage }) {
 
     await updateDoc(docRef, {
       cashPaid: e.target.checked,
-      AmountPaid: amount,
+      AmountPaid: AmountPaid + amount,
     }).then(() => {
       setload(false);
       toast.success("profile updated");
@@ -98,7 +98,7 @@ function UserInfoCard({ data, Scanpage }) {
 
     await updateDoc(docRef, {
       cashPaidForProject: e.target.checked,
-      AmountPaid: amount,
+      AmountPaid: AmountPaid + amount,
     }).then(() => {
       setload(false);
       toast.success("profile updated");
@@ -123,7 +123,7 @@ function UserInfoCard({ data, Scanpage }) {
 
     await updateDoc(docRef, {
       cashPaidForPaper: e.target.checked,
-      AmountPaid: amount,
+      AmountPaid: AmountPaid + amount,
     }).then(() => {
       setload(false);
       toast.success("profile updated");
@@ -151,7 +151,7 @@ function UserInfoCard({ data, Scanpage }) {
 
   return (
     <UserCard
-      paid={ DepartEvent? cashPaid :true}
+      paid={DepartEvent ? cashPaid : true}
       PaperPaid={PaperPresentation ? cashPaidForPaper : true}
       ProjectPaid={ProjectPresentation ? cashPaidForProject : true}
     >

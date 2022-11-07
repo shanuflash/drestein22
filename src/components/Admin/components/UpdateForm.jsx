@@ -48,7 +48,7 @@ export default function UpdateForm({
   AmountPaid,
   cashPaid,
   cashPaidForPaper,
-  cashPaidForProject
+  cashPaidForProject,
 }) {
   console.log(ProjectPresentation, PaperPresentation);
   const [open, setOpen] = React.useState(false);
@@ -63,9 +63,9 @@ export default function UpdateForm({
   const [eventName, setEventName] = React.useState(EventsRegistered);
   const [Amountpaid, setAmountpaid] = useState(AmountPaid);
 
-  const [DepPaid,setDepPaid] = useState(cashPaid)
-  const [paperPaid,setpaperPaid] = useState(cashPaidForPaper)
-  const [ProjectPaid,setProjectPaid] = useState(cashPaidForProject)
+  const [DepPaid, setDepPaid] = useState(cashPaid);
+  const [paperPaid, setpaperPaid] = useState(cashPaidForPaper);
+  const [ProjectPaid, setProjectPaid] = useState(cashPaidForProject);
 
   const prevProject = ProjectPresentation;
   const prePaper = PaperPresentation;
@@ -174,12 +174,10 @@ export default function UpdateForm({
       ProjectPresentation: Project,
       PaperPresentation: Paper,
       EventsRegistered: eventName,
-      AmountPaid:Amountpaid,
-      cashPaid:DepPaid,
-      cashPaidForPaper:paperPaid,
-      cashPaidForProject:ProjectPaid
-
-
+      AmountPaid: Amountpaid,
+      cashPaid: DepPaid,
+      cashPaidForPaper: paperPaid,
+      cashPaidForProject: ProjectPaid,
     }).then(() => {
       setload(false);
       toast.success("profile updated");
@@ -216,14 +214,10 @@ export default function UpdateForm({
                 onChange={(e) => {
                   if (Event === true) {
                     setPay(Pay - 150);
-                    if(cashPaid){
-                        setAmountpaid(pre=>pre-150)
-                        setDepPaid(false)
-                        
-                        
-
+                    if (cashPaid) {
+                      setAmountpaid((pre) => pre - 150);
+                      setDepPaid(false);
                     }
-
 
                     setEventName(EventsRegistered);
                   } else {
@@ -232,7 +226,7 @@ export default function UpdateForm({
                   setEvent(e.target.checked);
                 }}
               />
-{/* setWork(e.target.checked); */}
+              {/* setWork(e.target.checked); */}
 
               <Checkbox
                 color="primary"
@@ -241,21 +235,16 @@ export default function UpdateForm({
                 onChange={(e) => {
                   if (Paper) {
                     setPay(Pay - 200);
-                    if(cashPaid){
-                        setAmountpaid(pre=>pre-200)
-                        setDepPaid(false)
-                        
-                        
-
+                    if (cashPaid) {
+                      setAmountpaid((pre) => pre - 200);
+                      setDepPaid(false);
                     }
-
 
                     setEventName(EventsRegistered);
                   } else {
                     setPay(Pay + 200);
                   }
                   setEvent(e.target.checked);
-
                 }}
               />
               <Checkbox
@@ -263,16 +252,13 @@ export default function UpdateForm({
                 size="lg"
                 label="Paper Presentation"
                 defaultChecked={Paper}
-                
                 onChange={(e) => {
                   if (Paper) {
                     setPay(Pay - 250);
 
-                      if(cashPaidForPaper){
-                        setAmountpaid(pre=>pre-250)
-                        setpaperPaid(false)
-                        
-
+                    if (cashPaidForPaper) {
+                      setAmountpaid((pre) => pre - 250);
+                      setpaperPaid(false);
                     }
                   } else {
                     setPay(Pay + 250);
@@ -288,13 +274,10 @@ export default function UpdateForm({
                 onChange={(e) => {
                   if (Project) {
                     setPay(Pay - 200);
-                    if(cashPaidForProject){
-                      setAmountpaid(pre=>pre-200)
-                      setProjectPaid(false)
-                      
-
-                  }
-
+                    if (cashPaidForProject) {
+                      setAmountpaid((pre) => pre - 200);
+                      setProjectPaid(false);
+                    }
                   } else {
                     setPay(Pay + 200);
                   }
