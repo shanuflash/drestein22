@@ -54,13 +54,13 @@ function Departments() {
       <DepartmentContainer>
         {comobj.map((data, i) => {
           console.log(data);
-          if (data.title === "Paper Presentation") {
-            return (
-              <a href="drestein.pdf" download="drestein.pdf">
-                <SpacialEventsCard key={i} {...data} />
-              </a>
-            );
-          }
+          // if (data.title === "Paper Presentation") {
+          //   return (
+          //     <a href="drestein.pdf" download="drestein.pdf">
+          //       <SpacialEventsCard key={i} {...data} />
+          //     </a>
+          //   );
+          // }
           return <SpacialEventsCard key={i} {...data} />;
         })}
       </DepartmentContainer>
