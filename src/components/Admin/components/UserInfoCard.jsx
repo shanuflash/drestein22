@@ -151,7 +151,7 @@ function UserInfoCard({ data, Scanpage }) {
 
   return (
     <UserCard
-      paid={cashPaid ? cashPaid : true}
+      paid={ DepartEvent? cashPaid :true}
       PaperPaid={PaperPresentation ? cashPaidForPaper : true}
       ProjectPaid={ProjectPresentation ? cashPaidForProject : true}
     >
@@ -262,6 +262,9 @@ function UserInfoCard({ data, Scanpage }) {
               CashToBePaid={CashToBePaid}
               id={id}
               AmountPaid={AmountPaid}
+              cashPaid={cashPaid}
+              cashPaidForPaper={cashPaidForPaper}
+              cashPaidForProject={cashPaidForProject}
             />
           </div>
         </Stack>
