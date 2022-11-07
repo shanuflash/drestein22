@@ -74,7 +74,7 @@ function UserInfoCard({ data, Scanpage }) {
 
     await updateDoc(docRef, {
       cashPaid: e.target.checked,
-      AmountPaid: AmountPaid + amount,
+      AmountPaid: amount,
     }).then(() => {
       setload(false);
       toast.success("profile updated");
@@ -91,14 +91,14 @@ function UserInfoCard({ data, Scanpage }) {
     console.log(e.target.checked);
     let amount = 0;
     if (e.target.checked) {
-      amount = AmountPaid + 200;
+      amount = AmountPaid + 250;
     } else {
-      amount = AmountPaid - 200;
+      amount = AmountPaid - 250;
     }
 
     await updateDoc(docRef, {
       cashPaidForProject: e.target.checked,
-      AmountPaid: AmountPaid + amount,
+      AmountPaid: amount,
     }).then(() => {
       setload(false);
       toast.success("profile updated");
@@ -116,14 +116,14 @@ function UserInfoCard({ data, Scanpage }) {
     let amount = 0;
 
     if (e.target.checked) {
-      amount = AmountPaid + 250;
+      amount = AmountPaid + 200;
     } else {
-      amount = AmountPaid - 250;
+      amount = AmountPaid - 200;
     }
 
     await updateDoc(docRef, {
       cashPaidForPaper: e.target.checked,
-      AmountPaid: AmountPaid + amount,
+      AmountPaid: amount,
     }).then(() => {
       setload(false);
       toast.success("profile updated");
@@ -338,7 +338,7 @@ function UserInfoCard({ data, Scanpage }) {
               alignItems: "center",
             }}
           >
-            <h3>PAPER PRESENTATION : 250 ₹</h3>
+            <h3>PAPER PRESENTATION : 200 ₹</h3>
             <div>
               <Switch
                 defaultChecked={cashPaidForPaper}
@@ -364,7 +364,7 @@ function UserInfoCard({ data, Scanpage }) {
               alignItems: "center",
             }}
           >
-            <h3>PROJECT PRESENTATION : 200 ₹</h3>
+            <h3>PROJECT PRESENTATION : 250 ₹</h3>
             <div>
               <Switch
                 defaultChecked={cashPaidForProject}

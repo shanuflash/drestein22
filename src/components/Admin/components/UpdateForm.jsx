@@ -213,13 +213,13 @@ export default function UpdateForm({
                 defaultChecked={DepartEvent}
                 onChange={(e) => {
                   if (Event === true) {
+                    setAmountpaid(0);
                     setPay(Pay - 150);
-                    if (cashPaid) {
-                      setAmountpaid((pre) => pre - 150);
-                      setDepPaid(false);
-                    }
 
                     setEventName(EventsRegistered);
+                    setDepPaid(false);
+                    setpaperPaid(false);
+                    setProjectPaid(false);
                   } else {
                     setPay(Pay + 150);
                   }
@@ -233,18 +233,17 @@ export default function UpdateForm({
                 size="lg"
                 label="Workshops"
                 onChange={(e) => {
-                  if (Paper) {
-                    setPay(Pay - 200);
-                    if (cashPaid) {
-                      setAmountpaid((pre) => pre - 200);
-                      setDepPaid(false);
-                    }
-
+                  if (Work === true) {
+                    setPay(Pay - 150);
+                    setAmountpaid(0);
                     setEventName(EventsRegistered);
+                    setDepPaid(false);
+                    setpaperPaid(false);
+                    setProjectPaid(false);
                   } else {
-                    setPay(Pay + 200);
+                    setPay(Pay + 150);
                   }
-                  setEvent(e.target.checked);
+                  setWork(e.target.checked);
                 }}
               />
               <Checkbox
@@ -253,15 +252,16 @@ export default function UpdateForm({
                 label="Paper Presentation"
                 defaultChecked={Paper}
                 onChange={(e) => {
-                  if (Paper) {
-                    setPay(Pay - 250);
+                  if (Paper === true) {
+                    setPay(Pay - 200);
 
-                    if (cashPaidForPaper) {
-                      setAmountpaid((pre) => pre - 250);
-                      setpaperPaid(false);
-                    }
+                    setAmountpaid(0);
+                    setEventName(EventsRegistered);
+                    setDepPaid(false);
+                    setpaperPaid(false);
+                    setProjectPaid(false);
                   } else {
-                    setPay(Pay + 250);
+                    setPay(Pay + 200);
                   }
                   setPaper(e.target.checked);
                 }}
@@ -272,14 +272,15 @@ export default function UpdateForm({
                 label="Project Display"
                 defaultChecked={Project}
                 onChange={(e) => {
-                  if (Project) {
-                    setPay(Pay - 200);
-                    if (cashPaidForProject) {
-                      setAmountpaid((pre) => pre - 200);
-                      setProjectPaid(false);
-                    }
+                  if (Project === true) {
+                    setPay(Pay - 250);
+                    setAmountpaid(0);
+                    setEventName(EventsRegistered);
+                    setDepPaid(false);
+                    setpaperPaid(false);
+                    setProjectPaid(false);
                   } else {
-                    setPay(Pay + 200);
+                    setPay(Pay + 250);
                   }
                   setProject(e.target.checked);
                 }}

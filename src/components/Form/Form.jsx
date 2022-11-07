@@ -755,9 +755,9 @@ const Form = () => {
                     label="Paper Presentation"
                     onChange={(e) => {
                       if (Paper === true) {
-                        setPay(Pay - 250);
+                        setPay(Pay - 200);
                       } else {
-                        setPay(Pay + 250);
+                        setPay(Pay + 200);
                       }
                       setPaper(e.target.checked);
                     }}
@@ -769,9 +769,9 @@ const Form = () => {
                     label="Project Display"
                     onChange={(e) => {
                       if (Project === true) {
-                        setPay(Pay - 200);
+                        setPay(Pay - 250);
                       } else {
-                        setPay(Pay + 200);
+                        setPay(Pay + 250);
                       }
                       setProject(e.target.checked);
                     }}
