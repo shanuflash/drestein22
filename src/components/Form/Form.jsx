@@ -14,7 +14,6 @@ import Sheet from "@mui/joy/Sheet";
 import Typography from "@mui/joy/Typography";
 import TextField from "@mui/joy/TextField";
 import Button from "@mui/joy/Button";
-import { useTheme } from "@mui/material/styles";
 import Box from "@mui/material/Box";
 import FormControl from "@mui/joy/FormControl";
 import FormControlM from "@mui/material/FormControl";
@@ -23,12 +22,9 @@ import Option from "@mui/joy/Option";
 import Divider from "@mui/joy/Divider";
 import Select from "@mui/joy/Select";
 import SelectM from "@mui/material/Select";
-import ListItemText from "@mui/material/ListItemText";
-import List from "@mui/joy/List";
-import ListItem from "@mui/joy/ListItem";
 import Checkbox from "@mui/joy/Checkbox";
 import Alert from "@mui/joy/Alert";
-import { isEmpty, uuidv4 } from "@firebase/util";
+import { uuidv4 } from "@firebase/util";
 import { toast } from "react-toastify";
 import { doc } from "firebase/firestore";
 import { db } from "../../configs/Firebase.config";
@@ -40,7 +36,7 @@ import FilledInput from "@mui/material/OutlinedInput";
 import InputLabel from "@mui/material/InputLabel";
 import MenuItem from "@mui/material/MenuItem";
 import IdCardUpload from "./IdCardUpload";
-
+import Footer from "../Footer/Footer";
 import {
   getStorage,
   ref,
@@ -521,21 +517,23 @@ const Form = () => {
             >
               Opening Soon!
             </div>
-            {/* <ThemeProvider theme={Theme}> */}
+
             {/* <form onSubmit={handlesubmit} style={{ marginInline: "auto" }}>
               <Sheet
                 sx={{
                   width: "80vw",
                   mx: 2,
-                  my: 4,
-                  py: 3,
+                  my: 2,
+                  py: 2,
                   px: 2,
                   display: "flex",
                   flexDirection: "column",
                   gap: 2,
                   borderRadius: "sm",
                   boxShadow: "md",
+                  height: "100%",
                 }}
+                style={{ backgroundColor: "rgb(0 0 29 / 60%)" }}
                 variant="outlined"
                 className="formcontainer"
               >
@@ -577,7 +575,7 @@ const Form = () => {
                   value={formdata.college}
                   onChange={handleChange}
                   type="text"
-                  placeholder="Your college name..."
+                  placeholder="Cllege name..."
                   label="College Name"
                 />
                 <div className="yearno">
@@ -587,8 +585,8 @@ const Form = () => {
                     value={formdata.regno}
                     onChange={handleChange}
                     type="number"
-                    placeholder="Your roll number..."
-                    label="Roll Number"
+                    placeholder="Register number..."
+                    label="Register Number"
                     sx={{ width: "48%" }}
                   />
                   <FormControl
@@ -601,7 +599,7 @@ const Form = () => {
                       id="year"
                       required
                       data-name="year"
-                      placeholder="Select year..."
+                      placeholder="Year..."
                       value={formdata.year}
                       onChange={handleChangeForSelect}
                     >
@@ -637,7 +635,7 @@ const Form = () => {
                       id="dept"
                       required
                       name="dept"
-                      placeholder="Select department..."
+                      placeholder="Department..."
                       value={formdata.dept}
                       onChange={handleChangeForSelect}
                     >
@@ -665,7 +663,7 @@ const Form = () => {
                       id="gender"
                       required
                       name="gender"
-                      placeholder="Select gender..."
+                      placeholder="Gender..."
                       value={formdata.gender}
                       onChange={handleChangeForSelect}
                     >
@@ -703,10 +701,6 @@ const Form = () => {
                   placeholder="johndoe@email.com"
                   label="Email"
                 />
-                {/*<Divider sx={{ "--Divider-childPosition": `50%` }}>
-                  Other Events
-                </Divider> */}
-            {/* <Divider />
 
                 <div
                   style={{
@@ -714,8 +708,10 @@ const Form = () => {
                     justifyContent: "space-evenly",
                     marginTop: "1rem",
                   }}
+                  className="formcheck"
                 >
                   <Checkbox
+                    className="check"
                     color="primary"
                     size="lg"
                     label="Events"
@@ -744,16 +740,16 @@ const Form = () => {
                     }}
                   />
                   <Checkbox
+                    className="check"
                     color="primary"
                     size="lg"
                     label="Workshops"
                     onChange={(e) => {
-                      // setPay(Pay + 150);
-
                       setWork(e.target.checked);
                     }}
                   />
                   <Checkbox
+                    className="check"
                     color="primary"
                     size="lg"
                     label="Paper Presentation"
@@ -767,6 +763,7 @@ const Form = () => {
                     }}
                   />
                   <Checkbox
+                    className="check"
                     color="primary"
                     size="lg"
                     label="Project Display"
@@ -795,8 +792,8 @@ const Form = () => {
                       {test.map((depart) => {
                         return (
                           <FormControlM
-                            style={{ margin: "10px", width: "30%" }}
-                            // sx={{ m: 1, width: "30%" }}
+                            className="sel"
+                            style={{ margin: "10px" }}
                           >
                             <InputLabel>{depart.name}</InputLabel>
                             <SelectM
@@ -859,8 +856,6 @@ const Form = () => {
                           }
                         });
 
-                        // console.log('thidlqdwmle',departw.events)
-
                         return (
                           <FormControlM
                             style={{ margin: "10px", width: "30%" }}
@@ -915,7 +910,6 @@ const Form = () => {
                       align: "center",
                       justifyContent: "center",
                     }}
-                    // style={{}}
                   >
                     Registeration Fee of {Pay} has to be paid on the event date.
                   </Alert>
@@ -929,12 +923,6 @@ const Form = () => {
                     processing your data don't reload the page
                   </Alert>
                 )}
-                {/* <input
-                  style={{ width: "20vw", align: "center" }}
-                  type="submit"
-                  value={load ? "Processing" : "Register"}
-                  disabled={load}
-                /> 
                 <Button
                   type="submit"
                   value={load ? "Processing" : "Register"}
@@ -948,6 +936,8 @@ const Form = () => {
           </CssVarsProvider>
         </div>
       )}
+      <Divider style={{ marginTop: "2rem" }} />
+      <Footer />
     </div>
   );
 };

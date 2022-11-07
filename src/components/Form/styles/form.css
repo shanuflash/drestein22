@@ -6,11 +6,12 @@
 
 }*/
 
+* {
+  --joy-palette-background-surface: #000010;
+}
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
 
 .headcontainer {
-  background-color: black;
-
   --joy-fontFamily-body: "Montserrat", sans-serif;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
@@ -48,9 +49,21 @@ input::placeholder {
 .loginimage {
   width: 40%;
 }
+.sel {
+  width: 30%;
+}
 
 @media screen and (max-width: 600px) {
   .loginimage {
     display: none;
+  }
+  .formcheck {
+    flex-direction: column;
+  }
+  .check {
+    margin: 0.5rem;
+  }
+  .sel {
+    width: 100%;
   }
 }

@@ -2,6 +2,9 @@ import React from "react";
 import "./footer.scss";
 import styled from "styled-components";
 import dresteinLogo from "../../assets/dresteinLogo.svg";
+import Avatar from "@mui/joy/Avatar";
+import { Link } from "react-router-dom";
+import Chip from "@mui/joy/Chip";
 import {
   FaFacebook,
   FaTwitter,
@@ -73,21 +76,86 @@ const Footer = () => {
         </div>
         <div className="block">
           <h4 className="heading">CO-ORDINATORS</h4>
+
+          <Chip
+            size="lg"
+            style={{ backgroundColor: "transparent" }}
+            startDecorator={
+              <Avatar size="sm" src={`/static/images/avatar/1.jpg`} />
+            }
+          >
+            Dr. K. Suresh Kumar
+          </Chip>
+          <Chip
+            size="lg"
+            style={{ backgroundColor: "transparent" }}
+            startDecorator={
+              <Avatar size="sm" src={`/static/images/avatar/1.jpg`} />
+            }
+          >
+            Dr. N. Raja Rajeshwari
+          </Chip>
+
           <h4
             className="heading"
             style={{ marginTop: "2rem", marginBottom: "1rem" }}
           >
             WEBSITE CO-ORDINATORS
           </h4>
+          <Chip
+            size="md"
+            style={{ backgroundColor: "transparent" }}
+            startDecorator={
+              <Avatar size="sm" src={`/static/images/avatar/1.jpg`} />
+            }
+          >
+            Shanu S
+          </Chip>
+          <Chip
+            size="md"
+            style={{ backgroundColor: "transparent" }}
+            startDecorator={
+              <Avatar size="sm" src={`/static/images/avatar/1.jpg`} />
+            }
+          >
+            Bharath S
+          </Chip>
+          <Chip
+            size="md"
+            style={{ backgroundColor: "transparent" }}
+            startDecorator={
+              <Avatar size="sm" src={`/static/images/avatar/1.jpg`} />
+            }
+          >
+            Gokul Nath
+          </Chip>
+          <Chip
+            size="md"
+            style={{ backgroundColor: "transparent" }}
+            startDecorator={
+              <Avatar size="sm" src={`/static/images/avatar/1.jpg`} />
+            }
+          >
+            Sugan
+          </Chip>
         </div>
         <div className="block">
           <h4 className="heading">USEFUL LINKS</h4>
-          <div className="links">Home</div>
-          <div className="links">About us</div>
-          <div className="links">Services</div>
-          <div className="links">Terms and service</div>
-          <div className="links">Privacy Policy</div>
-
+          <a href="#" className="links">
+            Home
+          </a>{" "}
+          <a href="#Departments" className="links">
+            Departments
+          </a>
+          <Link to="/form" className="links">
+            Register
+          </Link>
+          <Link to="/form" className="links">
+            Events
+          </Link>
+          {/* <a href="#" className="links">
+            Privacy Policy
+          </a> */}
           <h4
             className="heading"
             style={{ marginTop: "2rem", marginBottom: "1rem" }}

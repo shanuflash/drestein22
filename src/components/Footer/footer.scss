@@ -16,13 +16,18 @@
       flex-direction: column;
     }
     .block {
+      display: flex;
+      flex-direction: column;
+
       flex: 1 0 0;
       .heading {
         margin-bottom: 1.5rem;
       }
 
       .links {
-        margin: 0.8rem 0;
+        margin: 0.4rem 0;
+        text-decoration: none;
+        color: white;
       }
     }
   }
@@ -56,7 +61,7 @@
 
   .gmap_canvas {
     overflow: hidden;
-    background: none !important;
+    // background: none !important;
     width: 100%;
     height: 300px;
   }
