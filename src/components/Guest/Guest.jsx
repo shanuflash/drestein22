@@ -104,7 +104,7 @@ const Test = styled.div`
 `;
 
 const Test2 = styled.div`
-  font-size: 2vw;
+  font-size: 2.9vw;
 `;
 
 function Guest() {
@@ -142,8 +142,8 @@ function Guest() {
   return (
     <GuestHead>
       <Test>
-        Registeration fee: ₹ 150
-        <Test2>Participate in any event with a single payment!</Test2>
+        Prizes worth upto 5 Lakhs
+        <Test2>Participate in any event with a single payment*</Test2>
       </Test>
       <GuestTitle
         as={motion.div}

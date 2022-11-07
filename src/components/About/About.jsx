@@ -68,11 +68,12 @@ function About() {
   };
 
   const List = styled.li`
+    font-size: 0.75em;
     padding: 10px;
   `;
 
   const Descard = styled.div`
-    font-size: 0.9em;
+    font-size: 0.75em;
     background-color: rgba(225, 225, 225, 0.7);
     color: black;
     border-radius: 1rem;
