@@ -858,7 +858,8 @@ const Form = () => {
 
                         return (
                           <FormControlM
-                            style={{ margin: "10px", width: "30%" }}
+                            className="sel"
+                            style={{ margin: "10px" }}
                           >
                             <InputLabel>{departw.name}</InputLabel>
                             <SelectM
