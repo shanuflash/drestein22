@@ -113,7 +113,7 @@ export const comobj = [
   {
     id: "#paper",
     title: "Paper Presentation",
-    img: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+    img: "https://media.istockphoto.com/id/1226991657/photo/business-forum-economics-conference-stage-professional-speaker-concludes-his-report-with-a.jpg?s=612x612&w=0&k=20&c=4m_stQ0N1_FlHiMiEXW6NbbLhEPTSbAnFHfBfzG_ipY=",
     des: "test",
     color: "#37c0ff",
     bgtext: "Paper",
@@ -122,7 +122,7 @@ export const comobj = [
   {
     id: "#project",
     title: "Project Display",
-    img: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+    img: "https://culture.ec.europa.eu/sites/default/files/styles/eac_ratio_16_9_large/public/2022-03/ce_priority2_CreativeLenses.png?h=9ce74dc1&itok=jjs2DArg",
     des: "test",
     color: "#ff3b41",
     bgtext: "Proj",
