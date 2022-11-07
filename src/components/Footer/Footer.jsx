@@ -67,10 +67,8 @@ const Footer = () => {
             </EventLogo>
           </LogoHead>
           <div className="desc">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
-            accusantium earum qui deleniti consectetur ipsa quia quam laborum
-            sed, magni repellat, eligendi maxime nemo, aut eum officiis voluptas
-            esse dolore?
+            13<sup>th</sup> National level inter collegiate technical and
+            management fest
           </div>
         </div>
         <div className="block">

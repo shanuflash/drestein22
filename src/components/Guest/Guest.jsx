@@ -110,19 +110,9 @@ const Test2 = styled.div`
 function Guest() {
   const Guests = [
     {
-      name: "Elon Musk",
-      desc: "Founder: PayPal SpaceX Zip2",
-      src: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Elon_Musk_Royal_Society_%28crop2%29.jpg/1200px-Elon_Musk_Royal_Society_%28crop2%29.jpg",
-    },
-    {
-      name: "Mark Zuckerberg",
-      desc: "Chief Executive Officer of Facebook",
-      src: "https://upload.wikimedia.org/wikipedia/commons/1/18/Mark_Zuckerberg_F8_2019_Keynote_%2832830578717%29_%28cropped%29.jpg",
-    },
-    {
-      name: "Sundar Pichai",
-      desc: "Chief Executive Officer of Google",
-      src: "https://api.time.com/wp-content/uploads/2020/09/time-100-Sundar-Pichai.jpg",
+      name: "To be announced",
+      desc: "",
+      src: "https://t3.ftcdn.net/jpg/00/64/67/80/360_F_64678017_zUpiZFjj04cnLri7oADnyMH0XBYyQghG.jpg",
     },
   ];
 
