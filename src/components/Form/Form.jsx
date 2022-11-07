@@ -516,6 +516,7 @@ const Form = () => {
                 justifyContent: "center",
                 height: "100vh",
                 width: "100%",
+                alignItems: "center",
               }}
             >
               Opening Soon!
