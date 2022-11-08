@@ -779,7 +779,7 @@ export const EventDetails = [
   },
   {
     id: "aids",
-    title: "Artificial Intelligence and Data Science",
+    title: "Artificial Intelligence",
     eventslist: [
       {
         name: "Code and Debug ",
@@ -802,7 +802,7 @@ export const EventDetails = [
 
         tag: "EVENT",
         color: "0, 1, 38",
-        logo: "/EventsAssets/aids1.png",
+        logo: "/EventsAssets/ai1.png",
         staff: [
           {
             name: "Dr.Aswini Jayaraman ",
@@ -850,7 +850,7 @@ export const EventDetails = [
           "They are proposed to questions regarding their plans where the teams have to come up with apt ideas to solve them .Top 3 teams are assessed by judges based on how they can handle further situations after idea building and budgeting",
         tag: "EVENT",
         color: "0, 1, 38",
-        logo: "/EventsAssets/aids2.png",
+        logo: "/EventsAssets/ai2.png",
         staff: [
           {
             name: "Ms. Surya S ",
@@ -899,7 +899,7 @@ export const EventDetails = [
 
         tag: "EVENT",
         color: "0, 1, 38",
-        logo: "/EventsAssets/aids3.png",
+        logo: "/EventsAssets/ai3.png",
         staff: [
           {
             name: "Mr.Sridhar S",
@@ -959,7 +959,7 @@ export const EventDetails = [
         tag: "EVENT",
         color: "0, 1, 38",
 
-        logo: "/EventsAssets/aids4.png",
+        logo: "/EventsAssets/ai4.png",
         staff: [
           {
             name: "Ms. Varalakshmi J  ",
@@ -1006,7 +1006,7 @@ export const EventDetails = [
           "-Two problem statement questions will be given with a time limit of 1hr.The participants can run the programs in the compiler and note down their analysis in the provided paper.Evaluation criteria: The team that takes less time to complete the given problem statements will be selected as the winner",
         tag: "EVENT",
         color: "0, 1, 38",
-        logo: "/EventsAssets/aids5.png",
+        logo: "/EventsAssets/ai5.png",
         staff: [
           {
             name: "Mr. Dhinesh Kumar K S  ",
@@ -2005,7 +2005,6 @@ export const EventDetails = [
               email: "srikanthkanagavalli@gmail.com  ",
             },
           ],
-          
         },
         day2: {
           date: "08/11/2022",
