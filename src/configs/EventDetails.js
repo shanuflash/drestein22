@@ -251,10 +251,10 @@ export const EventDetails = [
         name: "The Lost Code",
         tagline: "Code Treasure Hunt",
         date: "18 Nov 2022(FN)",
-        type: "Team",
+        type: "Team 2-3",
         venue: "TBA",
         time: "TBA",
-        members: "2",
+        members: "2-3",
         rules: "",
         round1title: "Aptitude and Quantitative puzzles/problems",
         round1:
@@ -264,7 +264,7 @@ export const EventDetails = [
           "Each team will be given chits with mismatched/jumbled codes and they have to rearrange it and obtain the correct code and result. The decrypted clues of the first round will reveal the idea that has to be coded in the second round. The first 20 teams which get the highest number of correct outputs in the assigned time will be qualified to the third round",
         round3title: "Clue Mining",
         round3:
-          "Based on the output of the second round, The teams have to perform file mining in the given git repository and dig through many folders and files to get snippets of algorithm to qualify to the final round.They need to arrange the algorithm in proper order.The first 5 teams to complete this round will qualify to the final round",
+          "Based on the output of the second round, The teams have to perform file mining in the given git repository and dig through many folders and files to get snippets of algorithm to qualify to the final round. They need to arrange the algorithm in proper order. The first 5 teams to complete this round will qualify to the final round",
         round4title: "Expect the Unexpected",
         round4:
           "Each team will have to code the program for the found algorithm in either C programming or Python language and the first team to complete the coding will be the winner of the event",
@@ -273,13 +273,13 @@ export const EventDetails = [
         logo: "/EventsAssets/cse1.png",
         staff: [
           {
-            name: "Dr.Sujatha",
+            name: "Dr. Sujatha",
             desig: "Professor",
             phone: 9789950535,
             email: "sujathae@saveetha.ac.in",
           },
           {
-            name: "Ms.P.Preethi",
+            name: "Ms. P. Preethi",
             desig: "Assistant Professor",
             phone: 8608721755,
             email: "ppreethi@saveetha.ac.in",
@@ -287,7 +287,7 @@ export const EventDetails = [
         ],
         student: [
           {
-            name: "Neha M A",
+            name: "Neha MA",
             year: "III",
             phone: 7305312546,
             email: "nehamanickam74@gmail.com",
