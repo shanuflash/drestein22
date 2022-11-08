@@ -27,6 +27,7 @@ const Modal = ({ open, setOpenModal }) => {
           className="close-btn"
           onClick={() => setOpenModal((prev) => !prev)}
         />
+        {/* if round 1 is existed then its a event. else its workshop: */}
         {eventObject.round1 ? (
           <>
             {eventObject.name ? (
@@ -163,7 +164,7 @@ const Modal = ({ open, setOpenModal }) => {
             ) : null}
             {eventObject.staff ? (
               <div className="faculty">
-                <h3>Facalty Co-ordinators:</h3>
+                <h3>Faculty Co-ordinators:</h3>
                 <ol>
                   {eventObject.staff?.map((each) => {
                     return (
@@ -201,24 +202,30 @@ const Modal = ({ open, setOpenModal }) => {
             ) : (
               <h1 className="title">Title not fetched from json</h1>
             )}
+
             {eventObject.day1 ? (
               <>
-                <h1 className="title">Day1</h1>
+                {eventObject.company ? ( <h4>Company Name : {eventObject.company}</h4>) : null}
+                <h1 className="title">Day 1:</h1>
+                {eventObject.day1.topic ? (
+                  <p className="desc"><span className="topic">Topic: </span>{eventObject.day1.topic}</p>
+                ) : (
+                  null)}
                 <div className="grid">
                   <div className="item">
-                    <span>Type</span>
+                    <span>Mode</span>
                     <IoIosPeople size={32} />
-                    <span>{eventObject.type}</span>
+                    <span>{eventObject.day1?.mode}</span>
                   </div>
                   <div className="item">
                     <span>Venue</span>
                     <TiLocation size={32} />
-                    <span>{eventObject.venue}</span>
+                    <span>{eventObject.day1?.venue}</span>
                   </div>
                   <div className="item">
                     <span>Timings</span>
                     <FcAlarmClock size={32} />
-                    <span>{eventObject.time}</span>
+                    <span>{eventObject.day1?.time}</span>
                   </div>
                   <div
                     style={{
@@ -231,18 +238,153 @@ const Modal = ({ open, setOpenModal }) => {
                         width: "100%",
                         borderRadius: "0.4rem",
                       }}
-                      src={`${eventObject.logo}`}
-                      // src={test}
+                      src={`${eventObject.day1.logo}`}
                       alt="Logo"
                     />
                   </div>
                 </div>
               </>
             ) : null}
-            
+            {eventObject.day1.resource ? (
+              <div className="faculty">
+                <h3>Resource Person:</h3>
+                <ol>
+                  {eventObject.day1.resource?.map((each) => {
+                    return (
+                      <li>
+                        <span>{each.name}</span> {`(${each.phone})`} <br /> {`${each.desig}`}
+                      </li>
+                    );
+                  })}
+                </ol>
+              </div>
+            ) : (
+              "no resource allocated"
+            )}
+            {eventObject.day1.staff ? (
+              <div className="faculty">
+                <h3>Faculty Co-ordinators:</h3>
+                <ol>
+                  {eventObject.day1.staff?.map((each) => {
+                    return (
+                      <li>
+                        <span>{each.name}</span> {`(${each.phone})`}
+                      </li>
+                    );
+                  })}
+                </ol>
+              </div>
+            ) : (
+              "no staff allocated"
+            )}
+            {eventObject.day1.student ? (
+              <div className="student">
+                <h3>Student Co-ordinators:</h3>
+                <ol>
+                  {eventObject.day1.student?.map((each) => {
+                    return (
+                      <li>
+                        <span>{each.name}</span> {`(${each.phone})`}
+                      </li>
+                    );
+                  })}
+                </ol>
+              </div>
+            ) : (
+              "no student allocated"
+            )}
+            {eventObject.day2 ? (
+              <>
+                <h1 className="title">Day 2:</h1>
+                {eventObject.day2.topic ? (
+                  <p className="desc"><span className="topic">Topic: </span>{eventObject.day2.topic}</p>
+                ) : (
+                  null)}
+                <div className="grid">
+                  <div className="item">
+                    <span>Type</span>
+                    <IoIosPeople size={32} />
+                    <span>{eventObject.day2?.type}</span>
+                  </div>
+                  <div className="item">
+                    <span>Venue</span>
+                    <TiLocation size={32} />
+                    <span>{eventObject.day2?.venue}</span>
+                  </div>
+                  <div className="item">
+                    <span>Timings</span>
+                    <FcAlarmClock size={32} />
+                    <span>{eventObject.day2?.time}</span>
+                  </div>
+                  <div
+                    style={{
+                      padding: 0,
+                    }}
+                    className="item"
+                  >
+                    <img
+                      style={{
+                        width: "100%",
+                        borderRadius: "0.4rem",
+                      }}
+                      src={`${eventObject.day2.logo}`}
+                      alt="Logo"
+                    />
+                  </div>
+                </div>
+                {eventObject.day2?.resource ? (
+                  <div className="faculty">
+                    <h3>Resource Person:</h3>
+                    <ol>
+                      {eventObject.day2.resource?.map((each) => {
+                        return (
+                          <li>
+                            <span>{each.name}</span> {`(${each.phone})`} <br /> {`${each.desig}`}
+                          </li>
+                        );
+                      })}
+                    </ol>
+                  </div>
+                ) : (
+                  "no resource allocated"
+                )}
+                {eventObject.day2.staff ? (
+                  <div className="faculty">
+                    <h3>Faculty Co-ordinators:</h3>
+                    <ol>
+                      {eventObject.day2.staff?.map((each) => {
+                        return (
+                          <li>
+                            <span>{each.name}</span> {`(${each.phone})`}
+                          </li>
+                        );
+                      })}
+                    </ol>
+                  </div>
+                ) : (
+                  "no staff allocated"
+                )}
+                {eventObject.day2.student ? (
+                  <div className="student">
+                    <h3>Student Co-ordinators:</h3>
+                    <ol>
+                      {eventObject.day2.student?.map((each) => {
+                        return (
+                          <li>
+                            <span>{each.name}</span> {`(${each.phone})`}
+                          </li>
+                        );
+                      })}
+                    </ol>
+                  </div>
+                ) : (
+                  "no student allocated"
+                )}
+              </>
+            ) : null}
+
           </>
         )}
-
         {/* <Link style={{ textDecoration: "none" }} to="/form">
           <div className="btn">
             <RegisterBtn />
