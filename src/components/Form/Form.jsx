@@ -393,6 +393,18 @@ const Form = () => {
           }}
         >
           <CssVarsProvider theme={theme} className="formsheet">
+            <div
+              style={{
+                fontSize: "10vw",
+                display: "flex",
+                justifyContent: "center",
+                height: "100vh",
+                width: "100%",
+                alignItems: "center",
+              }}
+            >
+              Opening Soon!
+            </div>
             {/* <form onSubmit={handlesubmit} style={{ marginInline: "auto" }}>
               <Sheet
                 sx={{
