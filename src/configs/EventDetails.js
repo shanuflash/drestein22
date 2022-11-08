@@ -693,7 +693,7 @@ export const EventDetails = [
     workshopslist: [
       {
         name: "FIELD DEMONSTRATION OF DRONE SPRAYER  ",
-        logo: "agriw1.png",
+        logo: "/EventsAssets/agriw1.png",
         tag: "WORKSHOP",
         color: "0, 70, 90",
 
@@ -735,7 +735,7 @@ export const EventDetails = [
       },
       {
         name: "ORGANIC FARMING   ",
-        logo: "agriw1.png",
+        logo: "/EventsAssets/agriw1.png",
         tag: "WORKSHOP",
         color: "0, 70, 90",
 
@@ -1309,7 +1309,7 @@ export const EventDetails = [
     workshopslist: [
       {
         name: "3D modelling in CT & MRI scans on Navigation based surgery  ",
-        logo: "biow1.png",
+        logo: "/EventsAssets/biow1.png",
         tag: "WORKSHOP",
         color: "0, 70, 90",
 
@@ -1364,7 +1364,7 @@ export const EventDetails = [
       },
       {
         name: "Biomechanics & LabVIEW for Healthcare Applications ",
-        logo: "biow1.png",
+        logo: "/EventsAssets/biow1.png",
         tag: "WORKSHOP",
         color: "0, 70, 90",
         company: "Prashan Medical Technologies",
@@ -1628,7 +1628,7 @@ export const EventDetails = [
     workshopslist: [
       {
         name: "Recent technological advancements in building designs using revit",
-        logo: "civilw1.png",
+        logo: "/EventsAssets/civilw1.png",
         tag: "WORKSHOP",
         color: "0, 70, 90",
 
@@ -1665,7 +1665,7 @@ export const EventDetails = [
       },
       {
         name: "4D Building Information Modelling for Project Management ",
-        logo: "civilw2.png",
+        logo: "/EventsAssets/civilw2.png",
         tag: "WORKSHOP",
         color: "0, 70, 90",
         company: " Infinity PMC Solutions, Chennai",
@@ -1715,7 +1715,7 @@ export const EventDetails = [
       },
       {
         name: "5D BIM for Construction Industry",
-        logo: "civilw3.png",
+        logo: "/EventsAssets/civilw3.png",
         tag: "WORKSHOP",
         color: "0, 70, 90",
         company: " Infinity PMC Solutions, Chennai",
@@ -1953,7 +1953,7 @@ export const EventDetails = [
     workshopslist: [
       {
         name: "EXCEL for Chemical Engineers : Basics to Advanced",
-        logo: "chemw1.png",
+        logo: "/EventsAssets/chemw1.png",
         tag: "WORKSHOP",
         color: "0, 70, 90",
 
@@ -2412,7 +2412,7 @@ export const EventDetails = [
     workshopslist: [
       {
         name: "Augmented Reality for 4.0 (Online)",
-        logo: "mechw1.png",
+        logo: "/EventsAssets/mechw1.png",
         tag: "WORKSHOP",
         color: "0, 70, 90",
         company: "Ideazone",
@@ -2466,7 +2466,7 @@ export const EventDetails = [
       },
       {
         name: "Robotics Simulation (Online)",
-        logo: "mechw2.png",
+        logo: "/EventsAssets/mechw2.png",
         tag: "WORKSHOP",
         color: "0, 70, 90",
         company: " J&R industries on robotics",
@@ -2520,7 +2520,7 @@ export const EventDetails = [
       },
       {
         name: "Hands on training in Fusion 360(offline) ",
-        logo: "mechw3.png",
+        logo: "/EventsAssets/mechw3.png",
         tag: "WORKSHOP",
         color: "0, 70, 90",
         company: " Bessel Automation",
@@ -2808,7 +2808,7 @@ export const EventDetails = [
     workshopslist: [
       {
         name: "Goal setting and creative thinking",
-        logo: "mbaw1.png",
+        logo: "/EventsAssets/mbaw1.png",
         tag: "WORKSHOP",
         color: "0, 70, 90",
         mode: "TBA",
@@ -2845,7 +2845,7 @@ export const EventDetails = [
       },
       {
         name: "Design-Data-Digital-3D Model ",
-        logo: "mbaw2.png",
+        logo: "/EventsAssets/mbaw2.png",
         tag: "WORKSHOP",
         color: "0, 70, 90",
         mode: "TBA",
@@ -3071,7 +3071,7 @@ export const EventDetails = [
           "At the time of events a circuit name will be informed to for each team, Circuits ideas and  components will be provided . The team that shows the spectrum analysis (output)  first will be considered as the winner. (On a first-come, first-served basis.)  Total time for this event is 15 minutes. On the basis of time management and relevant explanation, participants will be selected. The winners will be declared on the basis of the shortest time period of completion of the task.Note:. No mobile phones are allowed during the participation of the event.   No discussion or sharing of answers among the participants .   If any malpractices are noticed, then the term will be disqualified from all the events",
         tag: "EVENT",
         color: "0, 1, 38",
-        logo: "mba1.png",
+        logo: "/EventsAssets/ece1.png",
         staff: [
           {
             name: "Ms. G Keerthiga  ",
@@ -3121,7 +3121,7 @@ export const EventDetails = [
           "The image of  external/ internal modules supported by  various development boards (Arduino,Raspberry Pi,ESP)  will be  displayed. participants need to identify the name of the module. Points will be awarded according to the weightage of the questions. winners will be selected based on scoring more points",
         tag: "EVENT",
         color: "0, 1, 38",
-        logo: "agri2.jpeg",
+        logo: "/EventsAssets/ece2.png",
         staff: [
           {
             name: "Dr.A.Saranya  ",
@@ -3170,7 +3170,7 @@ export const EventDetails = [
           "Each team has to pick  their questions from the question pool bowl. Selected circuits will be displayed for each team for 2 minutes .  Next 3 minutes will be given to reproduce ( implement) the circuit diagram using breadboard  and component, which will be provided.  Depending on the circuit's fulfillness ( correct component placed in correct position) terms will be forwarded to the next round",
         tag: "EVENT",
         color: "0, 1, 38",
-        logo: "agri3.jpeg",
+        logo: "/EventsAssets/ece3.png",
         staff: [
           {
             name: "Dr.S. kanagamalliga  ",
@@ -3221,7 +3221,7 @@ export const EventDetails = [
         tag: "EVENT",
         color: "0, 1, 38",
 
-        logo: "agri4.jpeg",
+        logo: "/EventsAssets/ece4.png",
         staff: [
           {
             name: "Ms.K Padma Priya  ",
@@ -3282,7 +3282,7 @@ export const EventDetails = [
           "The regulations of the semi finals  will be same here.After the completion of this round the winners will be selected according to the overall goals scored by the player from the beginning.(note: the goals scored by player will not be considered if the player has been eliminated). (note: the goals scored by player will not be considered if the player has been eliminated).(note: the goals scored by player will not be considered if the player has been eliminated)",
         tag: "EVENT",
         color: "0, 1, 38",
-        logo: "eee1.png",
+        logo: "/EventsAssets/eee1.png",
         staff: [
           {
             name: "Mrs.Hemalatha ",
@@ -3337,7 +3337,7 @@ export const EventDetails = [
           "Circuit bugging is one of the fine arts in electronics design. Circuitrix comes with an unleashing event to kindle your circuit knowledge.Each team will be given a Half-Completed Logic Circuit and its equation their task is to Verify the binary outputs. (Required Components and the data sheets will be provided). A team consists of 2 members. Note: Usage of electronic gadgets is not permitted. Teams will be disqualified if it is found to be under any act of malpractice",
         tag: "EVENT",
         color: "0, 1, 38",
-        logo: "eee2.png",
+        logo: "/EventsAssets/eee2.png",
         staff: [
           {
             name: "Dr.M.Ulagammai",
@@ -3398,7 +3398,7 @@ export const EventDetails = [
           "Observe the given images and give the answer.You have to find the common word in that set and find the answer.You will be provided with 30 seconds for each question.One should answer the question only once.The next set of question is more or the same WORD PUZZLE kind.We will give a word as a hint, you have to find best three words which suits the given hint inside the word puzzle.Questions can be 6x6 format or any size format.For each question time limit is 60 seconds.Note: No gadgets will be permitted,Interaction between teams aren’t allowed",
         tag: "EVENT",
         color: "0, 1, 38",
-        logo: "eee3.png",
+        logo: "/EventsAssets/eee3.png",
         staff: [
           {
             name: "Dr.Rajalingam ",
@@ -3453,7 +3453,7 @@ export const EventDetails = [
           "In this round, the complex circuit diagram will be given, the team should analyze the diagram and assemble it on the breadboard.Finally, the connection is checked by the coordinators, and the power supply is given to the circuit to check the final output.If the output is correct full points will be given to the team.In each team maximum of two participants is mandatory.Depending on the circuit design the points will be awarded.For the final output the total marks will be awarded.Maximum 30 points for this round.This round will be conducted for 30 minutes.Based on their performance moves on to the next round",
         tag: "EVENT",
         color: "0, 1, 38",
-        logo: "eee4.png",
+        logo: "/EventsAssets/eee4.png",
         staff: [
           {
             name: "Dr.R.Vinifa",
@@ -3505,7 +3505,7 @@ export const EventDetails = [
     workshopslist: [
       {
         name: "E-Vehicle ",
-        logo: "eeew1.png",
+        logo: "/EventsAssets/eeew1.png",
         tag: "WORKSHOP",
         color: "0, 70, 90",
 
@@ -3567,7 +3567,7 @@ export const EventDetails = [
       },
       {
         name: "Basics of Machine Learning using python ",
-        logo: "eeew2.png",
+        logo: "/EventsAssets/eeew2.png",
         tag: "WORKSHOP",
         color: "0, 70, 90",
 
@@ -3635,7 +3635,7 @@ export const EventDetails = [
       },
       {
         name: "EV Battery Assembling using Lithium iron phosphate cells ",
-        logo: "eeew3.png",
+        logo: "/EventsAssets/eeew3.png",
         tag: "WORKSHOP",
         color: "0, 70, 90",
 
