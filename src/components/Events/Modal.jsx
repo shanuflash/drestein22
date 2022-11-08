@@ -205,12 +205,16 @@ const Modal = ({ open, setOpenModal }) => {
 
             {eventObject.day1 ? (
               <>
-                {eventObject.company ? ( <h4>Company Name : {eventObject.company}</h4>) : null}
+                {eventObject.company ? (
+                  <h4>Company Name : {eventObject.company}</h4>
+                ) : null}
                 <h1 className="title">Day 1:</h1>
                 {eventObject.day1.topic ? (
-                  <p className="desc"><span className="topic">Topic: </span>{eventObject.day1.topic}</p>
-                ) : (
-                  null)}
+                  <p className="desc">
+                    <span className="topic">Topic: </span>
+                    {eventObject.day1.topic}
+                  </p>
+                ) : null}
                 <div className="grid">
                   <div className="item">
                     <span>Mode</span>
@@ -252,7 +256,8 @@ const Modal = ({ open, setOpenModal }) => {
                   {eventObject.day1.resource?.map((each) => {
                     return (
                       <li>
-                        <span>{each.name}</span> {`(${each.phone})`} <br /> {`${each.desig}`}
+                        <span>{each.name}</span> {`(${each.phone})`} <br />{" "}
+                        {`${each.desig}`}
                       </li>
                     );
                   })}
@@ -297,9 +302,11 @@ const Modal = ({ open, setOpenModal }) => {
               <>
                 <h1 className="title">Day 2:</h1>
                 {eventObject.day2.topic ? (
-                  <p className="desc"><span className="topic">Topic: </span>{eventObject.day2.topic}</p>
-                ) : (
-                  null)}
+                  <p className="desc">
+                    <span className="topic">Topic: </span>
+                    {eventObject.day2.topic}
+                  </p>
+                ) : null}
                 <div className="grid">
                   <div className="item">
                     <span>Type</span>
@@ -339,7 +346,8 @@ const Modal = ({ open, setOpenModal }) => {
                       {eventObject.day2.resource?.map((each) => {
                         return (
                           <li>
-                            <span>{each.name}</span> {`(${each.phone})`} <br /> {`${each.desig}`}
+                            <span>{each.name}</span> {`(${each.phone})`} <br />{" "}
+                            {`${each.desig}`}
                           </li>
                         );
                       })}

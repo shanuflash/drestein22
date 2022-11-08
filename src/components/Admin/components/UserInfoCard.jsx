@@ -83,9 +83,9 @@ function UserInfoCard({ data, Scanpage }) {
     });
     // console.log(e.target.checked)
   };
-  useEffect(()=>{
-console.log('this happend ',cashPaid)
-  },[cashPaid])
+  useEffect(() => {
+    console.log("this happend ", cashPaid);
+  }, [cashPaid]);
 
   const handleChangeforProject = async (e, id, AmountPaid) => {
     setload(true);
@@ -231,15 +231,12 @@ console.log('this happend ',cashPaid)
           <div
             style={{
               width: "400px",
-
-
-
-                        }}
+            }}
           >
             <img
               style={{
                 width: "100%",
-                height:'100%',
+                height: "100%",
                 borderRadius: "20px",
               }}
               src={IdCard}
@@ -294,8 +291,6 @@ console.log('this happend ',cashPaid)
 
                   {!isEmpty(EventsRegistered[deptnm]) &&
                     EventsRegistered[deptnm].map((data) => {
-
-
                       return <Chip label={data} />;
                     })}
                 </Stack>
@@ -318,7 +313,7 @@ console.log('this happend ',cashPaid)
 
           <div>
             <Switch
-                checked={cashPaid}
+              checked={cashPaid}
               onChange={(e) => handleChange(e, id, AmountPaid)}
               inputProps={{ "aria-label": "controlled" }}
             />
@@ -374,7 +369,6 @@ console.log('this happend ',cashPaid)
             <h3>PROJECT PRESENTATION : 250 ₹</h3>
             <div>
               <Switch
-            
                 checked={cashPaidForProject}
                 onChange={(e) => handleChangeforProject(e, id, AmountPaid)}
                 inputProps={{ "aria-label": "controlled" }}

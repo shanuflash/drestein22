@@ -98,11 +98,18 @@ function SingleUserPage() {
                 <p>year : {year}</p>
                 <p>regno : {regno}</p>
                 <p>
-                  <div style={{
-                    height:'100%'
-                  }}>
+                  <div
+                    style={{
+                      height: "100%",
+                    }}
+                  >
                     {DepartEvent && (
-                      <Stack padding='10px 0px' direction="row" alignItems="center" spacing={2}>
+                      <Stack
+                        padding="10px 0px"
+                        direction="row"
+                        alignItems="center"
+                        spacing={2}
+                      >
                         <p>Department Event :</p>
                         <Chip
                           sx={{
@@ -115,7 +122,12 @@ function SingleUserPage() {
                       </Stack>
                     )}
                     {PaperPresentation && (
-                      <Stack  padding='10px 0px'  direction="row" alignItems="center" spacing={2} >
+                      <Stack
+                        padding="10px 0px"
+                        direction="row"
+                        alignItems="center"
+                        spacing={2}
+                      >
                         <p>Paper Presentation : </p>
                         <Chip
                           sx={{
@@ -128,12 +140,19 @@ function SingleUserPage() {
                       </Stack>
                     )}
                     {ProjectPresentation && (
-                      <Stack  padding='10px 0px'  direction="row" alignItems="center" spacing={2}>
+                      <Stack
+                        padding="10px 0px"
+                        direction="row"
+                        alignItems="center"
+                        spacing={2}
+                      >
                         <p>Project presentation : </p>
                         <Chip
                           sx={{
                             color: cashPaidForProject ? "black" : "white",
-                            background: cashPaidForProject ? "lightgreen" : "red",
+                            background: cashPaidForProject
+                              ? "lightgreen"
+                              : "red",
                             width: "100px",
                           }}
                           label={cashPaidForProject ? "paid" : "unpaid"}

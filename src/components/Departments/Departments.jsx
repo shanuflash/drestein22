@@ -56,12 +56,12 @@ function Departments() {
           console.log(data);
           if (data.title === "Paper Presentation") {
             return (
-              <a href="PaperPresentation.pdf" target='_blank' >
+              <a href="PaperPresentation.pdf" target="_blank">
                 <SpacialEventsCard key={i} {...data} />
               </a>
             );
           }
-          
+
           return <SpacialEventsCard key={i} {...data} />;
         })}
       </DepartmentContainer>
