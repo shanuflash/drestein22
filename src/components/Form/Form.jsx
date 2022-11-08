@@ -448,7 +448,7 @@ const Form = () => {
             }}
           >
             <CssVarsProvider theme={theme} className="formsheet">
-              {0 ? (
+              {1 ? (
                 <div
                   style={{
                     fontSize: "10vw",
@@ -462,7 +462,7 @@ const Form = () => {
                   Opening Soon!
                 </div>
               ) : null}
-              {1 ? (
+              {0 ? (
                 <form
                   onSubmit={handlesubmit}
                   style={{ marginInline: "auto" }}
