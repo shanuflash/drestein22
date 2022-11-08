@@ -1365,13 +1365,8 @@ export const EventDetails = [
         },
       },
       {
-<<<<<<< HEAD
-        name: "Biomechanics & Lab view for Healthcare Applications ",
-        logo: "biow1.png",
-=======
         name: "Biomechanics & LabVIEW for Healthcare Applications",
         logo: "/EventsAssets/bmew1.png",
->>>>>>> 581a0bbd4d7f97a55fdeecd415bfee0389c68662
         tag: "WORKSHOP",
         color: "0, 70, 90",
         company: "Prashan Medical Technologies",
@@ -1959,13 +1954,8 @@ export const EventDetails = [
     ],
     workshopslist: [
       {
-<<<<<<< HEAD
         name: "EXCEL for Chemical Engineers (Basics to Advanced)",
-        logo: "chemw1.png",
-=======
-        name: "EXCEL for Chemical Engineers : Basics to Advanced",
         logo: "/EventsAssets/chemw1.png",
->>>>>>> 581a0bbd4d7f97a55fdeecd415bfee0389c68662
         tag: "WORKSHOP",
         color: "0, 70, 90",
 
