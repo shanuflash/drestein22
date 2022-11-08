@@ -29,7 +29,8 @@ export const DisplayPopupProvider = ({ children }) => {
     logo: "error",
     // workshop details:
     day1 : "error",
-    day2: "error"
+    day2: "error",
+    company: "error"
   });
   return (
     <DisplayPopupContext.Provider

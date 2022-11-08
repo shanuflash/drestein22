@@ -218,8 +218,13 @@ const [userExistError,setUserExistError] =useState(false)
                   await window.Email.send({
                     SecureToken: process.env.REACT_APP_EMAILCODE_ID,
                     To: formdata.email,
+
                     From: "secdrestein2022@gmail.com",
-                    Subject: "congrats on registration in Drestein Event 🎉🎉",
+
+
+
+                    Subject:"Congrats! Your registration for Drestein is complete 🎉",
+
                     Body: `<h2>name : ${formdata.fname} ${formdata.lname}</h2>
                                  <h2>college : ${formdata.college}</h2>
                                  <h2>Rollno : ${formdata.regno}</h2>
@@ -362,11 +367,11 @@ if(response[0]===undefined){
     },
     {
       name: "ECE",
-      events: ["eceevent1", "eceevent2"],
+      events: ["ElectroBlitz", "CRYOSAT", "Circuit Buzz", "Obstacle Mania"],
     },
     {
       name: "EEE",
-      events: ["EEEevent1", "EEEevent2"],
+      events: ["ROBO SOCCER CHALLENGE", "Techisetz", "BRAIN SCAPE", "RAIKIRI"],
     },
     {
       name: "EIE",
@@ -419,11 +424,16 @@ if(response[0]===undefined){
     },
     {
       name: "MBA",
-      events: ["Test", "Test2"],
+      events: [
+        "Adzap",
+        "Business Quiz",
+        "FUTURE MANAGER",
+        "Imagine Through Lens",
+      ],
     },
     {
       name: "MED",
-      events: ["Test", "Test2"],
+      events: ["Anatomia", "CIRCUITO", "CONNECTIONS", "BLIND TEASER"],
     },
   ];
 
@@ -442,7 +452,19 @@ if(response[0]===undefined){
           }}
         >
           <CssVarsProvider theme={theme} className="formsheet">
-            <form onSubmit={handlesubmit} style={{ marginInline: "auto" }}>
+            <div
+              style={{
+                fontSize: "10vw",
+                display: "flex",
+                justifyContent: "center",
+                height: "100vh",
+                width: "100%",
+                alignItems: "center",
+              }}
+            >
+              Opening Soon!
+            </div>
+            {/* <form onSubmit={handlesubmit} style={{ marginInline: "auto" }}>
               <Sheet
                 sx={{
                   width: "80vw",
@@ -780,7 +802,7 @@ if(response[0]===undefined){
                   Register
                 </Button>
               </Sheet>
-            </form>
+            </form> */}
           </CssVarsProvider>
         </div>
       )}

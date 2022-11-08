@@ -32,6 +32,7 @@ const EventCard = ({
 
   day1,
   day2,
+  company
 }) => {
   const { setEventObject } = useContext(DisplayPopupContext);
 
@@ -64,6 +65,7 @@ const EventCard = ({
 
       day1,
       day2,
+      company
     });
   };
 
@@ -103,13 +105,13 @@ const EventCard = ({
             src={`${logo}`}
             style={{
               borderRadius: "30px",
-              height: "111px",
+              maxHeight: "111px",
               width: "111px",
-              objectFit: "cover",
+              objectFit: "contain",
               boxShadow:
                 "rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px",
             }}
-            alt="test"
+            alt="logo"
           />
           <h1
             style={{
