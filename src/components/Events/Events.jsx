@@ -32,16 +32,19 @@ const Events = () => {
                     return (
                       <EventCard
                         key={EachEvent.id}
-                        event={EachEvent}
                         {...EachEvent}
                         setOpenModal={setOpenModal}
                       />
                     );
                   })}
-                  {EachDept.workshopslist &&
-                    EachDept.workshopslist.map((data) => {
-                      return <EventCard {...data} />;
-                    })}
+                  {EachDept.workshopslist?.map((EachWorkshop) => {
+                    return (
+                      <EventCard
+                        {...EachWorkshop}
+                        setOpenModal={setOpenModal}
+                      />
+                    );
+                  })}
                 </div>
               </>
             );

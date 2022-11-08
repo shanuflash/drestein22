@@ -81,11 +81,11 @@ export const EventDetails = [
 
         round1title: "Quiz",
         round1:
-          "A team shall consist of one or two persons (Max).The participants shall not be allowed to use mobile. The participants need to attend a quiz consisting of 20 questions in 10 mins. Questions will be from general computers and UI.After completing the quiz, participants need to design a website UI.  ",
+          "A team shall consist of one or two persons (Max).The participants shall not be allowed to use mobile. The participants need to attend a quiz consisting of 20 questions in 10 mins. Questions will be from general computers and UI.After completing the quiz, participants need to design a website UI",
         round2title: "Innovative Interface",
         round2:
-          " The participants need to design a website page based on the theme given. The participants are given 5 themes, 3 fonts and 3 images. They need to select one from the given themes and need to design a website UI ake up one of the five challenges provided and design a UI in accordance with the challenge. Font and image requirements should be fulfilled as provided in the challenge.  Participants can use images of their own if necessary. Participants should not use the pre-defined components from the external resources .Participants are given the freedom to choose any one of the given tools which is fit for designing a UI interface.",
-        Tools: "FIGMA.FLUID UI.VISILI AI.",
+          " The participants need to design a website page based on the theme given. The participants are given 5 themes, 3 fonts and 3 images. They need to select one from the given themes and need to design a website UI ake up one of the five challenges provided and design a UI in accordance with the challenge. Font and image requirements should be fulfilled as provided in the challenge.  Participants can use images of their own if necessary. Participants should not use the pre-defined components from the external resources .Participants are given the freedom to choose any one of the given tools which is fit for designing a UI interface",
+        Tools: "FIGMA.FLUID UI.VISILI AI",
         tag: "EVENT",
         color: "0, 1, 38",
         logo: "/EventsAssets/cse2.png",
@@ -151,7 +151,7 @@ export const EventDetails = [
         round2:
           "A set of programs will be displayed to the coders for a specified time and they are supposed to predict the output pattern for that program with in the given time, those who give the exact answers will be qualified to the next round ",
         round3:
-          "Program with some errors is given in the paper to the coders and first they have to debug that program in the paper and then they have to execute the same program in the system with screen off.Then three pattern programs are given to them and they have to find the solution to that program then they have to execute it in the system with screen off. ",
+          "Program with some errors is given in the paper to the coders and first they have to debug that program in the paper and then they have to execute the same program in the system with screen off.Then three pattern programs are given to them and they have to find the solution to that program then they have to execute it in the system with screen off",
 
         tag: "EVENT",
         color: "0, 1, 38",
@@ -214,7 +214,7 @@ export const EventDetails = [
           "The theme of ideathon will be given two days before the event .The participants need to prepare an abstract for their idea based on the theme.A group can contain minimum of 1 and maximum of 3 members.The top 10 teams will advance to ROUND 2 on the basis of their report  ",
         round2title: "PPT Presentation",
         round2:
-          "Each team will be receiving 3-4 minutes to present their idea through ppt and 2-3 minutes to solve the given questions (Timing may vary based on number of teams).The TOP 3 will be selected based on the idea of the presentation.",
+          "Each team will be receiving 3-4 minutes to present their idea through ppt and 2-3 minutes to solve the given questions (Timing may vary based on number of teams).The TOP 3 will be selected based on the idea of the presentation",
         tag: "EVENT",
         color: "0, 1, 38",
         logo: "/EventsAssets/cse4.png",
@@ -267,7 +267,7 @@ export const EventDetails = [
     eventslist: [
       {
         name: "Switcheroo",
-        tagline: "Switcheroo is a coding challenge with a twist. ",
+        tagline: "Switcheroo is a coding challenge with a twist",
         date: "18 Nov 2022(AN)",
         type: "Team",
         venue: "TBA",
@@ -275,15 +275,15 @@ export const EventDetails = [
 
         members: "2",
         rules:
-          "A fun event spanning over two rounds. Maximum participation 2 person per team. In the case of cheating, using of phone or using of any unnecessary gadgets will make the team disqualify. Shortlisted participants of Round-1 will appear for Round-2 for which above rules are applicable. ",
+          "A fun event spanning over two rounds. Maximum participation 2 person per team. In the case of cheating, using of phone or using of any unnecessary gadgets will make the team disqualify. Shortlisted participants of Round-1 will appear for Round-2 for which above rules are applicable",
         round1title: "{ code with <fun>; }",
         round1:
-          "It’s a contest testing your abilities to work as a team. The competition not only examines your skills as to how well you coordinate with your partner but also how analytical you are in an isolated and tensed situation. ",
+          "It’s a contest testing your abilities to work as a team. The competition not only examines your skills as to how well you coordinate with your partner but also how analytical you are in an isolated and tensed situation ",
         round2title: "Blind Coding",
         round2:
-          "It is a fresh and offbeat concept - where the participants need to write and compile their program with the monitor screens switched off. Each team has to write the code for given problem, with MONITOR OFF.Each team will be allowed one free “Screen time” (where the monitor screen can be turned on for 60 seconds), after which they will be penalized with 3 points for each extra screen time. Each team can avail a maximum of 5 screen times.  At a time only 5 teams will be allowed to avail the facility of Screen Time, the slots for which will be allotted on a first come first serve basis.",
+          "It is a fresh and offbeat concept - where the participants need to write and compile their program with the monitor screens switched off. Each team has to write the code for given problem, with MONITOR OFF.Each team will be allowed one free “Screen time” (where the monitor screen can be turned on for 60 seconds), after which they will be penalized with 3 points for each extra screen time. Each team can avail a maximum of 5 screen times.  At a time only 5 teams will be allowed to avail the facility of Screen Time, the slots for which will be allotted on a first come first serve basis",
         judge:
-          "All the problems have same points allotted to them. Participant whose code gets executed will be given higher preference. Second preference will be given to the code with least number of errors. The decision of the organizers in declaring the results will be final. No queries in this regard will be entertained. Any team found to be indulging in any form of malpractice will be immediately disqualified. ",
+          "All the problems have same points allotted to them. Participant whose code gets executed will be given higher preference. Second preference will be given to the code with least number of errors. The decision of the organizers in declaring the results will be final. No queries in this regard will be entertained. Any team found to be indulging in any form of malpractice will be immediately disqualified ",
         tag: "EVENT",
         color: "0, 1, 38",
         logo: "/EventsAssets/it1.png",
@@ -338,12 +338,12 @@ export const EventDetails = [
         rules: "",
         round1title: "Quiz",
         round1:
-          "Only one member per team .Any language can be used .Solve very easy difficulty code snippets to advance to next round .Code should make you win the game that is provided. In case of malpractice, team will be disqualified. ",
+          "Only one member per team .Any language can be used .Solve very easy difficulty code snippets to advance to next round .Code should make you win the game that is provided. In case of malpractice, team will be disqualified ",
 
         round2:
-          " Top 8 teams in this round .Same team member . Any language can be used . Solve basic/easy difficulty code snippets to advance to next round .Code should be accurate in order to win the game .",
+          " Top 8 teams in this round .Same team member . Any language can be used . Solve basic/easy difficulty code snippets to advance to next round .Code should be accurate in order to win the game ",
         round3:
-          "Top 4 teams in this round .Same team member .Any language can be used .Solve medium difficulty code snippets to win .Code should be perfect to conquer the final game.",
+          "Top 4 teams in this round .Same team member .Any language can be used .Solve medium difficulty code snippets to win .Code should be perfect to conquer the final game",
         tag: "EVENT",
         color: "0, 1, 38",
         logo: "/EventsAssets/it2.png",
@@ -393,7 +393,7 @@ export const EventDetails = [
         rules:
           "Players can compete individually or in teams of up to 2 members. Teams should work independently; sharing answers or collaborating with another team constitutes cheating. Brute-forcing the flags is not allowed.Any kind of violation of these rules will mean immediate disqualification of the team. The decision of the event managers will be deemed ",
         format:
-          "There will be a set of challenges from a range of categories like Cryptography, Web Security, Forensics, Steganography, Reverse Engineering, Binary Exploits, etc. The challenges can either be a collection of files that they can download and find the “Flag” or can be running as web services to which, the participants connect and exploit to retrieve the Flag. Each category contains a variety of questions with different point values and levels of difficulty.The participants will be ranked based on their scores, and the time taken will be used as a tiebreaker. ",
+          "There will be a set of challenges from a range of categories like Cryptography, Web Security, Forensics, Steganography, Reverse Engineering, Binary Exploits, etc. The challenges can either be a collection of files that they can download and find the “Flag” or can be running as web services to which, the participants connect and exploit to retrieve the Flag. Each category contains a variety of questions with different point values and levels of difficulty.The participants will be ranked based on their scores, and the time taken will be used as a tiebreaker",
         tag: "EVENT",
         color: "0, 1, 38",
         logo: "/EventsAssets/it3.png",
@@ -449,13 +449,13 @@ export const EventDetails = [
         rules: "",
         round1title: "CrunchBox",
         round1:
-          "Participants has to find the technical words by stringing the images together. It’s a buzzer round Individual Participants.Participants with high scores advance to next round.Number of Questions will be based on time taken. ",
+          "Participants has to find the technical words by stringing the images together. It’s a buzzer round Individual Participants.Participants with high scores advance to next round.Number of Questions will be based on time taken ",
         round2title: "CodeSlash",
         round2:
-          "Basic Pseudo codes and programs in MCQ format. Participants must complete with high scores within the time limit .top participants will advance to next round. ",
+          "Basic Pseudo codes and programs in MCQ format. Participants must complete with high scores within the time limit .top participants will advance to next round ",
         round3title: "Reverse Coding",
         round3:
-          "Participants will be provided with an executable file and they will have to perform reverse coding. They will have to test for different inputs and outputs.Finally, the source code is to be generated. The round will have five such questions.The winner will be selected based on accuracy and working code. ",
+          "Participants will be provided with an executable file and they will have to perform reverse coding. They will have to test for different inputs and outputs.Finally, the source code is to be generated. The round will have five such questions.The winner will be selected based on accuracy and working code ",
         tag: "EVENT",
         color: "0, 1, 38",
 
@@ -604,7 +604,7 @@ export const EventDetails = [
         members: "2",
         rules: "",
         round1:
-          " Per team  comprises of 4members.Team is required to finish as much hunt as possible within the limit.Team members must stay together at all times.Participants will have time limit of 2hours.Teams are not supposed to take away the treasure with them neither touch it. ",
+          " Per team  comprises of 4members.Team is required to finish as much hunt as possible within the limit.Team members must stay together at all times.Participants will have time limit of 2hours.Teams are not supposed to take away the treasure with them neither touch it ",
         tag: "EVENT",
         color: "0, 1, 38",
         logo: "/EventsAssets/agri3.png",
@@ -646,7 +646,7 @@ export const EventDetails = [
           "Description: scene that are acted by Tamil actors in their movies  related to agriculture .Rules *-*If the team raise the placard with 1 rule then they need to answer with that clue alone Totally 5 clues will be given .Time limit is 3 minutes  ",
         round2title: "Quiz Blaze",
         round2:
-          "Description *-* TNAU , Exams , head quaters.Rules .Overall 15 questions will be provided.time limit for each question is 10 seconds.Only 1 attempt is given to answer the question .",
+          "Description *-* TNAU , Exams , head quaters.Rules .Overall 15 questions will be provided.time limit for each question is 10 seconds.Only 1 attempt is given to answer the question ",
         round3title: "Mono Act_(Dumb charades) ",
         round3:
           "Description *-* food preparation*-* Each team will be given 2 Chances , team member needs to answer when one of the team is performing One who is acting should not open the mouth, if they do the team will be disqualified .Time limit to perform is 3 minutes ",
@@ -717,7 +717,7 @@ export const EventDetails = [
               email: "ganapathid@saveetha.ac.in   ",
             },
           ],
-          studennt: [
+          student: [
             {
               name: "DHANALAKSHMI    ",
               year: "IV ",
@@ -754,14 +754,14 @@ export const EventDetails = [
             },
             {
               name: "MS.DIVYA   ",
-              desig: "Assistant Professor  ",
+              desig: "Assistant Professor",
               phone: 8940553325,
-              email: "divyaprabhav@saveetha.ac.in   ",
+              email: "divyaprabhav@saveetha.ac.in ",
             },
           ],
-          studennt: [
+          student: [
             {
-              name: "SWATHI    ",
+              name: "SWATHI",
               year: "IV ",
               phone: 9150923359,
               email: "swathisri3148@gmail.com  ",
@@ -790,15 +790,15 @@ export const EventDetails = [
         time: "TBA",
         members: "2",
         rules:
-          "The event is all about testing the programming knowledge of the participants. The participants are not restricted to any programming language. They can  choose the language of their choice. Programs are checked against a set of test cases. A program is accepted if it passes all tests. Contestants should not bring or use any reference manuals, electronic     gadgets, program listings, any machine-readable information (software or    data on any kind of storage), computing devices (handhelds, portable PCs,    notebooks, calculators), mobile phones, or any other communication devices. Winner is selected based on the score and the total time taken. ",
+          "The event is all about testing the programming knowledge of the participants. The participants are not restricted to any programming language. They can  choose the language of their choice. Programs are checked against a set of test cases. A program is accepted if it passes all tests. Contestants should not bring or use any reference manuals, electronic     gadgets, program listings, any machine-readable information (software or    data on any kind of storage), computing devices (handhelds, portable PCs,    notebooks, calculators), mobile phones, or any other communication devices. Winner is selected based on the score and the total time taken ",
         round1:
-          " This round will have 10 questions to debug.Each challenge has a predetermined score. A participant’s score depends on the number of test cases a participant’s code submission successfully passes.The participants are selected for the next round only if they have debugged at least 7 questions.",
+          " This round will have 10 questions to debug.Each challenge has a predetermined score. A participant’s score depends on the number of test cases a participant’s code submission successfully passes.The participants are selected for the next round only if they have debugged at least 7 questions",
 
         round2:
-          "This round will have 5 questions. Each challenge has a predetermined score.A participant’s score depends on the number of test cases a participant’s code submission successfully passes.If a participant submits more than one solution per challenge, then the participant’s score will reflect the highest score achieved. In a game challenge, the participant's score will reflect the last code submission. ",
+          "This round will have 5 questions. Each challenge has a predetermined score.A participant’s score depends on the number of test cases a participant’s code submission successfully passes.If a participant submits more than one solution per challenge, then the participant’s score will reflect the highest score achieved. In a game challenge, the participant's score will reflect the last code submission",
 
         round3:
-          "New programming language (GO) basic syntax of the language will be provided for a given period of time for preparation.This round will have 5 questions. Each challenge has a predetermined score.A participant’s score depends on the number of test cases a participant’s code submission successfully passes. If a participant submits more than one solution per challenge, then the participant’s score will reflect the highest score achieved. In a game challenge, the participant's score will reflect the last code submission. ",
+          "New programming language (GO) basic syntax of the language will be provided for a given period of time for preparation.This round will have 5 questions. Each challenge has a predetermined score.A participant’s score depends on the number of test cases a participant’s code submission successfully passes. If a participant submits more than one solution per challenge, then the participant’s score will reflect the highest score achieved. In a game challenge, the participant's score will reflect the last code submission ",
 
         tag: "EVENT",
         color: "0, 1, 38",
@@ -841,7 +841,7 @@ export const EventDetails = [
         time: "TBA",
         members: "1-2",
         rules:
-          "3-4 participants in each group.No electronic devices are allowed to be used.Clues will be given on spot. ",
+          "3-4 participants in each group.No electronic devices are allowed to be used.Clues will be given on spot",
         round1:
           "Themes (Eg: automation (robotics), data analytics ) will be set and participants have to figure out based on clues given Groups must bring a business idea/startup plan that solves an existing problem in that domain Teams with the best ideas get promoted to round 2",
         round2:
@@ -889,13 +889,13 @@ export const EventDetails = [
         time: "TBA",
         members: "2",
         rules:
-          "No sensitive content. No restrictions on image resolution.No videos/audio are allowed.The meme should be in English.",
+          "No sensitive content. No restrictions on image resolution.No videos/audio are allowed.The meme should be in English",
         round1:
-          " Participants can participate either solo or in a team of 2. Open topic (technical). The meme should be in a single image.",
+          " Participants can participate either solo or in a team of 2. Open topic (technical). The meme should be in a single image",
         round2:
-          "A team of 2 is mandatory.Solo participants will be made into a team randomly.The topic will be given on the spot.The participants are only asked to create a meme with the templates/images provided. The meme should be in a single image, however, participants can choose multiple photos provided to make a creative submission.  ",
+          "A team of 2 is mandatory.Solo participants will be made into a team randomly.The topic will be given on the spot.The participants are only asked to create a meme with the templates/images provided. The meme should be in a single image, however, participants can choose multiple photos provided to make a creative submission",
         round3:
-          "The topic will be given on the spot.No restrictions on the choice of photos/templates to be used.The meme can be with 1-3 slides.The number of slides doesn't affect the evaluation.   ",
+          "The topic will be given on the spot.No restrictions on the choice of photos/templates to be used.The meme can be with 1-3 slides.The number of slides doesn't affect the evaluation",
 
         tag: "EVENT",
         color: "0, 1, 38",
@@ -955,7 +955,7 @@ export const EventDetails = [
           "Technical Quiz. Each team will be asked 20 questions and get 3 mins to answer each ",
 
         round2:
-          "Landing Page. A concept will be given on the spot and the participants are asked to create an impressive home page for a company. Maximum 2 hours will be provided to complete this round.",
+          "Landing Page. A concept will be given on the spot and the participants are asked to create an impressive home page for a company. Maximum 2 hours will be provided to complete this round",
         tag: "EVENT",
         color: "0, 1, 38",
 
@@ -997,13 +997,13 @@ export const EventDetails = [
         time: "TBA",
         members: "2",
         rules:
-          "A team of 2 members can participate in this event.Programming Language required: Python with data science and machine learning .Mobile phones are strictly not allowed. ",
+          "A team of 2 members can participate in this event.Programming Language required: Python with data science and machine learning .Mobile phones are strictly not allowed",
         round1:
           "-Multiple Choice Questions (Paper-Pen Mode).Time limit of 30 minutes.Questions will be asked based on the basics of Python in data science and machine learning along with graphical analysis.Top scorers will be selected for the next round ",
         round2:
-          "Multiple Choice Questions (Live Quiz).Two groups will participate against each other.Questions will be asked based on data science, machine learning, and graphical analysis along with choices.The team with higher points will be selected for the next round.  ",
+          "Multiple Choice Questions (Live Quiz).Two groups will participate against each other.Questions will be asked based on data science, machine learning, and graphical analysis along with choices.The team with higher points will be selected for the next round",
         round3:
-          "-Two problem statement questions will be given with a time limit of 1hr.The participants can run the programs in the compiler and note down their analysis in the provided paper.Evaluation criteria: The team that takes less time to complete the given problem statements will be selected as the winner.  ",
+          "-Two problem statement questions will be given with a time limit of 1hr.The participants can run the programs in the compiler and note down their analysis in the provided paper.Evaluation criteria: The team that takes less time to complete the given problem statements will be selected as the winner",
         tag: "EVENT",
         color: "0, 1, 38",
         logo: "/EventsAssets/aids5.png",
@@ -1057,7 +1057,7 @@ export const EventDetails = [
       {
         name: "Med factory",
         tagline:
-          "To get familiarize with the functioning and usage of medical equipment. ",
+          "To get familiarize with the functioning and usage of medical equipment",
         date: "18 Nov 2022(FN)",
         type: "Team",
         venue: "TBA",
@@ -1066,13 +1066,13 @@ export const EventDetails = [
         rules: "",
         round1title: "Round 1 - THREE MONKEYS (PICTIONARY) ",
         round1:
-          "Group activity, team of four members. Objective of the round is to identify the drawn picture of the given word.One member to narrate the given word (deafened) One member to draw the narrated picture (Blinded) Two members to identify the picture. Each picture is given time duration of one minute to find. ",
+          "Group activity, team of four members. Objective of the round is to identify the drawn picture of the given word.One member to narrate the given word (deafened) One member to draw the narrated picture (Blinded) Two members to identify the picture. Each picture is given time duration of one minute to find",
         round2title: " MAD SCIENTIST",
         round2:
-          "Group activity, a team of four members. Objective of the round is to connect the given device and take out the readings.Instructions on how to handle the equipment will be given. Points are awarded in the hierarchy of completion. ",
+          "Group activity, a team of four members. Objective of the round is to connect the given device and take out the readings.Instructions on how to handle the equipment will be given. Points are awarded in the hierarchy of completion",
         round3title: "Clue Mining",
         round3:
-          "Group activity, a team of four members. Objective of the round is to identify the appropriate medical equipment required for respective trivia Flashcards of equipment with the description of function and usage will be handed out to the participants. Teams are expected to assign the appropriate cards to the given situations.Every correct answer will be rewarded with a point in the team can use to move forward or hold back the opponent team. First team to complete the highest number of trivia wins.",
+          "Group activity, a team of four members. Objective of the round is to identify the appropriate medical equipment required for respective trivia Flashcards of equipment with the description of function and usage will be handed out to the participants. Teams are expected to assign the appropriate cards to the given situations.Every correct answer will be rewarded with a point in the team can use to move forward or hold back the opponent team. First team to complete the highest number of trivia wins",
         tag: "EVENT",
         color: "0, 1, 38",
         logo: "/EventsAssets/bme1.png",
@@ -1120,7 +1120,7 @@ export const EventDetails = [
       {
         name: "Mind Flayers",
         tagline:
-          "Looking for fun ideas that will keep the game more interesting? You’re in the right place! Here are 3 rounds of fun challenges for your friends. Time based MCQs are there. Funny tasks are between those rounds. Triggering your mind with questions and boosting your activities. Each round has 2 (Two) levels to reach next round. Offers given in first round to reach final round directly. Final round winners be appreciated with rewards. ",
+          "Looking for fun ideas that will keep the game more interesting? You’re in the right place! Here are 3 rounds of fun challenges for your friends. Time based MCQs are there. Funny tasks are between those rounds. Triggering your mind with questions and boosting your activities. Each round has 2 (Two) levels to reach next round. Offers given in first round to reach final round directly. Final round winners be appreciated with rewards",
         date: "18 Nov 2022(AN)",
         type: "Team",
         venue: "TBA",
@@ -1129,13 +1129,13 @@ export const EventDetails = [
         rules: "",
         round1title: "FIND ME",
         round1:
-          " Individuals 3 persons at same time . Buzzers placed in each individual place .5 questions to be asked in each sets .Timer – 15 seconds .Questions related to stranger things (Characters, Scenes) and for non-watchers – (General GK about medical science).  ",
+          " Individuals 3 persons at same time . Buzzers placed in each individual place .5 questions to be asked in each sets .Timer – 15 seconds .Questions related to stranger things (Characters, Scenes) and for non-watchers – (General GK about medical science)",
         round2title: "TWO SHOTS MAKES ME QUIZEE",
         round2:
-          "Shortlisted from round 1 (1vs1) .Buzzer be placed to each individual. Questions based on (YES or NO) .Questions related to medical equipments and applications .If not answered correctly, funny tasks are there .6 questions asked to each 1vs1.5-10 mins to each 1vs1.",
+          "Shortlisted from round 1 (1vs1) .Buzzer be placed to each individual. Questions based on (YES or NO) .Questions related to medical equipments and applications .If not answered correctly, funny tasks are there .6 questions asked to each 1vs1.5-10 mins to each 1vs1",
         round3title: "THE UPSIDE DOWN",
         round3:
-          "Shortlisted students taken from 2nd round .Different set of questions (4 to 5 category of ideas). Individual performance is noted. (At a time only one player in the room) .Writing pad/slate given to hand. (written) .5 to 10 mins per person.Winners selected based on timing and answers.",
+          "Shortlisted students taken from 2nd round .Different set of questions (4 to 5 category of ideas). Individual performance is noted. (At a time only one player in the room) .Writing pad/slate given to hand. (written) .5 to 10 mins per person.Winners selected based on timing and answers",
 
         tag: "EVENT",
         color: "0, 1, 38",
@@ -1194,7 +1194,7 @@ export const EventDetails = [
         rules: "",
         round1title: " Time snap",
         round1:
-          "9 spots will be there which itself will be sub rounds.Each spot will have a riddle which the team member will help to solve in order to get out of the spot. Guessing the riddle -3 lives/chances will be given to any one person. A timer will be running for each sub round and each riddle and if the team fail to obtain the clue /riddle on time he  /she  will  be  out  of game. ",
+          "9 spots will be there which itself will be sub rounds.Each spot will have a riddle which the team member will help to solve in order to get out of the spot. Guessing the riddle -3 lives/chances will be given to any one person. A timer will be running for each sub round and each riddle and if the team fail to obtain the clue /riddle on time he  /she  will  be  out  of game",
         round2title: "TWO SHOTS MAKES ME QUIZEE",
         round2:
           " The top 4 players shall be selected from the previous round on the basis of the 1st round.In this round, there will be 2 qualifiers, one elimination round and one final round.Teams are said to stand at their respective ends. A question will be asked commonly, when both team player meet at one point. The player who gives the correct answer proceeds the disc path.The team which reaches the other end will be declared as the winner",
@@ -1254,13 +1254,13 @@ export const EventDetails = [
         rules: "",
         round1title: "Blaze the Machine Gun",
         round1:
-          "10 participants are arranged to sit in the Circle. One word is provided to them, the word-related words are passed. The one who fails to say the word related to that will disqualify from the round. ",
+          "10 participants are arranged to sit in the Circle. One word is provided to them, the word-related words are passed. The one who fails to say the word related to that will disqualify from the round",
         round2title: " Obliviate",
         round2:
-          "10 participants are arranged to sit in the Circle. One word is provided to them, the word-related words are passed. The one who fails to say the word related to that will disqualify from the round. ",
+          "10 participants are arranged to sit in the Circle. One word is provided to them, the word-related words are passed. The one who fails to say the word related to that will disqualify from the round",
         round3title: "mansoorajees001@gmail.com ",
         round3:
-          "Puzzle related to medical Instruments or Famous Scientist Will be displayed in the laptop provided. According to the time taken by the participants we can select the winners. ",
+          "Puzzle related to medical Instruments or Famous Scientist Will be displayed in the laptop provided. According to the time taken by the participants we can select the winners",
         tag: "EVENT",
         color: "0, 1, 38",
         logo: "/EventsAssets/bme4.png",
@@ -1433,7 +1433,7 @@ export const EventDetails = [
         time: "TBA",
         members: "2",
         rules:
-          "A fun event spanning over two rounds. Maximum participation 2 person per team. In the case of cheating, using of phone or using of any unnecessary gadgets will make the team disqualify. Shortlisted participants of Round-1 will appear for Round-2 for which above rules are applicable. ",
+          "A fun event spanning over two rounds. Maximum participation 2 person per team. In the case of cheating, using of phone or using of any unnecessary gadgets will make the team disqualify. Shortlisted participants of Round-1 will appear for Round-2 for which above rules are applicable",
         round1title: "TECHNICAL WRITTEN TEST ",
         round1:
           "25 Multiple Choice Questions related to general concepts of Civil Engineering .15 minutes duration . Mode of conducting this Round – through Google link .Participants had to use their own devices (mobile/laptop). Once the stipulated time was over, the link would be closed and no requests would be entertained .Results were decided on the basis of the highest score along with time taken to complete the Quiz .TOP FIVE SELECTED STUDENTS ARE ELIGIBLE FOR ROUND -2 ",
@@ -1459,7 +1459,7 @@ export const EventDetails = [
             email: "dsmonish@gmail.com  ",
           },
           {
-            name: "Adam gilchrist. ",
+            name: "Adam gilchrist",
             year: "II ",
             phone: 8248164343,
             email: "adamgilchrist067@gmail.com  ",
@@ -1483,10 +1483,10 @@ export const EventDetails = [
         rules: "",
         round1title: "Choose it!  ",
         round1:
-          "Each team should consist of 2 members.The teams are screened by attending a questionnaire based on locations and their relevance. Online quiz will be presented to them in Google forms for all the registered participants.Time limit for this round is set to 15 minutes for answering the 30 multiple choice questions.  ",
+          "Each team should consist of 2 members.The teams are screened by attending a questionnaire based on locations and their relevance. Online quiz will be presented to them in Google forms for all the registered participants.Time limit for this round is set to 15 minutes for answering the 30 multiple choice questions",
         round2title: "Connections",
         round2:
-          " A set of 10 teams selected from Round 1 will be communicated for this round. Each team will be presented with a set of visual clues in a document and asked to connect them in 25 minutes. The first 5 teams finishing the connection part will be selected for the final round..",
+          " A set of 10 teams selected from Round 1 will be communicated for this round. Each team will be presented with a set of visual clues in a document and asked to connect them in 25 minutes. The first 5 teams finishing the connection part will be selected for the final round",
         round3title: "Treasure Hunt",
         round3:
           "The selected 5 teams will be presented with an online treasure hunt framework in a laptop.Each team needs to decipher the clues to find the treasure (letters shape or structure) The team that clinches the treasure (identifies the pattern) at first will be announced as winner. Total event duration: 2 hours (including briefing of instructions) ",
@@ -1538,7 +1538,7 @@ export const EventDetails = [
         members: "2",
         rules: "",
         round1:
-          "A set of 25 questions MCQ will be given as a printed document in round 1 for each students The questions are based on auto cadd comments and drawing inputs.The duration for the MCQ test is 30 minutes.Based on the scored marks first 5 students will be shortlisted for round 2. ",
+          "A set of 25 questions MCQ will be given as a printed document in round 1 for each students The questions are based on auto cadd comments and drawing inputs.The duration for the MCQ test is 30 minutes.Based on the scored marks first 5 students will be shortlisted for round 2",
         round2:
           "The detailed line plan will be given as a question in round 2 .The students have to draw Plan with specification for the same line plan. The duration for the plan is 30 minutes. Based on the completion first three place will be finalised ",
         tag: "EVENT",
@@ -1578,13 +1578,13 @@ export const EventDetails = [
         rules: "",
         round1title: "TECHNICAL QUIZ ",
         round1:
-          "25 Multiple Choice Questions related to general concepts of Civil Engineering 15 minutes duration  Mode of conducting this Round – through Google link Participants have to use their own devices (mobile/laptop)  Once the stipulated time was over, the link would be closed and no requests would be entertained One person can submit the form only once. No negative marking.  Those who achieve the maximum score in the least time will be placed higher in the rank list, and in case of a tie, decision based on time of submission.  The decision of the organizers with respect to the results will be final. No queries in this regard will be entertained.  Any participant found indulging in any form of malpractice will be immediately disqualified. Reasons like network issues, device issues etc. will not be considered. ",
+          "25 Multiple Choice Questions related to general concepts of Civil Engineering 15 minutes duration  Mode of conducting this Round – through Google link Participants have to use their own devices (mobile/laptop)  Once the stipulated time was over, the link would be closed and no requests would be entertained One person can submit the form only once. No negative marking.  Those who achieve the maximum score in the least time will be placed higher in the rank list, and in case of a tie, decision based on time of submission.  The decision of the organizers with respect to the results will be final. No queries in this regard will be entertained.  Any participant found indulging in any form of malpractice will be immediately disqualified. Reasons like network issues, device issues etc. will not be considered",
         round2title: "CODE CRACKING ",
         round2:
           "Shortlisted students from Round-1 are eligible for Round-2 25 Multiple Choice Questions related to Code cracking on various IS codes relevant to different specifications like IRC 37, 48, 58, IS 456, IS 800, IS 875, IS 10262  Time duration – 20 Minutes .Mode of conducting this Round – through Google link  ",
         round3title: "Reverse Coding",
         round3:
-          "Participants will be provided with an executable file and they will have to perform reverse coding. They will have to test for different inputs and outputs.Finally, the source code is to be generated. The round will have five such questions.The winner will be selected based on accuracy and working code. ",
+          "Participants will be provided with an executable file and they will have to perform reverse coding. They will have to test for different inputs and outputs.Finally, the source code is to be generated. The round will have five such questions.The winner will be selected based on accuracy and working code",
         tag: "EVENT",
         color: "0, 1, 38",
 
@@ -1668,7 +1668,7 @@ export const EventDetails = [
         logo: "civilw2.png",
         tag: "WORKSHOP",
         color: "0, 70, 90",
-        company: " Infinity PMC Solutions, Chennai.",
+        company: " Infinity PMC Solutions, Chennai",
 
         day1: {
           date: "08/11/2022-FN",
@@ -1718,7 +1718,7 @@ export const EventDetails = [
         logo: "civilw3.png",
         tag: "WORKSHOP",
         color: "0, 70, 90",
-        company: " Infinity PMC Solutions, Chennai.",
+        company: " Infinity PMC Solutions, Chennai",
 
         day1: {
           date: "09/11/2022-FN",
@@ -1778,12 +1778,12 @@ export const EventDetails = [
         members: "2",
         rules: "",
         round1:
-          "It is a group event of 3.  Participants will be given shuffled charts which contain different unit processes.  Participants should order them according to sector in a given time limit. The team which finishes fast with the correct answer will be selected for the next round.  ",
+          "It is a group event of 3.  Participants will be given shuffled charts which contain different unit processes.  Participants should order them according to sector in a given time limit. The team which finishes fast with the correct answer will be selected for the next round",
         round2title: "Blind Coding",
         round2:
-          "It is a group event of 3.Participants will be given many charts which contain different unit operations. Participants should order them according to sector in a given time limit.The team which finishes fast with the correct answer will be selected for the next round. .",
+          "It is a group event of 3.Participants will be given many charts which contain different unit operations. Participants should order them according to sector in a given time limit.The team which finishes fast with the correct answer will be selected for the next round",
         round3:
-          "It is a group event of 3. Participants will be given many charts which contain different Process of flow diagrams of different industries. Participants should order them according to sector in a given time limit.The team which finishes fast with the correct answer will be the winner. ",
+          "It is a group event of 3. Participants will be given many charts which contain different Process of flow diagrams of different industries. Participants should order them according to sector in a given time limit.The team which finishes fast with the correct answer will be the winner",
         tag: "EVENT",
         color: "0, 1, 38",
         logo: "/EventsAssets/chem1.png",
@@ -1821,10 +1821,10 @@ export const EventDetails = [
         rules: "",
         round1title: "NEWTONIAN & NON-NEWTONIAN ",
         round1:
-          "The same rule as snake and ladder.It is group event of 3 .The snake will be replaced by Newtonian fluids and the ladder will be replaced by Non- Newtonian fluids. If you are supposed to pass the Non-Newtonian fluids you need to answer the question and also the question will be asked if you sink into the Newtonian fluids. If the question is not  answered you will be eliminated from the game. ",
+          "The same rule as snake and ladder.It is group event of 3 .The snake will be replaced by Newtonian fluids and the ladder will be replaced by Non- Newtonian fluids. If you are supposed to pass the Non-Newtonian fluids you need to answer the question and also the question will be asked if you sink into the Newtonian fluids. If the question is not  answered you will be eliminated from the game",
         round2title: "JIM",
         round2:
-          " A situational task is given to the participant . The task is related to chemical process industries.A simple Example is that if there is spillage of Sulphuric acid. What will you do! .They must apply the most reluctant procedure to accomplish the task and get their points.",
+          " A situational task is given to the participant . The task is related to chemical process industries.A simple Example is that if there is spillage of Sulphuric acid. What will you do! .They must apply the most reluctant procedure to accomplish the task and get their points",
         tag: "EVENT",
         color: "0, 1, 38",
         logo: "/EventsAssets/chem2.png",
@@ -1922,7 +1922,7 @@ export const EventDetails = [
         round3title:
           "COMMUNICATION RELAY:(Repetition of Rules & Direct answer get Eliminated) ",
         round3:
-          "3 Members standing in a row. First one gets a clue from Co-ordinator.  Second one gets a clue from the First one. Third one gets a clue from the Second one.  Third one has to choose the element from the board. ",
+          "3 Members standing in a row. First one gets a clue from Co-ordinator.  Second one gets a clue from the First one. Third one gets a clue from the Second one.  Third one has to choose the element from the board",
         tag: "EVENT",
         color: "0, 1, 38",
         logo: "/EventsAssets/chem4.png",
@@ -2005,55 +2005,56 @@ export const EventDetails = [
               email: "srikanthkanagavalli@gmail.com  ",
             },
           ],
-          day2: {
-            date: "08/11/2022",
-            time: "TBA",
-            company: "International Flavours & Fragrances India Pvt.Ltd",
-            topic:
-              "Advanced GV level in excel which is used in Chemical Engineering field. Advanced level: Eg. Process Analysis ",
-            resource: [
-              {
-                name: "Mr.Dayalan Chokkalingam  ",
-                desig: "Senior process Engineer, IFF, Chennai   ",
-                phone: 7397529444,
-                email: "Dayalan.C@iff.com   ",
-              },
-              {
-                name: "Dr.A.Balasubramanian  ",
-                desig: "Associate professor, SEC  ",
-                phone: 9488478235,
-                email: "balasubramaniana@saveetha.ac.in   ",
-              },
-              {
-                name: "Dr.P. Senthil Kumar  ",
-                desig: "Associate professor, SEC  ",
-                phone: 7305105056,
-                email: "senthilkumarp@saveetha.ac.in   ",
-              },
-            ],
-            staff: [
-              {
-                name: "Dr.A.Balasubramanian ",
-                desig: "Associate Professor  ",
-                phone: 9488478235,
-                email: "balasubramaniana@saveetha.ac.in   ",
-              },
-            ],
-            student: [
-              {
-                name: "Abherna shree M  ",
-                year: "IV ",
-                phone: 9361896759,
-                email: "abhernashree80@gmail.com   ",
-              },
-              {
-                name: "Srikanth  ",
-                year: "III  ",
-                phone: 6382979534,
-                email: "srikanthkanagavalli@gmail.com  ",
-              },
-            ],
-          },
+          
+        },
+        day2: {
+          date: "08/11/2022",
+          time: "TBA",
+          company: "International Flavours & Fragrances India Pvt.Ltd",
+          topic:
+            "Advanced GV level in excel which is used in Chemical Engineering field. Advanced level: Eg. Process Analysis ",
+          resource: [
+            {
+              name: "Mr.Dayalan Chokkalingam  ",
+              desig: "Senior process Engineer, IFF, Chennai   ",
+              phone: 7397529444,
+              email: "Dayalan.C@iff.com   ",
+            },
+            {
+              name: "Dr.A.Balasubramanian  ",
+              desig: "Associate professor, SEC  ",
+              phone: 9488478235,
+              email: "balasubramaniana@saveetha.ac.in   ",
+            },
+            {
+              name: "Dr.P. Senthil Kumar  ",
+              desig: "Associate professor, SEC  ",
+              phone: 7305105056,
+              email: "senthilkumarp@saveetha.ac.in   ",
+            },
+          ],
+          staff: [
+            {
+              name: "Dr.A.Balasubramanian ",
+              desig: "Associate Professor  ",
+              phone: 9488478235,
+              email: "balasubramaniana@saveetha.ac.in   ",
+            },
+          ],
+          student: [
+            {
+              name: "Abherna shree M  ",
+              year: "IV ",
+              phone: 9361896759,
+              email: "abhernashree80@gmail.com   ",
+            },
+            {
+              name: "Srikanth  ",
+              year: "III  ",
+              phone: 6382979534,
+              email: "srikanthkanagavalli@gmail.com  ",
+            },
+          ],
         },
       },
     ],
@@ -2075,7 +2076,7 @@ export const EventDetails = [
         round1:
           "30 seconds per QUESTION .Correct answer will be rewarded with two points.10 Questions per round ",
         round2:
-          "20 seconds per QUESTION .Correct answer will be rewarded with two points .10 Questions per round.SELECTION PROCESS: Winners will be based on MAXIMUM POINTS .",
+          "20 seconds per QUESTION .Correct answer will be rewarded with two points .10 Questions per round.SELECTION PROCESS: Winners will be based on MAXIMUM POINTS ",
         logo: "/EventsAssets/eie1.png",
         staff: [
           {
@@ -2268,7 +2269,7 @@ export const EventDetails = [
         rules: "",
         round1: "MCQ based on Manufacturing technology(30mins) ",
 
-        round2: " Facing and Step turning in Lathe Machine(30mins) .",
+        round2: " Facing and Step turning in Lathe Machine(30mins) ",
         round3: "Knurling in Lathe Machining(30mins) ",
         tag: "EVENT",
         color: "0, 1, 38",
@@ -2315,9 +2316,9 @@ export const EventDetails = [
         venue: "TBA",
         time: "TBA",
         members: "2",
-        round1: "Round 1 will be based on distance coverage. ",
-        round2: "Round 2 will be based on distance coverage. ",
-        round3: "Round 3 will be based on distance coverage. ",
+        round1: "Round 1 will be based on distance coverage",
+        round2: "Round 2 will be based on distance coverage",
+        round3: "Round 3 will be based on distance coverage",
         tag: "EVENT",
         color: "0, 1, 38",
         logo: "/EventsAssets/mech3.png",
@@ -2367,7 +2368,7 @@ export const EventDetails = [
         rules: "",
         round1:
           "Isometric view of a product will be given to each team. Model the product using CATIA Or ABAQUS software within 45mins  ",
-        round2: "The simulation for the product has to done within 30mins.",
+        round2: "The simulation for the product has to done within 30mins",
         tag: "EVENT",
         color: "0, 1, 38",
 
@@ -2430,10 +2431,10 @@ export const EventDetails = [
           ],
           staff: [
             {
-              name: "S.SHENBAGARAMAN ",
+              name: "S.SHENBAGARAMAN",
               desig: "Associate Professor  ",
               phone: 8015704764,
-              email: "senbagaraman@saveetha.ac.in  ",
+              email: "senbagaraman@saveetha.ac.in",
             },
           ],
           student: [
@@ -2476,7 +2477,7 @@ export const EventDetails = [
           time: "10am-12pm",
           resource: [
             {
-              name: "Mr. Jagadheesh.  ",
+              name: "Mr. Jagadheesh",
               desig: "Production Manager  ",
               phone: 8840032216,
               email: "jagadheeshmani@gmail.com    ",
@@ -2635,9 +2636,9 @@ export const EventDetails = [
         members: "2",
         rules: "",
         round1:
-          "No electronic gadget allowed in stage and during discussion. In a group at least 3 person should participate and maximum 7. All must have a equal participation (in group).  Any property related to ad can be used.  ",
+          "No electronic gadget allowed in stage and during discussion. In a group at least 3 person should participate and maximum 7. All must have a equal participation (in group).  Any property related to ad can be used",
         round2:
-          "Timing for the stage performance is 5 minutes. They should not extend the time. No illegal or political word should be used. From one college only one team is allowed.In Group Maximum of 3 people should be PRELIMINARY Judges decision is the final one. ",
+          "Timing for the stage performance is 5 minutes. They should not extend the time. No illegal or political word should be used. From one college only one team is allowed.In Group Maximum of 3 people should be PRELIMINARY Judges decision is the final one",
         round3:
           "Political & Illegal Words Shouldn't Be Used During The Performance  ",
         tag: "EVENT",
@@ -2680,7 +2681,7 @@ export const EventDetails = [
           "Total of 15 MCQ type Questions Each question carries 1 Mark  Only 1 member per team allowed to attend this round The Top 5 selected teams will move on to the round 2 ",
 
         round2:
-          " Both the team members join together to attend this round Total of 25 questions will be asked. 5 questions per team Each question carries 2 Marks, If question get passed to the next team it carries 1 Mark In case of tie, extra tie breaker questions may be asked to decide the winners  .",
+          " Both the team members join together to attend this round Total of 25 questions will be asked. 5 questions per team Each question carries 2 Marks, If question get passed to the next team it carries 1 Mark In case of tie, extra tie breaker questions may be asked to decide the winners  ",
 
         tag: "EVENT",
         color: "0, 1, 38",
@@ -2717,13 +2718,13 @@ export const EventDetails = [
         members: "2",
         round1title: "CRACK THE CODE ",
         round1:
-          " Timings: 20min. No. Of questions: 20 Candidates are provided with set of mcqs related to general management, marketing, advertising, HRM, finance, business events, concepts and recent issues. No negative marks . ",
+          " Timings: 20min. No. Of questions: 20 Candidates are provided with set of mcqs related to general management, marketing, advertising, HRM, finance, business events, concepts and recent issues. No negative marks ",
         round2title: "SHERLOCK & WATSON ",
         round2:
-          "Each contestant will be given a caselet for which 10 minutes will be given to prepare the caselet.  Each contestant will present the case before the panel of judges for a maximum of 5 minutes.  Contestants are expected to explain the relevant background information of the case, which may include legal, financial, economic, marketing, and management issues relevant to the caselet, and present the issue identified in the caselet.  After presenting the case, each contestant must make recommendations for action that are solidly grounded to the given caselet.Mobile phones & Internet access are prohibited . ",
+          "Each contestant will be given a caselet for which 10 minutes will be given to prepare the caselet.  Each contestant will present the case before the panel of judges for a maximum of 5 minutes.  Contestants are expected to explain the relevant background information of the case, which may include legal, financial, economic, marketing, and management issues relevant to the caselet, and present the issue identified in the caselet.  After presenting the case, each contestant must make recommendations for action that are solidly grounded to the given caselet.Mobile phones & Internet access are prohibited ",
         round3title: "Rapid fire round ",
         round3:
-          " This round consists of potpourri of Questions.In this round the fastest mind gets to answer the questions. Each contestant will be given a set of 5 questions. Mobile phones & Internet access are prohibited. . ",
+          " This round consists of potpourri of Questions.In this round the fastest mind gets to answer the questions. Each contestant will be given a set of 5 questions. Mobile phones & Internet access are prohibited",
         tag: "EVENT",
         color: "0, 1, 38",
         logo: "/EventsAssets/mba3.png",
@@ -2764,7 +2765,7 @@ export const EventDetails = [
         time: "TBA",
         members: "1-3",
         rules:
-          "ndigenous photo captured through Camera or Mobile (Should be clear). No editing should be done.Idea behind the photograph in regards with management concepts. Photograph should be sent before deadline .  ",
+          "ndigenous photo captured through Camera or Mobile (Should be clear). No editing should be done.Idea behind the photograph in regards with management concepts. Photograph should be sent before deadline ",
         tag: "EVENT",
         color: "0, 1, 38",
         logo: "/EventsAssets/mba4.png",
@@ -2897,9 +2898,9 @@ export const EventDetails = [
         round1:
           "Maximum 3 Members per team Mobile Phones are not allowed Concept will be explained and MCQ will be asked either in app or in written format Best 3 teams will be qualified for next round  ",
         round2:
-          "We will be providing the picture in sheet as per the lot method and you have to mark the parts.  The team which marks the correct parts in maximum number will be qualified for the next round. ",
+          "We will be providing the picture in sheet as per the lot method and you have to mark the parts.  The team which marks the correct parts in maximum number will be qualified for the next round",
         round3:
-          "You have to draw neat diagram and label the parts. For your reference the picture will be shown for 3 to 5 minutes. Best team will be awarded.   ",
+          "You have to draw neat diagram and label the parts. For your reference the picture will be shown for 3 to 5 minutes. Best team will be awarded",
         tag: "EVENT",
         color: "0, 1, 38",
         logo: "/EventsAssets/med1.png",
@@ -2952,7 +2953,7 @@ export const EventDetails = [
           "Maximum 3 members per team  MCQ Questions will be displayed on the projector and answer sheets will be given  Participants has to choose the appropriate answers from the given options They will be qualified to the next round based on the scores  ",
         round2title: " WHO AM I ?",
         round2:
-          "A box full of electronic components will be given to each team .They has to pinpoint the names of the given components within  the given time .Teams will be selected based on the counts of component they listed   .",
+          "A box full of electronic components will be given to each team .They has to pinpoint the names of the given components within  the given time .Teams will be selected based on the counts of component they listed   ",
         round3title: "MEMORY MASTER",
         round3:
           "Pictures of simple electronic circuits will be displayed on the projector for 30 seconds Each team will be given a breadboard and the required components Team members has to make circuit connections of the displayed schematics within the stipulated timing Selected teams will be awarded ",
@@ -3003,11 +3004,11 @@ export const EventDetails = [
         members: "2",
         round1title: "Puzzle ",
         round1:
-          "Maximum of 2 members per team  Pieces of papers with medical instrument will be provided for each team. One in a team will be blind folded and the other can guide his teammate providing instruction to fit the pieces correctly to form a picture.  Max time : 120 seconds The best three teams will be selected for next round. ",
+          "Maximum of 2 members per team  Pieces of papers with medical instrument will be provided for each team. One in a team will be blind folded and the other can guide his teammate providing instruction to fit the pieces correctly to form a picture.  Max time : 120 seconds The best three teams will be selected for next round",
         round2:
-          "Rule to be followed as same as round 1 Max time : 60 seconds teams will be selected for final round . ",
+          "Rule to be followed as same as round 1 Max time : 60 seconds teams will be selected for final round ",
         round3:
-          "Rule to be followed as same as round 1 Max time : 40 seconds  . ",
+          "Rule to be followed as same as round 1 Max time : 40 seconds  ",
         tag: "EVENT",
         color: "0, 1, 38",
         logo: "/EventsAssets/med3.png",
@@ -3068,7 +3069,7 @@ export const EventDetails = [
           "Ten Circuits will be displayed for 10 Seconds to  each participant. Those who draw the maximum number of circuits correctly will be shortlisted for the next round. Note:No mobile phones are allowed.No discussions are allowed ",
         round3title: "Spectrum Analysis ",
         round3:
-          "At the time of events a circuit name will be informed to for each team, Circuits ideas and  components will be provided . The team that shows the spectrum analysis (output)  first will be considered as the winner. (On a first-come, first-served basis.)  Total time for this event is 15 minutes. On the basis of time management and relevant explanation, participants will be selected. The winners will be declared on the basis of the shortest time period of completion of the task.Note:. No mobile phones are allowed during the participation of the event.   No discussion or sharing of answers among the participants .   If any malpractices are noticed, then the term will be disqualified from all the events.",
+          "At the time of events a circuit name will be informed to for each team, Circuits ideas and  components will be provided . The team that shows the spectrum analysis (output)  first will be considered as the winner. (On a first-come, first-served basis.)  Total time for this event is 15 minutes. On the basis of time management and relevant explanation, participants will be selected. The winners will be declared on the basis of the shortest time period of completion of the task.Note:. No mobile phones are allowed during the participation of the event.   No discussion or sharing of answers among the participants .   If any malpractices are noticed, then the term will be disqualified from all the events",
         tag: "EVENT",
         color: "0, 1, 38",
         logo: "mba1.png",
@@ -3176,7 +3177,7 @@ export const EventDetails = [
             name: "Dr.S. kanagamalliga  ",
             desig: " Associate Professor",
             phone: 770862408,
-            email: "kanagamalligas@saveetha.ac. ",
+            email: "kanagamalligas@saveetha.ac",
           },
           {
             name: "Ms.V Subashree  ",
@@ -3190,7 +3191,7 @@ export const EventDetails = [
             name: "ROSHINI S  ",
             year: " III",
             phone: 9092522219,
-            email: "roshinisece@gmail.",
+            email: "roshinisece@gmail",
           },
           {
             name: "VARSHINI S  ",
@@ -3208,7 +3209,7 @@ export const EventDetails = [
         time: "TBA",
         members: "1-3",
         rules:
-          "A team should consist of two/three members .  No mobile phones are allowed during the participation of the event.No discussion or sharing of answers among the teams.If any malpractices are noticed then the team will be disqualified. ",
+          "A team should consist of two/three members .  No mobile phones are allowed during the participation of the event.No discussion or sharing of answers among the teams.If any malpractices are noticed then the team will be disqualified",
         round1title: " COMPONENTS IDENTIFICATION ",
         round1:
           "Participants should identify the suitable components which are related to the topic and questions will be asked related to the topic. Certain Time Periods will be allotted to the participants. They should identify the suitable components within that time period. The team which score most count of technical terms will be qualified to the next round ",
@@ -3331,10 +3332,10 @@ export const EventDetails = [
           "Connection is a game where a set of images are displayed on the screen and also a question will be placed before you. With the help of the images, the answer to that question must be found.The participator should be able to connect all those images to form a word that can be related to the question asked.The participator must be able to identify the answer with the help of the clues given in the images.When the participant tries to guess the answer, he/she must raise his/her hands to answer the question.If the answer is right, then that particular group will be selected for the next round.If not, the group will not be qualified for the next round.There will be 3 phases",
         round2title: "Brainstorming",
         round2:
-          "Brainstorming is a technical quiz on topics related to electrical and electronics. With the electrical and electronics industry growing at such an alarming rate, we need a brain that’s sharp as a diamond.Each team has 4rounds. 1:Shoot Up 2: Riddle 3: Decode 4: More or less.Shoot Up: Direct Questions (q/a) (10 points)If it is not answered questions will be passed on. Riddle: A question or puzzle to be solved (30 points). Decode:Tricky questions will be asked. They've to find the answer which will be a single word (10 points).More or Less:Questions will be asked related to values and numbers. Participants should find whether the value is more or less. (True or False). Answering time is limited to 15 seconds per question.",
+          "Brainstorming is a technical quiz on topics related to electrical and electronics. With the electrical and electronics industry growing at such an alarming rate, we need a brain that’s sharp as a diamond.Each team has 4rounds. 1:Shoot Up 2: Riddle 3: Decode 4: More or less.Shoot Up: Direct Questions (q/a) (10 points)If it is not answered questions will be passed on. Riddle: A question or puzzle to be solved (30 points). Decode:Tricky questions will be asked. They've to find the answer which will be a single word (10 points).More or Less:Questions will be asked related to values and numbers. Participants should find whether the value is more or less. (True or False). Answering time is limited to 15 seconds per question",
         round3title: "Circuitrix",
         round3:
-          "Circuit bugging is one of the fine arts in electronics design. Circuitrix comes with an unleashing event to kindle your circuit knowledge.Each team will be given a Half-Completed Logic Circuit and its equation their task is to Verify the binary outputs. (Required Components and the data sheets will be provided). A team consists of 2 members. Note: Usage of electronic gadgets is not permitted. Teams will be disqualified if it is found to be under any act of malpractice.",
+          "Circuit bugging is one of the fine arts in electronics design. Circuitrix comes with an unleashing event to kindle your circuit knowledge.Each team will be given a Half-Completed Logic Circuit and its equation their task is to Verify the binary outputs. (Required Components and the data sheets will be provided). A team consists of 2 members. Note: Usage of electronic gadgets is not permitted. Teams will be disqualified if it is found to be under any act of malpractice",
         tag: "EVENT",
         color: "0, 1, 38",
         logo: "eee2.png",
@@ -3395,7 +3396,7 @@ export const EventDetails = [
           "Picture contain multiple images will be displayed on the screen for 20 sec.It is 1 vs 1 round.The team members can memorize the maximum number of pictures they can,But only one member per team will be allowed to answer, others from the team shall bet that how much can be tell by their team mate.If your team mate will failed to answer the counts you bet, the point would be automatically goes to your opponent.Team with maximum counts will be considered as the winner",
         round3title: "Mind Play",
         round3:
-          "Observe the given images and give the answer.You have to find the common word in that set and find the answer.You will be provided with 30 seconds for each question.One should answer the question only once.The next set of question is more or the same WORD PUZZLE kind.We will give a word as a hint, you have to find best three words which suits the given hint inside the word puzzle.Questions can be 6x6 format or any size format.For each question time limit is 60 seconds.Note: No gadgets will be permitted,Interaction between teams aren’t allowed.",
+          "Observe the given images and give the answer.You have to find the common word in that set and find the answer.You will be provided with 30 seconds for each question.One should answer the question only once.The next set of question is more or the same WORD PUZZLE kind.We will give a word as a hint, you have to find best three words which suits the given hint inside the word puzzle.Questions can be 6x6 format or any size format.For each question time limit is 60 seconds.Note: No gadgets will be permitted,Interaction between teams aren’t allowed",
         tag: "EVENT",
         color: "0, 1, 38",
         logo: "eee3.png",
