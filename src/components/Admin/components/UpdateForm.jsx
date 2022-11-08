@@ -163,6 +163,7 @@ export default function UpdateForm({
   const handleUpdateForm = async () => {
     console.log(Event, Project, Paper, eventName);
     let Amountpaid = 0;
+    let totalAmount = 0
     // setload(true);
     console.log({ cashPaidForPaper, cashPaidForProject, cashPaid });
     console.log({
@@ -187,9 +188,22 @@ export default function UpdateForm({
       console.log("event running");
       Amountpaid += 150;
     }
+    //check for total amount
+    if(Event){
+      totalAmount+=150
+    }
+    if(Project){
+      totalAmount+=250
+
+    }
+    if(Paper){
+      totalAmount+=200
+      
+    }
+
     console.log(Amountpaid);
     await updateDoc(docRef, {
-      CashToBePaid: Pay,
+      CashToBePaid: totalAmount,
       DepartEvent: Event,
       ProjectPresentation: Project,
       PaperPresentation: Paper,
@@ -230,7 +244,7 @@ export default function UpdateForm({
                 color="primary"
                 size="lg"
                 label="Events"
-                checked={DepartEvent}
+                defaultChecked={DepartEvent}
                 onChange={(e) => {
                   if (Event === true) {
                     setPay(Pay - 150);
@@ -250,7 +264,7 @@ export default function UpdateForm({
                 color="primary"
                 size="lg"
                 label="Paper Presentation"
-                checked={Paper}
+                defaultChecked={Paper}
                 onChange={(e) => {
                   if (Paper === true) {
                     setPay(Pay - 200);
@@ -268,7 +282,7 @@ export default function UpdateForm({
                 color="primary"
                 size="lg"
                 label="Project Display"
-                checked={Project}
+                defaultChecked={Project}
                 onChange={(e) => {
                   if (Project === true) {
                     setPay(Pay - 250);

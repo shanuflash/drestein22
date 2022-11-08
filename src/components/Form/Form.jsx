@@ -196,7 +196,7 @@ const Form = () => {
               .then(async () => {
                 console.log("uploaded");
                 const sendqr = await fetch(
-                  `https://chart.googleapis.com/chart?chs=200x200&cht=qr&chl=https://main--effulgent-horse-1b60e3.netlify.app/user/${cityRef.id}&choe=UTF-8`
+                  `https://chart.googleapis.com/chart?chs=200x200&cht=qr&chl=https://drestein.in/user/${cityRef.id}&choe=UTF-8`
                 );
                 const QrUrl = sendqr.url;
                 console.log(QrUrl);
@@ -387,7 +387,7 @@ const Form = () => {
           }}
         >
           <CssVarsProvider theme={theme} className="formsheet">
-            {/* <form onSubmit={handlesubmit} style={{ marginInline: "auto" }}>
+            <form onSubmit={handlesubmit} style={{ marginInline: "auto" }}>
               <Sheet
                 sx={{
                   width: "80vw",
@@ -723,7 +723,7 @@ const Form = () => {
                   Register
                 </Button>
               </Sheet>
-            </form> */}
+            </form>
           </CssVarsProvider>
         </div>
       )}

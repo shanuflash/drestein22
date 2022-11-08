@@ -8,7 +8,8 @@ import { toast } from "react-toastify";
 import styled from "styled-components";
 import { uuidv4 } from "@firebase/util";
 import { css } from "@mui/material";
-
+import { Chip } from "@mui/material";
+import { Stack } from "@mui/system";
 const SingleUserMain = styled.div`
   height: 100vh;
   width: 100vw;
@@ -23,12 +24,10 @@ const UserCard = styled.div`
   height: 100%;
   padding: 2rem;
   border-radius: 10px;
-  background-color: #ff9b9b;
-  ${({ paid }) =>
-    paid &&
-    `
-    background: #b8ffb8;
-  `}
+  background: ${(props) =>
+    props.paid && props.PaperPaid && props.ProjectPaid
+      ? "#bbffca;"
+      : "#fdaeae"};
 `;
 
 function SingleUserPage() {
@@ -79,9 +78,19 @@ function SingleUserPage() {
               year,
               regno,
               id,
+              PaperPresentation,
+              ProjectPresentation,
+              DepartEvent,
+              cashPaidForProject,
+              cashPaidForPaper,
             } = data;
             return (
-              <UserCard paid={data.cashPaid} key={uuidv4()}>
+              <UserCard
+                paid={DepartEvent ? cashPaid : true}
+                PaperPaid={PaperPresentation ? cashPaidForPaper : true}
+                ProjectPaid={ProjectPresentation ? cashPaidForProject : true}
+                key={uuidv4()}
+              >
                 <p>name : {fname + " " + lname}</p>
                 <p>college : {college}</p>
                 <p>department : {dept}</p>
@@ -89,7 +98,49 @@ function SingleUserPage() {
                 <p>year : {year}</p>
                 <p>regno : {regno}</p>
                 <p>
-                  <strong>{cashPaid ? "paid" : "unpaid"}</strong>
+                  <div style={{
+                    height:'100%'
+                  }}>
+                    {DepartEvent && (
+                      <Stack padding='10px 0px' direction="row" alignItems="center" spacing={2}>
+                        <p>Department Event :</p>
+                        <Chip
+                          sx={{
+                            color: cashPaid ? "black" : "white",
+                            background: cashPaid ? "lightgreen" : "red",
+                            width: "100px",
+                          }}
+                          label={cashPaid ? "paid" : "unpaid"}
+                        />
+                      </Stack>
+                    )}
+                    {PaperPresentation && (
+                      <Stack  padding='10px 0px'  direction="row" alignItems="center" spacing={2} >
+                        <p>Paper Presentation : </p>
+                        <Chip
+                          sx={{
+                            color: cashPaidForPaper ? "black" : "white",
+                            background: cashPaidForPaper ? "lightgreen" : "red",
+                            width: "100px",
+                          }}
+                          label={cashPaidForPaper ? "paid" : "unpaid"}
+                        />
+                      </Stack>
+                    )}
+                    {ProjectPresentation && (
+                      <Stack  padding='10px 0px'  direction="row" alignItems="center" spacing={2}>
+                        <p>Project presentation : </p>
+                        <Chip
+                          sx={{
+                            color: cashPaidForProject ? "black" : "white",
+                            background: cashPaidForProject ? "lightgreen" : "red",
+                            width: "100px",
+                          }}
+                          label={cashPaidForProject ? "paid" : "unpaid"}
+                        />
+                      </Stack>
+                    )}
+                  </div>
                 </p>
               </UserCard>
             );

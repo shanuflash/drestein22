@@ -231,11 +231,15 @@ console.log('this happend ',cashPaid)
           <div
             style={{
               width: "400px",
-            }}
+
+
+
+                        }}
           >
             <img
               style={{
                 width: "100%",
+                height:'100%',
                 borderRadius: "20px",
               }}
               src={IdCard}
