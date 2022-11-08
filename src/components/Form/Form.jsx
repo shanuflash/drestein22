@@ -216,7 +216,7 @@ const Form = () => {
                     To: formdata.email,
 
                     From: "secdrestein2022@gmail.com",
-      
+
                     Subject:
                       "Congrats! Your registration for Drestein is complete 🎉",
 
@@ -441,19 +441,25 @@ const Form = () => {
           }}
         >
           <CssVarsProvider theme={theme} className="formsheet">
-            <div
-              style={{
-                fontSize: "10vw",
-                display: "flex",
-                justifyContent: "center",
-                height: "100vh",
-                width: "100%",
-                alignItems: "center",
-              }}
+            {1 ? (
+              <div
+                style={{
+                  fontSize: "10vw",
+                  display: "flex",
+                  justifyContent: "center",
+                  height: "80vh",
+                  width: "100%",
+                  alignItems: "center",
+                }}
+              >
+                Opening Soon!
+              </div>
+            ) : null}
+            {/* <form
+              onSubmit={handlesubmit}
+              style={{ marginInline: "auto" }}
+              autocomplete="off"
             >
-              Opening Soon!
-            </div>
-            {/* <form onSubmit={handlesubmit} style={{ marginInline: "auto" }}>
               <Sheet
                 sx={{
                   width: "80vw",
@@ -466,7 +472,6 @@ const Form = () => {
                   gap: 2,
                   borderRadius: "sm",
                   boxShadow: "md",
-                  height: "100%",
                 }}
                 style={{ backgroundColor: "rgb(0 0 29 / 60%)" }}
                 variant="outlined"
@@ -525,6 +530,7 @@ const Form = () => {
                     sx={{ width: "48%" }}
                   />
                   <FormControl
+                    required
                     sx={{
                       width: "48%",
                     }}
@@ -532,7 +538,6 @@ const Form = () => {
                     <FormLabel htmlFor="year">Year</FormLabel>
                     <Select
                       id="year"
-                      required
                       data-name="year"
                       placeholder="Year..."
                       value={formdata.year}
@@ -560,35 +565,18 @@ const Form = () => {
                     justifyContent: "space-between",
                   }}
                 >
+                  <TextField
+                    name="dept"
+                    required
+                    value={formdata.dept}
+                    onChange={handleChange}
+                    type="text"
+                    placeholder="Department..."
+                    label="Department"
+                    sx={{ width: "48%" }}
+                  />
                   <FormControl
-                    sx={{
-                      width: "48%",
-                    }}
-                  >
-                    <FormLabel htmlFor="dept">Department</FormLabel>
-                    <Select
-                      id="dept"
-                      required
-                      name="dept"
-                      placeholder="Department..."
-                      value={formdata.dept}
-                      onChange={handleChangeForSelect}
-                    >
-                      <Option data-name="dept" value="1">
-                        IT
-                      </Option>
-                      <Option data-name="dept" value="2">
-                        CSE
-                      </Option>
-                      <Option data-name="dept" value="3">
-                        ECE
-                      </Option>
-                      <Option data-name="dept" value="4">
-                        EEE
-                      </Option>
-                    </Select>
-                  </FormControl>
-                  <FormControl
+                    required
                     sx={{
                       width: "48%",
                     }}
@@ -596,7 +584,6 @@ const Form = () => {
                     <FormLabel htmlFor="gender">Gender</FormLabel>
                     <Select
                       id="gender"
-                      required
                       name="gender"
                       placeholder="Gender..."
                       value={formdata.gender}
@@ -629,12 +616,14 @@ const Form = () => {
                 />
                 <TextField
                   name="email"
-            required
+                  required
                   value={formdata.email}
                   onChange={handleChange}
                   type="email"
                   error={userExistError}
-                  helperText={userExistError ? 'Already Registered with is mail id !':''}
+                  helperText={
+                    userExistError ? "Already Registered with is mail id !" : ""
+                  }
                   placeholder="johndoe@email.com"
                   label="Email"
                 />
@@ -795,8 +784,6 @@ const Form = () => {
           </CssVarsProvider>
         </div>
       )}
-      <Divider style={{ marginTop: "2rem" }} />
-      <Footer />
     </div>
   );
 };
