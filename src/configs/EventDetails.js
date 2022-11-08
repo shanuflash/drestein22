@@ -701,9 +701,9 @@ export const EventDetails = [
 
         day1: {
           date: "16/11/2022-FN",
-          time: "12-3.00",
+          time: "12pm-3pm",
           mode: "OFFLINE",
-          venu: "TBA",
+          venue: "TBA",
           resource: [],
           staff: [
             {
@@ -745,7 +745,7 @@ export const EventDetails = [
           date: "16/11/2022-FN",
           time: "12.00-3.00pm",
           mode: "OFFLINE",
-          venu: "TBA",
+          venue: "TBA",
           resource: [],
           staff: [
             {
@@ -1319,7 +1319,7 @@ export const EventDetails = [
           date: "07/11/2022-FN",
           time: "12:00pm -3.00pm",
           mode: "OFFLINE",
-          venu: "TBA",
+          venue: "TBA",
           resource: [
             {
               name: "Arjunan Senthilkumar",
@@ -1365,17 +1365,22 @@ export const EventDetails = [
         },
       },
       {
+<<<<<<< HEAD
+        name: "Biomechanics & Lab view for Healthcare Applications ",
+        logo: "biow1.png",
+=======
         name: "Biomechanics & LabVIEW for Healthcare Applications",
         logo: "/EventsAssets/bmew1.png",
+>>>>>>> 581a0bbd4d7f97a55fdeecd415bfee0389c68662
         tag: "WORKSHOP",
         color: "0, 70, 90",
         company: "Prashan Medical Technologies",
 
         day1: {
           date: "16/11/2022-FN",
-          time: "12-3.00",
+          time: "12pm-3pm",
           mode: "OFFLINE",
-          venu: "TBA",
+          venue: "TBA",
           resource: [
             {
               name: "Boopathi Sakthivel",
@@ -1638,7 +1643,7 @@ export const EventDetails = [
           date: "07/11/2022-FN",
           time: "12.00-3.00",
           mode: "OFFLINE",
-          venu: "TBA",
+          venue: "TBA",
           resource: [
             {
               name: "Mrs. Pavithra Adikesavan",
@@ -1676,7 +1681,7 @@ export const EventDetails = [
           date: "08/11/2022-FN",
           time: "TBA",
           mode: "OFFLINE",
-          venu: "TBA",
+          venue: "TBA",
           resource: [
             {
               name: "SuganyaSekar",
@@ -1726,7 +1731,7 @@ export const EventDetails = [
           date: "09/11/2022-FN",
           time: "TBA",
           mode: "OFFLINE",
-          venu: "TBA",
+          venue: "TBA",
           resource: [
             {
               name: "Mr. VivekKennady",
@@ -1954,8 +1959,13 @@ export const EventDetails = [
     ],
     workshopslist: [
       {
+<<<<<<< HEAD
+        name: "EXCEL for Chemical Engineers (Basics to Advanced)",
+        logo: "chemw1.png",
+=======
         name: "EXCEL for Chemical Engineers : Basics to Advanced",
         logo: "/EventsAssets/chemw1.png",
+>>>>>>> 581a0bbd4d7f97a55fdeecd415bfee0389c68662
         tag: "WORKSHOP",
         color: "0, 70, 90",
 
