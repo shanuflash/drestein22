@@ -29,6 +29,9 @@ const EventCard = ({
   student,
   logo,
   format,
+
+  day1,
+  day2,
 }) => {
   const { setEventObject } = useContext(DisplayPopupContext);
 
@@ -58,6 +61,9 @@ const EventCard = ({
       staff,
       student,
       logo,
+
+      day1,
+      day2,
     });
   };
 
