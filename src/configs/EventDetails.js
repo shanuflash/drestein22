@@ -245,7 +245,6 @@ export const EventDetails = [
   {
     id: "cse",
     title: "Computer Science & Engineering",
-
     eventslist: [
       {
         name: "The Lost Code",
@@ -311,7 +310,7 @@ export const EventDetails = [
             email: "pradeesh27ll.1m@gmail.com",
           },
         ],
-      },
+      }, //verified 8/11
       {
         name: "Design Space",
         tagline: "UI design",
@@ -378,7 +377,7 @@ export const EventDetails = [
             email: "sachinezhilmaran@gmail.com",
           },
         ],
-      },
+      }, //verified 8/11
       {
         name: "Sightless Snippets",
         tagline: "Blind Coding",
@@ -390,15 +389,13 @@ export const EventDetails = [
 
         rules: "",
         round1:
-          " A set of simple programs are given to the coders, they have to find the solution to those programs and execute it in the system with screen off. Those who give the correct answer with in certain time they are qualified to the next round",
+          "A set of simple programs are given to the coders, they have to find the solution to those programs and execute it in the system with screen off. Those who give the correct answer with in certain time they are qualified to the next round",
         round2:
           "A set of programs will be displayed to the coders for a specified time and they are supposed to predict the output pattern for that program with in the given time, those who give the exact answers will be qualified to the next round",
         round3:
           "Program with some errors is given in the paper to the coders and first they have to debug that program in the paper and then they have to execute the same program in the system with screen off.Then three pattern programs are given to them and they have to find the solution to that program then they have to execute it in the system with screen off",
-
         tag: "EVENT",
         color: "0, 1, 38",
-        /* background-color: #000126;  */
         logo: "/EventsAssets/cse3.png",
         staff: [
           {
@@ -440,8 +437,7 @@ export const EventDetails = [
             email: "msdhanush2003@gmail.com",
           },
         ],
-      },
-
+      }, //verified 8/11
       {
         name: "Dare to Compete",
         desc: "Ideathon",
@@ -454,10 +450,10 @@ export const EventDetails = [
         rules: "",
         round1title: "Abstract extraction",
         round1:
-          "The theme of ideathon will be given two days before the event .The participants need to prepare an abstract for their idea based on the theme.A group can contain minimum of 1 and maximum of 3 members.The top 10 teams will advance to ROUND 2 on the basis of their report",
+          "The theme of ideathon will be given two days before the event.The participants need to prepare an abstract for their idea based on the theme.A group can contain minimum of 1 and maximum of 3 members.The top 10 teams will advance to ROUND 2 on the basis of their report",
         round2title: "PPT Presentation",
         round2:
-          "Each team will be receiving 3-4 minutes to present their idea through ppt and 2-3 minutes to solve the given questions (Timing may vary based on number of teams).The TOP 3 will be selected based on the idea of the presentation",
+          "Each team will be receiving 3-4 minutes to present their idea through ppt.2-3 minutes to solve the given questions (Timing may vary based on number of teams).The TOP 3 will be selected based on the idea of the presentation.",
         tag: "EVENT",
         color: "0, 1, 38",
         logo: "/EventsAssets/cse4.png",
@@ -501,8 +497,52 @@ export const EventDetails = [
             email: "jaiganesh9604@gmail.com",
           },
         ],
-      },
+      }, //verified 8/11
     ],
+    workshopslist: [
+      {
+        name: "Field Demonstration Of Drone Sprayer",
+        logo: "/EventsAssets/agriw1.png",
+        tag: "WORKSHOP",
+        color: "0, 70, 90",
+
+        day1: {
+          date: "16/11/2022-FN",
+          time: "12pm-3pm",
+          mode: "OFFLINE",
+          venue: "TBA",
+          resource: [],
+          staff: [
+            {
+              name: "MR.TAJUDDIN",
+              desig: "Professor and Head",
+              phone: 9677883599,
+              email: "hod.agri@saveetha.ac.in",
+            },
+            {
+              name: "MR.GANAPATHI",
+              desig: "Assistant Professor (SG)",
+              phone: 9787982231,
+              email: "ganapathid@saveetha.ac.in",
+            },
+          ],
+          student: [
+            {
+              name: "DHANALAKSHMI ",
+              year: "IV",
+              phone: 9360677202,
+              email: "ruthudhana25@gmail.com",
+            },
+            {
+              name: "SANJAY",
+              year: "III",
+              phone: 9940631302,
+              email: "ssanjay1303@gmail.com",
+            },
+          ],
+        },
+      },
+    ]
   },
 
   {
@@ -1957,8 +1997,10 @@ export const EventDetails = [
     workshopslist: [
       {
 
+
         name: "EXCEL for Chemical Engineers : Basics to Advanced",
         logo: "/EventsAssets/chemw1.png",
+
 
         tag: "WORKSHOP",
         color: "0, 70, 90",
