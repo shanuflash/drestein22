@@ -542,7 +542,7 @@ export const EventDetails = [
           ],
         },
       },
-    ]
+    ],
   },
 
   {
