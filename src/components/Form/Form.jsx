@@ -38,7 +38,7 @@ import MenuItem from "@mui/material/MenuItem";
 import IdCardUpload from "./IdCardUpload";
 import Footer from "../Footer/Footer";
 import { getDocs } from "firebase/firestore";
-import { collection ,where,onSnapshot,query} from "firebase/firestore";
+import { collection, where, onSnapshot, query } from "firebase/firestore";
 import { serverTimestamp } from "firebase/firestore";
 
 import {
@@ -150,21 +150,17 @@ const Form = () => {
     MBA: [],
     BME: [],
   });
-const [userExist,setUserExist] = useState([])
+  const [userExist, setUserExist] = useState([]);
 
-const [userExistError,setUserExistError] =useState(false)
+  const [userExistError, setUserExistError] = useState(false);
 
   const handleChange = (e) => {
-    setUserExistError(false)
+    setUserExistError(false);
     setformdata((prevState) => ({
       ...prevState,
       [e.target.name]: e.target.value,
     }));
   };
-
-
-
-
 
   const uploadProfileImg = async (id) => {
     return new Promise((resolve, reject) => {
@@ -194,8 +190,8 @@ const [userExistError,setUserExistError] =useState(false)
         },
         (error) => {
           reject(error);
-          setload(false)
-          toast.error('resize your image')
+          setload(false);
+          toast.error("resize your image");
         },
         () => {
           // Handle successful uploads on complete
@@ -221,9 +217,8 @@ const [userExistError,setUserExistError] =useState(false)
 
                     From: "secdrestein2022@gmail.com",
 
-
-
-                    Subject:"Congrats! Your registration for Drestein is complete 🎉",
+                    Subject:
+                      "Congrats! Your registration for Drestein is complete 🎉",
 
                     Body: `<h2>name : ${formdata.fname} ${formdata.lname}</h2>
                                  <h2>college : ${formdata.college}</h2>
@@ -234,9 +229,9 @@ const [userExistError,setUserExistError] =useState(false)
                     alert("Email send to you successfully");
                     setload(false);
                     setconfirmMsg(true);
-                    toast.success('Registered successfully 🥳',{
-                      position:'bottom-left'
-                    })
+                    toast.success("Registered successfully 🥳", {
+                      position: "bottom-left",
+                    });
                   });
                 }
               })
@@ -248,26 +243,25 @@ const [userExistError,setUserExistError] =useState(false)
       );
     });
   };
-function isuserAlreadyExist(email){
-return new Promise((resolve,reject)=>{
-  const colref = collection(db, "RegisteredPeople");
-  const q = query(colref, where("email", "==",email));
+  function isuserAlreadyExist(email) {
+    return new Promise((resolve, reject) => {
+      const colref = collection(db, "RegisteredPeople");
+      const q = query(colref, where("email", "==", email));
 
-  onSnapshot(q, async(snapshot) => {
-    let books = [];
-    console.log(snapshot.docs);
-      snapshot.docs.forEach((doc) => {
-      books.push({ ...doc.data(), id: doc.id });
+      onSnapshot(q, async (snapshot) => {
+        let books = [];
+        console.log(snapshot.docs);
+        snapshot.docs.forEach((doc) => {
+          books.push({ ...doc.data(), id: doc.id });
+        });
+        // console.log(books)
+
+        setUserExist(books);
+        resolve(books);
+        console.log("thisi ", userExist);
+      });
     });
-    // console.log(books)
-
-    setUserExist(books);
-    resolve(books)
-    console.log('thisi ',userExist)
-    
-  });
-})
-}
+  }
   const handlesubmit = async (e) => {
     e.preventDefault();
     if (img === null) {
@@ -278,10 +272,10 @@ return new Promise((resolve,reject)=>{
       return false;
     }
     setload(true);
-    const response = await isuserAlreadyExist(formdata.email)
+    const response = await isuserAlreadyExist(formdata.email);
 
     // console.log("this is ths i",userExist)
-     
+
     formdata.id = uuidv4();
 
     formdata.cashPaid = false;
@@ -310,7 +304,6 @@ return new Promise((resolve,reject)=>{
     formdata.DepartEvent = Event;
     formdata.timestamp = serverTimestamp();
 
-
     if (Event === true) {
       formdata.CashToBePaid += 150;
     }
@@ -321,17 +314,15 @@ return new Promise((resolve,reject)=>{
       formdata.CashToBePaid += 200;
     }
     console.log(formdata);
-if(response[0]===undefined){
-
-  uploadProfileImg(formdata.id);
-}else{
-  setload(false)
-  setUserExistError(true)
-  toast.error('user Already exist',{
-    position:'bottom-left'
-  })
-
-}
+    if (response[0] === undefined) {
+      uploadProfileImg(formdata.id);
+    } else {
+      setload(false);
+      setUserExistError(true);
+      toast.error("user Already exist", {
+        position: "bottom-left",
+      });
+    }
   };
 
   const handleChangeForSelect = (e) => {
@@ -342,11 +333,9 @@ if(response[0]===undefined){
     }));
   };
 
-
   // useEffect(() => {
   //   console.log(eventName);
   // }, [eventName]);
-
 
   const handleChangeT = (event) => {
     const {
