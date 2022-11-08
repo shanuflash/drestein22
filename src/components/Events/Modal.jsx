@@ -163,7 +163,7 @@ const Modal = ({ open, setOpenModal }) => {
             ) : null}
             {eventObject.staff ? (
               <div className="faculty">
-                <h3>Facalty Co-ordinators:</h3>
+                <h3>Faculty Co-ordinators:</h3>
                 <ol>
                   {eventObject.staff?.map((each) => {
                     return (
@@ -239,7 +239,6 @@ const Modal = ({ open, setOpenModal }) => {
                 </div>
               </>
             ) : null}
-            
           </>
         )}
 
