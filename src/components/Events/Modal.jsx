@@ -97,7 +97,7 @@ const Modal = ({ open, setOpenModal }) => {
                 <h3>
                   Round 1:
                   {eventObject.round1title
-                    ? `( ${eventObject.round1title} )`
+                    ? ` (${eventObject.round1title})`
                     : ""}
                 </h3>
                 <ol>
