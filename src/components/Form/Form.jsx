@@ -37,6 +37,10 @@ import InputLabel from "@mui/material/InputLabel";
 import MenuItem from "@mui/material/MenuItem";
 import IdCardUpload from "./IdCardUpload";
 import Footer from "../Footer/Footer";
+import { getDocs } from "firebase/firestore";
+import { collection, where, onSnapshot, query } from "firebase/firestore";
+import { serverTimestamp } from "firebase/firestore";
+
 import {
   getStorage,
   ref,
@@ -146,8 +150,12 @@ const Form = () => {
     MBA: [],
     BME: [],
   });
+  const [userExist, setUserExist] = useState([]);
+
+  const [userExistError, setUserExistError] = useState(false);
 
   const handleChange = (e) => {
+    setUserExistError(false);
     setformdata((prevState) => ({
       ...prevState,
       [e.target.name]: e.target.value,
@@ -182,6 +190,8 @@ const Form = () => {
         },
         (error) => {
           reject(error);
+          setload(false);
+          toast.error("resize your image");
         },
         () => {
           // Handle successful uploads on complete
@@ -204,9 +214,12 @@ const Form = () => {
                   await window.Email.send({
                     SecureToken: process.env.REACT_APP_EMAILCODE_ID,
                     To: formdata.email,
-                    From: "gleedara@gmail.com",
+
+                    From: "secdrestein2022@gmail.com",
+      
                     Subject:
                       "Congrats! Your registration for Drestein is complete 🎉",
+
                     Body: `<h2>name : ${formdata.fname} ${formdata.lname}</h2>
                                  <h2>college : ${formdata.college}</h2>
                                  <h2>Rollno : ${formdata.regno}</h2>
@@ -216,6 +229,9 @@ const Form = () => {
                     alert("Email send to you successfully");
                     setload(false);
                     setconfirmMsg(true);
+                    toast.success("Registered successfully 🥳", {
+                      position: "bottom-left",
+                    });
                   });
                 }
               })
@@ -227,7 +243,25 @@ const Form = () => {
       );
     });
   };
+  function isuserAlreadyExist(email) {
+    return new Promise((resolve, reject) => {
+      const colref = collection(db, "RegisteredPeople");
+      const q = query(colref, where("email", "==", email));
 
+      onSnapshot(q, async (snapshot) => {
+        let books = [];
+        console.log(snapshot.docs);
+        snapshot.docs.forEach((doc) => {
+          books.push({ ...doc.data(), id: doc.id });
+        });
+        // console.log(books)
+
+        setUserExist(books);
+        resolve(books);
+        console.log("thisi ", userExist);
+      });
+    });
+  }
   const handlesubmit = async (e) => {
     e.preventDefault();
     if (img === null) {
@@ -238,6 +272,10 @@ const Form = () => {
       return false;
     }
     setload(true);
+    const response = await isuserAlreadyExist(formdata.email);
+
+    // console.log("this is ths i",userExist)
+
     formdata.id = uuidv4();
 
     formdata.cashPaid = false;
@@ -264,6 +302,7 @@ const Form = () => {
     //   }
     // }
     formdata.DepartEvent = Event;
+    formdata.timestamp = serverTimestamp();
 
     if (Event === true) {
       formdata.CashToBePaid += 150;
@@ -275,7 +314,15 @@ const Form = () => {
       formdata.CashToBePaid += 200;
     }
     console.log(formdata);
-    uploadProfileImg(formdata.id);
+    if (response[0] === undefined) {
+      uploadProfileImg(formdata.id);
+    } else {
+      setload(false);
+      setUserExistError(true);
+      toast.error("user Already exist", {
+        position: "bottom-left",
+      });
+    }
   };
 
   const handleChangeForSelect = (e) => {
@@ -289,6 +336,7 @@ const Form = () => {
   // useEffect(() => {
   //   console.log(eventName);
   // }, [eventName]);
+
   const handleChangeT = (event) => {
     const {
       target: { value, name },
@@ -462,7 +510,7 @@ const Form = () => {
                   value={formdata.college}
                   onChange={handleChange}
                   type="text"
-                  placeholder="Cllege name..."
+                  placeholder="College name..."
                   label="College Name"
                 />
                 <div className="yearno">
@@ -581,10 +629,12 @@ const Form = () => {
                 />
                 <TextField
                   name="email"
-                  required
+            required
                   value={formdata.email}
                   onChange={handleChange}
                   type="email"
+                  error={userExistError}
+                  helperText={userExistError ? 'Already Registered with is mail id !':''}
                   placeholder="johndoe@email.com"
                   label="Email"
                 />
