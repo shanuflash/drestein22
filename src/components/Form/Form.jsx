@@ -387,7 +387,7 @@ const Form = () => {
           }}
         >
           <CssVarsProvider theme={theme} className="formsheet">
-            <form onSubmit={handlesubmit} style={{ marginInline: "auto" }}>
+            {/* <form onSubmit={handlesubmit} style={{ marginInline: "auto" }}>
               <Sheet
                 sx={{
                   width: "80vw",
@@ -723,7 +723,7 @@ const Form = () => {
                   Register
                 </Button>
               </Sheet>
-            </form>
+            </form> */}
           </CssVarsProvider>
         </div>
       )}
