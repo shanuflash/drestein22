@@ -1,5 +1,248 @@
 export const EventDetails = [
   {
+    id: "it",
+    title: "Information Technology",
+    eventslist: [
+      {
+        name: "Switcheroo",
+        tagline: "Switcheroo is a coding challenge with a twist",
+        date: "18 Nov 2022(AN)",
+        type: "Team",
+        venue: "TBA",
+        time: "TBA",
+
+        members: "2",
+        rules:
+          "A fun event spanning over two rounds. Maximum participation 2 person per team. In the case of cheating, using of phone or using of any unnecessary gadgets will make the team disqualify. Shortlisted participants of Round-1 will appear for Round-2 for which above rules are applicable",
+        round1title: "{ code with <fun>; }",
+        round1:
+          "It’s a contest testing your abilities to work as a team. The competition not only examines your skills as to how well you coordinate with your partner but also how analytical you are in an isolated and tensed situation",
+        round2title: "Blind Coding",
+        round2:
+          "It is a fresh and offbeat concept - where the participants need to write and compile their program with the monitor screens switched off. Each team has to write the code for given problem, with MONITOR OFF.Each team will be allowed one free “Screen time” (where the monitor screen can be turned on for 60 seconds), after which they will be penalized with 3 points for each extra screen time. Each team can avail a maximum of 5 screen times.  At a time only 5 teams will be allowed to avail the facility of Screen Time, the slots for which will be allotted on a first come first serve basis",
+        judge:
+          "All the problems have same points allotted to them. Participant whose code gets executed will be given higher preference. Second preference will be given to the code with least number of errors. The decision of the organizers in declaring the results will be final. No queries in this regard will be entertained. Any team found to be indulging in any form of malpractice will be immediately disqualified",
+        tag: "EVENT",
+        color: "0, 1, 38",
+        logo: "/EventsAssets/it1.png",
+        staff: [
+          {
+            name: "Ms. S.P. Panimalar",
+            desig: "Assistant Professor",
+            phone: 9789703697,
+            email: "panimalarsp@saveetha.ac.in",
+          },
+        ],
+        student: [
+          {
+            name: "Kanishkar K",
+            year: "IV",
+            phone: 9884312777,
+            email: "kanishkqrk@gmail.com",
+          },
+          {
+            name: "Kousalya R",
+            year: "IV",
+            phone: 9150728777,
+            email: "kousi2917091@gmail.com",
+          },
+          {
+            name: "Divya Bharathi K",
+            year: "III",
+            phone: 8838819253,
+            email: "dbharathi30122002@gmail.com",
+          },
+          {
+            name: "Shanthini S",
+            year: "III",
+            phone: 9025278040,
+            email: "shanthinisaro26@gmail.com",
+          },
+          {
+            name: "Swathi A",
+            year: "III",
+            phone: 8248096438,
+            email: "swathi7203@gmail.com",
+          },
+        ],
+      },
+      {
+        name: "Game of Codes",
+        date: "18 Nov 2022(AN)",
+        type: "Team",
+        venue: "TBA",
+        time: "TBA",
+        members: "1-2",
+        rules: "",
+        round1title: "Quiz",
+        round1:
+          "Only one member per team .Any language can be used .Solve very easy difficulty code snippets to advance to next round .Code should make you win the game that is provided. In case of malpractice, team will be disqualified",
+
+        round2:
+          " Top 8 teams in this round .Same team member . Any language can be used . Solve basic/easy difficulty code snippets to advance to next round .Code should be accurate in order to win the game",
+        round3:
+          "Top 4 teams in this round .Same team member .Any language can be used .Solve medium difficulty code snippets to win .Code should be perfect to conquer the final game",
+        tag: "EVENT",
+        color: "0, 1, 38",
+        logo: "/EventsAssets/it2.png",
+        staff: [
+          {
+            name: "Ms. Yuvashree S",
+            desig: "Assistant Professor",
+            phone: 9360816621,
+            email: "yuvashres@saveetha.ac.in",
+          },
+        ],
+        student: [
+          {
+            name: "Subhiksha KP",
+            year: "IV",
+            phone: 9361530437,
+            email: "subhi.pannirselvam@gmail.com",
+          },
+          {
+            name: "Aravindhan S",
+            year: "IV",
+            phone: 8248832238,
+            email: "aravindrohith007@gmail.com",
+          },
+          {
+            name: "Raghul M",
+            year: "III",
+            phone: 9025273351,
+            email: "raghulmalai21@gmail.com",
+          },
+          {
+            name: "Kameshwaran M",
+            year: "III",
+            phone: 8940416664,
+            email: "kameshwaran2002@gmail.com",
+          },
+        ],
+      },
+      {
+        name: "Cipher Hunt",
+        desc: "Cipher Hunt is a cybersecurity competition that is all about finding weaknesses and exploiting loopholes in various computer programs. It aims to engage participants in the creative exploration of real-world computer security by distilling the significant disciplines of professional cybersecurity into short, objectively measurable exercises.An ethical hacking contest in which contestants will have to find pieces of information, called ‘flags’, hidden in each of the challenges. So, assemble your team, prepare to decrypt hidden messages, exploit vulnerabilities, and do whatever it takes to Hunt!",
+        date: "19 Nov 2022(FN)",
+        type: "Team",
+        venue: "TBA",
+        time: "TBA",
+        members: "2",
+        rules:
+          "Players can compete individually or in teams of up to 2 members. Teams should work independently; sharing answers or collaborating with another team constitutes cheating. Brute-forcing the flags is not allowed.Any kind of violation of these rules will mean immediate disqualification of the team. The decision of the event managers will be deemed",
+        // format:
+        //   "There will be a set of challenges from a range of categories like Cryptography, Web Security, Forensics, Steganography, Reverse Engineering, Binary Exploits, etc. The challenges can either be a collection of files that they can download and find the “Flag” or can be running as web services to which, the participants connect and exploit to retrieve the Flag. Each category contains a variety of questions with different point values and levels of difficulty.The participants will be ranked based on their scores, and the time taken will be used as a tiebreaker",
+
+        tag: "EVENT",
+        color: "0, 1, 38",
+        logo: "/EventsAssets/it3.png",
+        staff: [
+          {
+            name: "Ms. R N Karthika",
+            desig: "Assistant Professor",
+            phone: 8248816873,
+            email: " karthikarn@saveetha.ac.in",
+          },
+        ],
+        student: [
+          {
+            name: "Vinith S",
+            year: "IV",
+            phone: 9789822119,
+            email: "vinithrocks99@gmail.com",
+          },
+          {
+            name: "S Pavithra",
+            year: "IV",
+            phone: 7358938022,
+            email: "pavithra.skp8@gmail.com",
+          },
+          {
+            name: "Sanjay kumar M",
+            year: "III",
+            phone: 7550132900,
+            email: "sanjaymoad786@gmail.com",
+          },
+          {
+            name: "Kishore N",
+            year: "III",
+            phone: 6380247898,
+            email: "kishor.a1411@gmail.com",
+          },
+          {
+            name: "Vasanthan S R",
+            year: "II",
+            phone: 9003262427,
+            email: "vasanthansethu@gmail.com",
+          },
+        ],
+      },
+      {
+        name: "Codeverse",
+        tagline: "The idea behind this event is to figure out the (MYSTERY)",
+        date: "19 Nov 2022(AN)",
+        type: "Team",
+        venue: "TBA",
+        time: "TBA",
+        members: "1-3",
+        rules: "",
+        round1title: "CrunchBox",
+        round1:
+          "Participants has to find the technical words by stringing the images together. It’s a buzzer round Individual Participants.Participants with high scores advance to next round.Number of Questions will be based on time taken",
+        round2title: "CodeSlash",
+        round2:
+          "Basic Pseudo codes and programs in MCQ format. Participants must complete with high scores within the time limit .top participants will advance to next round",
+        round3title: "Reverse Coding",
+        round3:
+          "Participants will be provided with an executable file and they will have to perform reverse coding. They will have to test for different inputs and outputs.Finally, the source code is to be generated. The round will have five such questions.The winner will be selected based on accuracy and working code",
+        tag: "EVENT",
+        color: "0, 1, 38",
+
+        logo: "/EventsAssets/it4.png",
+        staff: [
+          {
+            name: "Dr. S. Vidhya",
+            desig: "Associate Professor",
+            phone: 9444778865,
+            email: "vidhya@saveetha.ac.in",
+          },
+        ],
+        student: [
+          {
+            name: "Sureshram E",
+            year: "IV",
+            phone: 8754775239,
+            email: "e.sureshram2017@gmail.com",
+          },
+          {
+            name: "Harish S",
+            year: "IV",
+            phone: 7708729441,
+            email: "harishskr1@gmail.com",
+          },
+          {
+            name: "Sugavarathan. L",
+            year: "II",
+            phone: 7010268757,
+            email: "sugavarathan003@gmail.com",
+          },
+          {
+            name: "Nihil K",
+            year: "II",
+            phone: 9486411631,
+            email: "nihilkrish27@gmail.com",
+          },
+          {
+            name: "Chandra Mohan S",
+            year: "II",
+            phone: 7358614048,
+            email: "mohanchandra90510@gmail.com",
+          },
+        ],
+      },
+    ],
+  },
+  {
     id: "cse",
     title: "Computer Science & Engineering",
 
@@ -261,248 +504,7 @@ export const EventDetails = [
       },
     ],
   },
-  {
-    id: "it",
-    title: "Information Technology",
-    eventslist: [
-      {
-        name: "Switcheroo",
-        tagline: "Switcheroo is a coding challenge with a twist",
-        date: "18 Nov 2022(AN)",
-        type: "Team",
-        venue: "TBA",
-        time: "TBA",
 
-        members: "2",
-        rules:
-          "A fun event spanning over two rounds. Maximum participation 2 person per team. In the case of cheating, using of phone or using of any unnecessary gadgets will make the team disqualify. Shortlisted participants of Round-1 will appear for Round-2 for which above rules are applicable",
-        round1title: "{ code with <fun>; }",
-        round1:
-          "It’s a contest testing your abilities to work as a team. The competition not only examines your skills as to how well you coordinate with your partner but also how analytical you are in an isolated and tensed situation",
-        round2title: "Blind Coding",
-        round2:
-          "It is a fresh and offbeat concept - where the participants need to write and compile their program with the monitor screens switched off. Each team has to write the code for given problem, with MONITOR OFF.Each team will be allowed one free “Screen time” (where the monitor screen can be turned on for 60 seconds), after which they will be penalized with 3 points for each extra screen time. Each team can avail a maximum of 5 screen times.  At a time only 5 teams will be allowed to avail the facility of Screen Time, the slots for which will be allotted on a first come first serve basis",
-        judge:
-          "All the problems have same points allotted to them. Participant whose code gets executed will be given higher preference. Second preference will be given to the code with least number of errors. The decision of the organizers in declaring the results will be final. No queries in this regard will be entertained. Any team found to be indulging in any form of malpractice will be immediately disqualified",
-        tag: "EVENT",
-        color: "0, 1, 38",
-        logo: "/EventsAssets/it1.png",
-        staff: [
-          {
-            name: "Ms. S.P. Panimalar",
-            desig: "Assistant Professor",
-            phone: 9789703697,
-            email: "panimalarsp@saveetha.ac.in",
-          },
-        ],
-        student: [
-          {
-            name: "Kanishkar K",
-            year: "IV",
-            phone: 9884312777,
-            email: "kanishkqrk@gmail.com",
-          },
-          {
-            name: "Kousalya R",
-            year: "IV",
-            phone: 9150728777,
-            email: "kousi2917091@gmail.com",
-          },
-          {
-            name: "Divya Bharathi K",
-            year: "III",
-            phone: 8838819253,
-            email: "dbharathi30122002@gmail.com",
-          },
-          {
-            name: "Shanthini S",
-            year: "III",
-            phone: 9025278040,
-            email: "shanthinisaro26@gmail.com",
-          },
-          {
-            name: "Swathi A",
-            year: "III",
-            phone: 8248096438,
-            email: "swathi7203@gmail.com",
-          },
-        ],
-      },
-      {
-        name: "Game of Codes",
-        date: "18 Nov 2022(AN)",
-        type: "Team",
-        venue: "TBA",
-        time: "TBA",
-        members: "1-2",
-        rules: "",
-        round1title: "Quiz",
-        round1:
-          "Only one member per team .Any language can be used .Solve very easy difficulty code snippets to advance to next round .Code should make you win the game that is provided. In case of malpractice, team will be disqualified",
-
-        round2:
-          " Top 8 teams in this round .Same team member . Any language can be used . Solve basic/easy difficulty code snippets to advance to next round .Code should be accurate in order to win the game",
-        round3:
-          "Top 4 teams in this round .Same team member .Any language can be used .Solve medium difficulty code snippets to win .Code should be perfect to conquer the final game",
-        tag: "EVENT",
-        color: "0, 1, 38",
-        logo: "/EventsAssets/it2.png",
-        staff: [
-          {
-            name: "Ms. Yuvashree S",
-            desig: "Assistant Professor",
-            phone: 9360816621,
-            email: "yuvashres@saveetha.ac.in",
-          },
-        ],
-        student: [
-          {
-            name: "Subhiksha KP",
-            year: "IV",
-            phone: 9361530437,
-            email: "subhi.pannirselvam@gmail.com",
-          },
-          {
-            name: "Aravindhan S",
-            year: "IV",
-            phone: 8248832238,
-            email: "aravindrohith007@gmail.com",
-          },
-          {
-            name: "Raghul M",
-            year: "III",
-            phone: 9025273351,
-            email: "raghulmalai21@gmail.com",
-          },
-          {
-            name: "Kameshwaran M",
-            year: "III",
-            phone: 8940416664,
-            email: "kameshwaran2002@gmail.com",
-          },
-        ],
-      },
-      {
-        name: "Cipher Hunt",
-        desc: "Cipher Hunt is a cybersecurity competition that is all about finding weaknesses and exploiting loopholes in various computer programs. It aims to engage participants in the creative exploration of real-world computer security by distilling the significant disciplines of professional cybersecurity into short, objectively measurable exercises.An ethical hacking contest in which contestants will have to find pieces of information, called ‘flags’, hidden in each of the challenges. So, assemble your team, prepare to decrypt hidden messages, exploit vulnerabilities, and do whatever it takes to Hunt!",
-        date: "19 Nov 2022(FN)",
-        type: "Team",
-        venue: "TBA",
-        time: "TBA",
-        members: "2",
-        rules:
-          "Players can compete individually or in teams of up to 2 members. Teams should work independently; sharing answers or collaborating with another team constitutes cheating. Brute-forcing the flags is not allowed.Any kind of violation of these rules will mean immediate disqualification of the team. The decision of the event managers will be deemed",
-        format:
-          "There will be a set of challenges from a range of categories like Cryptography, Web Security, Forensics, Steganography, Reverse Engineering, Binary Exploits, etc. The challenges can either be a collection of files that they can download and find the “Flag” or can be running as web services to which, the participants connect and exploit to retrieve the Flag. Each category contains a variety of questions with different point values and levels of difficulty.The participants will be ranked based on their scores, and the time taken will be used as a tiebreaker",
-        tag: "EVENT",
-        color: "0, 1, 38",
-        logo: "/EventsAssets/it3.png",
-        staff: [
-          {
-            name: "Ms. R N Karthika",
-            desig: "Assistant Professor",
-            phone: 8248816873,
-            email: " karthikarn@saveetha.ac.in",
-          },
-        ],
-        student: [
-          {
-            name: "Vinith S",
-            year: "IV",
-            phone: 9789822119,
-            email: "vinithrocks99@gmail.com",
-          },
-          {
-            name: "S Pavithra",
-            year: "IV",
-            phone: 7358938022,
-            email: "pavithra.skp8@gmail.com",
-          },
-          {
-            name: "Sanjay kumar M",
-            year: "III",
-            phone: 7550132900,
-            email: "sanjaymoad786@gmail.com",
-          },
-          {
-            name: "Kishore N",
-            year: "III",
-            phone: 6380247898,
-            email: "kishor.a1411@gmail.com",
-          },
-          {
-            name: "Vasanthan S R",
-            year: "II",
-            phone: 9003262427,
-            email: "vasanthansethu@gmail.com",
-          },
-        ],
-      },
-      {
-        name: "Codeverse",
-        tagline: "The idea behind this event is to figure out the (MYSTERY)",
-        date: "19 Nov 2022(AN)",
-        type: "Team",
-        venue: "TBA",
-        time: "TBA",
-        members: "1-3",
-        rules: "",
-        round1title: "CrunchBox",
-        round1:
-          "Participants has to find the technical words by stringing the images together. It’s a buzzer round Individual Participants.Participants with high scores advance to next round.Number of Questions will be based on time taken",
-        round2title: "CodeSlash",
-        round2:
-          "Basic Pseudo codes and programs in MCQ format. Participants must complete with high scores within the time limit .top participants will advance to next round",
-        round3title: "Reverse Coding",
-        round3:
-          "Participants will be provided with an executable file and they will have to perform reverse coding. They will have to test for different inputs and outputs.Finally, the source code is to be generated. The round will have five such questions.The winner will be selected based on accuracy and working code",
-        tag: "EVENT",
-        color: "0, 1, 38",
-
-        logo: "/EventsAssets/it4.png",
-        staff: [
-          {
-            name: "Dr. S. Vidhya",
-            desig: "Associate Professor",
-            phone: 9444778865,
-            email: "vidhya@saveetha.ac.in",
-          },
-        ],
-        student: [
-          {
-            name: "Sureshram E",
-            year: "IV",
-            phone: 8754775239,
-            email: "e.sureshram2017@gmail.com",
-          },
-          {
-            name: "Harish S",
-            year: "IV",
-            phone: 7708729441,
-            email: "harishskr1@gmail.com",
-          },
-          {
-            name: "Sugavarathan. L",
-            year: "II",
-            phone: 7010268757,
-            email: "sugavarathan003@gmail.com",
-          },
-          {
-            name: "Nihil K",
-            year: "II",
-            phone: 9486411631,
-            email: "nihilkrish27@gmail.com",
-          },
-          {
-            name: "Chandra Mohan S",
-            year: "II",
-            phone: 7358614048,
-            email: "mohanchandra90510@gmail.com",
-          },
-        ],
-      },
-    ],
-  },
   {
     id: "agri",
     title: "Agricultural Engineering",
@@ -692,7 +694,7 @@ export const EventDetails = [
     ],
     workshopslist: [
       {
-        name: "FIELD DEMONSTRATION OF DRONE SPRAYER",
+        name: "Field Demonstration Of Drone Sprayer",
         logo: "/EventsAssets/agriw1.png",
         tag: "WORKSHOP",
         color: "0, 70, 90",

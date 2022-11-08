@@ -158,8 +158,8 @@ function Nav() {
         <Link style={{ textDecoration: "inherit" }} to="/#Departments">
           <NavItem>Departments</NavItem>
         </Link>
-        <Link style={{ textDecoration: "inherit" }} to="/#Gallery">
-          <NavItem>Gallery</NavItem>
+        <Link style={{ textDecoration: "inherit" }} to="/Events#">
+          <NavItem>Events</NavItem>
         </Link>
         <Link style={{ textDecoration: "inherit" }} to="/#About">
           <NavItem>About</NavItem>
@@ -170,7 +170,7 @@ function Nav() {
         {openMenu ? <CgClose /> : <HiOutlineMenuAlt1 />}
       </div>
       <MobileNavHeader>
-        <Link to="/" style={{ "text-decoration": "none" }}>
+        <Link to="/#" style={{ "text-decoration": "none" }}>
           <LogoHead>
             <DLogo src={dresteinLogo} alt="DresteinLogo" />
             <EventLogo>
