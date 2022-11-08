@@ -36,7 +36,7 @@ function App() {
           <div>
             <DisplayPopupProvider>
               <Routes>
-                <Route path="/" element={<Main />} />
+                <Route path="/" element={<Main />} sty/>
                 <Route path="form" element={<Form />} />
                 <Route path="events" element={<Events />} />
                 <Route path="Admin/login" element={<SignIn />} />

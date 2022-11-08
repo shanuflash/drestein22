@@ -205,7 +205,8 @@ const Form = () => {
                     SecureToken: process.env.REACT_APP_EMAILCODE_ID,
                     To: formdata.email,
                     From: "gleedara@gmail.com",
-                    Subject: "congrats on registration in Drestein Event 🎉🎉",
+                    Subject:
+                      "Congrats! Your registration for Drestein is complete 🎉",
                     Body: `<h2>name : ${formdata.fname} ${formdata.lname}</h2>
                                  <h2>college : ${formdata.college}</h2>
                                  <h2>Rollno : ${formdata.regno}</h2>
@@ -307,11 +308,11 @@ const Form = () => {
     },
     {
       name: "ECE",
-      events: ["eceevent1", "eceevent2"],
+      events: ["ElectroBlitz", "CRYOSAT", "Circuit Buzz", "Obstacle Mania"],
     },
     {
       name: "EEE",
-      events: ["EEEevent1", "EEEevent2"],
+      events: ["ROBO SOCCER CHALLENGE", "Techisetz", "BRAIN SCAPE", "RAIKIRI"],
     },
     {
       name: "EIE",
@@ -364,11 +365,16 @@ const Form = () => {
     },
     {
       name: "MBA",
-      events: ["Test", "Test2"],
+      events: [
+        "Adzap",
+        "Business Quiz",
+        "FUTURE MANAGER",
+        "Imagine Through Lens",
+      ],
     },
     {
       name: "MED",
-      events: ["Test", "Test2"],
+      events: ["Anatomia", "CIRCUITO", "CONNECTIONS", "BLIND TEASER"],
     },
   ];
 
@@ -387,7 +393,7 @@ const Form = () => {
           }}
         >
           <CssVarsProvider theme={theme} className="formsheet">
-            /*<form onSubmit={handlesubmit} style={{ marginInline: "auto" }}>
+            {/* <form onSubmit={handlesubmit} style={{ marginInline: "auto" }}>
               <Sheet
                 sx={{
                   width: "80vw",
@@ -723,7 +729,7 @@ const Form = () => {
                   Register
                 </Button>
               </Sheet>
-            </form>*/
+            </form> */}
           </CssVarsProvider>
         </div>
       )}
