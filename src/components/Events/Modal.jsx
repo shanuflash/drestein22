@@ -382,7 +382,6 @@ const Modal = ({ open, setOpenModal }) => {
                 )}
               </>
             ) : null}
-
           </>
         )}
         {/* <Link style={{ textDecoration: "none" }} to="/form">
