@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styled from "styled-components";
 import Loading from "../../../Loading";
 import { Button, Switch } from "@mui/material";
@@ -83,6 +83,9 @@ function UserInfoCard({ data, Scanpage }) {
     });
     // console.log(e.target.checked)
   };
+  useEffect(()=>{
+console.log('this happend ',cashPaid)
+  },[cashPaid])
 
   const handleChangeforProject = async (e, id, AmountPaid) => {
     setload(true);
@@ -287,7 +290,7 @@ function UserInfoCard({ data, Scanpage }) {
 
                   {!isEmpty(EventsRegistered[deptnm]) &&
                     EventsRegistered[deptnm].map((data) => {
-                      console.log("data", data);
+
 
                       return <Chip label={data} />;
                     })}
@@ -311,7 +314,7 @@ function UserInfoCard({ data, Scanpage }) {
 
           <div>
             <Switch
-              defaultChecked={cashPaid}
+                checked={cashPaid}
               onChange={(e) => handleChange(e, id, AmountPaid)}
               inputProps={{ "aria-label": "controlled" }}
             />
@@ -341,7 +344,7 @@ function UserInfoCard({ data, Scanpage }) {
             <h3>PAPER PRESENTATION : 200 ₹</h3>
             <div>
               <Switch
-                defaultChecked={cashPaidForPaper}
+                checked={cashPaidForPaper}
                 onChange={(e) => handleChangeforPaper(e, id, AmountPaid)}
                 inputProps={{ "aria-label": "controlled" }}
               />
@@ -367,7 +370,8 @@ function UserInfoCard({ data, Scanpage }) {
             <h3>PROJECT PRESENTATION : 250 ₹</h3>
             <div>
               <Switch
-                defaultChecked={cashPaidForProject}
+            
+                checked={cashPaidForProject}
                 onChange={(e) => handleChangeforProject(e, id, AmountPaid)}
                 inputProps={{ "aria-label": "controlled" }}
               />

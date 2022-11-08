@@ -50,7 +50,6 @@ export default function UpdateForm({
   cashPaidForPaper,
   cashPaidForProject,
 }) {
-  console.log(ProjectPresentation, PaperPresentation);
   const [open, setOpen] = React.useState(false);
   const [load, setload] = useState(false);
   const handleOpen = () => setOpen(true);
@@ -59,9 +58,8 @@ export default function UpdateForm({
   const [Event, setEvent] = useState(DepartEvent);
   const [Project, setProject] = React.useState(ProjectPresentation);
   const [Paper, setPaper] = React.useState(PaperPresentation);
-  const [Work, setWork] = useState(false);
+
   const [eventName, setEventName] = React.useState(EventsRegistered);
-  const [Amountpaid, setAmountpaid] = useState(AmountPaid);
 
   const [DepPaid, setDepPaid] = useState(cashPaid);
   const [paperPaid, setpaperPaid] = useState(cashPaidForPaper);
@@ -72,6 +70,7 @@ export default function UpdateForm({
 
   const handleChangeT = (event) => {
     // console.log('this ',event.target.name)
+
     const {
       target: { value, name },
     } = event;
@@ -81,8 +80,10 @@ export default function UpdateForm({
     setEventName((pre) => ({ ...pre, [name]: [...value] }));
   };
   useEffect(() => {
-    console.log(eventName);
-  }, [eventName]);
+    setDepPaid(cashPaid);
+    setProjectPaid(cashPaidForProject);
+    setpaperPaid(cashPaidForPaper);
+  }, [cashPaidForPaper, cashPaidForProject, cashPaid]);
   const test = [
     {
       name: "CSE",
@@ -161,13 +162,32 @@ export default function UpdateForm({
 
   const handleUpdateForm = async () => {
     console.log(Event, Project, Paper, eventName);
-
-    setload(true);
+    let Amountpaid = 0;
+    // setload(true);
+    console.log({ cashPaidForPaper, cashPaidForProject, cashPaid });
+    console.log({
+      paperPaid,
+      ProjectPaid,
+      DepPaid,
+    });
 
     console.log(Amountpaid);
     // setChecked(pre=>!pre)
     const docRef = doc(db, "RegisteredPeople", `${id}`);
-
+    if (paperPaid && Paper) {
+      console.log("paper running");
+      Amountpaid += 200;
+    }
+    if (ProjectPaid && Project) {
+      console.log("Project running");
+      Amountpaid += 250;
+      console.log(Amountpaid);
+    }
+    if (DepPaid && Event) {
+      console.log("event running");
+      Amountpaid += 150;
+    }
+    console.log(Amountpaid);
     await updateDoc(docRef, {
       CashToBePaid: Pay,
       DepartEvent: Event,
@@ -210,56 +230,34 @@ export default function UpdateForm({
                 color="primary"
                 size="lg"
                 label="Events"
-                defaultChecked={DepartEvent}
+                checked={DepartEvent}
                 onChange={(e) => {
                   if (Event === true) {
-                    setAmountpaid(0);
                     setPay(Pay - 150);
-
+                    if (DepPaid) {
+                      // console.log("Event Amount ", Amountpaid);
+                      setDepPaid(false);
+                    }
                     setEventName(EventsRegistered);
-                    setDepPaid(false);
-                    setpaperPaid(false);
-                    setProjectPaid(false);
                   } else {
                     setPay(Pay + 150);
                   }
                   setEvent(e.target.checked);
                 }}
               />
-              {/* setWork(e.target.checked); */}
 
-              <Checkbox
-                color="primary"
-                size="lg"
-                label="Workshops"
-                onChange={(e) => {
-                  if (Work === true) {
-                    setPay(Pay - 150);
-                    setAmountpaid(0);
-                    setEventName(EventsRegistered);
-                    setDepPaid(false);
-                    setpaperPaid(false);
-                    setProjectPaid(false);
-                  } else {
-                    setPay(Pay + 150);
-                  }
-                  setWork(e.target.checked);
-                }}
-              />
               <Checkbox
                 color="primary"
                 size="lg"
                 label="Paper Presentation"
-                defaultChecked={Paper}
+                checked={Paper}
                 onChange={(e) => {
                   if (Paper === true) {
                     setPay(Pay - 200);
-
-                    setAmountpaid(0);
+                    if (paperPaid) {
+                      setpaperPaid(false);
+                    }
                     setEventName(EventsRegistered);
-                    setDepPaid(false);
-                    setpaperPaid(false);
-                    setProjectPaid(false);
                   } else {
                     setPay(Pay + 200);
                   }
@@ -270,15 +268,14 @@ export default function UpdateForm({
                 color="primary"
                 size="lg"
                 label="Project Display"
-                defaultChecked={Project}
+                checked={Project}
                 onChange={(e) => {
                   if (Project === true) {
                     setPay(Pay - 250);
-                    setAmountpaid(0);
+                    if (ProjectPaid) {
+                      setProjectPaid(false);
+                    }
                     setEventName(EventsRegistered);
-                    setDepPaid(false);
-                    setpaperPaid(false);
-                    setProjectPaid(false);
                   } else {
                     setPay(Pay + 250);
                   }

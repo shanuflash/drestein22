@@ -23,11 +23,11 @@ const UserCard = styled.div`
   height: 100%;
   padding: 2rem;
   border-radius: 10px;
-  background-color: #ff4949;
+  background-color: #ff9b9b;
   ${({ paid }) =>
     paid &&
     `
-    background: #1af51a;
+    background: #b8ffb8;
   `}
 `;
 

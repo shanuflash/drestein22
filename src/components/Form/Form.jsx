@@ -126,7 +126,7 @@ const Form = () => {
   const [Project, setProject] = React.useState(false);
   const [Paper, setPaper] = React.useState(false);
   const [Event, setEvent] = useState(false);
-  const [Work, setWork] = useState(false);
+
   const [Pay, setPay] = useState(0);
   const [img, setImg] = useState(null);
   const [imgload, setimgload] = useState(false);
@@ -146,29 +146,7 @@ const Form = () => {
     MBA: [],
     BME: [],
   });
-  const [workName, setworkName] = React.useState([
-    {
-      name: "AGRI",
-      events: [],
-    },
-    {
-      name: "IT",
-      events: [
-        {
-          name: "FIELD DEMONSTRATION OF DRONE SPRAYER",
-          price: 200,
-        },
-        {
-          name: "ORGANIC FARMING",
-          price: 100,
-        },
-      ],
-    },
-  ]);
 
-  useEffect(() => {
-    console.log(workName);
-  }, [workName]);
   const handleChange = (e) => {
     setformdata((prevState) => ({
       ...prevState,
@@ -296,7 +274,7 @@ const Form = () => {
       formdata.CashToBePaid += 200;
     }
     console.log(formdata);
-    // uploadProfileImg(formdata.id);
+    uploadProfileImg(formdata.id);
   };
 
   const handleChangeForSelect = (e) => {
@@ -317,102 +295,6 @@ const Form = () => {
     setEventName((pre) => ({ ...pre, [name]: [...value] }));
     console.log(eventName);
   };
-  const handleChangeTT = (event) => {
-    const {
-      target: { value, name },
-    } = event;
-
-    // console.log('this ',value,name)
-    const newObj = value;
-    setworkName((pre) => {
-      return pre.map((data) => {
-        console.log(data);
-        if (data.name === name) {
-          return {
-            name: name,
-            events: [...data.events, newObj],
-          };
-        } else {
-          return data;
-        }
-      });
-    });
-
-    // setworkName((pre) => ({ ...pre, [name]: [...value] }));
-    // console.log(workName);
-  };
-  const worktest = [
-    {
-      name: "AGRI",
-      events: [
-        {
-          name: "FIELD DEMONSTRATION OF DRONE SPRAYER",
-          price: 200,
-        },
-        {
-          name: "ORGANIC FARMING",
-          price: 100,
-        },
-      ],
-    },
-    {
-      name: "IT",
-      events: [
-        {
-          name: " DEMONSTRATION OF DRONE SPRAYER",
-          price: 200,
-        },
-        {
-          name: "FARMING",
-          price: 100,
-        },
-      ],
-    },
-
-    // {
-    //   name: "BME",
-    //   events: [
-    //     "3D modelling in CT & MRI scans on Navigation based surgery",
-    //     "Biomechanics & LabVIEW for Healthcare Applications",
-    //   ],
-    // },
-    // {
-    //   name: "CIVIL",
-    //   events: [
-    //     "Recent technological advancements in building designs using revit",
-    //     "4D Building Information Modelling for Project Management",
-    //     "5D BIM for Construction Industry",
-    //   ],
-    // },
-    // {
-    //   name: "CHEM",
-    //   events: ["EXCEL for Chemical Engineers : Basics to Advanced"],
-    // },
-    // ,
-    // {
-    //   name: "MECH",
-    //   events: [
-    //     "Augmented Reality for 4.0 (Online)",
-    //     "Robotics Simulation (Online)",
-    //     "Hands on training in Fusion 360 (Offline)",
-    //   ],
-    // },
-    // {
-    //   name: "MBA",
-    //   events: [
-    //     "Goal setting and creative thinking",
-    //     "Design-Data-Digital-3D Model",
-    //   ],
-    // },
-    // {
-    //   name: "EEE",
-    //   events: [
-    //     "E-Vehicle ",
-    //     "Basics of Machine Learning using python",
-    //     "EV Battery Assembling using Lithium iron phosphate cells",
-    //   ],
-    // },
-  ];
 
   const test = [
     {
@@ -505,20 +387,7 @@ const Form = () => {
           }}
         >
           <CssVarsProvider theme={theme} className="formsheet">
-            <div
-              style={{
-                fontSize: "10vw",
-                display: "flex",
-                justifyContent: "center",
-                height: "100vh",
-                width: "100%",
-                alignItems: "center",
-              }}
-            >
-              Opening Soon!
-            </div>
-
-            {/* <form onSubmit={handlesubmit} style={{ marginInline: "auto" }}>
+            <form onSubmit={handlesubmit} style={{ marginInline: "auto" }}>
               <Sheet
                 sx={{
                   width: "80vw",
@@ -739,15 +608,7 @@ const Form = () => {
                       setEvent(e.target.checked);
                     }}
                   />
-                  <Checkbox
-                    className="check"
-                    color="primary"
-                    size="lg"
-                    label="Workshops"
-                    onChange={(e) => {
-                      setWork(e.target.checked);
-                    }}
-                  />
+
                   <Checkbox
                     className="check"
                     color="primary"
@@ -828,78 +689,7 @@ const Form = () => {
                     </div>
                   </div>
                 ) : null}
-                {Work === true ? (
-                  <div>
-                    <Divider sx={{ "--Divider-childPosition": `50%` }}>
-                      Workshops
-                    </Divider>
-                    <div
-                      style={{
-                        display: "flex",
-                        justifyContent: "center",
-                        flexWrap: "wrap",
-                      }}
-                    >
-                      {worktest.map((departw) => {
-                        const a = workName.map((data) => {
-                          if (data.name === departw.name) {
-                            return data.events.map((data) => {
-                              return data.name;
-                            });
-                          } else {
-                            return "";
-                          }
-                        });
-                        const b = a.filter((data) => {
-                          if (data !== undefined) {
-                            return data;
-                          }
-                        });
 
-                        return (
-                          <FormControlM
-                            className="sel"
-                            style={{ margin: "10px" }}
-                          >
-                            <InputLabel>{departw.name}</InputLabel>
-                            <SelectM
-                              multiple
-                              value={b[0]}
-                              name={departw.name}
-                              onChange={handleChangeTT}
-                              input={<FilledInput label={departw.name} />}
-                              renderValue={(selected) => (
-                                <Box
-                                  sx={{
-                                    display: "flex",
-                                    flexWrap: "wrap",
-                                    gap: 0.5,
-                                  }}
-                                >
-                                  {selected.map((value) => (
-                                    <Chip key={value}>{value}</Chip>
-                                  ))}
-                                </Box>
-                              )}
-                            >
-                              {departw.events.map((ev) => {
-                                console.log(ev);
-                                return (
-                                  <MenuItem
-                                    key={ev.name}
-                                    value={{ name: ev.name, price: ev.price }}
-                                  >
-                                    {ev.name}
-                                  </MenuItem>
-                                );
-                              })}
-                            </SelectM>
-                          </FormControlM>
-                        );
-                      })}
-                    </div>
-                  </div>
-                ) : null}
                 <div>
                   <IdCardUpload setImg={setImg} img={img} />
                 </div>
@@ -933,7 +723,7 @@ const Form = () => {
                   Register
                 </Button>
               </Sheet>
-            </form> */}
+            </form>
           </CssVarsProvider>
         </div>
       )}
