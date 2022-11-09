@@ -6,6 +6,7 @@ export const DisplayPopupProvider = ({ children }) => {
   const [eventObject, setEventObject] = useState({
     name: "error",
     desc: "error",
+    tag:"error",
     date: "error",
     rules: "error",
     type: "error",

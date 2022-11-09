@@ -54,7 +54,7 @@ function App() {
                   </Route>
                 </Route>
               </Routes>
-              <ToastContainer />
+              <ToastContainer position="bottom-left" theme="dark"></ToastContainer>
             </DisplayPopupProvider>
           </div>
         </UserProvider>

@@ -28,6 +28,7 @@ const EventCard = ({
   staff,
   student,
   logo,
+
   format,
 
   day1,
@@ -62,6 +63,7 @@ const EventCard = ({
       staff,
       student,
       logo,
+      tag,
 
       day1,
       day2,

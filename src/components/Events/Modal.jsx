@@ -28,7 +28,7 @@ const Modal = ({ open, setOpenModal }) => {
           onClick={() => setOpenModal((prev) => !prev)}
         />
         {/* if round 1 is existed then its a event. else its workshop: */}
-        {eventObject.round1 ? (
+        {eventObject.tag==='EVENT' ? (
           <>
             {eventObject.name ? (
               <h1 className="title">{eventObject.name}</h1>
