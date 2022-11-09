@@ -228,18 +228,12 @@ const Form = () => {
                     Body: `
                       
                    
-                    <h2>Dear Bharath ,${formdata.fname}</h2>
+                    <h2>Congrats ${formdata.fname},</h2>
                     <p>
-                      Lorem ipsum dolor sit, amet consectetur adipisicing elit. In ipsa
-                      commodi qui obcaecati corporis nisi? Quibusdam eligendi ducimus sapiente
-                      tenetur animi laudantium accusamus iusto? Iusto molestias quos in ea
-                      impedit consequuntur eveniet, suscipit iure quibusdam, deserunt, labore
-                      cumque laborum amet ipsa? Eligendi ex labore, omnis ipsa soluta minima,
-                      nesciunt facere explicabo necessitatibus vel et voluptatum ducimus
-                
+                        Thank you for registering for Drestein 2022
                     </p>
               
-                    <h3>Best Wishes,@Drestein  </h3>
+                    <h3>Best Wishes, @Drestein  </h3>
                     <img src="${QrUrl}" alt='${formdata.id}'>
 
                     `,
