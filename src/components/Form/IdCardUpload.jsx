@@ -1,7 +1,5 @@
 import React from "react";
-import { Alert, Button } from "@mui/material";
-import { Stack } from "@mui/system";
-import { useState } from "react";
+import { Alert, Button } from "@mui/joy";
 
 function IdCardUpload({ setImg, img }) {
   const handleChange = (e) => {
@@ -10,12 +8,27 @@ function IdCardUpload({ setImg, img }) {
   };
 
   return (
-    <Stack direction="row" alignItems="center" justifyContent="center">
-      <Alert severity={img === null ? "warning" : "success"}>
-        upload your college ID card photo
+    <div
+      style={{
+        marginTop: "1rem",
+        display: "flex",
+
+        justifyContent: "center",
+        alignItems: "stretch",
+      }}
+    >
+      <Alert
+        color={img === null ? "warning" : "success"}
+        style={{ borderRadius: "1rem 0 0 1rem" }}
+      >
+        Upload your college ID card
       </Alert>
 
-      <Button variant="contained" component="label">
+      <Button
+        variant="solid"
+        component="label"
+        style={{ borderRadius: "0 1rem 1rem 0" }}
+      >
         Upload
         <input
           hidden
@@ -25,7 +38,7 @@ function IdCardUpload({ setImg, img }) {
           type="file"
         />
       </Button>
-    </Stack>
+    </div>
   );
 }
 

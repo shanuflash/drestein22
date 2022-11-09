@@ -74,7 +74,7 @@
   color: #282828;
 }
 
-@media screen and (max-width:600px) {
+@media screen and (max-width: 600px) {
   .eventcard .tags .tag {
     background: rgba(255, 255, 255, 0.65);
     color: #282828;

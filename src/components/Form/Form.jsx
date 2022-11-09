@@ -348,7 +348,12 @@ const Form = () => {
   const test = [
     {
       name: "CSE",
-      events: ["The Lost Code", "UI Design", "Blind Coding", "Ideathon"],
+      events: [
+        "The Lost Code",
+        "Design Space",
+        "Sightless Snippets",
+        "Dare to Compete",
+      ],
     },
     {
       name: "IT",
@@ -430,360 +435,369 @@ const Form = () => {
     <div className="headcontainer" data-joy-color-scheme="dark">
       {load && <Loading />}
       <Nav />
-      {confirmMsg ? (
-        <ConfirmCard />
-      ) : (
-        <div
-          className="main-form"
-          style={{
-            maxWidth: "100%",
-            margin: "0 auto",
-          }}
-        >
-          <CssVarsProvider theme={theme} className="formsheet">
-            {1 ? (
-              <div
-                style={{
-                  fontSize: "10vw",
-                  display: "flex",
-                  justifyContent: "center",
-                  height: "80vh",
-                  width: "100%",
-                  alignItems: "center",
-                }}
-              >
-                Opening Soon!
-              </div>
-            ) : null}
-            {/* <form
-              onSubmit={handlesubmit}
-              style={{ marginInline: "auto" }}
-              autocomplete="off"
-            >
-              <Sheet
-                sx={{
-                  width: "80vw",
-                  mx: 2,
-                  my: 2,
-                  py: 2,
-                  px: 2,
-                  display: "flex",
-                  flexDirection: "column",
-                  gap: 2,
-                  borderRadius: "sm",
-                  boxShadow: "md",
-                }}
-                style={{ backgroundColor: "rgb(0 0 29 / 60%)" }}
-                variant="outlined"
-                className="formcontainer"
-              >
-                <div>
-                  <Typography level="h4" component="h1">
-                    <b>Register!</b>
-                  </Typography>
-                  <Typography level="body2">
-                    Register now to take part in events.
-                  </Typography>
-                </div>
-                <Divider />
-                <div className="Name">
-                  <TextField
-                    name="fname"
-                    required
-                    value={formdata.fname}
-                    onChange={handleChange}
-                    type="text"
-                    placeholder="John"
-                    label="First Name"
-                    sx={{ width: "48%" }}
-                  />
-
-                  <TextField
-                    name="lname"
-                    required
-                    value={formdata.lname}
-                    onChange={handleChange}
-                    type="text"
-                    placeholder="Doe"
-                    label="Last Name"
-                    sx={{ width: "48%" }}
-                  />
-                </div>
-                <TextField
-                  name="college"
-                  required
-                  value={formdata.college}
-                  onChange={handleChange}
-                  type="text"
-                  placeholder="College name..."
-                  label="College Name"
-                />
-                <div className="yearno">
-                  <TextField
-                    name="regno"
-                    required
-                    value={formdata.regno}
-                    onChange={handleChange}
-                    type="number"
-                    placeholder="Register number..."
-                    label="Register Number"
-                    sx={{ width: "48%" }}
-                  />
-                  <FormControl
-                    required
-                    sx={{
-                      width: "48%",
-                    }}
-                  >
-                    <FormLabel htmlFor="year">Year</FormLabel>
-                    <Select
-                      id="year"
-                      data-name="year"
-                      placeholder="Year..."
-                      value={formdata.year}
-                      onChange={handleChangeForSelect}
-                    >
-                      <Option data-name="year" value="1">
-                        I
-                      </Option>
-                      <Option data-name="year" value="2">
-                        II
-                      </Option>
-                      <Option data-name="year" value="3">
-                        III
-                      </Option>
-                      <Option data-name="year" value="4">
-                        IV
-                      </Option>
-                    </Select>
-                  </FormControl>
-                </div>
+      {
+        // 1
+        confirmMsg ? (
+          <ConfirmCard />
+        ) : (
+          <div
+            className="main-form"
+            style={{
+              maxWidth: "100%",
+              margin: "0 auto",
+            }}
+          >
+            <CssVarsProvider theme={theme} className="formsheet">
+              {1 ? (
                 <div
                   style={{
+                    fontSize: "10vw",
                     display: "flex",
+                    justifyContent: "center",
+                    height: "80vh",
+                    width: "100%",
                     alignItems: "center",
-                    justifyContent: "space-between",
                   }}
                 >
-                  <TextField
-                    name="dept"
-                    required
-                    value={formdata.dept}
-                    onChange={handleChange}
-                    type="text"
-                    placeholder="Department..."
-                    label="Department"
-                    sx={{ width: "48%" }}
-                  />
-                  <FormControl
-                    required
+                  Opening Soon!
+                </div>
+              ) : null}
+              {0 ? (
+                <form
+                  onSubmit={handlesubmit}
+                  style={{ marginInline: "auto" }}
+                  autocomplete="off"
+                >
+                  <Sheet
                     sx={{
-                      width: "48%",
+                      mx: 2,
+                      my: 2,
+                      py: 2,
+                      px: 2,
+                      display: "flex",
+                      flexDirection: "column",
+                      gap: 2,
+                      borderRadius: "sm",
+                      boxShadow: "md",
                     }}
+                    style={{ backgroundColor: "rgb(0 0 29 / 60%)" }}
+                    variant="outlined"
+                    className="formcontainer"
                   >
-                    <FormLabel htmlFor="gender">Gender</FormLabel>
-                    <Select
-                      id="gender"
-                      name="gender"
-                      placeholder="Gender..."
-                      value={formdata.gender}
-                      onChange={handleChangeForSelect}
-                    >
-                      <Option data-name="gender" value="1">
-                        Male
-                      </Option>
-                      <Option data-name="gender" value="2">
-                        Female
-                      </Option>
-                      <Option data-name="gender" value="3">
-                        Other
-                      </Option>
-                      <Option data-name="gender" value="4">
-                        Prefer Not To Say
-                      </Option>
-                    </Select>
-                  </FormControl>
-                </div>
+                    <div>
+                      <Typography level="h4" component="h1">
+                        <b>Register!</b>
+                      </Typography>
+                      <Typography level="body2">
+                        Register now to take part in events.
+                      </Typography>
+                    </div>
+                    <Divider />
+                    <div className="Name">
+                      <TextField
+                        name="fname"
+                        required
+                        value={formdata.fname}
+                        onChange={handleChange}
+                        type="text"
+                        placeholder="John"
+                        label="First Name"
+                        sx={{ width: "48%" }}
+                      />
 
-                <TextField
-                  name="phno"
-                  required
-                  type="number"
-                  value={formdata.phno}
-                  onChange={handleChange}
-                  placeholder="98765*****"
-                  label="Phone Number"
-                />
-                <TextField
-                  name="email"
-                  required
-                  value={formdata.email}
-                  onChange={handleChange}
-                  type="email"
-                  error={userExistError}
-                  helperText={
-                    userExistError ? "Already Registered with is mail id !" : ""
-                  }
-                  placeholder="johndoe@email.com"
-                  label="Email"
-                />
-
-                <div
-                  style={{
-                    display: "flex",
-                    justifyContent: "space-evenly",
-                    marginTop: "1rem",
-                  }}
-                  className="formcheck"
-                >
-                  <Checkbox
-                    className="check"
-                    color="primary"
-                    size="lg"
-                    label="Events"
-                    onChange={(e) => {
-                      if (Event === true) {
-                        setPay(Pay - 150);
-                        setEventName({
-                          CSE: [],
-                          IT: [],
-                          EEE: [],
-                          ECE: [],
-                          EIE: [],
-                          MECH: [],
-                          CIVIL: [],
-                          MED: [],
-                          CHEM: [],
-                          AGRI: [],
-                          AI: [],
-                          MBA: [],
-                          BME: [],
-                        });
-                      } else {
-                        setPay(Pay + 150);
-                      }
-                      setEvent(e.target.checked);
-                    }}
-                  />
-
-                  <Checkbox
-                    className="check"
-                    color="primary"
-                    size="lg"
-                    label="Paper Presentation"
-                    onChange={(e) => {
-                      if (Paper === true) {
-                        setPay(Pay - 200);
-                      } else {
-                        setPay(Pay + 200);
-                      }
-                      setPaper(e.target.checked);
-                    }}
-                  />
-                  <Checkbox
-                    className="check"
-                    color="primary"
-                    size="lg"
-                    label="Project Display"
-                    onChange={(e) => {
-                      if (Project === true) {
-                        setPay(Pay - 250);
-                      } else {
-                        setPay(Pay + 250);
-                      }
-                      setProject(e.target.checked);
-                    }}
-                  />
-                </div>
-                {Event === true ? (
-                  <div>
-                    <Divider sx={{ "--Divider-childPosition": `50%` }}>
-                      Department Events
-                    </Divider>
+                      <TextField
+                        name="lname"
+                        required
+                        value={formdata.lname}
+                        onChange={handleChange}
+                        type="text"
+                        placeholder="Doe"
+                        label="Last Name"
+                        sx={{ width: "48%" }}
+                      />
+                    </div>
+                    <TextField
+                      name="college"
+                      required
+                      value={formdata.college}
+                      onChange={handleChange}
+                      type="text"
+                      placeholder="College name..."
+                      label="College Name"
+                    />
+                    <div className="yearno">
+                      <TextField
+                        name="regno"
+                        required
+                        value={formdata.regno}
+                        onChange={handleChange}
+                        type="number"
+                        placeholder="Register number..."
+                        label="Register Number"
+                        sx={{ width: "48%" }}
+                      />
+                      <FormControl
+                        required
+                        sx={{
+                          width: "48%",
+                        }}
+                      >
+                        <FormLabel htmlFor="year">Year</FormLabel>
+                        <Select
+                          id="year"
+                          data-name="year"
+                          placeholder="Year..."
+                          value={formdata.year}
+                          onChange={handleChangeForSelect}
+                        >
+                          <Option data-name="year" value="1">
+                            I
+                          </Option>
+                          <Option data-name="year" value="2">
+                            II
+                          </Option>
+                          <Option data-name="year" value="3">
+                            III
+                          </Option>
+                          <Option data-name="year" value="4">
+                            IV
+                          </Option>
+                        </Select>
+                      </FormControl>
+                    </div>
                     <div
                       style={{
                         display: "flex",
-                        justifyContent: "center",
-                        flexWrap: "wrap",
+                        alignItems: "center",
+                        justifyContent: "space-between",
                       }}
                     >
-                      {test.map((depart) => {
-                        return (
-                          <FormControlM
-                            className="sel"
-                            style={{ margin: "10px" }}
-                          >
-                            <InputLabel>{depart.name}</InputLabel>
-                            <SelectM
-                              multiple
-                              value={eventName[depart.name]}
-                              name={depart.name}
-                              onChange={handleChangeT}
-                              input={<FilledInput label={depart.name} />}
-                              renderValue={(selected) => (
-                                <Box
-                                  sx={{
-                                    display: "flex",
-                                    flexWrap: "wrap",
-                                    gap: 0.5,
-                                  }}
-                                >
-                                  {selected.map((value) => (
-                                    <Chip key={value}>{value}</Chip>
-                                  ))}
-                                </Box>
-                              )}
-                            >
-                              {depart.events.map((ev) => (
-                                <MenuItem key={ev} value={ev}>
-                                  {ev}
-                                </MenuItem>
-                              ))}
-                            </SelectM>
-                          </FormControlM>
-                        );
-                      })}
+                      <TextField
+                        name="dept"
+                        required
+                        value={formdata.dept}
+                        onChange={handleChange}
+                        type="text"
+                        placeholder="Department..."
+                        label="Department"
+                        sx={{ width: "48%" }}
+                      />
+                      <FormControl
+                        required
+                        sx={{
+                          width: "48%",
+                        }}
+                      >
+                        <FormLabel htmlFor="gender">Gender</FormLabel>
+                        <Select
+                          id="gender"
+                          name="gender"
+                          placeholder="Gender..."
+                          value={formdata.gender}
+                          onChange={handleChangeForSelect}
+                        >
+                          <Option data-name="gender" value="1">
+                            Male
+                          </Option>
+                          <Option data-name="gender" value="2">
+                            Female
+                          </Option>
+                          <Option data-name="gender" value="3">
+                            Other
+                          </Option>
+                          <Option data-name="gender" value="4">
+                            Prefer Not To Say
+                          </Option>
+                        </Select>
+                      </FormControl>
                     </div>
-                  </div>
-                ) : null}
 
-                <div>
-                  <IdCardUpload setImg={setImg} img={img} />
-                </div>
-                {Pay === 0 ? null : (
-                  <Alert
-                    variant="outlined"
-                    color="danger"
-                    sx={{
-                      align: "center",
-                      justifyContent: "center",
-                    }}
-                  >
-                    Registeration Fee of {Pay} has to be paid on the event date.
-                  </Alert>
-                )}
-                {load && (
-                  <Alert
-                    variant="outlined"
-                    color="danger"
-                    sx={{ align: "center", zIndex: 1000 }}
-                  >
-                    processing your data don't reload the page
-                  </Alert>
-                )}
-                <Button
-                  type="submit"
-                  value={load ? "Processing" : "Register"}
-                  disabled={load}
-                  sx={{ mt: 1 }}
-                >
-                  Register
-                </Button>
-              </Sheet>
-            </form> */}
-          </CssVarsProvider>
-        </div>
-      )}
+                    <TextField
+                      name="phno"
+                      required
+                      type="number"
+                      value={formdata.phno}
+                      onChange={handleChange}
+                      placeholder="98765*****"
+                      label="Phone Number"
+                    />
+                    <TextField
+                      name="email"
+                      required
+                      value={formdata.email}
+                      onChange={handleChange}
+                      type="email"
+                      error={userExistError}
+                      helperText={
+                        userExistError
+                          ? "Already Registered with is mail id !"
+                          : ""
+                      }
+                      placeholder="johndoe@email.com"
+                      label="Email"
+                    />
+
+                    <Box
+                      required
+                      role="group"
+                      style={{
+                        display: "flex",
+                        justifyContent: "space-evenly",
+                        marginTop: "1rem",
+                      }}
+                      className="formcheck"
+                    >
+                      <Checkbox
+                        className="check"
+                        color="primary"
+                        size="lg"
+                        label="Events"
+                        onChange={(e) => {
+                          if (Event === true) {
+                            setPay(Pay - 150);
+                            setEventName({
+                              CSE: [],
+                              IT: [],
+                              EEE: [],
+                              ECE: [],
+                              EIE: [],
+                              MECH: [],
+                              CIVIL: [],
+                              MED: [],
+                              CHEM: [],
+                              AGRI: [],
+                              AI: [],
+                              MBA: [],
+                              BME: [],
+                            });
+                          } else {
+                            setPay(Pay + 150);
+                          }
+                          setEvent(e.target.checked);
+                        }}
+                      />
+
+                      <Checkbox
+                        className="check"
+                        color="primary"
+                        size="lg"
+                        label="Paper Presentation"
+                        onChange={(e) => {
+                          if (Paper === true) {
+                            setPay(Pay - 200);
+                          } else {
+                            setPay(Pay + 200);
+                          }
+                          setPaper(e.target.checked);
+                        }}
+                      />
+                      <Checkbox
+                        className="check"
+                        color="primary"
+                        size="lg"
+                        label="Project Display"
+                        onChange={(e) => {
+                          if (Project === true) {
+                            setPay(Pay - 250);
+                          } else {
+                            setPay(Pay + 250);
+                          }
+                          setProject(e.target.checked);
+                        }}
+                      />
+                    </Box>
+                    {Event === true ? (
+                      <div>
+                        <Divider sx={{ "--Divider-childPosition": `50%` }}>
+                          Department Events
+                        </Divider>
+                        <div
+                          style={{
+                            display: "flex",
+                            justifyContent: "center",
+                            flexWrap: "wrap",
+                          }}
+                        >
+                          {test.map((depart) => {
+                            return (
+                              <FormControlM
+                                className="sel"
+                                style={{ margin: "10px" }}
+                              >
+                                <InputLabel>{depart.name}</InputLabel>
+                                <SelectM
+                                  multiple
+                                  value={eventName[depart.name]}
+                                  name={depart.name}
+                                  onChange={handleChangeT}
+                                  input={<FilledInput label={depart.name} />}
+                                  renderValue={(selected) => (
+                                    <Box
+                                      sx={{
+                                        display: "flex",
+                                        flexWrap: "wrap",
+                                        gap: 0.5,
+                                      }}
+                                    >
+                                      {selected.map((value) => (
+                                        <Chip key={value}>{value}</Chip>
+                                      ))}
+                                    </Box>
+                                  )}
+                                >
+                                  {depart.events.map((ev) => (
+                                    <MenuItem key={ev} value={ev}>
+                                      {ev}
+                                    </MenuItem>
+                                  ))}
+                                </SelectM>
+                              </FormControlM>
+                            );
+                          })}
+                        </div>
+                      </div>
+                    ) : null}
+
+                    <div>
+                      <IdCardUpload setImg={setImg} img={img} />
+                    </div>
+                    {Pay === 0 ? null : (
+                      <Alert
+                        variant="outlined"
+                        color="danger"
+                        sx={{
+                          align: "center",
+                          justifyContent: "center",
+                        }}
+                      >
+                        Registeration Fee of {Pay} has to be paid on the event
+                        date.
+                      </Alert>
+                    )}
+                    {load && (
+                      <Alert
+                        variant="outlined"
+                        color="danger"
+                        sx={{ align: "center", zIndex: 1000 }}
+                      >
+                        processing your data don't reload the page
+                      </Alert>
+                    )}
+                    <Button
+                      type="submit"
+                      value={load ? "Processing" : "Register"}
+                      disabled={load}
+                      sx={{ mt: 1 }}
+                    >
+                      Register
+                    </Button>
+                  </Sheet>
+                </form>
+              ) : null}
+            </CssVarsProvider>
+          </div>
+        )
+      }
     </div>
   );
 };

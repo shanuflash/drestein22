@@ -1405,7 +1405,6 @@ export const EventDetails = [
         },
       },
       {
-
         name: "Biomechanics & LabVIEW for Healthcare Applications",
         logo: "/EventsAssets/bmew1.png",
 
@@ -1996,11 +1995,8 @@ export const EventDetails = [
     ],
     workshopslist: [
       {
-
-
         name: "EXCEL for Chemical Engineers : Basics to Advanced",
         logo: "/EventsAssets/chemw1.png",
-
 
         tag: "WORKSHOP",
         color: "0, 70, 90",

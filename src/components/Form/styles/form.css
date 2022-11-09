@@ -5,8 +5,11 @@
     scroll-behavior: smooth;
 
 }*/
-
+.Mui-selected {
+  background-color: #8ebbff;
+}
 * {
+  --joy-palette-action-selectedOpacity: 0.5;
   --joy-palette-background-surface: #000010;
 }
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
@@ -21,6 +24,7 @@ input::placeholder {
   color: red;
 }
 .formcontainer {
+  width: 80vw;
   height: 75vh;
   overflow-y: scroll;
   box-shadow: none !important;
@@ -54,6 +58,9 @@ input::placeholder {
 }
 
 @media screen and (max-width: 600px) {
+  .formcontainer {
+    width: 90vw;
+  }
   .loginimage {
     display: none;
   }

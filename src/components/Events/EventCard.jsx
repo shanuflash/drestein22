@@ -32,7 +32,7 @@ const EventCard = ({
 
   day1,
   day2,
-  company
+  company,
 }) => {
   const { setEventObject } = useContext(DisplayPopupContext);
 
@@ -65,7 +65,7 @@ const EventCard = ({
 
       day1,
       day2,
-      company
+      company,
     });
   };
 
