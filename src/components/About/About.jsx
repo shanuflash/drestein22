@@ -13,8 +13,16 @@ function About() {
     );
     margin-top: 100px;
     display: flex;
-    background:url('https://www.saveetha.ac.in/images/sec/2020/home/building_2.jpg');
-    background-position:center;
+     --color: 150, 160, 160;
+    --bg-filter-opacity: 0.75;
+    --bg-img: url("https://www.saveetha.ac.in/images/sec/2020/home/building_2.jpg");
+    background-image: linear-gradient(
+        rgba(var(--color), var(--bg-filter-opacity)),
+        rgba(0, 0, 0, var(--bg-filter-opacity))
+      ),
+      var(--bg-img);
+    background-position: center;
+
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -45,7 +53,6 @@ function About() {
   const AboutDescript = styled.div`
     font-size: 1.5em;
     padding: 20px 0px;
-
   `;
 
   const text = {

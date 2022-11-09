@@ -1,4 +1,4 @@
-import React, { useRef, useCallback,useEffect } from "react";
+import React, { useRef, useCallback, useEffect } from "react";
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
 import { motion, useScroll, useTransform } from "framer-motion";
@@ -30,9 +30,7 @@ const Main = () => {
   }, []);
   const particlesLoaded = useCallback(async (container) => {}, []);
   useEffect(() => {
-  
-
-document.body.style.overflow = "unset"
+    document.body.style.overflow = "unset";
   }, []);
   return (
     <div ref={scroll} id="#">

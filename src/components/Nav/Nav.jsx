@@ -164,7 +164,7 @@ function Nav() {
           <NavItem>About</NavItem>
         </Link>
       </NavHead>
-      <Mobilenav openMenu={openMenu} setOpenMenu={setOpenMenu}/>
+      <Mobilenav openMenu={openMenu} setOpenMenu={setOpenMenu} />
       <div className="icon" onClick={() => setOpenMenu(!openMenu)}>
         {openMenu ? <CgClose /> : <HiOutlineMenuAlt1 />}
       </div>

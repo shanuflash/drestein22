@@ -36,7 +36,7 @@ useEffect(()=>{
           onClick={() => setOpenModal((prev) => !prev)}
         />
         {/* if round 1 is existed then its a event. else its workshop: */}
-        {eventObject.tag==='EVENT' ? (
+        {eventObject.tag === "EVENT" ? (
           <>
             {eventObject.name ? (
               <h1 className="title">{eventObject.name}</h1>

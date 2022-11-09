@@ -34,7 +34,6 @@ const Events = () => {
                         key={EachEvent.id}
                         {...EachEvent}
                         setOpenModal={setOpenModal}
-
                       />
                     );
                   })}
@@ -43,7 +42,6 @@ const Events = () => {
                       <EventCard
                         {...EachWorkshop}
                         setOpenModal={setOpenModal}
-
                       />
                     );
                   })}
