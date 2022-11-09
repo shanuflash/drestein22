@@ -1,4 +1,4 @@
-.nav-overlay{
+.nav-overlay {
   position: absolute;
   background-color: transparent;
   width: 100vw;
@@ -6,8 +6,8 @@
   transform: translateX(-100%);
   transition: transform 700ms;
 }
-@media screen and (min-width:600px){
-  .nav-overlay{
+@media screen and (min-width: 600px) {
+  .nav-overlay {
     display: none;
   }
 }

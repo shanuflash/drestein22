@@ -52,14 +52,11 @@ const HeadCard2 = styled.div`
   height: 60%;
   font-size: 1.5vw;
   @media screen and (max-width: 600px) {
-
     font-size: 4vw;
     height: 70%;
   }
   @media screen and (max-width: 800px) {
-
     font-size: 3vw;
-
   }
   /* padding: 10px; */
 `;

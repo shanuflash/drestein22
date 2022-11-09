@@ -38,7 +38,6 @@ const EventCard = ({
   const { setEventObject } = useContext(DisplayPopupContext);
 
   const handleEventInfo = () => {
-
     setOpenModal((prev) => !prev);
 
     setEventObject({

@@ -217,8 +217,8 @@ const Form = () => {
                 console.log(QrUrl);
                 if (window.Email) {
                   const style = {
-                    border:'1px sold black',
-                  }
+                    border: "1px sold black",
+                  };
                   await window.Email.send({
                     SecureToken: process.env.REACT_APP_EMAILCODE_ID,
                     To: formdata.email,
@@ -229,97 +229,34 @@ const Form = () => {
                       "Congrats! Your registration for Drestein is complete 🎉",
 
                     Body: `
-                      
-                   
-                    <h2>Congrats ${formdata.fname},</h2>
+                       <h2>Congrats ${formdata.fname},</h2>
                     <p>
-                        Thank you for registering Drestein 2022.
+                        Thank you for registering. You have applied for <b>${
+                          formdata.DepartEvent ? `Events(₹150)` : ""
+                        }${
+                      formdata.PaperPresentation
+                        ? `, Paper Presentation(₹200)`
+                        : ""
+                    }${
+                      formdata.PaperPresentation
+                        ? `, Project Presentation(₹250)`
+                        : ""
+                    }.
+                    </b> Don't worry if you missed an event; you can register for (or withdraw from) other topics and events offline after coming to the college. The registration fee has to be paid at the registration counter on the day of the event.
+                    </p>  
+                    <p>
+                      Total amount to be paid: <b>₹${
+                        formdata.CashToBePaid
+                      } (Cash only)</b>
                     </p>
-
-                      ${formdata.DepartEvent ? '<p>you have Registered for Department Event </p>' : ''}
-                    <table style={{
-                      border:'1px solid solid'
-                    }}>
-                    <tr>
-
-                     <th  style={{
-                      border:'1px solid solid'
-                    }}> Registered </th>
-                     <th  style={{
-                      border:'1px solid solid'
-                    }}> Price </th>
-                     </tr>
-
-
-                      ${formdata.DepartEvent ?
-                      `<tr  style={{
-                      border:'1px solid solid'
-                    }}>
-                       <td  style={{
-                      border:'1px solid solid'
-                    }}>Department Event</td>
-                       <td  style={{
-                      border:'1px solid solid'
-                    }}>150</td>
-                      </tr>
-                      `
-                      :''
-                    }
-                    ${formdata.PaperPresentation ?
-                      `<tr style={{
-                        border:'1px solid solid'
-                      }}>
-                       <td style={{
-                        border:'1px solid solid'
-                      }}>Paper Presentation</td>
-                       <td style={{
-                        border:'1px solid solid'
-                      }}>200</td>
-                      </tr>
-                      `:''
-                    }
-                    ${formdata.ProjectPresentation ?
-                      `<tr style={{
-                        border:'1px solid solid'
-                      }}>
-                        <td style={{
-                          border:'1px solid solid'
-                        }}>Project Presentation</td>
-                        <td style={{
-                          border:'1px solid solid'
-                        }}>250</td>
-                      </tr>
-                      `:''
-                    }
-
-
-                      <tr style={{
-                        border:'1px solid solid'
-                      }}>
-                        <td style={{
-                          border:'1px solid solid'
-                        }}>Total Amount </td>
-                        <td style={{
-                          border:'1px solid solid'
-                        }}>${formdata.CashToBePaid}</td>
-                      </tr>
-                      
-
-
-                    </table>
 
               
                     <h3>Best Wishes, @Drestein  </h3>
                     <img src="${QrUrl}" alt='${formdata.id}'>
-
                     `,
                   }).then(() => {
-                    alert("Email send to you successfully");
                     setload(false);
                     setconfirmMsg(true);
-                    toast.success("Registered successfully 🥳", {
-                      position: "bottom-left",
-                    });
                   });
                 }
               })
@@ -603,7 +540,6 @@ const Form = () => {
 
                     <TextField
                       name="lname"
-                      required
                       value={formdata.lname}
                       onChange={handleChange}
                       type="text"
