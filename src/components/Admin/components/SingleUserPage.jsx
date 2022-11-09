@@ -10,6 +10,7 @@ import { uuidv4 } from "@firebase/util";
 import { css } from "@mui/material";
 import { Chip } from "@mui/material";
 import { Stack } from "@mui/system";
+import Loading from "../../../Loading";
 const SingleUserMain = styled.div`
   height: 100vh;
   width: 100vw;
@@ -58,7 +59,7 @@ function SingleUserPage() {
   }, []);
 
   if (load) {
-    return <h1>Loading...</h1>;
+    return <Loading/>;
   }
 
   return (

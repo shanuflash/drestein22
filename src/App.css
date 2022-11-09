@@ -13,6 +13,7 @@ select:-webkit-autofill {
 }
 body {
   overflow: overlay;
+  overflow-x: hidden;
 }
 
 *::-webkit-scrollbar {

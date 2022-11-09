@@ -28,10 +28,11 @@ const EventCard = ({
   staff,
   student,
   logo,
-
+  round1level2,
   format,
-
+  round2level2,
   day1,
+  list,
   day2,
   company,
 }) => {
@@ -65,8 +66,10 @@ const EventCard = ({
       staff,
       student,
       logo,
+      list,
       tag,
-
+      round1level2,
+      round2level2,
       day1,
       day2,
       company,

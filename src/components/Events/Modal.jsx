@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import "./styles/modal.scss";
 import DisplayPopupContext from "../../context/DisplayPopupContext";
 import { VscClose } from "react-icons/vsc";
@@ -15,7 +15,15 @@ const Modal = ({ open, setOpenModal }) => {
   const splitround1 = eventObject?.round1?.split(".");
   const splitround2 = eventObject?.round2?.split(".");
   const splitround3 = eventObject?.round3?.split(".");
+const splitround1level2 = eventObject?.round1level2?.split('.');
+const splitround2level2 = eventObject?.round2level2?.split('.');
+const splitworktopicd1  = eventObject?.day1?.topic?.split('\n');
+const splitworktopicd2  = eventObject?.day2?.topic?.split('\n');
 
+  
+useEffect(()=>{
+ console.log('this is',eventObject)
+},[open])
   if (!open) return null;
   return (
     <div className="overlay" onClick={() => setOpenModal((prev) => !prev)}>
@@ -99,12 +107,25 @@ const Modal = ({ open, setOpenModal }) => {
                   {eventObject.round1title
                     ? ` (${eventObject.round1title})`
                     : ""}
+
                 </h3>
+                {eventObject?.round1level2 && <h4>Level 1 :</h4> } 
                 <ol>
                   {splitround1.map((each) => {
                     return <li>{each}</li>;
                   })}
                 </ol>
+                {eventObject?.round1level2 && 
+                <>
+                <h4>Level 2 :</h4>
+                <ol>
+                {splitround1level2.map((each) => {
+                  return <li>{each}</li>;
+                })}
+              </ol>
+              </>
+                }
+
               </div>
             ) : null}
             {eventObject.round2 ? (
@@ -115,11 +136,22 @@ const Modal = ({ open, setOpenModal }) => {
                     ? `( ${eventObject.round2title} )`
                     : ""}
                 </h3>
+                {eventObject?.round2level2 && <h4>Level 1 :</h4> } 
                 <ol>
                   {splitround2.map((each) => {
                     return <li>{each}</li>;
                   })}
                 </ol>
+                {eventObject?.round2level2 && 
+                <>
+                <h4>Level 2 :</h4>
+                <ol>
+                {splitround2level2.map((each) => {
+                  return <li>{each}</li>;
+                })}
+              </ol>
+              </>
+                }
               </div>
             ) : null}
             {eventObject.round3 ? (
@@ -203,18 +235,36 @@ const Modal = ({ open, setOpenModal }) => {
               <h1 className="title">Title not fetched from json</h1>
             )}
 
-            {eventObject.day1 ? (
+            {eventObject?.day1 ? (
               <>
                 {eventObject.company ? (
                   <h4>Company Name : {eventObject.company}</h4>
                 ) : null}
                 <h1 className="title">Day 1:</h1>
-                {eventObject.day1.topic ? (
-                  <p className="desc">
-                    <span className="topic">Topic: </span>
-                    {eventObject.day1.topic}
-                  </p>
-                ) : null}
+                {eventObject.day1.topic &&
+                <div>
+
+                  {eventObject.day1.list ? 
+                <>
+                {splitworktopicd1.map(data=>{
+                  return <p style={{
+                    margin:'5px 0'
+                  }}>{data}</p>
+                })}
+                </>
+
+              :  <p className="desc">
+
+              <span className="topic">Topic: </span>
+              {eventObject.day1.topic}
+              </p> 
+
+}
+
+                </div>
+                
+                }
+
                 <div className="grid">
                   <div className="item">
                     <span>Mode</span>
@@ -242,18 +292,18 @@ const Modal = ({ open, setOpenModal }) => {
                         width: "100%",
                         borderRadius: "0.4rem",
                       }}
-                      src={`${eventObject.day1.logo}`}
+                      src={`${eventObject.logo}`}
                       alt="Logo"
                     />
                   </div>
                 </div>
               </>
             ) : null}
-            {eventObject.day1.resource ? (
+            {eventObject?.day1?.resource ? (
               <div className="faculty">
                 <h3>Resource Person:</h3>
                 <ol>
-                  {eventObject.day1.resource?.map((each) => {
+                  {eventObject?.day1.resource?.map((each) => {
                     return (
                       <li>
                         <span>{each.name}</span> {`(${each.phone})`} <br />{" "}
@@ -266,11 +316,11 @@ const Modal = ({ open, setOpenModal }) => {
             ) : (
               "no resource allocated"
             )}
-            {eventObject.day1.staff ? (
+            {eventObject?.day1?.staff ? (
               <div className="faculty">
                 <h3>Faculty Co-ordinators:</h3>
                 <ol>
-                  {eventObject.day1.staff?.map((each) => {
+                  {eventObject?.day1?.staff?.map((each) => {
                     return (
                       <li>
                         <span>{each.name}</span> {`(${each.phone})`}
@@ -282,7 +332,7 @@ const Modal = ({ open, setOpenModal }) => {
             ) : (
               "no staff allocated"
             )}
-            {eventObject.day1.student ? (
+            {eventObject?.day1?.student ? (
               <div className="student">
                 <h3>Student Co-ordinators:</h3>
                 <ol>
@@ -298,20 +348,42 @@ const Modal = ({ open, setOpenModal }) => {
             ) : (
               "no student allocated"
             )}
-            {eventObject.day2 ? (
+            
+            {eventObject?.day2 ? (
               <>
-                <h1 className="title">Day 2:</h1>
-                {eventObject.day2.topic ? (
-                  <p className="desc">
-                    <span className="topic">Topic: </span>
-                    {eventObject.day2.topic}
-                  </p>
+                {eventObject.company ? (
+                  <h4>Company Name : {eventObject.company}</h4>
                 ) : null}
+                <h1 className="title">Day 2:</h1>
+                {eventObject.day2.topic &&
+                <div>
+
+                  {eventObject.day2.list ? 
+                <>
+                {splitworktopicd2.map(data=>{
+                  return <p style={{
+                    margin:'5px 0'
+                  }}>{data}</p>
+                })}
+                </>
+
+              :  <p className="desc">
+
+              <span className="topic">Topic: </span>
+              {eventObject.day2.topic}
+              </p> 
+
+}
+
+                </div>
+                
+                }
+
                 <div className="grid">
                   <div className="item">
-                    <span>Type</span>
+                    <span>Mode</span>
                     <IoIosPeople size={32} />
-                    <span>{eventObject.day2?.type}</span>
+                    <span>{eventObject.day2?.mode}</span>
                   </div>
                   <div className="item">
                     <span>Venue</span>
@@ -334,62 +406,62 @@ const Modal = ({ open, setOpenModal }) => {
                         width: "100%",
                         borderRadius: "0.4rem",
                       }}
-                      src={`${eventObject.day2.logo}`}
+                      src={`${eventObject.logo}`}
                       alt="Logo"
                     />
                   </div>
                 </div>
-                {eventObject.day2?.resource ? (
-                  <div className="faculty">
-                    <h3>Resource Person:</h3>
-                    <ol>
-                      {eventObject.day2.resource?.map((each) => {
-                        return (
-                          <li>
-                            <span>{each.name}</span> {`(${each.phone})`} <br />{" "}
-                            {`${each.desig}`}
-                          </li>
-                        );
-                      })}
-                    </ol>
-                  </div>
-                ) : (
-                  "no resource allocated"
-                )}
-                {eventObject.day2.staff ? (
-                  <div className="faculty">
-                    <h3>Faculty Co-ordinators:</h3>
-                    <ol>
-                      {eventObject.day2.staff?.map((each) => {
-                        return (
-                          <li>
-                            <span>{each.name}</span> {`(${each.phone})`}
-                          </li>
-                        );
-                      })}
-                    </ol>
-                  </div>
-                ) : (
-                  "no staff allocated"
-                )}
-                {eventObject.day2.student ? (
-                  <div className="student">
-                    <h3>Student Co-ordinators:</h3>
-                    <ol>
-                      {eventObject.day2.student?.map((each) => {
-                        return (
-                          <li>
-                            <span>{each.name}</span> {`(${each.phone})`}
-                          </li>
-                        );
-                      })}
-                    </ol>
-                  </div>
-                ) : (
-                  "no student allocated"
-                )}
               </>
             ) : null}
+            {eventObject?.day2?.resource ? (
+              <div className="faculty">
+                <h3>Resource Person:</h3>
+                <ol>
+                  {eventObject?.day2.resource?.map((each) => {
+                    return (
+                      <li>
+                        <span>{each.name}</span> {`(${each.phone})`} <br />{" "}
+                        {`${each.desig}`}
+                      </li>
+                    );
+                  })}
+                </ol>
+              </div>
+            ) : (
+              "no resource allocated"
+            )}
+            {eventObject?.day2?.staff ? (
+              <div className="faculty">
+                <h3>Faculty Co-ordinators:</h3>
+                <ol>
+                  {eventObject?.day2?.staff?.map((each) => {
+                    return (
+                      <li>
+                        <span>{each.name}</span> {`(${each.phone})`}
+                      </li>
+                    );
+                  })}
+                </ol>
+              </div>
+            ) : (
+              "no staff allocated"
+            )}
+            {eventObject?.day2?.student ? (
+              <div className="student">
+                <h3>Student Co-ordinators:</h3>
+                <ol>
+                  {eventObject.day2.student?.map((each) => {
+                    return (
+                      <li>
+                        <span>{each.name}</span> {`(${each.phone})`}
+                      </li>
+                    );
+                  })}
+                </ol>
+              </div>
+            ) : (
+              "no student allocated"
+            )}
           </>
         )}
         <Link style={{ textDecoration: "none" }} to="/form">

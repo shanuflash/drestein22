@@ -15,7 +15,8 @@ export const EventDetails = [
         rules:
           "A fun event spanning over two rounds. Maximum participation 2 person per team. In the case of cheating, using of phone or using of any unnecessary gadgets will make the team disqualify. Shortlisted participants of Round-1 will appear for Round-2 for which above rules are applicable",
         round1title: "One Shot",
-        round1: "Round One is one shot round in that the coder is not allowed to compile the program again and again.They are supposed to run exactly at once",
+        round1:
+          "Round One is one shot round in that the coder is not allowed to compile the program again and again.They are supposed to run exactly at once",
         round2title: "Blind Coding",
         round2:
           "It is a fresh and offbeat concept - where the participants need to write and compile their program with the monitor screens switched off. Each team has to write the code for given problem, with MONITOR OFF.Each team will be allowed one free “Screen time” (where the monitor screen can be turned on for 60 seconds), after which they will be penalized with 3 points for each extra screen time. Each team can avail a maximum of 5 screen times.  At a time only 5 teams will be allowed to avail the facility of Screen Time, the slots for which will be allotted on a first come first serve basis",
@@ -238,6 +239,229 @@ export const EventDetails = [
             email: "mohanchandra90510@gmail.com",
           },
         ],
+      },
+    ],
+
+    workshopslist: [
+      {
+        name: "CYBERSECURITY AND ETHICAL HACKING  ",
+        logo: "EventsAssets/itw1.png",
+        tag: "WORKSHOP",
+        color: "0, 70, 90",
+        company: "NA",
+        day1: {
+          date: "14.11.2022 and 15.11.2022(FN & AN)",
+          time: "12:00pm -3.00pm",
+          mode: "OFFLINE",
+          venue: "TBA",
+          list: true,
+          topic: `1. Cybersecurity introduction 45 mins  \na. Different Domain of cybersecurity & Job Opportunity \nb. Roles and responsibilities\nc. Phases of hacking\n2. Web Application Terminologies 90 mins\na. Protocol basics & Subdomains\nb. Request & Response \nc. Encoding\nd. Same origin Policy & cross-origin Policy \ne. Cookies & Sessions \n3. Tools and techniques 120 mins\na. Burp suite Pro\nb. Acunetix vs Nessus`,
+          resource: [
+            {
+              name: "Er.Praveen Kumar ",
+              desig: "Founder of Dead bed Cyber Solutions",
+              phone: 8925760280,
+              email: "praveenkumarvelu190@gmail.com",
+            },
+          ],
+          staff: [
+            {
+              name: "Ms.Karthika RN",
+              desig: "Assistant Professor",
+              phone: 8248816873,
+              email: "karthikarn@saveetha.ac.in",
+            },
+          ],
+          student: [
+            {
+              name: "Harini NG",
+              year: "III",
+              phone: 6382246669,
+              email: "harinig025@gmail.com",
+            },
+            {
+              name: "Aadhithya Raj V",
+              year: "III",
+              phone: 6374492710,
+              email: "aadhithya3210@gmail.com",
+            },
+          ],
+        },
+        day2: {
+          date: "14.11.2022 and 15.11.2022(FN & AN)",
+          time: "12:00pm -3.00pm",
+          mode: "OFFLINE",
+          venue: "TBA",
+          list: true,
+          topic:
+            "4. Owasp Top 10 Attack vectors & Hands-on Demo 200 mins\na. Broken Access Control\nb. Injection\nc. Security Misconfiguration\nd. Vulnerable and Outdated Components\ne. Identification and Authentication Failures\nf. Server-Side Request Forgery\n5. source code review & Hands-on Demo 200 mins",
+          resource: [
+            {
+              name: "Er.Praveen Kumar ",
+              desig: "Founder of Dead bed Cyber Solutions",
+              phone: 8925760280,
+              email: "praveenkumarvelu190@gmail.com",
+            },
+          ],
+          staff: [
+            {
+              name: "Ms.Karthika RN",
+              desig: "Assistant Professor",
+              phone: 8248816873,
+              email: "karthikarn@saveetha.ac.in",
+            },
+          ],
+          student: [
+            {
+              name: "Harini NG",
+              year: "III",
+              phone: 6382246669,
+              email: "harinig025@gmail.com",
+            },
+            {
+              name: "Aadhithya Raj V",
+              year: "III",
+              phone: 6374492710,
+              email: "aadhithya3210@gmail.com",
+            },
+          ],
+        },
+      },
+      {
+        name: "REACT JS  ",
+        logo: "EventsAssets/itw2.png",
+        tag: "WORKSHOP",
+        color: "0, 70, 90",
+        company: "NA",
+        day1: {
+          date: "16.11.2022 & 17.11.2022(FN & AN)",
+          time: "12:00pm -3.00pm",
+          mode: "OFFLINE",
+          venue: "TBA",
+          list: true,
+          topic: ` 1. BASIC REACT CONCEPTS\n2. REDUX CONCEPTS`,
+          resource: [
+            {
+              name: "Ms.Aarthy Magesh",
+              desig: "Application Development Analyst",
+              phone: 6379346410,
+              email: "aarthy4002@gmail.com",
+            },
+          ],
+          staff: [
+            {
+              name: "Ms. Abinaya G",
+              desig: "Assistant Professor",
+              phone: 9500206093,
+              email: "gabinaya@saveetha.ac.in",
+            },
+          ],
+          student: [
+            {
+              name: "Gokul Sekar",
+              year: "III",
+              phone: 8754207383,
+              email: "gokulsekar74@gmail.com",
+            },
+            {
+              name: "Sathiya Narayanan G",
+              year: "III",
+              phone: 8015365007,
+              email: "sathiyanarayanan.g2003b1@gmail.com",
+            },
+          ],
+        },
+        day2: {
+          date: "16.11.2022 & 17.11.2022(FN & AN)",
+          time: "12:00pm -3.00pm",
+          mode: "OFFLINE",
+          venue: "TBA",
+          list: true,
+          topic: "1. HANDS-ON PRACTICE\n2. KT ON CURRENT INDUSTRIES PROJECT",
+          resource: [
+            {
+              name: "Ms.Aarthy Magesh",
+              desig: "Application Development Analyst",
+              phone: 6379346410,
+              email: "aarthy4002@gmail.com",
+            },
+          ],
+          staff: [
+            {
+              name: "Ms. Abinaya G",
+              desig: "Assistant Professor",
+              phone: 9500206093,
+              email: "gabinaya@saveetha.ac.in",
+            },
+          ],
+          student: [
+            {
+              name: "Gokul Sekar",
+              year: "III",
+              phone: 8754207383,
+              email: "gokulsekar74@gmail.com",
+            },
+            {
+              name: "Sathiya Narayanan G",
+              year: "III",
+              phone: 8015365007,
+              email: "sathiyanarayanan.g2003b1@gmail.com",
+            },
+          ],
+        },
+      },
+      {
+        name: "AWS – CLOUD PRACTITIONER",
+        logo: "EventsAssets/itw3.png",
+        tag: "WORKSHOP",
+        color: "0, 70, 90",
+        company: "NA",
+        day1: {
+          date: "16.11.2022 - FN",
+          time: "12:00pm -3.00pm",
+          mode: "OFFLINE",
+          venue: "TBA",
+          list: true,
+          topic:
+            "1.Fundamental Cloud Concepts of AWS\n2.Benefits and Types of Cloud Computing\n3.AWS Cloud Infrastructure\n4.Understanding AWS Core services\n5.AWS App Integration\n6.AWS Identities and User Management\n7.Architecting Application on Amazon EC2\n8.Developer Services ",
+          resource: [
+            {
+              name: "S.Dinesh",
+              desig: "Backup Administrator",
+              phone: 7338914886,
+              email: "s.dineshpersonal@gmail.com",
+            },
+            {
+              name: "M.Pratheeksha",
+              desig: "Linux-System Administrator",
+              phone: 9361035551,
+              email: "Pratheekshaa721@gmail.com",
+            },
+          ],
+          staff: [
+            {
+              name: "Ms. Panimalar SP",
+              desig: "Assistant Professor",
+              phone: 9789703697,
+              email: "panimalarsp@saveetha.ac.in",
+            },
+          ],
+          student: [
+            {
+              name: "Jayapriya.T",
+              year: "II ",
+              phone: 8608686872,
+              email: "jayapriyaanandkumar@gmail.com",
+            },
+            {
+              name: "Pavithra.P",
+              year: "II",
+              phone: 7358144662,
+              email: "pavithra1012004@gmail.com",
+            },
+          ],
+        },
+        
       },
     ],
   },
@@ -1097,6 +1321,7 @@ export const EventDetails = [
     eventslist: [
       {
         name: "Med factory",
+        desc: "An action oriented event of entertainment and first hand interaction providing a turn the table opportunity for medical equipment handling and testing. It’s your turn to be the doctor",
         tagline:
           "To get familiarize with the functioning and usage of medical equipment",
         date: "18 Nov 2022(FN)",
@@ -1107,13 +1332,13 @@ export const EventDetails = [
         rules: "",
         round1title: "Round 1 - THREE MONKEYS (PICTIONARY)",
         round1:
-          "Group activity, team of four members. Objective of the round is to identify the drawn picture of the given word.One member to narrate the given word (deafened) One member to draw the narrated picture (Blinded) Two members to identify the picture. Each picture is given time duration of one minute to find",
+          "This round is a group activity. Objective of the round is to identify the drawn picture of the given word.One member to narrate the given word (blinded).One member to draw the narrated picture (muted). One member to identify the picture(defended).Each task will be given a time period of 100 seconds.Teams with the highest number of tasks finished will be qualified for the next round ",
         round2title: " MAD SCIENTIST",
         round2:
-          "Group activity, a team of four members. Objective of the round is to connect the given device and take out the readings.Instructions on how to handle the equipment will be given. Points are awarded in the hierarchy of completion",
-        round3title: "Clue Mining",
+          "This round is a group activity.Objective of the round is to connect the given device and take out the readings.Instructions of how to handle the equipment will be given.Teams with lowest duration of task timing will be qualified to next round ",
+        round3title: "MEDTRIVIA",
         round3:
-          "Group activity, a team of four members. Objective of the round is to identify the appropriate medical equipment required for respective trivia Flashcards of equipment with the description of function and usage will be handed out to the participants. Teams are expected to assign the appropriate cards to the given situations.Every correct answer will be rewarded with a point in the team can use to move forward or hold back the opponent team. First team to complete the highest number of trivia wins",
+          "This round is a group activity.Objective of round is to identify the appropriate medical equipment required for respective trivia.Flash cards of equipment with the description of function and usage will be handed out to the participants.Teams are expected to assign the appropriate cards to the given situations.Each task will be given a duration of 60 seconds .Every correct answer will be rewarded with a point in which the team can use to move forward or hold back the opponent team.First team to complete the highest number of trivia wins ",
         tag: "EVENT",
         color: "0, 1, 38",
         logo: "/EventsAssets/bme1.png",
@@ -1160,6 +1385,7 @@ export const EventDetails = [
       },
       {
         name: "Mind Flayers",
+        desc: "Looking for entertaining ideas to enhance the game more intriguing? You're in the right spot! Here are three amusing challenges for your pals to do. The tasks in between those rounds are amusing,  stimulating your activities and posing questions to your intellect.   Prizes are given to the winners of the final round.        ",
         tagline:
           "Looking for fun ideas that will keep the game more interesting? You’re in the right place! Here are 3 rounds of fun challenges for your friends. Time based MCQs are there. Funny tasks are between those rounds. Triggering your mind with questions and boosting your activities. Each round has 2 (Two) levels to reach next round. Offers given in first round to reach final round directly. Final round winners be appreciated with rewards",
         date: "18 Nov 2022(AN)",
@@ -1171,12 +1397,17 @@ export const EventDetails = [
         round1title: "FIND ME",
         round1:
           " Individuals 3 persons at same time . Buzzers placed in each individual place .5 questions to be asked in each sets .Timer – 15 seconds .Questions related to stranger things (Characters, Scenes) and for non-watchers – (General GK about medical science)",
+        round1level2:
+          "Good chance for lost people in level 1 . Charts be placed in 8×2 matrix. Left and Right (one is empty & other is diagram). If footed in empty, you are out and given 2nd as final chance.If footed in diagram, need to answer for question.If reached 8th chart using only 2 chances, directly qualified to 3rd round ",
         round2title: "TWO SHOTS MAKES ME QUIZEE",
         round2:
-          "Shortlisted from round 1 (1vs1) .Buzzer be placed to each individual. Questions based on (YES or NO) .Questions related to medical equipments and applications .If not answered correctly, funny tasks are there .6 questions asked to each 1vs1.5-10 mins to each 1vs1",
+          "Shortlisted from round 1 (1vs1).Rising your hands by answering.Questions related to medical equipments and applications (Answer Type – Yes👍or No👎).If one person does not answer, a task is given to do.6 questions asked per set (Time 5-10 Mins)",
+        round2level2:
+          "If lost in level 1, they play in connection round (1vs1).Connecting each thing to find answers.3 question – question/15 seconds.Maximum answered – brings to 3rd round",
         round3title: "THE UPSIDE DOWN",
+
         round3:
-          "Shortlisted students taken from 2nd round .Different set of questions (4 to 5 category of ideas). Individual performance is noted. (At a time only one player in the room) .Writing pad/slate given to hand. (written) .5 to 10 mins per person.Winners selected based on timing and answers",
+          "Shortlisted students taken from 2nd round.According to topic, depending on clues from down to up, keep in mind and join together to find it.Different types (Matching, Grouping, Puzzling, etc).Individual performance is noted. (at a time only one player in room).Writing pad/slate given to hand – Written Type.5-10 mins/person.Winners selected based on Performance ranking",
 
         tag: "EVENT",
         color: "0, 1, 38",
@@ -1184,7 +1415,7 @@ export const EventDetails = [
         staff: [
           {
             name: "Dr. P.  Sinthia",
-            desig: "Associate Professor r",
+            desig: "Associate Professor",
             phone: 9940521704,
             email: "sinthia@saveetha.ac.in",
           },
@@ -1224,9 +1455,9 @@ export const EventDetails = [
       },
 
       {
-        name: "Kampf geist",
+        name: "Kampf geist (battle minds)",
         tagline: "(battle minds)",
-        desc: " To understand how our brain coordinate thoughts, movement and sensation",
+        desc: "To understand how our brain coordinate thoughts, movement and sensation",
         date: "19 Nov 2022(FN)",
         type: "Team",
         venue: "TBA",
@@ -1235,10 +1466,10 @@ export const EventDetails = [
         rules: "",
         round1title: " Time snap",
         round1:
-          "9 spots will be there which itself will be sub rounds.Each spot will have a riddle which the team member will help to solve in order to get out of the spot. Guessing the riddle -3 lives/chances will be given to any one person. A timer will be running for each sub round and each riddle and if the team fail to obtain the clue /riddle on time he  /she  will  be  out  of game",
-        round2title: "TWO SHOTS MAKES ME QUIZEE",
+          "9 spots will be there which itself will be sub rounds.Each spot will have a riddle which the team member will help to solve in order to get out of the spot.Guessing the riddle -3 lives/chances will be given to any one person. A timer will be running for each sub round and each riddle and if the team fails to obtain the clue /riddle on time he /she will be out of the game",
+        round2title: "Flex in seconds",
         round2:
-          " The top 4 players shall be selected from the previous round on the basis of the 1st round.In this round, there will be 2 qualifiers, one elimination round and one final round.Teams are said to stand at their respective ends. A question will be asked commonly, when both team player meet at one point. The player who gives the correct answer proceeds the disc path.The team which reaches the other end will be declared as the winner",
+          "The top 4 teams shall be selected from the previous round on the basis of the 1st round.In this round, there will be 2 qualifiers, one elimination round and one final round.Teams are said to stand at their respective ends.A question will be asked commonly, when both team players meet at one point. The player who gives the correct answer proceeds the disc path. The team which reaches the other end will be declared as the winner",
         tag: "EVENT",
         color: "0, 1, 38",
         logo: "/EventsAssets/bme3.png",
@@ -1258,50 +1489,50 @@ export const EventDetails = [
             email: "ashuprsnl11@gmail.com",
           },
           {
-            name: "Lavanya B",
+            name: "Adithya SR",
             year: "IV",
             phone: 9176156222,
             email: "adiithyasr@gmail.com",
           },
           {
-            name: "Krithy sreshta",
+            name: "Kevin samraj",
             year: "III",
             phone: 9962509713,
             email: "k3vinwilson@gmail.com",
           },
           {
-            name: "Yuvaraj SR",
+            name: "Shrija",
             year: "III",
             phone: 6369608120,
             email: "shrijasekhar@gmail.com",
           },
           {
-            name: "Anusha",
+            name: "Sharanya S",
             year: "II",
             phone: 9342098239,
-            email: "shrijasekhar@gmail.com",
+            email: "sharanyasivaraman03@gmail.com",
           },
         ],
       },
 
       {
-        name: " Neurotic Expelliarmus",
-        desc: " To understand the coordination of brain that receives the sensory input and provides a physical output",
+        name: "Neurotic Expelliarmus",
+        desc: "To understand the coordination of brain that receives the sensory input and provides a physical output",
         date: "19 Nov 2022(AN)",
         type: "Team",
         venue: "TBA",
         time: "TBA",
         members: "1-3",
         rules: "",
-        round1title: "Blaze the Machine Gun",
+        round1title: " Blaze the Machine Gun",
         round1:
-          "10 participants are arranged to sit in the Circle. One word is provided to them, the word-related words are passed. The one who fails to say the word related to that will disqualify from the round",
+          "10 participants are arranged to sit in the Circle. One word is provided to them, the word-related words are passed. The one who fails to say the word related to that will be disqualified from the round",
         round2title: " Obliviate",
         round2:
-          "10 participants are arranged to sit in the Circle. One word is provided to them, the word-related words are passed. The one who fails to say the word related to that will disqualify from the round",
-        round3title: "mansoorajees001@gmail.com",
+          "The physical and mental coordination is tested in this round. A particular task will be assigned and the participants must complete it within the stipulated time",
+        round3title: "Mystify the baeno",
         round3:
-          "Puzzle related to medical Instruments or Famous Scientist Will be displayed in the laptop provided. According to the time taken by the participants we can select the winners",
+          "Puzzles related to medical Instruments or Famous Scientists will be displayed in the laptop provided. According to the time taken by the participants we can select the winners",
         tag: "EVENT",
         color: "0, 1, 38",
         logo: "/EventsAssets/bme4.png",
@@ -1350,7 +1581,7 @@ export const EventDetails = [
     workshopslist: [
       {
         name: "3D modelling in CT & MRI scans on Navigation based surgery",
-        logo: "/EventsAssets/bmew1.png",
+        logo: "EventsAssets/bmew1.png",
         tag: "WORKSHOP",
         color: "0, 70, 90",
 
@@ -1359,6 +1590,8 @@ export const EventDetails = [
           time: "12:00pm -3.00pm",
           mode: "OFFLINE",
           venue: "TBA",
+          topic:
+            "The workshop is based on a workflow for a novel augmented-reality-based surgical navigation (ARSN) system for anatomy visualisation installed in a hybrid operating room. In the afternoon session, students receive hands-on training.",
           resource: [
             {
               name: "Arjunan Senthilkumar",
@@ -1404,18 +1637,20 @@ export const EventDetails = [
         },
       },
       {
-        name: "Biomechanics & LabVIEW for Healthcare Applications",
-        logo: "/EventsAssets/bmew1.png",
+        name: "Workshop Title – Rehabilitation & LabVIEW for Healthcare Applications",
+        logo: "/EventsAssets/bmew2.png",
 
         tag: "WORKSHOP",
         color: "0, 70, 90",
-        company: "Prashan Medical Technologies",
+        company: " Prashan Medical Technologies",
 
         day1: {
           date: "16/11/2022-FN",
           time: "12pm-3pm",
           mode: "OFFLINE",
           venue: "TBA",
+          topic:
+            "This workshop covers Automated Manufacturing testing, product design validation, control and monitoring of industrial equipment in a system, and the most recent developments of medical equipment using LabVIEW.",
           resource: [
             {
               name: "Boopathi Sakthivel",
@@ -1452,10 +1687,10 @@ export const EventDetails = [
               email: "amirdhas2003@gmail.com",
             },
             {
-              name: "Purushotham an.C",
+              name: "Purushothaman C",
               year: "III",
               phone: 9952028003,
-              email: "purushothchakaravarthi@g mail.com",
+              email: "purushothchakaravarthi@gmail.com",
             },
           ],
         },
@@ -2455,7 +2690,7 @@ export const EventDetails = [
     workshopslist: [
       {
         name: "Augmented Reality for 4.0 (Online)",
-        logo: "/EventsAssets/mechw1.png",
+        logo: "/EventsAssets/mechw2.png",
         tag: "WORKSHOP",
         color: "0, 70, 90",
         company: "Ideazone",
@@ -2563,7 +2798,7 @@ export const EventDetails = [
       },
       {
         name: "Hands on training in Fusion 360(offline)",
-        logo: "/EventsAssets/mechw3.png",
+        logo: "/EventsAssets/mechw1.png",
         tag: "WORKSHOP",
         color: "0, 70, 90",
         company: " Bessel Automation",
@@ -2723,7 +2958,7 @@ export const EventDetails = [
           "Total of 15 MCQ type Questions Each question carries 1 Mark  Only 1 member per team allowed to attend this round The Top 5 selected teams will move on to the round 2",
 
         round2:
-          " Both the team members join together to attend this round Total of 25 questions will be asked. 5 questions per team Each question carries 2 Marks, If question get passed to the next team it carries 1 Mark In case of tie, extra tie breaker questions may be asked to decide the winners",
+          " Both the team members join together to attend this .round Total of 25 questions will be asked. 5 questions per team Each question carries 2 Marks, If question get passed to the next team it carries 1 Mark In case of tie, extra tie breaker questions may be asked to decide the winners",
 
         tag: "EVENT",
         color: "0, 1, 38",
@@ -2760,7 +2995,7 @@ export const EventDetails = [
         members: "2",
         round1title: "CRACK THE CODE",
         round1:
-          " Timings: 20min. No Of questions: 20 Candidates are provided with set of mcqs related to general management, marketing, advertising, HRM, finance, business events, concepts and recent issues. No negative marks",
+          " Timings: 20min , No Of questions: 20 .Candidates are provided with set of mcqs related to general management, marketing, advertising, HRM, finance, business events, concepts and recent issues. No negative marks",
         round2title: "SHERLOCK & WATSON",
         round2:
           "Each contestant will be given a caselet for which 10 minutes will be given to prepare the caselet.  Each contestant will present the case before the panel of judges for a maximum of 5 minutes.  Contestants are expected to explain the relevant background information of the case, which may include legal, financial, economic, marketing, and management issues relevant to the caselet, and present the issue identified in the caselet.  After presenting the case, each contestant must make recommendations for action that are solidly grounded to the given caselet.Mobile phones & Internet access are prohibited",
@@ -2856,9 +3091,9 @@ export const EventDetails = [
         color: "0, 70, 90",
         mode: "TBA",
         venue: "TBA",
-
+       company:' Knowledge Xchange Community',
         day1: {
-          date: "14/11/2022",
+          date: "14/11/2022 FN",
           time: "TBA",
           resource: [
             {
@@ -2938,7 +3173,7 @@ export const EventDetails = [
         members: "2",
         rules: "",
         round1:
-          "Maximum 3 Members per team Mobile Phones are not allowed Concept will be explained and MCQ will be asked either in app or in written format Best 3 teams will be qualified for next round",
+          "Maximum 3 Members per team. Mobile Phones are not allowed .Concept will be explained and MCQ will be asked either in app or in written format. Best 3 teams will be qualified for next round",
         round2:
           "We will be providing the picture in sheet as per the lot method and you have to mark the parts.  The team which marks the correct parts in maximum number will be qualified for the next round",
         round3:
@@ -2950,8 +3185,8 @@ export const EventDetails = [
           {
             name: "U. Madhanlal",
             desig: "Assistant Professor",
-            phone: 9894320588,
-            email: "Sgangadharan @gmail.com",
+            phone: 9790753481,
+            email: "madhanlal@saveetha.ac.in",
           },
         ],
         student: [
@@ -2985,20 +3220,20 @@ export const EventDetails = [
       {
         name: " CIRCUITO",
         date: "18 Nov 2022(AN)",
-        type: "Team",
+        type: "3",
         venue: "TBA",
         time: "TBA",
         members: "1-2",
         rules: "",
         round1title: "QUIZOID",
         round1:
-          "Maximum 3 members per team  MCQ Questions will be displayed on the projector and answer sheets will be given  Participants has to choose the appropriate answers from the given options They will be qualified to the next round based on the scores",
+          "Maximum 3 members per team . MCQ Questions will be displayed on the projector and answer sheets will be given . Participants has to choose the appropriate answers from the given options. They will be qualified to the next round based on the scores",
         round2title: " WHO AM I ?",
         round2:
           "A box full of electronic components will be given to each team .They has to pinpoint the names of the given components within  the given time .Teams will be selected based on the counts of component they listed",
         round3title: "MEMORY MASTER",
         round3:
-          "Pictures of simple electronic circuits will be displayed on the projector for 30 seconds Each team will be given a breadboard and the required components Team members has to make circuit connections of the displayed schematics within the stipulated timing Selected teams will be awarded",
+          "Pictures of simple electronic circuits will be displayed on the projector for 30 seconds. Each team will be given a breadboard and the required components .Team members has to make circuit connections of the displayed schematics within the stipulated timing Selected teams will be awarded",
         tag: "EVENT",
         color: "0, 1, 38",
         logo: "/EventsAssets/med2.png",
@@ -3038,21 +3273,72 @@ export const EventDetails = [
         ],
       },
       {
-        name: "BLIND TEASER",
+        name: "CONNECTIONS",
         date: "19 Nov 2022(FN)",
-        type: "Team",
-        venue: "TBA",
+        type: "4",
+        venue: "4th floor Admin LH 1",
         time: "8.30am-12.00pm",
         members: "2",
         round1title: "Puzzle",
         round1:
-          "Maximum of 2 members per team  Pieces of papers with medical instrument will be provided for each team. One in a team will be blind folded and the other can guide his teammate providing instruction to fit the pieces correctly to form a picture.  Max time : 120 seconds The best three teams will be selected for next round",
+          "No of persons in a team -minimum 1, maximum 4.Thinking time 30seconds.Mobile phones are not allowed.Participants need to solve the puzzle or game to answer the questions.Questions will be displayed in the projector.Best three teams will be selected for next round based on the score",
         round2:
-          "Rule to be followed as same as round 1 Max time : 60 seconds teams will be selected for final round",
-        round3: "Rule to be followed as same as round 1 Max time : 40 seconds",
+          "Thinking time 40seconds.Participants need to solve the puzzle or game to answer the questions.Questions will be displayed in the projector.Best team will be awarded",
+
         tag: "EVENT",
         color: "0, 1, 38",
         logo: "/EventsAssets/med3.png",
+        staff: [
+          {
+            name: "Ms.Bhavadharani V",
+            desig: "Assistant Professor",
+            phone: 8344192829,
+            email: "bhavadharaniv@saveetha.ac.in",
+          },
+        ],
+        student: [
+          {
+            name: "S VAIDEESH RAGAVAN",
+            year: "IV",
+            phone: 9442767763,
+            email: "vaideeshragavan1021@gmail.com",
+          },
+          {
+            name: "S SINDUJA",
+            year: "IV",
+            phone: 9344279911,
+            email: "sindhujasivakumar6@gmail.com",
+          },
+          {
+            name: "MOUNIKA V",
+            year: "III",
+            phone: 7904019576,
+            email: "mounikav196@gmail.com",
+          },
+          {
+            name: "J MONICA",
+            year: "II",
+            phone: 8667699067,
+            email: "monicajayakumar2003@gmail.com",
+          },
+        ],
+      },
+      {
+        name: "BLIND TEASER",
+        date: "19 Nov 2022(FN)",
+        type: "4",
+        venue: "DT lab",
+        time: "8.30am-12.00pm",
+        members: "2",
+        round1title: "Puzzle",
+        round1:
+          "Maximum of 2 members per team.Pieces of papers with medical instrument will be provided for each team.One in a team will be blind folded and the other can guide his teammate providing instruction to fit the pieces correctly to form a picture.Max time: 120 second.The best three teams will be selected for next round",
+        round2:
+          "Rule to be followed as same as round .1 Max time : 60 seconds.Two teams will be selected for final round",
+        round3:"Rule to be followed as same as round. 1 Max time : 40 seconds",
+        tag: "EVENT",
+        color: "0, 1, 38",
+        logo: "/EventsAssets/med4.png",
         staff: [
           {
             name: "Vigneshwari N",
@@ -3072,7 +3358,7 @@ export const EventDetails = [
             name: "Thiruneelan R",
             year: "IV",
             phone: 6369643709,
-            email: "thiruneelan361@gmail.com",
+            email: "thiruneelan361@gmail.coma",
           },
           {
             name: "Sharmila",
@@ -3089,6 +3375,112 @@ export const EventDetails = [
         ],
       },
     ],
+    workshopslist: [
+      {
+        name: "IOT ~ MEDICO",
+        logo: "/EventsAssets/mew1.png",
+        tag: "WORKSHOP",
+        color: "0, 70, 90",
+        company: "VEI Technologies Pvt Ltd",
+        day1: {
+          date: "15/11/22 to 16/11/22 (FN & AN)",
+          time: "TBA",
+          venue:" STLC 5th floor",
+         
+          list:true,
+          topic:
+            "1 Patient health monitoring system using raspberry pi – iot\n 2 Smart patient monitoring system using arduino or raspberry pi\n 3 Raspberry-pi based health monitoring system\n 4 Wifi based personal health monitoring system using android smartphone\n 5 Real time wireless health monitoring application using mobile devices",
+          resource: [
+            {
+              name: "Ezhilavan B",
+              desig: "Founder & CEO",
+              phone: 9003785766,
+              email: "veitechnologies@gmail.com",
+            },
+          ],
+          staff: [
+            {
+              name: "U. Madhanlal",
+              desig: "Associate Professor",
+              phone: 9790753481,
+              email: "madhanlal@saveetha.ac.in",
+            },
+            {
+              name: "G.Gurumoorthi",
+              desig: "Associate Professor",
+              phone: 9786129913,
+              email: "gurumoorthyg@saveetha.ac.in",
+            },
+      
+          ],
+          student: [
+            {
+              name: "Mirrahashini K",
+              year: "IV",
+              phone: 9600679615,
+              email: "mirra07112001@gmail.com",
+            },
+            {
+              name: "Sanjay Kumar.M",
+              year: "IV",
+              phone: 8610708750,
+              email: "Sanjayya.10@gmail.com",
+            },
+           
+          ],
+        },
+        day2:{
+          date: "15/11/22 to 16/11/22 (FN & AN)",
+          time: "TBA",
+          venue:" STLC 5th floor",
+         
+          list:true,
+          topic:
+            "1️ Intelligent	wireless	emergency	alert	system	for	patient	health monitoring using gsm\n2 Raspberry pi based data sensing and logging system using wireless sensor nodes (wsn) and local area network (lan)\n3 Wireless machine to machine health care solution using android mobile devices in global networks\n4 Build a smart patient monitoring system using raspberry pi\n5 Wireless ecg, body temperature and heart beat signals monitoring and alarm system using zigbee",
+          resource: [
+            {
+              name: "Ezhilavan B",
+              desig: "Founder & CEO",
+              phone: 9003785766,
+              email: "veitechnologies@gmail.com",
+            },
+          ],
+          staff: [
+            {
+              name: "U. Madhanlal",
+              desig: "Associate Professor",
+              phone: 9790753481,
+              email: "madhanlal@saveetha.ac.in",
+            },
+            {
+              name: "G.Gurumoorthi",
+              desig: "Associate Professor",
+              phone: 9786129913,
+              email: "gurumoorthyg@saveetha.ac.in",
+            },
+      
+          ],
+          student: [
+            {
+              name: "Mirrahashini K",
+              year: "IV",
+              phone: 9600679615,
+              email: "mirra07112001@gmail.com",
+            },
+            {
+              name: "Sanjay Kumar.M",
+              year: "IV",
+              phone: 8610708750,
+              email: "Sanjayya.10@gmail.com",
+            },
+           
+          ],
+        }
+      },
+      
+    
+    ]
+
   },
   {
     id: "ece",
