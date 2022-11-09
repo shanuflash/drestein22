@@ -392,11 +392,11 @@ const Modal = ({ open, setOpenModal }) => {
             ) : null}
           </>
         )}
-        {/* <Link style={{ textDecoration: "none" }} to="/form">
-          <div className="btn">
+        <Link style={{ textDecoration: "none" }} to="/form">
+          <div onClick={() => setOpenModal((prev) => !prev)} className="btn">
             <RegisterBtn />
           </div>
-        </Link> */}
+        </Link>
       </div>
     </div>
   );

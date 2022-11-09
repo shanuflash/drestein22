@@ -38,7 +38,9 @@ const EventCard = ({
   const { setEventObject } = useContext(DisplayPopupContext);
 
   const handleEventInfo = () => {
+
     setOpenModal((prev) => !prev);
+
     setEventObject({
       name,
       date,
@@ -115,6 +117,7 @@ const EventCard = ({
             }}
             alt="logo"
           />
+
           <h1
             style={{
               marginVottom: "0.7rem",

@@ -2760,7 +2760,7 @@ export const EventDetails = [
         members: "2",
         round1title: "CRACK THE CODE",
         round1:
-          " Timings: 20min. No. Of questions: 20 Candidates are provided with set of mcqs related to general management, marketing, advertising, HRM, finance, business events, concepts and recent issues. No negative marks",
+          " Timings: 20min. No Of questions: 20 Candidates are provided with set of mcqs related to general management, marketing, advertising, HRM, finance, business events, concepts and recent issues. No negative marks",
         round2title: "SHERLOCK & WATSON",
         round2:
           "Each contestant will be given a caselet for which 10 minutes will be given to prepare the caselet.  Each contestant will present the case before the panel of judges for a maximum of 5 minutes.  Contestants are expected to explain the relevant background information of the case, which may include legal, financial, economic, marketing, and management issues relevant to the caselet, and present the issue identified in the caselet.  After presenting the case, each contestant must make recommendations for action that are solidly grounded to the given caselet.Mobile phones & Internet access are prohibited",

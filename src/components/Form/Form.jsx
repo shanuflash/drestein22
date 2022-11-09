@@ -216,6 +216,9 @@ const Form = () => {
                 const QrUrl = sendqr.url;
                 console.log(QrUrl);
                 if (window.Email) {
+                  const style = {
+                    border:'1px sold black',
+                  }
                   await window.Email.send({
                     SecureToken: process.env.REACT_APP_EMAILCODE_ID,
                     To: formdata.email,
@@ -230,8 +233,81 @@ const Form = () => {
                    
                     <h2>Congrats ${formdata.fname},</h2>
                     <p>
-                        Thank you for registering for Drestein 2022
+                        Thank you for registering Drestein 2022.
                     </p>
+
+                      ${formdata.DepartEvent ? '<p>you have Registered for Department Event </p>' : ''}
+                    <table style={{
+                      border:'1px solid solid'
+                    }}>
+                    <tr>
+
+                     <th  style={{
+                      border:'1px solid solid'
+                    }}> Registered </th>
+                     <th  style={{
+                      border:'1px solid solid'
+                    }}> Price </th>
+                     </tr>
+
+
+                      ${formdata.DepartEvent ?
+                      `<tr  style={{
+                      border:'1px solid solid'
+                    }}>
+                       <td  style={{
+                      border:'1px solid solid'
+                    }}>Department Event</td>
+                       <td  style={{
+                      border:'1px solid solid'
+                    }}>150</td>
+                      </tr>
+                      `
+                      :''
+                    }
+                    ${formdata.PaperPresentation ?
+                      `<tr style={{
+                        border:'1px solid solid'
+                      }}>
+                       <td style={{
+                        border:'1px solid solid'
+                      }}>Paper Presentation</td>
+                       <td style={{
+                        border:'1px solid solid'
+                      }}>200</td>
+                      </tr>
+                      `:''
+                    }
+                    ${formdata.ProjectPresentation ?
+                      `<tr style={{
+                        border:'1px solid solid'
+                      }}>
+                        <td style={{
+                          border:'1px solid solid'
+                        }}>Project Presentation</td>
+                        <td style={{
+                          border:'1px solid solid'
+                        }}>250</td>
+                      </tr>
+                      `:''
+                    }
+
+
+                      <tr style={{
+                        border:'1px solid solid'
+                      }}>
+                        <td style={{
+                          border:'1px solid solid'
+                        }}>Total Amount </td>
+                        <td style={{
+                          border:'1px solid solid'
+                        }}>${formdata.CashToBePaid}</td>
+                      </tr>
+                      
+
+
+                    </table>
+
               
                     <h3>Best Wishes, @Drestein  </h3>
                     <img src="${QrUrl}" alt='${formdata.id}'>
@@ -328,10 +404,10 @@ const Form = () => {
       formdata.CashToBePaid += 150;
     }
     if (Paper === true) {
-      formdata.CashToBePaid += 250;
+      formdata.CashToBePaid += 200;
     }
     if (Project === true) {
-      formdata.CashToBePaid += 200;
+      formdata.CashToBePaid += 250;
     }
     console.log(formdata);
     if (response[0] === undefined) {
