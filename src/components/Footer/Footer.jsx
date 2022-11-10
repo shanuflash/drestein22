@@ -89,7 +89,7 @@ const Footer = () => {
                   borderRadius: "50%",
                   objectFit: "cover",
                 }}
-                src={`https://saveetha.ac.in/images/sec/2020/depts/it/Faculty/Suresh-Kumar.jpg`}
+                src="PeopleAssets/co1.webp"
               />
             }
           >
@@ -107,7 +107,7 @@ const Footer = () => {
                   borderRadius: "50%",
                   objectFit: "cover",
                 }}
-                src={`https://saveetha.ac.in/images/sec/2020/depts/mech/Faculty/Dr-N-Raja-Rajeswari.jpg`}
+                src="PeopleAssets/co2.webp"
               />
             }
           >

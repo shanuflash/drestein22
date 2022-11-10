@@ -81,14 +81,14 @@ const Test = styled.div`
   color: black;
   font-size: 5vw;
   text-align: center;
-  /* background-color: white; */
+
   width: 80%;
   font-family: "Montserrat", sans-serif;
 
   /* font-family: poppins, sans-serif; */
   font-weight: bold;
 
-  // height: 300px;
+  height: 235px;
   border-radius: 30px;
   position: absolute;
   top: 0%;
@@ -109,7 +109,7 @@ function Guest() {
     {
       name: "Ganesh Thirunavukkarasu M ",
       desc: "",
-      src: "/guest.webp",
+      src: "PeopleAssets/guest.webp",
     },
   ];
 
@@ -138,9 +138,10 @@ function Guest() {
   };
   return (
     <GuestHead>
-      <Test>
-        Prizes worth upto 5 Lakhs+
-        {/* <Test2>Participate in any event with a single payment*</Test2> */}
+      <Test style={{ display: "flex", flexDirection: "row" }}>
+        <div>Prizes worth upto Lakhs</div>
+
+        <div style={{ fontSize: "10rem" }}>5+</div>
       </Test>
       <GuestTitle
         as={motion.div}
@@ -183,7 +184,7 @@ function Guest() {
                 }}
               >
                 <img
-                  src="tcs.webp"
+                  src="OtherAssets/tcs.webp"
                   style={{ borderRadius: "1rem" }}
                   alt="tcs_logo"
                 />

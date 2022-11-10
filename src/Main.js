@@ -84,7 +84,7 @@ const Main = () => {
             margin: "2rem  0",
           }}
           height="100%"
-          src="/poster.webp"
+          src="OtherAssets/poster.webp"
           alt="banner"
         />
       </div>
