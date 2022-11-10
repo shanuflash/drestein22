@@ -110,9 +110,9 @@ const Test2 = styled.div`
 function Guest() {
   const Guests = [
     {
-      name: "To be announced",
+      name: "Ganesh Thirunavukkarasu M ",
       desc: "",
-      src: "https://t3.ftcdn.net/jpg/00/64/67/80/360_F_64678017_zUpiZFjj04cnLri7oADnyMH0XBYyQghG.jpg",
+      src: "/guest.jpg",
     },
   ];
 
@@ -175,6 +175,24 @@ function Guest() {
               >
                 {data.name}
               </GuestName>
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "row",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  gap: "1rem",
+                  marginTop: "1rem",
+                }}
+              >
+                <img src="tcs.jpg" style={{ borderRadius: "1rem" }} />
+
+                <div style={{ textAlign: "left" }}>
+                  Regional Head - Academic Interface Programme
+                  <br /> at Tata Consultancy Services | Career Coach
+                  <br /> Chennai, Tamil Nadu, India
+                </div>
+              </div>
               <GuestDesp
                 as={motion.p}
                 initial="offscreen"

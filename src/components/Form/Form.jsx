@@ -243,8 +243,10 @@ const Form = () => {
                         ? `, Project Presentation(₹250)`
                         : ""
                     }.
-                    </b> Don't worry if you missed an event; you can register for (or withdraw from) other topics and events offline after coming to the college. The registration fee has to be paid at the registration counter on the day of the event.
+                    </b> Don't worry if you missed an event; you can register for other events offline after coming to Saveetha Engineering College. The registration fee has to be paid at the registration counter on the day of the event by scanning your QR code sent in this email. We expect your presence on this auspicious day.
                     </p>  
+                    <p>
+                    Accommodation will be provided for participating students from other colleges, for pricing and details contact 9876543210.</p>
                     <p>
                       Total amount to be paid: <b>₹${
                         formdata.CashToBePaid
@@ -252,7 +254,7 @@ const Form = () => {
                     </p>
 
               
-                    <h3>Best Wishes, @Drestein  </h3>
+                    <h3>Best Wishes, Drestein team</h3>
                     <img src="${QrUrl}" alt='${formdata.id}'>
                     `,
                   }).then(() => {
