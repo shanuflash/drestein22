@@ -488,7 +488,7 @@ export const EventDetails = [
         logo: "/EventsAssets/cse1.png",
         staff: [
           {
-            name: "Dr. Sujatha",
+            name: "Dr.E Sujatha",
             desig: "Professor",
             phone: 9789950535,
             email: "sujathae@saveetha.ac.in",

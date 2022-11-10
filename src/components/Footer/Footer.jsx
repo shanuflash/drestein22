@@ -79,9 +79,14 @@ const Footer = () => {
 
           <Chip
             size="lg"
-            style={{ backgroundColor: "transparent" }}
+            style={{ backgroundColor: "transparent", margin:'20px 0 ' }}
             startDecorator={
-              <Avatar size="sm" src={`/static/images/avatar/1.jpg`} />
+              <Avatar size="lg" sx={{
+                width:'50px',
+                height:'50px',
+                borderRadius:'50%',
+                objectFit:'cover'
+              }} src={`https://saveetha.ac.in/images/sec/2020/depts/it/Faculty/Suresh-Kumar.jpg`} />
             }
           >
             Dr. K. Suresh Kumar
@@ -90,7 +95,12 @@ const Footer = () => {
             size="lg"
             style={{ backgroundColor: "transparent" }}
             startDecorator={
-              <Avatar size="sm" src={`/static/images/avatar/1.jpg`} />
+              <Avatar size="sm"sx={{
+                width:'50px',
+                height:'50px',
+                borderRadius:'50%',
+                objectFit:'cover'
+              }} src={`https://saveetha.ac.in/images/sec/2020/depts/mech/Faculty/Dr-N-Raja-Rajeswari.jpg`} />
             }
           >
             Dr. N. Raja Rajeshwari
@@ -109,7 +119,8 @@ const Footer = () => {
               <Avatar size="sm" src={`/static/images/avatar/1.jpg`} />
             }
           >
-            Shanu S
+                  Bharath S
+        
           </Chip>
           <Chip
             size="md"
@@ -118,7 +129,7 @@ const Footer = () => {
               <Avatar size="sm" src={`/static/images/avatar/1.jpg`} />
             }
           >
-            Bharath S
+         Shanu S
           </Chip>
           <Chip
             size="md"
