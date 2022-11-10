@@ -233,12 +233,13 @@ const Form = () => {
                     <p>
                         Thank you for registering. You have applied for <b>${
                           formdata.DepartEvent ? `Events(₹150)` : ""
-                        }${
+                        }
+                    ${
                       formdata.PaperPresentation
                         ? `, Paper Presentation(₹200)`
                         : ""
                     }${
-                      formdata.PaperPresentation
+                      formdata.ProjectPresentation
                         ? `, Project Presentation(₹250)`
                         : ""
                     }.

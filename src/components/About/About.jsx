@@ -13,7 +13,7 @@ function About() {
     );
     margin-top: 100px;
     display: flex;
-     --color: 0, 0, 0;
+    --color: 70, 70, 70;
     --bg-filter-opacity: 0.75;
     --bg-img: url("https://www.saveetha.ac.in/images/sec/2020/home/building_2.jpg");
     background-image: linear-gradient(
