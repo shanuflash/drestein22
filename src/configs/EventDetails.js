@@ -46,12 +46,7 @@ export const EventDetails = [
             phone: 9150728777,
             email: "kousi2917091@gmail.com",
           },
-          {
-            name: "Divya Bharathi K",
-            year: "III",
-            phone: 8838819253,
-            email: "dbharathi30122002@gmail.com",
-          },
+
           {
             name: "Shanthini S",
             year: "III",
@@ -674,7 +669,7 @@ export const EventDetails = [
           "The theme of ideathon will be given two days before the event.The participants need to prepare an abstract for their idea based on the theme.A group can contain minimum of 1 and maximum of 3 members.The top 10 teams will advance to ROUND 2 on the basis of their report",
         round2title: "PPT Presentation",
         round2:
-          "Each team will be receiving 3-4 minutes to present their idea through ppt.2-3 minutes to solve the given questions (Timing may vary based on number of teams).The TOP 3 will be selected based on the idea of the presentation.",
+          "Each team will be receiving 3-4 minutes to present their idea through ppt.2-3 minutes to solve the given questions (Timing may vary based on number of teams).The TOP 3 will be selected based on the idea of the presentation",
         tag: "EVENT",
         color: "0, 1, 38",
         logo: "/EventsAssets/cse4.png",
@@ -723,7 +718,7 @@ export const EventDetails = [
     workshopslist: [
       {
         name: "LAPTOP SERVICING",
-        logo: "/EventsAssets/agriw1.png",
+        logo: "/EventsAssets/csew1.png",
         tag: "WORKSHOP",
         color: "0, 70, 90",
         company: "Connect Infosystems",
@@ -766,6 +761,61 @@ export const EventDetails = [
               year: "III",
               phone: 9344065593,
               email: "ssanjay1303@gmail.com",
+            },
+          ],
+        },
+      },
+      {
+        name: "3D DIGITAL GAME ART & DESIGN",
+        logo: "/EventsAssets/csew2.png",
+        tag: "WORKSHOP",
+        color: "0, 70, 90",
+        company:"ARENA ANIMATION",
+        day1: {
+          date: "17.11.2022 (FN)",
+          time: "10am-12pm",
+          mode: "OFFLINE",
+          venue: "TBA",
+          resource: [
+            {
+              name: "E. VINCENT ASHOK KUMAR",
+              desig: "TECHNICAL TRAINER (GAMING AND VFX)",
+              phone: 9962738480,
+              email: "vadapalaniarena1@gmail.com",
+            },
+          ],
+          staff: [
+            {
+              name: "Dr.Nagappan G",
+              desig: "Professor & Head",
+              phone:9840662250,
+              email: "nagappan.cse@saveetha.ac.in",
+            },
+            {
+              name: "Dr.R.Kaladevi",
+              desig: "Assistant Professor (SG)",
+              phone: 9710074931,
+              email: "kaladevir@saveetha.ac.in",
+            },
+          ],
+          student: [
+            {
+              name: "Meenadshi M",
+              year: "III",
+              phone: 8939544089,
+              email: "meenadshi2020@gmail.com",
+            },
+            {
+              name: "Lawanya B",
+              year: "III",
+              phone: 9940409305,
+              email: "lawabala2003@gmail.com",
+            },
+            {
+              name: "Priya V",
+              year: "III",
+              phone: 6381835516,
+              email: "priyavenkat192002@gmail.com",
             },
           ],
         },
@@ -967,6 +1017,8 @@ export const EventDetails = [
           mode: "OFFLINE",
           venue: "TBA",
           resource: [],
+          list:true,
+          topic:'Drones are extensively used by our farmers to spray insecticide, fungicide and plant nutrients.\nThe man power requirement of drone sprayers are minimum.\nMany  manufactures in India are producing drone sprayers and the drone sprayers are available to the farmer on hire basis .\nA demonstration program of drone sprayer is arranged at the Saveethafarm.\nThe participants can see the flying drones spraying chemicals on the crops in theactual field conditions/nMethod of assembling the components and the actual operating procedures will be demonstrated for the benefit of participants. ',
           staff: [
             {
               name: "MR.TAJUDDIN",
@@ -1005,7 +1057,7 @@ export const EventDetails = [
       },
       {
         name: "Chemical free Solution",
-        logo: "/EventsAssets/agriw1.png",
+        logo: "/EventsAssets/agriw2.png",
         tag: "WORKSHOP",
         color: "0, 70, 90",
         company: "Agricultural Engineering Department, CIT Nagar",
