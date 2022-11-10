@@ -112,16 +112,21 @@ const Footer = () => {
           >
             WEBSITE CO-ORDINATORS
           </h4>
+          <a >
+
+      
           <Chip
             size="md"
             style={{ backgroundColor: "transparent" }}
+            
             startDecorator={
               <Avatar size="sm" src={`/static/images/avatar/1.jpg`} />
             }
           >
-                  Bharath S
+          Bharath S
         
           </Chip>
+          </a>
           <Chip
             size="md"
             style={{ backgroundColor: "transparent" }}

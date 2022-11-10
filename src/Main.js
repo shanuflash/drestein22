@@ -34,7 +34,9 @@ const Main = () => {
     document.body.style.overflow = "unset";
   }, []);
   return (
-    <div ref={scroll} id="#">
+    <div ref={scroll} id="#" style={{
+      userSelect:'none'
+    }}>
       <motion.div
         className="scrollprogress"
         style={{ scaleX: scrollYProgress }}
