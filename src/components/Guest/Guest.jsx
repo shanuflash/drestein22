@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { motion } from "framer-motion";
 
 const GuestHead = styled.div`
-  padding-bottom: 100px;
+  padding-bottom: 3vw;
   position: relative;
   /* background: linear-gradient(90deg, #00126a -80.91%, #0b001d 111.58%); */
   background: linear-gradient(
@@ -13,7 +13,7 @@ const GuestHead = styled.div`
   );
   border-radius: 0 0 20px 20px;
   width: 100%;
-  height: 100%;
+  height: 70%;
   /* overflow-x: hidden; */
   display: flex;
   justify-content: center;
@@ -70,6 +70,7 @@ const GuestContainer = styled.div`
 `;
 
 const Test = styled.div`
+padding:4rem;
   background: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(11.5px);
   -webkit-backdrop-filter: blur(11.5px);
@@ -87,7 +88,7 @@ const Test = styled.div`
   /* font-family: poppins, sans-serif; */
   font-weight: bold;
 
-  height: 300px;
+  // height: 300px;
   border-radius: 30px;
   position: absolute;
   top: 0%;
@@ -142,8 +143,8 @@ function Guest() {
   return (
     <GuestHead>
       <Test>
-        Prizes worth upto 5 Lakhs
-        <Test2>Participate in any event with a single payment*</Test2>
+        Prizes worth upto 5 Lakhs+
+        {/* <Test2>Participate in any event with a single payment*</Test2> */}
       </Test>
       <GuestTitle
         as={motion.div}

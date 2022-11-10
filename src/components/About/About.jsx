@@ -14,7 +14,7 @@ function About() {
     margin-top: 100px;
     display: flex;
     --color: 90, 90, 90;
-    --bg-filter-opacity: 0.65;
+    --bg-filter-opacity: 0.35;
     --bg-img: url("https://www.saveetha.ac.in/images/sec/2020/home/building_2.jpg");
     background-image: linear-gradient(
         rgba(var(--color), var(--bg-filter-opacity)),
