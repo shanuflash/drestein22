@@ -15,6 +15,8 @@ const Modal = ({ open, setOpenModal }) => {
   const splitround1 = eventObject?.round1?.split(".");
   const splitround2 = eventObject?.round2?.split(".");
   const splitround3 = eventObject?.round3?.split(".");
+  const splitround4 = eventObject?.round4?.split(".");
+  
 const splitround1level2 = eventObject?.round1level2?.split('.');
 const splitround2level2 = eventObject?.round2level2?.split('.');
 const splitworktopicd1  = eventObject?.day1?.topic?.split('\n');
@@ -178,7 +180,7 @@ useEffect(()=>{
                     : ""}
                 </h3>
                 <ol>
-                  {splitround3.map((each) => {
+                  {splitround4.map((each) => {
                     return <li>{each}</li>;
                   })}
                 </ol>
