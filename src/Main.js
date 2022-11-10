@@ -13,6 +13,7 @@ import Guest from "./components/Guest/Guest";
 import Footer from "./components/Footer/Footer";
 import "./App.css";
 import Counter from "./components/counter/Counter";
+import { fontWeight } from "@mui/system";
 
 const DepartmentDiv = styled.div`
   position: sticky;
@@ -33,7 +34,11 @@ const Main = () => {
     document.body.style.overflow = "unset";
   }, []);
   return (
+
+
+
     <div ref={scroll} id="#">
+
       <motion.div
         className="scrollprogress"
         style={{ scaleX: scrollYProgress }}
@@ -55,9 +60,28 @@ const Main = () => {
       <DepartmentDiv id="Departments">
         <Departments />
       </DepartmentDiv>
+      <div  style={{
+          display:'flex',
+          flexDirection:'column',
+          justifyContent:'center',
+          alignItems:'center',
+
+
+      }}>
+   <div className="GalleryHeadTxt" style={{
+
+
+
+   }}>Banner</div>
+      <img width='80%' style={{
+                  borderRadius:'20px',
+                  margin:'2rem  0'
+      }} height='100%' src="EventsAssets/banner.webp"/>
+      </div>
       <div id="Gallery">
         <Gallery />
       </div>
+    
 
       <div id="SECLife">
         <About />
@@ -72,6 +96,7 @@ const Main = () => {
         <Footer />
       </div>
     </div>
+
   );
 };
 
