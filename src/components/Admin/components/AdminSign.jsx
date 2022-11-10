@@ -66,6 +66,7 @@ export default function SignIn() {
         // setLoading(false)
       }
     } catch (error) {
+      toast.error('Wrong entry')
       console.log(error);
     }
   };

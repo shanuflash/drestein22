@@ -28,16 +28,19 @@ const EventCard = ({
   staff,
   student,
   logo,
+  round1level2,
   format,
-
+  round2level2,
   day1,
+  list,
   day2,
-  company
+  company,
 }) => {
   const { setEventObject } = useContext(DisplayPopupContext);
 
   const handleEventInfo = () => {
     setOpenModal((prev) => !prev);
+
     setEventObject({
       name,
       date,
@@ -62,10 +65,13 @@ const EventCard = ({
       staff,
       student,
       logo,
-
+      list,
+      tag,
+      round1level2,
+      round2level2,
       day1,
       day2,
-      company
+      company,
     });
   };
 
@@ -113,6 +119,7 @@ const EventCard = ({
             }}
             alt="logo"
           />
+
           <h1
             style={{
               marginVottom: "0.7rem",

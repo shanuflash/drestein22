@@ -4,7 +4,6 @@ import CheckCircleOutlineIcon from "@mui/icons-material/CheckCircleOutline";
 import { useEffect } from "react";
 
 const Card = styled.div`
-  background: #777777;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -16,8 +15,8 @@ const Card = styled.div`
 `;
 
 const InnerCard = styled.div`
-  background-color: #ffffff;
-  width: 50%;
+  background-color: #000000;
+  width: 60%;
   height: 70%;
   display: flex;
   flex-direction: column;
@@ -28,23 +27,38 @@ const InnerCard = styled.div`
 `;
 
 const HeadCard1 = styled.div`
-  background-color: #6ae968;
-  height: 50%;
+  color: #ebebeb;
+
+  background-color: #00331f;
+  height: 40%;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
   border-radius: 10px;
+  @media screen and (max-width: 600px) {
+    height: 30%;
+  }
 `;
 
 const HeadCard2 = styled.div`
-  color: #494949;
+  color: #acacac;
   text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 50%;
-  padding: 10px;
+  flex-direction: column;
+  /* color: #000000; */
+  height: 60%;
+  font-size: 1.5vw;
+  @media screen and (max-width: 600px) {
+    font-size: 4vw;
+    height: 70%;
+  }
+  @media screen and (max-width: 800px) {
+    font-size: 3vw;
+  }
+  /* padding: 10px; */
 `;
 
 function ConfirmCard() {
@@ -57,22 +71,31 @@ function ConfirmCard() {
       <InnerCard>
         <HeadCard1>
           <CheckCircleOutlineIcon
-            sx={{
-              color: "white",
-              fontSize: "10em",
-            }}
+            style={{ color: "#ebebeb", fontSize: "7em" }}
           />
           <h2>success</h2>
         </HeadCard1>
         <HeadCard2>
           <h2
             style={{
-              fontSize: "2.3em",
+              fontSize: "2em",
             }}
           >
-            {" "}
-            Congratulations, your account has been registered successfully ✅{" "}
+            Congratulations!
           </h2>
+          <h2
+            style={{
+              fontSize: "2em",
+            }}
+          >
+            You have successfully registered!
+          </h2>
+          <h3 style={{ textAlign: "justify", padding: "0 2rem 0 2rem" }}>
+            Please check your e-mail for details about the event. If you can't
+            find it, check the spam folder. Don't forget to pay for the
+            registered events while coming! Further details will be sent via
+            mail!
+          </h3>
         </HeadCard2>
       </InnerCard>
     </Card>

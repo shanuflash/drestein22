@@ -6,6 +6,7 @@ export const DisplayPopupProvider = ({ children }) => {
   const [eventObject, setEventObject] = useState({
     name: "error",
     desc: "error",
+    tag: "error",
     date: "error",
     rules: "error",
     type: "error",
@@ -16,7 +17,9 @@ export const DisplayPopupProvider = ({ children }) => {
     members: "error",
     round1: "error",
     round1title: "error",
+    round1level2:"error",
     round2: "error",
+    round2level2:"error",
     round2title: "error",
     round3: "error",
     round3title: "error",
@@ -27,10 +30,11 @@ export const DisplayPopupProvider = ({ children }) => {
     staff: [],
     student: [],
     logo: "error",
+    list:'error',
     // workshop details:
-    day1 : "error",
+    day1: "error",
     day2: "error",
-    company: "error"
+    company: "error",
   });
   return (
     <DisplayPopupContext.Provider

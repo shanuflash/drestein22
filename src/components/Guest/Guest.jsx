@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { motion } from "framer-motion";
 
 const GuestHead = styled.div`
-  padding-bottom: 100px;
+  padding-bottom: 3vw;
   position: relative;
   /* background: linear-gradient(90deg, #00126a -80.91%, #0b001d 111.58%); */
   background: linear-gradient(
@@ -13,7 +13,7 @@ const GuestHead = styled.div`
   );
   border-radius: 0 0 20px 20px;
   width: 100%;
-  height: 100%;
+  height: 70%;
   /* overflow-x: hidden; */
   display: flex;
   justify-content: center;
@@ -70,6 +70,7 @@ const GuestContainer = styled.div`
 `;
 
 const Test = styled.div`
+padding:4rem;
   background: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(11.5px);
   -webkit-backdrop-filter: blur(11.5px);
@@ -87,7 +88,7 @@ const Test = styled.div`
   /* font-family: poppins, sans-serif; */
   font-weight: bold;
 
-  height: 300px;
+  // height: 300px;
   border-radius: 30px;
   position: absolute;
   top: 0%;
@@ -110,9 +111,9 @@ const Test2 = styled.div`
 function Guest() {
   const Guests = [
     {
-      name: "To be announced",
+      name: "Ganesh Thirunavukkarasu M ",
       desc: "",
-      src: "https://t3.ftcdn.net/jpg/00/64/67/80/360_F_64678017_zUpiZFjj04cnLri7oADnyMH0XBYyQghG.jpg",
+      src: "/guest.jpg",
     },
   ];
 
@@ -142,8 +143,8 @@ function Guest() {
   return (
     <GuestHead>
       <Test>
-        Prizes worth upto 5 Lakhs
-        <Test2>Participate in any event with a single payment*</Test2>
+        Prizes worth upto 5 Lakhs+
+        {/* <Test2>Participate in any event with a single payment*</Test2> */}
       </Test>
       <GuestTitle
         as={motion.div}
@@ -151,7 +152,7 @@ function Guest() {
         whileInView="onscreen"
         variants={textlight}
       >
-        <div className="GalleryHeadTxt">Cheif Guest</div>
+        <div className="GalleryHeadTxt">Chief Guest</div>
       </GuestTitle>
 
       <GuestContainer>
@@ -175,6 +176,24 @@ function Guest() {
               >
                 {data.name}
               </GuestName>
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "row",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  gap: "1rem",
+                  marginTop: "1rem",
+                }}
+              >
+                <img src="tcs.jpg" style={{ borderRadius: "1rem" }} />
+
+                <div style={{ textAlign: "left" }}>
+                  Regional Head - Academic Interface Programme
+                  <br /> at Tata Consultancy Services | Career Coach
+                  <br /> Chennai, Tamil Nadu, India
+                </div>
+              </div>
               <GuestDesp
                 as={motion.p}
                 initial="offscreen"

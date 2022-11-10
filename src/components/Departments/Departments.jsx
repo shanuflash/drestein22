@@ -32,7 +32,7 @@ function Departments() {
         viewport={{ once: true, amount: 1 }}
         className="DeptHead"
       >
-        <div className="DeptHeadTxt">Department Events</div>
+        <div className="GalleryHeadTxt">Department Events</div>
       </motion.h1>
       <DepartmentContainer>
         {departobj.map((data, i) => {
@@ -47,7 +47,7 @@ function Departments() {
         viewport={{ once: true, amount: 1 }}
         className="DeptHead"
       >
-        <div className="DeptHeadTxt" id="SpecialEvents">
+        <div className="GalleryHeadTxt" id="SpecialEvents">
           Special Events
         </div>
       </motion.h1>
@@ -56,12 +56,12 @@ function Departments() {
           console.log(data);
           if (data.title === "Paper Presentation") {
             return (
-              <a href="PaperPresentation.pdf" target='_blank' >
+              <a href="PaperPresentation.pdf" target="_blank">
                 <SpacialEventsCard key={i} {...data} />
               </a>
             );
           }
-          
+
           return <SpacialEventsCard key={i} {...data} />;
         })}
       </DepartmentContainer>

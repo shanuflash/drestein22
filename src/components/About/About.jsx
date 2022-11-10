@@ -13,6 +13,19 @@ function About() {
     );
     margin-top: 100px;
     display: flex;
+    --color: 90, 90, 90;
+    --bg-filter-opacity: 0.35;
+    --bg-img: url("https://www.saveetha.ac.in/images/sec/2020/home/building_2.jpg");
+    background-image: linear-gradient(
+        rgba(var(--color), var(--bg-filter-opacity)),
+        rgba(0, 0, 0, var(--bg-filter-opacity))
+      ),
+      var(--bg-img);
+    background-position: center;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+
     justify-content: center;
     overflow-x: hidden;
     border-radius: 20px 20px 0 0;
@@ -74,7 +87,7 @@ function About() {
 
   const Descard = styled.div`
     font-size: 0.75em;
-    background-color: rgba(225, 225, 225, 0.7);
+    background-color: rgba(225, 225, 225);
     color: black;
     border-radius: 1rem;
     padding: 1rem;
@@ -115,38 +128,38 @@ function About() {
             excellence; widen intellectual horizon; self-discipline and high
             ideals for the total personality development of the individual.
           </Descard>
-          <ul>
+          
             {/* <List as={motion.li} variants={text}>
               Saveetha Engineering College (SEC) was established in 2001, by the
               Founder Chairman Dr. N. M. Veeraiyan, a committed and dedicated
               Medical Professional.
             </List> */}
-            <List as={motion.li} variants={text}>
+            <Descard as={motion.li} variants={text}>
               Ranked 96 by NIRF- National Institute Ranking Framework for the
               academic year 2017-18 among all IITs, Central, State and Private
               Institutions in India.{" "}
-            </List>
-            <List as={motion.li} variants={text}>
+            </Descard>
+            <Descard as={motion.li} variants={text}>
               Awarded 'A' GRADE with a high score of 3.19 on a scale of 4 by the
               National Assessment and Accreditation Council (NAAC) for 5 Years.
-            </List>
-            <List as={motion.li} variants={text}>
+            </Descard>
+            <Descard as={motion.li} variants={text}>
               SEC awarded AUTONOMOUS status by the UGC from the academic year
               2019-2020.
-            </List>
-            <List as={motion.li} variants={text}>
+            </Descard>
+            <Descard as={motion.li} variants={text}>
               SEC is recognized as a Scientific and Industrial Research
               Organization (SIRO) by the Department of Scientific and Industrial
               Research (DSIR), Government of India.
-            </List>
-            <List
+            </Descard>
+            <Descard
               as={motion.li}
               variants={text}
-              style={{ paddingBottom: "5rem" }}
+              style={{ marginBottom: "5rem" }}
             >
               Five Research Centres recognised by Anna University
-            </List>
-          </ul>
+            </Descard>
+          
         </AboutDescript>
       </AboutContainer>
     </AboutHead>

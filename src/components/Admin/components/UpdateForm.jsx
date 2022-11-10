@@ -163,7 +163,7 @@ export default function UpdateForm({
   const handleUpdateForm = async () => {
     console.log(Event, Project, Paper, eventName);
     let Amountpaid = 0;
-    let totalAmount = 0
+    let totalAmount = 0;
     // setload(true);
     console.log({ cashPaidForPaper, cashPaidForProject, cashPaid });
     console.log({
@@ -189,16 +189,14 @@ export default function UpdateForm({
       Amountpaid += 150;
     }
     //check for total amount
-    if(Event){
-      totalAmount+=150
+    if (Event) {
+      totalAmount += 150;
     }
-    if(Project){
-      totalAmount+=250
-
+    if (Project) {
+      totalAmount += 250;
     }
-    if(Paper){
-      totalAmount+=200
-      
+    if (Paper) {
+      totalAmount += 200;
     }
 
     console.log(Amountpaid);
