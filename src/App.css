@@ -37,6 +37,14 @@ html {
   html {
     scroll-padding-top: 90px;
   }
+  .img {
+    margin-top: -70vh;
+  }
+}
+@media screen and (min-width: 600px) {
+  .img {
+    margin-top: -60vh;
+  }
 }
 
 body {
@@ -74,14 +82,15 @@ body {
   background-repeat: no-repeat;
   background-size: contain;
   position: absolute;
-  margin-top: -60vh;
+  /* margin-top: -60vh; */
   min-width: 100%;
   will-change: transform;
   min-height: 100vh;
 }
 
-@media screen and(max-width:600px) {
-}
+/* @media screen and(max-width:600px) {
+ 
+} */
 
 section {
   height: 200vh;

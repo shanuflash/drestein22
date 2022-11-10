@@ -79,7 +79,7 @@ function DepartMentCard({ img, title, des, color, bgtext, mbtm, id }) {
       x: 0,
       opacity: 1,
       transition: {
-        duration: 1,
+        duration: 0.7,
       },
     },
   };
