@@ -128,38 +128,37 @@ function About() {
             excellence; widen intellectual horizon; self-discipline and high
             ideals for the total personality development of the individual.
           </Descard>
-          
-            {/* <List as={motion.li} variants={text}>
+
+          {/* <List as={motion.li} variants={text}>
               Saveetha Engineering College (SEC) was established in 2001, by the
               Founder Chairman Dr. N. M. Veeraiyan, a committed and dedicated
               Medical Professional.
             </List> */}
-            <Descard as={motion.li} variants={text}>
-              Ranked 96 by NIRF- National Institute Ranking Framework for the
-              academic year 2017-18 among all IITs, Central, State and Private
-              Institutions in India.{" "}
-            </Descard>
-            <Descard as={motion.li} variants={text}>
-              Awarded 'A' GRADE with a high score of 3.19 on a scale of 4 by the
-              National Assessment and Accreditation Council (NAAC) for 5 Years.
-            </Descard>
-            <Descard as={motion.li} variants={text}>
-              SEC awarded AUTONOMOUS status by the UGC from the academic year
-              2019-2020.
-            </Descard>
-            <Descard as={motion.li} variants={text}>
-              SEC is recognized as a Scientific and Industrial Research
-              Organization (SIRO) by the Department of Scientific and Industrial
-              Research (DSIR), Government of India.
-            </Descard>
-            <Descard
-              as={motion.li}
-              variants={text}
-              style={{ marginBottom: "5rem" }}
-            >
-              Five Research Centres recognised by Anna University
-            </Descard>
-          
+          <Descard as={motion.li} variants={text}>
+            Ranked 96 by NIRF- National Institute Ranking Framework for the
+            academic year 2017-18 among all IITs, Central, State and Private
+            Institutions in India.{" "}
+          </Descard>
+          <Descard as={motion.li} variants={text}>
+            Awarded 'A' GRADE with a high score of 3.19 on a scale of 4 by the
+            National Assessment and Accreditation Council (NAAC) for 5 Years.
+          </Descard>
+          <Descard as={motion.li} variants={text}>
+            SEC awarded AUTONOMOUS status by the UGC from the academic year
+            2019-2020.
+          </Descard>
+          <Descard as={motion.li} variants={text}>
+            SEC is recognized as a Scientific and Industrial Research
+            Organization (SIRO) by the Department of Scientific and Industrial
+            Research (DSIR), Government of India.
+          </Descard>
+          <Descard
+            as={motion.li}
+            variants={text}
+            style={{ marginBottom: "5rem" }}
+          >
+            Five Research Centres recognised by Anna University
+          </Descard>
         </AboutDescript>
       </AboutContainer>
     </AboutHead>

@@ -16,7 +16,7 @@ const Modal = ({ open, setOpenModal }) => {
   const splitround2 = eventObject?.round2?.split(".");
   const splitround3 = eventObject?.round3?.split(".");
   const splitround4 = eventObject?.round4?.split(".");
-  
+
   const splitround1level2 = eventObject?.round1level2?.split(".");
   const splitround2level2 = eventObject?.round2level2?.split(".");
   const splitworktopicd1 = eventObject?.day1?.topic?.split("\n");

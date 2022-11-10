@@ -6,11 +6,9 @@
 }
 
 body {
-
   -ms-overflow-style: none;
   scrollbar-width: none;
   overflow-y: scroll;
-
 }
 
 body::-webkit-scrollbar {
@@ -82,7 +80,8 @@ body {
   min-height: 100vh;
 }
 
-@media screen and(max-width:600px) {}
+@media screen and(max-width:600px) {
+}
 
 section {
   height: 200vh;

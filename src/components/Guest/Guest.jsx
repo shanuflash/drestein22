@@ -70,7 +70,7 @@ const GuestContainer = styled.div`
 `;
 
 const Test = styled.div`
-padding:4rem;
+  padding: 4rem;
   background: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(11.5px);
   -webkit-backdrop-filter: blur(11.5px);
