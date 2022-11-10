@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styled, { keyframes } from "styled-components";
-import saveethalogo from "../../assets/logo.png";
+import saveethalogo from "../../assets/logo.webp";
 import dresteinLogo from "../../assets/dresteinLogo.svg";
 import Mobilenav from "./Mobilenav";
 import { HiOutlineMenuAlt1 } from "react-icons/hi";
@@ -137,15 +137,6 @@ function Nav() {
     },
   };
   const [openMenu, setOpenMenu] = useState(false);
-  const [colorChange, setColorchange] = useState(false);
-  const changeNavbarColor = () => {
-    if (window.scrollY > 30) {
-      setColorchange(true);
-    } else {
-      setColorchange(false);
-    }
-  };
-  window.addEventListener("scroll", changeNavbarColor);
 
   return (
     <Navbar className="navbar" style={navstyle}>
@@ -160,7 +151,7 @@ function Nav() {
         <Link style={{ textDecoration: "inherit" }} to="/Events#">
           <NavItem>Events</NavItem>
         </Link>
-        <Link style={{ textDecoration: "inherit" }} to="/form">
+        <Link style={{ textDecoration: "inherit" }} to="/form#">
           <NavItem>Register</NavItem>
         </Link>
       </NavHead>

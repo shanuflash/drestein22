@@ -72,34 +72,34 @@ const Gallery = () => {
         }}
       >
         <SwiperSlide className=".swiper-slide">
-          <img src="/GalleryAssets/1.webp" />
+          <img alt="gallery_img" src="/GalleryAssets/1.webp" />
         </SwiperSlide>
         <SwiperSlide className=".swiper-slide">
-          <img src="/GalleryAssets/2.webp" />
+          <img alt="gallery_img" src="/GalleryAssets/2.webp" />
         </SwiperSlide>
         <SwiperSlide className=".swiper-slide">
-          <img src="/GalleryAssets/3.webp" />
+          <img alt="gallery_img" src="/GalleryAssets/3.webp" />
         </SwiperSlide>
         <SwiperSlide className=".swiper-slide">
-          <img src="/GalleryAssets/4.webp" />
+          <img alt="gallery_img" src="/GalleryAssets/4.webp" />
         </SwiperSlide>
         <SwiperSlide className=".swiper-slide">
-          <img src="/GalleryAssets/5.webp" />
+          <img alt="gallery_img" src="/GalleryAssets/5.webp" />
         </SwiperSlide>
         <SwiperSlide className=".swiper-slide">
-          <img src="/GalleryAssets/6.webp" />
+          <img alt="gallery_img" src="/GalleryAssets/6.webp" />
         </SwiperSlide>
         <SwiperSlide className=".swiper-slide">
-          <img src="/GalleryAssets/7.webp" />
+          <img alt="gallery_img" src="/GalleryAssets/7.webp" />
         </SwiperSlide>
         <SwiperSlide className=".swiper-slide">
-          <img src="/GalleryAssets/8.webp" />
+          <img alt="gallery_img" src="/GalleryAssets/8.webp" />
         </SwiperSlide>
         <SwiperSlide className=".swiper-slide">
-          <img src="/GalleryAssets/9.webp" />
+          <img alt="gallery_img" src="/GalleryAssets/9.webp" />
         </SwiperSlide>
         <SwiperSlide className=".swiper-slide">
-          <img src="/GalleryAssets/10.webp" />
+          <img alt="gallery_img" src="/GalleryAssets/10.webp" />
         </SwiperSlide>
       </Swiper>
     </GallerHeader>
