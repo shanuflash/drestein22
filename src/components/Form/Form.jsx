@@ -246,7 +246,7 @@ const Form = () => {
                     </b> Don't worry if you missed an event; you can register for other events offline after coming to Saveetha Engineering College. The registration fee has to be paid at the registration counter on the day of the event by scanning your QR code sent in this email. We expect your presence on this auspicious day.
                     </p>  
                     <p>
-                    Accommodation will be provided for participating students from other colleges, for pricing and details contact 9876543210.</p>
+                    Accommodation will be provided for participating students from other colleges.</p>
                     <p>
                       Total amount to be paid: <b>₹${
                         formdata.CashToBePaid
