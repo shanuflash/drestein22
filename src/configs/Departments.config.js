@@ -2,7 +2,7 @@ export const departobj = [
   {
     id: "#it",
     title: `Information Technology`,
-    img: "https://images.unsplash.com/photo-1580894742597-87bc8789db3d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGluZm9ybWF0aW9uJTIwdGVjaG5vbG9neXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60",
+    img: "/DepartmentAssets/it.webp",
     des: "test",
     color: "#37c0ff",
     bgtext: "Tech",
@@ -10,7 +10,7 @@ export const departobj = [
   {
     id: "#mech",
     title: "Mechanical Engineering",
-    img: "https://images.unsplash.com/photo-1537462715879-360eeb61a0ad?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8bWVjaGFuaWNhbCUyMGVuZ2luZWVyaW5nfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60",
+    img: "/DepartmentAssets/mech.webp",
     des: "test",
     color: "#67ff45",
     bgtext: "Mech",
@@ -18,7 +18,7 @@ export const departobj = [
   {
     id: "#civil",
     title: "Civil Engineering ",
-    img: "https://plus.unsplash.com/premium_photo-1661913004501-220bca6b31ad?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+    img: "/DepartmentAssets/civil.webp",
     des: "test",
     color: "#ff3b41",
     bgtext: "Civil",
@@ -26,7 +26,7 @@ export const departobj = [
   {
     id: "#eee",
     title: "Electrical\t& Electronics\tEngineering  ",
-    img: "https://images.unsplash.com/photo-1413882353314-73389f63b6fd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+    img: "/DepartmentAssets/eee.webp",
     des: "test",
     color: "#ff6d41",
     bgtext: "Elect",
@@ -34,8 +34,8 @@ export const departobj = [
   },
   {
     id: "#aids",
-    title: "Artificial\tIntelligence &\tMachine\tLearning",
-    img: "https://images.unsplash.com/photo-1555255707-c07966088b7b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjl8fGFydGlmaWNpYWwlMjBpbnRlbGxpZ2VuY2V8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60",
+    title: "Artificial Intelligence",
+    img: "/DepartmentAssets/ai.webp",
     des: "test",
     color: "#ff58c2",
     bgtext: "Artif",
@@ -43,7 +43,7 @@ export const departobj = [
   {
     id: "#chem",
     title: "Chemical Engineering",
-    img: "https://images.unsplash.com/photo-1616458964840-5108e4d3adb3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fGNoZW1pY2FsJTIwZW5naW5lZXJpbmd8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60",
+    img: "/DepartmentAssets/chem.webp",
     des: "test",
     color: "#ff6d41",
     bgtext: "Chem",
@@ -51,7 +51,7 @@ export const departobj = [
   {
     id: "#agri",
     title: "Agricultural Engineering",
-    img: "https://images.unsplash.com/photo-1615811361523-6bd03d7748e7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YWdyaWN1bHR1cmFsfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60",
+    img: "/DepartmentAssets/agri.webp",
     des: "test",
     color: "#37c0ff",
     bgtext: "Agri",
@@ -59,7 +59,7 @@ export const departobj = [
   {
     id: "#cse",
     title: "Computer\tScience &\tEngineering",
-    img: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+    img: "/DepartmentAssets/cse.webp",
     des: "test",
     color: "#67ff45",
     bgtext: "Compu",
@@ -68,7 +68,7 @@ export const departobj = [
   {
     id: "#ece",
     title: "Electronics\t& Communication\tEngineering",
-    img: "https://images.unsplash.com/photo-1562408590-e32931084e23?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+    img: "/DepartmentAssets/ece.webp",
     des: "test",
     color: "#37c0ff",
     bgtext: "Elect",
@@ -77,7 +77,7 @@ export const departobj = [
   {
     id: "#eie",
     title: "Electronics\t& Instrumentation\tEngineering",
-    img: "https://images.unsplash.com/photo-1611426358403-459d85ab2ee2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80",
+    img: "/DepartmentAssets/eie.webp",
     des: "test",
     color: "#ff3b41",
     bgtext: "iInst",
@@ -86,7 +86,7 @@ export const departobj = [
   {
     id: "#bme",
     title: "Bio\tMedical Engineering",
-    img: "https://images.unsplash.com/photo-1578496479531-32e296d5c6e1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
+    img: "/DepartmentAssets/bme.webp",
     des: "test",
     color: "#ff58c2",
     bgtext: "BioMed",
@@ -94,7 +94,7 @@ export const departobj = [
   {
     id: "#med",
     title: "Medical Electronics",
-    img: "https://images.unsplash.com/photo-1579684288402-e3e337bcc7af?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
+    img: "/DepartmentAssets/med.webp",
     des: "test",
     color: "#ff6d41",
     bgtext: "Medi",
@@ -102,7 +102,7 @@ export const departobj = [
   {
     id: "#mba",
     title: "Master\tof\tBusiness Administration",
-    img: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+    img: "/DepartmentAssets/mba.webp",
     des: "test",
     color: "#67ff45",
     bgtext: "Busin",
@@ -113,7 +113,7 @@ export const comobj = [
   {
     id: "#paper",
     title: "Paper Presentation",
-    img: "https://media.istockphoto.com/id/1226991657/photo/business-forum-economics-conference-stage-professional-speaker-concludes-his-report-with-a.jpg?s=612x612&w=0&k=20&c=4m_stQ0N1_FlHiMiEXW6NbbLhEPTSbAnFHfBfzG_ipY=",
+    img: "/DepartmentAssets/paper.webp",
     des: "test",
     color: "#37c0ff",
     bgtext: "Paper",
@@ -122,7 +122,7 @@ export const comobj = [
   {
     id: "#project",
     title: "Project Display",
-    img: "https://culture.ec.europa.eu/sites/default/files/styles/eac_ratio_16_9_large/public/2022-03/ce_priority2_CreativeLenses.png?h=9ce74dc1&itok=jjs2DArg",
+    img: "/DepartmentAssets/proj.webp",
     des: "test",
     color: "#ff3b41",
     bgtext: "Proj",

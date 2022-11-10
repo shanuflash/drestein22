@@ -113,7 +113,7 @@ function Guest() {
     {
       name: "Ganesh Thirunavukkarasu M ",
       desc: "",
-      src: "/guest.jpg",
+      src: "/guest.webp",
     },
   ];
 
@@ -186,7 +186,11 @@ function Guest() {
                   marginTop: "1rem",
                 }}
               >
-                <img src="tcs.jpg" style={{ borderRadius: "1rem" }} />
+                <img
+                  src="tcs.webp"
+                  style={{ borderRadius: "1rem" }}
+                  alt="tcs_logo"
+                />
 
                 <div style={{ textAlign: "left" }}>
                   Regional Head - Academic Interface Programme

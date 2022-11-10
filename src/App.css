@@ -69,7 +69,7 @@ body {
 }
 
 .img {
-  background-image: url("../src/assets/earth.png");
+  background-image: url("../src/assets/earth.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;

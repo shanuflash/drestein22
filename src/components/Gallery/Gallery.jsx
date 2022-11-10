@@ -72,37 +72,34 @@ const Gallery = () => {
         }}
       >
         <SwiperSlide className=".swiper-slide">
-          <img src="/GalleryAssets/1.JPG" />
+          <img src="/GalleryAssets/1.webp" />
         </SwiperSlide>
         <SwiperSlide className=".swiper-slide">
-          <img src="/GalleryAssets/2.JPG" />
+          <img src="/GalleryAssets/2.webp" />
         </SwiperSlide>
         <SwiperSlide className=".swiper-slide">
-          <img src="/GalleryAssets/3.JPeG" />
+          <img src="/GalleryAssets/3.webp" />
         </SwiperSlide>
         <SwiperSlide className=".swiper-slide">
-          <img src="/GalleryAssets/4.JPG" />
+          <img src="/GalleryAssets/4.webp" />
         </SwiperSlide>
         <SwiperSlide className=".swiper-slide">
-          <img src="/GalleryAssets/5.JPG" />
+          <img src="/GalleryAssets/5.webp" />
         </SwiperSlide>
         <SwiperSlide className=".swiper-slide">
-          <img src="/GalleryAssets/6.JPG" />
+          <img src="/GalleryAssets/6.webp" />
         </SwiperSlide>
         <SwiperSlide className=".swiper-slide">
-          <img src="/GalleryAssets/7.JPeG" />
+          <img src="/GalleryAssets/7.webp" />
         </SwiperSlide>
         <SwiperSlide className=".swiper-slide">
-          <img src="/GalleryAssets/8.JPeG" />
+          <img src="/GalleryAssets/8.webp" />
         </SwiperSlide>
         <SwiperSlide className=".swiper-slide">
-          <img src="/GalleryAssets/9.JPeG" />
+          <img src="/GalleryAssets/9.webp" />
         </SwiperSlide>
         <SwiperSlide className=".swiper-slide">
-          <img src="/GalleryAssets/10.JPeG" />
-        </SwiperSlide>
-        <SwiperSlide className=".swiper-slide">
-          <img src="/GalleryAssets/11.JPeG" />
+          <img src="/GalleryAssets/10.webp" />
         </SwiperSlide>
       </Swiper>
     </GallerHeader>

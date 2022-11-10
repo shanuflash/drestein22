@@ -62,7 +62,7 @@ export const EventDetails = [
         ],
       },
       {
-        name: "Game of Codes",
+        name: "Game Of Codes",
         date: "18 Nov 2022(AN)",
         type: "Team",
         venue: "TBA",
@@ -238,7 +238,7 @@ export const EventDetails = [
 
     workshopslist: [
       {
-        name: "CYBERSECURITY AND ETHICAL HACKING  ",
+        name: "Cybersecurity And Ethical Hacking  ",
         logo: "EventsAssets/itw1.webp",
         tag: "WORKSHOP",
         color: "0, 70, 90",
@@ -322,7 +322,7 @@ export const EventDetails = [
         },
       },
       {
-        name: "REACT JS  ",
+        name: "React JS  ",
         logo: "EventsAssets/itw2.webp",
         tag: "WORKSHOP",
         color: "0, 70, 90",
@@ -405,7 +405,7 @@ export const EventDetails = [
         },
       },
       {
-        name: "AWS – CLOUD PRACTITIONER",
+        name: "AWS – Cloud Practitioner",
         logo: "EventsAssets/itw3.webp",
         tag: "WORKSHOP",
         color: "0, 70, 90",
@@ -655,7 +655,7 @@ export const EventDetails = [
         ],
       }, //verified 8/11
       {
-        name: "Dare to Compete",
+        name: "Dare To Compete",
         desc: "Ideathon",
         date: "19 Nov 2022(FN)",
         type: "Team",
@@ -717,7 +717,7 @@ export const EventDetails = [
     ],
     workshopslist: [
       {
-        name: "LAPTOP SERVICING",
+        name: "Laptop Servicing",
         logo: "/EventsAssets/csew1.webp",
         tag: "WORKSHOP",
         color: "0, 70, 90",
@@ -766,7 +766,7 @@ export const EventDetails = [
         },
       },
       {
-        name: "3D DIGITAL GAME ART & DESIGN",
+        name: "3D Digital Game Art & Design",
         logo: "/EventsAssets/csew2.webp",
         tag: "WORKSHOP",
         color: "0, 70, 90",
@@ -828,7 +828,7 @@ export const EventDetails = [
     title: "Agricultural Engineering",
     eventslist: [
       {
-        name: "SHERLOCK HOLMES",
+        name: "Sherlock Holmes",
         date: "19 Nov 2022(FN)",
         type: "Team",
         venue: "TBA",
@@ -876,7 +876,7 @@ export const EventDetails = [
         ],
       },
       {
-        name: "DEVILS ADVOCATE",
+        name: "Devils Advocate",
         date: "19 Nov 2022(AN)",
         type: "2",
         venue: "TBA",
@@ -916,7 +916,7 @@ export const EventDetails = [
       },
 
       {
-        name: "TREASURE HUNT",
+        name: "Treasure Hunt",
         date: "18 Nov 2022(FN)",
         type: "Team",
         venue: "TBA",
@@ -953,7 +953,7 @@ export const EventDetails = [
       },
 
       {
-        name: "NEURO COMBAT",
+        name: "Neuro Combat",
         tagline: "Let the mind battle",
         date: "18 Nov 2022(AN)",
         type: "Team",
@@ -1057,7 +1057,7 @@ export const EventDetails = [
         },
       },
       {
-        name: "Chemical free Solution",
+        name: "Chemical Free Solution",
         logo: "/EventsAssets/agriw2.webp",
         tag: "WORKSHOP",
         color: "0, 70, 90",
@@ -1276,7 +1276,7 @@ export const EventDetails = [
         ],
       },
       {
-        name: " WEB CON",
+        name: "Web Con",
         date: "19 Nov 2022(FN)",
         type: "Team",
         venue: "TBA",
@@ -1389,7 +1389,7 @@ export const EventDetails = [
     title: "Biomedical Engineering",
     eventslist: [
       {
-        name: "Med factory",
+        name: "Med Factory",
         desc: "An action oriented event of entertainment and first hand interaction providing a turn the table opportunity for medical equipment handling and testing. It’s your turn to be the doctor",
         tagline:
           "To get familiarize with the functioning and usage of medical equipment",
@@ -1524,7 +1524,7 @@ export const EventDetails = [
       },
 
       {
-        name: "Kampf geist (battle minds)",
+        name: "Kampf Geist",
         tagline: "(battle minds)",
         desc: "To understand how our brain coordinate thoughts, movement and sensation",
         date: "19 Nov 2022(FN)",
@@ -1649,7 +1649,7 @@ export const EventDetails = [
     ],
     workshopslist: [
       {
-        name: "3D modelling in CT & MRI scans on Navigation based surgery",
+        name: "3D Modelling In CT & MRI scans on Navigation based surgery",
         logo: "EventsAssets/bmew1.webp",
         tag: "WORKSHOP",
         color: "0, 70, 90",
@@ -1706,7 +1706,7 @@ export const EventDetails = [
         },
       },
       {
-        name: "Workshop Title – Rehabilitation & LabVIEW for Healthcare Applications",
+        name: "Rehabilitation & LabVIEW for Healthcare Applications",
         logo: "/EventsAssets/bmew2.webp",
 
         tag: "WORKSHOP",
@@ -1820,7 +1820,7 @@ export const EventDetails = [
       },
 
       {
-        name: "MAP THE GAP",
+        name: "Map The Gap",
         date: "18 Nov 2022(AN)",
         type: "Team",
         venue: "TBA",
@@ -1914,7 +1914,7 @@ export const EventDetails = [
         ],
       },
       {
-        name: "Code cracking",
+        name: "Code Cracking",
         tagline: "The idea behind this event is to figure out the (MYSTERY)",
         date: "19 Nov 2022(AN)",
         type: "Team",
@@ -1973,7 +1973,7 @@ export const EventDetails = [
     ],
     workshopslist: [
       {
-        name: "Recent technological advancements in building designs using revit",
+        name: "Recent Technological Advancements In Building Designs Using Revit",
         logo: "/EventsAssets/civilw1.webp",
         tag: "WORKSHOP",
         color: "0, 70, 90",
@@ -2011,7 +2011,7 @@ export const EventDetails = [
       },
       {
         name: "4D Building Information Modelling for Project Management",
-        logo: "/EventsAssets/civilw2.webp",
+        logo: "/EventsAssets/civilw1.webp",
         tag: "WORKSHOP",
         color: "0, 70, 90",
         company: " Infinity PMC Solutions, Chennai",
@@ -2061,7 +2061,7 @@ export const EventDetails = [
       },
       {
         name: "5D BIM for Construction Industry",
-        logo: "/EventsAssets/civilw3.webp",
+        logo: "/EventsAssets/civilw1.webp",
         tag: "WORKSHOP",
         color: "0, 70, 90",
         company: " Infinity PMC Solutions, Chennai",
@@ -2116,7 +2116,7 @@ export const EventDetails = [
     title: "Chemical Engineering",
     eventslist: [
       {
-        name: "PROCESS SNIPPET",
+        name: "Process Snippet",
         date: "18 Nov 2022(FN)",
         type: "Team",
         venue: "TBA",
@@ -2158,7 +2158,7 @@ export const EventDetails = [
       },
 
       {
-        name: "CHEM FLUIDS",
+        name: "Chem Fluids",
         date: "18 Nov 2022(AN)",
         type: "Team",
         venue: "TBA",
@@ -2198,7 +2198,7 @@ export const EventDetails = [
         ],
       },
       {
-        name: "CLASH XCAPE",
+        name: "Clash Xcape",
         date: "19 Nov 2022(FN)",
         type: "Team",
         venue: "TBA",
@@ -2251,7 +2251,7 @@ export const EventDetails = [
         ],
       },
       {
-        name: "CHEM BRIDGE",
+        name: "Chem Bridge",
         tagline: "The idea behind this event is to figure out the (MYSTERY)",
         date: "19 Nov 2022(AN)",
         type: "Team",
@@ -2298,7 +2298,7 @@ export const EventDetails = [
     ],
     workshopslist: [
       {
-        name: "EXCEL for Chemical Engineers : Basics to Advanced",
+        name: "EXCEL for Chemical Engineers: Basics to Advanced",
         logo: "/EventsAssets/chemw1.webp",
 
         tag: "WORKSHOP",
@@ -2410,7 +2410,7 @@ export const EventDetails = [
     title: "Electronics and Instrumentation Engineering",
     eventslist: [
       {
-        name: "FIRE TECH",
+        name: "Fire Tech",
         date: "18 Nov 2022(FN)",
         type: "solo",
         venue: "TBA",
@@ -2449,7 +2449,7 @@ export const EventDetails = [
       },
 
       {
-        name: "INSTANTRIX",
+        name: "Instantrix",
         date: "18 Nov 2022(AN)",
         type: "Team",
         venue: "TBA",
@@ -2489,7 +2489,7 @@ export const EventDetails = [
         ],
       },
       {
-        name: "Tech puzzle",
+        name: "Tech Puzzle",
         date: "19 Nov 2022(FN)",
         type: "Team",
         venue: "TBA",
@@ -2529,7 +2529,7 @@ export const EventDetails = [
         ],
       },
       {
-        name: "Debugging theorem ",
+        name: "Debugging Theorem ",
         date: "19 Nov 2022(AN)",
         type: "Team",
         venue: "TBA",
@@ -2572,7 +2572,7 @@ export const EventDetails = [
     ],
     workshopslist: [
       {
-        name: "Website development for instrumentation engineering",
+        name: "Website Development For Instrumentation Engineering",
         logo: "/EventsAssets/eiew1.webp",
         tag: "WORKSHOP",
         color: "0, 70, 90",
@@ -2619,7 +2619,7 @@ export const EventDetails = [
     title: "Mechanical Engineering",
     eventslist: [
       {
-        name: " Dezania",
+        name: "Dezania",
         tagline: "MCQ",
         date: "18 Nov 2022(AN)",
         type: "Team",
@@ -2825,7 +2825,7 @@ export const EventDetails = [
     ],
     workshopslist: [
       {
-        name: "Augmented Reality for 4.0 (Online)",
+        name: "Augmented Reality For 4.0 (Online)",
         logo: "/EventsAssets/mechw2.webp",
         tag: "WORKSHOP",
         color: "0, 70, 90",
@@ -2879,7 +2879,7 @@ export const EventDetails = [
         },
       },
       {
-        name: "Robotics Simulation (Online)",
+        name: "Robotics Simulation",
         logo: "/EventsAssets/mechw2.webp",
         tag: "WORKSHOP",
         color: "0, 70, 90",
@@ -2933,7 +2933,7 @@ export const EventDetails = [
         },
       },
       {
-        name: "Hands on training in Fusion 360(offline)",
+        name: "Hands On Training In Fusion 360(Offline)",
         logo: "/EventsAssets/mechw1.webp",
         tag: "WORKSHOP",
         color: "0, 70, 90",
@@ -3123,7 +3123,7 @@ export const EventDetails = [
         ],
       },
       {
-        name: "FUTURE MANAGER",
+        name: "Future Manager",
         date: "19 Nov 2022(FN)",
         type: "Team",
         venue: "TBA",
@@ -3221,7 +3221,7 @@ export const EventDetails = [
     ],
     workshopslist: [
       {
-        name: "Goal setting and creative thinking",
+        name: "Goal Setting And Creative Thinking",
         logo: "/EventsAssets/mbaw1.webp",
         tag: "WORKSHOP",
         color: "0, 70, 90",
@@ -3258,7 +3258,7 @@ export const EventDetails = [
         },
       },
       {
-        name: "Design-Data-Digital-3D Model",
+        name: "Design Data Digital 3D Model",
         logo: "/EventsAssets/mbaw2.webp",
         tag: "WORKSHOP",
         color: "0, 70, 90",
@@ -3354,7 +3354,7 @@ export const EventDetails = [
       },
 
       {
-        name: " CIRCUITO",
+        name: " Circuito",
         date: "18 Nov 2022(AN)",
         type: "3",
         venue: "TBA",
@@ -3409,7 +3409,7 @@ export const EventDetails = [
         ],
       },
       {
-        name: "CONNECTIONS",
+        name: "Connections",
         date: "19 Nov 2022(FN)",
         type: "4",
         venue: "4th floor Admin LH 1",
@@ -3460,7 +3460,7 @@ export const EventDetails = [
         ],
       },
       {
-        name: "BLIND TEASER",
+        name: "Blind Teaser",
         date: "19 Nov 2022(FN)",
         type: "4",
         venue: "DT lab",
@@ -3513,7 +3513,7 @@ export const EventDetails = [
     ],
     workshopslist: [
       {
-        name: "IOT ~ MEDICO",
+        name: "Iot ~ Medico",
         logo: "/EventsAssets/mew1.webp",
         tag: "WORKSHOP",
         color: "0, 70, 90",
@@ -3666,7 +3666,7 @@ export const EventDetails = [
       },
 
       {
-        name: "CRYOSAT",
+        name: "Cryosat",
         date: "18 Nov 2022(AN)",
         type: "Team",
         venue: "TBA",
@@ -3827,7 +3827,7 @@ export const EventDetails = [
     title: "Electrical and Electronics Engineering",
     eventslist: [
       {
-        name: "ROBO SOCCER CHALLENGE",
+        name: "Robo Soccer Challenge",
         date: "11 Nov 2022(FN)",
         type: "Team",
         venue: "TBA",
@@ -3882,7 +3882,7 @@ export const EventDetails = [
         ],
       },
       {
-        name: "Techisetz 2k22",
+        name: "Techisetz",
         date: "18 Nov 2022(AN)",
         type: "Team",
         venue: "TBA",
@@ -3943,7 +3943,7 @@ export const EventDetails = [
         ],
       },
       {
-        name: "BRAIN SCAPE",
+        name: "Brain Scape",
         date: "18 Nov 2022(AN)",
         type: "Team",
         venue: "TBA",
@@ -3998,7 +3998,7 @@ export const EventDetails = [
         ],
       },
       {
-        name: "RAIKIRI",
+        name: "Raikiri",
         date: "19 Nov 2022(FN)",
         type: "Team",
         venue: "TBA",
@@ -4129,7 +4129,7 @@ export const EventDetails = [
         },
       },
       {
-        name: "Basics of Machine Learning using python",
+        name: "Basics of Machine Learning Using Python",
         logo: "/EventsAssets/eeew2.webp",
         tag: "WORKSHOP",
         color: "0, 70, 90",
@@ -4191,7 +4191,7 @@ export const EventDetails = [
         },
       },
       {
-        name: "EV Battery Assembling using Lithium iron phosphate cells ",
+        name: "EV Battery Assembling Using Lithium Iron Phosphate Cells ",
         logo: "/EventsAssets/eeew3.webp",
         tag: "WORKSHOP",
         color: "0, 70, 90",
