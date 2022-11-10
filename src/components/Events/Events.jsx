@@ -1,9 +1,15 @@
 import Nav from "../Nav/Nav";
 import "./styles/events.scss";
+import React, { useRef, useCallback, useEffect, useState } from "react";
+
 import { EventDetails } from "../../configs/EventDetails";
 import EventCard from "./EventCard";
 
-import React, { useState, useEffect } from "react";
+import Particles from "react-tsparticles";
+import { loadFull } from "tsparticles";
+// import { motion, useScroll, useTransform } from "framer-motion";
+import { Particle } from "../../configs/partical.config";
+// import React, { useState, useEffect } from "react"
 import Modal from "./Modal.jsx";
 
 const Events = () => {
@@ -14,9 +20,23 @@ const Events = () => {
       ? (document.body.style.overflow = "hidden")
       : (document.body.style.overflow = "unset");
   }, [openModal]);
+  const particlesInit = useCallback(async (engine) => {
+    await loadFull(engine);
+  }, []);
+  const particlesLoaded = useCallback(async (container) => {}, []);
+  useEffect(() => {
+    document.body.style.overflow = "unset";
+  }, []);
 
   return (
     <>
+      <Particles
+        className="particles"
+        id="tsparticles"
+        init={particlesInit}
+        loaded={particlesLoaded}
+        options={Particle}
+      />
       <Modal open={openModal} setOpenModal={setOpenModal} />
       <div className="event-page" id="#">
         <Nav />

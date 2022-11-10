@@ -34,11 +34,7 @@ const Main = () => {
     document.body.style.overflow = "unset";
   }, []);
   return (
-
-
-
     <div ref={scroll} id="#">
-
       <motion.div
         className="scrollprogress"
         style={{ scaleX: scrollYProgress }}
@@ -56,47 +52,47 @@ const Main = () => {
         className="img"
         style={{ y: DeviceSize < 800 ? MValue : DValue, zIndex: -1 }}
       ></motion.div>
-
+      <div id="Count" style={{ width: "100%" }}>
+        <Counter />
+      </div>
       <DepartmentDiv id="Departments">
         <Departments />
       </DepartmentDiv>
-      <div  style={{
-          display:'flex',
-          flexDirection:'column',
-          justifyContent:'center',
-          alignItems:'center',
-
-
-      }}>
-   <div className="GalleryHeadTxt" style={{
-
-
-
-   }}>Banner</div>
-      <img width='80%' style={{
-                  borderRadius:'20px',
-                  margin:'2rem  0'
-      }} height='100%' src="EventsAssets/banner.webp"/>
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
+        <div className="GalleryHeadTxt" style={{}}>
+          Banner
+        </div>
+        <img
+          width="80%"
+          style={{
+            borderRadius: "20px",
+            margin: "2rem  0",
+          }}
+          height="100%"
+          src="EventsAssets/banner.webp"
+        />
       </div>
       <div id="Gallery">
         <Gallery />
       </div>
-    
-
       <div id="SECLife">
         <About />
       </div>
       <div id="Guest">
         <Guest />
       </div>
-      <div id="Count" style={{ width: "100%" }}>
-        <Counter />
-      </div>
+
       <div id="About">
         <Footer />
       </div>
     </div>
-
   );
 };
 
