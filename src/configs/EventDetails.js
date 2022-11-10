@@ -181,10 +181,10 @@ export const EventDetails = [
         name: "Codeverse",
         tagline: "The idea behind this event is to figure out the (MYSTERY)",
         date: "19 Nov 2022(AN)",
-        type: "Team",
-        venue: "TBA",
+        type: "Solo",
+        venue: "Blockchain LAB",
         time: "TBA",
-        members: "1-3",
+        // members: "1-3",
         rules: "",
         round1title: "CrunchBox",
         round1:
@@ -218,25 +218,24 @@ export const EventDetails = [
             name: "Harish S",
             year: "IV",
             phone: 7708729441,
-            email: "harishskr1@gmail.com",
           },
           {
-            name: "Sugavarathan. L",
-            year: "II",
-            phone: 7010268757,
-            email: "sugavarathan003@gmail.com",
+            name: "Ravikkumar S V",
+            year: "IV",
+            phone: 9445658767,
+            email: "svravi02@gmail.com",
           },
           {
-            name: "Nihil K",
-            year: "II",
-            phone: 9486411631,
-            email: "nihilkrish27@gmail.com",
+            name: "Prathiksha V",
+            year: "III",
+            phone: 8838324873,
+            email: "prathikshavijay08@gmail.com",
           },
           {
-            name: "Chandra Mohan S",
-            year: "II",
-            phone: 7358614048,
-            email: "mohanchandra90510@gmail.com",
+            name: "Vijayalakshmi S",
+            year: "III",
+            phone: 9003141149,
+            email: "ivjlaks29@gmail.com",
           },
         ],
       },
@@ -461,11 +460,10 @@ export const EventDetails = [
             },
           ],
         },
-        
       },
     ],
   },
- {
+  {
     id: "cse",
     title: "Computer Science & Engineering",
     eventslist: [
@@ -728,7 +726,7 @@ export const EventDetails = [
         logo: "/EventsAssets/agriw1.png",
         tag: "WORKSHOP",
         color: "0, 70, 90",
-        company:"Connect Infosystems",
+        company: "Connect Infosystems",
         day1: {
           date: "16/11/2022-FN",
           time: "10am-1pm",
@@ -775,8 +773,7 @@ export const EventDetails = [
     ],
   },
 
-
-{
+  {
     id: "agri",
     title: "Agricultural Engineering",
     eventslist: [
@@ -1018,11 +1015,13 @@ export const EventDetails = [
           time: "12.00-3.00pm",
           mode: "OFFLINE",
           venue: "TBA",
-          topic: "The major advantage of soilless cultivation is the uncoupling plant growth from problems associated with soil, such as soil borne pests and diseases, non-arable soil, soil salinity, poor soil quality.A soilless mix provides a cleaner medium and gives you more control.So, the demonstration program of soil-less culture is done at Saveetha Engineering College.",
+          topic:
+            "The major advantage of soilless cultivation is the uncoupling plant growth from problems associated with soil, such as soil borne pests and diseases, non-arable soil, soil salinity, poor soil quality.A soilless mix provides a cleaner medium and gives you more control.So, the demonstration program of soil-less culture is done at Saveetha Engineering College.",
           resource: [
             {
               name: "Dr.S.Murugesan",
-              desig: "Former Senior Officer NDDB/NWDB Government of India, President, Indian Organic farms Association (IOFA), Director, SANGAMAAS",
+              desig:
+                "Former Senior Officer NDDB/NWDB Government of India, President, Indian Organic farms Association (IOFA), Director, SANGAMAAS",
               phone: 9444781692,
               email: "",
             },
@@ -1723,7 +1722,7 @@ export const EventDetails = [
         tagline: "Bridge Model making",
         date: "18 Nov 2022(FN)",
         type: "Team",
-        venue: "TBA",
+        venue: "Survey LAB, Rectangular block",
         time: "TBA",
         members: "2",
         rules:
@@ -1927,10 +1926,10 @@ export const EventDetails = [
         color: "0, 70, 90",
 
         day1: {
-          date: "07/11/2022-FN",
+          date: "14/11/2022-FN",
           time: "12.00-3.00",
           mode: "OFFLINE",
-          venue: "TBA",
+          venue: "CSE 5F OW LH6",
           resource: [
             {
               name: "Mrs. Pavithra Adikesavan",
@@ -1965,10 +1964,10 @@ export const EventDetails = [
         company: " Infinity PMC Solutions, Chennai",
 
         day1: {
-          date: "08/11/2022-FN",
+          date: "15/11/2022-FN",
           time: "TBA",
           mode: "OFFLINE",
-          venue: "TBA",
+          venue: "EEE 4F LH2",
           resource: [
             {
               name: "SuganyaSekar",
@@ -2015,10 +2014,10 @@ export const EventDetails = [
         company: " Infinity PMC Solutions, Chennai",
 
         day1: {
-          date: "09/11/2022-FN",
+          date: "16/11/2022-FN",
           time: "TBA",
           mode: "OFFLINE",
-          venue: "TBA",
+          venue: "EEE 4F LH2",
           resource: [
             {
               name: "Mr. VivekKennady",
@@ -2561,7 +2560,6 @@ export const EventDetails = [
         },
       },
     ],
-
   },
   {
     id: "mech",
@@ -3176,7 +3174,7 @@ export const EventDetails = [
         color: "0, 70, 90",
         mode: "TBA",
         venue: "TBA",
-       company:' Knowledge Xchange Community',
+        company: " Knowledge Xchange Community",
         day1: {
           date: "14/11/2022 FN",
           time: "TBA",
@@ -3420,7 +3418,7 @@ export const EventDetails = [
           "Maximum of 2 members per team.Pieces of papers with medical instrument will be provided for each team.One in a team will be blind folded and the other can guide his teammate providing instruction to fit the pieces correctly to form a picture.Max time: 120 second.The best three teams will be selected for next round",
         round2:
           "Rule to be followed as same as round .1 Max time : 60 seconds.Two teams will be selected for final round",
-        round3:"Rule to be followed as same as round. 1 Max time : 40 seconds",
+        round3: "Rule to be followed as same as round. 1 Max time : 40 seconds",
         tag: "EVENT",
         color: "0, 1, 38",
         logo: "/EventsAssets/med4.png",
@@ -3470,9 +3468,9 @@ export const EventDetails = [
         day1: {
           date: "15/11/22 to 16/11/22 (FN & AN)",
           time: "TBA",
-          venue:" STLC 5th floor",
-         
-          list:true,
+          venue: " STLC 5th floor",
+
+          list: true,
           topic:
             "1 Patient health monitoring system using raspberry pi – iot\n 2 Smart patient monitoring system using arduino or raspberry pi\n 3 Raspberry-pi based health monitoring system\n 4 Wifi based personal health monitoring system using android smartphone\n 5 Real time wireless health monitoring application using mobile devices",
           resource: [
@@ -3496,7 +3494,6 @@ export const EventDetails = [
               phone: 9786129913,
               email: "gurumoorthyg@saveetha.ac.in",
             },
-      
           ],
           student: [
             {
@@ -3511,15 +3508,14 @@ export const EventDetails = [
               phone: 8610708750,
               email: "Sanjayya.10@gmail.com",
             },
-           
           ],
         },
-        day2:{
+        day2: {
           date: "15/11/22 to 16/11/22 (FN & AN)",
           time: "TBA",
-          venue:" STLC 5th floor",
-         
-          list:true,
+          venue: " STLC 5th floor",
+
+          list: true,
           topic:
             "1️ Intelligent	wireless	emergency	alert	system	for	patient	health monitoring using gsm\n2 Raspberry pi based data sensing and logging system using wireless sensor nodes (wsn) and local area network (lan)\n3 Wireless machine to machine health care solution using android mobile devices in global networks\n4 Build a smart patient monitoring system using raspberry pi\n5 Wireless ecg, body temperature and heart beat signals monitoring and alarm system using zigbee",
           resource: [
@@ -3543,7 +3539,6 @@ export const EventDetails = [
               phone: 9786129913,
               email: "gurumoorthyg@saveetha.ac.in",
             },
-      
           ],
           student: [
             {
@@ -3558,14 +3553,10 @@ export const EventDetails = [
               phone: 8610708750,
               email: "Sanjayya.10@gmail.com",
             },
-           
           ],
-        }
+        },
       },
-      
-    
-    ]
-
+    ],
   },
   {
     id: "ece",
@@ -3778,7 +3769,7 @@ export const EventDetails = [
       },
     ],
   },
-{
+  {
     id: "eee",
     title: "Electrical and Electronics Engineering",
     eventslist: [

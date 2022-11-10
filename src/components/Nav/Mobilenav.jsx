@@ -59,6 +59,13 @@ const Mobilenav = ({ openMenu, setOpenMenu }) => {
           >
             <li>ABOUT</li>
           </Link>
+          <Link
+            style={{ textDecoration: "inherit" }}
+            onClick={() => setOpenMenu(!openMenu)}
+            to="/form"
+          >
+            <li>REGISTER</li>
+          </Link>
         </ul>
       </div>
     </>

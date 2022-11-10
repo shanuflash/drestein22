@@ -15,15 +15,16 @@ const Modal = ({ open, setOpenModal }) => {
   const splitround1 = eventObject?.round1?.split(".");
   const splitround2 = eventObject?.round2?.split(".");
   const splitround3 = eventObject?.round3?.split(".");
-const splitround1level2 = eventObject?.round1level2?.split('.');
-const splitround2level2 = eventObject?.round2level2?.split('.');
-const splitworktopicd1  = eventObject?.day1?.topic?.split('\n');
-const splitworktopicd2  = eventObject?.day2?.topic?.split('\n');
+  const splitround4 = eventObject?.round4?.split(".");
 
-  
-useEffect(()=>{
- console.log('this is',eventObject)
-},[open])
+  const splitround1level2 = eventObject?.round1level2?.split(".");
+  const splitround2level2 = eventObject?.round2level2?.split(".");
+  const splitworktopicd1 = eventObject?.day1?.topic?.split("\n");
+  const splitworktopicd2 = eventObject?.day2?.topic?.split("\n");
+
+  useEffect(() => {
+    console.log("this is", eventObject);
+  }, [open]);
   if (!open) return null;
   return (
     <div className="overlay" onClick={() => setOpenModal((prev) => !prev)}>
@@ -107,25 +108,23 @@ useEffect(()=>{
                   {eventObject.round1title
                     ? ` (${eventObject.round1title})`
                     : ""}
-
                 </h3>
-                {eventObject?.round1level2 && <h4>Level 1 :</h4> } 
+                {eventObject?.round1level2 && <h4>Level 1 :</h4>}
                 <ol>
                   {splitround1.map((each) => {
                     return <li>{each}</li>;
                   })}
                 </ol>
-                {eventObject?.round1level2 && 
-                <>
-                <h4>Level 2 :</h4>
-                <ol>
-                {splitround1level2.map((each) => {
-                  return <li>{each}</li>;
-                })}
-              </ol>
-              </>
-                }
-
+                {eventObject?.round1level2 && (
+                  <>
+                    <h4>Level 2 :</h4>
+                    <ol>
+                      {splitround1level2.map((each) => {
+                        return <li>{each}</li>;
+                      })}
+                    </ol>
+                  </>
+                )}
               </div>
             ) : null}
             {eventObject.round2 ? (
@@ -136,22 +135,22 @@ useEffect(()=>{
                     ? `( ${eventObject.round2title} )`
                     : ""}
                 </h3>
-                {eventObject?.round2level2 && <h4>Level 1 :</h4> } 
+                {eventObject?.round2level2 && <h4>Level 1 :</h4>}
                 <ol>
                   {splitround2.map((each) => {
                     return <li>{each}</li>;
                   })}
                 </ol>
-                {eventObject?.round2level2 && 
-                <>
-                <h4>Level 2 :</h4>
-                <ol>
-                {splitround2level2.map((each) => {
-                  return <li>{each}</li>;
-                })}
-              </ol>
-              </>
-                }
+                {eventObject?.round2level2 && (
+                  <>
+                    <h4>Level 2 :</h4>
+                    <ol>
+                      {splitround2level2.map((each) => {
+                        return <li>{each}</li>;
+                      })}
+                    </ol>
+                  </>
+                )}
               </div>
             ) : null}
             {eventObject.round3 ? (
@@ -178,7 +177,7 @@ useEffect(()=>{
                     : ""}
                 </h3>
                 <ol>
-                  {splitround3.map((each) => {
+                  {splitround4.map((each) => {
                     return <li>{each}</li>;
                   })}
                 </ol>
@@ -207,9 +206,7 @@ useEffect(()=>{
                   })}
                 </ol>
               </div>
-            ) : (
-              "no staff allocated"
-            )}
+            ) : null}
             {eventObject.student ? (
               <div className="student">
                 <h3>Student Co-ordinators:</h3>
@@ -223,9 +220,15 @@ useEffect(()=>{
                   })}
                 </ol>
               </div>
-            ) : (
-              "no student allocated"
-            )}
+            ) : null}
+            <Link style={{ textDecoration: "none" }} to="/form">
+              <div
+                onClick={() => setOpenModal((prev) => !prev)}
+                className="btn"
+              >
+                <RegisterBtn />
+              </div>
+            </Link>
           </>
         ) : (
           <>
@@ -241,31 +244,32 @@ useEffect(()=>{
                   <h4>Company Name : {eventObject.company}</h4>
                 ) : null}
                 <h1 className="title">Day 1:</h1>
-                                <p className="desc">Date: {eventObject.day1.date}</p>
+                <p className="desc">Date: {eventObject.day1.date}</p>
 
-                {eventObject.day1.topic &&
-                <div>
-
-                  {eventObject.day1.list ? 
-                <>
-                {splitworktopicd1.map(data=>{
-                  return <p style={{
-                    margin:'5px 0'
-                  }}>{data}</p>
-                })}
-                </>
-
-              :  <p className="desc">
-
-              <span className="topic">Topic: </span>
-              {eventObject.day1.topic}
-              </p> 
-
-}
-
-                </div>
-                
-                }
+                {eventObject.day1.topic && (
+                  <div>
+                    {eventObject.day1.list ? (
+                      <>
+                        {splitworktopicd1.map((data) => {
+                          return (
+                            <p
+                              style={{
+                                margin: "5px 0",
+                              }}
+                            >
+                              {data}
+                            </p>
+                          );
+                        })}
+                      </>
+                    ) : (
+                      <p className="desc">
+                        <span className="topic">Topic: </span>
+                        {eventObject.day1.topic}
+                      </p>
+                    )}
+                  </div>
+                )}
 
                 <div className="grid">
                   <div className="item">
@@ -315,9 +319,7 @@ useEffect(()=>{
                   })}
                 </ol>
               </div>
-            ) : (
-              "no resource allocated"
-            )}
+            ) : null}
             {eventObject?.day1?.staff ? (
               <div className="faculty">
                 <h3>Faculty Co-ordinators:</h3>
@@ -331,9 +333,7 @@ useEffect(()=>{
                   })}
                 </ol>
               </div>
-            ) : (
-              "no staff allocated"
-            )}
+            ) : null}
             {eventObject?.day1?.student ? (
               <div className="student">
                 <h3>Student Co-ordinators:</h3>
@@ -347,41 +347,40 @@ useEffect(()=>{
                   })}
                 </ol>
               </div>
-            ) : (
-              "no student allocated"
-            )}
-            
+            ) : null}
+
             {eventObject?.day2 ? (
               <>
                 {eventObject.company ? (
                   <h4>Company Name : {eventObject.company}</h4>
                 ) : null}
                 <h1 className="title">Day 2:</h1>
-                                <p className="desc">Date: {eventObject.day2.date}</p>
+                <p className="desc">Date: {eventObject.day2.date}</p>
 
-                {eventObject.day2.topic &&
-                <div>
-
-                  {eventObject.day2.list ? 
-                <>
-                {splitworktopicd2.map(data=>{
-                  return <p style={{
-                    margin:'5px 0'
-                  }}>{data}</p>
-                })}
-                </>
-
-              :  <p className="desc">
-
-              <span className="topic">Topic: </span>
-              {eventObject.day2.topic}
-              </p> 
-
-}
-
-                </div>
-                
-                }
+                {eventObject.day2.topic && (
+                  <div>
+                    {eventObject.day2.list ? (
+                      <>
+                        {splitworktopicd2.map((data) => {
+                          return (
+                            <p
+                              style={{
+                                margin: "5px 0",
+                              }}
+                            >
+                              {data}
+                            </p>
+                          );
+                        })}
+                      </>
+                    ) : (
+                      <p className="desc">
+                        <span className="topic">Topic: </span>
+                        {eventObject.day2.topic}
+                      </p>
+                    )}
+                  </div>
+                )}
 
                 <div className="grid">
                   <div className="item">
@@ -431,9 +430,7 @@ useEffect(()=>{
                   })}
                 </ol>
               </div>
-            ) : (
-              "no resource allocated"
-            )}
+            ) : null}
             {eventObject?.day2?.staff ? (
               <div className="faculty">
                 <h3>Faculty Co-ordinators:</h3>
@@ -447,9 +444,7 @@ useEffect(()=>{
                   })}
                 </ol>
               </div>
-            ) : (
-              "no staff allocated"
-            )}
+            ) : null}
             {eventObject?.day2?.student ? (
               <div className="student">
                 <h3>Student Co-ordinators:</h3>
@@ -463,16 +458,9 @@ useEffect(()=>{
                   })}
                 </ol>
               </div>
-            ) : (
-              "no student allocated"
-            )}
+            ) : null}
           </>
         )}
-        <Link style={{ textDecoration: "none" }} to="/form">
-          <div onClick={() => setOpenModal((prev) => !prev)} className="btn">
-            <RegisterBtn />
-          </div>
-        </Link>
       </div>
     </div>
   );
