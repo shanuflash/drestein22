@@ -5,6 +5,7 @@ import dresteinLogo from "../../assets/dresteinLogo.svg";
 import Avatar from "@mui/joy/Avatar";
 import { Link } from "react-router-dom";
 import Chip from "@mui/joy/Chip";
+import VisibilityIcon from "@mui/icons-material/Visibility";
 import {
   FaFacebook,
   FaTwitter,
@@ -17,12 +18,14 @@ import { UserContext } from "../Admin/contexts/AdminContext";
 import { useEffect } from "react";
 import { useState } from "react";
 const Footer = () => {
-  const {vicitedProple}  = useContext(UserContext)
-  const [views,setViews] = useState(vicitedProple)
 
-  useEffect(()=>{
-    setViews(vicitedProple)
-  },[vicitedProple])
+  const [views, setViews] = useState(localStorage.getItem("value"));
+  
+  useEffect(() => {
+    setViews(parseInt(views))
+    localStorage.removeItem("value");
+  }, []);
+
 
   const LogoHead = styled.div`
     display: flex;
@@ -83,9 +86,20 @@ const Footer = () => {
             13<sup>th</sup> National level inter collegiate technical and
             management fest
           </div>
-          {/* <div>
-             {vicitedProple}
-          </div> */}
+          <p>Site Views</p>
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+
+            }}
+          >
+         <h1>{500+views}</h1>
+            <VisibilityIcon sx={{
+              fontSize:'40px'
+            }} /> 
+          </div>
         </div>
         <div className="block">
           <h4 className="heading">CO-ORDINATORS</h4>

@@ -32,7 +32,7 @@ function App() {
       {loading ? (
         <Lander />
       ) : (
-        <UserProvider>
+
           <div>
             <DisplayPopupProvider>
               <Routes>
@@ -60,7 +60,7 @@ function App() {
               ></ToastContainer>
             </DisplayPopupProvider>
           </div>
-        </UserProvider>
+
       )}
     </>
   );
