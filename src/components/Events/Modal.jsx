@@ -456,7 +456,7 @@ const Modal = ({ open, setOpenModal }) => {
 
             {eventObject?.day3 ? (
               <>
-                <h1 className="title">Day 2:</h1>
+                <h1 className="title">Day 3:</h1>
                 {eventObject.company ? (
                   <h4>Company Name : {eventObject.company}</h4>
                 ) : null}
@@ -563,14 +563,14 @@ const Modal = ({ open, setOpenModal }) => {
               </div>
             ) : null}
             <a
-                onClick={() => setOpenModal((prev) => !prev)}
-                href={eventObject.link}
-                className="btn"
-                target="_blank"
-                style={{textDecoration: "none"}}
-              >
-                <RegisterBtn />
-              </a>
+              onClick={() => setOpenModal((prev) => !prev)}
+              href={eventObject.link}
+              className="btn"
+              target="_blank"
+              style={{ textDecoration: "none" }}
+            >
+              <RegisterBtn />
+            </a>
           </>
         )}
       </div>
