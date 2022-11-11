@@ -461,6 +461,8 @@ const Modal = ({ open, setOpenModal }) => {
                 onClick={() => setOpenModal((prev) => !prev)}
                 href={eventObject.link}
                 className="btn"
+                target="_blank"
+                style={{textDecoration: "none"}}
               >
                 <RegisterBtn />
               </a>
