@@ -3914,6 +3914,7 @@ export const EventDetails = [
         venue: "TBA",
         time: "TBA",
         members: "2",
+        logo:"/EventsAssets/ece1.webp",
         rules: "",
         round1title: "MindSweeper-The Tech Quiz",
         round1:
@@ -3926,7 +3927,6 @@ export const EventDetails = [
           "At the time of events a circuit name will be informed to for each team, Circuits ideas and  components will be provided . The team that shows the spectrum analysis (output)  first will be considered as the winner. (On a first-come, first-served basis.)  Total time for this event is 15 minutes. On the basis of time management and relevant explanation, participants will be selected. The winners will be declared on the basis of the shortest time period of completion of the task.Note:. No mobile phones are allowed during the participation of the event.   No discussion or sharing of answers among the participants .   If any malpractices are noticed, then the term will be disqualified from all the events",
         tag: "EVENT",
         color: "0, 1, 38",
-        logo: "/EventsAssets/ece1.webp",
         staff: [
           {
             name: "Ms. G Keerthiga",

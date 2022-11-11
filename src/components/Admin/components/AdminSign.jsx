@@ -41,6 +41,7 @@ const theme = createTheme();
 
 export default function SignIn() {
   const auth = getAuth();
+
   const { loggedIn, setLoggedIn } = useContext(UserContext);
   const navigate = useNavigate();
   if (auth.currentUser) {
@@ -59,7 +60,7 @@ export default function SignIn() {
       );
       if (userCredential.user) {
         //  setuser(userCredential.user)
-
+  
         setLoggedIn(userCredential.user);
         navigate("/Admin");
         toast.success("successfully logged in");

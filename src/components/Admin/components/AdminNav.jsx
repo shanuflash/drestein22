@@ -16,7 +16,8 @@ import { getAuth } from "firebase/auth";
 import { useNavigate } from "react-router";
 import { Link } from "react-router-dom";
 import { uuidv4 } from "@firebase/util";
-const pages = ["scanusers", "users", "unpaid"];
+import logo from '../../../assets/dresteinLogo.svg'
+const pages = ["scanusers", "users",];
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
 const ResponsiveAppBar = () => {
@@ -54,7 +55,13 @@ const ResponsiveAppBar = () => {
     <AppBar position="static">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <AdbIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} />
+
+
+
+          <img  width='5%' style={{
+            padding:'10px'
+          }} src={logo}/>
+
           <Typography
             variant="h6"
             noWrap

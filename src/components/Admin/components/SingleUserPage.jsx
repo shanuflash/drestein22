@@ -11,6 +11,8 @@ import { css } from "@mui/material";
 import { Chip } from "@mui/material";
 import { Stack } from "@mui/system";
 import Loading from "../../../Loading";
+import { useContext } from "react";
+import { UserContext } from "../contexts/AdminContext";
 const SingleUserMain = styled.div`
   height: 100vh;
   width: 100vw;
@@ -32,33 +34,63 @@ const UserCard = styled.div`
 `;
 
 function SingleUserPage() {
+  const { RegUsers ,DataLoad} = useContext(UserContext);
   const params = useParams();
   const userid = params.userid;
   const [Registeredpeople, setRegistredPeople] = useState([]);
-  const [load, setLoad] = useState(false);
+  const [load, setLoad] = useState(true);
   //    http://localhost:3000/user/qlkwnfdklwqfn
-  useEffect(() => {
-    console.log(Registeredpeople);
-    try {
-      setLoad(true);
-      const docRef = doc(db, "RegisteredPeople", `${userid}`);
-      onSnapshot(docRef, (snapshot) => {
-        let books = [];
-        // books.push(snapshot.data())
 
-        books.push(snapshot.data());
-        if (books[0] != undefined) {
-          setRegistredPeople(books);
+  function fetch(){
+    return new Promise((resolve,reject)=>{
+      const user = RegUsers.filter(data=>{
+        if(data.id ===userid){
+          return data
         }
-        setLoad(false);
-      });
-    } catch (e) {
-      toast.error("your not exist");
-      console.log(e);
-    }
-  }, []);
+      })
+  
+      if(user.length===0){
+          reject('User not found ')
+      }else{
+        resolve(user)
+      }
+      setRegistredPeople(user)
+    }).catch(e=>{
+      if(!DataLoad){
+        toast.error(e)
+      }
+    })
+  }
+  useEffect(() => {
+    
+async function innerfetch(){
+  const  response  =  await fetch() 
 
-  if (load) {
+}
+innerfetch()
+
+    // try {
+    //   setLoad(true);
+    //   const docRef = doc(db, "RegisteredPeople", `${userid}`);
+    //   onSnapshot(docRef, (snapshot) => {
+    //     let books = [];
+    //     // books.push(snapshot.data())
+
+    //     books.push(snapshot.data());
+    //     if (books[0] != undefined) {
+    //       setRegistredPeople(books);
+    //     }
+    //     setLoad(false);
+    //   });
+    // } catch (e) {
+    //   toast.error("your not exist");
+    //   console.log(e);
+    // }
+   
+  }, [RegUsers]);
+
+  if (DataLoad) {
+
     return <Loading />;
   }
 
@@ -98,70 +130,67 @@ function SingleUserPage() {
                 <p>gender : {gender}</p>
                 <p>year : {year}</p>
                 <p>regno : {regno}</p>
-                <p>
-                  <div
-                    style={{
-                      height: "100%",
-                    }}
-                  >
-                    {DepartEvent && (
-                      <Stack
-                        padding="10px 0px"
-                        direction="row"
-                        alignItems="center"
-                        spacing={2}
-                      >
-                        <p>Department Event :</p>
-                        <Chip
-                          sx={{
-                            color: cashPaid ? "black" : "white",
-                            background: cashPaid ? "lightgreen" : "red",
-                            width: "100px",
-                          }}
-                          label={cashPaid ? "paid" : "unpaid"}
-                        />
-                      </Stack>
-                    )}
-                    {PaperPresentation && (
-                      <Stack
-                        padding="10px 0px"
-                        direction="row"
-                        alignItems="center"
-                        spacing={2}
-                      >
-                        <p>Paper Presentation : </p>
-                        <Chip
-                          sx={{
-                            color: cashPaidForPaper ? "black" : "white",
-                            background: cashPaidForPaper ? "lightgreen" : "red",
-                            width: "100px",
-                          }}
-                          label={cashPaidForPaper ? "paid" : "unpaid"}
-                        />
-                      </Stack>
-                    )}
-                    {ProjectPresentation && (
-                      <Stack
-                        padding="10px 0px"
-                        direction="row"
-                        alignItems="center"
-                        spacing={2}
-                      >
-                        <p>Project presentation : </p>
-                        <Chip
-                          sx={{
-                            color: cashPaidForProject ? "black" : "white",
-                            background: cashPaidForProject
-                              ? "lightgreen"
-                              : "red",
-                            width: "100px",
-                          }}
-                          label={cashPaidForProject ? "paid" : "unpaid"}
-                        />
-                      </Stack>
-                    )}
-                  </div>
-                </p>
+                <div
+                  style={{
+                    height: "100%",
+                  }}
+                >
+                  {DepartEvent && (
+                    <Stack
+                      padding="10px 0px"
+                      direction="row"
+                      alignItems="center"
+                      spacing={2}
+                    >
+                      <p>Department Event :</p>
+                      <Chip
+                        sx={{
+                          color: cashPaid ? "black" : "white",
+                          background: cashPaid ? "lightgreen" : "red",
+                          width: "100px",
+                        }}
+                        label={cashPaid ? "paid" : "unpaid"}
+                      />
+                    </Stack>
+                  )}
+
+                  {PaperPresentation && (
+                    <Stack
+                      padding="10px 0px"
+                      direction="row"
+                      alignItems="center"
+                      spacing={2}
+                    >
+                      <p>Paper Presentation : </p>
+                      <Chip
+                        sx={{
+                          color: cashPaidForPaper ? "black" : "white",
+                          background: cashPaidForPaper ? "lightgreen" : "red",
+                          width: "100px",
+                        }}
+                        label={cashPaidForPaper ? "paid" : "unpaid"}
+                      />
+                    </Stack>
+                  )}
+                  {ProjectPresentation && (
+                    <Stack
+                      padding="10px 0px"
+                      direction="row"
+                      alignItems="center"
+                      spacing={2}
+                    >
+                      <p>Project presentation : </p>
+                      <Chip
+                        sx={{
+                          color: cashPaidForProject ? "black" : "white",
+                          background: cashPaidForProject ? "lightgreen" : "red",
+                          width: "100px",
+                        }}
+                        label={cashPaidForProject ? "paid" : "unpaid"}
+                      />
+                    </Stack>
+                  )}
+                </div>
               </UserCard>
             );
           })}

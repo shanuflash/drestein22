@@ -12,6 +12,7 @@ import { Switch } from "@mui/material";
 import { Typography } from "@mui/material";
 import styled from "styled-components";
 import UserinfoCard from "../components/UserInfoCard";
+import Loading from "../../../Loading.jsx";
 const PaidUSerMain = styled.div`
   width: 100vw;
   padding: 0 1.5rem;
@@ -55,15 +56,8 @@ function PaidUsers() {
     });
   }, []);
   if (load) {
-    return (
-      <h1
-        style={{
-          color: "black",
-        }}
-      >
-        loading...
-      </h1>
-    );
+    return <Loading/>
+    ;
   }
 
   if (paidUsers.length == 0) {

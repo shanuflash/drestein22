@@ -27,9 +27,11 @@ import { type } from "@testing-library/user-event/dist/type";
 import Loading from "../../../../Loading";
 
 import { GridToolbar } from "@mui/x-data-grid";
-// import { data } from "./data.js";
+
 import { List, ListItemText } from "@mui/material";
 import { CustomFooterTotalComponent } from "./customFooter";
+import { useContext } from "react";
+import { UserContext } from "../../contexts/AdminContext";
 
 import clsx from "clsx";
 
@@ -52,44 +54,6 @@ const StyledBox = styled(Box)(({ theme }) => ({
   },
 }));
 
-const Footer = ({ props }) => {
-  const [message, setMessage] = React.useState("");
-  const apiRef = useGridApiContext();
-  console.log("this pops", props);
-
-  const handleRowClick = (params) => {
-    setMessage(params.row.id);
-  };
-
-  useGridApiEventHandler(apiRef, "rowClick", handleRowClick);
-  const handlePasteclick = (text) => {
-    navigator.clipboard.writeText(text);
-    toast.success("Id copied..");
-  };
-  return (
-    <React.Fragment>
-      <GridFooter />
-      {message && (
-        <Card
-          sx={{
-            padding: "10px",
-            maxWidth: "350px",
-          }}
-        >
-          {message}
-          <ContentCopyIcon
-            onClick={() => handlePasteclick(message)}
-            sx={{
-              marginLeft: "10px",
-              cursor: "pointer",
-            }}
-          />
-        </Card>
-      )}
-      <h1>Total : {props}</h1>
-    </React.Fragment>
-  );
-};
 
 function CustomToolbar() {
   return (
@@ -103,47 +67,20 @@ export default function ConditionalValidationGrid() {
   const [total, setTotal] = React.useState(0);
   const [paidUsers, setPaidusers] = useState([]);
   const [load, setload] = useState(false);
-  //   const { data } = useDemoData({
-  //     dataSet: 'Commodity',
-  //     rowLength: 5,
-  //     maxColumns: 6,
-  //   });
-  // const data = useMovieData();
+  const {RegUsers,DataLoad}  = useContext(UserContext)
+
   useEffect(() => {
-    setload(true);
-    const colref = collection(db, "RegisteredPeople");
-    onSnapshot(
-      colref,
-      (snapshot) => {
-        let users = [];
-        snapshot.docs.forEach((doc) => {
-          users.push({ ...doc.data(), id: doc.id });
-        });
-        //   console.log(users);
-        setPaidusers(users);
-        setload(false);
-        // console.log('this is head ',paidUsers)
-      },
+   setload(true)
+   console.log('dw')
+   setPaidusers(RegUsers)
+   setload(false)
+  },[RegUsers]);
 
-      []
-    );
-    // const q = query(colref, where("cashPaid", "==", true));
+ 
 
-    // onSnapshot(q, (snapshot) => {
-    //   let paid = [];
-    //   console.log(snapshot.docs);
-    //   snapshot.docs.forEach((doc) => {
-    //     paid.push({ ...doc.data(), id: doc.id });
-    //   });
-    //   // console.log(books)
-    //   console.log(paid);
-    //   setPaidusers(paid);
-    //   setload(false);
-    // });
-  }, []);
 
   const users = paidUsers.map((data) => {
-    console.log(data);
+
     return {
       id: data.id,
       id: data.id,
@@ -212,9 +149,9 @@ export default function ConditionalValidationGrid() {
     //  for(const key in  data.EventsRegistered){
     //     console.log(data.EventsRegistered['CSE'][0])
     //  }
-    if (data.cashPaid) {
+
       collectedcash += data.AmountPaid;
-    }
+
     // if(data.cashPaidForPaper){
     //   collectedcash +=data.AmountPaid;
     // }
@@ -431,10 +368,10 @@ export default function ConditionalValidationGrid() {
               visibleItems.push(id);
             }
           }
-          console.log(visibleItems);
+          // console.log(visibleItems);
 
           const res = rows.filter((item) => visibleItems.includes(item.id));
-          console.log("res", res);
+          // console.log("res", res);
           const total = res
             .map((item) => item.cashtobePaid)
             .reduce((a, b) => a + b, 0);
