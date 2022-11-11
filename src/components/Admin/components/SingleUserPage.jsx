@@ -67,7 +67,6 @@ async function innerfetch(){
   const  response  =  await fetch() 
 
 }
-
 innerfetch()
 
     // try {
@@ -91,6 +90,7 @@ innerfetch()
   }, [RegUsers]);
 
   if (DataLoad) {
+
     return <Loading />;
   }
 

@@ -79,7 +79,7 @@ const EventCard = ({
     font-family: "poppins", sans-serif;
     --color: ${color};
     --bg-filter-opacity: 0.75;
-    --bg-img: url("/test.png");
+    --bg-img: url("/EventsAssets/bg.webp");
     background-image: linear-gradient(
         rgba(var(--color), var(--bg-filter-opacity)),
         rgba(0, 0, 0, var(--bg-filter-opacity))
@@ -122,7 +122,7 @@ const EventCard = ({
 
           <h1
             style={{
-              marginVottom: "0.7rem",
+              marginBottom: "0.7rem",
             }}
           >
             {name}

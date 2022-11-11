@@ -6,11 +6,9 @@
 }
 
 body {
-
   -ms-overflow-style: none;
   scrollbar-width: none;
   overflow-y: scroll;
-
 }
 
 body::-webkit-scrollbar {
@@ -38,6 +36,14 @@ html {
 @media screen and (max-width: 600px) {
   html {
     scroll-padding-top: 90px;
+  }
+  .img {
+    margin-top: -70vh;
+  }
+}
+@media screen and (min-width: 600px) {
+  .img {
+    margin-top: -60vh;
   }
 }
 
@@ -71,18 +77,20 @@ body {
 }
 
 .img {
-  background-image: url("../src/assets/earth.png");
+  background-image: url("../src/assets/earth.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
   position: absolute;
-  margin-top: -60vh;
+  /* margin-top: -60vh; */
   min-width: 100%;
   will-change: transform;
   min-height: 100vh;
 }
 
-@media screen and(max-width:600px) {}
+/* @media screen and(max-width:600px) {
+ 
+} */
 
 section {
   height: 200vh;

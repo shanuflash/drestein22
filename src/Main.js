@@ -22,7 +22,7 @@ const DepartmentDiv = styled.div`
 const Main = () => {
   const scroll = useRef(null);
   const { scrollY } = useScroll();
-  const MValue = useTransform(scrollY, [0, 1000], [0, -200]);
+  const MValue = useTransform(scrollY, [0, 800], [0, -200]);
   const DValue = useTransform(scrollY, [0, 1000], [0, -500]);
   const { scrollYProgress } = useScroll();
   const DeviceSize = window.innerWidth;
@@ -34,9 +34,13 @@ const Main = () => {
     document.body.style.overflow = "unset";
   }, []);
   return (
-    <div ref={scroll} id="#" style={{
-      userSelect:'none'
-    }}>
+    <div
+      ref={scroll}
+      id="#"
+      style={{
+        userSelect: "none",
+      }}
+    >
       <motion.div
         className="scrollprogress"
         style={{ scaleX: scrollYProgress }}
@@ -54,9 +58,11 @@ const Main = () => {
         className="img"
         style={{ y: DeviceSize < 800 ? MValue : DValue, zIndex: -1 }}
       ></motion.div>
-      <div id="Count" style={{ width: "100%" }}>
-        <Counter />
-      </div>
+      {DeviceSize > 800 ? (
+        <div id="Count" style={{ width: "100%" }}>
+          <Counter />
+        </div>
+      ) : null}
       <DepartmentDiv id="Departments">
         <Departments />
       </DepartmentDiv>
@@ -78,7 +84,8 @@ const Main = () => {
             margin: "2rem  0",
           }}
           height="100%"
-          src="EventsAssets/banner.webp"
+          src="OtherAssets/poster.webp"
+          alt="banner"
         />
       </div>
       <div id="Gallery">
