@@ -24,7 +24,7 @@ export const EventDetails = [
           "All the problems have same points allotted to them. Participant whose code gets executed will be given higher preference. Second preference will be given to the code with least number of errors. The decision of the organizers in declaring the results will be final. No queries in this regard will be entertained. Any team found to be indulging in any form of malpractice will be immediately disqualified",
         tag: "EVENT",
         color: "0, 1, 38",
-        logo: "/EventsAssets/it1.png",
+        logo: "/EventsAssets/it1.webp",
         staff: [
           {
             name: "Ms. S.P. Panimalar",
@@ -79,7 +79,7 @@ export const EventDetails = [
           "Top 4 teams in this round .Same team member .Any language can be used .Solve medium difficulty code snippets to win .Code should be perfect to conquer the final game",
         tag: "EVENT",
         color: "0, 1, 38",
-        logo: "/EventsAssets/it2.png",
+        logo: "/EventsAssets/it2.webp",
         staff: [
           {
             name: "Ms. Yuvashree S",
@@ -130,7 +130,7 @@ export const EventDetails = [
 
         tag: "EVENT",
         color: "0, 1, 38",
-        logo: "/EventsAssets/it3.png",
+        logo: "/EventsAssets/it3.webp",
         staff: [
           {
             name: "Ms. R N Karthika",
@@ -193,7 +193,7 @@ export const EventDetails = [
         tag: "EVENT",
         color: "0, 1, 38",
 
-        logo: "/EventsAssets/it4.png",
+        logo: "/EventsAssets/it4.webp",
         staff: [
           {
             name: "Dr. S. Vidhya",
@@ -239,7 +239,7 @@ export const EventDetails = [
     workshopslist: [
       {
         name: "CYBERSECURITY AND ETHICAL HACKING  ",
-        logo: "EventsAssets/itw1.png",
+        logo: "EventsAssets/itw1.webp",
         tag: "WORKSHOP",
         color: "0, 70, 90",
         company: "NA",
@@ -323,7 +323,7 @@ export const EventDetails = [
       },
       {
         name: "REACT JS  ",
-        logo: "EventsAssets/itw2.png",
+        logo: "EventsAssets/itw2.webp",
         tag: "WORKSHOP",
         color: "0, 70, 90",
         company: "NA",
@@ -406,7 +406,7 @@ export const EventDetails = [
       },
       {
         name: "AWS – CLOUD PRACTITIONER",
-        logo: "EventsAssets/itw3.png",
+        logo: "EventsAssets/itw3.webp",
         tag: "WORKSHOP",
         color: "0, 70, 90",
         company: "NA",
@@ -485,7 +485,7 @@ export const EventDetails = [
           "Each team will have to code the program for the found algorithm in either C programming or Python language and the first team to complete the coding will be the winner of the event",
         tag: "EVENT",
         color: "0, 1, 38",
-        logo: "/EventsAssets/cse1.png",
+        logo: "/EventsAssets/cse1.webp",
         staff: [
           {
             name: "Dr.E Sujatha",
@@ -546,7 +546,7 @@ export const EventDetails = [
         Tools: "FIGMA.FLUID UI.VISILI AI",
         tag: "EVENT",
         color: "0, 1, 38",
-        logo: "/EventsAssets/cse2.png",
+        logo: "/EventsAssets/cse2.webp",
         staff: [
           {
             name: "Dr.Gopirajan PV",
@@ -612,7 +612,7 @@ export const EventDetails = [
           "Program with some errors is given in the paper to the coders and first they have to debug that program in the paper and then they have to execute the same program in the system with screen off.Then three pattern programs are given to them and they have to find the solution to that program then they have to execute it in the system with screen off",
         tag: "EVENT",
         color: "0, 1, 38",
-        logo: "/EventsAssets/cse3.png",
+        logo: "/EventsAssets/cse3.webp",
         staff: [
           {
             name: "Dr.Anitha Julian",
@@ -672,7 +672,7 @@ export const EventDetails = [
           "Each team will be receiving 3-4 minutes to present their idea through ppt.2-3 minutes to solve the given questions (Timing may vary based on number of teams).The TOP 3 will be selected based on the idea of the presentation",
         tag: "EVENT",
         color: "0, 1, 38",
-        logo: "/EventsAssets/cse4.png",
+        logo: "/EventsAssets/cse4.webp",
         staff: [
           {
             name: "Dr.Vijay Anand",
@@ -718,7 +718,7 @@ export const EventDetails = [
     workshopslist: [
       {
         name: "LAPTOP SERVICING",
-        logo: "/EventsAssets/csew1.png",
+        logo: "/EventsAssets/csew1.webp",
         tag: "WORKSHOP",
         color: "0, 70, 90",
         company: "Connect Infosystems",
@@ -767,7 +767,7 @@ export const EventDetails = [
       },
       {
         name: "3D DIGITAL GAME ART & DESIGN",
-        logo: "/EventsAssets/csew2.png",
+        logo: "/EventsAssets/csew2.webp",
         tag: "WORKSHOP",
         color: "0, 70, 90",
         company:"ARENA ANIMATION",
@@ -844,7 +844,7 @@ export const EventDetails = [
 
         tag: "EVENT",
         color: "0, 1, 38",
-        logo: "/EventsAssets/agri1.png",
+        logo: "/EventsAssets/agri1.webp",
         staff: [
           {
             name: "Er.RAGESH",
@@ -890,7 +890,7 @@ export const EventDetails = [
 
         tag: "EVENT",
         color: "0, 1, 38",
-        logo: "/EventsAssets/agri2.png",
+        logo: "/EventsAssets/agri2.webp",
         staff: [
           {
             name: "MR.GANAPATHI",
@@ -927,7 +927,7 @@ export const EventDetails = [
           " Per team  comprises of 4members.Team is required to finish as much hunt as possible within the limit.Team members must stay together at all times.Participants will have time limit of 2hours.Teams are not supposed to take away the treasure with them neither touch it",
         tag: "EVENT",
         color: "0, 1, 38",
-        logo: "/EventsAssets/agri3.png",
+        logo: "/EventsAssets/agri3.webp",
         staff: [
           {
             name: "DR.P.BAKKIYALAKSHMI",
@@ -973,7 +973,7 @@ export const EventDetails = [
         tag: "EVENT",
         color: "0, 1, 38",
 
-        logo: "/EventsAssets/agri4.png",
+        logo: "/EventsAssets/agri4.webp",
         staff: [
           {
             name: "Dr.R.NANDHINI",
@@ -1007,7 +1007,7 @@ export const EventDetails = [
     workshopslist: [
       {
         name: "Field Demonstration Of Drone Sprayer",
-        logo: "/EventsAssets/agriw1.png",
+        logo: "/EventsAssets/agriw1.webp",
         tag: "WORKSHOP",
         color: "0, 70, 90",
 
@@ -1057,7 +1057,7 @@ export const EventDetails = [
       },
       {
         name: "Chemical free Solution",
-        logo: "/EventsAssets/agriw2.png",
+        logo: "/EventsAssets/agriw2.webp",
         tag: "WORKSHOP",
         color: "0, 70, 90",
         company: "Agricultural Engineering Department, CIT Nagar",
@@ -1135,7 +1135,7 @@ export const EventDetails = [
 
         tag: "EVENT",
         color: "0, 1, 38",
-        logo: "/EventsAssets/ai1.png",
+        logo: "/EventsAssets/ai1.webp",
         staff: [
           {
             name: "Dr.Aswini Jayaraman",
@@ -1183,7 +1183,7 @@ export const EventDetails = [
           "They are proposed to questions regarding their plans where the teams have to come up with apt ideas to solve them .Top 3 teams are assessed by judges based on how they can handle further situations after idea building and budgeting",
         tag: "EVENT",
         color: "0, 1, 38",
-        logo: "/EventsAssets/ai2.png",
+        logo: "/EventsAssets/ai2.webp",
         staff: [
           {
             name: "Ms. Surya S",
@@ -1232,7 +1232,7 @@ export const EventDetails = [
 
         tag: "EVENT",
         color: "0, 1, 38",
-        logo: "/EventsAssets/ai3.png",
+        logo: "/EventsAssets/ai3.webp",
         staff: [
           {
             name: "Mr.Sridhar S",
@@ -1292,7 +1292,7 @@ export const EventDetails = [
         tag: "EVENT",
         color: "0, 1, 38",
 
-        logo: "/EventsAssets/ai4.png",
+        logo: "/EventsAssets/ai4.webp",
         staff: [
           {
             name: "Ms. Varalakshmi J",
@@ -1339,7 +1339,7 @@ export const EventDetails = [
           "-Two problem statement questions will be given with a time limit of 1hr.The participants can run the programs in the compiler and note down their analysis in the provided paper.Evaluation criteria: The team that takes less time to complete the given problem statements will be selected as the winner",
         tag: "EVENT",
         color: "0, 1, 38",
-        logo: "/EventsAssets/ai5.png",
+        logo: "/EventsAssets/ai5.webp",
         staff: [
           {
             name: "Mr. Dhinesh Kumar K S",
@@ -1382,6 +1382,284 @@ export const EventDetails = [
         ],
       },
     ],
+    workshopslist: [
+      {
+          name: "MOBILE ROBOTIC AND SIMULATION  ",
+          logo: "/EventsAssets/aidsw1.webp",
+          tag: "WORKSHOP",
+          color: "0, 70, 90",
+  
+          day1: {
+              date: "15.11.2022 ",
+              time: "9.00-3.00",
+              mode: "TBA",
+              topic: "Introduction to robot anatomy links , joints and types or robots. Kinematic modeling of robot.Forward kinematics using robo analyser .Inverse kinematics using robot analyser .Introduction to robo dk .Hands on with 6 axis industrial robot",
+              resource: [
+                  {
+                      name: "Mr.Vasanth Kumar.CH ",
+                      desig: "Assistant Professor(SG)",
+                      phone: 8122328543,
+                      email: "vasanthkumar@savetha.ac.in ",
+                  },
+                  {
+                      name: "Mr.Sridhar.S  ",
+                      desig: "Assistant Professor(OG)",
+                      phone: 9962282076,
+                      email: "sridhar@saveetha.ac.in  ",
+                  }
+              ],
+              staff: [
+                  {
+                      name: "Mr.Vasanth Kumar.CH ",
+                      desig: "Assistant Professor(SG)",
+                      phone: 8122328543,
+                      email: "vasanthkumar@savetha.ac.in ",
+                  },
+                  {
+                      name: "Mr.Sridhar.S  ",
+                      desig: "Assistant Professor(OG)",
+                      phone: 9962282076,
+                      email: "sridhar@saveetha.ac.in  ",
+                  }
+              ],
+              student: [
+                  {
+                      name: "Aishree Ramesh  ",
+                      year: "III",
+                      phone: 7305663829,
+                      email: "aishree.ramesh@gmail.com ",
+                  },
+                  {
+                      name: "Jayashree Rao.V ",
+                      year: "III",
+                      phone: 9962926229,
+                      email: "jayashreerao1510@gmail.com ",
+                  },
+                  {
+                      name: "Thenmozhi.P ",
+                      year: "II",
+                      phone: 7305404849,
+                      email: "thenmozhipv293@gmail.com ",
+                  },
+                  {
+                      name: "Ashwin Raaj.S ",
+                      year: "II",
+                      phone: 7904748817,
+                      email: "lordashwin94@gmail.com  ",
+                  },
+              ]
+          },
+  
+      },
+      {
+          name: "Game Development  ",
+          logo: "/EventsAssets/aidsw1.webp",
+          tag: "WORKSHOP",
+          color: "0, 70, 90",
+  
+          day1: {
+              date: "16.11.2022 ",
+              time: "9.00-3.00",
+              mode: "TBA",
+              topic: "Designing the 3D models using Maya ",
+              resource: [
+  
+                  {
+                      name: "Vijayaragavan ARR ",
+                      desig: "3 year student",
+                      phone: 9443654516,
+                      email: "vijayaragavan.arr@gmail.com  ",
+                  }
+              ],
+              staff: [
+                  {
+                      name: "Archana S H ",
+                      desig: "Assistant Professor",
+                      phone: 9094375369,
+                      email: "archana.s.h@saveetha.ac.in ",
+                  },
+                  {
+                      name: "Dr.Aswini Jayaraman ",
+                      desig: " Professor",
+                      phone: 9380977888,
+                      email: "aswinij@saveetha.ac.in  ",
+                  }
+              ],
+              student: [
+  
+                  {
+                      name: "Someasvar.R ",
+                      year: "II",
+                      phone: 9786053400,
+                      email: "deepakbakiya455@gmail.com  ",
+                  },
+                  {
+                      name: "Sherwin Roger R D ",
+                      year: "III",
+                      phone: 9789820475,
+                      email: "sherwinroger02@gmail.com ",
+                  },
+  
+              ]
+          },
+          day2: {
+              date: "17.11.2022 ",
+              time: "9.00-3.00",
+              mode: "TBA",
+              topic: "Developing 2D/3D game using Unity/Unreal ",
+              resource: [
+  
+                  {
+                      name: "Vijayaragavan ARR  ",
+                      desig: "3 year student",
+                      phone: 9443654516,
+                      email: "vijayaragavan.arr@gmail.com  ",
+                  }
+              ],
+              staff: [
+                  {
+                      name: "Archana S H ",
+                      desig: "Assistant Professor",
+                      phone: 9094375369,
+                      email: "archana.s.h@saveetha.ac.in ",
+                  },
+                  {
+                      name: "Dr.Aswini Jayaraman ",
+                      desig: " Professor",
+                      phone: 9380977888,
+                      email: "aswinij@saveetha.ac.in  ",
+                  }
+              ],
+              student: [
+  
+                  {
+                      name: "Someasvar.R ",
+                      year: "II",
+                      phone: 9786053400,
+                      email: "deepakbakiya455@gmail.com  ",
+                  },
+                  {
+                      name: "Sherwin Roger R D ",
+                      year: "III",
+                      phone: 9789820475,
+                      email: "sherwinroger02@gmail.com ",
+                  },
+  
+              ]
+          },
+  
+      },
+      {
+          name: "Hands on training on 3D Printing ",
+          logo: "/EventsAssets/aidsw1.webp",
+          tag: "WORKSHOP",
+          color: "0, 70, 90",
+  
+          day1: {
+              date: "14.11.2022 ",
+              time: "9.00-3.00",
+              mode: "TBA",
+              topic: "Introduction to Fusion 360 .Introduction to 3D Printing.Introduction to cura software  ",
+              resource: [
+  
+                  {
+                      name: "Dr.S.Sellakumar ",
+                      desig: "Assistant Professor ",
+                      phone: 9486932452,
+                      email: "sellakumar@saveetha.ac.in  ",
+                  },
+                  {
+                      name: "Dr. Vignesh Sekar  ",
+                      desig: "Assistant Professor ",
+                      phone: 7397332087,
+                      email: "vigneshs@saveetha.ac.in  ",
+                  }
+              ],
+              staff: [
+                  {
+                      name: "Dr.S.Sellakumar ",
+                      desig: "Assistant Professor ",
+                      phone: 9486932452,
+                      email: "sellakumar@saveetha.ac.in  ",
+                  },
+                  {
+                      name: "Dr. Vignesh Sekar  ",
+                      desig: "Assistant Professor ",
+                      phone: 7397332087,
+                      email: "vigneshs@saveetha.ac.in  ",
+                  }
+              ],
+              student: [
+  
+                  {
+                      name: "Fawziya A  ",
+                      year: "III",
+                      phone: 9790619169,
+                      email: "fawziya267@gmail.com  ",
+                  },
+                  {
+                      name: "Paarkavya B  ",
+                      year: "II",
+                      phone: 8122429102,
+                      email: "paarkavy.bv@gmail.com ",
+                  },
+  
+              ]
+          },
+          day2: {
+              date: "15.11.2022 ",
+              time: "9.00-3.00",
+              mode: "TBA",
+              topic: "Hands on training, demonstration to the 3D printing components ",
+              resource: [
+  
+                  {
+                      name: "Dr.S.Sellakumar ",
+                      desig: "Assistant Professor ",
+                      phone: 9486932452,
+                      email: "sellakumar@saveetha.ac.in  ",
+                  },
+                  {
+                      name: "Dr. Vignesh Sekar  ",
+                      desig: "Assistant Professor ",
+                      phone: 7397332087,
+                      email: "vigneshs@saveetha.ac.in  ",
+                  }
+              ],
+              staff: [
+                  {
+                      name: "Dr.S.Sellakumar ",
+                      desig: "Assistant Professor ",
+                      phone: 9486932452,
+                      email: "sellakumar@saveetha.ac.in  ",
+                  },
+                  {
+                      name: "Dr. Vignesh Sekar  ",
+                      desig: "Assistant Professor ",
+                      phone: 7397332087,
+                      email: "vigneshs@saveetha.ac.in  ",
+                  }
+              ],
+              student: [
+  
+                  {
+                      name: "Fawziya A  ",
+                      year: "III",
+                      phone: 9790619169,
+                      email: "fawziya267@gmail.com  ",
+                  },
+                  {
+                      name: "Paarkavya B  ",
+                      year: "II",
+                      phone: 8122429102,
+                      email: "paarkavy.bv@gmail.com ",
+                  },
+  
+              ]
+          },
+  
+      },
+  ]
   },
   {
     id: "bme",
@@ -1409,7 +1687,7 @@ export const EventDetails = [
           "This round is a group activity.Objective of round is to identify the appropriate medical equipment required for respective trivia.Flash cards of equipment with the description of function and usage will be handed out to the participants.Teams are expected to assign the appropriate cards to the given situations.Each task will be given a duration of 60 seconds .Every correct answer will be rewarded with a point in which the team can use to move forward or hold back the opponent team.First team to complete the highest number of trivia wins ",
         tag: "EVENT",
         color: "0, 1, 38",
-        logo: "/EventsAssets/bme1.png",
+        logo: "/EventsAssets/bme1.webp",
         staff: [
           {
             name: "Dr.Sivanandam S",
@@ -1479,7 +1757,7 @@ export const EventDetails = [
 
         tag: "EVENT",
         color: "0, 1, 38",
-        logo: "/EventsAssets/bme2.png",
+        logo: "/EventsAssets/bme2.webp",
         staff: [
           {
             name: "Dr. P.  Sinthia",
@@ -1540,7 +1818,7 @@ export const EventDetails = [
           "The top 4 teams shall be selected from the previous round on the basis of the 1st round.In this round, there will be 2 qualifiers, one elimination round and one final round.Teams are said to stand at their respective ends.A question will be asked commonly, when both team players meet at one point. The player who gives the correct answer proceeds the disc path. The team which reaches the other end will be declared as the winner",
         tag: "EVENT",
         color: "0, 1, 38",
-        logo: "/EventsAssets/bme3.png",
+        logo: "/EventsAssets/bme3.webp",
         staff: [
           {
             name: "Dr. Swarnambiga A",
@@ -1603,7 +1881,7 @@ export const EventDetails = [
           "Puzzles related to medical Instruments or Famous Scientists will be displayed in the laptop provided. According to the time taken by the participants we can select the winners",
         tag: "EVENT",
         color: "0, 1, 38",
-        logo: "/EventsAssets/bme4.png",
+        logo: "/EventsAssets/bme4.webp",
         staff: [
           {
             name: "Ms. Rasheedha A",
@@ -1649,7 +1927,7 @@ export const EventDetails = [
     workshopslist: [
       {
         name: "3D modelling in CT & MRI scans on Navigation based surgery",
-        logo: "EventsAssets/bmew1.png",
+        logo: "EventsAssets/bmew1.webp",
         tag: "WORKSHOP",
         color: "0, 70, 90",
 
@@ -1706,7 +1984,7 @@ export const EventDetails = [
       },
       {
         name: "Workshop Title – Rehabilitation & LabVIEW for Healthcare Applications",
-        logo: "/EventsAssets/bmew2.png",
+        logo: "/EventsAssets/bmew2.webp",
 
         tag: "WORKSHOP",
         color: "0, 70, 90",
@@ -1787,7 +2065,7 @@ export const EventDetails = [
 
         tag: "EVENT",
         color: "0, 1, 38",
-        logo: "/EventsAssets/civil1.png",
+        logo: "/EventsAssets/civil1.webp",
         staff: [
           {
             name: "S.Theerkadharshini",
@@ -1837,7 +2115,7 @@ export const EventDetails = [
           "The selected 5 teams will be presented with an online treasure hunt framework in a laptop.Each team needs to decipher the clues to find the treasure (letters shape or structure) The team that clinches the treasure (identifies the pattern) at first will be announced as winner. Total event duration: 2 hours (including briefing of instructions)",
         tag: "EVENT",
         color: "0, 1, 38",
-        logo: "/EventsAssets/civil2.png",
+        logo: "/EventsAssets/civil2.webp",
         staff: [
           {
             name: "Dr. S. Padma",
@@ -1888,7 +2166,7 @@ export const EventDetails = [
           "The detailed line plan will be given as a question in round 2 .The students have to draw Plan with specification for the same line plan. The duration for the plan is 30 minutes. Based on the completion first three place will be finalised",
         tag: "EVENT",
         color: "0, 1, 38",
-        logo: "/EventsAssets/civil3.png",
+        logo: "/EventsAssets/civil3.webp",
         staff: [
           {
             name: "M Madhan Kumar",
@@ -1933,7 +2211,7 @@ export const EventDetails = [
         tag: "EVENT",
         color: "0, 1, 38",
 
-        logo: "/EventsAssets/civil4.png",
+        logo: "/EventsAssets/civil4.webp",
         staff: [
           {
             name: "A.Aishwarya lakshmi",
@@ -1973,7 +2251,7 @@ export const EventDetails = [
     workshopslist: [
       {
         name: "Recent technological advancements in building designs using revit",
-        logo: "/EventsAssets/civilw1.png",
+        logo: "/EventsAssets/civilw1.webp",
         tag: "WORKSHOP",
         color: "0, 70, 90",
 
@@ -2010,7 +2288,7 @@ export const EventDetails = [
       },
       {
         name: "4D Building Information Modelling for Project Management",
-        logo: "/EventsAssets/civilw2.png",
+        logo: "/EventsAssets/civilw2.webp",
         tag: "WORKSHOP",
         color: "0, 70, 90",
         company: " Infinity PMC Solutions, Chennai",
@@ -2060,7 +2338,7 @@ export const EventDetails = [
       },
       {
         name: "5D BIM for Construction Industry",
-        logo: "/EventsAssets/civilw3.png",
+        logo: "/EventsAssets/civilw3.webp",
         tag: "WORKSHOP",
         color: "0, 70, 90",
         company: " Infinity PMC Solutions, Chennai",
@@ -2131,7 +2409,7 @@ export const EventDetails = [
           "It is a group event of 3. Participants will be given many charts which contain different Process of flow diagrams of different industries. Participants should order them according to sector in a given time limit.The team which finishes fast with the correct answer will be the winner",
         tag: "EVENT",
         color: "0, 1, 38",
-        logo: "/EventsAssets/chem1.png",
+        logo: "/EventsAssets/chem1.webp",
         staff: [
           {
             name: "Ms.N Umaiyambika",
@@ -2172,7 +2450,7 @@ export const EventDetails = [
           " A situational task is given to the participant . The task is related to chemical process industries.A simple Example is that if there is spillage of Sulphuric acid. What will you do! .They must apply the most reluctant procedure to accomplish the task and get their points",
         tag: "EVENT",
         color: "0, 1, 38",
-        logo: "/EventsAssets/chem2.png",
+        logo: "/EventsAssets/chem2.webp",
         staff: [
           {
             name: "Dr.P.Senthilkumar",
@@ -2207,7 +2485,7 @@ export const EventDetails = [
           " Participants should play small games in the room to escape from the room. Participants should answer the questions for a minimum of 3 and also should win the game.  For winning each game participants will be given stickers at each game. Those who collect more stickers will be the winner",
         tag: "EVENT",
         color: "0, 1, 38",
-        logo: "/EventsAssets/chem3.png",
+        logo: "/EventsAssets/chem3.webp",
         staff: [
           {
             name: "Dr.S. Balachandran",
@@ -2270,7 +2548,7 @@ export const EventDetails = [
           "3 Members standing in a row. First one gets a clue from Co-ordinator.  Second one gets a clue from the First one. Third one gets a clue from the Second one.  Third one has to choose the element from the board",
         tag: "EVENT",
         color: "0, 1, 38",
-        logo: "/EventsAssets/chem4.png",
+        logo: "/EventsAssets/chem4.webp",
         staff: [
           {
             name: "Ms.N Umaiyambika",
@@ -2298,7 +2576,7 @@ export const EventDetails = [
     workshopslist: [
       {
         name: "EXCEL for Chemical Engineers (Basics to Advanced)",
-        logo: "/EventsAssets/chemw1.png",
+        logo: "/EventsAssets/chemw1.webp",
 
         tag: "WORKSHOP",
         color: "0, 70, 90",
@@ -2422,7 +2700,7 @@ export const EventDetails = [
           "30 seconds per QUESTION.Correct answer will be rewarded with two points.10 Questions per round",
         round2:
           "20 seconds per QUESTION .Correct answer will be rewarded with two points .10 Questions per round.SELECTION PROCESS: Winners will be based on MAXIMUM POINTS",
-        logo: "/EventsAssets/eie1.png",
+        logo: "/EventsAssets/eie1.webp",
         staff: [
           {
             name: "Dr.A.R.Kalaiarasi",
@@ -2463,7 +2741,7 @@ export const EventDetails = [
           "Maximum 2 members in a team .5 minutes per round.10 Questions per round.Every correct answer carries 2 points Selection is based on maximum points.Selection is based on maximum points",
         tag: "EVENT",
         color: "0, 1, 38",
-        logo: "/EventsAssets/eie2.png",
+        logo: "/EventsAssets/eie2.webp",
         staff: [
           {
             name: "Dr.M.Arivalagan",
@@ -2503,7 +2781,7 @@ export const EventDetails = [
           "Maximum 1 member in a team .5 minutes per round .10 Questions per round . Every correct answer carries 2 points . Selection is based on maximum points",
         tag: "EVENT",
         color: "0, 1, 38",
-        logo: "/EventsAssets/eie3.png",
+        logo: "/EventsAssets/eie3.webp",
         staff: [
           {
             name: "Dr.A.Manonmani",
@@ -2543,7 +2821,7 @@ export const EventDetails = [
           "Maximum 2 members in a team.15 minutes per round.1Debugging per round.Design contains maximum 20points .selection based on maximum points",
         tag: "EVENT",
         color: "0, 1, 38",
-        logo: "/EventsAssets/eie4.png",
+        logo: "/EventsAssets/eie4.webp",
         staff: [
           {
             name: " Dr.  P. Yuvaraj",
@@ -2572,7 +2850,7 @@ export const EventDetails = [
     workshopslist: [
       {
         name: "Website development for instrumentation engineering",
-        logo: "/EventsAssets/eiew1.png",
+        logo: "/EventsAssets/eiew1.webp",
         tag: "WORKSHOP",
         color: "0, 70, 90",
 
@@ -2633,7 +2911,7 @@ export const EventDetails = [
           "Detailing of MODEL- Quality, Efficiency of the product will be inspected",
         tag: "EVENT",
         color: "0, 1, 38",
-        logo: "/EventsAssets/mech1.png",
+        logo: "/EventsAssets/mech1.webp",
         staff: [
           {
             name: "Dr. Sivaramakrishnan N",
@@ -2685,7 +2963,7 @@ export const EventDetails = [
         round3: "Knurling in Lathe Machining(30mins)",
         tag: "EVENT",
         color: "0, 1, 38",
-        logo: "/EventsAssets/mech2.png",
+        logo: "/EventsAssets/mech2.webp",
         staff: [
           {
             name: "Dr.Kripa M Suvarna",
@@ -2733,7 +3011,7 @@ export const EventDetails = [
         round3: "Round 3 will be based on distance coverage",
         tag: "EVENT",
         color: "0, 1, 38",
-        logo: "/EventsAssets/mech3.png",
+        logo: "/EventsAssets/mech3.webp",
         staff: [
           {
             name: "V.Velmurugan",
@@ -2784,7 +3062,7 @@ export const EventDetails = [
         tag: "EVENT",
         color: "0, 1, 38",
 
-        logo: "/EventsAssets/mech4.png",
+        logo: "/EventsAssets/mech4.webp",
         staff: [
           {
             name: "C Radhika",
@@ -2825,7 +3103,7 @@ export const EventDetails = [
     workshopslist: [
       {
         name: "Augmented Reality for 4.0 (Online)",
-        logo: "/EventsAssets/mechw2.png",
+        logo: "/EventsAssets/mechw2.webp",
         tag: "WORKSHOP",
         color: "0, 70, 90",
         company: "Ideazone",
@@ -2879,7 +3157,7 @@ export const EventDetails = [
       },
       {
         name: "Robotics Simulation (Online)",
-        logo: "/EventsAssets/mechw2.png",
+        logo: "/EventsAssets/mechw2.webp",
         tag: "WORKSHOP",
         color: "0, 70, 90",
         company: " J&R industries on robotics",
@@ -2933,7 +3211,7 @@ export const EventDetails = [
       },
       {
         name: "Hands on training in Fusion 360(offline)",
-        logo: "/EventsAssets/mechw1.png",
+        logo: "/EventsAssets/mechw1.webp",
         tag: "WORKSHOP",
         color: "0, 70, 90",
         company: " Bessel Automation",
@@ -3055,7 +3333,7 @@ export const EventDetails = [
           "Political & Illegal Words Shouldn't Be Used During The Performance",
         tag: "EVENT",
         color: "0, 1, 38",
-        logo: "/EventsAssets/mba1.png",
+        logo: "/EventsAssets/mba1.webp",
         staff: [
           {
             name: "Dr.S.GANGADHARAN",
@@ -3097,7 +3375,7 @@ export const EventDetails = [
 
         tag: "EVENT",
         color: "0, 1, 38",
-        logo: "/EventsAssets/mba2.png",
+        logo: "/EventsAssets/mba2.webp",
         staff: [
           {
             name: "Dr.L.Anitha",
@@ -3139,7 +3417,7 @@ export const EventDetails = [
           " This round consists of potpourri of Questions.In this round the fastest mind gets to answer the questions. Each contestant will be given a set of 5 questions. Mobile phones & Internet access are prohibited",
         tag: "EVENT",
         color: "0, 1, 38",
-        logo: "/EventsAssets/mba3.png",
+        logo: "/EventsAssets/mba3.webp",
         staff: [
           {
             name: "Dr.J.Premila",
@@ -3180,7 +3458,7 @@ export const EventDetails = [
           "ndigenous photo captured through Camera or Mobile (Should be clear). No editing should be done.Idea behind the photograph in regards with management concepts. Photograph should be sent before deadline",
         tag: "EVENT",
         color: "0, 1, 38",
-        logo: "/EventsAssets/mba4.png",
+        logo: "/EventsAssets/mba4.webp",
         staff: [
           {
             name: "Dr.M.Venith Vijay",
@@ -3221,7 +3499,7 @@ export const EventDetails = [
     workshopslist: [
       {
         name: "Goal setting and creative thinking",
-        logo: "/EventsAssets/mbaw1.png",
+        logo: "/EventsAssets/mbaw1.webp",
         tag: "WORKSHOP",
         color: "0, 70, 90",
         mode: "TBA",
@@ -3258,7 +3536,7 @@ export const EventDetails = [
       },
       {
         name: "Design-Data-Digital-3D Model",
-        logo: "/EventsAssets/mbaw2.png",
+        logo: "/EventsAssets/mbaw2.webp",
         tag: "WORKSHOP",
         color: "0, 70, 90",
         mode: "TBA",
@@ -3315,7 +3593,7 @@ export const EventDetails = [
           "You have to draw neat diagram and label the parts. For your reference the picture will be shown for 3 to 5 minutes. Best team will be awarded",
         tag: "EVENT",
         color: "0, 1, 38",
-        logo: "/EventsAssets/med1.png",
+        logo: "/EventsAssets/med1.webp",
         staff: [
           {
             name: "U. Madhanlal",
@@ -3371,7 +3649,7 @@ export const EventDetails = [
           "Pictures of simple electronic circuits will be displayed on the projector for 30 seconds. Each team will be given a breadboard and the required components .Team members has to make circuit connections of the displayed schematics within the stipulated timing Selected teams will be awarded",
         tag: "EVENT",
         color: "0, 1, 38",
-        logo: "/EventsAssets/med2.png",
+        logo: "/EventsAssets/med2.webp",
         staff: [
           {
             name: "Mrs.Indumathy",
@@ -3422,7 +3700,7 @@ export const EventDetails = [
 
         tag: "EVENT",
         color: "0, 1, 38",
-        logo: "/EventsAssets/med3.png",
+        logo: "/EventsAssets/med3.webp",
         staff: [
           {
             name: "Ms.Bhavadharani V",
@@ -3473,7 +3751,7 @@ export const EventDetails = [
         round3: "Rule to be followed as same as round. 1 Max time : 40 seconds",
         tag: "EVENT",
         color: "0, 1, 38",
-        logo: "/EventsAssets/med4.png",
+        logo: "/EventsAssets/med4.webp",
         staff: [
           {
             name: "Vigneshwari N",
@@ -3513,7 +3791,7 @@ export const EventDetails = [
     workshopslist: [
       {
         name: "IOT ~ MEDICO",
-        logo: "/EventsAssets/mew1.png",
+        logo: "/EventsAssets/mew1.webp",
         tag: "WORKSHOP",
         color: "0, 70, 90",
         company: "VEI Technologies Pvt Ltd",
@@ -3633,7 +3911,7 @@ export const EventDetails = [
           "At the time of events a circuit name will be informed to for each team, Circuits ideas and  components will be provided . The team that shows the spectrum analysis (output)  first will be considered as the winner. (On a first-come, first-served basis.)  Total time for this event is 15 minutes. On the basis of time management and relevant explanation, participants will be selected. The winners will be declared on the basis of the shortest time period of completion of the task.Note:. No mobile phones are allowed during the participation of the event.   No discussion or sharing of answers among the participants .   If any malpractices are noticed, then the term will be disqualified from all the events",
         tag: "EVENT",
         color: "0, 1, 38",
-        logo: "/EventsAssets/ece1.png",
+        logo: "/EventsAssets/ece1.webp",
         staff: [
           {
             name: "Ms. G Keerthiga",
@@ -3683,7 +3961,7 @@ export const EventDetails = [
           "The image of  external/ internal modules supported by  various development boards (Arduino,Raspberry Pi,ESP)  will be  displayed. participants need to identify the name of the module. Points will be awarded according to the weightage of the questions. winners will be selected based on scoring more points",
         tag: "EVENT",
         color: "0, 1, 38",
-        logo: "/EventsAssets/ece2.png",
+        logo: "/EventsAssets/ece2.webp",
         staff: [
           {
             name: "Dr.A.Saranya",
@@ -3732,7 +4010,7 @@ export const EventDetails = [
           "Each team has to pick  their questions from the question pool bowl. Selected circuits will be displayed for each team for 2 minutes .  Next 3 minutes will be given to reproduce ( implement) the circuit diagram using breadboard  and component, which will be provided.  Depending on the circuit's fulfillness ( correct component placed in correct position) terms will be forwarded to the next round",
         tag: "EVENT",
         color: "0, 1, 38",
-        logo: "/EventsAssets/ece3.png",
+        logo: "/EventsAssets/ece3.webp",
         staff: [
           {
             name: "Dr.S. kanagamalliga",
@@ -3783,7 +4061,7 @@ export const EventDetails = [
         tag: "EVENT",
         color: "0, 1, 38",
 
-        logo: "/EventsAssets/ece4.png",
+        logo: "/EventsAssets/ece4.webp",
         staff: [
           {
             name: "Ms.K Padma Priya",
@@ -3820,6 +4098,427 @@ export const EventDetails = [
         ],
       },
     ],
+    workshopslist: [
+      {
+          name: "PCB DESIGN AND FABRICATION",
+          logo: "/EventsAssets/ecew1.webp",
+          tag: "WORKSHOP",
+          color: "0, 70, 90",
+          mode: "TBA",
+          venue: "TBA",
+  
+          day1: {
+              date: "07/10/22",
+              time: "TBA",
+              mode: "offline",
+              venu: "TBA",
+              topic: "HANDS ON EXPERIENCE IN PCB DESIGN AND FABRICATION",
+              resource: [
+                  {
+                      name: "Dr.Jeffin Gracewell",
+                      desig: "Associate professor, ECE  ",
+                      phone: 8903280025,
+                      email: "jeffingracewelllj@saveetha.c.in",
+                  }
+              ],
+              staff: [
+                  {
+  
+                      name: "Dr.Jeffin Gracewell ",
+                      desig: "Associate Professor  ",
+                      phone: 8903280025,
+                      email: "jeffingracewelllj@saveetha.c.in",
+  
+                  },
+                  {
+  
+                      name: "Dr.R Jennie Bharathi",
+                      desig: "Associate Professor  ",
+                      phone: 9791390383,
+                      email: "jenniebharathir@saveetha.ac.in",
+  
+                  }
+              ],
+              student: [
+                  {
+  
+                      name: "Surya S ",
+                      year: "III ",
+                      phone: 7305711758,
+                      email: "suryasagadevan17@gmail.com",
+  
+                  },
+                  {
+  
+                      name: "Lekha M",
+                      year: "III  ",
+                      phone: 9345569421,
+                      email: "lekhalekha1321@gmail.com ",
+  
+                  }
+              ]
+          },
+          day2: {
+              date: "07/10/22",
+              time: "TBA",
+              mode: "offline",
+              venu: "TBA",
+              topic: "HANDS ON EXPERIENCE IN PCB DESIGN AND FABRICATION",
+              resource: [
+                  {
+                      name: "Dr.Jeffin Gracewell",
+                      desig: "Associate professor, ECE  ",
+                      phone: 8903280025,
+                      email: "jeffingracewelllj@saveetha.c.in",
+                  }
+              ],
+              staff: [
+                  {
+  
+                      name: "Dr.Jeffin Gracewell ",
+                      desig: "Associate Professor  ",
+                      phone: 8903280025,
+                      email: "jeffingracewelllj@saveetha.c.in",
+  
+                  },
+                  {
+  
+                      name: "Dr.R Jennie Bharathi",
+                      desig: "Associate Professor  ",
+                      phone: 9791390383,
+                      email: "jenniebharathir@saveetha.ac.in",
+  
+                  }
+              ],
+              student: [
+                  {
+  
+                      name: "Surya S ",
+                      year: "III ",
+                      phone: 7305711758,
+                      email: "suryasagadevan17@gmail.com",
+  
+                  },
+                  {
+  
+                      name: "Lekha M",
+                      year: "III  ",
+                      phone: 9345569421,
+                      email: "lekhalekha1321@gmail.com ",
+  
+                  },
+  
+              ]
+          }
+      },
+      {
+          name: "Build a strong career in Cybersecurity",
+          logo: "/EventsAssets/ecew2.webp",
+          tag: "WORKSHOP",
+          color: "0, 70, 90",
+          mode: "TBA",
+          venue: "TBA",
+          company: "IT EXPERT TRAINING",
+  
+          day1: {
+              date: "08/11/22",
+              time: "10.00-3.00",
+              mode: "online",
+              venu: "TBA",
+              topic: "Introduction to Ethical Hacking . Foot printing and Reconnaissance. Scanning Networks.Malware Threats.Sniffing.Denial-of-Service ",
+              resource: [
+                  {
+                      name: "Dr.Mohamed Ibrahim ",
+                      desig: "Founder, Ibby Cyber Security mentor  ",
+                      phone: 6385181109,
+                      email: "ilyas@tripleminfotech.com ",
+                  }
+              ],
+              staff: [
+                  {
+  
+                      name: "Dr.M.Vanitha ",
+                      desig: "Associate Professor  ",
+                      phone: 7871784886,
+                      email: "vanitha@saveetha.ac.in ",
+  
+                  },
+                  {
+  
+                      name: "Mr.K.Arun Kumar ",
+                      desig: "Associate Professor  ",
+                      phone: 9600981800,
+                      email: "arunkumar@saveetha.ac.in ",
+  
+                  }
+              ],
+              student: [
+                  {
+  
+                      name: "Mohammed Hassan M ",
+                      year: "IV ",
+                      phone: 9944709448,
+                      email: "mohammedhasan.ece.sec@gmail.com ",
+  
+                  },
+                  {
+  
+                      name: "J swetha ",
+                      year: "II  ",
+                      phone: 8248238746,
+                      email: "deepaswe2@gmail.com ",
+  
+                  }
+              ],
+  
+          }
+      },
+      {
+          name: "Computer Vision",
+          logo: "/EventsAssets/ecew3.webp",
+          tag: "WORKSHOP",
+          color: "0, 70, 90",
+          mode: "TBA",
+          venue: "TBA",
+          company: "IT EXPERT TRAINING",
+  
+          day1: {
+              date: "09/11/22",
+              time: "10.00-3.00",
+              mode: "online",
+              venu: "TBA",
+              topic: "HANDS ON EXPERIENCE IN PCB DESIGN AND FABRICATION",
+              resource: [
+                  {
+                      name: "Mr. Muhammed Ilyas ",
+                      desig: "Chief Executive Officer, IT Expert Training, Chennai  ",
+                      phone: 9884648010,
+                      email: "ilyas@tripleminfotech.com",
+                  }
+              ],
+              staff: [
+                  {
+  
+                      name: "Dr.M.Vanitha ",
+                      desig: "Associate Professor  ",
+                      phone: 7871784886,
+                      email: "vanitha@saveetha.ac.in ",
+  
+                  },
+                  {
+  
+                      name: "Dr.A.Elakkiya  ",
+                      desig: "Associate Professor  ",
+                      phone: 9952376256,
+                      email: "elakkiyaa@saveetha.ac.in  ",
+  
+                  }
+              ],
+              student: [
+                  {
+  
+                      name: "Muralidharan N ",
+                      year: "III ",
+                      phone: 7708905895,
+                      email: "muralidharanvpt@gmail.com ",
+  
+                  },
+                  {
+  
+                      name: "Nagarajan R ",
+                      year: "II  ",
+                      phone: 6383456337,
+                      email: "r.ns.raj2003@gmail.com  ",
+  
+                  }
+              ],
+  
+          }
+      },
+      {
+          name: "Mobile application development using Machine learning ",
+          logo: "/EventsAssets/ecew4.webp",
+          tag: "WORKSHOP",
+          color: "0, 70, 90",
+          mode: "TBA",
+          venue: "TBA",
+          company: "Towards Technology",
+  
+          day1: {
+              date: "09/11/22",
+              time: "10.00-3.00",
+              mode: "online",
+              venu: "TBA",
+              topic: "FN Session: Machine Learning Introduction .Data importance .Develop and Validate Machine Learning model .Machine Learning deployment methods Hands-on Session: (Create mobile app for diabetes prediction) .   Problem statement .Data Collection .Data pre-processing .Train Machine Learning model . Validate Machine Learning model.Develop mobile application by deploying Machine Learning model  Install the application in mobile ",
+              resource: [
+                  {
+                      name: "Ms.Vaishnavi Pandiyan ",
+                      desig: "Co founder  ",
+                      phone: 9894467245,
+                      email: "info@towardstechno.com ",
+                  }
+              ],
+              staff: [
+                  {
+  
+                      name: "T.Archana  ",
+                      desig: "Associate Professor (SG) ",
+                      phone: 7871784886,
+                      email: "archana@saveetha.ac.in  ",
+  
+                  },
+                  {
+  
+                      name: "A.Hemamalini  ",
+                      desig: "Associate Professor (SG) ",
+                      phone: 9952376256,
+                      email: "hemamalini@saveetha.ac.in  ",
+  
+                  }
+              ],
+              student: [
+                  {
+  
+                      name: "S.A.ABDUL KALAM  ",
+                      year: "II ",
+                      phone: 9159478581,
+                      email: "akkalam305@gmail.com ",
+  
+                  },
+                  {
+  
+                      name: "Mamoj Ravichandran ",
+                      year: "III  ",
+                      phone: 7904106485,
+                      email: "manojmsd7@gmail.com  ",
+  
+                  }
+              ],
+  
+          }
+      },
+      {
+        logo: "/EventsAssets/ecew4.webp",
+        tag: "WORKSHOP",
+        color: "0, 70, 90",
+        mode: "TBA",
+        venue: "TBA",
+          company: "Renault Nissan Technology & Business Centre ,Chennai, India",
+  
+          day1: {
+              date: "09/11/22",
+              time: "10.00-3.00",
+              mode: "online",
+              venu: "TBA",
+              topic: "Implement and test your algorithms. Develop the computational codes and debugging.Use a large database of built in algorithms.  Process still images and create simulation videos.Symbolic computation. Call external libraries.Applications",
+              resource: [
+                  {
+                      name: "Mr. ARUN KUMAR .L  ",
+                      desig: "Senior Software Engineer  ",
+                      phone: 8015991281,
+                      email: "arunvijay537@gmail.com ",
+                  }
+              ],
+              staff: [
+                  {
+  
+                      name: "Dr.M.Selvi ",
+                      desig: "Professor & Deputy HOD   ",
+                      phone: 9443105843,
+                      email: "selvim@saveetha.ac.in  ",
+  
+                  },
+                  {
+  
+                      name: "Dr.Raji Pandurangan  ",
+                      desig: "Associate Professor  ",
+                      phone: 9003051625,
+                      email: "rajipandurangan@saveetha.ac.in  ",
+  
+                  }
+              ],
+              student: [
+                  {
+                      name: "Pradeep S  ",
+                      year: "IV ",
+                      phone: 6374598918,
+                      email: "spradeeps2002@gmail.com ",
+                  },
+                  {
+  
+                      name: "Vishnu Priya M K  ",
+                      year: "II  ",
+                      phone: 7358250220,
+                      email: "vishnupreya@2004  ",
+  
+                  }
+              ],
+  
+          }
+      },
+      {
+          name: "Workshop on  Can you be happy all through your life? Yes, Hidden Secret Un-locked !  ",
+          logo: "/EventsAssets/ecew6.webp",
+          tag: "WORKSHOP",
+          color: "0, 70, 90",
+          mode: "TBA",
+          venue: "TBA",
+          company: "ADCOM AND WOW ACADEMY",
+  
+          day1: {
+              date: "08/11/22",
+              time: "10.00-3.00",
+              mode: "Offline",
+              venu: "TBA",
+              topic: "Brain storming sessions .Happiness revealed factors.Activities which creates fun and cherish able moments ",
+              resource: [
+                  {
+                      name: "R.S.MANI  ",
+                      desig: "FOUNDER ",
+                      phone: 9840298421,
+                      email: "mani@adcomindia.com ",
+                  }
+              ],
+              staff: [
+                  {
+  
+                      name: "G.Keerthiga  ",
+                      desig: "Associate Professor (SG)  ",
+                      phone: 8825783729,
+                      email: "keerthiga@saveetha.ac.in  ",
+  
+                  },
+                  {
+  
+                      name: "K.Sakthi  ",
+                      desig: "Associate Professor (SG) ",
+                      phone: 9962386422,
+                      email: "sakthi@saveetha.ac.in    ",
+  
+                  }
+              ],
+              student: [
+                  {
+  
+                      name: "Arunachalam S  ",
+                      year: "IV ",
+                      phone: 6374598918,
+                      email: "ajuprasath12@gmail.com  ",
+  
+                  },
+                  {
+  
+                      name: "Karthikeyan S  ",
+                      year: "II  ",
+                      phone: 7338929319,
+                      email: "karthioffece@gmail.com  ",
+  
+                  }
+              ],
+  
+          }
+      }
+  ]
   },
   {
     id: "eee",
@@ -3844,7 +4543,7 @@ export const EventDetails = [
           "The regulations of the semi finals  will be same here.After the completion of this round the winners will be selected according to the overall goals scored by the player from the beginning.(note: the goals scored by player will not be considered if the player has been eliminated). (note: the goals scored by player will not be considered if the player has been eliminated).(note: the goals scored by player will not be considered if the player has been eliminated)",
         tag: "EVENT",
         color: "0, 1, 38",
-        logo: "/EventsAssets/eee1.png",
+        logo: "/EventsAssets/eee1.webp",
         staff: [
           {
             name: "Mrs.Hemalatha",
@@ -3899,7 +4598,7 @@ export const EventDetails = [
           "Circuit bugging is one of the fine arts in electronics design. Circuitrix comes with an unleashing event to kindle your circuit knowledge.Each team will be given a Half-Completed Logic Circuit and its equation their task is to Verify the binary outputs. (Required Components and the data sheets will be provided). A team consists of 2 members. Note: Usage of electronic gadgets is not permitted. Teams will be disqualified if it is found to be under any act of malpractice",
         tag: "EVENT",
         color: "0, 1, 38",
-        logo: "/EventsAssets/eee2.png",
+        logo: "/EventsAssets/eee2.webp",
         staff: [
           {
             name: "Dr.M.Ulagammai",
@@ -3960,7 +4659,7 @@ export const EventDetails = [
           "Observe the given images and give the answer.You have to find the common word in that set and find the answer.You will be provided with 30 seconds for each question.One should answer the question only once.The next set of question is more or the same WORD PUZZLE kind.We will give a word as a hint, you have to find best three words which suits the given hint inside the word puzzle.Questions can be 6x6 format or any size format.For each question time limit is 60 seconds.Note: No gadgets will be permitted,Interaction between teams aren’t allowed",
         tag: "EVENT",
         color: "0, 1, 38",
-        logo: "/EventsAssets/eee3.png",
+        logo: "/EventsAssets/eee3.webp",
         staff: [
           {
             name: "Dr.Rajalingam",
@@ -4015,7 +4714,7 @@ export const EventDetails = [
           "In this round, a complex circuit diagram will be given to the team. Each team should assemble it on a breadboard. Later, the connections are checked by the coordinators, and the power supply is given to the circuit to verify the final output. If the output is correct, full points would be awarded to the team.Depending on the circuit design the points will be awarded.If the output is correct, full points would be awarded to the team. If not, the points will be reduced.Time limit: 30 minutes.Note: Total points will be calculated for the result.",
         tag: "EVENT",
         color: "0, 1, 38",
-        logo: "/EventsAssets/eee4.png",
+        logo: "/EventsAssets/eee4.webp",
         staff: [
           {
             name: "Dr.R.Vinifa",
@@ -4067,7 +4766,7 @@ export const EventDetails = [
     workshopslist: [
       {
         name: "MATLAB Modeling of Electric Vehicles",
-        logo: "/EventsAssets/eeew1.png",
+        logo: "/EventsAssets/eeew1.webp",
         tag: "WORKSHOP",
         color: "0, 70, 90",
 
@@ -4129,7 +4828,7 @@ export const EventDetails = [
       },
       {
         name: "Basics of Machine Learning using python",
-        logo: "/EventsAssets/eeew2.png",
+        logo: "/EventsAssets/eeew2.webp",
         tag: "WORKSHOP",
         color: "0, 70, 90",
 
@@ -4191,7 +4890,7 @@ export const EventDetails = [
       },
       {
         name: "EV Battery Assembling using Lithium iron phosphate cells ",
-        logo: "/EventsAssets/eeew3.png",
+        logo: "/EventsAssets/eeew3.webp",
         tag: "WORKSHOP",
         color: "0, 70, 90",
 
