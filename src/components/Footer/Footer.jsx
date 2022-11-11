@@ -83,9 +83,9 @@ const Footer = () => {
             13<sup>th</sup> National level inter collegiate technical and
             management fest
           </div>
-          <div>
+          {/* <div>
              {vicitedProple}
-          </div>
+          </div> */}
         </div>
         <div className="block">
           <h4 className="heading">CO-ORDINATORS</h4>

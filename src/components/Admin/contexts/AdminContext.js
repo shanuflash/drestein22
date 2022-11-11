@@ -46,10 +46,10 @@ useEffect(()=>{
 
   // const View  = fetch('https://api.countapi.xyz/hit/drestein.in')
   // .then(response=>console.log(response))
-  countapi.visits('drestein.in').then((result) => {
-    setVisitedPeople(result.value)
-  });
-  countapi.get('drestein.in', 'test').then((result) => { console.log(result) });
+  // countapi.visits('drestein.in').then((result) => {
+  //   setVisitedPeople(result.value)
+  // });
+  // countapi.get('drestein.in', 'test').then((result) => { console.log(result) });
 
 },[])
 
