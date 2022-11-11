@@ -1386,7 +1386,7 @@ export const EventDetails = [
     workshopslist: [
       {
           name: "MOBILE ROBOTIC AND SIMULATION  ",
-          logo: "/EventsAssets/aidsw1.webp",
+          logo: "/EventsAssets/aiw1.webp",
           tag: "WORKSHOP",
           color: "0, 70, 90",
 
@@ -1454,7 +1454,7 @@ export const EventDetails = [
       },
       {
           name: "Game Development  ",
-          logo: "/EventsAssets/aidsw1.webp",
+          logo: "/EventsAssets/aiw2.webp",
           tag: "WORKSHOP",
           color: "0, 70, 90",
   
@@ -1552,7 +1552,7 @@ export const EventDetails = [
       },
       {
           name: "Hands on training on 3D Printing ",
-          logo: "/EventsAssets/aidsw1.webp",
+          logo: "/EventsAssets/aiw3.webp",
           tag: "WORKSHOP",
           color: "0, 70, 90",
   
@@ -2289,7 +2289,7 @@ export const EventDetails = [
       },
       {
         name: "4D Building Information Modelling for Project Management",
-        logo: "/EventsAssets/civilw1.webp",
+        logo: "/EventsAssets/civilw2.webp",
         tag: "WORKSHOP",
         color: "0, 70, 90",
         company: " Infinity PMC Solutions, Chennai",
@@ -2339,7 +2339,7 @@ export const EventDetails = [
       },
       {
         name: "5D BIM for Construction Industry",
-        logo: "/EventsAssets/civilw1.webp",
+        logo: "/EventsAssets/civilw2.webp",
         tag: "WORKSHOP",
         color: "0, 70, 90",
         company: " Infinity PMC Solutions, Chennai",
@@ -3945,7 +3945,7 @@ export const EventDetails = [
 
       {
         name: "Cryosat",
-        date: "18 Nov 2022(AN)",
+        date: "19.11.22(FN)",
         type: "Team",
         venue: "TBA",
         time: "TBA",
@@ -3994,7 +3994,7 @@ export const EventDetails = [
       },
       {
         name: "Circuit Buzz",
-        date: "19 Nov 2022(FN)",
+        date: "19.11.22(AN)",
         type: "Team",
         venue: "TBA",
         time: "TBA",
@@ -4043,7 +4043,7 @@ export const EventDetails = [
       },
       {
         name: "Obstacle Mania ",
-        date: "19 Nov 2022(AN & FN)",
+        date: "18.11.22(FN&AN)",
         type: "Team",
         venue: "TBA",
         time: "TBA",

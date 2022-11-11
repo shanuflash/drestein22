@@ -128,7 +128,9 @@ const Footer = () => {
                 <Avatar size="sm" src={`/static/images/avatar/1.jpg`} />
               }
             >
-              Shanu S
+            
+            Bharath S
+              
             </Chip>
           </a>
           <Chip
@@ -138,7 +140,7 @@ const Footer = () => {
               <Avatar size="sm" src={`/static/images/avatar/1.jpg`} />
             }
           >
-            Bharath S
+         Shanu S
           </Chip>
           <Chip
             size="md"
