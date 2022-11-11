@@ -3935,7 +3935,7 @@ export const EventDetails = [
        round3title:"Spectrum Analysis  ",
        round3:"At the time of events a circuit will be shown to each team.  Circuits ideas and components will be provided. The team that shows the spectrum analysis (output) first will be considered as the winner. (On a first-come, first-served basis.)  On the basis of time management and relevant explanation, participants will be selected.  The winners will be declared on the basis of the shortest time period of completion of the task. Note:  No mobile phones are allowed during the participation of the event.No discussion or sharing of answers among the participants . If any malpractices are noticed, then the term will be disqualified from all the events.The participants should be aware of the concepts of integrated circuits, for example 555 timer",
         tag: "EVENT",
-        logo: "ece1.jpeg",
+        logo: "EventsAssets/ece1.webp",
         staff: [
           {
             name: "Ms. G Keerthiga ",
@@ -3990,7 +3990,7 @@ export const EventDetails = [
          round3title:"FIND ME IF YOU CAN ? ",
          round3:"The image of external/ internal modules supported by various development boards (Arduino,Raspberry Pi,ESP) will be displayed.participants need to identify the name of the module. Points will be awarded according to the weightage of the questions.winners will be selected based on scoring more points",
         tag: "EVENT",
-        logo: "ece2.jpeg",
+        logo: "EventsAssets/ece2.webp",
         staff: [
           {
             name: "Dr.A.Saranya  ",
@@ -4042,7 +4042,7 @@ export const EventDetails = [
         round2title:"A circuit diagram will be displayed for 2 minutes. Next 3 minutes will be given to reproduce ( implement) the circuit diagram using breadboard and component, which will be provided.Depending on the circuit's fulfillness ( correct component placed in correct position) terms will be forwarded to the next round",
         round3:"TECH CHARADES 2.0 ",
         round3:"Each team has to pick  their questions from the question pool bowl. Selected circuits will be displayed for each team for 2 minutes . Next 3 minutes will be given to reproduce ( implement) the circuit diagram using breadboard and component, which will be provided.Depending on the circuit's fulfillness ( correct component placed in correct position) terms will be forwarded to the next round",
-        logo: "ece3.jpeg",
+        logo: "EventsAssets/ece3.webp",
         staff: [
           {
             name: "Dr.S. kanagamalliga  ",
@@ -4097,7 +4097,7 @@ export const EventDetails = [
           round3:"The 3rd round will be a hardcore off-road track with various hindrance and obstacles to tackle (Ramp, Gravel, uneven paths). The robot which avoids the hindrances and work efficiently will be announced as WINNER",
           tag: "EVENT",
       
-        logo: "ece4.jpeg",
+        logo: "EventsAssets/ece4.webp",
         staff: [
           {
             name: "Ms.K Padma Priya  ",

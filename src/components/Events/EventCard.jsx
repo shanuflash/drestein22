@@ -111,6 +111,7 @@ const EventCard = ({
             src={`${logo}`}
             style={{
               background:'white',
+              color:'black',
               borderRadius: "30px",
               maxHeight: "111px",
               width: "111px",
