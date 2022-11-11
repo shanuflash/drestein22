@@ -4399,16 +4399,17 @@ export const EventDetails = [
           }
       },
       {
+        name: "Data Analysis using Machine Learning in MATLAB",
         logo: "/EventsAssets/ecew4.webp",
         tag: "WORKSHOP",
         color: "0, 70, 90",
         mode: "TBA",
         venue: "TBA",
-          company: "Renault Nissan Technology & Business Centre ,Chennai, India",
+        company: "Renault Nissan Technology & Business Centre ,Chennai, India",
   
           day1: {
               date: "09/11/22",
-              time: "10.00-3.00",
+              time: "10am -3pm",
               mode: "online",
               venu: "TBA",
               topic: "Implement and test your algorithms. Develop the computational codes and debugging.Use a large database of built in algorithms.  Process still images and create simulation videos.Symbolic computation. Call external libraries.Applications",
