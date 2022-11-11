@@ -6,7 +6,7 @@ import { useState } from "react";
 import AdminPannel from "./ScanUsers";
 import { Outlet } from "react-router";
 import styled from "styled-components";
-
+import { UserProvider } from "../contexts/AdminContext";
 const Admin = styled.div`
   background-color: #ffffff;
   height: 100vh;
@@ -20,10 +20,13 @@ function AdminMain() {
     navigate("/Admin/scanusers");
   }, []);
   return (
+<UserProvider>
+
     <Admin>
       <ResponsiveAppBar />
       <Outlet />
     </Admin>
+</UserProvider>
   );
 }
 

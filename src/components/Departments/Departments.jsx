@@ -56,8 +56,8 @@ function Departments() {
 
           if (data.title === "Paper Presentation") {
             return (
-              <a href="PaperPresentation.pdf" target="_blank">
-                <SpacialEventsCard key={i} {...data} />
+              <a href="PaperPresentation.pdf" key={i} target="_blank">
+                <SpacialEventsCard  {...data} />
               </a>
             );
           }

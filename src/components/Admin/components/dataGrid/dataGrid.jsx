@@ -71,7 +71,6 @@ export default function ConditionalValidationGrid() {
 
   useEffect(() => {
    setload(true)
-   console.log('dw')
    setPaidusers(RegUsers)
    setload(false)
   },[RegUsers]);
@@ -375,7 +374,7 @@ export default function ConditionalValidationGrid() {
           const total = res
             .map((item) => item.cashtobePaid)
             .reduce((a, b) => a + b, 0);
-          console.log("total", total);
+
           setTotal(total);
         }}
       />
