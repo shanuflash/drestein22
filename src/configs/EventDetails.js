@@ -245,6 +245,7 @@ export const EventDetails = [
 
         color: "0, 70, 90",
         company: "Vulnerability Synopsys pvt Limited & Dead Bed Cyber Solutions",
+        link: "https://docs.google.com/forms/d/e/1FAIpQLScn1PKWf0lwBPBjdTpW9Cka71dOTFMljQRK-l1s6G98ihCjHg/viewform",
         day1: {
           date: "14.11.2022 and 15.11.2022(FN & AN)",
           time: "9:00 - 3:00pm",
@@ -284,8 +285,8 @@ export const EventDetails = [
             {
               name: "Harini G",
               year: "III",
-              phone: "",
-              email: "aadhithya3210@gmail.com",
+              phone: "harinig025@gmail.com",
+              email: "",
             },
             {
               name: "Sugavarathan",
@@ -353,6 +354,7 @@ export const EventDetails = [
         tag: "WORKSHOP",
         color: "0, 70, 90",
         company: "NA",
+        link: "https://docs.google.com/forms/d/e/1FAIpQLSdZJpUE7AtrSvTuiaZDnjPwdUEERfCL_sdC7oRms9gE_GtmMQ/viewform",
         day1: {
           date: "16.11.2022",
           time: "9:00 -3.00pm",
@@ -436,6 +438,7 @@ export const EventDetails = [
         tag: "WORKSHOP",
         color: "0, 70, 90",
         company: "SIFY",
+        link: "https://docs.google.com/forms/d/e/1FAIpQLSdYJUy5c4a9ffCvZkTCf6IGDeCeNbeB9C0DraxVMTjqsmew9A/viewform?usp=sf_link",
         day1: {
           date: "16.11.2022 - FN",
           time: "9:00 -3.00pm",
@@ -748,6 +751,7 @@ export const EventDetails = [
         mode: "OFFLINE",
         color: "0, 70, 90",
         company: "Connect Infosystems",
+        link: "https://docs.google.com/forms/d/11z1tTzRXVvKzKEaIiYMvsoYGGWR0FGrhzSNc2zqMoqY/viewform?edit_requested=true",
         day1: {
           date: "16/11/2022-FN",
           time: "10am-1pm",
@@ -797,6 +801,7 @@ export const EventDetails = [
         tag: "WORKSHOP",
         color: "0, 70, 90",
         company: "ARENA ANIMATION",
+        link: "https://docs.google.com/forms/d/1Mhii3T4faZ0fJgs5Mb8AykTcMazNWpeOx65JBF49N6A/viewform?edit_requested=true",
         day1: {
           date: "17.11.2022 (FN)",
           time: "10am-12pm",
@@ -1036,6 +1041,7 @@ export const EventDetails = [
         logo: "/EventsAssets/agriw1.webp",
         tag: "WORKSHOP",
         color: "0, 70, 90",
+        link: "https://docs.google.com/forms/d/1-gVFyphWaQVOP14-3JLADirN3hVb8_IzOHioWvT_pDQ/edit",
         day1: {
           date: "16/11/2022-FN",
           time: "FORENOON",
@@ -1088,6 +1094,7 @@ export const EventDetails = [
         color: "0, 70, 90",
         company: "Agricultural Engineering Department, CIT Nagar",
 
+        link: "https://docs.google.com/forms/d/19O63Hn18DXjSDck9EUhNJdErwbXrRJo1-nrC5bRzJs4/edit",
         day1: {
           date: "15/11/2022-FN",
           time: "FORENOON",
@@ -1426,8 +1433,8 @@ export const EventDetails = [
           logo: "/EventsAssets/aiw1.webp",
           tag: "WORKSHOP",
           color: "0, 70, 90",
-
-        day1: {
+          link: "https://docs.google.com/forms/d/e/1FAIpQLSelczRKs8BpNXoFTGMMwqUpuAqHabroYLMm-QcYfsBiipP39A/viewform",
+          day1: {
           date: "15.11.2022 ",
           time: "9.00-3.00pm",
           mode: "OFFLINE",
@@ -1495,6 +1502,7 @@ export const EventDetails = [
           tag: "WORKSHOP",
           color: "0, 70, 90",
   
+          link: "https://docs.google.com/forms/d/e/1FAIpQLSe4vrqp0lMhP4C7fE2NtrH8WRhZGUpWk1tX-Z2NGa5AdJ3MNQ/viewform",
           day1: {
               date: "16.11.2022 ",
               time: "9.00-3.00",
@@ -1593,6 +1601,7 @@ export const EventDetails = [
           tag: "WORKSHOP",
           color: "0, 70, 90",
   
+          link: "https://docs.google.com/forms/d/e/1FAIpQLSdvQNXVEr5jPksC-x-uk3Cs7sOuB0uTgwYr1qGsn9Brh-UCFw/viewform",
           day1: {
               date: "14.11.2022",
               time: "9.00am-3.00pm",
@@ -1969,6 +1978,7 @@ export const EventDetails = [
         tag: "WORKSHOP",
         color: "0, 70, 90",
 
+        link: "https://docs.google.com/forms/d/e/1FAIpQLSdC8D_Y4JORLf63iBdP7MXhhIbPEVyYzR93wThTgrcVnf3tPQ/viewform",
         day1: {
           date: "07/11/2022-FN",
           time: "12:00pm -3.00pm",
@@ -2028,6 +2038,7 @@ export const EventDetails = [
         color: "0, 70, 90",
         company: " Prashan Medical Technologies",
 
+        link: "https://docs.google.com/forms/d/e/1FAIpQLSdC8D_Y4JORLf63iBdP7MXhhIbPEVyYzR93wThTgrcVnf3tPQ/viewform",
         day1: {
           date: "16/11/2022-FN",
           time: "12pm-3pm",
@@ -2293,6 +2304,7 @@ export const EventDetails = [
         tag: "WORKSHOP",
         color: "0, 70, 90",
 
+        link: "https://forms.gle/AioJcqi5zaAsBPoq8",
         day1: {
           date: "14/11/2022-FN",
           time: "12.00-3.00",
@@ -2331,6 +2343,7 @@ export const EventDetails = [
         color: "0, 70, 90",
         company: " Infinity PMC Solutions, Chennai",
 
+        link: "https://forms.gle/8J461Gdb2nLSpDu26",
         day1: {
           date: "15/11/2022-FN",
           time: "TBA",
@@ -2381,6 +2394,7 @@ export const EventDetails = [
         color: "0, 70, 90",
         company: " Infinity PMC Solutions, Chennai",
 
+        link: "https://forms.gle/JusqDsmgFhVH8KrQ6",
         day1: {
           date: "16/11/2022-FN",
           time: "TBA",
@@ -2619,6 +2633,7 @@ export const EventDetails = [
         tag: "WORKSHOP",
         color: "0, 70, 90",
 
+        link: "https://forms.gle/xcEjNELQwCrbjXfa9",
         day1: {
           date: "08/11/2022",
           time: "TBA",
@@ -2892,6 +2907,7 @@ export const EventDetails = [
         tag: "WORKSHOP",
         color: "0, 70, 90",
 
+        link: "https://docs.google.com/forms/d/e/1FAIpQLSe76cAbqdHBrRuOLqQjPB1YnjtkdfU7RRp9oTvPbGj_WdIYRw/viewform?usp=sf_link",
         day1: {
           date: "16/11/2022",
           time: "TBA",
@@ -3146,6 +3162,7 @@ export const EventDetails = [
         color: "0, 70, 90",
         company: "Ideazone",
 
+        link: "https://forms.gle/Y8YxDuH2GC1ziKG56",
         day1: {
           date: "",
           time: "",
@@ -3200,6 +3217,7 @@ export const EventDetails = [
         color: "0, 70, 90",
         company: " J&R industries on robotics",
 
+        link: "https://forms.gle/Y8YxDuH2GC1ziKG56",
         day1: {
           date: "15/11/2022",
           time: "10am-12pm",
@@ -3254,6 +3272,7 @@ export const EventDetails = [
         color: "0, 70, 90",
         company: " Bessel Automation",
 
+        link: "https://forms.gle/Y8YxDuH2GC1ziKG56",
         day1: {
           date: "16/11/2022",
           time: "10am-3pm",
@@ -3349,6 +3368,7 @@ export const EventDetails = [
           ],
         },
       },
+      
     ],
   },
   {
@@ -3543,6 +3563,7 @@ export const EventDetails = [
         mode: "TBA",
         venue: "TBA",
         company: " Knowledge Xchange Community",
+        link: "https://forms.gle/Ds2pnv1AoWTgb1RW7",
         day1: {
           date: "14/11/2022 FN",
           time: "TBA",
@@ -3580,6 +3601,7 @@ export const EventDetails = [
         mode: "TBA",
         venue: "TBA",
 
+        link: "https://forms.gle/jZp6bq3Th32nsQPH7",
         day1: {
           date: "17/11/2022",
           time: "TBA",
@@ -3833,6 +3855,7 @@ export const EventDetails = [
         tag: "WORKSHOP",
         color: "0, 70, 90",
         company: "VEI Technologies Pvt Ltd",
+        link: "https://forms.gle/Y1yaT8ZQzBgYnB3k6",
         day1: {
           date: "15/11/22 to 16/11/22 (FN & AN)",
           time: "TBA",
@@ -4166,6 +4189,7 @@ export const EventDetails = [
         mode: "TBA",
         venue: "TBA",
 
+        link: "http://shorturl.at/deVZ3",
         day1: {
           date: "07/10/22",
           time: "TBA",
@@ -4279,6 +4303,7 @@ export const EventDetails = [
         venue: "TBA",
         company: "IT EXPERT TRAINING",
 
+        link: "https://forms.gle/CHPjnL96gkyRQcKG6",
         day1: {
           date: "08/11/22",
           time: "10.00-3.00",
@@ -4341,6 +4366,7 @@ export const EventDetails = [
         venue: "TBA",
         company: "IT EXPERT TRAINING",
 
+        link: "https://forms.gle/1bufuZaJttSTF44C8",
         day1: {
           date: "09/11/22",
           time: "10.00-3.00",
@@ -4403,6 +4429,7 @@ export const EventDetails = [
         venue: "TBA",
         company: "Towards Technology",
 
+        link: "https://forms.gle/MxwUSnoTJqYdWm1q9",
         day1: {
           date: "09/11/22",
           time: "10.00-3.00",
@@ -4465,6 +4492,7 @@ export const EventDetails = [
         venue: "TBA",
         company: "Renault Nissan Technology & Business Centre ,Chennai, India",
 
+        link: "https://forms.gle/GMCc9pXLRm5YKEJw8",
         day1: {
           date: "09/11/22",
           time: "10am -3pm",
@@ -4525,6 +4553,7 @@ export const EventDetails = [
         venue: "TBA",
         company: "ADCOM AND WOW ACADEMY",
 
+        link: "https://forms.gle/ivxCuJwffXKSW3FZ8",
         day1: {
           date: "08/11/22",
           time: "10.00-3.00",
@@ -4830,6 +4859,7 @@ export const EventDetails = [
         tag: "WORKSHOP",
         color: "0, 70, 90",
 
+        link: "https://forms.gle/8akqDVML9TzFVuuS8",
         day1: {
           date: "14/11/2022-FN",
           time: "TBA",
@@ -4892,6 +4922,7 @@ export const EventDetails = [
         tag: "WORKSHOP",
         color: "0, 70, 90",
 
+        link: "https://forms.gle/hex4mX5iukGs3WPr5",
         day1: {
           date: "08/11/2022-FN",
           time: "TBA",
@@ -4954,6 +4985,7 @@ export const EventDetails = [
         tag: "WORKSHOP",
         color: "0, 70, 90",
 
+        link: "https://docs.google.com/forms/d/e/1FAIpQLSd3UWgsop4GgM0qTeb-wcnIJehwPlm0z22xoj6TB4Eb_wmpcQ/viewform",
         day1: {
           date: "09/11/2022",
           time: "TBA",
