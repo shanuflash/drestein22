@@ -8,7 +8,7 @@ import { Outlet } from "react-router";
 import styled from "styled-components";
 
 const Admin = styled.div`
-  background-color: white;
+  background-color: #ffffff;
   height: 100vh;
   width: 100vw;
 `;

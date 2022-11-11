@@ -2,40 +2,43 @@ import React, { useEffect, useState } from "react";
 import "./counter.css";
 import CountUp from "react-countup";
 import VisibilitySensor from "react-visibility-sensor";
+import { useContext } from "react";
+import { UserContext } from "../Admin/contexts/AdminContext";
 import { collection, doc, getDocs } from "firebase/firestore";
 import { onSnapshot } from "firebase/firestore";
 import { db } from "../../configs/Firebase.config";
 const Counter = ({ ...rest }) => {
   const [viewPortEntered, setViewPortEntered] = useState(false);
   const [users, setUsers] = useState(300);
-
+  const {RegUsers} = useContext(UserContext)
   useEffect(() => {
-    functionfetch();
-  }, []);
-  const docRef = collection(db, "RegisteredPeople");
+     setUsers(300+RegUsers.length)
+  }, [RegUsers]);
+  
+  // const docRef = collection(db, "RegisteredPeople");
 
-  const colref = collection(db, "RegisteredPeople");
-  // const q = query(colref, where("cashPaid", "==", false));
+  // const colref = collection(db, "RegisteredPeople");
+  // // const q = query(colref, where("cashPaid", "==", false));
 
-  const promice = new Promise((resolve, reject) => {
-    onSnapshot(colref, (snapshot) => {
-      let books = [];
-      console.log(snapshot.docs);
-      snapshot.docs.forEach((doc) => {
-        books.push({ ...doc.data(), id: doc.id });
-      });
-      // console.log(books)
-      console.log(books);
-      // setUsers(pre=>pre+books.length);
-      resolve(books);
-    });
-  });
-  const functionfetch = async () => {
-    const response = await promice;
+  // const promice = new Promise((resolve, reject) => {
+  //   onSnapshot(colref, (snapshot) => {
+  //     let books = [];
 
-    console.log(response.length);
-    setUsers(300 + response.length);
-  };
+  //     snapshot.docs.forEach((doc) => {
+  //       books.push({ ...doc.data(), id: doc.id });
+  //     });
+  //     // console.log(books)
+
+  //     // setUsers(pre=>pre+books.length);
+  //     resolve(books);
+  //   });
+  // });
+  // const functionfetch = async () => {
+  //   const response = await promice;
+
+  //   console.log(response.length);
+  //   setUsers(300 + response.length);
+  // };
 
   return (
     <div className="counter">

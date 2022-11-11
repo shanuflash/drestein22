@@ -16,9 +16,11 @@ import { QrReader } from "react-qr-reader";
 
 import styled from "styled-components";
 
-import Switch from "@mui/material/Switch";
-
+import { useContext } from "react";
+import { UserContext } from "../contexts/AdminContext";
 import UserInfoCard from "./UserInfoCard";
+import Loading from "../../../Loading";
+
 const AdminPanelHead = styled.div`
   display: flex;
   justify-content: space-between;
@@ -48,8 +50,16 @@ function AdminPannel() {
   const [checked, setChecked] = useState(false);
   const currentpaid = useRef(false);
   const [open, setOpen] = useState(false);
-
+  
   const [load, setload] = useState(false);
+  const [RegsFullUser,setRegFullUser] = useState([])
+  const {RegUsers,DataLoad} = useContext(UserContext)
+  const [userState,setuserstate] = useState('')
+  const [id,setid] = useState('')
+  useEffect(()=>{
+  setRegFullUser(RegUsers)
+  },[RegUsers])
+
 
   const qrRef = useRef(null);
 
@@ -65,16 +75,42 @@ function AdminPannel() {
   const onScanfile = () => {
     qrRef.current.openImageDialog();
   };
-  const handleChange = (e) => {
-    // console.log(e.target.value);
+
+  // function fetchuser(res){
+  //   return new Promise((resolve,reject)=>{
+  //     const a = RegsFullUser.filter(data=>{
+  //       console.log(data.id===res)
+  //      if(data.id === res){ return data }
+  //   }) 
+  //   setRegistredPeople(a)
+  //   resolve(a)
+  //   }).catch(e=>{
+  //     toast.error(e)
+  //   })
+  // }
+
+  const handleChange = async(e) => {
+
     try {
       const docRef = doc(db, "RegisteredPeople", `${e.target.value}`);
       onSnapshot(docRef, (snapshot) => {
         setRegistredPeople([snapshot.data()]);
         setData(e.target.value);
       });
-    } catch (e) {}
+    } catch (e) {
+        toast.error('User not found ')
+    }
   };
+// const fetchSingleUser=(res)=>{
+//   const a = RegsFullUser.filter(data=>{
+//     console.log(data.id===res)
+//    if(data.id === res){ return data }
+// }) 
+// setRegistredPeople(a)
+// }
+
+
+
 
   return (
     <AdminPanelHead>
@@ -114,20 +150,20 @@ function AdminPannel() {
         </p>
 
         <QrReader
-          onResult={(result, error) => {
-            if (!!result) {
-              const res = result?.text.substr(54);
-              console.log(res);
+          onResult={async(result, error) => {
 
-              try {
+            if (!!result) {
+              const res = result?.text.substr(25);
+              setuserstate(res);
                 const docRef = doc(db, "RegisteredPeople", `${res}`);
                 onSnapshot(docRef, (snapshot) => {
                   setRegistredPeople([snapshot.data()]);
                   setData(res);
                 });
-              } catch (e) {
-                toast.error("user not exist");
-              }
+
+
+                console.log(RegsFullUser)
+
             }
 
             if (!!error) {

@@ -12,7 +12,7 @@ import PrivateRoute from "./RequireAuth";
 import SignIn from "./components/Admin/components/AdminSign";
 import AdminMain from "./components/Admin/components/AdminMain";
 
-import UnPaidUsers from "./components/Admin/components/UnpaidUsers";
+
 import AdminPannel from "./components/Admin/components/ScanUsers";
 import { UserProvider } from "./components/Admin/contexts/AdminContext";
 import SingleUserPage from "./components/Admin/components/SingleUserPage";
@@ -48,7 +48,7 @@ function App() {
                       path="users"
                       element={<ConditionalValidationGrid />}
                     />
-                    <Route path="unpaid" element={<UnPaidUsers />} />
+
                     <Route path="scanusers" element={<AdminPannel />} />
                     <Route path="profile" element={<AdminProfile />} />
                   </Route>
