@@ -1041,7 +1041,7 @@ export const EventDetails = [
     ],
     workshopslist: [
       {
-        name: "Field Demonstration Of Drone Sprayer",
+        name: "Drones In Agriculture",
         logo: "/EventsAssets/agriw1.webp",
         tag: "WORKSHOP",
         color: "0, 70, 90",
