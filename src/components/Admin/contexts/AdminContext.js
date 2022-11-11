@@ -2,7 +2,7 @@ import { getAuth, onAuthStateChanged } from "firebase/auth";
 
 import { createContext, useEffect, useState } from "react";
 import { db } from "../../../configs/Firebase.config";
-
+import countapi from 'countapi-js';
 import { collection, getDocs, onSnapshot, snapshotEqual } from "firebase/firestore";
 import { toast } from "react-toastify";
 
@@ -46,20 +46,21 @@ useEffect(()=>{
 
   // const View  = fetch('https://api.countapi.xyz/hit/drestein.in')
   // .then(response=>console.log(response))
+  // countapi.visits('drestein.in').then((result) => {
+  //   setVisitedPeople(result.value)
+  // });
+  // countapi.get('drestein.in', 'test').then((result) => { console.log(result) });
 
 },[])
 
-
-useEffect(()=>{
-console.log({vicitedProple})
-},[vicitedProple])
   return (
     <UserContext.Provider
       value={{
         loggedIn,
         setLoggedIn,
         RegUsers,
-        DataLoad
+        DataLoad,
+        vicitedProple
       }}
     >
       {props.children}

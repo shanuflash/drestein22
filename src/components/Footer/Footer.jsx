@@ -12,8 +12,18 @@ import {
   FaInstagram,
   FaPinterest,
 } from "react-icons/fa";
-
+import { useContext } from "react";
+import { UserContext } from "../Admin/contexts/AdminContext";
+import { useEffect } from "react";
+import { useState } from "react";
 const Footer = () => {
+  const {vicitedProple}  = useContext(UserContext)
+  const [views,setViews] = useState(vicitedProple)
+
+  useEffect(()=>{
+    setViews(vicitedProple)
+  },[vicitedProple])
+
   const LogoHead = styled.div`
     display: flex;
     width: fit-content;
@@ -73,6 +83,9 @@ const Footer = () => {
             13<sup>th</sup> National level inter collegiate technical and
             management fest
           </div>
+          {/* <div>
+             {vicitedProple}
+          </div> */}
         </div>
         <div className="block">
           <h4 className="heading">CO-ORDINATORS</h4>
