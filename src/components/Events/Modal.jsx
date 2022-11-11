@@ -351,10 +351,10 @@ const Modal = ({ open, setOpenModal }) => {
 
             {eventObject?.day2 ? (
               <>
+                <h1 className="title">Day 2:</h1>
                 {eventObject.company ? (
                   <h4>Company Name : {eventObject.company}</h4>
                 ) : null}
-                <h1 className="title">Day 2:</h1>
                 <p className="desc">Date: {eventObject.day2.date}</p>
 
                 {eventObject.day2.topic && (

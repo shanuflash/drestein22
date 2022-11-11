@@ -74,7 +74,7 @@ export const EventDetails = [
           "Only one member per team .Any language can be used .Solve very easy difficulty code snippets to advance to next round .Code should make you win the game that is provided. In case of malpractice, team will be disqualified",
         round2title: "Red wedding",
         round2:
-          " Top 8 teams in this round .Same team member . Any language can be used . Solve basic/easy difficulty code snippets to advance to next round .Code should be accurate in order to win the game",
+          "Top 8 teams in this round .Same team member . Any language can be used . Solve basic/easy difficulty code snippets to advance to next round .Code should be accurate in order to win the game",
         round3title: "Dracarys",
         round3:
           "Top 4 teams in this round .Same team member .Any language can be used .Solve medium difficulty code snippets to win .Code should be perfect to conquer the final game",
