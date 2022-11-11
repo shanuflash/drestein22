@@ -3368,7 +3368,62 @@ export const EventDetails = [
           ],
         },
       },
-      
+      {
+        name: "Additive Manufacturing with FDM",
+        logo: "/EventsAssets/mechw4.webp",
+        tag: "WORKSHOP",
+        color: "0, 70, 90",
+        company: "National institute of Electronics and Information Technology",
+        mode : "ONLINE",
+        link: "https://forms.gle/Y8YxDuH2GC1ziKG56",
+        day1: {
+          date: "17/11/2022",
+          time: "10am-3pm",
+          resource: [
+            {
+              name: "Mr.Leela Krishnan E",
+              desig: "Senior Consultant",
+              phone: 9176030058,
+              email: "leelakrishnan@calicut.nielit.in",
+            },
+          ],
+
+          staff: [
+            {
+              name: "Mr. Jerome Nithin Gladson",
+              desig: "Assistant Professor",
+              phone: 7708940279,
+              email: "jeromenithin gladson@saveetha.ac.in",
+            },
+          ],
+          student: [
+            {
+              name: "K Umesh",
+              year: "IV",
+              phone: 9361440249,
+              email: "umeshsec2k@gmail.com",
+            },
+            {
+              name: "Deepak ganesh",
+              year: "IV",
+              phone: 9789333959,
+              email: "giridharan20026@gmail.com",
+            },
+            {
+              name: "Mukku Manya Reddy",
+              year: "III",
+              phone: 7995338421,
+              email: "manyareddy2002@gmail.com",
+            },
+            {
+              name: "Praveen",
+              year: "II",
+              phone: 7358244067,
+              email: "arune1903@gmail.com",
+            },
+          ],
+        },
+      },
     ],
   },
   {
@@ -4091,7 +4146,7 @@ export const EventDetails = [
           },
           {
             name: "Ms.V Subashree  ",
-            desig: " Associate Professor",
+            desig: " Associate Professor",
             phone: 9994365720  ,
             email: "subashreev@saveet ha.ac.in  ",
           },  
