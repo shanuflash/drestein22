@@ -3925,6 +3925,7 @@ export const EventDetails = [
         venue: "TBA",
         time: "TBA",
         members: "2",
+        color: "0, 1, 38",
         rules: "",
         round1title:" Mind Sweeper-The Tech Quiz ",       
         round1:
@@ -3981,6 +3982,7 @@ export const EventDetails = [
         time: "TBA",
         members: "1-2",
         rules: "",
+        color: "0, 1, 38",
         round1title:"RESISTHON ",
         round1:
           "It is an individual game. The value of the resistor will be given. Participants need to identify the respective colour code for the given resistor.Those who are giving more correct answers, they will be shortlisted for the next round",
@@ -4035,6 +4037,7 @@ export const EventDetails = [
         time: "TBA",
         members: "2",
         rules: "",
+        color: "0, 1, 38",
         round1title:"KNOWLEDGE BLOW ",
         round1:
           "Time for the event is 2 mins. Each team can have 2 members. The participants try to write the maximum number of components, technical terms (such as ground, connecting wire etc) related to electronics circuits etc.  The team which has least count of technical terms will not be forward to the next round",
@@ -4082,6 +4085,7 @@ export const EventDetails = [
       {
         name: "Obstacle Mania ",
         date: "19 Nov 2022(AN & FN)",
+        color: "0, 1, 38",
         type: "Team",
         venue: "TBA",
         time: "TBA",
