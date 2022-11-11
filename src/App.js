@@ -41,7 +41,7 @@ function App() {
                 <Route path="events" element={<Events />} />
                 <Route path="Admin/login" element={<SignIn />} />
                 <Route path="*" element={<h1>page not found</h1>} />
-                <Route path="user/:userid" element={<SingleUserPage />} />
+                <Route path="user/:userid" element={<UserProvider><SingleUserPage /></UserProvider>} />
                 <Route path="/Admin" element={<PrivateRoute />}>
                   <Route path="/Admin" element={<AdminMain />}>
                     <Route

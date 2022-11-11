@@ -22,9 +22,7 @@ const Modal = ({ open, setOpenModal }) => {
   const splitworktopicd1 = eventObject?.day1?.topic?.split("\n");
   const splitworktopicd2 = eventObject?.day2?.topic?.split("\n");
 
-  useEffect(() => {
-    console.log("this is", eventObject);
-  }, [open]);
+
   if (!open) return null;
   return (
     <div className="overlay" onClick={() => setOpenModal((prev) => !prev)}>

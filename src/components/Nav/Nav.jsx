@@ -132,7 +132,7 @@ const MobileNavHeader = styled.div`
 
 function Nav() {
   const navstyle = {
-    "@media (max-width: 500px)": {
+    "@media (maxWidth: 500px)": {
       top: "-80px",
     },
   };

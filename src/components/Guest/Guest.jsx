@@ -163,6 +163,7 @@ function Guest() {
               transition={{
                 staggerChildren: 0.5,
               }}
+              key={data.name}
             >
               <GuestImg as={motion.img} variants={text} src={data.src} />
               <GuestName
@@ -170,6 +171,9 @@ function Guest() {
                 initial="offscreen"
                 whileInView="onscreen"
                 varients={text}
+                style={{
+                  padding:'5px'
+                }}
               >
                 {data.name}
               </GuestName>
@@ -185,8 +189,9 @@ function Guest() {
               >
                 <img
                   src="OtherAssets/tcs.webp"
-                  style={{ borderRadius: "1rem" }}
+                  style={{ borderRadius: "1rem" ,marginLeft:'10px'}}
                   alt="tcs_logo"
+
                 />
 
                 <div style={{ textAlign: "left" }}>

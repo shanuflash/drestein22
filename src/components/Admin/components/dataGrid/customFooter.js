@@ -16,7 +16,7 @@ import ContentCopyIcon from "@mui/icons-material/ContentCopy";
 function CustomFooterTotalComponent(props) {
   const [message, setMessage] = React.useState("");
   const apiRef = useGridApiContext();
-  console.log("this pops", props);
+
 
   const handleRowClick = (params) => {
     setMessage(params.row.id);
