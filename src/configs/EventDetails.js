@@ -1156,7 +1156,7 @@ export const EventDetails = [
         tagline: "Code Treasure Hunt",
         date: "18 Nov 2022(FN)",
         type: "solo",
-        venue: "TBA",
+        venue: "AI&DS department",
         time: "9:30 - 12:30 pm",
         members: "2",
         rules:
@@ -1207,7 +1207,7 @@ export const EventDetails = [
         name: "Shark Tank",
         date: "18 Nov 2022(AN)",
         type: "3-4",
-        venue: "TBA",
+        venue: "AI&DS department",
         time: "1:00 - 4:00pm",
         members: "1-2",
         rules:
@@ -1267,7 +1267,7 @@ export const EventDetails = [
         name: "Memesrus",
         date: "19 Nov 2022(AN)",
         type: "Max 2",
-        venue: "TBA",
+        venue: "AI&DS department",
         time: "12:300pm - 3:30pm",
         members: "2",
         rules:
@@ -1327,7 +1327,7 @@ export const EventDetails = [
         name: "Web Con",
         date: "19 Nov 2022(FN)",
         type: "Max 3",
-        venue: "TBA",
+        venue: "AI&DS department",
         time: "9am-12pm",
         members: "1-3",
         rules:
@@ -1375,7 +1375,7 @@ export const EventDetails = [
         name: "Data Hunt",
         date: "18 Nov 2022(AN)",
         type: "2 member",
-        venue: "TBA",
+        venue: "AI&DS department",
         time: "1pm-4pm",
         members: "2",
         rules:
@@ -1442,6 +1442,7 @@ export const EventDetails = [
           date: "15.11.2022 ",
           time: "9.00-3.00pm",
           mode: "OFFLINE",
+          venue: "AI&DS department",
           topic:
             "Introduction to robot anatomy links , joints and types or robots. Kinematic modeling of robot.Forward kinematics using robo analyser .Inverse kinematics using robot analyser .Introduction to robo dk .Hands on with 6 axis industrial robot",
           resource: [
@@ -1511,6 +1512,7 @@ export const EventDetails = [
           date: "16.11.2022 ",
           time: "9.00-3.00",
           mode: "OFFLINE",
+          venue: "AI&DS department",
           topic: "Designing the 3D models using Maya ",
           resource: [
             {
@@ -1553,6 +1555,7 @@ export const EventDetails = [
           date: "17.11.2022 ",
           time: "9.00-3.00pm",
           mode: "OFFLINE",
+          venue: "AI&DS department",
           topic: "Developing 2D/3D game using Unity/Unreal ",
           resource: [
             {
@@ -1603,6 +1606,7 @@ export const EventDetails = [
           date: "14.11.2022",
           time: "9.00am-3.00pm",
           mode: "OFFLINE",
+          venue: "AI&DS department",
           topic:
             "Introduction to Fusion 360 .Introduction to 3D Printing.Introduction to cura software  ",
           resource: [
@@ -1652,6 +1656,7 @@ export const EventDetails = [
           date: "15.11.2022",
           time: "9.00-3.00pm",
           mode: "OFFLINE",
+          venue: "AI&DS department",
           topic:
             "Hands on training, demonstration to the 3D printing components ",
           resource: [
@@ -3366,7 +3371,7 @@ export const EventDetails = [
         tag: "WORKSHOP",
         color: "0, 70, 90",
         company: "National institute of Electronics and Information Technology",
-        mode : "ONLINE",
+        mode: "ONLINE",
         link: "https://forms.gle/Y8YxDuH2GC1ziKG56",
         day1: {
           date: "17/11/2022",
@@ -4004,7 +4009,7 @@ export const EventDetails = [
         name: "ElectroBlitz ",
         date: "18 Nov 2022(FN)",
         type: "Team",
-        venue: "TBA",
+        venue: "ECE GF SH 1 & ECE GF SH 2",
         time: "TBA",
         members: "2",
         color: "0, 1, 38",
@@ -4058,9 +4063,10 @@ export const EventDetails = [
 
       {
         name: "Cryosat",
-        date: "18 Nov 2022(AN)",
+        date: "19 Nov 2022(AN)",
         type: "Team",
-        venue: "TBA",
+        venue: "ECE GF SH 1 & ECE GF SH 2",
+
         time: "TBA",
         members: "1-2",
         rules: "",
@@ -4116,17 +4122,18 @@ export const EventDetails = [
         date: "19 Nov 2022(FN)",
         type: "Team",
         tag: "EVENT",
-        venue: "TBA",
+        venue: "ECE GF SH 1 & ECE GF SH 2",
         time: "TBA",
         members: "2",
-        rules: " A team should consists of two members in a team.No mobile phones are allowed during the participation of the event.No discussion or sharing of answers among the teams.If any malpractices are noticed then the team will be disqualified",
+        rules:
+          " A team should consists of two members in a team.No mobile phones are allowed during the participation of the event.No discussion or sharing of answers among the teams.If any malpractices are noticed then the team will be disqualified",
         color: "0, 1, 38",
         round1title: "KNOWLEDGE BLOW ",
         round1:
           " Time for the event is 2 mins. Each team can have 2 members. The participants try to write the maximum number of components, technical terms(such as ground, connecting wire etc) related to electronics circuits etc. The team which has least count of technical terms will not be forward to the next round",
-        round2: " A circuit diagram will be displayed for 2 minutes. Next 3 minutes will be given to reproduce ( implement) the circuit diagram using breadboard and component, which will be provided.Depending on the circuit's fulfillness ( correct component placed in correct position) terms will be forwarded to the next round",
-        round2title:
-          "TECH CHARADES",
+        round2:
+          " A circuit diagram will be displayed for 2 minutes. Next 3 minutes will be given to reproduce ( implement) the circuit diagram using breadboard and component, which will be provided.Depending on the circuit's fulfillness ( correct component placed in correct position) terms will be forwarded to the next round",
+        round2title: "TECH CHARADES",
         round3title: "TECH CHARADES 2.0 ",
         round3:
           "Each team has to pick  their  questions from the question pool bowl. Selected circuits will be displayed for each team for 2 minutes . Next 3 minutes will be given to reproduce ( implement) the circuit diagram using breadboard and component, which will be provided.Depending on the circuit's fulfillness ( correct component placed in correct position) terms will be forwarded to the next round",
@@ -4171,7 +4178,7 @@ export const EventDetails = [
         date: "19 Nov 2022(AN & FN)",
         color: "0, 1, 38",
         type: "Team",
-        venue: "TBA",
+        venue: "ECE GF SH 1 & ECE GF SH 2",
         time: "TBA",
         members: "1-3",
         rules:
@@ -4218,7 +4225,7 @@ export const EventDetails = [
           {
             name: "Suria Prasanth M  ",
             year: "III",
-            phone: 6382597804,
+            phone: 9361539039,
             email: "suriaprasanth24@gmail.com  ",
           },
           {
@@ -4232,7 +4239,7 @@ export const EventDetails = [
     ],
     workshopslist: [
       {
-        name: "PCB DESIGN AND FABRICATION",
+        name: "PCB Design And Fabrication",
         logo: "/EventsAssets/ecew1.webp",
         tag: "WORKSHOP",
         color: "0, 70, 90",
@@ -4241,16 +4248,17 @@ export const EventDetails = [
 
         link: "http://shorturl.at/deVZ3",
         day1: {
-          date: "07/10/22",
+          date: "14/11/22",
           time: "TBA",
           mode: "offline",
-          venu: "TBA",
+          venue: "Digital LAB ECE 1st Floor",
+
           topic: "HANDS ON EXPERIENCE IN PCB DESIGN AND FABRICATION",
           resource: [
             {
               name: "Dr.Jeffin Gracewell",
               desig: "Associate professor, ECE  ",
-              phone: 8903280025,
+
               email: "jeffingracewelllj@saveetha.c.in",
             },
           ],
@@ -4258,7 +4266,7 @@ export const EventDetails = [
             {
               name: "Dr.Jeffin Gracewell ",
               desig: "Associate Professor  ",
-              phone: 8903280025,
+
               email: "jeffingracewelllj@saveetha.c.in",
             },
             {
@@ -4284,16 +4292,16 @@ export const EventDetails = [
           ],
         },
         day2: {
-          date: "07/10/22",
+          date: "15/11/22",
           time: "TBA",
           mode: "offline",
-          venu: "TBA",
+          venue: "Digital LAB ECE 1st Floor",
           topic: "HANDS ON EXPERIENCE IN PCB DESIGN AND FABRICATION",
           resource: [
             {
               name: "Dr.Jeffin Gracewell",
               desig: "Associate professor, ECE  ",
-              phone: 8903280025,
+
               email: "jeffingracewelllj@saveetha.c.in",
             },
           ],
@@ -4301,7 +4309,51 @@ export const EventDetails = [
             {
               name: "Dr.Jeffin Gracewell ",
               desig: "Associate Professor  ",
-              phone: 8903280025,
+
+              email: "jeffingracewelllj@saveetha.c.in",
+            },
+            {
+              name: "Dr.R Jennie Bharathi",
+              desig: "Associate Professor  ",
+              phone: 9791390383,
+              email: "jenniebharathir@saveetha.ac.in",
+            },
+          ],
+          student: [
+            {
+              name: "Surya S ",
+              year: "III ",
+              phone: 7305711758,
+              email: "suryasagadevan17@gmail.com",
+            },
+            {
+              name: "Lekha M",
+              year: "III  ",
+              phone: 9345569421,
+              email: "lekhalekha1321@gmail.com ",
+            },
+          ],
+        },
+        day3: {
+          date: "16/11/22",
+          time: "TBA",
+          mode: "offline",
+          venue: "Digital LAB ECE 1st Floor",
+
+          topic: "HANDS ON EXPERIENCE IN PCB DESIGN AND FABRICATION",
+          resource: [
+            {
+              name: "Dr.Jeffin Gracewell",
+              desig: "Associate professor, ECE  ",
+
+              email: "jeffingracewelllj@saveetha.c.in",
+            },
+          ],
+          staff: [
+            {
+              name: "Dr.Jeffin Gracewell ",
+              desig: "Associate Professor  ",
+
               email: "jeffingracewelllj@saveetha.c.in",
             },
             {
@@ -4338,17 +4390,17 @@ export const EventDetails = [
 
         link: "https://forms.gle/CHPjnL96gkyRQcKG6",
         day1: {
-          date: "08/11/22",
+          date: "14/11/22",
           time: "10.00-3.00",
           mode: "online",
-          venu: "TBA",
+          venue: "TBA",
+          list: "true",
           topic:
-            "Introduction to Ethical Hacking . Foot printing and Reconnaissance. Scanning Networks.Malware Threats.Sniffing.Denial-of-Service ",
+            "Introduction to Ethical Hacking.\nFoot printing and Reconnaissance.\nScanning Networks.\nMalware Threats.\nSniffing.\nDenial-of-Service",
           resource: [
             {
               name: "Dr.Mohamed Ibrahim ",
               desig: "Founder, Ibby Cyber Security mentor  ",
-              phone: 6385181109,
               email: "ilyas@tripleminfotech.com ",
             },
           ],
@@ -4368,15 +4420,15 @@ export const EventDetails = [
           ],
           student: [
             {
-              name: "Mohammed Hassan M ",
+              name: "Vaishali S",
               year: "IV ",
-              phone: 9944709448,
+              phone: 6382603290,
               email: "mohammedhasan.ece.sec@gmail.com ",
             },
             {
-              name: "J swetha ",
+              name: "Sri Kamatchi S",
               year: "II  ",
-              phone: 8248238746,
+              phone: 7358406893,
               email: "deepaswe2@gmail.com ",
             },
           ],
@@ -4393,11 +4445,13 @@ export const EventDetails = [
 
         link: "https://forms.gle/1bufuZaJttSTF44C8",
         day1: {
-          date: "09/11/22",
+          date: "15/11/22",
           time: "10.00-3.00",
           mode: "online",
-          venu: "TBA",
-          topic: "HANDS ON EXPERIENCE IN PCB DESIGN AND FABRICATION",
+          venue: "TBA",
+          list: "true",
+          topic:
+            '"Computer Vision Made easy with Python"\n computer vision overview\n image operations\n handling Videos\n identifying colors\n Machine learning in computer vision\n Face Detections',
           resource: [
             {
               name: "Mr. Muhammed Ilyas ",
@@ -4447,17 +4501,17 @@ export const EventDetails = [
 
         link: "https://forms.gle/MxwUSnoTJqYdWm1q9",
         day1: {
-          date: "09/11/22",
+          date: "17/11/22",
           time: "10.00-3.00",
           mode: "online",
-          venu: "TBA",
+          venue: "TBA",
+          list: "true",
           topic:
-            "FN Session: Machine Learning Introduction .Data importance .Develop and Validate Machine Learning model .Machine Learning deployment methods Hands-on Session: (Create mobile app for diabetes prediction) .   Problem statement .Data Collection .Data pre-processing .Train Machine Learning model . Validate Machine Learning model.Develop mobile application by deploying Machine Learning model  Install the application in mobile ",
+            "FN Session: Machine Learning Introduction \nData importance \nDevelop and Validate Machine Learning model \nMachine Learning deployment methods \nFN Session: \nHands-on Session: (Create mobile app for diabetes prediction) \n   Problem statement \nData Collection \nData pre-processing \nTrain Machine Learning model \n Validate Machine Learning model\nDevelop mobile application by deploying Machine Learning model \nInstall the application in mobile ",
           resource: [
             {
               name: "Ms.Vaishnavi Pandiyan ",
               desig: "Co founder  ",
-              phone: 9894467245,
               email: "info@towardstechno.com ",
             },
           ],
@@ -4483,7 +4537,7 @@ export const EventDetails = [
               email: "akkalam305@gmail.com ",
             },
             {
-              name: "Mamoj Ravichandran ",
+              name: "Manoj Ravichandran",
               year: "III  ",
               phone: 7904106485,
               email: "manojmsd7@gmail.com  ",
@@ -4493,26 +4547,26 @@ export const EventDetails = [
       },
       {
         name: "Data Analysis using Machine Learning in MATLAB",
-        logo: "/EventsAssets/ecew4.webp",
+        logo: "/EventsAssets/ecew5.webp",
         tag: "WORKSHOP",
         color: "0, 70, 90",
         mode: "TBA",
         venue: "TBA",
-        company: "Renault Nissan Technology & Business Centre ,Chennai, India",
+        company: "Renault Nissan Technology & Business Centre, Chennai, India",
 
         link: "https://forms.gle/GMCc9pXLRm5YKEJw8",
         day1: {
-          date: "09/11/22",
+          date: "16/11/22",
           time: "10am -3pm",
           mode: "online",
-          venu: "TBA",
+          venue: "TBA",
+          list: "true",
           topic:
-            "Implement and test your algorithms. Develop the computational codes and debugging.Use a large database of built in algorithms.  Process still images and create simulation videos.Symbolic computation. Call external libraries.Applications",
+            "Implement and test your algorithms\n Develop the computational codes and debugging\nUse a large database of built in algorithms\n  Process still images and create simulation videos\nSymbolic computation\n Call external libraries\nApplications",
           resource: [
             {
               name: "Mr. ARUN KUMAR .L  ",
               desig: "Senior Software Engineer  ",
-              phone: 8015991281,
               email: "arunvijay537@gmail.com ",
             },
           ],
@@ -4532,22 +4586,27 @@ export const EventDetails = [
           ],
           student: [
             {
-              name: "Pradeep S  ",
+              name: "Karthikeyan S",
               year: "IV ",
-              phone: 6374598918,
+              phone: 7338929319,
               email: "spradeeps2002@gmail.com ",
             },
             {
-              name: "Vishnu Priya M K  ",
+              name: "Vishnu Priya M K",
               year: "II  ",
               phone: 7358250220,
               email: "vishnupreya@2004  ",
+            },
+            {
+              name: "Elangovan S",
+              year: "II  ",
+              phone: 9360770345,
             },
           ],
         },
       },
       {
-        name: "Workshop on  Can you be happy all through your life? Yes, Hidden Secret Un-locked !  ",
+        name: '"How to be happy all through your life?" Yes, Hidden Secret Unlocked !',
         logo: "/EventsAssets/ecew6.webp",
         tag: "WORKSHOP",
         color: "0, 70, 90",
@@ -4557,17 +4616,17 @@ export const EventDetails = [
 
         link: "https://forms.gle/ivxCuJwffXKSW3FZ8",
         day1: {
-          date: "08/11/22",
+          date: "18/11/22",
           time: "10.00-3.00",
           mode: "Offline",
-          venu: "TBA",
+          venue: "ECE 5th Floor LH01 & LH02",
+          list: "true",
           topic:
-            "Brain storming sessions .Happiness revealed factors.Activities which creates fun and cherish able moments ",
+            "Brain storming sessions \nHappiness revealed factors\nActivities which creates fun and cherish able moments ",
           resource: [
             {
               name: "R.S.MANI  ",
               desig: "FOUNDER ",
-              phone: 9840298421,
               email: "mani@adcomindia.com ",
             },
           ],
@@ -4587,15 +4646,15 @@ export const EventDetails = [
           ],
           student: [
             {
-              name: "Arunachalam S  ",
+              name: "Mohammed Hasan M ",
               year: "IV ",
-              phone: 6374598918,
+              phone: 9944709448,
               email: "ajuprasath12@gmail.com  ",
             },
             {
-              name: "Karthikeyan S  ",
+              name: "J swetha ",
               year: "II  ",
-              phone: 7338929319,
+              phone: 8248238746,
               email: "karthioffece@gmail.com  ",
             },
           ],

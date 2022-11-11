@@ -34,6 +34,7 @@ const EventCard = ({
   day1,
   list,
   day2,
+  day3,
   company,
   link,
 }) => {
@@ -72,6 +73,7 @@ const EventCard = ({
       round2level2,
       day1,
       day2,
+      day3,
       company,
       link,
     });

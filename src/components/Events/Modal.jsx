@@ -21,7 +21,7 @@ const Modal = ({ open, setOpenModal }) => {
   const splitround2level2 = eventObject?.round2level2?.split(".");
   const splitworktopicd1 = eventObject?.day1?.topic?.split("\n");
   const splitworktopicd2 = eventObject?.day2?.topic?.split("\n");
-
+  const splitworktopicd3 = eventObject?.day3?.topic?.split("\n");
 
   if (!open) return null;
   return (
@@ -281,13 +281,13 @@ const Modal = ({ open, setOpenModal }) => {
                       <>
                         {splitworktopicd1.map((data) => {
                           return (
-                            <p
+                            <li
                               style={{
                                 margin: "5px 0",
                               }}
                             >
                               {data}
-                            </p>
+                            </li>
                           );
                         })}
                       </>
@@ -299,8 +299,6 @@ const Modal = ({ open, setOpenModal }) => {
                     )}
                   </div>
                 )}
-
-                
               </>
             ) : null}
             {eventObject?.day1?.resource ? (
@@ -392,13 +390,13 @@ const Modal = ({ open, setOpenModal }) => {
                       <>
                         {splitworktopicd2.map((data) => {
                           return (
-                            <p
+                            <li
                               style={{
                                 margin: "5px 0",
                               }}
                             >
                               {data}
-                            </p>
+                            </li>
                           );
                         })}
                       </>
@@ -410,8 +408,6 @@ const Modal = ({ open, setOpenModal }) => {
                     )}
                   </div>
                 )}
-
-                
               </>
             ) : null}
             {eventObject?.day2?.resource ? (
@@ -457,13 +453,122 @@ const Modal = ({ open, setOpenModal }) => {
                 </ol>
               </div>
             ) : null}
+
+            {eventObject?.day3 ? (
+              <>
+                <h1 className="title">Day 2:</h1>
+                {eventObject.company ? (
+                  <h4>Company Name : {eventObject.company}</h4>
+                ) : null}
+                <p className="desc">Date: {eventObject.day3.date}</p>
+                <div className="grid">
+                  <div className="item">
+                    <span>Mode</span>
+                    <IoIosPeople size={32} />
+                    <span>{eventObject.day3?.mode}</span>
+                  </div>
+                  <div className="item">
+                    <span>Venue</span>
+                    <TiLocation size={32} />
+                    <span>{eventObject.day3?.venue}</span>
+                  </div>
+                  <div className="item">
+                    <span>Timings</span>
+                    <FcAlarmClock size={32} />
+                    <span>{eventObject.day3?.time}</span>
+                  </div>
+                  <div
+                    style={{
+                      padding: 0,
+                    }}
+                    className="item"
+                  >
+                    <img
+                      style={{
+                        width: "100%",
+                        borderRadius: "0.4rem",
+                      }}
+                      src={`${eventObject.logo}`}
+                      alt="Logo"
+                    />
+                  </div>
+                </div>
+                {eventObject.day3.topic && (
+                  <div>
+                    {eventObject.day3.list ? (
+                      <>
+                        {splitworktopicd3.map((data) => {
+                          return (
+                            <li
+                              style={{
+                                margin: "5px 0",
+                              }}
+                            >
+                              {data}
+                            </li>
+                          );
+                        })}
+                      </>
+                    ) : (
+                      <p className="desc">
+                        <span className="topic">Topic: </span>
+                        {eventObject.day3.topic}
+                      </p>
+                    )}
+                  </div>
+                )}
+              </>
+            ) : null}
+            {eventObject?.day3?.resource ? (
+              <div className="faculty">
+                <h3>Resource Person:</h3>
+                <ol>
+                  {eventObject?.day3.resource?.map((each) => {
+                    return (
+                      <li>
+                        <span>{each.name}</span> {`(${each.phone})`} <br />{" "}
+                        {`${each.desig}`}
+                      </li>
+                    );
+                  })}
+                </ol>
+              </div>
+            ) : null}
+            {eventObject?.day3?.staff ? (
+              <div className="faculty">
+                <h3>Faculty Co-ordinators:</h3>
+                <ol>
+                  {eventObject?.day3?.staff?.map((each) => {
+                    return (
+                      <li>
+                        <span>{each.name}</span> {`(${each.phone})`}
+                      </li>
+                    );
+                  })}
+                </ol>
+              </div>
+            ) : null}
+            {eventObject?.day3?.student ? (
+              <div className="student">
+                <h3>Student Co-ordinators:</h3>
+                <ol>
+                  {eventObject.day3.student?.map((each) => {
+                    return (
+                      <li>
+                        <span>{each.name}</span> {`(${each.phone})`}
+                      </li>
+                    );
+                  })}
+                </ol>
+              </div>
+            ) : null}
             <a
-                onClick={() => setOpenModal((prev) => !prev)}
-                href={eventObject.link}
-                className="btn"
-              >
-                <RegisterBtn />
-              </a>
+              onClick={() => setOpenModal((prev) => !prev)}
+              href={eventObject.link}
+              className="btn"
+            >
+              <RegisterBtn />
+            </a>
           </>
         )}
       </div>
