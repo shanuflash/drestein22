@@ -487,7 +487,7 @@ const Form = () => {
             {1 ? (
               <div
                 style={{
-                  fontSize: "10vw",
+                  fontSize: "2vw",
                   display: "flex",
                   justifyContent: "center",
                   height: "80vh",
