@@ -4799,7 +4799,7 @@ export const EventDetails = [
 
         link: "https://forms.gle/8akqDVML9TzFVuuS8",
         day1: {
-          date: "14/11/2022-FN",
+          date: "14/11/2022",
           time: "TBA",
           company: "",
           topic:
@@ -4862,7 +4862,7 @@ export const EventDetails = [
 
         link: "https://forms.gle/hex4mX5iukGs3WPr5",
         day1: {
-          date: "08/11/2022-FN",
+          date: "16/11/2022",
           time: "TBA",
           company: "Skill lync",
           topic:
@@ -4925,7 +4925,7 @@ export const EventDetails = [
 
         link: "https://docs.google.com/forms/d/e/1FAIpQLSd3UWgsop4GgM0qTeb-wcnIJehwPlm0z22xoj6TB4Eb_wmpcQ/viewform",
         day1: {
-          date: "09/11/2022",
+          date: "15/11/2022",
           time: "TBA",
           company: "TBA",
           resource: [
@@ -4970,22 +4970,21 @@ export const EventDetails = [
           ],
           student: [
             {
-              name: "S.S.Manoj",
-              year: "IV",
-              phone: 8925239676,
-              email: "Manojshanmugam63@gmail.com",
+              name: "N.Vishnuprasad",
+              phone: 6369299454,
             },
             {
-              name: "K.sakthivel",
-              year: "IV",
-              phone: 9360403319,
-              email: "Skssakthivel19@gmail.com",
+              name: "K.Vignesh",
+              phone: 7708439329,
             },
             {
-              name: "Sanjay kumar",
-              year: "IV",
-              phone: 8056492148,
-              email: "Sanjaykumar080801@gmail.com",
+              name: "G.suriya",
+            },
+            {
+              name: "B.G.Kishore",
+            },
+            {
+              name: "A.Moses Saveri",
             },
           ],
         },
