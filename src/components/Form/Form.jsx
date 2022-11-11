@@ -130,10 +130,12 @@ const Form = () => {
   const [Project, setProject] = React.useState(false);
   const [Paper, setPaper] = React.useState(false);
   const [Event, setEvent] = useState(false);
-
   const [Pay, setPay] = useState(0);
   const [img, setImg] = useState(null);
   const [imgload, setimgload] = useState(false);
+  useEffect(() => {
+    document.body.style.overflow = "unset";
+  }, []);
 
   const [eventName, setEventName] = React.useState({
     CSE: [],
