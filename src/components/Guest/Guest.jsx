@@ -184,20 +184,21 @@ function Guest() {
                   alignItems: "center",
                   justifyContent: "center",
                   gap: "1rem",
-                  marginTop: "1rem",
+                  margin:'1rem'
+                  
                 }}
               >
                 <img
                   src="OtherAssets/tcs.webp"
-                  style={{ borderRadius: "1rem" ,marginLeft:'10px'}}
+                  style={{ borderRadius: "1rem" }}
                   alt="tcs_logo"
 
                 />
 
-                <div style={{ textAlign: "left" }}>
+                <div style={{ textAlign: "left" ,maxWidth:'450px'}}>
                   Regional Head - Academic Interface Programme
-                  <br /> at Tata Consultancy Services | Career Coach
-                  <br /> Chennai, Tamil Nadu, India
+                  at Tata Consultancy Services | Career Coach<br/>
+                   Chennai, Tamil Nadu, India
                 </div>
               </div>
               <GuestDesp

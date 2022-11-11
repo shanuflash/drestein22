@@ -102,7 +102,7 @@ const Footer = () => {
               }
             }
           >
-         <h1>{700+views}</h1>
+         <h1>{1700+views}</h1>
             <VisibilityIcon sx={{
               fontSize:'40px'
             }} /> 
