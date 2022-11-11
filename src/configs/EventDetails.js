@@ -6,10 +6,10 @@ export const EventDetails = [
       {
         name: "Switcheroo",
         tagline: "Switcheroo is a coding challenge with a twist",
-        date: "18 Nov 2022(AN)",
-        type: "Team",
-        venue: "TBA",
-        time: "TBA",
+        date: "19 Nov 2022(AN)",
+        type: "Team 2",
+        venue: "Blockchain Lab",
+        time: "AfterNoon",
 
         members: "2",
         rules:
@@ -63,18 +63,19 @@ export const EventDetails = [
       },
       {
         name: "Game Of Codes",
-        date: "18 Nov 2022(AN)",
+        date: "18 Nov 2022(FN)",
         type: "Team",
-        venue: "TBA",
-        time: "TBA",
+        venue: "Blockchain Lab",
+        time: "Forenoon",
         members: "1-2",
         rules: "",
-        round1title: "Quiz",
+        round1title: "Winter is Coming",
         round1:
           "Only one member per team .Any language can be used .Solve very easy difficulty code snippets to advance to next round .Code should make you win the game that is provided. In case of malpractice, team will be disqualified",
-
+        round2title: "Red wedding",
         round2:
-          " Top 8 teams in this round .Same team member . Any language can be used . Solve basic/easy difficulty code snippets to advance to next round .Code should be accurate in order to win the game",
+          "Top 8 teams in this round .Same team member . Any language can be used . Solve basic/easy difficulty code snippets to advance to next round .Code should be accurate in order to win the game",
+        round3title: "Dracarys",
         round3:
           "Top 4 teams in this round .Same team member .Any language can be used .Solve medium difficulty code snippets to win .Code should be perfect to conquer the final game",
         tag: "EVENT",
@@ -118,10 +119,10 @@ export const EventDetails = [
       {
         name: "Cipher Hunt",
         desc: "Cipher Hunt is a cybersecurity competition that is all about finding weaknesses and exploiting loopholes in various computer programs. It aims to engage participants in the creative exploration of real-world computer security by distilling the significant disciplines of professional cybersecurity into short, objectively measurable exercises.An ethical hacking contest in which contestants will have to find pieces of information, called ‘flags’, hidden in each of the challenges. So, assemble your team, prepare to decrypt hidden messages, exploit vulnerabilities, and do whatever it takes to Hunt!",
-        date: "19 Nov 2022(FN)",
+        date: "18 Nov 2022(FN)",
         type: "Team",
-        venue: "TBA",
-        time: "TBA",
+        venue: "Blockchain Lab",
+        time: "Forenoon",
         members: "2",
         rules:
           "Players can compete individually or in teams of up to 2 members. Teams should work independently; sharing answers or collaborating with another team constitutes cheating. Brute-forcing the flags is not allowed.Any kind of violation of these rules will mean immediate disqualification of the team. The decision of the event managers will be deemed",
@@ -241,13 +242,14 @@ export const EventDetails = [
         name: "Cybersecurity And Ethical Hacking  ",
         logo: "EventsAssets/itw1.webp",
         tag: "WORKSHOP",
+
         color: "0, 70, 90",
-        company: "NA",
+        company: "Vulnerability Synopsys pvt Limited & Dead Bed Cyber Solutions",
         day1: {
           date: "14.11.2022 and 15.11.2022(FN & AN)",
-          time: "12:00pm -3.00pm",
+          time: "9:00 - 3:00pm",
           mode: "OFFLINE",
-          venue: "TBA",
+          venue: "Blockchain Lab",
           list: true,
           topic: `1. Cybersecurity introduction 45 mins  \na. Different Domain of cybersecurity & Job Opportunity \nb. Roles and responsibilities\nc. Phases of hacking\n2. Web Application Terminologies 90 mins\na. Protocol basics & Subdomains\nb. Request & Response \nc. Encoding\nd. Same origin Policy & cross-origin Policy \ne. Cookies & Sessions \n3. Tools and techniques 120 mins\na. Burp suite Pro\nb. Acunetix vs Nessus`,
           resource: [
@@ -268,24 +270,36 @@ export const EventDetails = [
           ],
           student: [
             {
-              name: "Harini NG",
+              name: "Tafseer Ali I",
               year: "III",
-              phone: 6382246669,
+              phone: 8608209543,
               email: "harinig025@gmail.com",
             },
             {
-              name: "Aadhithya Raj V",
+              name: "Prem Anand",
               year: "III",
-              phone: 6374492710,
+              phone: 9994424024,
+              email: "aadhithya3210@gmail.com",
+            },
+            {
+              name: "Harini G",
+              year: "III",
+              phone: "",
+              email: "aadhithya3210@gmail.com",
+            },
+            {
+              name: "Sugavarathan",
+              year: "III",
+              phone: 7010268757,
               email: "aadhithya3210@gmail.com",
             },
           ],
         },
         day2: {
           date: "14.11.2022 and 15.11.2022(FN & AN)",
-          time: "12:00pm -3.00pm",
+          time: "9:00 -3.00pm",
           mode: "OFFLINE",
-          venue: "TBA",
+          venue: "Blockchain Lab",
           list: true,
           topic:
             "4. Owasp Top 10 Attack vectors & Hands-on Demo 200 mins\na. Broken Access Control\nb. Injection\nc. Security Misconfiguration\nd. Vulnerable and Outdated Components\ne. Identification and Authentication Failures\nf. Server-Side Request Forgery\n5. source code review & Hands-on Demo 200 mins",
@@ -307,15 +321,27 @@ export const EventDetails = [
           ],
           student: [
             {
-              name: "Harini NG",
+              name: "Tafseer Ali I",
               year: "III",
-              phone: 6382246669,
+              phone: 8608209543,
               email: "harinig025@gmail.com",
             },
             {
-              name: "Aadhithya Raj V",
+              name: "Prem Anand",
               year: "III",
-              phone: 6374492710,
+              phone: 9994424024,
+              email: "aadhithya3210@gmail.com",
+            },
+            {
+              name: "Harini G",
+              year: "III",
+              phone: "",
+              email: "aadhithya3210@gmail.com",
+            },
+            {
+              name: "Sugavarathan",
+              year: "III",
+              phone: 7010268757,
               email: "aadhithya3210@gmail.com",
             },
           ],
@@ -328,10 +354,10 @@ export const EventDetails = [
         color: "0, 70, 90",
         company: "NA",
         day1: {
-          date: "16.11.2022 & 17.11.2022(FN & AN)",
-          time: "12:00pm -3.00pm",
+          date: "16.11.2022",
+          time: "9:00 -3.00pm",
           mode: "OFFLINE",
-          venue: "TBA",
+          venue: "Blockchain Lab",
           list: true,
           topic: ` 1. BASIC REACT CONCEPTS\n2. REDUX CONCEPTS`,
           resource: [
@@ -366,10 +392,10 @@ export const EventDetails = [
           ],
         },
         day2: {
-          date: "16.11.2022 & 17.11.2022(FN & AN)",
-          time: "12:00pm -3.00pm",
+          date: "17.11.2022(FN & AN)",
+          time: "9:00am -3.00pm",
           mode: "OFFLINE",
-          venue: "TBA",
+          venue: "Blockchain Lab",
           list: true,
           topic: "1. HANDS-ON PRACTICE\n2. KT ON CURRENT INDUSTRIES PROJECT",
           resource: [
@@ -409,12 +435,12 @@ export const EventDetails = [
         logo: "EventsAssets/itw3.webp",
         tag: "WORKSHOP",
         color: "0, 70, 90",
-        company: "NA",
+        company: "SIFY",
         day1: {
           date: "16.11.2022 - FN",
-          time: "12:00pm -3.00pm",
+          time: "9:00 -3.00pm",
           mode: "OFFLINE",
-          venue: "TBA",
+          venue: "Kalam Lab CSE 5th Floor",
           list: true,
           topic:
             "1.Fundamental Cloud Concepts of AWS\n2.Benefits and Types of Cloud Computing\n3.AWS Cloud Infrastructure\n4.Understanding AWS Core services\n5.AWS App Integration\n6.AWS Identities and User Management\n7.Architecting Application on Amazon EC2\n8.Developer Services ",
@@ -829,10 +855,10 @@ export const EventDetails = [
     eventslist: [
       {
         name: "Sherlock Holmes",
-        date: "19 Nov 2022(FN)",
+        date: "18 Nov 2022(FN)",
         type: "Team",
-        venue: "TBA",
-        time: "TBA",
+        venue: "RB GF LH 01",
+        time: "FORENOON",
         members: "2",
         rules: "",
 
@@ -879,8 +905,8 @@ export const EventDetails = [
         name: "Devils Advocate",
         date: "19 Nov 2022(AN)",
         type: "2",
-        venue: "TBA",
-        time: "TBA",
+        venue: "RB GF LH 01",
+        time: "AFTERNOON",
         members: "1-2",
         rules: "",
         round1:
@@ -919,8 +945,8 @@ export const EventDetails = [
         name: "Treasure Hunt",
         date: "18 Nov 2022(FN)",
         type: "Team",
-        venue: "TBA",
-        time: "TBA",
+        venue: "RB GF LH 01",
+        time: "FORENOON",
         members: "2",
         rules: "",
         round1:
@@ -957,8 +983,8 @@ export const EventDetails = [
         tagline: "Let the mind battle",
         date: "18 Nov 2022(AN)",
         type: "Team",
-        venue: "TBA",
-        time: "TBA",
+        venue: "RB GF LH 01",
+        time: "AFTERNOON",
         members: "1-3",
         rules: "",
         round1title: "Connections (Guess The Dialogue)",
@@ -1010,12 +1036,11 @@ export const EventDetails = [
         logo: "/EventsAssets/agriw1.webp",
         tag: "WORKSHOP",
         color: "0, 70, 90",
-
         day1: {
           date: "16/11/2022-FN",
-          time: "12pm-3pm",
+          time: "FORENOON",
           mode: "OFFLINE",
-          venue: "TBA",
+          venue: "EEE Seminar Hall",
           resource: [],
           list: true,
           topic:
@@ -1057,7 +1082,7 @@ export const EventDetails = [
         },
       },
       {
-        name: "Chemical Free Solution",
+        name: "Soil Less Farming",
         logo: "/EventsAssets/agriw2.webp",
         tag: "WORKSHOP",
         color: "0, 70, 90",
@@ -1065,9 +1090,9 @@ export const EventDetails = [
 
         day1: {
           date: "15/11/2022-FN",
-          time: "12.00-3.00pm",
+          time: "FORENOON",
           mode: "OFFLINE",
-          venue: "TBA",
+          venue: "EEE Seminar Hall",
           topic:
             "The major advantage of soilless cultivation is the uncoupling plant growth from problems associated with soil, such as soil borne pests and diseases, non-arable soil, soil salinity, poor soil quality.A soilless mix provides a cleaner medium and gives you more control.So, the demonstration program of soil-less culture is done at Saveetha Engineering College.",
           resource: [
@@ -1390,67 +1415,67 @@ export const EventDetails = [
           tag: "WORKSHOP",
           color: "0, 70, 90",
 
-          day1: {
-              date: "15.11.2022 ",
-              time: "9.00-3.00pm",
-              mode: "OFFLINE",
-              topic: "Introduction to robot anatomy links , joints and types or robots. Kinematic modeling of robot.Forward kinematics using robo analyser .Inverse kinematics using robot analyser .Introduction to robo dk .Hands on with 6 axis industrial robot",
-              resource: [
-                  {
-                      name: "Mr.Vasanth Kumar.CH ",
-                      desig: "Assistant Professor(SG)",
-                      phone: 8122328543,
-                      email: "vasanthkumar@savetha.ac.in ",
-                  },
-                  {
-                      name: "Mr.Sridhar.S  ",
-                      desig: "Assistant Professor(OG)",
-                      phone: 9962282076,
-                      email: "sridhar@saveetha.ac.in  ",
-                  }
-              ],
-              staff: [
-                  {
-                      name: "Mr.Vasanth Kumar.CH ",
-                      desig: "Assistant Professor(SG)",
-                      phone: 8122328543,
-                      email: "vasanthkumar@savetha.ac.in ",
-                  },
-                  {
-                      name: "Mr.Sridhar.S  ",
-                      desig: "Assistant Professor(OG)",
-                      phone: 9962282076,
-                      email: "sridhar@saveetha.ac.in  ",
-                  }
-              ],
-              student: [
-                  {
-                      name: "Aishree Ramesh  ",
-                      year: "III",
-                      phone: 7305663829,
-                      email: "aishree.ramesh@gmail.com ",
-                  },
-                  {
-                      name: "Jayashree Rao.V ",
-                      year: "III",
-                      phone: 9962926229,
-                      email: "jayashreerao1510@gmail.com ",
-                  },
-                  {
-                      name: "Thenmozhi.P ",
-                      year: "II",
-                      phone: 7305404849,
-                      email: "thenmozhipv293@gmail.com ",
-                  },
-                  {
-                      name: "Ashwin Raaj.S ",
-                      year: "II",
-                      phone: 7904748817,
-                      email: "lordashwin94@gmail.com  ",
-                  },
-              ]
-          },
-  
+        day1: {
+          date: "15.11.2022 ",
+          time: "9.00-3.00pm",
+          mode: "OFFLINE",
+          topic: "Introduction to robot anatomy links , joints and types or robots. Kinematic modeling of robot.Forward kinematics using robo analyser .Inverse kinematics using robot analyser .Introduction to robo dk .Hands on with 6 axis industrial robot",
+          resource: [
+            {
+              name: "Mr.Vasanth Kumar.CH ",
+              desig: "Assistant Professor(SG)",
+              phone: 8122328543,
+              email: "vasanthkumar@savetha.ac.in ",
+            },
+            {
+              name: "Mr.Sridhar.S  ",
+              desig: "Assistant Professor(OG)",
+              phone: 9962282076,
+              email: "sridhar@saveetha.ac.in  ",
+            }
+          ],
+          staff: [
+            {
+              name: "Mr.Vasanth Kumar.CH ",
+              desig: "Assistant Professor(SG)",
+              phone: 8122328543,
+              email: "vasanthkumar@savetha.ac.in ",
+            },
+            {
+              name: "Mr.Sridhar.S  ",
+              desig: "Assistant Professor(OG)",
+              phone: 9962282076,
+              email: "sridhar@saveetha.ac.in  ",
+            }
+          ],
+          student: [
+            {
+              name: "Aishree Ramesh  ",
+              year: "III",
+              phone: 7305663829,
+              email: "aishree.ramesh@gmail.com ",
+            },
+            {
+              name: "Jayashree Rao.V ",
+              year: "III",
+              phone: 9962926229,
+              email: "jayashreerao1510@gmail.com ",
+            },
+            {
+              name: "Thenmozhi.P ",
+              year: "II",
+              phone: 7305404849,
+              email: "thenmozhipv293@gmail.com ",
+            },
+            {
+              name: "Ashwin Raaj.S ",
+              year: "II",
+              phone: 7904748817,
+              email: "lordashwin94@gmail.com  ",
+            },
+          ]
+        },
+
       },
       {
           name: "Game Development  ",
@@ -1552,7 +1577,7 @@ export const EventDetails = [
       },
       {
           name: "Hands on training on 3D Printing ",
-          logo: "/EventsAssets/aiw3.webp",
+          logo: "/EventsAssets/aidsw1.webp",
           tag: "WORKSHOP",
           color: "0, 70, 90",
   
@@ -1660,7 +1685,7 @@ export const EventDetails = [
           },
   
       },
-  ]
+    ]
   },
   {
     id: "bme",
@@ -3892,511 +3917,528 @@ export const EventDetails = [
   {
     id: "ece",
     title: "Electronics and Communication Engineering",
-    eventslist: [
+    eventslist :  [
       {
-        name: "ElectroBlitz",
+        name: "ElectroBlitz ",
         date: "18 Nov 2022(FN)",
         type: "Team",
         venue: "TBA",
         time: "TBA",
         members: "2",
-        logo:"/EventsAssets/ece1.webp",
         rules: "",
-        round1title: "MindSweeper-The Tech Quiz",
+        round1title:" Mind Sweeper-The Tech Quiz ",       
         round1:
-          "The technical-based questions will be displayed on the projector screen.  Participants can discuss the answer with their teammates and raise their hands to answer the question. The participant should answer when the judge asks questions. Points will be awarded to whoever has answered first.Points will be awarded to the teams based on the correct answer and the explanation.  If the team fails to give a proper explanation / answer, the turn will be given to the immediate  next team.  If the next team gives the correct answer with proper explanation, points will be awarded to the corresponding  team. The team which scores more points will be qualified for the next level.Note: Those who first raise their hands will be given an opportunity to answer. No mobile phones are allowed inside the hall",
-        round2title: "What did you see now?",
+          "Two members of the team have to attend the quiz separately, The marks of both will be the Team’s Mark. The technical-based questions will be displayed on the projector screen. Each question carries 1 mark, we have a bonus question that carries  2 marks in between every 5 questions. The team which scores more points will be qualified for the next leve  Note:  No mobile phones are allowed inside the hall ",
+        round2title:"Debugging",
         round2:
-          "Ten Circuits will be displayed for 10 Seconds to  each participant. Those who draw the maximum number of circuits correctly will be shortlisted for the next round. Note:No mobile phones are allowed.No discussions are allowed",
-        round3title: "Spectrum Analysis",
-        round3:
-          "At the time of events a circuit name will be informed to for each team, Circuits ideas and  components will be provided . The team that shows the spectrum analysis (output)  first will be considered as the winner. (On a first-come, first-served basis.)  Total time for this event is 15 minutes. On the basis of time management and relevant explanation, participants will be selected. The winners will be declared on the basis of the shortest time period of completion of the task.Note:. No mobile phones are allowed during the participation of the event.   No discussion or sharing of answers among the participants .   If any malpractices are noticed, then the term will be disqualified from all the events",
+          "  The teams for Round 2 will be decided based on the Team’ Score in the Round 1. In this round the team members can be Played as a team.   The event tests the ability of participants to find errors in circuits and correct them so that the required function is achieved.  Participants are required to list out the errors in the circuits given to them and the necessary corrections. If they ask you to find the output, Find it out with the circuit given. The questions will be descriptive in nature and the participants will be required to list out the errors they have corrected, including circuit diagrams if required Note:  No mobile phones are allowed. No discussions are allowed ",
+       round3title:"Spectrum Analysis  ",
+       round3:"At the time of events a circuit will be shown to each team.  Circuits ideas and components will be provided. The team that shows the spectrum analysis (output) first will be considered as the winner. (On a first-come, first-served basis.)  On the basis of time management and relevant explanation, participants will be selected.  The winners will be declared on the basis of the shortest time period of completion of the task. Note:  No mobile phones are allowed during the participation of the event.No discussion or sharing of answers among the participants . If any malpractices are noticed, then the term will be disqualified from all the events.The participants should be aware of the concepts of integrated circuits, for example 555 timer",
         tag: "EVENT",
-        color: "0, 1, 38",
+        logo: "ece1.jpeg",
         staff: [
           {
-            name: "Ms. G Keerthiga",
+            name: "Ms. G Keerthiga ",
             desig: "Assistant Professor",
-            phone: 8825783729,
-            email: "keerthigag@saveet",
+            phone: 8825783729  ,
+            email: "keerthigag@saveetha.ac.in ",
           },
           {
-            name: "Dr.S Kumaran",
-            desig: "Assistant Professor (sG)",
-            phone: 9994958058,
-            email: "kumarans@saveetha",
+            name: "Dr.S Kumaran ",
+            desig: "Assistant Professor (SG) ",
+            phone: 9994958058  ,
+            email: "kumarans@saveetha.ac.in  ",
           },
         ],
         student: [
           {
-            name: "Kaviya.R",
-            year: "III",
-            phone: 8825964471,
-            email: "kaviya.ece.sec@gmail.com",
+            name: "Kaviya.R  ",
+            year: "III ",
+            phone: 8825964471 ,
+            email: "kaviya.ece.sec@gmail.com ",
           },
           {
-            name: "Arunachalam",
-            year: "IV ",
-            phone: 9445300407,
-            email: "ajuprasath12@gmail.com",
+            name: "Vamsinath. R ",
+            year: "III ",
+            phone: 6382503075  ,
+            email: "vamsinath3688@gmail.com  ",
           },
+          {
+            name: "Arunachalam ",
+            year: " IV ",
+            phone: 9445300407  ,
+            email: "ajuprasath12@gmail.com ",
+          },
+          
         ],
       },
-
+    
       {
         name: "Cryosat",
-        date: "19.11.22(FN)",
+        date: "18 Nov 2022(AN)",
         type: "Team",
         venue: "TBA",
         time: "TBA",
         members: "1-2",
         rules: "",
-        round1title: "RESISTHON",
+        round1title:"RESISTHON ",
         round1:
-          "It is an individual game. The value of the resistor will be given. Participants need to identify the respective colour code for the given resistor.Those who  are giving more correct answers, they  will be shortlisted for the next round",
-        round2title: "Who am I ?",
+          "It is an individual game. The value of the resistor will be given. Participants need to identify the respective colour code for the given resistor.Those who are giving more correct answers, they will be shortlisted for the next round",
         round2:
-          "Participants will have a time limit of 2mins .Marks will be deducted for repetition of points .The team leading the points table will be declared as winners (NOTE: Number of rounds will depend on the number of entries)",
-        round3title: "FIND ME IF YOU CAN ?",
-        round3:
-          "The image of  external/ internal modules supported by  various development boards (Arduino,Raspberry Pi,ESP)  will be  displayed. participants need to identify the name of the module. Points will be awarded according to the weightage of the questions. winners will be selected based on scoring more points",
+          "Participants will be given a set of questions on the basis of technical requirements on time, which state some application/ components/ some technical terms related to basic electronics.On the basis of time consumption and explanation,those who identify a more correct answer will be qualified for the next round", 
+         round2title:"Who am I ? ",
+         round3title:"FIND ME IF YOU CAN ? ",
+         round3:"The image of external/ internal modules supported by various development boards (Arduino,Raspberry Pi,ESP) will be displayed.participants need to identify the name of the module. Points will be awarded according to the weightage of the questions.winners will be selected based on scoring more points",
         tag: "EVENT",
-        color: "0, 1, 38",
-        logo: "/EventsAssets/ece2.webp",
+        logo: "ece2.jpeg",
         staff: [
           {
-            name: "Dr.A.Saranya",
-            desig: "Assistant Professor",
-            phone: 9789023346,
-            email: "saranyaa@saveetha.ac.in",
+            name: "Dr.A.Saranya  ",
+            desig: "Assistant Professor ",
+            phone: 9789023346  ,
+            email: "saranyaa@saveetha.ac.in  ",
           },
           {
-            name: "Ms.M.Sowmiya Manoj",
-            desig: "Assistant Professor (SG)",
-            phone: 7358747803,
-            email: "sowmiyamanojm@saveetha.ac.in",
+            name: "Ms.M.Sowmiya Manoj ",
+            desig: "Assistant Professor(SG)  ",
+            phone: 7358747803  ,
+            email: "sowmiyamanojm@saveeth a.ac.in  ",
           },
+         
         ],
         student: [
           {
-            name: "SHALINI.S",
+            name: "SHALINI.S  ",
             year: "III",
-            phone: 9384685441,
-            email: "shalini.ece.sec@gmail.com",
+            phone: 9384685441 ,
+            email: "shalini.ece.sec@gmail.com   ",
           },
           {
-            name: "Sabarisrinivas",
+            name: "Sabarisrinivas ",
             year: "IV",
-            phone: 9944612176,
-            email: "sabarisrinivasa.ece.sec@gmail.com",
+            phone: 9944612176 ,
+            email: "sabarisrinivasa.ece.sec@gmail.com ",
+          },
+          {
+            name: "J. Jessica  ",
+            year: "III",
+            phone: 9962238253   ,
+            email: "jessijayakumar26@gmail.com  ",
           },
         ],
       },
       {
         name: "Circuit Buzz",
-        date: "19.11.22(AN)",
+        date: "19 Nov 2022(FN)",
         type: "Team",
         venue: "TBA",
         time: "TBA",
         members: "2",
         rules: "",
-        round1title: "KNOWLEDGE BLOW",
+        round1title:"KNOWLEDGE BLOW ",
         round1:
-          "Time for the event is 2 mins. Each team can have 2 members. The participants try to write the maximum number of components, technical terms (such as ground, connecting wire etc) related to electronics circuits etc. The team which has least count of technical terms will not be forward to the next round",
-        round2title: "TECH CHARADES",
-        round2:
-          "A circuit diagram will be displayed for 2 minutes.  Next 3 minutes will be given to reproduce ( implement) the circuit diagram using breadboard  and component, which will be provided. Depending on the circuit's fulfillness ( correct component placed in correct position) terms will be forwarded to the next round",
-        round3title: "TECH CHARADES 2.0",
-        round3:
-          "Each team has to pick  their questions from the question pool bowl. Selected circuits will be displayed for each team for 2 minutes .  Next 3 minutes will be given to reproduce ( implement) the circuit diagram using breadboard  and component, which will be provided.  Depending on the circuit's fulfillness ( correct component placed in correct position) terms will be forwarded to the next round",
-        tag: "EVENT",
-        color: "0, 1, 38",
-        logo: "/EventsAssets/ece3.webp",
+          "Time for the event is 2 mins. Each team can have 2 members. The participants try to write the maximum number of components, technical terms (such as ground, connecting wire etc) related to electronics circuits etc.  The team which has least count of technical terms will not be forward to the next round",
+        round2:"TECH CHARADES ",
+        round2title:"A circuit diagram will be displayed for 2 minutes. Next 3 minutes will be given to reproduce ( implement) the circuit diagram using breadboard and component, which will be provided.Depending on the circuit's fulfillness ( correct component placed in correct position) terms will be forwarded to the next round",
+        round3:"TECH CHARADES 2.0 ",
+        round3:"Each team has to pick  their questions from the question pool bowl. Selected circuits will be displayed for each team for 2 minutes . Next 3 minutes will be given to reproduce ( implement) the circuit diagram using breadboard and component, which will be provided.Depending on the circuit's fulfillness ( correct component placed in correct position) terms will be forwarded to the next round",
+        logo: "ece3.jpeg",
         staff: [
           {
-            name: "Dr.S. kanagamalliga",
+            name: "Dr.S. kanagamalliga  ",
             desig: " Associate Professor",
-            phone: 770862408,
-            email: "kanagamalligas@saveetha.ac",
+            phone: 770862408  ,
+            email: "kanagamalligas@saveetha.ac.in  ",
           },
           {
-            name: "Ms.V Subashree",
+            name: "Ms.V Subashree  ",
             desig: " Associate Professor",
-            phone: 9994365720,
-            email: "subashreev@saveetha.ac.in",
-          },
+            phone: 9994365720  ,
+            email: "subashreev@saveet ha.ac.in  ",
+          },  
         ],
         student: [
           {
-            name: "ROSHINI S",
+            name: "ROSHINI S ",
             year: " III",
-            phone: 9092522219,
-            email: "roshinisece@gmail",
+            phone: 9092522219   ,
+            email: "roshinisece@gmail.com ",
           },
           {
-            name: "VARSHINI S",
-            year: "III",
-            phone: 8248955042,
-            email: "sureshbabu02@gmail.com",
+            name: "Varshini S ",
+            year: "II",
+            phone:8248955042  ,
+            email: "varshini.sureshbabu02@g mail.com  ",
           },
+          {
+            name: "P THANGAVEL ",
+            year: "IV",
+            phone: 9940660332  ,
+            email: "thangavelhfc@gmail.com  ",
+          },
+         
         ],
       },
       {
         name: "Obstacle Mania ",
-        date: "18.11.22(FN&AN)",
+        date: "19 Nov 2022(AN & FN)",
         type: "Team",
         venue: "TBA",
         time: "TBA",
         members: "1-3",
-        rules:
-          "A team should consist of two/three members .  No mobile phones are allowed during the participation of the event.No discussion or sharing of answers among the teams.If any malpractices are noticed then the team will be disqualified",
-        round1title: " COMPONENTS IDENTIFICATION",
+        rules: "A team should consist of two to three members in a team. No mobile phones are allowed during the participation of the event. No discussion or sharing of answers among the teams. If any malpractices are noticed then the team will be disqualified. Make sure the battery can sustain till the final round",
+        round1title:"  SPELL OUT ",
         round1:
-          "Participants should identify the suitable components which are related to the topic and questions will be asked related to the topic. Certain Time Periods will be allotted to the participants. They should identify the suitable components within that time period. The team which score most count of technical terms will be qualified to the next round",
-        round2title: "DECODER",
-        round2:
-          "The participants/ teams  should identify and rectify the errors which are present in the code. Certain Time Periods will be allotted to the participants/teams. A set of 4-6 teams which completes the task in the shortest period will be qualified to the next level",
-        round3title: "ROBOT ASSEMBLE",
-        round3:
-          "The participants should assemble the components with help of the code and build the OBSTACLE ROBOT. The team which completes the task in the shortest period will be announced as WINNER",
-        tag: "EVENT",
-        color: "0, 1, 38",
-
-        logo: "/EventsAssets/ece4.webp",
+          "Participants should EXPLAIN about the robots which are carried by them. Certain questions will be asked to the participants related to the TOPIC.The team which has the least count of technical terms will be not qualified to the next round ",
+        round2title:"CREATIVITY ",
+          round2:
+          "Participants ROBOTS should be UNIQUE than the others.   They can add up some extra features (for ex lights) in their robots.   Robots Build Quality, Compatibility will also be considered. A set of 4-6 teams will be qualified to the next level",
+        round3title:"HURDLES ",
+          round3:"The 3rd round will be a hardcore off-road track with various hindrance and obstacles to tackle (Ramp, Gravel, uneven paths). The robot which avoids the hindrances and work efficiently will be announced as WINNER",
+          tag: "EVENT",
+      
+        logo: "ece4.jpeg",
         staff: [
           {
-            name: "Ms.K Padma Priya",
-            desig: "Assistant Professor (SG)",
-            phone: 7811939196,
-            email: "padmapriya@saveetha.ac.in",
+            name: "Ms.K Padma Priya  ",
+            desig: "Assistant Professor (SG) ",
+            phone: 7811939196  ,
+            email: "nandhinir@saveetha.ac.in ",
           },
           {
-            name: "Dr.K Mahendran",
+            name: "Dr.K Mahendran ",
             desig: "Assistant Professor (SG)",
-            phone: 9698999699,
-            email: "mahendrank@saveetha.ac",
+            phone: 9698999699 ,
+            email: "nandhinir@saveetha.ac.in ",
           },
           {
-            name: "Dr.S Navaneethan",
+            name: "Dr.S Navaneethan  ",
             desig: "Assistant Professor (OG)",
-            phone: 8939755682,
-            email: "navaneethans@saveetha.a",
+            phone:8939755682  ,
+            email: "nandhinir@saveetha.ac.in ",
           },
         ],
         student: [
           {
-            name: "S.Hariharan",
+            name: "S.Hariharan  ",
             year: "III",
-            phone: 6382597804,
-            email: "hariharan2003jan@gmail.com",
+            phone: 6382597804  ,
+            email: "hariharan2003jan@gmail.com  ",
           },
           {
-            name: "M. Suria Prasanth",
+            name: "Suria Prasanth M  ",
             year: "III",
-            phone: 9361539039,
-            email: "suriaprasanth24@gmail.com",
+            phone: 6382597804   ,
+            email: "suriaprasanth24@gmail.com  ",
           },
+          {
+            name: "Pradeep  ",
+            year: "IV",
+            phone: 6374598918  ,
+            email: "spradeeps2002@gmail.com  ",
+          },
+          
         ],
-      },
+      }
     ],
     workshopslist: [
       {
-          name: "PCB DESIGN AND FABRICATION",
-          logo: "/EventsAssets/ecew1.webp",
-          tag: "WORKSHOP",
-          color: "0, 70, 90",
-          mode: "TBA",
-          venue: "TBA",
-  
-          day1: {
-              date: "07/10/22",
-              time: "TBA",
-              mode: "offline",
-              venu: "TBA",
-              topic: "HANDS ON EXPERIENCE IN PCB DESIGN AND FABRICATION",
-              resource: [
-                  {
-                      name: "Dr.Jeffin Gracewell",
-                      desig: "Associate professor, ECE  ",
-                      phone: 8903280025,
-                      email: "jeffingracewelllj@saveetha.c.in",
-                  }
-              ],
-              staff: [
-                  {
-  
-                      name: "Dr.Jeffin Gracewell ",
-                      desig: "Associate Professor  ",
-                      phone: 8903280025,
-                      email: "jeffingracewelllj@saveetha.c.in",
-  
-                  },
-                  {
-  
-                      name: "Dr.R Jennie Bharathi",
-                      desig: "Associate Professor  ",
-                      phone: 9791390383,
-                      email: "jenniebharathir@saveetha.ac.in",
-  
-                  }
-              ],
-              student: [
-                  {
-  
-                      name: "Surya S ",
-                      year: "III ",
-                      phone: 7305711758,
-                      email: "suryasagadevan17@gmail.com",
-  
-                  },
-                  {
-  
-                      name: "Lekha M",
-                      year: "III  ",
-                      phone: 9345569421,
-                      email: "lekhalekha1321@gmail.com ",
-  
-                  }
-              ]
-          },
-          day2: {
-              date: "07/10/22",
-              time: "TBA",
-              mode: "offline",
-              venu: "TBA",
-              topic: "HANDS ON EXPERIENCE IN PCB DESIGN AND FABRICATION",
-              resource: [
-                  {
-                      name: "Dr.Jeffin Gracewell",
-                      desig: "Associate professor, ECE  ",
-                      phone: 8903280025,
-                      email: "jeffingracewelllj@saveetha.c.in",
-                  }
-              ],
-              staff: [
-                  {
-  
-                      name: "Dr.Jeffin Gracewell ",
-                      desig: "Associate Professor  ",
-                      phone: 8903280025,
-                      email: "jeffingracewelllj@saveetha.c.in",
-  
-                  },
-                  {
-  
-                      name: "Dr.R Jennie Bharathi",
-                      desig: "Associate Professor  ",
-                      phone: 9791390383,
-                      email: "jenniebharathir@saveetha.ac.in",
-  
-                  }
-              ],
-              student: [
-                  {
-  
-                      name: "Surya S ",
-                      year: "III ",
-                      phone: 7305711758,
-                      email: "suryasagadevan17@gmail.com",
-  
-                  },
-                  {
-  
-                      name: "Lekha M",
-                      year: "III  ",
-                      phone: 9345569421,
-                      email: "lekhalekha1321@gmail.com ",
-  
-                  },
-  
-              ]
-          }
+        name: "PCB DESIGN AND FABRICATION",
+        logo: "/EventsAssets/ecew1.webp",
+        tag: "WORKSHOP",
+        color: "0, 70, 90",
+        mode: "TBA",
+        venue: "TBA",
+
+        day1: {
+          date: "07/10/22",
+          time: "TBA",
+          mode: "offline",
+          venu: "TBA",
+          topic: "HANDS ON EXPERIENCE IN PCB DESIGN AND FABRICATION",
+          resource: [
+            {
+              name: "Dr.Jeffin Gracewell",
+              desig: "Associate professor, ECE  ",
+              phone: 8903280025,
+              email: "jeffingracewelllj@saveetha.c.in",
+            }
+          ],
+          staff: [
+            {
+
+              name: "Dr.Jeffin Gracewell ",
+              desig: "Associate Professor  ",
+              phone: 8903280025,
+              email: "jeffingracewelllj@saveetha.c.in",
+
+            },
+            {
+
+              name: "Dr.R Jennie Bharathi",
+              desig: "Associate Professor  ",
+              phone: 9791390383,
+              email: "jenniebharathir@saveetha.ac.in",
+
+            }
+          ],
+          student: [
+            {
+
+              name: "Surya S ",
+              year: "III ",
+              phone: 7305711758,
+              email: "suryasagadevan17@gmail.com",
+
+            },
+            {
+
+              name: "Lekha M",
+              year: "III  ",
+              phone: 9345569421,
+              email: "lekhalekha1321@gmail.com ",
+
+            }
+          ]
+        },
+        day2: {
+          date: "07/10/22",
+          time: "TBA",
+          mode: "offline",
+          venu: "TBA",
+          topic: "HANDS ON EXPERIENCE IN PCB DESIGN AND FABRICATION",
+          resource: [
+            {
+              name: "Dr.Jeffin Gracewell",
+              desig: "Associate professor, ECE  ",
+              phone: 8903280025,
+              email: "jeffingracewelllj@saveetha.c.in",
+            }
+          ],
+          staff: [
+            {
+
+              name: "Dr.Jeffin Gracewell ",
+              desig: "Associate Professor  ",
+              phone: 8903280025,
+              email: "jeffingracewelllj@saveetha.c.in",
+
+            },
+            {
+
+              name: "Dr.R Jennie Bharathi",
+              desig: "Associate Professor  ",
+              phone: 9791390383,
+              email: "jenniebharathir@saveetha.ac.in",
+
+            }
+          ],
+          student: [
+            {
+
+              name: "Surya S ",
+              year: "III ",
+              phone: 7305711758,
+              email: "suryasagadevan17@gmail.com",
+
+            },
+            {
+
+              name: "Lekha M",
+              year: "III  ",
+              phone: 9345569421,
+              email: "lekhalekha1321@gmail.com ",
+
+            },
+
+          ]
+        }
       },
       {
-          name: "Build a strong career in Cybersecurity",
-          logo: "/EventsAssets/ecew2.webp",
-          tag: "WORKSHOP",
-          color: "0, 70, 90",
-          mode: "TBA",
-          venue: "TBA",
-          company: "IT EXPERT TRAINING",
-  
-          day1: {
-              date: "08/11/22",
-              time: "10.00-3.00",
-              mode: "online",
-              venu: "TBA",
-              topic: "Introduction to Ethical Hacking . Foot printing and Reconnaissance. Scanning Networks.Malware Threats.Sniffing.Denial-of-Service ",
-              resource: [
-                  {
-                      name: "Dr.Mohamed Ibrahim ",
-                      desig: "Founder, Ibby Cyber Security mentor  ",
-                      phone: 6385181109,
-                      email: "ilyas@tripleminfotech.com ",
-                  }
-              ],
-              staff: [
-                  {
-  
-                      name: "Dr.M.Vanitha ",
-                      desig: "Associate Professor  ",
-                      phone: 7871784886,
-                      email: "vanitha@saveetha.ac.in ",
-  
-                  },
-                  {
-  
-                      name: "Mr.K.Arun Kumar ",
-                      desig: "Associate Professor  ",
-                      phone: 9600981800,
-                      email: "arunkumar@saveetha.ac.in ",
-  
-                  }
-              ],
-              student: [
-                  {
-  
-                      name: "Mohammed Hassan M ",
-                      year: "IV ",
-                      phone: 9944709448,
-                      email: "mohammedhasan.ece.sec@gmail.com ",
-  
-                  },
-                  {
-  
-                      name: "J swetha ",
-                      year: "II  ",
-                      phone: 8248238746,
-                      email: "deepaswe2@gmail.com ",
-  
-                  }
-              ],
-  
-          }
+        name: "Build a strong career in Cybersecurity",
+        logo: "/EventsAssets/ecew2.webp",
+        tag: "WORKSHOP",
+        color: "0, 70, 90",
+        mode: "TBA",
+        venue: "TBA",
+        company: "IT EXPERT TRAINING",
+
+        day1: {
+          date: "08/11/22",
+          time: "10.00-3.00",
+          mode: "online",
+          venu: "TBA",
+          topic: "Introduction to Ethical Hacking . Foot printing and Reconnaissance. Scanning Networks.Malware Threats.Sniffing.Denial-of-Service ",
+          resource: [
+            {
+              name: "Dr.Mohamed Ibrahim ",
+              desig: "Founder, Ibby Cyber Security mentor  ",
+              phone: 6385181109,
+              email: "ilyas@tripleminfotech.com ",
+            }
+          ],
+          staff: [
+            {
+
+              name: "Dr.M.Vanitha ",
+              desig: "Associate Professor  ",
+              phone: 7871784886,
+              email: "vanitha@saveetha.ac.in ",
+
+            },
+            {
+
+              name: "Mr.K.Arun Kumar ",
+              desig: "Associate Professor  ",
+              phone: 9600981800,
+              email: "arunkumar@saveetha.ac.in ",
+
+            }
+          ],
+          student: [
+            {
+
+              name: "Mohammed Hassan M ",
+              year: "IV ",
+              phone: 9944709448,
+              email: "mohammedhasan.ece.sec@gmail.com ",
+
+            },
+            {
+
+              name: "J swetha ",
+              year: "II  ",
+              phone: 8248238746,
+              email: "deepaswe2@gmail.com ",
+
+            }
+          ],
+
+        }
       },
       {
-          name: "Computer Vision",
-          logo: "/EventsAssets/ecew3.webp",
-          tag: "WORKSHOP",
-          color: "0, 70, 90",
-          mode: "TBA",
-          venue: "TBA",
-          company: "IT EXPERT TRAINING",
-  
-          day1: {
-              date: "09/11/22",
-              time: "10.00-3.00",
-              mode: "online",
-              venu: "TBA",
-              topic: "HANDS ON EXPERIENCE IN PCB DESIGN AND FABRICATION",
-              resource: [
-                  {
-                      name: "Mr. Muhammed Ilyas ",
-                      desig: "Chief Executive Officer, IT Expert Training, Chennai  ",
-                      phone: 9884648010,
-                      email: "ilyas@tripleminfotech.com",
-                  }
-              ],
-              staff: [
-                  {
-  
-                      name: "Dr.M.Vanitha ",
-                      desig: "Associate Professor  ",
-                      phone: 7871784886,
-                      email: "vanitha@saveetha.ac.in ",
-  
-                  },
-                  {
-  
-                      name: "Dr.A.Elakkiya  ",
-                      desig: "Associate Professor  ",
-                      phone: 9952376256,
-                      email: "elakkiyaa@saveetha.ac.in  ",
-  
-                  }
-              ],
-              student: [
-                  {
-  
-                      name: "Muralidharan N ",
-                      year: "III ",
-                      phone: 7708905895,
-                      email: "muralidharanvpt@gmail.com ",
-  
-                  },
-                  {
-  
-                      name: "Nagarajan R ",
-                      year: "II  ",
-                      phone: 6383456337,
-                      email: "r.ns.raj2003@gmail.com  ",
-  
-                  }
-              ],
-  
-          }
+        name: "Computer Vision",
+        logo: "/EventsAssets/ecew3.webp",
+        tag: "WORKSHOP",
+        color: "0, 70, 90",
+        mode: "TBA",
+        venue: "TBA",
+        company: "IT EXPERT TRAINING",
+
+        day1: {
+          date: "09/11/22",
+          time: "10.00-3.00",
+          mode: "online",
+          venu: "TBA",
+          topic: "HANDS ON EXPERIENCE IN PCB DESIGN AND FABRICATION",
+          resource: [
+            {
+              name: "Mr. Muhammed Ilyas ",
+              desig: "Chief Executive Officer, IT Expert Training, Chennai  ",
+              phone: 9884648010,
+              email: "ilyas@tripleminfotech.com",
+            }
+          ],
+          staff: [
+            {
+
+              name: "Dr.M.Vanitha ",
+              desig: "Associate Professor  ",
+              phone: 7871784886,
+              email: "vanitha@saveetha.ac.in ",
+
+            },
+            {
+
+              name: "Dr.A.Elakkiya  ",
+              desig: "Associate Professor  ",
+              phone: 9952376256,
+              email: "elakkiyaa@saveetha.ac.in  ",
+
+            }
+          ],
+          student: [
+            {
+
+              name: "Muralidharan N ",
+              year: "III ",
+              phone: 7708905895,
+              email: "muralidharanvpt@gmail.com ",
+
+            },
+            {
+
+              name: "Nagarajan R ",
+              year: "II  ",
+              phone: 6383456337,
+              email: "r.ns.raj2003@gmail.com  ",
+
+            }
+          ],
+
+        }
       },
       {
-          name: "Mobile application development using Machine learning ",
-          logo: "/EventsAssets/ecew4.webp",
-          tag: "WORKSHOP",
-          color: "0, 70, 90",
-          mode: "TBA",
-          venue: "TBA",
-          company: "Towards Technology",
-  
-          day1: {
-              date: "09/11/22",
-              time: "10.00-3.00",
-              mode: "online",
-              venu: "TBA",
-              topic: "FN Session: Machine Learning Introduction .Data importance .Develop and Validate Machine Learning model .Machine Learning deployment methods Hands-on Session: (Create mobile app for diabetes prediction) .   Problem statement .Data Collection .Data pre-processing .Train Machine Learning model . Validate Machine Learning model.Develop mobile application by deploying Machine Learning model  Install the application in mobile ",
-              resource: [
-                  {
-                      name: "Ms.Vaishnavi Pandiyan ",
-                      desig: "Co founder  ",
-                      phone: 9894467245,
-                      email: "info@towardstechno.com ",
-                  }
-              ],
-              staff: [
-                  {
-  
-                      name: "T.Archana  ",
-                      desig: "Associate Professor (SG) ",
-                      phone: 7871784886,
-                      email: "archana@saveetha.ac.in  ",
-  
-                  },
-                  {
-  
-                      name: "A.Hemamalini  ",
-                      desig: "Associate Professor (SG) ",
-                      phone: 9952376256,
-                      email: "hemamalini@saveetha.ac.in  ",
-  
-                  }
-              ],
-              student: [
-                  {
-  
-                      name: "S.A.ABDUL KALAM  ",
-                      year: "II ",
-                      phone: 9159478581,
-                      email: "akkalam305@gmail.com ",
-  
-                  },
-                  {
-  
-                      name: "Mamoj Ravichandran ",
-                      year: "III  ",
-                      phone: 7904106485,
-                      email: "manojmsd7@gmail.com  ",
-  
-                  }
-              ],
-  
-          }
+        name: "Mobile application development using Machine learning ",
+        logo: "/EventsAssets/ecew4.webp",
+        tag: "WORKSHOP",
+        color: "0, 70, 90",
+        mode: "TBA",
+        venue: "TBA",
+        company: "Towards Technology",
+
+        day1: {
+          date: "09/11/22",
+          time: "10.00-3.00",
+          mode: "online",
+          venu: "TBA",
+          topic: "FN Session: Machine Learning Introduction .Data importance .Develop and Validate Machine Learning model .Machine Learning deployment methods Hands-on Session: (Create mobile app for diabetes prediction) .   Problem statement .Data Collection .Data pre-processing .Train Machine Learning model . Validate Machine Learning model.Develop mobile application by deploying Machine Learning model  Install the application in mobile ",
+          resource: [
+            {
+              name: "Ms.Vaishnavi Pandiyan ",
+              desig: "Co founder  ",
+              phone: 9894467245,
+              email: "info@towardstechno.com ",
+            }
+          ],
+          staff: [
+            {
+
+              name: "T.Archana  ",
+              desig: "Associate Professor (SG) ",
+              phone: 7871784886,
+              email: "archana@saveetha.ac.in  ",
+
+            },
+            {
+
+              name: "A.Hemamalini  ",
+              desig: "Associate Professor (SG) ",
+              phone: 9952376256,
+              email: "hemamalini@saveetha.ac.in  ",
+
+            }
+          ],
+          student: [
+            {
+
+              name: "S.A.ABDUL KALAM  ",
+              year: "II ",
+              phone: 9159478581,
+              email: "akkalam305@gmail.com ",
+
+            },
+            {
+
+              name: "Mamoj Ravichandran ",
+              year: "III  ",
+              phone: 7904106485,
+              email: "manojmsd7@gmail.com  ",
+
+            }
+          ],
+
+        }
       },
       {
         name: "Data Analysis using Machine Learning in MATLAB",
@@ -4406,121 +4448,121 @@ export const EventDetails = [
         mode: "TBA",
         venue: "TBA",
         company: "Renault Nissan Technology & Business Centre ,Chennai, India",
-  
-          day1: {
-              date: "09/11/22",
-              time: "10am -3pm",
-              mode: "online",
-              venu: "TBA",
-              topic: "Implement and test your algorithms. Develop the computational codes and debugging.Use a large database of built in algorithms.  Process still images and create simulation videos.Symbolic computation. Call external libraries.Applications",
-              resource: [
-                  {
-                      name: "Mr. ARUN KUMAR .L  ",
-                      desig: "Senior Software Engineer  ",
-                      phone: 8015991281,
-                      email: "arunvijay537@gmail.com ",
-                  }
-              ],
-              staff: [
-                  {
-  
-                      name: "Dr.M.Selvi ",
-                      desig: "Professor & Deputy HOD   ",
-                      phone: 9443105843,
-                      email: "selvim@saveetha.ac.in  ",
-  
-                  },
-                  {
-  
-                      name: "Dr.Raji Pandurangan  ",
-                      desig: "Associate Professor  ",
-                      phone: 9003051625,
-                      email: "rajipandurangan@saveetha.ac.in  ",
-  
-                  }
-              ],
-              student: [
-                  {
-                      name: "Pradeep S  ",
-                      year: "IV ",
-                      phone: 6374598918,
-                      email: "spradeeps2002@gmail.com ",
-                  },
-                  {
-  
-                      name: "Vishnu Priya M K  ",
-                      year: "II  ",
-                      phone: 7358250220,
-                      email: "vishnupreya@2004  ",
-  
-                  }
-              ],
-  
-          }
+
+        day1: {
+          date: "09/11/22",
+          time: "10am -3pm",
+          mode: "online",
+          venu: "TBA",
+          topic: "Implement and test your algorithms. Develop the computational codes and debugging.Use a large database of built in algorithms.  Process still images and create simulation videos.Symbolic computation. Call external libraries.Applications",
+          resource: [
+            {
+              name: "Mr. ARUN KUMAR .L  ",
+              desig: "Senior Software Engineer  ",
+              phone: 8015991281,
+              email: "arunvijay537@gmail.com ",
+            }
+          ],
+          staff: [
+            {
+
+              name: "Dr.M.Selvi ",
+              desig: "Professor & Deputy HOD   ",
+              phone: 9443105843,
+              email: "selvim@saveetha.ac.in  ",
+
+            },
+            {
+
+              name: "Dr.Raji Pandurangan  ",
+              desig: "Associate Professor  ",
+              phone: 9003051625,
+              email: "rajipandurangan@saveetha.ac.in  ",
+
+            }
+          ],
+          student: [
+            {
+              name: "Pradeep S  ",
+              year: "IV ",
+              phone: 6374598918,
+              email: "spradeeps2002@gmail.com ",
+            },
+            {
+
+              name: "Vishnu Priya M K  ",
+              year: "II  ",
+              phone: 7358250220,
+              email: "vishnupreya@2004  ",
+
+            }
+          ],
+
+        }
       },
       {
-          name: "Workshop on  Can you be happy all through your life? Yes, Hidden Secret Un-locked !  ",
-          logo: "/EventsAssets/ecew6.webp",
-          tag: "WORKSHOP",
-          color: "0, 70, 90",
-          mode: "TBA",
-          venue: "TBA",
-          company: "ADCOM AND WOW ACADEMY",
-  
-          day1: {
-              date: "08/11/22",
-              time: "10.00-3.00",
-              mode: "Offline",
-              venu: "TBA",
-              topic: "Brain storming sessions .Happiness revealed factors.Activities which creates fun and cherish able moments ",
-              resource: [
-                  {
-                      name: "R.S.MANI  ",
-                      desig: "FOUNDER ",
-                      phone: 9840298421,
-                      email: "mani@adcomindia.com ",
-                  }
-              ],
-              staff: [
-                  {
-  
-                      name: "G.Keerthiga  ",
-                      desig: "Associate Professor (SG)  ",
-                      phone: 8825783729,
-                      email: "keerthiga@saveetha.ac.in  ",
-  
-                  },
-                  {
-  
-                      name: "K.Sakthi  ",
-                      desig: "Associate Professor (SG) ",
-                      phone: 9962386422,
-                      email: "sakthi@saveetha.ac.in    ",
-  
-                  }
-              ],
-              student: [
-                  {
-  
-                      name: "Arunachalam S  ",
-                      year: "IV ",
-                      phone: 6374598918,
-                      email: "ajuprasath12@gmail.com  ",
-  
-                  },
-                  {
-  
-                      name: "Karthikeyan S  ",
-                      year: "II  ",
-                      phone: 7338929319,
-                      email: "karthioffece@gmail.com  ",
-  
-                  }
-              ],
-  
-          }
+        name: "Workshop on  Can you be happy all through your life? Yes, Hidden Secret Un-locked !  ",
+        logo: "/EventsAssets/ecew6.webp",
+        tag: "WORKSHOP",
+        color: "0, 70, 90",
+        mode: "TBA",
+        venue: "TBA",
+        company: "ADCOM AND WOW ACADEMY",
+
+        day1: {
+          date: "08/11/22",
+          time: "10.00-3.00",
+          mode: "Offline",
+          venu: "TBA",
+          topic: "Brain storming sessions .Happiness revealed factors.Activities which creates fun and cherish able moments ",
+          resource: [
+            {
+              name: "R.S.MANI  ",
+              desig: "FOUNDER ",
+              phone: 9840298421,
+              email: "mani@adcomindia.com ",
+            }
+          ],
+          staff: [
+            {
+
+              name: "G.Keerthiga  ",
+              desig: "Associate Professor (SG)  ",
+              phone: 8825783729,
+              email: "keerthiga@saveetha.ac.in  ",
+
+            },
+            {
+
+              name: "K.Sakthi  ",
+              desig: "Associate Professor (SG) ",
+              phone: 9962386422,
+              email: "sakthi@saveetha.ac.in    ",
+
+            }
+          ],
+          student: [
+            {
+
+              name: "Arunachalam S  ",
+              year: "IV ",
+              phone: 6374598918,
+              email: "ajuprasath12@gmail.com  ",
+
+            },
+            {
+
+              name: "Karthikeyan S  ",
+              year: "II  ",
+              phone: 7338929319,
+              email: "karthioffece@gmail.com  ",
+
+            }
+          ],
+
+        }
       }
-  ]
+    ]
   },
   {
     id: "eee",
