@@ -24,7 +24,6 @@ const Footer = () => {
 
   useEffect(() => {
     setViews(parseInt(views))
-    localStorage.removeItem("value");
   }, []);
 
 
