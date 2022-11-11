@@ -321,15 +321,27 @@ export const EventDetails = [
           ],
           student: [
             {
-              name: "Harini NG",
+              name: "Tafseer Ali I",
               year: "III",
-              phone: 6382246669,
+              phone: 8608209543,
               email: "harinig025@gmail.com",
             },
             {
-              name: "Aadhithya Raj V",
+              name: "Prem Anand",
               year: "III",
-              phone: 6374492710,
+              phone: 9994424024,
+              email: "aadhithya3210@gmail.com",
+            },
+            {
+              name: "Harini G",
+              year: "III",
+              phone: "",
+              email: "aadhithya3210@gmail.com",
+            },
+            {
+              name: "Sugavarathan",
+              year: "III",
+              phone: 7010268757,
               email: "aadhithya3210@gmail.com",
             },
           ],
