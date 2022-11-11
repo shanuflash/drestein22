@@ -563,12 +563,14 @@ const Modal = ({ open, setOpenModal }) => {
               </div>
             ) : null}
             <a
-              onClick={() => setOpenModal((prev) => !prev)}
-              href={eventObject.link}
-              className="btn"
-            >
-              <RegisterBtn />
-            </a>
+                onClick={() => setOpenModal((prev) => !prev)}
+                href={eventObject.link}
+                className="btn"
+                target="_blank"
+                style={{textDecoration: "none"}}
+              >
+                <RegisterBtn />
+              </a>
           </>
         )}
       </div>

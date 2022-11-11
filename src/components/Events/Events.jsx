@@ -11,9 +11,14 @@ import { loadFull } from "tsparticles";
 import { Particle } from "../../configs/partical.config";
 // import React, { useState, useEffect } from "react"
 import Modal from "./Modal.jsx";
-
+import { motion, useScroll, useTransform } from "framer-motion";
 const Events = () => {
   const [openModal, setOpenModal] = useState(false);
+  const { scrollY } = useScroll();
+  const MValue = useTransform(scrollY, [0, 800], [0, -200]);
+  const DValue = useTransform(scrollY, [0, 1000], [0, -500]);
+  const { scrollYProgress } = useScroll();
+  const DeviceSize = window.innerWidth;
 
   useEffect(() => {
     openModal
@@ -30,6 +35,10 @@ const Events = () => {
 
   return (
     <>
+    <motion.div
+        className="scrollprogress"
+        style={{ scaleX: scrollYProgress }}
+      />
       <Particles
         className="particles"
         id="tsparticles"

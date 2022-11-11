@@ -3158,11 +3158,11 @@ export const EventDetails = [
         tag: "WORKSHOP",
         color: "0, 70, 90",
         company: "Ideazone",
-
         link: "https://forms.gle/Y8YxDuH2GC1ziKG56",
         day1: {
-          date: "",
-          time: "",
+          date: "14.11.2022",
+          mode: "ONLINE",
+          time: "10am-12pm",
           resource: [
             {
               name: "Mr. Balaji/Dhanrajan",
@@ -3213,9 +3213,9 @@ export const EventDetails = [
         tag: "WORKSHOP",
         color: "0, 70, 90",
         company: " J&R industries on robotics",
-
         link: "https://forms.gle/Y8YxDuH2GC1ziKG56",
         day1: {
+          mode: "ONLINE",
           date: "15/11/2022",
           time: "10am-12pm",
           resource: [
@@ -3268,11 +3268,13 @@ export const EventDetails = [
         tag: "WORKSHOP",
         color: "0, 70, 90",
         company: " Bessel Automation",
-
+        mode:"OFFLINE",
         link: "https://forms.gle/Y8YxDuH2GC1ziKG56",
         day1: {
           date: "16/11/2022",
           time: "10am-3pm",
+          mode:"OFFLINE",
+
           resource: [
             {
               name: "Mr. G. Ram Prasath",
@@ -3321,6 +3323,8 @@ export const EventDetails = [
           date: "17/11/2022",
           time: "10am-3pm",
           company: "Bessel Automation",
+          mode:"OFFLINE",
+
           resource: [
             {
               name: "Mr.Parthi",
@@ -3376,6 +3380,8 @@ export const EventDetails = [
         day1: {
           date: "17/11/2022",
           time: "10am-3pm",
+          mode : "ONLINE",
+
           resource: [
             {
               name: "Mr.Leela Krishnan E",
