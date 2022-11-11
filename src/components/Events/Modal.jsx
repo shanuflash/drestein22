@@ -245,32 +245,6 @@ const Modal = ({ open, setOpenModal }) => {
                 ) : null}
                 <h1 className="title">Day 1:</h1>
                 <p className="desc">Date: {eventObject.day1.date}</p>
-
-                {eventObject.day1.topic && (
-                  <div>
-                    {eventObject.day1.list ? (
-                      <>
-                        {splitworktopicd1.map((data) => {
-                          return (
-                            <p
-                              style={{
-                                margin: "5px 0",
-                              }}
-                            >
-                              {data}
-                            </p>
-                          );
-                        })}
-                      </>
-                    ) : (
-                      <p className="desc">
-                        <span className="topic">Topic: </span>
-                        {eventObject.day1.topic}
-                      </p>
-                    )}
-                  </div>
-                )}
-
                 <div className="grid">
                   <div className="item">
                     <span>Mode</span>
@@ -303,6 +277,32 @@ const Modal = ({ open, setOpenModal }) => {
                     />
                   </div>
                 </div>
+                {eventObject.day1.topic && (
+                  <div>
+                    {eventObject.day1.list ? (
+                      <>
+                        {splitworktopicd1.map((data) => {
+                          return (
+                            <p
+                              style={{
+                                margin: "5px 0",
+                              }}
+                            >
+                              {data}
+                            </p>
+                          );
+                        })}
+                      </>
+                    ) : (
+                      <p className="desc">
+                        <span className="topic">Topic: </span>
+                        {eventObject.day1.topic}
+                      </p>
+                    )}
+                  </div>
+                )}
+
+                
               </>
             ) : null}
             {eventObject?.day1?.resource ? (
@@ -356,32 +356,6 @@ const Modal = ({ open, setOpenModal }) => {
                   <h4>Company Name : {eventObject.company}</h4>
                 ) : null}
                 <p className="desc">Date: {eventObject.day2.date}</p>
-
-                {eventObject.day2.topic && (
-                  <div>
-                    {eventObject.day2.list ? (
-                      <>
-                        {splitworktopicd2.map((data) => {
-                          return (
-                            <p
-                              style={{
-                                margin: "5px 0",
-                              }}
-                            >
-                              {data}
-                            </p>
-                          );
-                        })}
-                      </>
-                    ) : (
-                      <p className="desc">
-                        <span className="topic">Topic: </span>
-                        {eventObject.day2.topic}
-                      </p>
-                    )}
-                  </div>
-                )}
-
                 <div className="grid">
                   <div className="item">
                     <span>Mode</span>
@@ -414,6 +388,32 @@ const Modal = ({ open, setOpenModal }) => {
                     />
                   </div>
                 </div>
+                {eventObject.day2.topic && (
+                  <div>
+                    {eventObject.day2.list ? (
+                      <>
+                        {splitworktopicd2.map((data) => {
+                          return (
+                            <p
+                              style={{
+                                margin: "5px 0",
+                              }}
+                            >
+                              {data}
+                            </p>
+                          );
+                        })}
+                      </>
+                    ) : (
+                      <p className="desc">
+                        <span className="topic">Topic: </span>
+                        {eventObject.day2.topic}
+                      </p>
+                    )}
+                  </div>
+                )}
+
+                
               </>
             ) : null}
             {eventObject?.day2?.resource ? (
