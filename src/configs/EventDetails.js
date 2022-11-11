@@ -4063,17 +4063,17 @@ export const EventDetails = [
         venue: "TBA",
         time: "TBA",
         members: "2",
-        rules: "",
+        rules: " A team should consists of two members in a team.No mobile phones are allowed during the participation of the event.No discussion or sharing of answers among the teams.If any malpractices are noticed then the team will be disqualified",
         color: "0, 1, 38",
         round1title: "KNOWLEDGE BLOW ",
         round1:
-          "Time for the event is 2 mins. Each team can have 2 members. The participants try to write the maximum number of components, technical terms (such as ground, connecting wire etc) related to electronics circuits etc.  The team which has least count of technical terms will not be forward to the next round",
-        round2: "TECH CHARADES ",
+          " Time for the event is 2 mins. Each team can have 2 members. The participants try to write the maximum number of components, technical terms(such as ground, connecting wire etc) related to electronics circuits etc. The team which has least count of technical terms will not be forward to the next round",
+        round2: " A circuit diagram will be displayed for 2 minutes. Next 3 minutes will be given to reproduce ( implement) the circuit diagram using breadboard and component, which will be provided.Depending on the circuit's fulfillness ( correct component placed in correct position) terms will be forwarded to the next round",
         round2title:
-          "A circuit diagram will be displayed for 2 minutes. Next 3 minutes will be given to reproduce ( implement) the circuit diagram using breadboard and component, which will be provided.Depending on the circuit's fulfillness ( correct component placed in correct position) terms will be forwarded to the next round",
-        round3: "TECH CHARADES 2.0 ",
+          "TECH CHARADES",
+        round3title: "TECH CHARADES 2.0 ",
         round3:
-          "Each team has to pick  their questions from the question pool bowl. Selected circuits will be displayed for each team for 2 minutes . Next 3 minutes will be given to reproduce ( implement) the circuit diagram using breadboard and component, which will be provided.Depending on the circuit's fulfillness ( correct component placed in correct position) terms will be forwarded to the next round",
+          "Each team has to pick  their  questions from the question pool bowl. Selected circuits will be displayed for each team for 2 minutes . Next 3 minutes will be given to reproduce ( implement) the circuit diagram using breadboard and component, which will be provided.Depending on the circuit's fulfillness ( correct component placed in correct position) terms will be forwarded to the next round",
         logo: "EventsAssets/ece3.webp",
         staff: [
           {
