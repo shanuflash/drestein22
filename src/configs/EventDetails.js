@@ -3204,7 +3204,7 @@ export const EventDetails = [
       },
       {
         name: "Robotics Simulation",
-        logo: "/EventsAssets/mechw2.webp",
+        logo: "/EventsAssets/mechw3.webp",
         tag: "WORKSHOP",
         color: "0, 70, 90",
         company: " J&R industries on robotics",
