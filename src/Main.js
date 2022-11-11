@@ -12,7 +12,7 @@ import About from "./components/About/About";
 import Guest from "./components/Guest/Guest";
 import Footer from "./components/Footer/Footer";
 import "./App.css";
-import Counter from "./components/counter/Counter";
+// import Counter from "./components/counter/Counter";
 import { fontWeight } from "@mui/system";
 
 const DepartmentDiv = styled.div`
@@ -58,11 +58,11 @@ const Main = () => {
         className="img"
         style={{ y: DeviceSize < 800 ? MValue : DValue, zIndex: -1 }}
       ></motion.div>
-      {DeviceSize > 800 ? (
+      {/* {DeviceSize > 800 ? (
         <div id="Count" style={{ width: "100%" }}>
           <Counter />
         </div>
-      ) : null}
+      ) : null} */}
       <DepartmentDiv id="Departments">
         <Departments />
       </DepartmentDiv>
