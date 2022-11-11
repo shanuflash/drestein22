@@ -336,7 +336,7 @@ export const EventDetails = [
             {
               name: "Harini G",
               year: "III",
-              phone: "",
+              phone: "harinig025@gmail.com",
               email: "aadhithya3210@gmail.com",
             },
             {
@@ -4068,6 +4068,7 @@ export const EventDetails = [
         name: "Circuit Buzz",
         date: "19 Nov 2022(FN)",
         type: "Team",
+        tag: "EVENT",
         venue: "TBA",
         time: "TBA",
         members: "2",
