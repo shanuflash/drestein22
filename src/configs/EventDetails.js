@@ -1506,7 +1506,7 @@ export const EventDetails = [
         tag: "WORKSHOP",
         color: "0, 70, 90",
 
-        link: "https://docs.google.com/forms/d/e/1FAIpQLSe4vrqp0lMhP4C7fE2NtrH8WRhZGUpWk1tX-Z2NGa5AdJ3MNQ/viewform",
+        link: "https://docs.google.com/forms/d/e/1FAIpQLSdvQNXVEr5jPksC-x-uk3Cs7sOuB0uTgwYr1qGsn9Brh-UCFw/viewform",
         day1: {
           date: "16.11.2022 ",
           time: "9.00-3.00",
@@ -1593,12 +1593,12 @@ export const EventDetails = [
         },
       },
       {
-        name: "Hands on training on 3D Printing ",
-        logo: "/EventsAssets/aidsw1.webp",
+        name: "3D Designing & Manufacturing",
+        logo: "/EventsAssets/aiw3.webp",
         tag: "WORKSHOP",
         color: "0, 70, 90",
 
-        link: "https://docs.google.com/forms/d/e/1FAIpQLSdvQNXVEr5jPksC-x-uk3Cs7sOuB0uTgwYr1qGsn9Brh-UCFw/viewform",
+        link: "https://docs.google.com/forms/d/e/1FAIpQLSe4vrqp0lMhP4C7fE2NtrH8WRhZGUpWk1tX-Z2NGa5AdJ3MNQ/viewform",
         day1: {
           date: "14.11.2022",
           time: "9.00am-3.00pm",
