@@ -484,7 +484,7 @@ const Form = () => {
           }}
         >
           <CssVarsProvider theme={theme} className="formsheet">
-            {0 ? (
+            {1 ? (
               <div
                 style={{
                   fontSize: "10vw",
@@ -495,10 +495,11 @@ const Form = () => {
                   alignItems: "center",
                 }}
               >
-                Opening Soon!
+                Registeration disabled due to technical difficulties, kindly
+                check back later!
               </div>
             ) : null}
-            {1 ? (
+            {0 ? (
               <form
                 onSubmit={handlesubmit}
                 style={{ marginInline: "auto" }}
