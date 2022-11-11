@@ -855,10 +855,10 @@ export const EventDetails = [
     eventslist: [
       {
         name: "Sherlock Holmes",
-        date: "19 Nov 2022(FN)",
+        date: "18 Nov 2022(FN)",
         type: "Team",
-        venue: "TBA",
-        time: "TBA",
+        venue: "RB GF LH 01",
+        time: "FORENOON",
         members: "2",
         rules: "",
 
@@ -905,8 +905,8 @@ export const EventDetails = [
         name: "Devils Advocate",
         date: "19 Nov 2022(AN)",
         type: "2",
-        venue: "TBA",
-        time: "TBA",
+        venue: "RB GF LH 01",
+        time: "AFTERNOON",
         members: "1-2",
         rules: "",
         round1:
@@ -945,8 +945,8 @@ export const EventDetails = [
         name: "Treasure Hunt",
         date: "18 Nov 2022(FN)",
         type: "Team",
-        venue: "TBA",
-        time: "TBA",
+        venue: "RB GF LH 01",
+        time: "FORENOON",
         members: "2",
         rules: "",
         round1:
@@ -983,8 +983,8 @@ export const EventDetails = [
         tagline: "Let the mind battle",
         date: "18 Nov 2022(AN)",
         type: "Team",
-        venue: "TBA",
-        time: "TBA",
+        venue: "RB GF LH 01",
+        time: "AFTERNOON",
         members: "1-3",
         rules: "",
         round1title: "Connections (Guess The Dialogue)",
@@ -1036,12 +1036,11 @@ export const EventDetails = [
         logo: "/EventsAssets/agriw1.webp",
         tag: "WORKSHOP",
         color: "0, 70, 90",
-
         day1: {
           date: "16/11/2022-FN",
-          time: "12pm-3pm",
+          time: "FORENOON",
           mode: "OFFLINE",
-          venue: "TBA",
+          venue: "EEE Seminar Hall",
           resource: [],
           list: true,
           topic:
@@ -1083,7 +1082,7 @@ export const EventDetails = [
         },
       },
       {
-        name: "Chemical Free Solution",
+        name: "Soil Less Farming",
         logo: "/EventsAssets/agriw2.webp",
         tag: "WORKSHOP",
         color: "0, 70, 90",
@@ -1091,9 +1090,9 @@ export const EventDetails = [
 
         day1: {
           date: "15/11/2022-FN",
-          time: "12.00-3.00pm",
+          time: "FORENOON",
           mode: "OFFLINE",
-          venue: "TBA",
+          venue: "EEE Seminar Hall",
           topic:
             "The major advantage of soilless cultivation is the uncoupling plant growth from problems associated with soil, such as soil borne pests and diseases, non-arable soil, soil salinity, poor soil quality.A soilless mix provides a cleaner medium and gives you more control.So, the demonstration program of soil-less culture is done at Saveetha Engineering College.",
           resource: [
