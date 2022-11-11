@@ -1119,9 +1119,9 @@ export const EventDetails = [
         name: "Code and Debug",
         tagline: "Code Treasure Hunt",
         date: "18 Nov 2022(FN)",
-        type: "Team",
+        type: "solo",
         venue: "TBA",
-        time: "TBA",
+        time: "9:30 - 12:30 pm",
         members: "2",
         rules:
           "The event is all about testing the programming knowledge of the participants. The participants are not restricted to any programming language. They can  choose the language of their choice. Programs are checked against a set of test cases. A program is accepted if it passes all tests. Contestants should not bring or use any reference manuals, electronic     gadgets, program listings, any machine-readable information (software or    data on any kind of storage), computing devices (handhelds, portable PCs,    notebooks, calculators), mobile phones, or any other communication devices. Winner is selected based on the score and the total time taken",
@@ -1170,9 +1170,9 @@ export const EventDetails = [
       {
         name: "Shark Tank",
         date: "18 Nov 2022(AN)",
-        type: "Team",
+        type: "3-4",
         venue: "TBA",
-        time: "TBA",
+        time: "1:00 - 4:00pm",
         members: "1-2",
         rules:
           "3-4 participants in each group.No electronic devices are allowed to be used.Clues will be given on spot",
@@ -1218,9 +1218,9 @@ export const EventDetails = [
       {
         name: "Memesrus",
         date: "19 Nov 2022(AN)",
-        type: "Team",
+        type: "Max 2",
         venue: "TBA",
-        time: "TBA",
+        time: "12:300pm - 3:30pm",
         members: "2",
         rules:
           "No sensitive content. No restrictions on image resolution.No videos/audio are allowed.The meme should be in English",
@@ -1278,9 +1278,9 @@ export const EventDetails = [
       {
         name: "Web Con",
         date: "19 Nov 2022(FN)",
-        type: "Team",
+        type: "Max 3",
         venue: "TBA",
-        time: "TBA",
+        time: "9am-12pm",
         members: "1-3",
         rules:
           "Programming Language (Hypertext Markup Language (HTML), CSS(no sass) , Java Script, etc. Maximum 3 members per group.Bringing your own personal computer/laptop is mandatory.Students have to design a web page on any one of the specified topics and present it to the judges.Use of USB drive is strictly prohibited.Using pre-made templates is strictly prohibited. Extra Modules and plugins like Angular, react etc are prohibited .Browsing history, downloads and recycle bin should not be cleared from the start to end of the event to ensure no malpractice is done",
@@ -1326,9 +1326,9 @@ export const EventDetails = [
       {
         name: "Data Hunt",
         date: "18 Nov 2022(AN)",
-        type: "Team",
+        type: "2 member",
         venue: "TBA",
-        time: "TBA",
+        time: "1pm-4pm",
         members: "2",
         rules:
           "A team of 2 members can participate in this event.Programming Language required: Python with data science and machine learning .Mobile phones are strictly not allowed",
@@ -1389,11 +1389,11 @@ export const EventDetails = [
           logo: "/EventsAssets/aidsw1.webp",
           tag: "WORKSHOP",
           color: "0, 70, 90",
-  
+
           day1: {
               date: "15.11.2022 ",
-              time: "9.00-3.00",
-              mode: "TBA",
+              time: "9.00-3.00pm",
+              mode: "OFFLINE",
               topic: "Introduction to robot anatomy links , joints and types or robots. Kinematic modeling of robot.Forward kinematics using robo analyser .Inverse kinematics using robot analyser .Introduction to robo dk .Hands on with 6 axis industrial robot",
               resource: [
                   {
@@ -1461,7 +1461,7 @@ export const EventDetails = [
           day1: {
               date: "16.11.2022 ",
               time: "9.00-3.00",
-              mode: "TBA",
+              mode: "OFFLINE",
               topic: "Designing the 3D models using Maya ",
               resource: [
   
@@ -1505,8 +1505,8 @@ export const EventDetails = [
           },
           day2: {
               date: "17.11.2022 ",
-              time: "9.00-3.00",
-              mode: "TBA",
+              time: "9.00-3.00pm",
+              mode: "OFFLINE",
               topic: "Developing 2D/3D game using Unity/Unreal ",
               resource: [
   
@@ -1557,9 +1557,9 @@ export const EventDetails = [
           color: "0, 70, 90",
   
           day1: {
-              date: "14.11.2022 ",
-              time: "9.00-3.00",
-              mode: "TBA",
+              date: "14.11.2022",
+              time: "9.00am-3.00pm",
+              mode: "OFFLINE",
               topic: "Introduction to Fusion 360 .Introduction to 3D Printing.Introduction to cura software  ",
               resource: [
   
@@ -1608,9 +1608,9 @@ export const EventDetails = [
               ]
           },
           day2: {
-              date: "15.11.2022 ",
-              time: "9.00-3.00",
-              mode: "TBA",
+              date: "15.11.2022",
+              time: "9.00-3.00pm",
+              mode: "OFFLINE",
               topic: "Hands on training, demonstration to the 3D printing components ",
               resource: [
   
