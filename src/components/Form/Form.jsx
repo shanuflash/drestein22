@@ -487,7 +487,7 @@ const Form = () => {
             {0 ? (
               <div
                 style={{
-                  fontSize: "10vw",
+                  fontSize: "2vw",
                   display: "flex",
                   justifyContent: "center",
                   height: "80vh",
@@ -495,7 +495,8 @@ const Form = () => {
                   alignItems: "center",
                 }}
               >
-                Opening Soon!
+                Registeration disabled due to technical difficulties, kindly
+                check back later!
               </div>
             ) : null}
             {1 ? (
