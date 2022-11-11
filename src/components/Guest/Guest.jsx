@@ -70,7 +70,7 @@ const GuestContainer = styled.div`
 `;
 
 const Test = styled.div`
-padding:4rem;
+  padding: 4rem;
   background: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(11.5px);
   -webkit-backdrop-filter: blur(11.5px);
@@ -81,14 +81,14 @@ padding:4rem;
   color: black;
   font-size: 5vw;
   text-align: center;
-  /* background-color: white; */
+
   width: 80%;
   font-family: "Montserrat", sans-serif;
 
   /* font-family: poppins, sans-serif; */
   font-weight: bold;
 
-  // height: 300px;
+  height: 235px;
   border-radius: 30px;
   position: absolute;
   top: 0%;
@@ -104,16 +104,12 @@ padding:4rem;
   /* box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px; */
 `;
 
-const Test2 = styled.div`
-  font-size: 2.9vw;
-`;
-
 function Guest() {
   const Guests = [
     {
       name: "Ganesh Thirunavukkarasu M ",
       desc: "",
-      src: "/guest.jpg",
+      src: "PeopleAssets/guest.webp",
     },
   ];
 
@@ -142,9 +138,10 @@ function Guest() {
   };
   return (
     <GuestHead>
-      <Test>
-        Prizes worth upto 5 Lakhs+
-        {/* <Test2>Participate in any event with a single payment*</Test2> */}
+      <Test style={{ display: "flex", flexDirection: "row" }}>
+        <div>Prizes worth upto Lakhs</div>
+
+        <div style={{ fontSize: "10rem" }}>5+</div>
       </Test>
       <GuestTitle
         as={motion.div}
@@ -186,7 +183,11 @@ function Guest() {
                   marginTop: "1rem",
                 }}
               >
-                <img src="tcs.jpg" style={{ borderRadius: "1rem" }} />
+                <img
+                  src="OtherAssets/tcs.webp"
+                  style={{ borderRadius: "1rem" }}
+                  alt="tcs_logo"
+                />
 
                 <div style={{ textAlign: "left" }}>
                   Regional Head - Academic Interface Programme

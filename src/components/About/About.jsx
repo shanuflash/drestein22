@@ -13,13 +13,8 @@ function About() {
     );
     margin-top: 100px;
     display: flex;
-    --color: 90, 90, 90;
-    --bg-filter-opacity: 0.35;
     --bg-img: url("https://www.saveetha.ac.in/images/sec/2020/home/building_2.jpg");
-    background-image: linear-gradient(
-        rgba(var(--color), var(--bg-filter-opacity)),
-        rgba(0, 0, 0, var(--bg-filter-opacity))
-      ),
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.35)),
       var(--bg-img);
     background-position: center;
 
@@ -33,7 +28,7 @@ function About() {
   `;
 
   const AboutContainer = styled.div`
-    padding: 100px 200px;
+    padding: 100px 100px;
     @media screen and (max-width: 600px) {
       padding: 20px 30px;
     }
@@ -87,7 +82,7 @@ function About() {
 
   const Descard = styled.div`
     font-size: 0.75em;
-    background-color: rgba(225, 225, 225);
+    background-color: rgba(225, 225, 225, 0.75);
     color: black;
     border-radius: 1rem;
     padding: 1rem;
@@ -115,51 +110,62 @@ function About() {
           whileInView="onscreen"
           variants={headtext}
         >
-          <div className="GalleryHeadTxt">ABOUT SEC</div>
+          <div
+            className="GalleryHeadTxt"
+            style={{
+              backgroundImage:
+                "linear-gradient( 45deg, rgb(249 139 255 / 75%) 0%, rgb(43 209 255 / 75%) 52%, rgb(43 255 135 / 75%) 92% )",
+            }}
+          >
+            ABOUT SEC
+          </div>
         </AboutTitle>
         <AboutDescript>
-          <Descard as={motion.div} variants={text}>
-            <Descardhead>Our Vision:</Descardhead> To be and to be recognized
-            for setting the standard of excellence in engineering education and
-            high quality research in Science and Technology.
-          </Descard>
-          <Descard as={motion.div} variants={text}>
-            <Descardhead>Our Mission:</Descardhead> To promote academic
-            excellence; widen intellectual horizon; self-discipline and high
-            ideals for the total personality development of the individual.
-          </Descard>
-          
-            {/* <List as={motion.li} variants={text}>
+          <div style={{ display: "flex" }}>
+            <Descard as={motion.div} variants={text} style={{ width: "50%" }}>
+              <Descardhead>Our Vision:</Descardhead> To be and to be recognized
+              for setting the standard of excellence in engineering education
+              and high quality research in Science and Technology.
+            </Descard>
+            <Descard as={motion.div} variants={text} style={{ width: "50%" }}>
+              <Descardhead>Our Mission:</Descardhead> To promote academic
+              excellence; widen intellectual horizon; self-discipline and high
+              ideals for the total personality development of the individual.
+            </Descard>
+          </div>
+
+          {/* <List as={motion.li} variants={text}>
               Saveetha Engineering College (SEC) was established in 2001, by the
               Founder Chairman Dr. N. M. Veeraiyan, a committed and dedicated
               Medical Professional.
             </List> */}
-            <Descard as={motion.li} variants={text}>
-              Ranked 96 by NIRF- National Institute Ranking Framework for the
-              academic year 2017-18 among all IITs, Central, State and Private
-              Institutions in India.{" "}
-            </Descard>
-            <Descard as={motion.li} variants={text}>
-              Awarded 'A' GRADE with a high score of 3.19 on a scale of 4 by the
-              National Assessment and Accreditation Council (NAAC) for 5 Years.
-            </Descard>
-            <Descard as={motion.li} variants={text}>
-              SEC awarded AUTONOMOUS status by the UGC from the academic year
-              2019-2020.
-            </Descard>
-            <Descard as={motion.li} variants={text}>
-              SEC is recognized as a Scientific and Industrial Research
-              Organization (SIRO) by the Department of Scientific and Industrial
-              Research (DSIR), Government of India.
-            </Descard>
-            <Descard
-              as={motion.li}
-              variants={text}
-              style={{ marginBottom: "5rem" }}
-            >
-              Five Research Centres recognised by Anna University
-            </Descard>
-          
+
+          <Descard as={motion.li} variants={text}>
+            Ranked 96 by NIRF- National Institute Ranking Framework for the
+            academic year 2017-18 among all IITs, Central, State and Private
+            Institutions in India.{" "}
+          </Descard>
+          <Descard as={motion.li} variants={text}>
+            Awarded 'A' GRADE with a high score of 3.19 on a scale of 4 by the
+            National Assessment and Accreditation Council (NAAC) for 5 Years.
+          </Descard>
+
+          <Descard as={motion.li} variants={text}>
+            SEC awarded AUTONOMOUS status by the UGC from the academic year
+            2019-2020.
+          </Descard>
+          <Descard as={motion.li} variants={text}>
+            SEC is recognized as a Scientific and Industrial Research
+            Organization (SIRO) by the Department of Scientific and Industrial
+            Research (DSIR), Government of India.
+          </Descard>
+          <Descard
+            as={motion.li}
+            variants={text}
+            style={{ marginBottom: "5rem" }}
+          >
+            Five Research Centres recognised by Anna University
+          </Descard>
         </AboutDescript>
       </AboutContainer>
     </AboutHead>

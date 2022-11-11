@@ -59,7 +59,7 @@ function SingleUserPage() {
   }, []);
 
   if (load) {
-    return <Loading/>;
+    return <Loading />;
   }
 
   return (
