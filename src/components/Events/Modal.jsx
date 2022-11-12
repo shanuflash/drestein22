@@ -16,12 +16,15 @@ const Modal = ({ open, setOpenModal }) => {
   const splitround2 = eventObject?.round2?.split(".");
   const splitround3 = eventObject?.round3?.split(".");
   const splitround4 = eventObject?.round4?.split(".");
+  const splitnote = eventObject?.note?.split(".");
 
   const splitround1level2 = eventObject?.round1level2?.split(".");
   const splitround2level2 = eventObject?.round2level2?.split(".");
   const splitworktopicd1 = eventObject?.day1?.topic?.split("\n");
   const splitworktopicd2 = eventObject?.day2?.topic?.split("\n");
   const splitworktopicd3 = eventObject?.day3?.topic?.split("\n");
+
+
 
   if (!open) return null;
   return (
@@ -240,6 +243,16 @@ const Modal = ({ open, setOpenModal }) => {
               <>
                 {eventObject.company ? (
                   <h4>Company Name : {eventObject.company}</h4>
+                ) : null}
+                {eventObject.note ? (
+                  <div className="rules">
+                    {eventObject.tag == "OFFER" ? <h3>OFFER:</h3> : <h3>NOTE:</h3>}
+                    <ol>
+                      {splitnote.map((each) => {
+                        return <li>{each}</li>;
+                      })}
+                    </ol>
+                  </div>
                 ) : null}
                 <h1 className="title">Day 1:</h1>
                 <p className="desc">Date: {eventObject.day1.date}</p>

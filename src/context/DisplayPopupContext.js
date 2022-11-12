@@ -37,6 +37,7 @@ export const DisplayPopupProvider = ({ children }) => {
     day3: "error",
     company: "error",
     link: "",
+    note: ""
   });
   return (
     <DisplayPopupContext.Provider

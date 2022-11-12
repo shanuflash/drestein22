@@ -863,13 +863,13 @@ export const EventDetails = [
         name: "🔥2 DAYS 2 WORKSHOPS 2 CERTIFICATES",
         logo: "/EventsAssets/csew3.webp",
         tag: "OFFER",
-
+        note: "💥REGISTER AT A LOWER PRICE TOGETHER!. DAY 1: LAPTOP SERVICING - 16/11/20222. DAY 2: 3D DIGITAL GAME ART & DESIGN - 17/11/2022. 💥GET BENEFITTED ON BOTH DAYS!. ❌EACH WORKSHOP AT RS 200 SEPARATELY❌.  ✅TOGETHER AT RS 300 ✅",
         color: "0, 70, 90",
         link: "https://forms.gle/aTNuUnvzXfFMoyfRA",
         day1: {
           date: "16/11/2022-FN",
           time: "10am-1pm",
-          mode: "OFFLINE",
+          mode: "OFFLINE",2 day
           venue: "TBA",
           resource: [
             {
@@ -5165,7 +5165,7 @@ export const EventDetails = [
               name: "Mr.M.Prabhu",
               phone: "Executive Director, KOODS Batteries, Madurai",
               email: "TBA",
-              phone: ""
+              desig: ""
             },
           ],
           staff: [
