@@ -3693,11 +3693,11 @@ export const EventDetails = [
     title: "Medical Electronics",
     eventslist: [
       {
-        name: " Anatomia",
+        name: "Anatomia",
         date: "18 & 19 Nov 2022",
-        type: "Team",
-        venue: "TBA",
-        time: "TBA",
+        type: "MAX #",
+        venue: "ADMIN 4F BIO CHEMis LAB",
+        time: "FULL DAY",
         members: "2",
         rules: "",
         round1:
@@ -3748,9 +3748,9 @@ export const EventDetails = [
       {
         name: " Circuito",
         date: "19 Nov 2022",
-        type: "3",
-        venue: "TBA",
-        time: "TBA",
+        type: "MAX 3",
+        venue: "ADMIN 4F LH 02",
+        time: "FULL DAY",
         members: "1-2",
         rules: "",
         round1title: "QUIZOID",
@@ -3803,9 +3803,9 @@ export const EventDetails = [
       {
         name: "Connections",
         date: "18 Nov 2022",
-        type: "4",
-        venue: "4th floor Admin LH 1",
-        time: "8.30am-12.00pm",
+        type: "MAX 4",
+        venue: "ADMIN 4F LH 01",
+        time: "FULL DAY",
         members: "2",
         round1title: "Puzzle",
         round1:
@@ -3853,10 +3853,10 @@ export const EventDetails = [
       },
       {
         name: "Blind Teaser",
-        date: "19 Nov 2022(FN)",
+        date: "19 Nov 2022",
         type: "2",
-        venue: "DT lab",
-        time: "8.30am-12.00pm",
+        venue: "ADMIN 4F DT LAB",
+        time: "FULL DAY",
         members: "2",
         round1title: "Puzzle",
         round1:
@@ -3912,10 +3912,10 @@ export const EventDetails = [
         company: "VEI Technologies Pvt Ltd",
         link: "https://forms.gle/Y1yaT8ZQzBgYnB3k6",
         day1: {
-          date: "15/11/22 to 16/11/22 (FN & AN)",
-          time: "TBA",
-          venue: " STLC 5th floor",
-
+          date: "15/11/22(FN & AN)",
+          time: "FULL DAY",
+          mode: "OFFLINE",
+          venue: "ADMIN SCLC 5F",
           list: true,
           topic:
             "1 Patient health monitoring system using raspberry pi – iot\n 2 Smart patient monitoring system using arduino or raspberry pi\n 3 Raspberry-pi based health monitoring system\n 4 Wifi based personal health monitoring system using android smartphone\n 5 Real time wireless health monitoring application using mobile devices",
@@ -3945,7 +3945,7 @@ export const EventDetails = [
             {
               name: "Mirrahashini K",
               year: "IV",
-              phone: 9600679615,
+              phone: 7502144299,
               email: "mirra07112001@gmail.com",
             },
             {
@@ -3957,10 +3957,10 @@ export const EventDetails = [
           ],
         },
         day2: {
-          date: "15/11/22 to 16/11/22 (FN & AN)",
-          time: "TBA",
-          venue: " STLC 5th floor",
-
+          date: "15/11/22(FN & AN)",
+          time: "FULL DAY",
+          venue: "ADMIN STLC 5th FLOOR",
+          mode: "OFFLINE",
           list: true,
           topic:
             "1️ Intelligent	wireless	emergency	alert	system	for	patient	health monitoring using gsm\n2 Raspberry pi based data sensing and logging system using wireless sensor nodes (wsn) and local area network (lan)\n3 Wireless machine to machine health care solution using android mobile devices in global networks\n4 Build a smart patient monitoring system using raspberry pi\n5 Wireless ecg, body temperature and heart beat signals monitoring and alarm system using zigbee",
@@ -3990,7 +3990,7 @@ export const EventDetails = [
             {
               name: "Mirrahashini K",
               year: "IV",
-              phone: 9600679615,
+              phone: 7502144299,
               email: "mirra07112001@gmail.com",
             },
             {
