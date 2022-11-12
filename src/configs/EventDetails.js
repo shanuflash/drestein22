@@ -869,7 +869,7 @@ export const EventDetails = [
         day1: {
           date: "16/11/2022-FN",
           time: "10am-1pm",
-          mode: "OFFLINE",2 day
+          mode: "OFFLINE",
           venue: "TBA",
           resource: [
             {
