@@ -3065,7 +3065,7 @@ export const EventDetails = [
       {
         name: "Water Rocketry",
         date: "18 Nov 2022(AN)",
-        type: "SOLO",
+        type: "Team",
         venue: "TBA",
         time: "AFTERNOON",
         members: "2",
@@ -3114,7 +3114,7 @@ export const EventDetails = [
       {
         name: "Cad Modelling And Stimulation",
         date: "18 Nov 2022(FN)",
-        type: "Team",
+        type: "SOLO",
         venue: "TBA",
         time: "FORENOON",
         members: "1-3",
