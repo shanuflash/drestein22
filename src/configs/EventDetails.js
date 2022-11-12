@@ -4930,7 +4930,9 @@ export const EventDetails = [
         link: "https://forms.gle/8akqDVML9TzFVuuS8",
         day1: {
           date: "14/11/2022",
-          time: "TBA",
+          time: "FORENOON & AFTERNOON",
+          mode:"OFFLINE",
+          venue:"TBA",
           company: "",
           topic:
             "Basics and intermediate level in excel which is used in Chemical Engineering field.  Basic level: Eg. Fitting, Plotting, and Solving Intermediate level: Eg. Piping Design and Unit operation",
@@ -5056,17 +5058,16 @@ export const EventDetails = [
         link: "https://docs.google.com/forms/d/e/1FAIpQLSd3UWgsop4GgM0qTeb-wcnIJehwPlm0z22xoj6TB4Eb_wmpcQ/viewform",
         day1: {
           date: "15/11/2022",
-          time: "TBA",
-          company: "TBA",
+          time: "9:30am - 2:30pm",
+          venue: "EEE GF SEMINAR HALL",
+          mode: "OFFLINE",
           topic: "Battery cell and Battery pack Modelling, Battery State estimation and Range Calculation",
           resource: [
             {
               name: "Mr.M.Prabhu",
-              desig: "Assistant Engineer KOODS Lithium Iron Phosphate Battery",
-              phone: "TBA",
+              phone: "Executive Director, KOODS Batteries, Madurai",
               email: "TBA",
             },
-            
           ],
           staff: [
             {
