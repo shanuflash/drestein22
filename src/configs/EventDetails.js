@@ -1719,9 +1719,9 @@ export const EventDetails = [
         tagline:
           "To get familiarize with the functioning and usage of medical equipment",
         date: "18 Nov 2022(FN)",
-        type: "Team",
-        venue: "TBA",
-        time: "TBA",
+        type: "4",
+        venue: "ECE 4F OW LH 01 & Medical Instrumentation Lab",
+        time: "FORENOON",
         members: "2",
         rules: "",
         round1title: "Round 1 - THREE MONKEYS (PICTIONARY)",
@@ -1783,9 +1783,9 @@ export const EventDetails = [
         tagline:
           "Looking for fun ideas that will keep the game more interesting? You’re in the right place! Here are 3 rounds of fun challenges for your friends. Time based MCQs are there. Funny tasks are between those rounds. Triggering your mind with questions and boosting your activities. Each round has 2 (Two) levels to reach next round. Offers given in first round to reach final round directly. Final round winners be appreciated with rewards",
         date: "18 Nov 2022(AN)",
-        type: "Team",
-        venue: "TBA",
-        time: "TBA",
+        type: "SOLO",
+        venue: "ADMIN 4F LH 05, LH 04",
+        time: "AFTERNOON",
         members: "2",
         rules: "",
         round1title: "FIND ME",
@@ -1853,9 +1853,9 @@ export const EventDetails = [
         tagline: "(battle minds)",
         desc: "To understand how our brain coordinate thoughts, movement and sensation",
         date: "19 Nov 2022(FN)",
-        type: "Team",
-        venue: "TBA",
-        time: "TBA",
+        type: "4",
+        venue: "ECE 4F OW LH 01 Medical Instrumentation LAB",
+        time: "FORENOON",
         members: "1-2",
         rules: "",
         round1title: " Time snap",
@@ -1913,9 +1913,9 @@ export const EventDetails = [
         name: "Neurotic Expelliarmus",
         desc: "To understand the coordination of brain that receives the sensory input and provides a physical output",
         date: "19 Nov 2022(AN)",
-        type: "Team",
-        venue: "TBA",
-        time: "TBA",
+        type: "SOLO",
+        venue: "ADMIN 4F LH 05, LH 04",
+        time: "AFTERNOON",
         members: "1-3",
         rules: "",
         round1title: " Blaze the Machine Gun",
@@ -1981,10 +1981,10 @@ export const EventDetails = [
 
         link: "https://docs.google.com/forms/d/e/1FAIpQLSdC8D_Y4JORLf63iBdP7MXhhIbPEVyYzR93wThTgrcVnf3tPQ/viewform",
         day1: {
-          date: "07/11/2022-FN",
-          time: "12:00pm -3.00pm",
+          date: "14/11/2022-FN",
+          time: "8:00am - 3.00pm",
           mode: "OFFLINE",
-          venue: "TBA",
+          venue: "KALAM HALL",
           topic:
             "The workshop is based on a workflow for a novel augmented-reality-based surgical navigation (ARSN) system for anatomy visualisation installed in a hybrid operating room. In the afternoon session, students receive hands-on training.",
           resource: [
@@ -2034,17 +2034,16 @@ export const EventDetails = [
       {
         name: "Rehabilitation & LabVIEW for Healthcare Applications",
         logo: "/EventsAssets/bmew2.webp",
-
         tag: "WORKSHOP",
         color: "0, 70, 90",
         company: " Prashan Medical Technologies",
 
         link: "https://docs.google.com/forms/d/e/1FAIpQLSdC8D_Y4JORLf63iBdP7MXhhIbPEVyYzR93wThTgrcVnf3tPQ/viewform",
         day1: {
-          date: "16/11/2022-FN",
-          time: "12pm-3pm",
+          date: "15/11/2022-FN",
+          time: "8am-3pm",
           mode: "OFFLINE",
-          venue: "TBA",
+          venue: "KALAM HALL",
           topic:
             "This workshop covers Automated Manufacturing testing, product design validation, control and monitoring of industrial equipment in a system, and the most recent developments of medical equipment using LabVIEW.",
           resource: [
@@ -2448,14 +2447,13 @@ export const EventDetails = [
       {
         name: "Process Snippet",
         date: "18 Nov 2022(FN)",
-        type: "Team",
-        venue: "TBA",
-        time: "TBA",
+        type: "MAx 3",
+        venue: "RB 3F LH 15",
+        time: "FORENOON",
         members: "2",
         rules: "",
         round1:
           "It is a group event of 3.  Participants will be given shuffled charts which contain different unit processes.  Participants should order them according to sector in a given time limit. The team which finishes fast with the correct answer will be selected for the next round",
-        round2title: "Blind Coding",
         round2:
           "It is a group event of 3.Participants will be given many charts which contain different unit operations. Participants should order them according to sector in a given time limit.The team which finishes fast with the correct answer will be selected for the next round",
         round3:
@@ -2467,7 +2465,6 @@ export const EventDetails = [
           {
             name: "Ms.N Umaiyambika",
             desig: "Assistant Professor",
-            phone: 9444945153,
             email: "umaiyambikan@saveetha.ac.in",
           },
         ],
@@ -2490,9 +2487,9 @@ export const EventDetails = [
       {
         name: "Chem Fluids",
         date: "18 Nov 2022(AN)",
-        type: "Team",
-        venue: "TBA",
-        time: "TBA",
+        type: "MAX 3",
+        venue: "RB 3F LH 16",
+        time: "AFTERNOON",
         members: "1-2",
         rules: "",
         round1title: "NEWTONIAN & NON-NEWTONIAN",
@@ -2508,7 +2505,6 @@ export const EventDetails = [
           {
             name: "Dr.P.Senthilkumar",
             desig: "Assistant Professor",
-            phone: 7305105056,
             email: "senthilkumarp@saveetha.ac.in",
           },
         ],
@@ -2529,10 +2525,10 @@ export const EventDetails = [
       },
       {
         name: "Clash Xcape",
-        date: "19 Nov 2022(FN)",
-        type: "Team",
-        venue: "TBA",
-        time: "TBA",
+        date: "19 Nov 2022(FN/AN)",
+        type: "SOLO",
+        venue: "RB 3H LH 15",
+        time: "FORENOON & AFTERNOON",
         members: "2",
         rules:
           " Participants should play small games in the room to escape from the room. Participants should answer the questions for a minimum of 3 and also should win the game.  For winning each game participants will be given stickers at each game. Those who collect more stickers will be the winner",
@@ -2543,21 +2539,19 @@ export const EventDetails = [
           {
             name: "Dr.S. Balachandran",
             desig: "Assistant Professor",
-            phone: 861097938,
             email: " balachandrans@saveetha.ac.in",
           },
           {
             name: "Dr. S.Sundar Rajan",
             desig: "Assistant Professor",
-            phone: 9962603615,
             email: "sundarrajanp@saveetha.ac.in",
           },
         ],
         student: [
           {
-            name: "Eswar V",
+            name: "Abherna Shree M",
             year: "IV",
-            phone: 9361760541,
+            phone: 9361896759,
             email: "avesr5820@gmail.com",
           },
           {
@@ -2584,9 +2578,9 @@ export const EventDetails = [
         name: "Chem Bridge",
         tagline: "The idea behind this event is to figure out the (MYSTERY)",
         date: "19 Nov 2022(AN)",
-        type: "Team",
-        venue: "TBA",
-        time: "TBA",
+        type: "MAX 3",
+        venue: "RB 3F LH 16",
+        time: "AFTERNOON",
         members: "1-3",
         rules: "",
         round1title: "BINGO",
@@ -2604,9 +2598,8 @@ export const EventDetails = [
         logo: "/EventsAssets/chem4.webp",
         staff: [
           {
-            name: "Ms.N Umaiyambika",
+            name: "DR. M. HEMALATHA ",
             desig: "Assistant Professor",
-            phone: 9444945153,
             email: "umaiyambikan@saveetha.ac.in",
           },
         ],
@@ -2630,14 +2623,14 @@ export const EventDetails = [
       {
         name: "EXCEL for Chemical Engineers: Basics to Advanced",
         logo: "/EventsAssets/chemw1.webp",
-
         tag: "WORKSHOP",
         color: "0, 70, 90",
-
+        note: "KINDLY BRING YOUR OWN LAPTOPS",
         link: "https://forms.gle/xcEjNELQwCrbjXfa9",
         day1: {
-          date: "08/11/2022",
-          time: "TBA",
+          date: "16/11/2022",
+          time: "FULL DAY",
+          venue: "RB 3F CRE LAB",
           company: "International Flavours & Fragrances India Pvt.Ltd",
           topic:
             "Basics and intermediate level in excel which is used in Chemical Engineering field.  Basic level: Eg. Fitting, Plotting, and Solving Intermediate level: Eg. Piping Design and Unit operation",
@@ -2645,27 +2638,23 @@ export const EventDetails = [
             {
               name: "Mr.Dayalan Chokkalingam",
               desig: "Senior process Engineer, IFF, Chennai",
-              phone: 7397529444,
               email: "Dayalan.C@iff.com",
             },
             {
               name: "Dr.A.Balasubramanian",
               desig: "Associate professor, SEC",
-              phone: 9488478235,
               email: "balasubramaniana@saveetha.ac.in",
             },
             {
               name: "Dr.P. Senthil Kumar",
               desig: "Associate professor, SEC",
-              phone: 7305105056,
               email: "senthilkumarp@saveetha.ac.in",
             },
           ],
           staff: [
             {
               name: "Dr.A.Balasubramanian",
-              desig: "Associate Professor",
-              phone: 9488478235,
+              desig: "Associate Professor and Head",
               email: "balasubramaniana@saveetha.ac.in",
             },
           ],
@@ -2685,8 +2674,10 @@ export const EventDetails = [
           ],
         },
         day2: {
-          date: "08/11/2022",
-          time: "TBA",
+          date: "17/11/2022",
+          time: "FULL DAY",
+          mode: "OFFLINE",
+          venue: "RB 3F CRE LAB",
           company: "International Flavours & Fragrances India Pvt.Ltd",
           topic:
             "Advanced GV level in excel which is used in Chemical Engineering field. Advanced level: Eg. Process Analysis",
@@ -2694,19 +2685,16 @@ export const EventDetails = [
             {
               name: "Mr.Dayalan Chokkalingam",
               desig: "Senior process Engineer, IFF, Chennai",
-              phone: 7397529444,
               email: "Dayalan.C@iff.com",
             },
             {
               name: "Dr.A.Balasubramanian",
               desig: "Associate professor, SEC",
-              phone: 9488478235,
               email: "balasubramaniana@saveetha.ac.in",
             },
             {
               name: "Dr.P. Senthil Kumar",
               desig: "Associate professor, SEC",
-              phone: 7305105056,
               email: "senthilkumarp@saveetha.ac.in",
             },
           ],
@@ -2714,7 +2702,6 @@ export const EventDetails = [
             {
               name: "Dr.A.Balasubramanian",
               desig: "Associate Professor",
-              phone: 9488478235,
               email: "balasubramaniana@saveetha.ac.in",
             },
           ],
@@ -2724,6 +2711,12 @@ export const EventDetails = [
               year: "IV",
               phone: 9361896759,
               email: "abhernashree80@gmail.com",
+            },
+            {
+              name: "RUKESH K",
+              year: "III",
+              phone: 9360260922,
+              email: "srikanthkanagavalli@gmail.com",
             },
             {
               name: "Srikanth",
@@ -3700,11 +3693,11 @@ export const EventDetails = [
     title: "Medical Electronics",
     eventslist: [
       {
-        name: " Anatomia",
+        name: "Anatomia",
         date: "18 & 19 Nov 2022",
-        type: "Team",
-        venue: "TBA",
-        time: "TBA",
+        type: "MAX #",
+        venue: "ADMIN 4F BIO CHEMis LAB",
+        time: "FULL DAY",
         members: "2",
         rules: "",
         round1:
@@ -3755,9 +3748,9 @@ export const EventDetails = [
       {
         name: " Circuito",
         date: "19 Nov 2022",
-        type: "3",
-        venue: "TBA",
-        time: "TBA",
+        type: "MAX 3",
+        venue: "ADMIN 4F LH 02",
+        time: "FULL DAY",
         members: "1-2",
         rules: "",
         round1title: "QUIZOID",
@@ -3810,9 +3803,9 @@ export const EventDetails = [
       {
         name: "Connections",
         date: "18 Nov 2022",
-        type: "4",
-        venue: "4th floor Admin LH 1",
-        time: "8.30am-12.00pm",
+        type: "MAX 4",
+        venue: "ADMIN 4F LH 01",
+        time: "FULL DAY",
         members: "2",
         round1title: "Puzzle",
         round1:
@@ -3860,10 +3853,10 @@ export const EventDetails = [
       },
       {
         name: "Blind Teaser",
-        date: "19 Nov 2022(FN)",
+        date: "19 Nov 2022",
         type: "2",
-        venue: "DT lab",
-        time: "8.30am-12.00pm",
+        venue: "ADMIN 4F DT LAB",
+        time: "FULL DAY",
         members: "2",
         round1title: "Puzzle",
         round1:
@@ -3919,10 +3912,10 @@ export const EventDetails = [
         company: "VEI Technologies Pvt Ltd",
         link: "https://forms.gle/Y1yaT8ZQzBgYnB3k6",
         day1: {
-          date: "15/11/22 to 16/11/22 (FN & AN)",
-          time: "TBA",
-          venue: " STLC 5th floor",
-
+          date: "15/11/22(FN & AN)",
+          time: "FULL DAY",
+          mode: "OFFLINE",
+          venue: "ADMIN SCLC 5F",
           list: true,
           topic:
             "1 Patient health monitoring system using raspberry pi – iot\n 2 Smart patient monitoring system using arduino or raspberry pi\n 3 Raspberry-pi based health monitoring system\n 4 Wifi based personal health monitoring system using android smartphone\n 5 Real time wireless health monitoring application using mobile devices",
@@ -3952,7 +3945,7 @@ export const EventDetails = [
             {
               name: "Mirrahashini K",
               year: "IV",
-              phone: 9600679615,
+              phone: 7502144299,
               email: "mirra07112001@gmail.com",
             },
             {
@@ -3964,10 +3957,10 @@ export const EventDetails = [
           ],
         },
         day2: {
-          date: "15/11/22 to 16/11/22 (FN & AN)",
-          time: "TBA",
-          venue: " STLC 5th floor",
-
+          date: "15/11/22(FN & AN)",
+          time: "FULL DAY",
+          venue: "ADMIN STLC 5th FLOOR",
+          mode: "OFFLINE",
           list: true,
           topic:
             "1️ Intelligent	wireless	emergency	alert	system	for	patient	health monitoring using gsm\n2 Raspberry pi based data sensing and logging system using wireless sensor nodes (wsn) and local area network (lan)\n3 Wireless machine to machine health care solution using android mobile devices in global networks\n4 Build a smart patient monitoring system using raspberry pi\n5 Wireless ecg, body temperature and heart beat signals monitoring and alarm system using zigbee",
@@ -3997,7 +3990,7 @@ export const EventDetails = [
             {
               name: "Mirrahashini K",
               year: "IV",
-              phone: 9600679615,
+              phone: 7502144299,
               email: "mirra07112001@gmail.com",
             },
             {
