@@ -683,7 +683,7 @@ export const EventDetails = [
             email: "bhargavashankar2003@gmail.com",
           },
           {
-            name: "Trishaa S",
+            name: "Thirisaa S",
             year: "II",
             phone: 9361730242,
             email: "msdhanush2003@gmail.com",
@@ -4177,11 +4177,10 @@ export const EventDetails = [
 
       {
         name: "Cryosat",
-        date: "19 Nov 2022(AN)",
+        date: "19 Nov 2022(FN)",
         type: "Team",
         venue: "ECE GF SH 1 & ECE GF SH 2",
-
-        time: "AFTERNOON",
+        time: "FORENOON",
         members: "1-2",
         rules: "",
         color: "0, 1, 38",
@@ -4233,11 +4232,11 @@ export const EventDetails = [
       },
       {
         name: "Circuit Buzz",
-        date: "19 Nov 2022(FN)",
+        date: "19 Nov 2022(AN)",
         type: "Team",
         tag: "EVENT",
         venue: "ECE GF SH 1 & ECE GF SH 2",
-        time: "FORENOON",
+        time: "AFTERNOON",
         members: "2",
         rules:
           " A team should consists of two members in a team.No mobile phones are allowed during the participation of the event.No discussion or sharing of answers among the teams.If any malpractices are noticed then the team will be disqualified",
