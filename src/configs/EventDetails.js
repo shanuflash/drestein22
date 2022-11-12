@@ -2743,9 +2743,9 @@ export const EventDetails = [
       {
         name: "Fire Tech",
         date: "18 Nov 2022(FN)",
-        type: "solo",
-        venue: "TBA",
-        time: "TBA",
+        type: "SOLO",
+        venue: "EEE 3F OW LH 01",
+        time: "FORENOON",
         tag: "EVENT",
         color: "0, 1, 38",
         members: "1",
@@ -2783,8 +2783,8 @@ export const EventDetails = [
         name: "Instantrix",
         date: "18 Nov 2022(AN)",
         type: "Team",
-        venue: "TBA",
-        time: "TBA",
+        venue: "EEE 3F OW LH 01",
+        time: "AFTERNOON",
         members: "1-2",
         rules: "",
         round1:
@@ -2808,7 +2808,7 @@ export const EventDetails = [
           {
             name: "Soundhar L",
             year: "III",
-            phone: 6385796518,
+            phone: 7904701036,
             email: "sdr27lsus@gmail.com",
           },
           {
@@ -2823,8 +2823,8 @@ export const EventDetails = [
         name: "Tech Puzzle",
         date: "19 Nov 2022(FN)",
         type: "Team",
-        venue: "TBA",
-        time: "TBA",
+        venue: "EEE 3F OW LH 01",
+        time: "FORENOON",
         members: "2",
         rules: "",
         round1:
@@ -2840,7 +2840,7 @@ export const EventDetails = [
           {
             name: "Dr.A.Manonmani",
             desig: "Assistant Professor(SG)",
-            phone: 954322303030,
+            phone: 9543223030,
             email: "manonmani@saveetha.ac.in",
           },
         ],
@@ -2863,8 +2863,8 @@ export const EventDetails = [
         name: "Debugging Theorem ",
         date: "19 Nov 2022(AN)",
         type: "Team",
-        venue: "TBA",
-        time: "TBA",
+        venue: "EEE 3F OW LH 01",
+        time: "FORENOON",
         members: "1-3",
         rules: "",
         round1:
@@ -2911,7 +2911,9 @@ export const EventDetails = [
         link: "https://docs.google.com/forms/d/e/1FAIpQLSe76cAbqdHBrRuOLqQjPB1YnjtkdfU7RRp9oTvPbGj_WdIYRw/viewform?usp=sf_link",
         day1: {
           date: "16/11/2022",
-          time: "TBA",
+          time: "FULL DAY",
+          mode: "OFFLINE",
+          venue:"EEE 3F OW Process Control Lab",
           resource: [
             {
               name: "Praveen kumar R",
