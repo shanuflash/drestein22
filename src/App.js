@@ -37,7 +37,7 @@ function App() {
               <Route path="/" element={<Main />} />
               <Route path="form" element={<Form />} />
               <Route path="events" element={<Events />} />
-              <Route path="Admin/login" element={<SignIn />} />
+              <Route path="Admin/login" element={<UserProvider><SignIn /></UserProvider> } />
               <Route
                 path="*"
                 element={

@@ -13,7 +13,7 @@ const Admin = styled.div`
   width: 100vw;
 `;
 function AdminMain() {
-  const auth = getAuth();
+
   const navigate = useNavigate();
 
   useEffect(() => {

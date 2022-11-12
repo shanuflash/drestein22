@@ -17,11 +17,12 @@ import { useNavigate } from "react-router";
 import { Link } from "react-router-dom";
 import { uuidv4 } from "@firebase/util";
 import logo from '../../../assets/dresteinLogo.svg'
+import { UserContext } from "../contexts/AdminContext";
 const pages = ["scanusers", "users",];
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
 const ResponsiveAppBar = () => {
-  const auth = getAuth();
+ const {auth} = React.useContext(UserContext)
   const navigate = useNavigate();
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);

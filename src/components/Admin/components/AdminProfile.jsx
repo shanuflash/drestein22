@@ -1,11 +1,13 @@
-import React from "react";
+import React, { useContext } from "react";
 import { getAuth } from "firebase/auth";
 import styled from "styled-components";
+import { UserContext } from "../contexts/AdminContext";
 const AdminProfleMain = styled.div`
   color: black;
 `;
 function AdminProfile() {
-  const auth = getAuth();
+
+  const {auth} = useContext(UserContext)
   console.log(auth);
 
   return (

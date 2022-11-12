@@ -211,12 +211,12 @@ const Form = () => {
 
             setDoc(cityRef, formdata)
               .then(async () => {
-                console.log("uploaded");
+
                 const sendqr = await fetch(
                   `https://chart.googleapis.com/chart?chs=200x200&cht=qr&chl=https://drestein.in/user/${cityRef.id}&choe=UTF-8`
                 );
                 const QrUrl = sendqr.url;
-                console.log(QrUrl);
+                // console.log(QrUrl);
                 if (window.Email) {
                   const style = {
                     border: "1px sold black",
@@ -278,15 +278,15 @@ const Form = () => {
 
       onSnapshot(q, async (snapshot) => {
         let books = [];
-        console.log(snapshot.docs);
+
         snapshot.docs.forEach((doc) => {
           books.push({ ...doc.data(), id: doc.id });
         });
-        // console.log(books)
+
 
         setUserExist(books);
         resolve(books);
-        console.log("thisi ", userExist);
+
       });
     });
   }

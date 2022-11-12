@@ -58,7 +58,7 @@ function UserInfoCard({ data, Scanpage }) {
     IdCard,
   } = data;
 
-  console.log(AmountPaid);
+  // console.log(AmountPaid);
 
   const handleChange = async (e, id, AmountPaid) => {
     setload(true);
@@ -83,9 +83,9 @@ function UserInfoCard({ data, Scanpage }) {
     });
     // console.log(e.target.checked)
   };
-  useEffect(() => {
-    console.log("this happend ", cashPaid);
-  }, [cashPaid]);
+  // useEffect(() => {
+    // console.log("this happend ", cashPaid);
+  // }, [cashPaid]);
 
   const handleChangeforProject = async (e, id, AmountPaid) => {
     setload(true);

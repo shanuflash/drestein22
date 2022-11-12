@@ -40,9 +40,9 @@ function Copyright(props) {
 const theme = createTheme();
 
 export default function SignIn() {
-  const auth = getAuth();
 
-  const { loggedIn, setLoggedIn } = useContext(UserContext);
+
+  const { loggedIn, setLoggedIn ,auth} = useContext(UserContext);
   const navigate = useNavigate();
   if (auth.currentUser) {
     navigate("/Admin");
@@ -52,7 +52,6 @@ export default function SignIn() {
     event.preventDefault();
     try {
       const data = new FormData(event.currentTarget);
-      const auth = getAuth();
       const userCredential = await signInWithEmailAndPassword(
         auth,
         data.get("email"),
@@ -68,7 +67,7 @@ export default function SignIn() {
       }
     } catch (error) {
       toast.error("Wrong entry");
-      console.log(error);
+
     }
   };
   console.log(loggedIn);
@@ -106,6 +105,7 @@ export default function SignIn() {
               name="email"
               autoComplete="email"
               autoFocus
+    
             />
             <TextField
               margin="normal"

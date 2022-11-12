@@ -39,7 +39,10 @@ export const UserProvider = (props) => {
 useEffect(()=>{
 if(dataFetchedRef.current) return ;
 dataFetchedRef.current=true;
-FetchUsers()
+if(loggedIn){
+  FetchUsers()
+
+}
  
 
 },[])
@@ -51,7 +54,8 @@ FetchUsers()
         setLoggedIn,
         RegUsers,
         DataLoad,
-        vicitedProple
+        vicitedProple,
+        auth
       }}
     >
       {props.children}
