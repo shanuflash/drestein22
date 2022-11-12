@@ -860,9 +860,10 @@ export const EventDetails = [
         },
       },
       {
-        name: "Laptop Servicing",
+        name: "🔥2 DAYS 2 WORKSHOPS 2 CERTIFICATES",
         logo: "/EventsAssets/csew3.webp",
-        tag: "WORKSHOP",
+        tag: "OFFER",
+
         color: "0, 70, 90",
         link: "https://forms.gle/aTNuUnvzXfFMoyfRA",
         day1: {
