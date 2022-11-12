@@ -85,7 +85,7 @@ function AdminPannel() {
   //     const a = RegsFullUser.filter(data=>{
   //       console.log(data.id===res)
   //      if(data.id === res){ return data }
-  //   }) 
+  //   })
   //   setRegistredPeople(a)
   //   resolve(a)
   //   }).catch(e=>{
@@ -118,9 +118,6 @@ const fetchSingleUser=(res)=>{
 setRegistredPeople(a)
 
 }
-
-
-
 
   return (
     <AdminPanelHead>
@@ -160,8 +157,7 @@ setRegistredPeople(a)
         </p>
 
         <QrReader
-          onResult={async(result, error) => {
-
+          onResult={async (result, error) => {
             if (!!result) {
               const res = result?.text.substr(25);
               setuserstate(res);
