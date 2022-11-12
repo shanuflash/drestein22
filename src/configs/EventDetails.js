@@ -247,7 +247,6 @@ export const EventDetails = [
         name: "Cybersecurity And Ethical Hacking",
         logo: "EventsAssets/itw1.webp",
         tag: "WORKSHOP",
-
         color: "0, 70, 90",
         company:
           "Vulnerability Synopsys pvt Limited & Dead Bed Cyber Solutions",
@@ -3439,9 +3438,9 @@ export const EventDetails = [
       {
         name: " Adzap",
         date: "18 Nov 2022(FN)",
-        type: "Team",
-        venue: "TBA",
-        time: "TBA",
+        type: "3-7",
+        venue: "Admin Block 3F IW LH 01",
+        time: "FORENOON",
         members: "2",
         rules: "",
         round1:
@@ -3476,13 +3475,12 @@ export const EventDetails = [
           },
         ],
       },
-
       {
         name: " Business Quiz",
         date: "18 Nov 2022(AN)",
-        type: "Team",
-        venue: "TBA",
-        time: "TBA",
+        type: "2",
+        venue: "Admin Block 3F IW LH 02",
+        time: "AFTERNOON",
         members: "1-2",
         rules:
           "Participation in the form of Team only [2 Members per team]. Compulsory the team has to register to be eligible for the competition. Replacement of any participant of a team is not allowed after registration.  Participants shall not be allowed to use Mobile phones or any other electronic devices during the stages of quiz.  There are no restrictions on the number of teams. Judges decision are final",
@@ -3521,9 +3519,9 @@ export const EventDetails = [
       {
         name: "Future Manager",
         date: "19 Nov 2022(FN)",
-        type: "Team",
-        venue: "TBA",
-        time: "8.30am-12.00pm",
+        type: "SOLO",
+        venue: "Admin Block 3F IW LH 01",
+        time: "FORENOON",
         members: "2",
         round1title: "CRACK THE CODE",
         round1:
@@ -3569,9 +3567,9 @@ export const EventDetails = [
       {
         name: " Imagine Through Lens",
         date: "19 Nov 2022(AN)",
-        type: "Team",
-        venue: "TBA",
-        time: "TBA",
+        type: "SOLO",
+        venue: "Admin Block 3F IW LH 01",
+        time: "AFTERNOON",
         members: "1-3",
         rules:
           "ndigenous photo captured through Camera or Mobile (Should be clear). No editing should be done.Idea behind the photograph in regards with management concepts. Photograph should be sent before deadline",
@@ -3621,13 +3619,13 @@ export const EventDetails = [
         logo: "/EventsAssets/mbaw1.webp",
         tag: "WORKSHOP",
         color: "0, 70, 90",
-        mode: "TBA",
-        venue: "TBA",
         company: " Knowledge Xchange Community",
         link: "https://forms.gle/Ds2pnv1AoWTgb1RW7",
         day1: {
-          date: "14/11/2022 FN",
-          time: "TBA",
+          date: "14/11/2022",
+          time: "FORENOON",
+          mode: "OFFLINE",
+          venue: "Admin Block 3F IW LH 01",
           resource: [
             {
               name: "Mr.Partheepan Rudrapati",
@@ -3659,13 +3657,14 @@ export const EventDetails = [
         logo: "/EventsAssets/mbaw2.webp",
         tag: "WORKSHOP",
         color: "0, 70, 90",
-        mode: "TBA",
-        venue: "TBA",
+
 
         link: "https://forms.gle/jZp6bq3Th32nsQPH7",
         day1: {
           date: "17/11/2022",
-          time: "TBA",
+          mode: "OFFLINE",
+          venue: "Admin Block 3F IW LH 01",
+          time: "AFTERNOON",
           resource: [
             {
               name: "Dr.Vimalnath Venkatasubramanion",
