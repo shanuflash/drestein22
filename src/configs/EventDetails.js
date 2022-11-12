@@ -1175,7 +1175,7 @@ export const EventDetails = [
             {
               name: "DHANALAKSHMI ",
               year: "IV",
-              phone: 9360677202,
+              phone: 9940741661,
               email: "ruthudhana25@gmail.com",
             },
             {
