@@ -26,7 +26,7 @@ import Checkbox from "@mui/joy/Checkbox";
 import Alert from "@mui/joy/Alert";
 import { uuidv4 } from "@firebase/util";
 import { toast } from "react-toastify";
-import { doc } from "firebase/firestore";
+import { doc, getDoc } from "firebase/firestore";
 import { db } from "../../configs/Firebase.config";
 import { setDoc } from "firebase/firestore";
 import Loading from "../../Loading";
@@ -172,7 +172,7 @@ const Form = () => {
   const uploadProfileImg = async (id) => {
     return new Promise((resolve, reject) => {
       const storage = getStorage();
-      const fileName = `${id}-${img.name}-${uuidv4()}`;
+      // const fileName = `${id}-${img.name}-${uuidv4()}`;
       const storageRef = ref(storage, "images/" + id);
 
       const uploadTask = uploadBytesResumable(storageRef, img);
@@ -276,7 +276,8 @@ const Form = () => {
       const colref = collection(db, "RegisteredPeople");
       const q = query(colref, where("email", "==", email));
 
-      onSnapshot(q, async (snapshot) => {
+      getDocs(q)
+      .then((snapshot) => {
         let books = [];
 
         snapshot.docs.forEach((doc) => {
@@ -311,6 +312,7 @@ const Form = () => {
     const response = await isuserAlreadyExist(formdata.email);
 
     // console.log("this is ths i",userExist)
+    console.log(response)
 
     formdata.id = uuidv4();
 
