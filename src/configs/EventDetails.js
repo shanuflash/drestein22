@@ -3709,7 +3709,7 @@ export const EventDetails = [
         name: "Anatomia",
         date: "18 & 19 Nov 2022",
         type: "MAX 3",
-        venue: "ADMIN 4F BIO CHEMis LAB",
+        venue: "ADMIN 4F BIO CHEMISTRY LAB",
         time: "FULL DAY",
         members: "2",
         rules: "",
