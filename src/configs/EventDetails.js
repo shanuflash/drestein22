@@ -5058,26 +5058,15 @@ export const EventDetails = [
           date: "15/11/2022",
           time: "TBA",
           company: "TBA",
-          topic: "Battery cell and batterypack Modelling, Battery state estimation and range calculation",
+          topic: "Battery cell and Battery pack Modelling, Battery State estimation and Range Calculation",
           resource: [
             {
-              name: "Mr.V.Prabhu",
+              name: "Mr.M.Prabhu",
               desig: "Assistant Engineer KOODS Lithium Iron Phosphate Battery",
               phone: "TBA",
               email: "TBA",
             },
-            {
-              name: "Dr.S.Rajalingam",
-              desig: "Associate Professor",
-              phone: 9790248476,
-              email: "rajalingams@saveetha.ac.in",
-            },
-            {
-              name: "Ms.S.Kavitha",
-              desig: "Associate Professor",
-              phone: 9444533061,
-              email: "kavitha@saveetha.ac.in",
-            },
+            
           ],
           staff: [
             {
@@ -5101,22 +5090,28 @@ export const EventDetails = [
           ],
           student: [
             {
-              name: "N.Vishnuprasad",
+              name: "B.G.Kishore",
+              phone: 6374395782,
+            },
+            {
+              name: "N.Vishnu Prasad",
               phone: 6369299454,
             },
             {
               name: "K.Vignesh",
-              phone: 7708439329,
+              phone: 7639878021,
+
             },
             {
               name: "G.suriya",
-            },
-            {
-              name: "B.G.Kishore",
+              phone: 7708439329,
+
             },
             {
               name: "A.Moses Saveri",
+              phone: 7695847728,
             },
+            
           ],
         },
       },
