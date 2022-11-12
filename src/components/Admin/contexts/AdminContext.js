@@ -29,7 +29,7 @@ export const UserProvider = (props) => {
 
   const FetchUsers = () => {
     const colref = collection(db, "RegisteredPeople");
-    console.log("im running");
+    console.log("backend fectch  running ... ");
     onSnapshot(colref, (snapshot) => {
       let users = [];
 

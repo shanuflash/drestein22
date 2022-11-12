@@ -4,7 +4,14 @@ import DepartMentCard from "./DepartMentCard";
 import { departobj, comobj } from "../../configs/Departments.config";
 import { motion } from "framer-motion";
 import SpacialEventsCard from "./SpecialEventsCard";
+import Box from '@mui/material/Box';
+import Button from '@mui/material/Button';
+import Typography from '@mui/material/Typography';
+import Modal from '@mui/material/Modal';
 
+import RegisterBtn from "../register-button/RegisterBtn";
+import { Card } from "@mui/material";
+import { width } from "@mui/system";
 const DepartmentContainer = styled.div`
   width: 100vw;
   display: grid;
@@ -23,6 +30,10 @@ const DepartmentContainer = styled.div`
 `;
 
 function Departments() {
+  const [open, setOpen] = React.useState(false);
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
+
   return (
     <>
       <motion.h1
@@ -61,9 +72,93 @@ function Departments() {
             );
           }
 
-          return <SpacialEventsCard  key={i} {...data} />;
+          return <div key={i} onClick={handleOpen}><SpacialEventsCard   {...data} /> </div>;
         })}
       </DepartmentContainer>
+      <Modal
+        open={open}
+        onClose={handleClose}
+        // aria-labelledby="modal-modal-title"
+        // aria-describedby="modal-modal-description"
+      >
+        <Box sx={
+          {
+            position: 'absolute',
+            top: '55%',
+            left: '50%',
+            transform: 'translate(-50%, -50%)',
+            width: '80%',
+            maxHeight:'600px',
+            overflowY:'scroll',
+            background:'black',
+            color:'white',
+            border:'1px solid gray',
+
+            p: 4,
+          }
+        }>
+          <Typography id="modal-modal-title" variant="h6" component="h2">
+          Project Presentation
+          </Typography>
+          <Typography id="modal-modal-description" sx={{ mt: 2 }}>
+            <ul>
+
+              <li style={{
+                padding:'5px 0'
+              }}>  Students are invited to present project works based on their innovative ideas / research at this symposium <strong>DRESTEIN2022</strong>.</li>
+              <li style={{
+                padding:'5px 0'
+              }}> The projects could be on any topic relevant to the engineering disciplines.</li>
+              <li style={{
+                padding:'5px 0'
+              }}>Registration fee per project -  Rs. 250/-</li>
+              <li style={{
+                padding:'5px 0'
+              }}>Registration fee has to be paid in the registration counter</li>
+              
+              </ul>
+        
+
+         
+
+
+
+
+
+          <Typography id="modal-modal-title" variant="h6" sx={{
+
+          }} component="h3">
+           <strong>RULES</strong>   
+          </Typography>
+
+          
+
+          <ul>
+
+<li style={{
+  padding:'5px 0'
+}}>  Maximum number of participants in project group is limited to three.</li>
+<li style={{
+  padding:'5px 0'
+}}> One person cannot be part of more than one project group. </li>
+<li style={{
+  padding:'5px 0'
+}}>Participant should prepare posters to descibe about the project.</li>
+
+
+</ul>
+
+ </Typography>
+ <a
+              onClick={handleClose}
+              href='https://drestein.in/form'
+              className="btn"
+              style={{ textDecoration: "none" ,display:'flex',justifyContent:'center',alignItems:'center'}}
+            >
+              <RegisterBtn />
+            </a>
+        </Box>
+      </Modal>
     </>
   );
 }
