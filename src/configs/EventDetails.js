@@ -2637,24 +2637,24 @@ export const EventDetails = [
           resource: [
             {
               name: "Mr.Dayalan Chokkalingam",
-              desig: "Senior process Engineer, IFF, Chennai",
+              phone: "Senior process Engineer, IFF, Chennai",
               email: "Dayalan.C@iff.com",
             },
             {
               name: "Dr.A.Balasubramanian",
-              desig: "Associate professor, SEC",
+              phone: "Associate professor, SEC",
               email: "balasubramaniana@saveetha.ac.in",
             },
             {
               name: "Dr.P. Senthil Kumar",
-              desig: "Associate professor, SEC",
+              phone: "Associate professor, SEC",
               email: "senthilkumarp@saveetha.ac.in",
             },
           ],
           staff: [
             {
               name: "Dr.A.Balasubramanian",
-              desig: "Associate Professor and Head",
+              phone: "Associate Professor and Head",
               email: "balasubramaniana@saveetha.ac.in",
             },
           ],
@@ -2664,6 +2664,12 @@ export const EventDetails = [
               year: "IV",
               phone: 9361896759,
               email: "abhernashree80@gmail.com",
+            },
+            {
+              name: "RUKESH K",
+              year: "III",
+              phone: 9360260922,
+              email: "srikanthkanagavalli@gmail.com",
             },
             {
               name: "Srikanth",
@@ -2684,24 +2690,24 @@ export const EventDetails = [
           resource: [
             {
               name: "Mr.Dayalan Chokkalingam",
-              desig: "Senior process Engineer, IFF, Chennai",
+              phone: "Senior process Engineer, IFF, Chennai",
               email: "Dayalan.C@iff.com",
             },
             {
               name: "Dr.A.Balasubramanian",
-              desig: "Associate professor, SEC",
+              phone: "Associate professor, SEC",
               email: "balasubramaniana@saveetha.ac.in",
             },
             {
               name: "Dr.P. Senthil Kumar",
-              desig: "Associate professor, SEC",
+              phone: "Associate professor, SEC",
               email: "senthilkumarp@saveetha.ac.in",
             },
           ],
           staff: [
             {
               name: "Dr.A.Balasubramanian",
-              desig: "Associate Professor",
+              phone: "Associate Professor",
               email: "balasubramaniana@saveetha.ac.in",
             },
           ],
