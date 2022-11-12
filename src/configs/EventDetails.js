@@ -244,7 +244,7 @@ export const EventDetails = [
 
     workshopslist: [
       {
-        name: "Cybersecurity And Ethical Hacking  ",
+        name: "Cybersecurity And Ethical Hacking",
         logo: "EventsAssets/itw1.webp",
         tag: "WORKSHOP",
 
@@ -277,16 +277,28 @@ export const EventDetails = [
           ],
           student: [
             {
-              name: "Aadhithya Raj V",
+              name: "Tafseer Ali I",
               year: "III",
-              phone: 6374492710,
+              phone: 8608209543,
               email: "harinig025@gmail.com",
             },
             {
-              name: "Harini NG",
+              name: "Prem Anand",
               year: "III",
-              phone: "6382246669",
-              email: "",
+              phone: 9994424024,
+              email: "aadhithya3210@gmail.com",
+            },
+            {
+              name: "Harini G",
+              year: "III",
+              phone: "harinig025@gmail.com",
+              email: "aadhithya3210@gmail.com",
+            },
+            {
+              name: "Sugavarathan L",
+              year: "III",
+              phone: 7010268757,
+              email: "aadhithya3210@gmail.com",
             },
           ],
         },
@@ -334,7 +346,7 @@ export const EventDetails = [
               email: "aadhithya3210@gmail.com",
             },
             {
-              name: "Sugavarathan",
+              name: "Sugavarathan L",
               year: "III",
               phone: 7010268757,
               email: "aadhithya3210@gmail.com",
@@ -490,7 +502,7 @@ export const EventDetails = [
         tagline: "Code Treasure Hunt",
         date: "18 Nov 2022(FN)",
         type: "Team 2-3",
-        venue: "IP Lab",
+        venue: "Bot/IP Lab",
         time: "Forenoon",
         members: "2-3",
         rules: "",
@@ -586,7 +598,7 @@ export const EventDetails = [
         ],
         student: [
           {
-            name: "Arun Kumar",
+            name: "Arun Kumar G",
             year: "III",
             phone: 8072906817,
             email: "arunkumararunkumar1044@gmail.com",
@@ -628,7 +640,7 @@ export const EventDetails = [
         rules: "",
         round1title: "One Shot",
         round1:
-          "Round One is one shot round in that the coder is not allowed to compile the program again and again.They are supposed to run exactly at once.",
+          "Round One is one shot round in that the coder is not allowed to compile the program again and again.They are supposed to run exactly at once.Top coder will be promoted to next round",
         round2title: "Flash",
         round2:
           "A set of programs will be displayed to the coders for a specified time and they are supposed to predict the output pattern for that program with in the given time, those who give the exact answers will be qualified to the next round",
@@ -660,21 +672,21 @@ export const EventDetails = [
             email: "madhumithask1799@gmail.com",
           },
           {
-            name: "Moulika",
+            name: "Moulika K",
             year: "III",
             phone: 7550070904,
             email: "moulikadeepu2002@gmail.com",
           },
           {
-            name: "Bargava",
+            name: "Bargava S",
             year: "II",
             phone: 9789099333,
             email: "bhargavashankar2003@gmail.com",
           },
           {
-            name: "Dhanush",
+            name: "Trishaa S",
             year: "II",
-            phone: 9944488202,
+            phone: 9361730242,
             email: "msdhanush2003@gmail.com",
           },
         ],
@@ -2089,10 +2101,10 @@ export const EventDetails = [
       {
         name: "Build-IT",
         tagline: "Bridge Model making",
-        date: "18 Nov 2022(FN)",
-        type: "Team",
+        date: "17 Nov 2022(FN)",
+        type: "2",
         venue: "Survey LAB, Rectangular block",
-        time: "TBA",
+        time: "FORENOON",
         members: "2",
         rules:
           "A fun event spanning over two rounds. Maximum participation 2 person per team. In the case of cheating, using of phone or using of any unnecessary gadgets will make the team disqualify. Shortlisted participants of Round-1 will appear for Round-2 for which above rules are applicable",
@@ -2137,10 +2149,10 @@ export const EventDetails = [
 
       {
         name: "Map The Gap",
-        date: "18 Nov 2022(AN)",
-        type: "Team",
-        venue: "TBA",
-        time: "TBA",
+        date: "17 Nov 2022(AN)",
+        type: "2",
+        venue: "Survey LAB,Gf  Rectangular block",
+        time: "AFTERNOON",
         members: "1-2",
         rules: "",
         round1title: "Choose it!",
@@ -2193,10 +2205,10 @@ export const EventDetails = [
       {
         name: "CADD Modeling",
         desc: "Cipher Hunt is a cybersecurity competition that is all about finding weaknesses and exploiting loopholes in various computer programs. It aims to engage participants in the creative exploration of real-world computer security by distilling the significant disciplines of professional cybersecurity into short, objectively measurable exercises.An ethical hacking contest in which contestants will have to find pieces of information, called ‘flags’, hidden in each of the challenges. So, assemble your team, prepare to decrypt hidden messages, exploit vulnerabilities, and do whatever it takes to Hunt!",
-        date: "19 Nov 2022(FN)",
-        type: "solo",
-        venue: "TBA",
-        time: "TBA",
+        date: "18 Nov 2022(FN)",
+        type: "Solo",
+        venue: "Survey LAB, GF,Rectangular block",
+        time: "FORENOON",
         members: "2",
         rules: "",
         round1:
@@ -2232,10 +2244,10 @@ export const EventDetails = [
       {
         name: "Code Cracking",
         tagline: "The idea behind this event is to figure out the (MYSTERY)",
-        date: "19 Nov 2022(AN)",
-        type: "Team",
-        venue: "TBA",
-        time: "TBA",
+        date: "18 Nov 2022(AN)",
+        type: "1-3",
+        venue: "Survey LAB, GF,Rectangular block",
+        time: "AFTERNOON",
         members: "1-3",
         rules: "",
         round1title: "TECHNICAL QUIZ",
@@ -2297,7 +2309,7 @@ export const EventDetails = [
         link: "https://forms.gle/AioJcqi5zaAsBPoq8",
         day1: {
           date: "14/11/2022-FN",
-          time: "12.00-3.00",
+          time: "FORENOON",
           mode: "OFFLINE",
           venue: "CSE 5F OW LH6",
           resource: [
@@ -2336,7 +2348,7 @@ export const EventDetails = [
         link: "https://forms.gle/8J461Gdb2nLSpDu26",
         day1: {
           date: "15/11/2022-FN",
-          time: "TBA",
+          time: "FORENOON",
           mode: "OFFLINE",
           venue: "EEE 4F LH2",
           resource: [
@@ -2387,7 +2399,7 @@ export const EventDetails = [
         link: "https://forms.gle/JusqDsmgFhVH8KrQ6",
         day1: {
           date: "16/11/2022-FN",
-          time: "TBA",
+          time: "FORENOON",
           mode: "OFFLINE",
           venue: "EEE 4F LH2",
           resource: [
@@ -2943,9 +2955,9 @@ export const EventDetails = [
         name: "Dezania",
         tagline: "MCQ",
         date: "19 Nov 2022(FN)",
-        type: "Team",
-        venue: "TBA",
-        time: "TBA",
+        type: "Solo",
+        venue: "CAD Lab",
+        time: "FORENOON",
         members: "2",
         rules: "",
         round1:
@@ -2996,9 +3008,9 @@ export const EventDetails = [
       {
         name: "Mr. Machinist",
         date: "19 Nov 2022(AN)",
-        type: "Team",
-        venue: "TBA",
-        time: "TBA",
+        type: "SOLO",
+        venue: "Manufacturing Tech LAB",
+        time: "FTERNOON",
         members: "1-2",
         rules: "",
         round1: "MCQ based on Manufacturing technology(30mins)",
@@ -3046,9 +3058,9 @@ export const EventDetails = [
       {
         name: "Water Rocketry",
         date: "18 Nov 2022(AN)",
-        type: "Team",
+        type: "SOLO",
         venue: "TBA",
-        time: "TBA",
+        time: "AFTERNOON",
         members: "2",
         round1: "Round 1 will be based on distance coverage",
         round2: "Round 2 will be based on distance coverage",
@@ -3097,7 +3109,7 @@ export const EventDetails = [
         date: "18 Nov 2022(FN)",
         type: "Team",
         venue: "TBA",
-        time: "TBA",
+        time: "FORENOON",
         members: "1-3",
         rules: "",
         round1:
@@ -3312,55 +3324,54 @@ export const EventDetails = [
             },
           ],
         },
-        day2: {
-          date: "17/11/2022",
-          time: "10am-3pm",
-          company: "Bessel Automation",
-          mode: "OFFLINE",
+        // day2: {
+        //   date: "17/11/2022",
+        //   time: "10am-3pm",
+        //   mode: "OFFLINE",
 
-          resource: [
-            {
-              name: "Mr.Parthi",
-              desig: "Technical Assistant",
-              phone: 7200266259,
-              email: "Parthimg34@gmail.com",
-            },
-          ],
-          staff: [
-            {
-              name: "Mr. Jerome Nithin Gladson",
-              desig: "Assistant Professor",
-              phone: 7708940279,
-              email: "Jeromenithin gladson@saveetha.ac.in",
-            },
-          ],
-          student: [
-            {
-              name: "Malick basha",
-              year: "IV",
-              phone: 9025695862,
-              email: "Malick3101@gmail.com",
-            },
-            {
-              name: "Deepak ganesh",
-              year: "IV",
-              phone: 9789333959,
-              email: "giridharan20026@gmail.com",
-            },
-            {
-              name: "Mukku Manya Reddy",
-              year: "III",
-              phone: 7995338421,
-              email: "Manyareddy2002@gmail.com",
-            },
-            {
-              name: "Praveen",
-              year: "II",
-              phone: 7358244067,
-              email: "arune1903@gmail.com",
-            },
-          ],
-        },
+        //   resource: [
+        //     {
+        //       name: "Mr.Parthi",
+        //       desig: "Technical Assistant",
+        //       phone: 7200266259,
+        //       email: "Parthimg34@gmail.com",
+        //     },
+        //   ],
+        //   staff: [
+        //     {
+        //       name: "Mr. Jerome Nithin Gladson",
+        //       desig: "Assistant Professor",
+        //       phone: 7708940279,
+        //       email: "Jeromenithin gladson@saveetha.ac.in",
+        //     },
+        //   ],
+        //   student: [
+        //     {
+        //       name: "Malick basha",
+        //       year: "IV",
+        //       phone: 9025695862,
+        //       email: "Malick3101@gmail.com",
+        //     },
+        //     {
+        //       name: "Deepak ganesh",
+        //       year: "IV",
+        //       phone: 9789333959,
+        //       email: "giridharan20026@gmail.com",
+        //     },
+        //     {
+        //       name: "Mukku Manya Reddy",
+        //       year: "III",
+        //       phone: 7995338421,
+        //       email: "Manyareddy2002@gmail.com",
+        //     },
+        //     {
+        //       name: "Praveen",
+        //       year: "II",
+        //       phone: 7358244067,
+        //       email: "arune1903@gmail.com",
+        //     },
+        //   ],
+        // },
       },
       {
         name: "Additive Manufacturing with FDM",
@@ -3368,7 +3379,6 @@ export const EventDetails = [
         tag: "WORKSHOP",
         color: "0, 70, 90",
         company: "National institute of Electronics and Information Technology",
-        mode: "ONLINE",
         link: "https://forms.gle/Y8YxDuH2GC1ziKG56",
         day1: {
           date: "17/11/2022",
@@ -4007,9 +4017,9 @@ export const EventDetails = [
       {
         name: "ElectroBlitz ",
         date: "18 Nov 2022(FN)",
-        type: "Team",
+        type: "2",
         venue: "ECE GF SH 1 & ECE GF SH 2",
-        time: "TBA",
+        time: "Forenoon",
         members: "2",
         color: "0, 1, 38",
         rules: "",
@@ -4066,7 +4076,7 @@ export const EventDetails = [
         type: "Team",
         venue: "ECE GF SH 1 & ECE GF SH 2",
 
-        time: "TBA",
+        time: "AFTERNOON",
         members: "1-2",
         rules: "",
         color: "0, 1, 38",
@@ -4122,7 +4132,7 @@ export const EventDetails = [
         type: "Team",
         tag: "EVENT",
         venue: "ECE GF SH 1 & ECE GF SH 2",
-        time: "TBA",
+        time: "FORENOON",
         members: "2",
         rules:
           " A team should consists of two members in a team.No mobile phones are allowed during the participation of the event.No discussion or sharing of answers among the teams.If any malpractices are noticed then the team will be disqualified",
@@ -4174,11 +4184,11 @@ export const EventDetails = [
       },
       {
         name: "Obstacle Mania ",
-        date: "19 Nov 2022(AN & FN)",
+        date: "18 Nov 2022(FN&AN)",
         color: "0, 1, 38",
         type: "Team",
         venue: "ECE GF SH 1 & ECE GF SH 2",
-        time: "TBA",
+        time: "9-3:00pm",
         members: "1-3",
         rules:
           "A team should consist of two to three members in a team. No mobile phones are allowed during the participation of the event. No discussion or sharing of answers among the teams. If any malpractices are noticed then the team will be disqualified. Make sure the battery can sustain till the final round",
@@ -4242,14 +4252,13 @@ export const EventDetails = [
         logo: "/EventsAssets/ecew1.webp",
         tag: "WORKSHOP",
         color: "0, 70, 90",
-        mode: "TBA",
-        venue: "TBA",
+        venue: "Digital Lab ECE 1st Floor",
 
         link: "http://shorturl.at/deVZ3",
         day1: {
           date: "14/11/22",
-          time: "TBA",
-          mode: "offline",
+          time: "9-3:00pm",
+          mode: "OFFLINE",
           venue: "Digital LAB ECE 1st Floor",
 
           topic: "HANDS ON EXPERIENCE IN PCB DESIGN AND FABRICATION",
@@ -4292,7 +4301,7 @@ export const EventDetails = [
         },
         day2: {
           date: "15/11/22",
-          time: "TBA",
+          time: "9-3:00pm",
           mode: "offline",
           venue: "Digital LAB ECE 1st Floor",
           topic: "HANDS ON EXPERIENCE IN PCB DESIGN AND FABRICATION",
@@ -4335,7 +4344,7 @@ export const EventDetails = [
         },
         day3: {
           date: "16/11/22",
-          time: "TBA",
+          time: "9:00-3:00pm",
           mode: "offline",
           venue: "Digital LAB ECE 1st Floor",
 
