@@ -513,7 +513,7 @@ export const EventDetails = [
           "Each team will be given chits with mismatched/jumbled codes and they have to rearrange it and obtain the correct code and result. The decrypted clues of the first round will reveal the idea that has to be coded in the second round. The first 20 teams which get the highest number of correct outputs in the assigned time will be qualified to the third round",
         round3title: "Clue Mining",
         round3:
-          "Based on the output of the second round, The teams have to perform file mining in the given git repository and dig through many folders and files to get snippets of algorithm to qualify to the final round. They need to arrange the algorithm in proper order. The first 5 teams to complete this round will qualify to the final round",
+          "Based on the output of the second round, The teams have to perform file mining in the given google drive link and dig through many folders and files to get snippets of algorithm to qualify to the final round. They need to arrange the algorithm in proper order. The first 5 teams to complete this round will qualify to the final round",
         round4title: "Expect the Unexpected",
         round4:
           "Each team will have to code the program for the found algorithm in either C programming or Python language and the first team to complete the coding will be the winner of the event",
@@ -795,7 +795,7 @@ export const EventDetails = [
               email: "ruthudhana25@gmail.com",
             },
             {
-              name: "Thirupathy",
+              name: "Thirupathy M",
               year: "III",
               phone: 9344065593,
               email: "ssanjay1303@gmail.com",
@@ -1253,7 +1253,7 @@ export const EventDetails = [
             email: "kaushika.anandh@gmail.com",
           },
           {
-            name: "Ashwin A",
+            name: "Ashwin A O",
             year: "II",
             phone: 9159425427,
             email: "kaushika.anandh@gmail.com",
@@ -5035,7 +5035,7 @@ export const EventDetails = [
         },
       },
       {
-        name: "EV Battery Assembling Using Lithium Iron Phosphate Cells ",
+        name: "EV Battery Assembling Using Lithium Ion Phosphate Cells ",
         logo: "/EventsAssets/eeew3.webp",
         tag: "WORKSHOP",
         color: "0, 70, 90",
@@ -5045,6 +5045,7 @@ export const EventDetails = [
           date: "15/11/2022",
           time: "TBA",
           company: "TBA",
+          topic: "Battery cell and batterypack Modelling, Battery state estimation and range calculation",
           resource: [
             {
               name: "Mr.V.Prabhu",
