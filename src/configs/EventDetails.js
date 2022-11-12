@@ -3708,7 +3708,7 @@ export const EventDetails = [
       {
         name: "Anatomia",
         date: "18 & 19 Nov 2022",
-        type: "MAX #",
+        type: "MAX 3",
         venue: "ADMIN 4F BIO CHEMis LAB",
         time: "FULL DAY",
         members: "2",
