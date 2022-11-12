@@ -859,6 +859,103 @@ export const EventDetails = [
           ],
         },
       },
+      {
+        name: "Laptop Servicing",
+        logo: "/EventsAssets/csew3.webp",
+        tag: "WORKSHOP",
+        color: "0, 70, 90",
+        link: "https://forms.gle/aTNuUnvzXfFMoyfRA",
+        day1: {
+          date: "16/11/2022-FN",
+          time: "10am-1pm",
+          mode: "OFFLINE",
+          venue: "TBA",
+          resource: [
+            {
+              name: "Selvakumar.R.M",
+              desig: "Founder & Chairman",
+              phone: 9962738480,
+              email: "connectchennai99@gmail.com",
+            },
+          ],
+          staff: [
+            {
+              name: "Dr.Nagappan G",
+              desig: "Professor and Head",
+              phone: 9840662250,
+              email: "nagappan.cse@saveetha.ac.in",
+            },
+            {
+              name: "Dr.R.Kaladevi",
+              desig: "Assistant Professor (SG)",
+              phone: 9710074931,
+              email: "kaladevir@saveetha.ac.in",
+            },
+          ],
+          student: [
+            {
+              name: "Kishore N",
+              year: "IV",
+              phone: 9894801443,
+              email: "ruthudhana25@gmail.com",
+            },
+            {
+              name: "Thirupathy M",
+              year: "III",
+              phone: 9344065593,
+              email: "ssanjay1303@gmail.com",
+            },
+          ],
+        },
+        day2: {
+          date: "17.11.2022 (FN)",
+          time: "10am-12pm",
+          mode: "OFFLINE",
+          venue: "Bot Lab",
+          resource: [
+            {
+              name: "E. VINCENT ASHOK KUMAR",
+              desig: "TECHNICAL TRAINER (GAMING AND VFX)",
+              phone: 9962738480,
+              email: "vadapalaniarena1@gmail.com",
+            },
+          ],
+          staff: [
+            {
+              name: "Dr.Nagappan G",
+              desig: "Professor & Head",
+              phone: 9840662250,
+              email: "nagappan.cse@saveetha.ac.in",
+            },
+            {
+              name: "Dr.R.Kaladevi",
+              desig: "Assistant Professor (SG)",
+              phone: 9710074931,
+              email: "kaladevir@saveetha.ac.in",
+            },
+          ],
+          student: [
+            {
+              name: "Meenadshi M",
+              year: "III",
+              phone: 8939544089,
+              email: "meenadshi2020@gmail.com",
+            },
+            {
+              name: "Lawanya B",
+              year: "III",
+              phone: 9940409305,
+              email: "lawabala2003@gmail.com",
+            },
+            {
+              name: "Priya V",
+              year: "III",
+              phone: 6381835516,
+              email: "priyavenkat192002@gmail.com",
+            },
+          ],
+        },
+      },
     ],
   },
 
@@ -5067,6 +5164,7 @@ export const EventDetails = [
               name: "Mr.M.Prabhu",
               phone: "Executive Director, KOODS Batteries, Madurai",
               email: "TBA",
+              phone: ""
             },
           ],
           staff: [
