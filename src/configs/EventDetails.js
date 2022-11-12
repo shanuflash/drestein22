@@ -2631,6 +2631,7 @@ export const EventDetails = [
           date: "16/11/2022",
           time: "FULL DAY",
           venue: "RB 3F CRE LAB",
+          mode:"OFFLINE",
           company: "International Flavours & Fragrances India Pvt.Ltd",
           topic:
             "Basics and intermediate level in excel which is used in Chemical Engineering field.  Basic level: Eg. Fitting, Plotting, and Solving Intermediate level: Eg. Piping Design and Unit operation",
@@ -2639,16 +2640,19 @@ export const EventDetails = [
               name: "Mr.Dayalan Chokkalingam",
               phone: "Senior process Engineer, IFF, Chennai",
               email: "Dayalan.C@iff.com",
+              desig: ""
             },
             {
               name: "Dr.A.Balasubramanian",
               phone: "Associate professor, SEC",
               email: "balasubramaniana@saveetha.ac.in",
+              desig: ""
             },
             {
               name: "Dr.P. Senthil Kumar",
               phone: "Associate professor, SEC",
               email: "senthilkumarp@saveetha.ac.in",
+              desig: ""
             },
           ],
           staff: [
@@ -2695,12 +2699,12 @@ export const EventDetails = [
             },
             {
               name: "Dr.A.Balasubramanian",
-              phone: "Associate professor, SEC",
+              desig: "Associate professor, SEC",
               email: "balasubramaniana@saveetha.ac.in",
             },
             {
               name: "Dr.P. Senthil Kumar",
-              phone: "Associate professor, SEC",
+              desig: "Associate professor, SEC",
               email: "senthilkumarp@saveetha.ac.in",
             },
           ],
