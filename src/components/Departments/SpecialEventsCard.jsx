@@ -3,11 +3,12 @@ import styled from "styled-components";
 import "./styles/DepartMentCard.css";
 import { motion } from "framer-motion";
 import { HashLink as Link } from "react-router-hash-link";
-
-function SpacialEventsCard({ img, title, des, color, bgtext, mbtm, id }) {
-  const a = title.split(" ");
-
-  const Card = styled.a`
+import Box from '@mui/material/Box';
+import Button from '@mui/material/Button';
+import Typography from '@mui/material/Typography';
+import Modal from '@mui/material/Modal';
+import { useState } from "react";
+const Card = styled.a`
     font-family: "poppins", sans-serif;
     position: relative;
     width: 300px;
@@ -27,13 +28,13 @@ function SpacialEventsCard({ img, title, des, color, bgtext, mbtm, id }) {
       left: 0;
       width: 100%;
       height: 100%;
-      background: ${color};
+      background: ${props => props.color &&  props.color};
       clip-path: circle(150px at 80% 20%);
       transition: 0.7s ease all;
     }
     &::after {
       font-family: "poppins", sans-serif;
-      content: "${bgtext}";
+      content: ${props => props.color && `${props.color}`};;
       opacity: 0.3;
       position: absolute;
       top: 50%;
@@ -41,10 +42,25 @@ function SpacialEventsCard({ img, title, des, color, bgtext, mbtm, id }) {
       font-size: 10em;
       font-weight: 800;
       font-style: italic;
-      color: ${color};
+      color: ${props => props.color &&  props.color};
     }
   `;
 
+const DeptTxt = styled.h2`
+font-size: 1.5em;
+position: relative;
+font-weight: 600;
+letter-spacing: 1px;
+color: #fff;
+margin-top: ${props=>props.mbtm && props.mbtm};
+`;
+
+
+function SpacialEventsCard({ img, title, des, color, bgtext, mbtm, id }) {
+  const a = title.split(" ");
+
+
+  
   const text = {
     offscreen: { y: 200, opacity: 0 },
     onscreen: {
@@ -95,14 +111,8 @@ function SpacialEventsCard({ img, title, des, color, bgtext, mbtm, id }) {
     },
   };
 
-  const DeptTxt = styled.h2`
-    font-size: 1.5em;
-    position: relative;
-    font-weight: 600;
-    letter-spacing: 1px;
-    color: #fff;
-    margin-top: ${mbtm};
-  `;
+  
+
 
   return (
     <motion.div
@@ -111,8 +121,12 @@ function SpacialEventsCard({ img, title, des, color, bgtext, mbtm, id }) {
       viewport={{ once: true, amount: 0.5 }}
       variants={device < 700 ? cardforMobile : cardforDesktop}
       className="containerdept"
+
     >
-      <Card
+      
+      <Card 
+        color={color}
+        bgtext={bgtext}
         href="#"
         as={motion.div}
         initial="offscreen"
@@ -146,7 +160,7 @@ function SpacialEventsCard({ img, title, des, color, bgtext, mbtm, id }) {
           </motion.div>
         </div>
         <div className="contentBx">
-          <DeptTxt as={motion.div} variants={text}>
+          <DeptTxt mbtm={mbtm}  as={motion.div} variants={text}>
             {a[0]}
             <br />
             {a[1]}

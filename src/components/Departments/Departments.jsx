@@ -61,7 +61,7 @@ function Departments() {
             );
           }
 
-          return <SpacialEventsCard key={i} {...data} />;
+          return <SpacialEventsCard  key={i} {...data} />;
         })}
       </DepartmentContainer>
     </>
