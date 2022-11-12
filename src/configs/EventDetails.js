@@ -14,12 +14,12 @@ export const EventDetails = [
         members: "2",
         rules:
           "A fun event spanning over two rounds. Maximum participation 2 person per team. In the case of cheating, using of phone or using of any unnecessary gadgets will make the team disqualify. Shortlisted participants of Round-1 will appear for Round-2 for which above rules are applicable",
-        round1title: "One Shot",
+        round1title: "Switch upon",
         round1:
-          "Round One is one shot round in that the coder is not allowed to compile the program again and again.They are supposed to run exactly at once",
-        round2title: "Blind Coding",
+          "Each team will be given few minutes.One from the team must code for half of the given time then switch the other one for the remaining time and complete the  problem.The team which completes the problem in the short span is shortlisted to the next round",
+        round2title: "Grasp it",
         round2:
-          "It is a fresh and offbeat concept - where the participants need to write and compile their program with the monitor screens switched off. Each team has to write the code for given problem, with MONITOR OFF.Each team will be allowed one free “Screen time” (where the monitor screen can be turned on for 60 seconds), after which they will be penalized with 3 points for each extra screen time. Each team can avail a maximum of 5 screen times.  At a time only 5 teams will be allowed to avail the facility of Screen Time, the slots for which will be allotted on a first come first serve basis",
+          "Question will be displayed to one of the team member for few seconds.He/She should explain the problem with other member .With the understanding of the problem statement they have to code the solution.Note: Question will be displayed only once for 2 minute.The team which understands the problem correctly and complete on time will be selected as the winners",
         judge:
           "All the problems have same points allotted to them. Participant whose code gets executed will be given higher preference. Second preference will be given to the code with least number of errors. The decision of the organizers in declaring the results will be final. No queries in this regard will be entertained. Any team found to be indulging in any form of malpractice will be immediately disqualified",
         tag: "EVENT",
@@ -43,7 +43,7 @@ export const EventDetails = [
           {
             name: "Kousalya R",
             year: "IV",
-            phone: 9150728777,
+            phone: 9150728766,
             email: "kousi2917091@gmail.com",
           },
           {

@@ -62,6 +62,7 @@ export default function SignIn() {
 
         setLoggedIn(userCredential.user);
         navigate("/Admin");
+
         toast.success("successfully logged in");
         // setLoading(false)
       }

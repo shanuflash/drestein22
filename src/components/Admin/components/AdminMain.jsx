@@ -21,8 +21,8 @@ function AdminMain() {
   }, []);
   return (
     <UserProvider>
-      <Admin>
-        <ResponsiveAppBar />
+    <Admin>
+      <ResponsiveAppBar />
         <Outlet />
       </Admin>
     </UserProvider>

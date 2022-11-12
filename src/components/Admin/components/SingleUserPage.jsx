@@ -34,7 +34,7 @@ const UserCard = styled.div`
 `;
 
 function SingleUserPage() {
-  const { RegUsers, DataLoad } = useContext(UserContext);
+  const { RegUsers, DataLoad} = useContext(UserContext);
   const params = useParams();
   const userid = params.userid;
   const [Registeredpeople, setRegistredPeople] = useState([]);
@@ -61,7 +61,9 @@ function SingleUserPage() {
       }
     });
   }
+
   useEffect(() => {
+
     async function innerfetch() {
       const response = await fetch();
     }

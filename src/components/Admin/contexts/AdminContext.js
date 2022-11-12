@@ -21,6 +21,7 @@ export const UserProvider = (props) => {
   const [DataLoad, setDataLoad] = useState(true);
   const [vicitedProple, setVisitedPeople] = useState(0);
   const dataFetchedRef = useRef(false);
+
   useEffect(() => {
     onAuthStateChanged(auth, (user) => {
       setLoggedIn(user);
@@ -29,38 +30,37 @@ export const UserProvider = (props) => {
 
   const FetchUsers = () => {
     const colref = collection(db, "RegisteredPeople");
-    console.log("backend fectch  running ... ");
+    console.log("backend fetch  running ... ");
     onSnapshot(colref, (snapshot) => {
       let users = [];
 
       snapshot.docs.forEach((doc) => {
         users.push({ ...doc.data(), id: doc.id });
       });
-      setRegUsers(users)
-      setDataLoad(false)
-     
-    })
-  }
-useEffect(()=>{
-if(dataFetchedRef.current) return ;
-dataFetchedRef.current=true;
+      setRegUsers(users);
+      setDataLoad(false);
+    });
+  };
+  useEffect(() => {
+    if (dataFetchedRef.current) return;
+    dataFetchedRef.current = true;
+
 if(loggedIn){
-  FetchUsers()
 
+  FetchUsers();
 }
- 
 
-},[])
+  }, []);
 
   return (
     <UserContext.Provider
       value={{
-        loggedIn,
         setLoggedIn,
         RegUsers,
+        loggedIn,
         DataLoad,
         vicitedProple,
-        auth
+        auth,
       }}
     >
       {props.children}
