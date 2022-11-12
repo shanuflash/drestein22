@@ -17,7 +17,6 @@ const Modal = ({ open, setOpenModal }) => {
   const splitround3 = eventObject?.round3?.split(".");
   const splitround4 = eventObject?.round4?.split(".");
   const splitnote = eventObject?.note?.split(".");
-
   const splitround1level2 = eventObject?.round1level2?.split(".");
   const splitround2level2 = eventObject?.round2level2?.split(".");
   const splitworktopicd1 = eventObject?.day1?.topic?.split("\n");
@@ -37,7 +36,6 @@ const Modal = ({ open, setOpenModal }) => {
           className="close-btn"
           onClick={() => setOpenModal((prev) => !prev)}
         />
-        {/* if round 1 is existed then its a event. else its workshop: */}
         {eventObject.tag === "EVENT" ? (
           <>
             {eventObject.name ? (

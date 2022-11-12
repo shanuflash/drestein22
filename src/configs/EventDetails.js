@@ -683,7 +683,7 @@ export const EventDetails = [
             email: "bhargavashankar2003@gmail.com",
           },
           {
-            name: "Trishaa S",
+            name: "Thirisaa S",
             year: "II",
             phone: 9361730242,
             email: "msdhanush2003@gmail.com",
@@ -869,7 +869,7 @@ export const EventDetails = [
         day1: {
           date: "16/11/2022-FN",
           time: "10am-1pm",
-          mode: "OFFLINE",2 day
+          mode: "OFFLINE",
           venue: "TBA",
           resource: [
             {
