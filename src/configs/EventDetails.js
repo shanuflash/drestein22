@@ -2447,14 +2447,13 @@ export const EventDetails = [
       {
         name: "Process Snippet",
         date: "18 Nov 2022(FN)",
-        type: "Team",
-        venue: "TBA",
-        time: "TBA",
+        type: "MAx 3",
+        venue: "RB 3F LH 15",
+        time: "FORENOON",
         members: "2",
         rules: "",
         round1:
           "It is a group event of 3.  Participants will be given shuffled charts which contain different unit processes.  Participants should order them according to sector in a given time limit. The team which finishes fast with the correct answer will be selected for the next round",
-        round2title: "Blind Coding",
         round2:
           "It is a group event of 3.Participants will be given many charts which contain different unit operations. Participants should order them according to sector in a given time limit.The team which finishes fast with the correct answer will be selected for the next round",
         round3:
@@ -2466,7 +2465,6 @@ export const EventDetails = [
           {
             name: "Ms.N Umaiyambika",
             desig: "Assistant Professor",
-            phone: 9444945153,
             email: "umaiyambikan@saveetha.ac.in",
           },
         ],
@@ -2489,9 +2487,9 @@ export const EventDetails = [
       {
         name: "Chem Fluids",
         date: "18 Nov 2022(AN)",
-        type: "Team",
-        venue: "TBA",
-        time: "TBA",
+        type: "MAX 3",
+        venue: "RB 3F LH 16",
+        time: "AFTERNOON",
         members: "1-2",
         rules: "",
         round1title: "NEWTONIAN & NON-NEWTONIAN",
@@ -2507,7 +2505,6 @@ export const EventDetails = [
           {
             name: "Dr.P.Senthilkumar",
             desig: "Assistant Professor",
-            phone: 7305105056,
             email: "senthilkumarp@saveetha.ac.in",
           },
         ],
@@ -2528,10 +2525,10 @@ export const EventDetails = [
       },
       {
         name: "Clash Xcape",
-        date: "19 Nov 2022(FN)",
-        type: "Team",
-        venue: "TBA",
-        time: "TBA",
+        date: "19 Nov 2022(FN/AN)",
+        type: "SOLO",
+        venue: "RB 3H LH 15",
+        time: "FORENOON & AFTERNOON",
         members: "2",
         rules:
           " Participants should play small games in the room to escape from the room. Participants should answer the questions for a minimum of 3 and also should win the game.  For winning each game participants will be given stickers at each game. Those who collect more stickers will be the winner",
@@ -2542,21 +2539,19 @@ export const EventDetails = [
           {
             name: "Dr.S. Balachandran",
             desig: "Assistant Professor",
-            phone: 861097938,
             email: " balachandrans@saveetha.ac.in",
           },
           {
             name: "Dr. S.Sundar Rajan",
             desig: "Assistant Professor",
-            phone: 9962603615,
             email: "sundarrajanp@saveetha.ac.in",
           },
         ],
         student: [
           {
-            name: "Eswar V",
+            name: "Abherna Shree M",
             year: "IV",
-            phone: 9361760541,
+            phone: 9361896759,
             email: "avesr5820@gmail.com",
           },
           {
@@ -2583,9 +2578,9 @@ export const EventDetails = [
         name: "Chem Bridge",
         tagline: "The idea behind this event is to figure out the (MYSTERY)",
         date: "19 Nov 2022(AN)",
-        type: "Team",
-        venue: "TBA",
-        time: "TBA",
+        type: "MAX 3",
+        venue: "RB 3F LH 16",
+        time: "AFTERNOON",
         members: "1-3",
         rules: "",
         round1title: "BINGO",
@@ -2603,9 +2598,8 @@ export const EventDetails = [
         logo: "/EventsAssets/chem4.webp",
         staff: [
           {
-            name: "Ms.N Umaiyambika",
+            name: "DR. M. HEMALATHA ",
             desig: "Assistant Professor",
-            phone: 9444945153,
             email: "umaiyambikan@saveetha.ac.in",
           },
         ],
@@ -2629,14 +2623,14 @@ export const EventDetails = [
       {
         name: "EXCEL for Chemical Engineers: Basics to Advanced",
         logo: "/EventsAssets/chemw1.webp",
-
         tag: "WORKSHOP",
         color: "0, 70, 90",
-
+        note: "KINDLY BRING YOUR OWN LAPTOPS",
         link: "https://forms.gle/xcEjNELQwCrbjXfa9",
         day1: {
-          date: "08/11/2022",
-          time: "TBA",
+          date: "16/11/2022",
+          time: "FULL DAY",
+          venue: "RB 3F CRE LAB",
           company: "International Flavours & Fragrances India Pvt.Ltd",
           topic:
             "Basics and intermediate level in excel which is used in Chemical Engineering field.  Basic level: Eg. Fitting, Plotting, and Solving Intermediate level: Eg. Piping Design and Unit operation",
@@ -2644,27 +2638,23 @@ export const EventDetails = [
             {
               name: "Mr.Dayalan Chokkalingam",
               desig: "Senior process Engineer, IFF, Chennai",
-              phone: 7397529444,
               email: "Dayalan.C@iff.com",
             },
             {
               name: "Dr.A.Balasubramanian",
               desig: "Associate professor, SEC",
-              phone: 9488478235,
               email: "balasubramaniana@saveetha.ac.in",
             },
             {
               name: "Dr.P. Senthil Kumar",
               desig: "Associate professor, SEC",
-              phone: 7305105056,
               email: "senthilkumarp@saveetha.ac.in",
             },
           ],
           staff: [
             {
               name: "Dr.A.Balasubramanian",
-              desig: "Associate Professor",
-              phone: 9488478235,
+              desig: "Associate Professor and Head",
               email: "balasubramaniana@saveetha.ac.in",
             },
           ],
@@ -2684,8 +2674,10 @@ export const EventDetails = [
           ],
         },
         day2: {
-          date: "08/11/2022",
-          time: "TBA",
+          date: "17/11/2022",
+          time: "FULL DAY",
+          mode: "OFFLINE",
+          venue: "RB 3F CRE LAB",
           company: "International Flavours & Fragrances India Pvt.Ltd",
           topic:
             "Advanced GV level in excel which is used in Chemical Engineering field. Advanced level: Eg. Process Analysis",
@@ -2693,19 +2685,16 @@ export const EventDetails = [
             {
               name: "Mr.Dayalan Chokkalingam",
               desig: "Senior process Engineer, IFF, Chennai",
-              phone: 7397529444,
               email: "Dayalan.C@iff.com",
             },
             {
               name: "Dr.A.Balasubramanian",
               desig: "Associate professor, SEC",
-              phone: 9488478235,
               email: "balasubramaniana@saveetha.ac.in",
             },
             {
               name: "Dr.P. Senthil Kumar",
               desig: "Associate professor, SEC",
-              phone: 7305105056,
               email: "senthilkumarp@saveetha.ac.in",
             },
           ],
@@ -2713,7 +2702,6 @@ export const EventDetails = [
             {
               name: "Dr.A.Balasubramanian",
               desig: "Associate Professor",
-              phone: 9488478235,
               email: "balasubramaniana@saveetha.ac.in",
             },
           ],
@@ -2723,6 +2711,12 @@ export const EventDetails = [
               year: "IV",
               phone: 9361896759,
               email: "abhernashree80@gmail.com",
+            },
+            {
+              name: "RUKESH K",
+              year: "III",
+              phone: 9360260922,
+              email: "srikanthkanagavalli@gmail.com",
             },
             {
               name: "Srikanth",
