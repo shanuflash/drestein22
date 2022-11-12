@@ -1719,9 +1719,9 @@ export const EventDetails = [
         tagline:
           "To get familiarize with the functioning and usage of medical equipment",
         date: "18 Nov 2022(FN)",
-        type: "Team",
-        venue: "TBA",
-        time: "TBA",
+        type: "4",
+        venue: "ECE 4F OW LH 01 & MED Instrumentation Lab",
+        time: "FORENOON",
         members: "2",
         rules: "",
         round1title: "Round 1 - THREE MONKEYS (PICTIONARY)",
@@ -1783,9 +1783,9 @@ export const EventDetails = [
         tagline:
           "Looking for fun ideas that will keep the game more interesting? You’re in the right place! Here are 3 rounds of fun challenges for your friends. Time based MCQs are there. Funny tasks are between those rounds. Triggering your mind with questions and boosting your activities. Each round has 2 (Two) levels to reach next round. Offers given in first round to reach final round directly. Final round winners be appreciated with rewards",
         date: "18 Nov 2022(AN)",
-        type: "Team",
-        venue: "TBA",
-        time: "TBA",
+        type: "SOLO",
+        venue: "ADMIN 4F LH 05, LH 04",
+        time: "AFTERNOON",
         members: "2",
         rules: "",
         round1title: "FIND ME",
@@ -1853,9 +1853,9 @@ export const EventDetails = [
         tagline: "(battle minds)",
         desc: "To understand how our brain coordinate thoughts, movement and sensation",
         date: "19 Nov 2022(FN)",
-        type: "Team",
-        venue: "TBA",
-        time: "TBA",
+        type: "4",
+        venue: "ECE 4F OW LH 01 MED Instrumentation LAB",
+        time: "FORENOON",
         members: "1-2",
         rules: "",
         round1title: " Time snap",
@@ -1913,9 +1913,9 @@ export const EventDetails = [
         name: "Neurotic Expelliarmus",
         desc: "To understand the coordination of brain that receives the sensory input and provides a physical output",
         date: "19 Nov 2022(AN)",
-        type: "Team",
-        venue: "TBA",
-        time: "TBA",
+        type: "SOLO",
+        venue: "ADMIN 4F LH 05, LH 04",
+        time: "AFTERNOON",
         members: "1-3",
         rules: "",
         round1title: " Blaze the Machine Gun",
@@ -1981,10 +1981,10 @@ export const EventDetails = [
 
         link: "https://docs.google.com/forms/d/e/1FAIpQLSdC8D_Y4JORLf63iBdP7MXhhIbPEVyYzR93wThTgrcVnf3tPQ/viewform",
         day1: {
-          date: "07/11/2022-FN",
-          time: "12:00pm -3.00pm",
+          date: "14/11/2022-FN",
+          time: "8:00am - 3.00pm",
           mode: "OFFLINE",
-          venue: "TBA",
+          venue: "KALAM HALL",
           topic:
             "The workshop is based on a workflow for a novel augmented-reality-based surgical navigation (ARSN) system for anatomy visualisation installed in a hybrid operating room. In the afternoon session, students receive hands-on training.",
           resource: [
@@ -2034,17 +2034,16 @@ export const EventDetails = [
       {
         name: "Rehabilitation & LabVIEW for Healthcare Applications",
         logo: "/EventsAssets/bmew2.webp",
-
         tag: "WORKSHOP",
         color: "0, 70, 90",
         company: " Prashan Medical Technologies",
 
         link: "https://docs.google.com/forms/d/e/1FAIpQLSdC8D_Y4JORLf63iBdP7MXhhIbPEVyYzR93wThTgrcVnf3tPQ/viewform",
         day1: {
-          date: "16/11/2022-FN",
-          time: "12pm-3pm",
+          date: "15/11/2022-FN",
+          time: "8am-3pm",
           mode: "OFFLINE",
-          venue: "TBA",
+          venue: "KALAM HALL",
           topic:
             "This workshop covers Automated Manufacturing testing, product design validation, control and monitoring of industrial equipment in a system, and the most recent developments of medical equipment using LabVIEW.",
           resource: [
