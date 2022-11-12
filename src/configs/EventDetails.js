@@ -2464,7 +2464,7 @@ export const EventDetails = [
         staff: [
           {
             name: "Ms.N Umaiyambika",
-            desig: "Assistant Professor",
+            phone: "Assistant Professor",
             email: "umaiyambikan@saveetha.ac.in",
           },
         ],
@@ -2504,7 +2504,7 @@ export const EventDetails = [
         staff: [
           {
             name: "Dr.P.Senthilkumar",
-            desig: "Assistant Professor",
+            phone: "Assistant Professor",
             email: "senthilkumarp@saveetha.ac.in",
           },
         ],
@@ -2538,12 +2538,12 @@ export const EventDetails = [
         staff: [
           {
             name: "Dr.S. Balachandran",
-            desig: "Assistant Professor",
+            phone: "Assistant Professor",
             email: " balachandrans@saveetha.ac.in",
           },
           {
             name: "Dr. S.Sundar Rajan",
-            desig: "Assistant Professor",
+            phone: "Assistant Professor",
             email: "sundarrajanp@saveetha.ac.in",
           },
         ],
@@ -2599,7 +2599,7 @@ export const EventDetails = [
         staff: [
           {
             name: "DR. M. HEMALATHA ",
-            desig: "Assistant Professor",
+            phone: "Assistant Professor",
             email: "umaiyambikan@saveetha.ac.in",
           },
         ],
@@ -2691,50 +2691,53 @@ export const EventDetails = [
           company: "International Flavours & Fragrances India Pvt.Ltd",
           topic:
             "Advanced GV level in excel which is used in Chemical Engineering field. Advanced level: Eg. Process Analysis",
-          resource: [
-            {
-              name: "Mr.Dayalan Chokkalingam",
-              phone: "Senior process Engineer, IFF, Chennai",
-              email: "Dayalan.C@iff.com",
-            },
-            {
-              name: "Dr.A.Balasubramanian",
-              desig: "Associate professor, SEC",
-              email: "balasubramaniana@saveetha.ac.in",
-            },
-            {
-              name: "Dr.P. Senthil Kumar",
-              desig: "Associate professor, SEC",
-              email: "senthilkumarp@saveetha.ac.in",
-            },
-          ],
-          staff: [
-            {
-              name: "Dr.A.Balasubramanian",
-              phone: "Associate Professor",
-              email: "balasubramaniana@saveetha.ac.in",
-            },
-          ],
-          student: [
-            {
-              name: "Abherna shree M",
-              year: "IV",
-              phone: 9361896759,
-              email: "abhernashree80@gmail.com",
-            },
-            {
-              name: "RUKESH K",
-              year: "III",
-              phone: 9360260922,
-              email: "srikanthkanagavalli@gmail.com",
-            },
-            {
-              name: "Srikanth",
-              year: "III",
-              phone: 6382979534,
-              email: "srikanthkanagavalli@gmail.com",
-            },
-          ],
+            resource: [
+              {
+                name: "Mr.Dayalan Chokkalingam",
+                phone: "Senior process Engineer, IFF, Chennai",
+                email: "Dayalan.C@iff.com",
+                desig: ""
+              },
+              {
+                name: "Dr.A.Balasubramanian",
+                phone: "Associate professor, SEC",
+                email: "balasubramaniana@saveetha.ac.in",
+                desig: ""
+              },
+              {
+                name: "Dr.P. Senthil Kumar",
+                phone: "Associate professor, SEC",
+                email: "senthilkumarp@saveetha.ac.in",
+                desig: ""
+              },
+            ],
+            staff: [
+              {
+                name: "Dr.A.Balasubramanian",
+                phone: "Associate Professor and Head",
+                email: "balasubramaniana@saveetha.ac.in",
+              },
+            ],
+            student: [
+              {
+                name: "Abherna shree M",
+                year: "IV",
+                phone: 9361896759,
+                email: "abhernashree80@gmail.com",
+              },
+              {
+                name: "RUKESH K",
+                year: "III",
+                phone: 9360260922,
+                email: "srikanthkanagavalli@gmail.com",
+              },
+              {
+                name: "Srikanth",
+                year: "III",
+                phone: 6382979534,
+                email: "srikanthkanagavalli@gmail.com",
+              },
+            ],
         },
       },
     ],
