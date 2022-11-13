@@ -4232,7 +4232,7 @@ export const EventDetails = [
       },
       {
         name: "Circuit Buzz",
-        date: "19 Nov 2022(AN)",
+        date: "19 Nov 2022(FN)",
         type: "Team",
         tag: "EVENT",
         venue: "ECE GF SH 1 & ECE GF SH 2",
