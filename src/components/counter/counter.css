@@ -31,7 +31,7 @@
 .counter-column span {
   font-family: "Montserrat";
   font-weight: 400;
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 @media screen and (max-width: 600px) {
@@ -48,5 +48,8 @@
   .counter-column{
     flex-direction: column;
     padding: 1rem;
+  }
+  .counter-column span {
+    font-size: 1rem;
   }
 }
