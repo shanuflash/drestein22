@@ -31,7 +31,7 @@
 .counter-column span {
   font-family: "Montserrat";
   font-weight: 400;
-  font-size: 1.2rem;
+  font-size: 0.9rem;
 }
 
 @media screen and (max-width: 600px) {
@@ -40,10 +40,10 @@
   }
   .counter-row {
     width: 100%;
-   grid-template-columns: 1fr 1fr ;
+   grid-template-columns: 1fr 1fr;
   }
   .counter-column .number{
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
   .counter-column{
     flex-direction: column;
