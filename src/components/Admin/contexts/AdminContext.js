@@ -22,11 +22,13 @@ export const UserProvider = (props) => {
   const [vicitedProple, setVisitedPeople] = useState(0);
   const dataFetchedRef = useRef(false);
 
+
   useEffect(() => {
     onAuthStateChanged(auth, (user) => {
       setLoggedIn(user);
     });
   }, [auth, auth?.currentUser]);
+
 
   const FetchUsers = () => {
     const colref = collection(db, "RegisteredPeople");
@@ -41,6 +43,7 @@ export const UserProvider = (props) => {
       setDataLoad(false);
     });
   };
+
   useEffect(() => {
     if (dataFetchedRef.current) return;
     dataFetchedRef.current = true;
@@ -51,6 +54,7 @@ if(loggedIn){
 }
 
   }, []);
+  
 
   return (
     <UserContext.Provider

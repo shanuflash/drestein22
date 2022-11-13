@@ -2313,7 +2313,7 @@ export const EventDetails = [
           "The detailed line plan will be given as a question in round 2 .The students have to draw Plan with specification for the same line plan. The duration for the plan is 30 minutes. Based on the completion first three place will be finalised",
         tag: "EVENT",
         color: "0, 1, 38",
-        logo: "/EventsAssets/civil3.webp",
+        logo: "/EventsAssets/civil2.webp",
         staff: [
           {
             name: "M Madhan Kumar",
@@ -2358,7 +2358,7 @@ export const EventDetails = [
         tag: "EVENT",
         color: "0, 1, 38",
 
-        logo: "/EventsAssets/civil4.webp",
+        logo: "/EventsAssets/civil3.webp",
         staff: [
           {
             name: "A.Aishwarya lakshmi",
