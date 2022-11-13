@@ -460,7 +460,7 @@ export const EventDetails = [
               email: "s.dineshpersonal@gmail.com",
             },
             {
-              name: "M.Pratheeksha",
+              name: "M.Pratheekshaa",
               desig: "Linux-System Administrator",
               phone: 9361035551,
               email: "Pratheekshaa721@gmail.com",
