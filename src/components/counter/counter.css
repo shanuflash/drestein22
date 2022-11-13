@@ -5,17 +5,20 @@
 .counter-row {
   width: 80%;
   margin-inline: auto;
-  display: flex;
-  gap: 1rem;
+ display: grid;
+ grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 0.5rem;
 }
 
 .counter-column {
   font-family: "Monterrat";
   flex-grow: 1;
   display: flex;
+
   justify-content: center;
   align-items: center;
   gap: 1rem;
+  text-align: center;
   padding: 2rem;
 }
 
@@ -32,7 +35,18 @@
 }
 
 @media screen and (max-width: 600px) {
+  .counter{
+  margin-bottom: 2rem;
+  }
   .counter-row {
-    flex-wrap: wrap;
+    width: 100%;
+   grid-template-columns: 1fr 1fr ;
+  }
+  .counter-column .number{
+    font-size: 2rem;
+  }
+  .counter-column{
+    flex-direction: column;
+    padding: 1rem;
   }
 }

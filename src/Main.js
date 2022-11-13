@@ -12,7 +12,7 @@ import About from "./components/About/About";
 import Guest from "./components/Guest/Guest";
 import Footer from "./components/Footer/Footer";
 import "./App.css";
-// import Counter from "./components/counter/Counter";
+import Counter from "./components/counter/Counter";
 import { fontWeight } from "@mui/system";
 
 const DepartmentDiv = styled.div`
@@ -25,14 +25,19 @@ const Main = () => {
   const MValue = useTransform(scrollY, [0, 800], [0, -200]);
   const DValue = useTransform(scrollY, [0, 1000], [0, -500]);
   const { scrollYProgress } = useScroll();
+  
   const DeviceSize = window.innerWidth;
+
   const particlesInit = useCallback(async (engine) => {
     await loadFull(engine);
   }, []);
+
   const particlesLoaded = useCallback(async (container) => {}, []);
+
   useEffect(() => {
     document.body.style.overflow = "unset";
   }, []);
+
   return (
     <div
       ref={scroll}
@@ -58,11 +63,11 @@ const Main = () => {
         className="img"
         style={{ y: DeviceSize < 800 ? MValue : DValue, zIndex: -1 }}
       ></motion.div>
-      {/* {DeviceSize > 800 ? (
+
         <div id="Count" style={{ width: "100%" }}>
           <Counter />
         </div>
-      ) : null} */}
+
       <DepartmentDiv id="Departments">
         <Departments />
       </DepartmentDiv>
