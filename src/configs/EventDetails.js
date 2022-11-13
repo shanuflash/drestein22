@@ -4236,7 +4236,7 @@ export const EventDetails = [
         type: "Team",
         tag: "EVENT",
         venue: "ECE GF SH 1 & ECE GF SH 2",
-        time: "AFTERNOON",
+        time: "FORENOON",
         members: "2",
         rules:
           " A team should consists of two members in a team.No mobile phones are allowed during the participation of the event.No discussion or sharing of answers among the teams.If any malpractices are noticed then the team will be disqualified",
