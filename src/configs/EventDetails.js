@@ -4232,11 +4232,11 @@ export const EventDetails = [
       },
       {
         name: "Circuit Buzz",
-        date: "19 Nov 2022(FN)",
+        date: "19 Nov 2022(AN)",
         type: "Team",
         tag: "EVENT",
         venue: "ECE GF SH 1 & ECE GF SH 2",
-        time: "FORENOON",
+        time: "AFTERNOON",
         members: "2",
         rules:
           " A team should consists of two members in a team.No mobile phones are allowed during the participation of the event.No discussion or sharing of answers among the teams.If any malpractices are noticed then the team will be disqualified",
@@ -4772,6 +4772,60 @@ export const EventDetails = [
           ],
         },
       },
+      {
+        name: 'A journey to Semiconductor manufacturing and Avionics Calibration Services',
+        logo: "/EventsAssets/ecew7.webp",
+        tag: "WORKSHOP",
+        color: "0, 70, 90",
+        company: "Cal-Asia Pte Ltd",
+        link: "https://shorturl.at/eGL18",
+        morng: "Semiconductor Process and Exposure in Production Environment.Semiconductor process and operation steps.Handling of Wafers.Automation on Testing with various Steps from Raw Silicon to completed IC’s (Video based demonstration).What is Front end process.What is Back end.Summary of Semiconductor manufacturing journey",
+        afternoon: "Avionic Calibration Services.Equipment used in avionics environment.Calibration Process.Testing and types of signal process.Role of calibration and its importance.Exposure to avionics Field equipments",
+
+        day1: {
+          date: "16/11/22",
+          time: "10.00-4.00",
+          mode: "ONLINE",
+          venue: "TBA",
+          resource: [
+            {
+              name: "Mr D Ganesh Babu",
+              phone: "Cal-Asia Pte Ltd working as Technical Manager in calibration department, Singapore.",
+              email: "mani@adcomindia.com ",
+              desig: "",
+            },
+          ],
+          staff: [
+            {
+              name: "Dr.M.Vanitha",
+              desig: "Associate Professor  ",
+              phone: 7871784886,
+              email: "keerthiga@saveetha.ac.in  ",
+            },
+            {
+              name: "Dr.A.Elakkiya",
+              desig: "Associate Professor ",
+              phone: 9952376256,
+              email: "sakthi@saveetha.ac.in    ",
+            },
+            {
+              name: "Mr.K.Arunkumar",
+              desig: "Associate Professor",
+              phone: 9600981800,
+              email: "sakthi@saveetha.ac.in",
+            },
+          ],
+          student: [
+            {
+              name: "Annapoorani.S",
+              year: "IV ",
+              phone: 9629805774,
+              email: "ajuprasath12@gmail.com  ",
+            },
+          ],
+        },
+      },
+
     ],
   },
   {
