@@ -181,7 +181,7 @@ const Footer = () => {
               <Avatar size="sm" src={`/static/images/avatar/1.jpg`} />
             }
           >
-            Gokul Nath
+            Gokul Nath A
           </Chip>
           <Chip
             size="md"

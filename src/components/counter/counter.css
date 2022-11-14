@@ -40,16 +40,20 @@
   }
   .counter-row {
     width: 100%;
-   grid-template-columns: 1fr 1fr ;
+   grid-template-columns: 1fr 1fr;
   }
   .counter-column .number{
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
   .counter-column{
     flex-direction: column;
     padding: 1rem;
   }
+<<<<<<< HEAD
   .counter-column span{
+=======
+  .counter-column span {
+>>>>>>> e3a2fdef27c623ff11e08c49cf93d990ff90925b
     font-size: 1rem;
   }
 }
