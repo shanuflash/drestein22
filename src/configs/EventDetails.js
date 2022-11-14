@@ -448,7 +448,7 @@ export const EventDetails = [
           date: "16.11.2022 - FN",
           time: "9:00 -3.00pm",
           mode: "OFFLINE",
-          venue: "Kalam Lab CSE 5th Floor",
+          venue: "Kalam Hall CSE 5th Floor",
           list: true,
           topic:
             "1.Fundamental Cloud Concepts of AWS\n2.Benefits and Types of Cloud Computing\n3.AWS Cloud Infrastructure\n4.Understanding AWS Core services\n5.AWS App Integration\n6.AWS Identities and User Management\n7.Architecting Application on Amazon EC2\n8.Developer Services ",
@@ -2197,7 +2197,7 @@ export const EventDetails = [
       {
         name: "Build-IT",
         tagline: "Bridge Model making",
-        date: "17 Nov 2022(FN)",
+        date: "19 Nov 2022(FN)",
         type: "2",
         venue: "Survey LAB, Rectangular block",
         time: "FORENOON",
@@ -2245,7 +2245,7 @@ export const EventDetails = [
 
       {
         name: "Map The Gap",
-        date: "17 Nov 2022(AN)",
+        date: "19 Nov 2022(AN)",
         type: "2",
         venue: "Survey LAB,Gf  Rectangular block",
         time: "AFTERNOON",
@@ -4122,7 +4122,7 @@ export const EventDetails = [
       {
         name: "ElectroBlitz ",
         date: "18 Nov 2022(FN)",
-        type: "2",
+        type: "Team",
         venue: "ECE GF SH 1 & ECE GF SH 2",
         time: "Forenoon",
         members: "2",
@@ -4825,7 +4825,6 @@ export const EventDetails = [
           ],
         },
       },
-
     ],
   },
   {
