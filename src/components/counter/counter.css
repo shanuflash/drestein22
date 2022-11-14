@@ -49,4 +49,7 @@
     flex-direction: column;
     padding: 1rem;
   }
+  .counter-column span{
+    font-size: 1rem;
+  }
 }

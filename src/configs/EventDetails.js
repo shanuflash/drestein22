@@ -695,7 +695,7 @@ export const EventDetails = [
         desc: "Ideathon",
         date: "19 Nov 2022(FN)",
         type: "2-3",
-        venue: "Bot Lab",
+        venue: "CSE GF LH1",
         time: "Forenoon",
 
         members: "1-3",
@@ -873,7 +873,7 @@ export const EventDetails = [
           venue: "TBA",
           resource: [
             {
-              name: "Selvakumar.R.M",
+              name: "MR.Selvakumar.R.M",
               desig: "Founder & Chairman",
               phone: 9962738480,
               email: "connectchennai99@gmail.com",
